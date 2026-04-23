@@ -1,1 +1,283 @@
-# prostovpn
+mixed-port: 7890
+socks-port: 7891
+redir-port: 7892
+allow-lan: true
+mode: global
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  use-hosts: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver:
+    - 1.1.1.1
+    - 8.8.8.8
+  nameserver:
+    - 1.1.1.1
+    - 8.8.8.8
+  fake-ip-filter:
+    - "*.lan"
+    - stun.*.*.*
+    - stun.*.*
+    - time.windows.com
+    - time.nist.gov
+    - time.apple.com
+    - time.asia.apple.com
+    - "*.openwrt.pool.ntp.org"
+    - pool.ntp.org
+    - ntp.ubuntu.com
+    - time1.apple.com
+    - time2.apple.com
+    - time3.apple.com
+    - time4.apple.com
+    - time5.apple.com
+    - time6.apple.com
+    - time7.apple.com
+    - time1.google.com
+    - time2.google.com
+    - time3.google.com
+    - time4.google.com
+    - api.joox.com
+    - joox.com
+    - "*.xiami.com"
+    - "*.msftconnecttest.com"
+    - "*.msftncsi.com"
+    - +.xboxlive.com
+    - "*.*.stun.playstation.net"
+    - xbox.*.*.microsoft.com
+    - "*.ipv6.microsoft.com"
+    - speedtest.cros.wr.pvp.net
+proxies:
+  - name: 🇸🇪Швеция
+    type: vless
+    server: 95.85.241.150
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 810cc03f-6fa5-44f2-9fe3-520c0e31bd2b
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: sweden.bober.ac
+    reality-opts:
+      public-key: 6lag46bHG1VvyeHdlGgkwRPfyFryJSrPmmSCw7YCMns
+      short-id: 6aa2d2e950441a9a
+    client-fingerprint: chrome
+  - name: 🇫🇮Финляндия
+    type: vless
+    server: 45.144.53.183
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 810cc03f-6fa5-44f2-9fe3-520c0e31bd2b
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: finland.bober.ac
+    reality-opts:
+      public-key: n_w1wDAnXwaEM-d7EW370ZCdrkksu-BIfyVw7MEyC1U
+      short-id: 6aa2d2e950441a9a
+    client-fingerprint: chrome
+  - name: 🇵🇱Польша
+    type: vless
+    server: 144.31.1.29
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 810cc03f-6fa5-44f2-9fe3-520c0e31bd2b
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: poland.bober.ac
+    reality-opts:
+      public-key: 5KDzdl8oyBLzBbf1vPnjyKQuyV9bU3Kx3Jy601Sf0hA
+      short-id: 6aa2d2e950441a9a
+    client-fingerprint: chrome
+  - name: 🇩🇪Германия
+    type: vless
+    server: 103.109.234.123
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 810cc03f-6fa5-44f2-9fe3-520c0e31bd2b
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: germ.bober.ac
+    reality-opts:
+      public-key: 0vRcA5ssBZCGwR_VWHrNET5mcAYMtfa4Q-P5jpLLKz8
+      short-id: 6aa2d2e950441a9a
+    client-fingerprint: chrome
+  - name: 🇪🇪 Эстония
+    type: vless
+    server: 217.9.12.93
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 810cc03f-6fa5-44f2-9fe3-520c0e31bd2b
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: estonia.bober.ac
+    reality-opts:
+      public-key: 9-88vcbYr3i3TWvWRDEsCMYgVmZHxLEEQ2IJwUHhciY
+      short-id: 6aa2d2e950441a9a
+    client-fingerprint: chrome
+  - name: 🇳🇱Нидерланды
+    type: vless
+    server: 89.23.103.179
+    port: 444
+    network: tcp
+    udp: true
+    uuid: 810cc03f-6fa5-44f2-9fe3-520c0e31bd2b
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: netherland2.bober.ac
+    reality-opts:
+      public-key: zzOgjGFuHKRfxCQ2VOM55gzgW4jtsrqCXbbERwNyC0E
+      short-id: 6aa2d2e950441a9a
+    client-fingerprint: chrome
+  - name: 🇵🇱Польша 2
+    type: vless
+    server: 95.85.255.141
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 810cc03f-6fa5-44f2-9fe3-520c0e31bd2b
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: polandcent.bober.ac
+    reality-opts:
+      public-key: CQCwXQ19XuyW_X2eDGZt1Ztirxgi9eaGwF9Yv6cyrEA
+      short-id: 6aa2d2e950441a9a
+    client-fingerprint: chrome
+  - name: 🇵🇱Польша GRPC
+    type: vless
+    server: 144.31.1.29
+    port: 444
+    network: grpc
+    udp: true
+    uuid: 810cc03f-6fa5-44f2-9fe3-520c0e31bd2b
+    packet-encoding: xudp
+    tls: true
+    servername: poland.bober.ac
+    reality-opts:
+      public-key: VmZIg6MyMG7dQS-tRQGNFE_aW8L2diE-QnoJx1RsWAA
+      short-id: b2a6e3d42f05c3d1
+    grpc-opts:
+      grpc-service-name: ""
+    client-fingerprint: chrome
+  - name: 🇷🇺Россия
+    type: vless
+    server: 2.56.178.129
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 810cc03f-6fa5-44f2-9fe3-520c0e31bd2b
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: russia.bober.ac
+    reality-opts:
+      public-key: gJEx8cVsyBdpRhPFKo1WZcrG1Y-dfgVbPmNqF2QxUzM
+      short-id: 6aa2d2e950441a9a
+    client-fingerprint: chrome
+  - name: 🇦🇱Албания (нет рекламы)
+    type: vless
+    server: 45.82.13.212
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 810cc03f-6fa5-44f2-9fe3-520c0e31bd2b
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: albania.bober.ac
+    reality-opts:
+      public-key: hduZ6uOZ6BY5sQqu-p3Djw-Q6uRWIFOA7KUluTWc5yc
+      short-id: 6aa2d2e950441a9a
+    client-fingerprint: chrome
+  - name: 🇦🇱Албания (нет рекламы) GRPC
+    type: vless
+    server: 45.82.13.212
+    port: 444
+    network: grpc
+    udp: true
+    uuid: 810cc03f-6fa5-44f2-9fe3-520c0e31bd2b
+    packet-encoding: xudp
+    tls: true
+    servername: albania.bober.ac
+    reality-opts:
+      public-key: HnpGrSm40W5hwX02xXfXJxuGrzSuFtG5Z-sj35bQ9UU
+      short-id: b2a6e3d42f05c3d1
+    grpc-opts:
+      grpc-service-name: ""
+    client-fingerprint: qq
+  - name: 🇺🇸США 2
+    type: vless
+    server: 103.35.188.148
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 810cc03f-6fa5-44f2-9fe3-520c0e31bd2b
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: ufousa.bober.ac
+    reality-opts:
+      public-key: MTrj712zZml-bSgNJkuRCr3zT4teZLu5MwrvkMH9Ugo
+      short-id: 6aa2d2e950441a9a
+    client-fingerprint: chrome
+  - name: 🇷🇺Мобильная сеть обходы
+    type: vless
+    server: 51.250.78.186
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 810cc03f-6fa5-44f2-9fe3-520c0e31bd2b
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: max.ru
+    reality-opts:
+      public-key: Ew5a5rNW0ZLY9s4xnI3iZHbNLw2I21bp_kwa5poLcDU
+      short-id: b2a6e3d42f05c3d1
+    client-fingerprint: random
+  - name: 🇷🇺Мобильная сеть 2 обходы
+    type: vless
+    server: 51.250.78.186
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 810cc03f-6fa5-44f2-9fe3-520c0e31bd2b
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: ok.ru
+    reality-opts:
+      public-key: xi3l_p92f9aRq10Pdkz_BaFfP69BNE0UEdPol-rRJDc
+      short-id: b2a6e3d42f05c3d1
+    client-fingerprint: chrome
+proxy-groups:
+  - name: → Remnawave
+    type: select
+    proxies:
+      - 🇸🇪Швеция
+      - 🇫🇮Финляндия
+      - 🇵🇱Польша
+      - 🇩🇪Германия
+      - 🇪🇪 Эстония
+      - 🇳🇱Нидерланды
+      - 🇵🇱Польша 2
+      - 🇵🇱Польша GRPC
+      - 🇷🇺Россия
+      - 🇦🇱Албания (нет рекламы)
+      - 🇦🇱Албания (нет рекламы) GRPC
+      - 🇺🇸США 2
+      - 🇷🇺Мобильная сеть обходы
+      - 🇷🇺Мобильная сеть 2 обходы
+rules:
+  - MATCH,→ Remnawave
