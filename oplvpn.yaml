@@ -1,0 +1,775 @@
+mode: Global
+port: 7890
+proxies:
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇪🇪🚀 opl-[Эстония3]
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: ee3.srv.oplcdn.top
+  servername: ign.dev
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇳🇱 opl-[Нидерланды2]
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: nl2dr.oplcdn.link
+  servername: ign.dev
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇳🇱 opl-[RU->Нидерланды2]
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: nl2.srv.rusrv.top
+  servername: ign.dev
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇳🇱 UMB-[Нидерланды8]
+  network: tcp
+  port: 6443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: nl8.srv.oplcdn.top
+  servername: debug.resolvertest.doh.umbrella.com
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇳🇱 opl-[Нидерланды7]
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: nl7.srv.oplcdn.top
+  servername: ign.dev
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇫🇮🚀🚯 opl-[Финляндия] [YTnoAds]
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: fi.srv.cdnopl.link
+  servername: ign.dev
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇩🇪 opl-[Германия2]
+  network: tcp
+  port: 9443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: de2.srv.cdnopl.link
+  servername: ign.dev
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇱🇹🚀 opl-[Литва]
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: lt.srv.casrv.link
+  servername: ign.dev
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇵🇱 opl-[Польша]
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: 144.31.1.249
+  servername: ign.dev
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇳🇱 opl-[Нидерланды6]
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: 208.70.218.77
+  servername: ign.dev
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇳🇱🚯 opl-[Нидерланды5] [YTnoAds]
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: 165.140.119.117
+  servername: ign.dev
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇫🇮🚀🚯 opl-[Финляндия2] [YTnoAds]
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: fi2.srv.cdnopl.link
+  servername: ign.dev
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇪🇪🚀 opl-[Эстония2]
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: ee2.srv.cdnopl.link
+  servername: ign.dev
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇫🇮🚯 opl-[Финляндия3] [YTnoAds]
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: fi3.srv.cdnopl.link
+  servername: ign.dev
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇷🇺🚀🚯 opl-[Москва] [YTnoAds]
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: msk.ru.srv.rucdn.link
+  servername: ign.dev
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇷🇺🚀🚯 opl-[Москва2] [🇯🇵 GEO] [YTnoAds]
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: ru2.srv.rusrv.top
+  servername: ign.dev
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇷🇺🚯 opl-[Новосибирск] [YTnoAds]
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: nsk.ru.srv.rucdn.link
+  servername: ign.dev
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇷🇺🚀🚯 opl-[СПб] [YTnoAds]
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: spb.ru.srv.rucdn.link
+  servername: ign.dev
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇩🇪🐢 opl-[Германия]
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: de.srv.cdnopl.link
+  servername: ign.dev
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇳🇱🐢 opl-[Нидерланды4]
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: nl4.srv.cdnopl.link
+  servername: ign.dev
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇳🇱 opl-[Нидерланды]
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: 185.184.121.57
+  servername: ign.dev
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇳🇱 opl-[Нидерланды3]
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: nl3.srv.cdnopl.link
+  servername: ign.dev
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇬🇧 opl-[Великобритания2] [🇮🇪 GEO]
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: 31.57.56.196
+  servername: ign.dev
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇨🇭 opl-[Швейцария]
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: 45.141.119.180
+  servername: ign.dev
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇨🇦 opl-[Канада]
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: ca.srv.casrv.link
+  servername: ign.dev
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇺🇸 opl-[США-NY]
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: ny.us.srv.rusrv.top
+  servername: ign.dev
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇺🇸 opl-[США-NJ]
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: nj.us.srv.cdnopl.link
+  servername: ign.dev
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇺🇸 opl-[США-NYC]
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: nyc.us.srv.cdnopl.link
+  servername: ign.dev
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇺🇸 opl-[США-WA]
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: wa.us.srv.cdnopl.link
+  servername: ign.dev
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇺🇸 opl-[США-TX]
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: tx.us.srv.cdnopl.link
+  servername: ign.dev
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇺🇸🐢 opl-[США-CA]
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: ca.us.srv.cdnopl.link
+  servername: ign.dev
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇯🇵 opl-[Япония4]
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: jp4.srv.cdnopl.link
+  servername: ign.dev
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇯🇵 opl-[Владивосток->Япония4]
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: rujp.srv.rusrv.top
+  servername: ign.dev
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇯🇵🐢 opl-[Япония]
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: jp.srv.cdnopl.link
+  servername: ign.dev
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇯🇵🐢 opl-[Япония2]
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: jp2.srv.cdnopl.link
+  servername: ign.dev
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇮🇳 opl-[Индия]
+  network: tcp
+  port: 2443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: al.srv.oplcdn.top
+  servername: ign.dev
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇹🇷 opl-[Турция]
+  network: tcp
+  port: 1443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: 45.139.185.58
+  servername: ign.dev
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇫🇮🚀 UMB-[Финляндия]
+  network: tcp
+  port: 6443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: fi.srv.cdnopl.link
+  servername: debug.resolvertest.doh.umbrella.com
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇫🇮🚀 UMB-[Финляндия2]
+  network: tcp
+  port: 6443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: fi2.srv.cdnopl.link
+  servername: debug.resolvertest.doh.umbrella.com
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇳🇱 UMB-[Нидерланды5]
+  network: tcp
+  port: 6443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: 165.140.119.117
+  servername: debug.resolvertest.doh.umbrella.com
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇳🇱 UMB-[Нидерланды6]
+  network: tcp
+  port: 6443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: 208.70.218.50
+  servername: debug.resolvertest.doh.umbrella.com
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇵🇱 UMB-[Польша]
+  network: tcp
+  port: 6443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: 144.31.1.249
+  servername: debug.resolvertest.doh.umbrella.com
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇪🇪🚀 EMPTY-[Эстония2]
+  network: tcp
+  port: 7443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: ee2.srv.cdnopl.link
+  servername: 77.88.8.8
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇷🇺🚀🚯 EMPTY-[Москва] [YTnoAds]
+  network: tcp
+  port: 7443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: msk.ru.srv.rucdn.link
+  servername: 77.88.8.8
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🇨🇦 EMPTY-[Канада]
+  network: tcp
+  port: 7443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: ca.srv.casrv.link
+  servername: 77.88.8.8
+  tcp-opts:
+    ip-version: dual
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
+rules: []
+proxy-groups:
+- name: ♻️ Automatic
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇪🇪🚀 opl-[Эстония3]
+  - 🇳🇱 opl-[Нидерланды2]
+  - 🇳🇱 opl-[RU->Нидерланды2]
+  - 🇳🇱 UMB-[Нидерланды8]
+  - 🇳🇱 opl-[Нидерланды7]
+  - 🇫🇮🚀🚯 opl-[Финляндия] [YTnoAds]
+  - 🇩🇪 opl-[Германия2]
+  - 🇱🇹🚀 opl-[Литва]
+  - 🇵🇱 opl-[Польша]
+  - 🇳🇱 opl-[Нидерланды6]
+  - 🇳🇱🚯 opl-[Нидерланды5] [YTnoAds]
+  - 🇫🇮🚀🚯 opl-[Финляндия2] [YTnoAds]
+  - 🇪🇪🚀 opl-[Эстония2]
+  - 🇫🇮🚯 opl-[Финляндия3] [YTnoAds]
+  - 🇷🇺🚀🚯 opl-[Москва] [YTnoAds]
+  - 🇷🇺🚀🚯 opl-[Москва2] [🇯🇵 GEO] [YTnoAds]
+  - 🇷🇺🚯 opl-[Новосибирск] [YTnoAds]
+  - 🇷🇺🚀🚯 opl-[СПб] [YTnoAds]
+  - 🇩🇪🐢 opl-[Германия]
+  - 🇳🇱🐢 opl-[Нидерланды4]
+  - 🇳🇱 opl-[Нидерланды]
+  - 🇳🇱 opl-[Нидерланды3]
+  - 🇬🇧 opl-[Великобритания2] [🇮🇪 GEO]
+  - 🇨🇭 opl-[Швейцария]
+  - 🇨🇦 opl-[Канада]
+  - 🇺🇸 opl-[США-NY]
+  - 🇺🇸 opl-[США-NJ]
+  - 🇺🇸 opl-[США-NYC]
+  - 🇺🇸 opl-[США-WA]
+  - 🇺🇸 opl-[США-TX]
+  - 🇺🇸🐢 opl-[США-CA]
+  - 🇯🇵 opl-[Япония4]
+  - 🇯🇵 opl-[Владивосток->Япония4]
+  - 🇯🇵🐢 opl-[Япония]
+  - 🇯🇵🐢 opl-[Япония2]
+  - 🇮🇳 opl-[Индия]
+  - 🇹🇷 opl-[Турция]
+  - 🇫🇮🚀 UMB-[Финляндия]
+  - 🇫🇮🚀 UMB-[Финляндия2]
+  - 🇳🇱 UMB-[Нидерланды5]
+  - 🇳🇱 UMB-[Нидерланды6]
+  - 🇵🇱 UMB-[Польша]
+  - 🇪🇪🚀 EMPTY-[Эстония2]
+  - 🇷🇺🚀🚯 EMPTY-[Москва] [YTnoAds]
+  - 🇨🇦 EMPTY-[Канада]
