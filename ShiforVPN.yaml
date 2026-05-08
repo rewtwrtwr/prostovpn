@@ -49,19 +49,289 @@ dns:
     - "*.ipv6.microsoft.com"
     - speedtest.cros.wr.pvp.net
 proxies:
-  - name: ‼️Приложение не поддерживается.
-    type: vless
-    server: 0.0.0.0
-    port: 1
+  - name: ⚡⚡ Самый быстрый | Авто
+    type: ss
+    server: web.max.ru
+    port: 1234
     network: tcp
     udp: true
-    uuid: 00000000-0000-0000-0000-000000000000
+    password: ZWeGW869d7jrgfPt_3wSDASAxXetnrfB
+    cipher: chacha20-ietf-poly1305
+    udp-over-tcp: false
+    udp-over-tcp-version: 1
+    client-fingerprint: chrome
+  - name: 🛡️ Shifor | Обход блокировок
+    type: vless
+    server: shifor.live
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 54a6a813-2677-46e3-9e6e-a78a60ffb706
     packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloudflare.com
+    reality-opts:
+      public-key: PZeIaMJF01u_7wFj3E3NN1wW_8sV1NzC59CnLTTMvzM
+      short-id: 6ba85179e30d4fc2
+    client-fingerprint: chrome
+  - name: ⚡ Shifor | Быстрые 10 Гбит
+    type: ss
+    server: shifor.live
+    port: 1234
+    network: tcp
+    udp: true
+    password: ZWeGW869d7jrgfPt_3wSDASAxXetnrfB
+    cipher: chacha20-ietf-poly1305
+    udp-over-tcp: false
+    udp-over-tcp-version: 1
+    client-fingerprint: chrome
+  - name: 🇩🇪 Германия | Frankfurt
+    type: vless
+    server: de01.shifor.live
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 54a6a813-2677-46e3-9e6e-a78a60ffb706
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloudflare.com
+    reality-opts:
+      public-key: PZeIaMJF01u_7wFj3E3NN1wW_8sV1NzC59CnLTTMvzM
+      short-id: 6ba85179e30d4fc2
+    client-fingerprint: chrome
+  - name: "🇩🇪 Германия | Frankfurt #2"
+    type: vless
+    server: de01.shifor.live
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 54a6a813-2677-46e3-9e6e-a78a60ffb706
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloudflare.com
+    reality-opts:
+      public-key: PZeIaMJF01u_7wFj3E3NN1wW_8sV1NzC59CnLTTMvzM
+      short-id: 6ba85179e30d4fc2
+    client-fingerprint: chrome
+  - name: 🇳🇱 Нидерланды | Amsterdam
+    type: vless
+    server: nl01.shifor.live
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 54a6a813-2677-46e3-9e6e-a78a60ffb706
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloudflare.com
+    reality-opts:
+      public-key: PZeIaMJF01u_7wFj3E3NN1wW_8sV1NzC59CnLTTMvzM
+      short-id: 6ba85179e30d4fc2
+    client-fingerprint: chrome
+  - name: "🇳🇱 Нидерланды | Amsterdam #2"
+    type: vless
+    server: nl01.shifor.live
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 54a6a813-2677-46e3-9e6e-a78a60ffb706
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloudflare.com
+    reality-opts:
+      public-key: PZeIaMJF01u_7wFj3E3NN1wW_8sV1NzC59CnLTTMvzM
+      short-id: 6ba85179e30d4fc2
+    client-fingerprint: chrome
+  - name: "🇳🇱 Нидерланды | Amsterdam #3"
+    type: vless
+    server: nl01.shifor.live
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 54a6a813-2677-46e3-9e6e-a78a60ffb706
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloudflare.com
+    reality-opts:
+      public-key: PZeIaMJF01u_7wFj3E3NN1wW_8sV1NzC59CnLTTMvzM
+      short-id: 6ba85179e30d4fc2
+    client-fingerprint: chrome
+  - name: 🇳🇱 NL-02 | Резервный обход
+    type: vless
+    server: nl02.shifor.live
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 54a6a813-2677-46e3-9e6e-a78a60ffb706
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloudflare.com
+    reality-opts:
+      public-key: PZeIaMJF01u_7wFj3E3NN1wW_8sV1NzC59CnLTTMvzM
+      short-id: 6ba85179e30d4fc2
+    client-fingerprint: chrome
+  - name: 🇵🇱 Польша | Warsaw
+    type: vless
+    server: pl01.shifor.live
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 54a6a813-2677-46e3-9e6e-a78a60ffb706
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloudflare.com
+    reality-opts:
+      public-key: PZeIaMJF01u_7wFj3E3NN1wW_8sV1NzC59CnLTTMvzM
+      short-id: 6ba85179e30d4fc2
+    client-fingerprint: chrome
+  - name: "🇵🇱 Польша | Warsaw #2"
+    type: vless
+    server: pl01.shifor.live
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 54a6a813-2677-46e3-9e6e-a78a60ffb706
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloudflare.com
+    reality-opts:
+      public-key: PZeIaMJF01u_7wFj3E3NN1wW_8sV1NzC59CnLTTMvzM
+      short-id: 6ba85179e30d4fc2
+    client-fingerprint: chrome
+  - name: 🇫🇮 Финляндия | Helsinki
+    type: vless
+    server: fl01.shifor.live
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 54a6a813-2677-46e3-9e6e-a78a60ffb706
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloudflare.com
+    reality-opts:
+      public-key: PZeIaMJF01u_7wFj3E3NN1wW_8sV1NzC59CnLTTMvzM
+      short-id: 6ba85179e30d4fc2
+    client-fingerprint: chrome
+  - name: "🇫🇮 Финляндия | Helsinki #2"
+    type: vless
+    server: fl01.shifor.live
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 54a6a813-2677-46e3-9e6e-a78a60ffb706
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloudflare.com
+    reality-opts:
+      public-key: PZeIaMJF01u_7wFj3E3NN1wW_8sV1NzC59CnLTTMvzM
+      short-id: 6ba85179e30d4fc2
+    client-fingerprint: chrome
+  - name: 🇸🇪 Швеция | Stockholm
+    type: vless
+    server: swe01.shifor.live
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 54a6a813-2677-46e3-9e6e-a78a60ffb706
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloudflare.com
+    reality-opts:
+      public-key: PZeIaMJF01u_7wFj3E3NN1wW_8sV1NzC59CnLTTMvzM
+      short-id: 6ba85179e30d4fc2
+    client-fingerprint: chrome
+  - name: 🇨🇭 Швейцария | Zurich
+    type: vless
+    server: ch01.shifor.live
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 54a6a813-2677-46e3-9e6e-a78a60ffb706
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloudflare.com
+    reality-opts:
+      public-key: PZeIaMJF01u_7wFj3E3NN1wW_8sV1NzC59CnLTTMvzM
+      short-id: 6ba85179e30d4fc2
+    client-fingerprint: chrome
+  - name: 🇬🇧 Великобритания | London
+    type: vless
+    server: uk01.shifor.live
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 54a6a813-2677-46e3-9e6e-a78a60ffb706
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloudflare.com
+    reality-opts:
+      public-key: PZeIaMJF01u_7wFj3E3NN1wW_8sV1NzC59CnLTTMvzM
+      short-id: 6ba85179e30d4fc2
+    client-fingerprint: chrome
+  - name: 🇺🇸 США | New York
+    type: vless
+    server: us01.shifor.live
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 54a6a813-2677-46e3-9e6e-a78a60ffb706
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloudflare.com
+    reality-opts:
+      public-key: PZeIaMJF01u_7wFj3E3NN1wW_8sV1NzC59CnLTTMvzM
+      short-id: 6ba85179e30d4fc2
+    client-fingerprint: chrome
+  - name: "🇺🇸 США | New York #2"
+    type: vless
+    server: us01.shifor.live
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 54a6a813-2677-46e3-9e6e-a78a60ffb706
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloudflare.com
+    reality-opts:
+      public-key: PZeIaMJF01u_7wFj3E3NN1wW_8sV1NzC59CnLTTMvzM
+      short-id: 6ba85179e30d4fc2
     client-fingerprint: chrome
 proxy-groups:
   - name: ⚡ ShiforVPN
     type: select
     proxies:
-      - ‼️Приложение не поддерживается.
+      - ⚡⚡ Самый быстрый | Авто
+      - 🛡️ Shifor | Обход блокировок
+      - ⚡ Shifor | Быстрые 10 Гбит
+      - 🇩🇪 Германия | Frankfurt
+      - "🇩🇪 Германия | Frankfurt #2"
+      - 🇳🇱 Нидерланды | Amsterdam
+      - "🇳🇱 Нидерланды | Amsterdam #2"
+      - "🇳🇱 Нидерланды | Amsterdam #3"
+      - 🇳🇱 NL-02 | Резервный обход
+      - 🇵🇱 Польша | Warsaw
+      - "🇵🇱 Польша | Warsaw #2"
+      - 🇫🇮 Финляндия | Helsinki
+      - "🇫🇮 Финляндия | Helsinki #2"
+      - 🇸🇪 Швеция | Stockholm
+      - 🇨🇭 Швейцария | Zurich
+      - 🇬🇧 Великобритания | London
+      - 🇺🇸 США | New York
+      - "🇺🇸 США | New York #2"
 rules:
   - MATCH,⚡ ShiforVPN
