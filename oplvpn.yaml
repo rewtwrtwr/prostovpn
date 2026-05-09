@@ -3,7 +3,7 @@ port: 7890
 proxies:
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: 🇪🇪🚀 opl-[Эстония3]
+  name: 🇪🇪🚀🚯 opl-[Эстония3] [YTnoAds]
   network: tcp
   port: 8443
   reality-opts:
@@ -696,7 +696,7 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪🚀 opl-[Эстония3]
+  - 🇪🇪🚀🚯 opl-[Эстония3] [YTnoAds]
   - 🇳🇱 opl-[Нидерланды2]
   - 🇳🇱 opl-[RU->Нидерланды2]
   - 🇳🇱 UMB-[Нидерланды8]
