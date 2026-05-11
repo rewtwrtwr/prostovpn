@@ -75,6 +75,21 @@ proxies:
       public-key: PZeIaMJF01u_7wFj3E3NN1wW_8sV1NzC59CnLTTMvzM
       short-id: 6ba85179e30d4fc2
     client-fingerprint: chrome
+  - name: "🇷🇺 LTE Обход #1 → NL (NEW)"
+    type: vless
+    server: ru.shifor.live
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 54a6a813-2677-46e3-9e6e-a78a60ffb706
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: api-maps.yandex.ru
+    reality-opts:
+      public-key: Axb0un2Dktl_CML4WpXx8VKQ_OMr0vCE-RYwWr6z9X4
+      short-id: ""
+    client-fingerprint: chrome
   - name: ⚡ Shifor | Быстрые 10 Гбит
     type: ss
     server: shifor.live
@@ -317,6 +332,7 @@ proxy-groups:
     proxies:
       - ⚡⚡ Самый быстрый | Авто
       - 🛡️ Shifor | Обход блокировок
+      - "🇷🇺 LTE Обход #1 → NL (NEW)"
       - ⚡ Shifor | Быстрые 10 Гбит
       - 🇩🇪 Германия | Frankfurt
       - "🇩🇪 Германия | Frankfurt #2"
