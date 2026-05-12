@@ -90,6 +90,21 @@ proxies:
       public-key: Axb0un2Dktl_CML4WpXx8VKQ_OMr0vCE-RYwWr6z9X4
       short-id: ""
     client-fingerprint: chrome
+  - name: "🇷🇺 LTE Обход #2 → NL"
+    type: vless
+    server: ru.shifor.live
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 54a6a813-2677-46e3-9e6e-a78a60ffb706
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: api-maps.yandex.ru
+    reality-opts:
+      public-key: Axb0un2Dktl_CML4WpXx8VKQ_OMr0vCE-RYwWr6z9X4
+      short-id: ""
+    client-fingerprint: chrome
   - name: ⚡ Shifor | Быстрые 10 Гбит
     type: ss
     server: shifor.live
@@ -118,7 +133,7 @@ proxies:
     client-fingerprint: chrome
   - name: "🇩🇪 Германия | Frankfurt #2"
     type: vless
-    server: de01.shifor.live
+    server: de02.shifor.live
     port: 443
     network: tcp
     udp: true
@@ -164,21 +179,6 @@ proxies:
   - name: "🇳🇱 Нидерланды | Amsterdam #3"
     type: vless
     server: nl01.shifor.live
-    port: 443
-    network: tcp
-    udp: true
-    uuid: 54a6a813-2677-46e3-9e6e-a78a60ffb706
-    packet-encoding: xudp
-    flow: xtls-rprx-vision
-    tls: true
-    servername: cloudflare.com
-    reality-opts:
-      public-key: PZeIaMJF01u_7wFj3E3NN1wW_8sV1NzC59CnLTTMvzM
-      short-id: 6ba85179e30d4fc2
-    client-fingerprint: chrome
-  - name: 🇳🇱 NL-02 | Резервный обход
-    type: vless
-    server: nl02.shifor.live
     port: 443
     network: tcp
     udp: true
@@ -238,7 +238,7 @@ proxies:
     client-fingerprint: chrome
   - name: "🇫🇮 Финляндия | Helsinki #2"
     type: vless
-    server: fl01.shifor.live
+    server: fl02.shifor.live
     port: 443
     network: tcp
     udp: true
@@ -333,13 +333,13 @@ proxy-groups:
       - ⚡⚡ Самый быстрый | Авто
       - 🛡️ Shifor | Обход блокировок
       - "🇷🇺 LTE Обход #1 → NL (NEW)"
+      - "🇷🇺 LTE Обход #2 → NL"
       - ⚡ Shifor | Быстрые 10 Гбит
       - 🇩🇪 Германия | Frankfurt
       - "🇩🇪 Германия | Frankfurt #2"
       - 🇳🇱 Нидерланды | Amsterdam
       - "🇳🇱 Нидерланды | Amsterdam #2"
       - "🇳🇱 Нидерланды | Amsterdam #3"
-      - 🇳🇱 NL-02 | Резервный обход
       - 🇵🇱 Польша | Warsaw
       - "🇵🇱 Польша | Warsaw #2"
       - 🇫🇮 Финляндия | Helsinki
