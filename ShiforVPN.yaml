@@ -71,6 +71,17 @@ proxies:
     udp-over-tcp: false
     udp-over-tcp-version: 1
     client-fingerprint: chrome
+  - name: ⚡ Shifor | Обход внизу списка 👇🏻
+    type: ss
+    server: shifor.live
+    port: 1234
+    network: tcp
+    udp: true
+    password: ZWeGW869d7jrgfPt_3wSDASAxXetnrfB
+    cipher: chacha20-ietf-poly1305
+    udp-over-tcp: false
+    udp-over-tcp-version: 1
+    client-fingerprint: chrome
   - name: 🇩🇪 Германия | Frankfurt
     type: vless
     server: de01.shifor.live
@@ -358,6 +369,7 @@ proxy-groups:
     proxies:
       - ⚡⚡ Самый быстрый | Авто
       - ⚡ Shifor | Быстрые 10 Гбит
+      - ⚡ Shifor | Обход внизу списка 👇🏻
       - 🇩🇪 Германия | Frankfurt
       - "🇩🇪 Германия | Frankfurt #2"
       - 🇳🇱 Нидерланды | Amsterdam
