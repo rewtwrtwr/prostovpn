@@ -49,39 +49,6 @@ dns:
     - "*.ipv6.microsoft.com"
     - speedtest.cros.wr.pvp.net
 proxies:
-  - name: ⚡⚡ Самый быстрый | Авто
-    type: ss
-    server: web.max.ru
-    port: 1234
-    network: tcp
-    udp: true
-    password: ZWeGW869d7jrgfPt_3wSDASAxXetnrfB
-    cipher: chacha20-ietf-poly1305
-    udp-over-tcp: false
-    udp-over-tcp-version: 1
-    client-fingerprint: chrome
-  - name: ⚡ Shifor | Быстрые 10 Гбит
-    type: ss
-    server: shifor.live
-    port: 1234
-    network: tcp
-    udp: true
-    password: ZWeGW869d7jrgfPt_3wSDASAxXetnrfB
-    cipher: chacha20-ietf-poly1305
-    udp-over-tcp: false
-    udp-over-tcp-version: 1
-    client-fingerprint: chrome
-  - name: ⚡ Shifor | Обход внизу списка 👇🏻
-    type: ss
-    server: shifor.live
-    port: 1234
-    network: tcp
-    udp: true
-    password: ZWeGW869d7jrgfPt_3wSDASAxXetnrfB
-    cipher: chacha20-ietf-poly1305
-    udp-over-tcp: false
-    udp-over-tcp-version: 1
-    client-fingerprint: chrome
   - name: 🇩🇪 Германия | Frankfurt
     type: vless
     server: de01.shifor.live
@@ -322,17 +289,6 @@ proxies:
       public-key: PZeIaMJF01u_7wFj3E3NN1wW_8sV1NzC59CnLTTMvzM
       short-id: 6ba85179e30d4fc2
     client-fingerprint: chrome
-  - name: 🛡️  Обход блокировок | Авто
-    type: ss
-    server: shifor.live
-    port: 1234
-    network: tcp
-    udp: true
-    password: ZWeGW869d7jrgfPt_3wSDASAxXetnrfB
-    cipher: chacha20-ietf-poly1305
-    udp-over-tcp: false
-    udp-over-tcp-version: 1
-    client-fingerprint: chrome
   - name: "🇷🇺 LTE Обход #1 → NL (NEW)"
     type: vless
     server: ru.shifor.live
@@ -369,7 +325,7 @@ proxy-groups:
     proxies:
       - ⚡⚡ Самый быстрый | Авто
       - ⚡ Shifor | Быстрые 10 Гбит
-      - ⚡ Shifor | Обход внизу списка 👇🏻
+      - 🛡️ Обход блокировок | Авто
       - 🇩🇪 Германия | Frankfurt
       - "🇩🇪 Германия | Frankfurt #2"
       - 🇳🇱 Нидерланды | Amsterdam
@@ -386,8 +342,33 @@ proxy-groups:
       - 🇺🇸 США | New York
       - "🇺🇸 США | New York #2"
       - 🇰🇿 Казахстан | Astana
-      - 🛡️  Обход блокировок | Авто
       - "🇷🇺 LTE Обход #1 → NL (NEW)"
       - "🇷🇺 LTE Обход #2 → NL"
+  - name: ⚡⚡ Самый быстрый | Авто
+    type: url-test
+    lazy: true
+    tolerance: 80
+    url: https://cp.cloudflare.com/generate_204
+    interval: 300
+    include-all: true
+    exclude-filter: ^🇷🇺 LTE Обход
+    proxies: []
+  - name: ⚡ Shifor | Быстрые 10 Гбит
+    type: load-balance
+    lazy: true
+    strategy: consistent-hashing
+    url: https://cp.cloudflare.com/generate_204
+    interval: 300
+    include-all: true
+    exclude-filter: ^🇷🇺 LTE Обход
+    proxies: []
+  - name: 🛡️ Обход блокировок | Авто
+    type: fallback
+    lazy: true
+    url: https://cp.cloudflare.com/generate_204
+    interval: 300
+    include-all: true
+    filter: ^🇷🇺 LTE Обход
+    proxies: []
 rules:
   - MATCH,⚡ ShiforVPN
