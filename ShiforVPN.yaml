@@ -49,6 +49,21 @@ dns:
     - "*.ipv6.microsoft.com"
     - speedtest.cros.wr.pvp.net
 proxies:
+  - name: 🇦🇱 Албания | Tirana | YT БЕЗ РЕКЛАМЫ
+    type: vless
+    server: al01.shifor.live
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 54a6a813-2677-46e3-9e6e-a78a60ffb706
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloudflare.com
+    reality-opts:
+      public-key: PZeIaMJF01u_7wFj3E3NN1wW_8sV1NzC59CnLTTMvzM
+      short-id: 6ba85179e30d4fc2
+    client-fingerprint: chrome
   - name: 🇩🇪 Германия | Frankfurt
     type: vless
     server: de01.shifor.live
@@ -124,6 +139,36 @@ proxies:
       public-key: PZeIaMJF01u_7wFj3E3NN1wW_8sV1NzC59CnLTTMvzM
       short-id: 6ba85179e30d4fc2
     client-fingerprint: chrome
+  - name: 🇹🇷 Турция | Istanbul
+    type: vless
+    server: tr01.shifor.live
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 54a6a813-2677-46e3-9e6e-a78a60ffb706
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloudflare.com
+    reality-opts:
+      public-key: PZeIaMJF01u_7wFj3E3NN1wW_8sV1NzC59CnLTTMvzM
+      short-id: 6ba85179e30d4fc2
+    client-fingerprint: chrome
+  - name: 🇰🇬 Кыргызстан | Bishkek
+    type: vless
+    server: kg01.shifor.live
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 54a6a813-2677-46e3-9e6e-a78a60ffb706
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloudflare.com
+    reality-opts:
+      public-key: PZeIaMJF01u_7wFj3E3NN1wW_8sV1NzC59CnLTTMvzM
+      short-id: 6ba85179e30d4fc2
+    client-fingerprint: chrome
   - name: 🇵🇱 Польша | Warsaw
     type: vless
     server: pl01.shifor.live
@@ -142,6 +187,21 @@ proxies:
   - name: "🇵🇱 Польша | Warsaw #2"
     type: vless
     server: pl01.shifor.live
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 54a6a813-2677-46e3-9e6e-a78a60ffb706
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloudflare.com
+    reality-opts:
+      public-key: PZeIaMJF01u_7wFj3E3NN1wW_8sV1NzC59CnLTTMvzM
+      short-id: 6ba85179e30d4fc2
+    client-fingerprint: chrome
+  - name: "🇵🇱 Польша | Warsaw #3"
+    type: vless
+    server: pl02.shifor.live
     port: 443
     network: tcp
     udp: true
@@ -326,13 +386,17 @@ proxy-groups:
       - ⚡⚡ Самый быстрый | Авто
       - ⚡ Shifor | Быстрые 10 Гбит
       - 🛡️ Обход блокировок | Авто
+      - 🇦🇱 Албания | Tirana | YT БЕЗ РЕКЛАМЫ
       - 🇩🇪 Германия | Frankfurt
       - "🇩🇪 Германия | Frankfurt #2"
       - 🇳🇱 Нидерланды | Amsterdam
       - "🇳🇱 Нидерланды | Amsterdam #2"
       - "🇳🇱 Нидерланды | Amsterdam #3"
+      - 🇹🇷 Турция | Istanbul
+      - 🇰🇬 Кыргызстан | Bishkek
       - 🇵🇱 Польша | Warsaw
       - "🇵🇱 Польша | Warsaw #2"
+      - "🇵🇱 Польша | Warsaw #3"
       - 🇫🇮 Финляндия | Helsinki
       - "🇫🇮 Финляндия | Helsinki #2"
       - 🇸🇪 Швеция | Stockholm
