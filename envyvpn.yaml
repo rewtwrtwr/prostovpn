@@ -1,0 +1,309 @@
+mixed-port: 7893
+allow-lan: false
+mode: rule
+log-level: silent
+ipv6: true
+unified-delay: true
+tcp-concurrent: true
+global-client-fingerprint: chrome
+find-process-mode: strict
+
+dns:
+  enable: true
+  ipv6: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.local"
+  default-nameserver:
+    - 8.8.8.8
+    - 1.1.1.1
+  nameserver:
+    - https://dns.google/dns-query
+    - https://cloudflare-dns.com/dns-query
+
+proxies:
+  - name: "🇱🇻Белые списки #1 (1.5гб)"
+    type: vless
+    server: "lv.envy0xc0.com"
+    port: 444
+    uuid: "59233f7d-22e2-41f5-b5e0-1be14cc076fe"
+    udp: true
+    network: grpc
+    tls: true
+    servername: "vk.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "TbLEmRD4MaDdPRA-_OQOub6fZ_tej5JDe2ZzI9YdjVM"
+      short-id: "c5"
+  - name: "🇱🇻⚡️Латвия, Рига (1.5гб)"
+    type: vless
+    server: "lv.envy0xc0.com"
+    port: 8443
+    uuid: "0967dc79-02ed-471b-a30e-3c3f21e9d02c"
+    udp: true
+    network: tcp
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "lv.envy0xc0.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "73s_RlnOY0eJBUiyughkTaKd92tWR7kKydUKJ5lG6GM"
+      short-id: "e877"
+  - name: "🇰🇿Белые списки #2 (1.5гб)"
+    type: vless
+    server: "msk.envy0xc0.com"
+    port: 443
+    uuid: "a7969b12-f77e-4b24-8de5-a5aba9c427d4"
+    udp: true
+    network: xhttp
+  - name: "🇵🇱Белые списки #3 (1.5гб)"
+    type: vless
+    server: "msk2.envy0xc0.com"
+    port: 30472
+    uuid: "f2c0b2b0-7ffb-4a52-bf1b-ed15b03fb884"
+    udp: true
+    network: xhttp
+  - name: "🇺🇸Белые списки #4 (1.5гб)"
+    type: vless
+    server: "msk2.envy0xc0.com"
+    port: 58421
+    uuid: "fd1824cc-f0b4-4430-9920-17f34cdfde86"
+    udp: true
+    network: xhttp
+  - name: "🇹🇷Белые списки #5 (1.5гб)"
+    type: vless
+    server: "msk2.envy0xc0.com"
+    port: 24144
+    uuid: "1ca7d184-e693-4203-be3b-d7726ec1165d"
+    udp: true
+    network: xhttp
+  - name: "🇷🇺Белые списки #6 (1.5гб)"
+    type: vless
+    server: "msk3.envy0xc0.com"
+    port: 56174
+    uuid: "68a7fc38-54d3-4c2d-a3ec-37eb3eb44e7d"
+    udp: true
+    network: xhttp
+  - name: "🇺🇸Белые списки #7 (1.5гб)"
+    type: vless
+    server: "msk3.envy0xc0.com"
+    port: 22394
+    uuid: "c92f9559-e4eb-4a07-a499-855d518005c7"
+    udp: true
+    network: xhttp
+  - name: "🇵🇱Польша, Варшава (1.5гб)"
+    type: vless
+    server: "pl.envy0xc0.com"
+    port: 444
+    uuid: "ac9625e2-df35-4071-b594-6334ba7995a1"
+    udp: true
+    network: grpc
+    tls: true
+    servername: "pl.envy0xc0.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "7JVHb4llX0UHof4eAHr7w0b-LpFi-I3vcaM9xakiIUc"
+      short-id: "e6"
+  - name: "🇵🇱⚡️Польша, Варшава (1.5гб)"
+    type: vless
+    server: "pl.envy0xc0.com"
+    port: 8443
+    uuid: "2831d0fa-1a46-4a63-a9a3-33efee523ff7"
+    udp: true
+    network: tcp
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "pl.envy0xc0.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "HGZfDwqfOY3qsnKE6-DpL-2N0YfMQYKVMnq76poOS3U"
+      short-id: "1aa8a253cb"
+  - name: "🇺🇦Украина, Харьков (1.5гб)"
+    type: vless
+    server: "pl.envy0xc0.com"
+    port: 8444
+    uuid: "7536586a-77d6-499b-b21b-caa0cfa8a61f"
+    udp: true
+    network: tcp
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "pl.envy0xc0.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "Y0iBHuouKOEDTrV_mpFyL_FvxrXnXUlfQyX31OjBblM"
+      short-id: "4d859759"
+  - name: "🇹🇷Турция, Стамбул (1.5гб)"
+    type: vless
+    server: "tr.envy0xc0.com"
+    port: 444
+    uuid: "f197720a-76c7-46cb-ac93-e9f7f513ddbf"
+    udp: true
+    network: grpc
+    tls: true
+    servername: "tr.envy0xc0.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "uJ1AiEhCeUq1x1Jitrw11B0uwK7jDlIePwLzbulbEE8"
+      short-id: "db2829eae2"
+  - name: "🇹🇷⚡️Турция, Стамбул (1.5гб)"
+    type: vless
+    server: "tr.envy0xc0.com"
+    port: 8443
+    uuid: "66cac26a-953b-4388-916b-c5e09058493f"
+    udp: true
+    network: tcp
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "tr.envy0xc0.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "R3wZ5nTFExSe4nV885DOL0tKbXCmZSRl_wkIMm8HgB4"
+      short-id: "9adc4c"
+  - name: "🇺🇦⚡️Украина, Харьков (1.5гб)"
+    type: vless
+    server: "ua.envy0xc0.com"
+    port: 8443
+    uuid: "39375107-be84-4907-b9ab-bfb980235376"
+    udp: true
+    network: tcp
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "ua.envy0xc0.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "PseiSBn_F7MBHYdeuzL_t75Mro4N4Eaj_LaOUIzSIQ4"
+      short-id: "85"
+  - name: "🇰🇿Казахстан, Алматы (1.5гб)"
+    type: vless
+    server: "kz.envy0xc0.com"
+    port: 444
+    uuid: "225708cb-0a2b-405e-9cbb-d35682634bbb"
+    udp: true
+    network: grpc
+    tls: true
+    servername: "kz.envy0xc0.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "J5qgRG4Ct14jR3ionkaiwdzhV0vKfZX6hGFUKy8c-EA"
+      short-id: "c30f02c6"
+  - name: "🇰🇿⚡️Казахстан, Алматы (1.5гб)"
+    type: vless
+    server: "kz.envy0xc0.com"
+    port: 8443
+    uuid: "77bc96fe-34e1-4da1-99c5-d9d3f7237f6c"
+    udp: true
+    network: tcp
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "kz.envy0xc0.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "fvp1NGf09QhT6qzfjtnTZyjg3UA95cKLgng9FnZT0j0"
+      short-id: "945d"
+  - name: "🇺🇸США, Даллас (1.5гб)"
+    type: vless
+    server: "us2.envy0xc0.com"
+    port: 444
+    uuid: "972f81cd-12c4-46f5-b046-36c030d97bee"
+    udp: true
+    network: grpc
+    tls: true
+    servername: "us2.envy0xc0.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "Y_FxcpE0kcs5Q_9D-bPL5cz3bB1_Ly5dpO-Z6sAg6EA"
+      short-id: "bb45eaa3f1"
+  - name: "🇺🇸⚡️США, Даллас (1.5гб)"
+    type: vless
+    server: "us2.envy0xc0.com"
+    port: 8443
+    uuid: "3cd587e9-37fd-4de5-95ba-a3a99154d7f3"
+    udp: true
+    network: tcp
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "us2.envy0xc0.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "3Ej2xnMOPj9JQGa3tqlvzN707XKmBCSyATob45TJhBE"
+      short-id: "a97cf2"
+  - name: "🇸🇪Швеция, Стокгольм (1.5гб)"
+    type: vless
+    server: "se.envy0xc0.com"
+    port: 8443
+    uuid: "b7e9a0ac-b8bc-4d6f-8db1-23c9f509beed"
+    udp: true
+    network: grpc
+    tls: true
+    servername: "se.envy0xc0.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "PrxNVkNDU4q_-lpOshjOwzp08uDR7VbIUvVPMdqfay8"
+      short-id: "2697"
+  - name: "🇸🇪⚡️Швеция, Стокгольм (1.5гб)"
+    type: vless
+    server: "se2.envy0xc0.com"
+    port: 2056
+    uuid: "ced2a45e-8a69-4768-804e-99ef01aabdc8"
+    udp: true
+    network: tcp
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "se2.envy0xc0.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "LZSTFuWxDM4_krGV5M0sPx0skPm5CyHXqasiMj__8m0"
+      short-id: "6793ac7e"
+  - name: "🇹🇷⚡️Тест (1.5гб)"
+    type: vless
+    server: "tr-node.envy0xc0.com"
+    port: 18005
+    uuid: "190708b4-e409-4e48-97fc-b4487f4a439e"
+    udp: true
+    network: tcp
+    tls: true
+    flow: "xtls-rprx-vision"
+    servername: "tr-node.envy0xc0.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "8wfqjzRd4y0Q0LAXQ80DXZa12lmOKp3GFfxJov7HPDM"
+      short-id: "8d65"
+
+proxy-groups:
+  - name: "Envy VPN Подписка"
+    type: select
+    proxies:
+      - "🇱🇻Белые списки #1 (1.5гб)"
+      - "🇱🇻⚡️Латвия, Рига (1.5гб)"
+      - "🇰🇿Белые списки #2 (1.5гб)"
+      - "🇵🇱Белые списки #3 (1.5гб)"
+      - "🇺🇸Белые списки #4 (1.5гб)"
+      - "🇹🇷Белые списки #5 (1.5гб)"
+      - "🇷🇺Белые списки #6 (1.5гб)"
+      - "🇺🇸Белые списки #7 (1.5гб)"
+      - "🇵🇱Польша, Варшава (1.5гб)"
+      - "🇵🇱⚡️Польша, Варшава (1.5гб)"
+      - "🇺🇦Украина, Харьков (1.5гб)"
+      - "🇹🇷Турция, Стамбул (1.5гб)"
+      - "🇹🇷⚡️Турция, Стамбул (1.5гб)"
+      - "🇺🇦⚡️Украина, Харьков (1.5гб)"
+      - "🇰🇿Казахстан, Алматы (1.5гб)"
+      - "🇰🇿⚡️Казахстан, Алматы (1.5гб)"
+      - "🇺🇸США, Даллас (1.5гб)"
+      - "🇺🇸⚡️США, Даллас (1.5гб)"
+      - "🇸🇪Швеция, Стокгольм (1.5гб)"
+      - "🇸🇪⚡️Швеция, Стокгольм (1.5гб)"
+      - "🇹🇷⚡️Тест (1.5гб)"
+      - DIRECT
+
+rules:
+  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+  - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+  - IP-CIDR,169.254.0.0/16,DIRECT,no-resolve
+  - IP-CIDR,224.0.0.0/4,DIRECT,no-resolve
+  - IP-CIDR,255.255.255.255/32,DIRECT,no-resolve
+  - MATCH,Envy VPN Подписка
