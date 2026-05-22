@@ -1,0 +1,312 @@
+mixed-port: 7890
+socks-port: 7891
+redir-port: 7892
+allow-lan: true
+mode: global
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  use-hosts: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver:
+    - 1.1.1.1
+    - 8.8.8.8
+  nameserver:
+    - 1.1.1.1
+    - 8.8.8.8
+  fake-ip-filter:
+    - "*.lan"
+    - stun.*.*.*
+    - stun.*.*
+    - time.windows.com
+    - time.nist.gov
+    - time.apple.com
+    - time.asia.apple.com
+    - "*.openwrt.pool.ntp.org"
+    - pool.ntp.org
+    - ntp.ubuntu.com
+    - time1.apple.com
+    - time2.apple.com
+    - time3.apple.com
+    - time4.apple.com
+    - time5.apple.com
+    - time6.apple.com
+    - time7.apple.com
+    - time1.google.com
+    - time2.google.com
+    - time3.google.com
+    - time4.google.com
+    - api.joox.com
+    - joox.com
+    - "*.xiami.com"
+    - "*.msftconnecttest.com"
+    - "*.msftncsi.com"
+    - +.xboxlive.com
+    - "*.*.stun.playstation.net"
+    - xbox.*.*.microsoft.com
+    - "*.ipv6.microsoft.com"
+    - speedtest.cros.wr.pvp.net
+proxies:
+  - name: 🇩🇪 Германия 1 fast
+    type: vless
+    server: fasten-de01.tourbillon.one
+    port: 8444
+    network: tcp
+    udp: true
+    uuid: 4ea2f84f-1fd0-48a1-86c6-22df75f17134
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: fasten-de01.tourbillon.one
+    reality-opts:
+      public-key: WJDs58uMpClG5LMRxbFH4TZZxm6j4xAQjilp4FrRWXM
+      short-id: 11a05c48
+    client-fingerprint: chrome
+    serverDescription: DE - Premium
+  - name: 🇩🇪 Германия 2 fast
+    type: vless
+    server: fasten-de02.tourbillon.one
+    port: 8444
+    network: tcp
+    udp: true
+    uuid: 4ea2f84f-1fd0-48a1-86c6-22df75f17134
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: fasten-de02.tourbillon.one
+    reality-opts:
+      public-key: WJDs58uMpClG5LMRxbFH4TZZxm6j4xAQjilp4FrRWXM
+      short-id: d8b9e0f0
+    client-fingerprint: chrome
+    serverDescription: DE - Premium
+  - name: 🇩🇪 Германия 4 fast
+    type: vless
+    server: fasten-de03.tourbillon.one
+    port: 8444
+    network: tcp
+    udp: true
+    uuid: 4ea2f84f-1fd0-48a1-86c6-22df75f17134
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: fasten-de03.tourbillon.one
+    reality-opts:
+      public-key: WJDs58uMpClG5LMRxbFH4TZZxm6j4xAQjilp4FrRWXM
+      short-id: d8b9e0f0
+    client-fingerprint: chrome
+    serverDescription: DE - Premium
+  - name: 🇫🇮Финляндия 1
+    type: vless
+    server: fi.tourbillon.one
+    port: 8444
+    network: tcp
+    udp: true
+    uuid: 4ea2f84f-1fd0-48a1-86c6-22df75f17134
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: fi.tourbillon.one
+    reality-opts:
+      public-key: WJDs58uMpClG5LMRxbFH4TZZxm6j4xAQjilp4FrRWXM
+      short-id: 442a7a4a
+    client-fingerprint: chrome
+    serverDescription: NL - Premium
+  - name: 🇫🇮Финляндия 2
+    type: vless
+    server: fi01.tourbillon.one
+    port: 8444
+    network: tcp
+    udp: true
+    uuid: 4ea2f84f-1fd0-48a1-86c6-22df75f17134
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: fi01.tourbillon.one
+    reality-opts:
+      public-key: WJDs58uMpClG5LMRxbFH4TZZxm6j4xAQjilp4FrRWXM
+      short-id: 11a05c48
+    client-fingerprint: chrome
+    serverDescription: NL - Premium
+  - name: 🇳🇱Нидерланды 3
+    type: vless
+    server: nl03.tourbillon.one
+    port: 8444
+    network: tcp
+    udp: true
+    uuid: 4ea2f84f-1fd0-48a1-86c6-22df75f17134
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: nl03.tourbillon.one
+    reality-opts:
+      public-key: WJDs58uMpClG5LMRxbFH4TZZxm6j4xAQjilp4FrRWXM
+      short-id: d8b9e0f0
+    client-fingerprint: chrome
+    serverDescription: NL - Premium
+  - name: 🇳🇱Нидерланды 1
+    type: vless
+    server: nl01.tourbillon.one
+    port: 8444
+    network: tcp
+    udp: true
+    uuid: 4ea2f84f-1fd0-48a1-86c6-22df75f17134
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: nl01.tourbillon.one
+    reality-opts:
+      public-key: WJDs58uMpClG5LMRxbFH4TZZxm6j4xAQjilp4FrRWXM
+      short-id: d8b9e0f0
+    client-fingerprint: chrome
+    serverDescription: NL - Premium
+  - name: 🇮🇹 Италия [TEST]
+    type: vless
+    server: it01.tourbillon.one
+    port: 8444
+    network: tcp
+    udp: true
+    uuid: 4ea2f84f-1fd0-48a1-86c6-22df75f17134
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: it01.tourbillon.one
+    reality-opts:
+      public-key: WJDs58uMpClG5LMRxbFH4TZZxm6j4xAQjilp4FrRWXM
+      short-id: 442a7a4a
+    client-fingerprint: chrome
+    serverDescription: IT - selfsteal
+  - name: 🇺🇸USA-01-AS
+    type: vless
+    server: us-as01.tourbillon.one
+    port: 8444
+    network: tcp
+    udp: true
+    uuid: 4ea2f84f-1fd0-48a1-86c6-22df75f17134
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: us-as01.tourbillon.one
+    reality-opts:
+      public-key: WJDs58uMpClG5LMRxbFH4TZZxm6j4xAQjilp4FrRWXM
+      short-id: 11a05c48
+    client-fingerprint: chrome
+    serverDescription: US - Premium
+  - name: AT default premium reality tcp
+    type: vless
+    server: at01.tourbillon.one
+    port: 8444
+    network: tcp
+    udp: true
+    uuid: 4ea2f84f-1fd0-48a1-86c6-22df75f17134
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: at01.tourbillon.one
+    reality-opts:
+      public-key: WJDs58uMpClG5LMRxbFH4TZZxm6j4xAQjilp4FrRWXM
+      short-id: d8b9e0f0
+    client-fingerprint: chrome
+    serverDescription: DE - Premium
+  - name: UK default premium reality tcp
+    type: vless
+    server: uk01.tourbillon.one
+    port: 8444
+    network: tcp
+    udp: true
+    uuid: 4ea2f84f-1fd0-48a1-86c6-22df75f17134
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: uk01.tourbillon.one
+    reality-opts:
+      public-key: WJDs58uMpClG5LMRxbFH4TZZxm6j4xAQjilp4FrRWXM
+      short-id: d8b9e0f0
+    client-fingerprint: chrome
+    serverDescription: UK - Premium
+  - name: PL default premium reality tcp
+    type: vless
+    server: pl01.tourbillon.one
+    port: 8444
+    network: tcp
+    udp: true
+    uuid: 4ea2f84f-1fd0-48a1-86c6-22df75f17134
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: pl01.tourbillon.one
+    reality-opts:
+      public-key: WJDs58uMpClG5LMRxbFH4TZZxm6j4xAQjilp4FrRWXM
+      short-id: 11a05c48
+    client-fingerprint: chrome
+    serverDescription: PL - Premium
+proxy-groups:
+  - name: DE SMART
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    lazy: true
+    proxies:
+      - 🇩🇪 Германия 1 fast
+      - 🇩🇪 Германия 2 fast
+      - 🇩🇪 Германия 3 fast
+      - 🇩🇪 Германия 4 fast
+  - name: DE AUTO
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    lazy: true
+    proxies:
+      - "🇩🇪 Германия 1 "
+      - " 🇩🇪 Германия 2"
+      - 🇩🇪 Германия 4
+      - 🇩🇪 Германия 5
+  - name: DE BASIC
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    lazy: true
+    proxies:
+      - "🇩🇪 Германия 1 "
+      - " 🇩🇪 Германия 2"
+      - 🇩🇪 Германия 4
+  - name: PL AUTO
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    lazy: true
+    proxies:
+      - 🇵🇱Польша 1
+      - 🇵🇱Польша 2
+  - name: FI AUTO
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    lazy: true
+    proxies:
+      - 🇫🇮Финляндия 2
+  - name: NL AUTO
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    lazy: true
+    proxies:
+      - 🇳🇱Нидерланды 3
+  - name: Remnawave
+    type: select
+    proxies:
+      - DE SMART
+      - DE AUTO
+      - DE BASIC
+      - PL AUTO
+      - FI AUTO
+      - NL AUTO
+rules:
+  - MATCH,Remnawave
