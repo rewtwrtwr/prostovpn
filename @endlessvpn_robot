@@ -1,0 +1,229 @@
+mixed-port: 7890
+socks-port: 7891
+redir-port: 7892
+allow-lan: true
+mode: global
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  use-hosts: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver:
+    - 1.1.1.1
+    - 8.8.8.8
+  nameserver:
+    - 1.1.1.1
+    - 8.8.8.8
+  fake-ip-filter:
+    - "*.lan"
+    - stun.*.*.*
+    - stun.*.*
+    - time.windows.com
+    - time.nist.gov
+    - time.apple.com
+    - time.asia.apple.com
+    - "*.openwrt.pool.ntp.org"
+    - pool.ntp.org
+    - ntp.ubuntu.com
+    - time1.apple.com
+    - time2.apple.com
+    - time3.apple.com
+    - time4.apple.com
+    - time5.apple.com
+    - time6.apple.com
+    - time7.apple.com
+    - time1.google.com
+    - time2.google.com
+    - time3.google.com
+    - time4.google.com
+    - api.joox.com
+    - joox.com
+    - "*.xiami.com"
+    - "*.msftconnecttest.com"
+    - "*.msftncsi.com"
+    - +.xboxlive.com
+    - "*.*.stun.playstation.net"
+    - xbox.*.*.microsoft.com
+    - "*.ipv6.microsoft.com"
+    - speedtest.cros.wr.pvp.net
+proxies:
+  - name: AUTO — Самый быстрый ⚡️
+    type: ss
+    server: web.max.ru
+    port: 1234
+    network: tcp
+    udp: true
+    password: dpsrBrUsR1k-QDHKVA5PUcH_2kAKkRjq
+    cipher: chacha20-ietf-poly1305
+    udp-over-tcp: false
+    udp-over-tcp-version: 1
+    client-fingerprint: chrome
+  - name: 🇫🇮 Финляндия
+    type: vless
+    server: se.endvn.org
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 63d75082-a858-4abc-ab0a-84db475f0ea3
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: se.endvn.org
+    reality-opts:
+      public-key: oSSLtvWKXcvUTIeHrxi1algmixXLWc_FB2v-lELMRn0
+      short-id: ""
+    client-fingerprint: chrome
+  - name: 🇩🇪 Германия
+    type: vless
+    server: de2.endvn.org
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 63d75082-a858-4abc-ab0a-84db475f0ea3
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: de2.endvn.org
+    reality-opts:
+      public-key: oSSLtvWKXcvUTIeHrxi1algmixXLWc_FB2v-lELMRn0
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇩🇪 Германия #2"
+    type: vless
+    server: de.endvn.org
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 63d75082-a858-4abc-ab0a-84db475f0ea3
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: de.endvn.org
+    reality-opts:
+      public-key: oSSLtvWKXcvUTIeHrxi1algmixXLWc_FB2v-lELMRn0
+      short-id: ""
+    client-fingerprint: chrome
+  - name: 🇳🇱 Нидерланды
+    type: vless
+    server: nl.endvn.org
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 63d75082-a858-4abc-ab0a-84db475f0ea3
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: nl.endvn.org
+    reality-opts:
+      public-key: oSSLtvWKXcvUTIeHrxi1algmixXLWc_FB2v-lELMRn0
+      short-id: ""
+    client-fingerprint: chrome
+  - name: 🇷🇺 Россия [Ютуб без рекламы]
+    type: vless
+    server: ru.endvn.org
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 63d75082-a858-4abc-ab0a-84db475f0ea3
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: ru.endvn.org
+    reality-opts:
+      public-key: oSSLtvWKXcvUTIeHrxi1algmixXLWc_FB2v-lELMRn0
+      short-id: ""
+    client-fingerprint: chrome
+  - name: 🇺🇸 США
+    type: vless
+    server: us.endvn.org
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 63d75082-a858-4abc-ab0a-84db475f0ea3
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: us.endvn.org
+    reality-opts:
+      public-key: oSSLtvWKXcvUTIeHrxi1algmixXLWc_FB2v-lELMRn0
+      short-id: ""
+    client-fingerprint: chrome
+  - name: 🇸🇪 Швеция
+    type: vless
+    server: se2.endvn.org
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 63d75082-a858-4abc-ab0a-84db475f0ea3
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: se2.endvn.org
+    reality-opts:
+      public-key: oSSLtvWKXcvUTIeHrxi1algmixXLWc_FB2v-lELMRn0
+      short-id: ""
+    client-fingerprint: chrome
+  - name: 🇱🇻 Латвия
+    type: vless
+    server: lv.endvn.org
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 63d75082-a858-4abc-ab0a-84db475f0ea3
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: lv.endvn.org
+    reality-opts:
+      public-key: oSSLtvWKXcvUTIeHrxi1algmixXLWc_FB2v-lELMRn0
+      short-id: ""
+    client-fingerprint: chrome
+  - name: 🇨🇭 Швейцария
+    type: vless
+    server: ch.endvn.org
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 63d75082-a858-4abc-ab0a-84db475f0ea3
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: ch.endvn.org
+    reality-opts:
+      public-key: oSSLtvWKXcvUTIeHrxi1algmixXLWc_FB2v-lELMRn0
+      short-id: ""
+    client-fingerprint: chrome
+  - name: 🇦🇹 Австрия
+    type: vless
+    server: at.endvn.org
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 63d75082-a858-4abc-ab0a-84db475f0ea3
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: at.endvn.org
+    reality-opts:
+      public-key: oSSLtvWKXcvUTIeHrxi1algmixXLWc_FB2v-lELMRn0
+      short-id: ""
+    client-fingerprint: chrome
+proxy-groups:
+  - name: → Remnawave
+    type: select
+    proxies:
+      - AUTO — Самый быстрый ⚡️
+      - 🇫🇮 Финляндия
+      - 🇩🇪 Германия
+      - "🇩🇪 Германия #2"
+      - 🇳🇱 Нидерланды
+      - 🇷🇺 Россия [Ютуб без рекламы]
+      - 🇺🇸 США
+      - 🇸🇪 Швеция
+      - 🇱🇻 Латвия
+      - 🇨🇭 Швейцария
+      - 🇦🇹 Австрия
+rules:
+  - MATCH,→ Remnawave
