@@ -67,14 +67,14 @@ proxies:
   uuid: 5feb7da4-4e4d-4ce9-a60c-2a003a4fbe2d
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: 🇳🇱 opl-[Нидерланды7]
+  name: 🇳🇱 UMB-[Нидерланды7]
   network: tcp
-  port: 8443
+  port: 6443
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
     short-id: 6ba85179e30d4fc2
   server: nl7.srv.oplcdn.top
-  servername: ign.dev
+  servername: debug.resolvertest.doh.umbrella.com
   tcp-opts:
     ip-version: dual
   tls: true
@@ -700,7 +700,7 @@ proxy-groups:
   - 🇳🇱 opl-[Нидерланды2]
   - 🇳🇱 opl-[RU->Нидерланды2]
   - 🇳🇱 UMB-[Нидерланды8]
-  - 🇳🇱 opl-[Нидерланды7]
+  - 🇳🇱 UMB-[Нидерланды7]
   - 🇫🇮🚀🚯 opl-[Финляндия] [YTnoAds]
   - 🇩🇪 opl-[Германия2]
   - 🇵🇱 UMB-[Польша]
