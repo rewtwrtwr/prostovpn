@@ -1,0 +1,738 @@
+mixed-port: 7890
+socks-port: 7891
+redir-port: 7892
+allow-lan: true
+mode: global
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  use-hosts: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver:
+    - 1.1.1.1
+    - 8.8.8.8
+  nameserver:
+    - 1.1.1.1
+    - 8.8.8.8
+  fake-ip-filter:
+    - "*.lan"
+    - stun.*.*.*
+    - stun.*.*
+    - time.windows.com
+    - time.nist.gov
+    - time.apple.com
+    - time.asia.apple.com
+    - "*.openwrt.pool.ntp.org"
+    - pool.ntp.org
+    - ntp.ubuntu.com
+    - time1.apple.com
+    - time2.apple.com
+    - time3.apple.com
+    - time4.apple.com
+    - time5.apple.com
+    - time6.apple.com
+    - time7.apple.com
+    - time1.google.com
+    - time2.google.com
+    - time3.google.com
+    - time4.google.com
+    - api.joox.com
+    - joox.com
+    - "*.xiami.com"
+    - "*.msftconnecttest.com"
+    - "*.msftncsi.com"
+    - +.xboxlive.com
+    - "*.*.stun.playstation.net"
+    - xbox.*.*.microsoft.com
+    - "*.ipv6.microsoft.com"
+    - speedtest.cros.wr.pvp.net
+proxies:
+  - name: 🇪🇺💎 Авто ⚡️ до 10 Гбит/с
+    type: vless
+    server: auto.buycloud.app
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.buycloud.app
+    reality-opts:
+      public-key: K3v40g4aiQoyyIYu8gJ347qCN7ZLFA61GQP_rRQYbG4
+      short-id: 0680ed8189fef83f
+    client-fingerprint: qq
+  - name: 🇳🇱 Нидерланды⚡️до 10 Гбит/с
+    type: vless
+    server: nl10.buycloud.app
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: nl10.buycloud.app
+    reality-opts:
+      public-key: WEKeT_3mF_z7rdPR7eVpTUvPq4Sw0Y_3YOg9yUgXcxo
+      short-id: 9d84de9d9f7b85e9
+    client-fingerprint: random
+  - name: 🇩🇪 Германия⚡️до 10 Гбит/с
+    type: vless
+    server: de10.buycloud.app
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: de10.buycloud.app
+    reality-opts:
+      public-key: z_Rn0Vvq1GB39RhN6v7DhdtD-kS0XZa_je0h-no_hWs
+      short-id: f2d7e3a00314545a
+    client-fingerprint: random
+  - name: 🇨🇦⚡️ Канада bd43c747
+    type: vless
+    server: ca.buycloud.app
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: ca.buycloud.app
+    reality-opts:
+      public-key: 0t2-E2-HltGVbJ8u5khpB-J1HgEoqL2TeSE14O1TsUk
+      short-id: 4b80b34db6118d28
+    client-fingerprint: random
+  - name: 🇺🇸⚡️ США bd43c747
+    type: vless
+    server: us.buycloud.app
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: us.buycloud.app
+    reality-opts:
+      public-key: S6t9-gOX2mxWKNGvGSJ8NxDdlJy78d4gN2-wv2d0hFw
+      short-id: 7a0e219928771f68
+    client-fingerprint: chrome
+  - name: 🇦🇹⚡️ Австрия bd43c747
+    type: vless
+    server: at-c2.buycloud.app
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: at-c2.buycloud.app
+    reality-opts:
+      public-key: wpZDT_592emHu309qN-7-qceofbMJzoAdIx9m9RFJGg
+      short-id: 0c1eca51bd6ddfde
+    client-fingerprint: qq
+  - name: 🇵🇱⚡️ Польша bd43c747
+    type: vless
+    server: pl1.buycloud.app
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: pl1.buycloud.app
+    reality-opts:
+      public-key: JoIT56dCrKkeYJWSPA6-rllSqlXYKPg1rC2w7D_xogU
+      short-id: 1706e2512ca48438
+    client-fingerprint: chrome
+  - name: 🇫🇮⚡️ Финляндия bd43c747
+    type: vless
+    server: fi.buycloud.app
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: fi.buycloud.app
+    reality-opts:
+      public-key: V4SeM4OMxXoSKBmmyC5C0kZEhgL33a5vVZBe7ysJ42U
+      short-id: 8e0d6d07a82c2f41
+    client-fingerprint: chrome
+  - name: 🇺🇸 США bd43c747
+    type: vless
+    server: us1.buycloud.app
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: us1.buycloud.app
+    reality-opts:
+      public-key: MDhUbGA8jajs15oDk3cJ_jn2Du1q9xwSXSoKBr1YITM
+      short-id: 7346f4edc5ada5bb
+    client-fingerprint: random
+  - name: 🇫🇷 Франция bd43c747
+    type: vless
+    server: fr.buycloud.app
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: fr.buycloud.app
+    reality-opts:
+      public-key: ceBE5jvgriHZ7ZGIBh9vk-rvKW3jaB8NQPRWLcP4yV4
+      short-id: 4a456b4084b8011e
+    client-fingerprint: qq
+  - name: 🇳🇴 Норвегия bd43c747
+    type: vless
+    server: no.buycloud.app
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: no.buycloud.app
+    reality-opts:
+      public-key: 7wLv5M4GZGhqMAGVj9zdHyW-RrSRdrYAu1Aaqa8N1nY
+      short-id: 19c54bde0fe05b9b
+    client-fingerprint: random
+  - name: 🇧🇾 Беларусь bd43c747
+    type: vless
+    server: by.buycloud.app
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: by.buycloud.app
+    reality-opts:
+      public-key: OwcO1frlUKi0De7XLo3OmD1qK8Y2HYgJ19WZV8Xzk2E
+      short-id: 75014050a77ec04b
+    client-fingerprint: random
+  - name: 🇵🇱 Польша bd43c747
+    type: vless
+    server: pl.buycloud.app
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: pl.buycloud.app
+    reality-opts:
+      public-key: JoIT56dCrKkeYJWSPA6-rllSqlXYKPg1rC2w7D_xogU
+      short-id: b6ee68c676d89ba4
+    client-fingerprint: chrome
+  - name: 🇨🇭 Швейцария bd43c747
+    type: vless
+    server: ch.buycloud.app
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: ch.buycloud.app
+    reality-opts:
+      public-key: lYVz8iVZI2XjTCw_XS9wi08P1DLXO0c7jQo-_xyw2xY
+      short-id: f53f6104d8ebdd11
+    client-fingerprint: random
+  - name: 🇭🇺 Венгрия bd43c747
+    type: vless
+    server: hu.buycloud.app
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: hu.buycloud.app
+    reality-opts:
+      public-key: jwyfUdsuDBGtjuTfWOepIQ80EDSCXCp8Xe3bzXFlsjI
+      short-id: acedaf2056c0fb5d
+    client-fingerprint: random
+  - name: 🇦🇱 Албания bd43c747
+    type: vless
+    server: alb00.sidecloud.ru
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: alb00.sidecloud.ru
+    reality-opts:
+      public-key: ElEALiFaDTMj9lYwMPYaCVnbMkz22pvzD10dGW61kyc
+      short-id: 087bd74bd9eb0116
+    client-fingerprint: qq
+  - name: 🇹🇷 Турция bd43c747
+    type: vless
+    server: tr.buycloud.app
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: tr.buycloud.app
+    reality-opts:
+      public-key: 3B0Zpg7qS7mRbxW16tUht3uyQDmEyjiB3u1QJ6SCe18
+      short-id: e78d0066170e761b
+    client-fingerprint: chrome
+  - name: 🇪🇸 Испания bd43c747
+    type: vless
+    server: es.buycloud.app
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: es.buycloud.app
+    reality-opts:
+      public-key: lYVz8iVZI2XjTCw_XS9wi08P1DLXO0c7jQo-_xyw2xY
+      short-id: 5344458aedda998e
+    client-fingerprint: random
+  - name: 🇸🇪 Швеция bd43c747
+    type: vless
+    server: se.buycloud.app
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: se.buycloud.app
+    reality-opts:
+      public-key: 91j4nGhBDQYcZP0AHXJgu1jnrFNRp27DIhN0Verhfhw
+      short-id: 1dd58cb6da76c0bf
+    client-fingerprint: random
+  - name: 🇰🇿 Казахстан bd43c747
+    type: vless
+    server: kz.buycloud.app
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: kz.buycloud.app
+    reality-opts:
+      public-key: lYVz8iVZI2XjTCw_XS9wi08P1DLXO0c7jQo-_xyw2xY
+      short-id: aa1ebec96b11491f
+    client-fingerprint: random
+  - name: 🇦🇲 Армения bd43c747
+    type: vless
+    server: am.buycloud.app
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: am.buycloud.app
+    reality-opts:
+      public-key: qoAuuFJ0eK1lAMHIqTt6LniY6qu1GIobrGthBcRHUXM
+      short-id: f53f6104d8ebdd11
+    client-fingerprint: random
+  - name: 🇰🇷 Корея bd43c747
+    type: vless
+    server: kr.buycloud.app
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: kr.buycloud.app
+    reality-opts:
+      public-key: XkEuhtpz6F1JQfvUFSCP8NJ_xAu04v48Fe9HXm1lPmI
+      short-id: d2a286cd8057fe5f
+    client-fingerprint: random
+  - name: 🇫🇲⬇️ Если VLESS заблокирован ⬇️
+    type: vless
+    server: auto.buycloud.app
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.buycloud.app
+    reality-opts:
+      public-key: K3v40g4aiQoyyIYu8gJ347qCN7ZLFA61GQP_rRQYbG4
+      short-id: 41b42908df0833a6
+    client-fingerprint: random
+  - name: 🇳🇱💊 Нидерланды | GRPC
+    type: vless
+    server: nld01.sidecloud.ru
+    port: 443
+    network: grpc
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    tls: true
+    servername: nld01.sidecloud.ru
+    reality-opts:
+      public-key: wYA5m-tFXzItmzRanLSI6KfabS772Na51DlRwtZ8zmg
+      short-id: c350045d50268dcf
+    grpc-opts:
+      grpc-service-name: ""
+    client-fingerprint: chrome
+  - name: 🇵🇱💊 Польша | SS
+    type: ss
+    server: pl.buycloud.app
+    port: 1080
+    network: tcp
+    udp: true
+    password: L0ENKLy_SNZpRuZtU0nBfkUctFy4ussb
+    cipher: chacha20-ietf-poly1305
+    udp-over-tcp: false
+    udp-over-tcp-version: 1
+    client-fingerprint: chrome
+  - name: 🇫🇮💊 Финляндия | SS
+    type: ss
+    server: fi.buycloud.app
+    port: 1080
+    network: tcp
+    udp: true
+    password: L0ENKLy_SNZpRuZtU0nBfkUctFy4ussb
+    cipher: chacha20-ietf-poly1305
+    udp-over-tcp: false
+    udp-over-tcp-version: 1
+    client-fingerprint: chrome
+  - name: 🇫🇲⬇️ Если глушат моб. интернет ⬇️
+    type: vless
+    server: auto.buycloud.app
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.buycloud.app
+    reality-opts:
+      public-key: K3v40g4aiQoyyIYu8gJ347qCN7ZLFA61GQP_rRQYbG4
+      short-id: ca3bea72f8137b15
+    client-fingerprint: random
+  - name: 🇷🇺 Авто - Обход LTE Россия
+    type: vless
+    server: 1.1.1.1
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: ads.x5.ru
+    reality-opts:
+      public-key: MZ4v9kcs6nnAKuCAz4pvViC50BoM3exoL_5Yi-1b1kE
+      short-id: 59de66570907b747
+    client-fingerprint: random
+  - name: "🇷🇺 Обход LTE Россия #1"
+    type: vless
+    server: ya51.prowebcore.ru
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: ads.x5.ru
+    reality-opts:
+      public-key: MZ4v9kcs6nnAKuCAz4pvViC50BoM3exoL_5Yi-1b1kE
+      short-id: 746844cc01b08be3
+    client-fingerprint: random
+  - name: "🇷🇺 Обход LTE Россия #2"
+    type: vless
+    server: ya84.prowebcore.ru
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: api-maps.yandex.ru
+    reality-opts:
+      public-key: Py03aPnCma9Ip4xCvtBsK77NScUYphSw46RmdjFSvls
+      short-id: 440afb8957f2853f
+    client-fingerprint: random
+  - name: 🇪🇺📱 Авто - WHITE RUSSIA
+    type: vless
+    server: 1.1.1.1
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: sun6-21.userapi.com
+    reality-opts:
+      public-key: ZyCQl-lSCWJnFzFg0V-g2sNq7OEsaH1McUeOz-bF2x0
+      short-id: 3c9b3b98b61638dd
+    client-fingerprint: chrome
+  - name: "🇳🇱 📱 WHITE RUSSIA #1-1"
+    type: vless
+    server: 185.236.20.195
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: sun6-21.userapi.com
+    reality-opts:
+      public-key: ZyCQl-lSCWJnFzFg0V-g2sNq7OEsaH1McUeOz-bF2x0
+      short-id: b98ecf0c82a706b8
+    client-fingerprint: chrome
+  - name: "🇳🇱 📱 WHITE RUSSIA #1-2"
+    type: vless
+    server: 145.249.115.227
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: sun6-21.userapi.com
+    reality-opts:
+      public-key: ZyCQl-lSCWJnFzFg0V-g2sNq7OEsaH1McUeOz-bF2x0
+      short-id: 3c9b3b98b61638dd
+    client-fingerprint: chrome
+  - name: "🇳🇱 📱 WHITE RUSSIA #1-3"
+    type: vless
+    server: 45.82.13.47
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: sun6-21.userapi.com
+    reality-opts:
+      public-key: ZyCQl-lSCWJnFzFg0V-g2sNq7OEsaH1McUeOz-bF2x0
+      short-id: 8499e2d966024b1c
+    client-fingerprint: chrome
+  - name: "🇳🇱 📱 WHITE RUSSIA #1-4"
+    type: vless
+    server: 45.82.13.60
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: sun6-21.userapi.com
+    reality-opts:
+      public-key: ZyCQl-lSCWJnFzFg0V-g2sNq7OEsaH1McUeOz-bF2x0
+      short-id: c9f8b3657ab254a1
+    client-fingerprint: chrome
+  - name: "🇳🇱 📱 WHITE RUSSIA #2-1"
+    type: vless
+    server: 138.124.67.245
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: ads.x5.ru
+    reality-opts:
+      public-key: ZyCQl-lSCWJnFzFg0V-g2sNq7OEsaH1McUeOz-bF2x0
+      short-id: 8e095533a9c0b1dc
+    client-fingerprint: chrome
+  - name: "🇳🇱 📱 WHITE RUSSIA #2-2"
+    type: vless
+    server: 145.249.115.154
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: ads.x5.ru
+    reality-opts:
+      public-key: ZyCQl-lSCWJnFzFg0V-g2sNq7OEsaH1McUeOz-bF2x0
+      short-id: 4c740f3b9b593b8f
+    client-fingerprint: chrome
+  - name: "🇳🇱 📱 WHITE RUSSIA #2-3"
+    type: vless
+    server: 145.249.115.183
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: ads.x5.ru
+    reality-opts:
+      public-key: ZyCQl-lSCWJnFzFg0V-g2sNq7OEsaH1McUeOz-bF2x0
+      short-id: 3c9b3b98b61638dd
+    client-fingerprint: chrome
+  - name: "🇳🇱 📱 WHITE RUSSIA #2-4"
+    type: vless
+    server: 147.45.50.65
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: ads.x5.ru
+    reality-opts:
+      public-key: ZyCQl-lSCWJnFzFg0V-g2sNq7OEsaH1McUeOz-bF2x0
+      short-id: bd157f32f4308524
+    client-fingerprint: chrome
+  - name: "🇩🇪 📱 WHITE RUSSIA #3-1"
+    type: vless
+    server: 80.66.72.90
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: sun6-21.userapi.com
+    reality-opts:
+      public-key: ZyCQl-lSCWJnFzFg0V-g2sNq7OEsaH1McUeOz-bF2x0
+      short-id: 8e095533a9c0b1dc
+    client-fingerprint: chrome
+  - name: "🇩🇪 📱 WHITE RUSSIA #3-2"
+    type: vless
+    server: 93.94.52.226
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: sun6-21.userapi.com
+    reality-opts:
+      public-key: ZyCQl-lSCWJnFzFg0V-g2sNq7OEsaH1McUeOz-bF2x0
+      short-id: 8e095533a9c0b1dc
+    client-fingerprint: chrome
+  - name: "🇩🇪 📱 WHITE RUSSIA #3-3"
+    type: vless
+    server: 138.124.186.222
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: sun6-21.userapi.com
+    reality-opts:
+      public-key: ZyCQl-lSCWJnFzFg0V-g2sNq7OEsaH1McUeOz-bF2x0
+      short-id: 85b41c1aede3679b
+    client-fingerprint: chrome
+  - name: "🇩🇪 📱 WHITE RUSSIA #3-4"
+    type: vless
+    server: 138.124.186.252
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8e2766a1-97b1-4ff6-ba04-0c66c354cd0a
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: sun6-21.userapi.com
+    reality-opts:
+      public-key: ZyCQl-lSCWJnFzFg0V-g2sNq7OEsaH1McUeOz-bF2x0
+      short-id: 0eb6051006f89db0
+    client-fingerprint: chrome
+proxy-groups:
+  - name: RayTun
+    type: select
+    proxies:
+      - 🇪🇺💎 Авто ⚡️ до 10 Гбит/с
+      - 🇳🇱 Нидерланды⚡️до 10 Гбит/с
+      - 🇩🇪 Германия⚡️до 10 Гбит/с
+      - 🇨🇦⚡️ Канада bd43c747
+      - 🇺🇸⚡️ США bd43c747
+      - 🇦🇹⚡️ Австрия bd43c747
+      - 🇵🇱⚡️ Польша bd43c747
+      - 🇫🇮⚡️ Финляндия bd43c747
+      - 🇺🇸 США bd43c747
+      - 🇫🇷 Франция bd43c747
+      - 🇳🇴 Норвегия bd43c747
+      - 🇧🇾 Беларусь bd43c747
+      - 🇵🇱 Польша bd43c747
+      - 🇨🇭 Швейцария bd43c747
+      - 🇭🇺 Венгрия bd43c747
+      - 🇦🇱 Албания bd43c747
+      - 🇹🇷 Турция bd43c747
+      - 🇪🇸 Испания bd43c747
+      - 🇸🇪 Швеция bd43c747
+      - 🇰🇿 Казахстан bd43c747
+      - 🇦🇲 Армения bd43c747
+      - 🇰🇷 Корея bd43c747
+      - 🇫🇲⬇️ Если VLESS заблокирован ⬇️
+      - 🇳🇱💊 Нидерланды | GRPC
+      - 🇵🇱💊 Польша | SS
+      - 🇫🇮💊 Финляндия | SS
+      - 🇫🇲⬇️ Если глушат моб. интернет ⬇️
+      - 🇷🇺 Авто - Обход LTE Россия
+      - "🇷🇺 Обход LTE Россия #1"
+      - "🇷🇺 Обход LTE Россия #2"
+      - 🇪🇺📱 Авто - WHITE RUSSIA
+      - "🇳🇱 📱 WHITE RUSSIA #1-1"
+      - "🇳🇱 📱 WHITE RUSSIA #1-2"
+      - "🇳🇱 📱 WHITE RUSSIA #1-3"
+      - "🇳🇱 📱 WHITE RUSSIA #1-4"
+      - "🇳🇱 📱 WHITE RUSSIA #2-1"
+      - "🇳🇱 📱 WHITE RUSSIA #2-2"
+      - "🇳🇱 📱 WHITE RUSSIA #2-3"
+      - "🇳🇱 📱 WHITE RUSSIA #2-4"
+      - "🇩🇪 📱 WHITE RUSSIA #3-1"
+      - "🇩🇪 📱 WHITE RUSSIA #3-2"
+      - "🇩🇪 📱 WHITE RUSSIA #3-3"
+      - "🇩🇪 📱 WHITE RUSSIA #3-4"
+rules:
+  - MATCH,RayTun
