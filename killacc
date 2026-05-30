@@ -1,0 +1,1314 @@
+mixed-port: 7890
+socks-port: 7891
+redir-port: 7892
+allow-lan: true
+mode: global
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  use-hosts: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver:
+    - 1.1.1.1
+    - 8.8.8.8
+  nameserver:
+    - 1.1.1.1
+    - 8.8.8.8
+  fake-ip-filter:
+    - "*.lan"
+    - stun.*.*.*
+    - stun.*.*
+    - time.windows.com
+    - time.nist.gov
+    - time.apple.com
+    - time.asia.apple.com
+    - "*.openwrt.pool.ntp.org"
+    - pool.ntp.org
+    - ntp.ubuntu.com
+    - time1.apple.com
+    - time2.apple.com
+    - time3.apple.com
+    - time4.apple.com
+    - time5.apple.com
+    - time6.apple.com
+    - time7.apple.com
+    - time1.google.com
+    - time2.google.com
+    - time3.google.com
+    - time4.google.com
+    - api.joox.com
+    - joox.com
+    - "*.xiami.com"
+    - "*.msftconnecttest.com"
+    - "*.msftncsi.com"
+    - +.xboxlive.com
+    - "*.*.stun.playstation.net"
+    - xbox.*.*.microsoft.com
+    - "*.ipv6.microsoft.com"
+    - speedtest.cros.wr.pvp.net
+proxies:
+  - name: ⬇️ Основное подключение ⬇️
+    type: vless
+    server: tunnelgate.org
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇪🇪 Эстония #1"
+    type: vless
+    server: 87.121.86.131
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇪🇪 Эстония #2"
+    type: vless
+    server: 95.85.243.249
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇪🇪 Эстония #3"
+    type: vless
+    server: 150.241.74.86
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇪🇪 Эстония #4"
+    type: vless
+    server: 150.241.74.87
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇪🇪 Эстония #5"
+    type: vless
+    server: 150.241.74.66
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇪🇪 Эстония #6"
+    type: vless
+    server: 94.183.170.34
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇪🇪 Эстония #7"
+    type: vless
+    server: 132.243.65.94
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇳🇱 Нидерланды #1"
+    type: vless
+    server: 150.241.100.63
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇳🇱 Нидерланды #2"
+    type: vless
+    server: 64.188.77.13
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇳🇱 Нидерланды #3"
+    type: vless
+    server: 150.241.100.84
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇳🇱 Нидерланды #4"
+    type: vless
+    server: 185.184.123.238
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇳🇱 Нидерланды #5"
+    type: vless
+    server: 64.188.77.254
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇳🇱 Нидерланды #6"
+    type: vless
+    server: 150.241.94.59
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇳🇱 Нидерланды #7"
+    type: vless
+    server: 87.58.201.102
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇩🇪 Германия #1"
+    type: vless
+    server: 144.31.168.24
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇩🇪 Германия #2"
+    type: vless
+    server: 64.188.79.164
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇩🇪 Германия #3"
+    type: vless
+    server: 77.91.86.212
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇩🇪 Германия #4"
+    type: vless
+    server: 64.188.98.47
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇩🇪 Германия #5"
+    type: vless
+    server: 2.26.48.130
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇩🇪 Германия #6"
+    type: vless
+    server: 194.87.24.126
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇸🇪 Швеция #1"
+    type: vless
+    server: 95.85.241.55
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇸🇪 Швеция #2"
+    type: vless
+    server: 144.31.240.157
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇸🇪 Швеция #3"
+    type: vless
+    server: 64.188.81.145
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇸🇪 Швеция #4"
+    type: vless
+    server: 87.121.105.50
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇸🇪 Швеция #5"
+    type: vless
+    server: 89.125.37.145
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇫🇮 Финляндия #1"
+    type: vless
+    server: 83.219.97.128
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇫🇮 Финляндия #2"
+    type: vless
+    server: 150.241.86.150
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇫🇮 Финляндия #3"
+    type: vless
+    server: 87.121.89.80
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇫🇮 Финляндия #4"
+    type: vless
+    server: 132.243.223.172
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇷🇺 YouTube #1"
+    type: vless
+    server: 91.196.35.146
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇷🇺 YouTube #2"
+    type: vless
+    server: 84.252.100.116
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇷🇺 Youtube #3"
+    type: vless
+    server: 45.12.4.103
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: ⬇️ Резервное подключение ⬇️
+    type: vless
+    server: tunnelgate.org
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇪🇪 Эстония #3 | RU → EU"
+    type: vless
+    server: 138.124.254.238
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-07d1-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇪🇪 Эстония #4 | RU → EU"
+    type: vless
+    server: 138.124.254.238
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-07d2-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇳🇱 Нидерланды #3 | RU → EU"
+    type: vless
+    server: 138.124.254.239
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-07d3-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇳🇱 Нидерланды #4 | RU → EU"
+    type: vless
+    server: 138.124.254.239
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-07d4-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇩🇪 Германия #3 | RU → EU"
+    type: vless
+    server: 138.124.254.241
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-07d5-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇩🇪 Германия #4 | RU → EU"
+    type: vless
+    server: 138.124.254.241
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-07d6-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇸🇪 Швеция #1 | RU → EU"
+    type: vless
+    server: 138.124.254.240
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-07d7-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇸🇪 Швеция #2 | RU → EU"
+    type: vless
+    server: 138.124.254.240
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-07d8-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: ⬇️ Обход белых списков ⬇️
+    type: vless
+    server: tunnelgate.org
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇷🇺 Обход LTE #1"
+    type: vless
+    server: 84.201.140.65
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: api-maps.yandex.ru
+    reality-opts:
+      public-key: eY2VweNzipS_z8mqjd-qhodNZGt53FOCyuTrmI6mO2k
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇷🇺 Обход LTE #2"
+    type: vless
+    server: 158.160.199.68
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: m.ok.ru
+    reality-opts:
+      public-key: 1Rj1FoSosUqcPGccQLmmfZY_FKkco2pE4zVaGsmaGSI
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇷🇺 Обход LTE #3"
+    type: vless
+    server: 213.178.155.26
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: msk.t2.ru
+    reality-opts:
+      public-key: f4i-OGVyWDhGVVKvXuGB2jOn_qg_OL8S0FTuKal0nW4
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇷🇺 Обход LTE #4"
+    type: vless
+    server: 195.133.198.43
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: id.vk.ru
+    reality-opts:
+      public-key: Cb6Fi86wbJ_7yMjvI1axXNek55YpyDje9HbMgIoimR8
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇳🇱 Обход LTE #3 | RU → NL"
+    type: vless
+    server: 213.178.155.26
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-03e9-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: api-maps.yandex.ru
+    reality-opts:
+      public-key: eY2VweNzipS_z8mqjd-qhodNZGt53FOCyuTrmI6mO2k
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇳🇱 Обход LTE #4 | RU → NL"
+    type: vless
+    server: 195.133.198.43
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-03e9-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: m.ok.ru
+    reality-opts:
+      public-key: 1Rj1FoSosUqcPGccQLmmfZY_FKkco2pE4zVaGsmaGSI
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇩🇪 Обход LTE #3 | RU → DE"
+    type: vless
+    server: 213.178.155.26
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-03ea-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: api-maps.yandex.ru
+    reality-opts:
+      public-key: eY2VweNzipS_z8mqjd-qhodNZGt53FOCyuTrmI6mO2k
+      short-id: ""
+    client-fingerprint: chrome
+  - name: "🇩🇪 Обход LTE #4 | RU → DE"
+    type: vless
+    server: 195.133.198.43
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-03ea-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: m.ok.ru
+    reality-opts:
+      public-key: 1Rj1FoSosUqcPGccQLmmfZY_FKkco2pE4zVaGsmaGSI
+      short-id: ""
+    client-fingerprint: chrome
+  - name: ⬇️ Остальные локации ⬇️
+    type: vless
+    server: tunnelgate.org
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: www.ibm.com
+    reality-opts:
+      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      short-id: ""
+    client-fingerprint: chrome
+  - name: 🇫🇷 Франция
+    type: vless
+    server: 213.176.73.214
+    port: 13514
+    network: grpc
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    tls: true
+    servername: bunny.net
+    reality-opts:
+      public-key: rCFpiETjGT56jSXWAKwuhyRCjlmM5HRK0WaXfoMOMSM
+      short-id: ""
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: chrome
+  - name: 🇺🇸 США
+    type: vless
+    server: 150.241.83.80
+    port: 13514
+    network: grpc
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    tls: true
+    servername: bunny.net
+    reality-opts:
+      public-key: rCFpiETjGT56jSXWAKwuhyRCjlmM5HRK0WaXfoMOMSM
+      short-id: ""
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: chrome
+  - name: 🇱🇻 Латвия
+    type: vless
+    server: 150.241.75.13
+    port: 13514
+    network: grpc
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    tls: true
+    servername: bunny.net
+    reality-opts:
+      public-key: rCFpiETjGT56jSXWAKwuhyRCjlmM5HRK0WaXfoMOMSM
+      short-id: ""
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: chrome
+  - name: 🇱🇹 Литва
+    type: vless
+    server: 45.12.136.142
+    port: 13514
+    network: grpc
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    tls: true
+    servername: bunny.net
+    reality-opts:
+      public-key: rCFpiETjGT56jSXWAKwuhyRCjlmM5HRK0WaXfoMOMSM
+      short-id: ""
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: chrome
+  - name: 🇵🇱 Польша
+    type: vless
+    server: 144.31.171.80
+    port: 13514
+    network: grpc
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    tls: true
+    servername: bunny.net
+    reality-opts:
+      public-key: rCFpiETjGT56jSXWAKwuhyRCjlmM5HRK0WaXfoMOMSM
+      short-id: ""
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: chrome
+  - name: 🇮🇹 Италия
+    type: vless
+    server: 5.253.43.136
+    port: 13514
+    network: grpc
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    tls: true
+    servername: bunny.net
+    reality-opts:
+      public-key: rCFpiETjGT56jSXWAKwuhyRCjlmM5HRK0WaXfoMOMSM
+      short-id: ""
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: chrome
+  - name: 🇨🇿 Чехия
+    type: vless
+    server: 2.56.176.238
+    port: 13514
+    network: grpc
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    tls: true
+    servername: bunny.net
+    reality-opts:
+      public-key: rCFpiETjGT56jSXWAKwuhyRCjlmM5HRK0WaXfoMOMSM
+      short-id: ""
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: chrome
+  - name: 🇦🇲 Армения
+    type: vless
+    server: 45.83.143.192
+    port: 13514
+    network: grpc
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    tls: true
+    servername: bunny.net
+    reality-opts:
+      public-key: rCFpiETjGT56jSXWAKwuhyRCjlmM5HRK0WaXfoMOMSM
+      short-id: ""
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: chrome
+  - name: 🇦🇹 Австрия
+    type: vless
+    server: 150.241.72.172
+    port: 13514
+    network: grpc
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    tls: true
+    servername: bunny.net
+    reality-opts:
+      public-key: rCFpiETjGT56jSXWAKwuhyRCjlmM5HRK0WaXfoMOMSM
+      short-id: ""
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: chrome
+  - name: 🇮🇪 Ирландия
+    type: vless
+    server: 185.231.207.152
+    port: 13514
+    network: grpc
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    tls: true
+    servername: bunny.net
+    reality-opts:
+      public-key: rCFpiETjGT56jSXWAKwuhyRCjlmM5HRK0WaXfoMOMSM
+      short-id: ""
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: chrome
+  - name: 🇳🇴 Норвегия
+    type: vless
+    server: 144.31.217.84
+    port: 13514
+    network: grpc
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    tls: true
+    servername: bunny.net
+    reality-opts:
+      public-key: rCFpiETjGT56jSXWAKwuhyRCjlmM5HRK0WaXfoMOMSM
+      short-id: ""
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: chrome
+  - name: 🇧🇬 Болгария
+    type: vless
+    server: 213.159.65.74
+    port: 13514
+    network: grpc
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    tls: true
+    servername: bunny.net
+    reality-opts:
+      public-key: rCFpiETjGT56jSXWAKwuhyRCjlmM5HRK0WaXfoMOMSM
+      short-id: ""
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: chrome
+  - name: 🇨🇦 Канада
+    type: vless
+    server: 85.208.108.18
+    port: 13514
+    network: grpc
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    tls: true
+    servername: bunny.net
+    reality-opts:
+      public-key: rCFpiETjGT56jSXWAKwuhyRCjlmM5HRK0WaXfoMOMSM
+      short-id: ""
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: chrome
+  - name: 🇷🇴 Румыния
+    type: vless
+    server: 5.182.37.170
+    port: 13514
+    network: grpc
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    tls: true
+    servername: bunny.net
+    reality-opts:
+      public-key: rCFpiETjGT56jSXWAKwuhyRCjlmM5HRK0WaXfoMOMSM
+      short-id: ""
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: chrome
+  - name: 🇹🇷 Турция
+    type: vless
+    server: 2.56.127.170
+    port: 13514
+    network: grpc
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    tls: true
+    servername: bunny.net
+    reality-opts:
+      public-key: rCFpiETjGT56jSXWAKwuhyRCjlmM5HRK0WaXfoMOMSM
+      short-id: ""
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: chrome
+  - name: 🇪🇸 Испания
+    type: vless
+    server: 45.12.150.103
+    port: 13514
+    network: grpc
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    tls: true
+    servername: bunny.net
+    reality-opts:
+      public-key: rCFpiETjGT56jSXWAKwuhyRCjlmM5HRK0WaXfoMOMSM
+      short-id: ""
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: chrome
+  - name: 🇨🇭 Швейцария
+    type: vless
+    server: 45.82.254.61
+    port: 13514
+    network: grpc
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    tls: true
+    servername: bunny.net
+    reality-opts:
+      public-key: rCFpiETjGT56jSXWAKwuhyRCjlmM5HRK0WaXfoMOMSM
+      short-id: ""
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: chrome
+  - name: 🇭🇰 Гонконг
+    type: vless
+    server: 194.246.114.26
+    port: 13514
+    network: grpc
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    tls: true
+    servername: bunny.net
+    reality-opts:
+      public-key: rCFpiETjGT56jSXWAKwuhyRCjlmM5HRK0WaXfoMOMSM
+      short-id: ""
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: chrome
+  - name: 🇯🇵 Япония
+    type: vless
+    server: 45.83.22.238
+    port: 13514
+    network: grpc
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    tls: true
+    servername: bunny.net
+    reality-opts:
+      public-key: rCFpiETjGT56jSXWAKwuhyRCjlmM5HRK0WaXfoMOMSM
+      short-id: ""
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: chrome
+  - name: 🇬🇧 Великобритания
+    type: vless
+    server: 94.131.122.64
+    port: 13514
+    network: grpc
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    tls: true
+    servername: bunny.net
+    reality-opts:
+      public-key: rCFpiETjGT56jSXWAKwuhyRCjlmM5HRK0WaXfoMOMSM
+      short-id: ""
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: chrome
+  - name: 🇵🇹 Португалия
+    type: vless
+    server: 5.182.39.12
+    port: 13514
+    network: grpc
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    tls: true
+    servername: bunny.net
+    reality-opts:
+      public-key: rCFpiETjGT56jSXWAKwuhyRCjlmM5HRK0WaXfoMOMSM
+      short-id: ""
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: chrome
+  - name: 🇰🇿 Казахстан
+    type: vless
+    server: 2.56.177.20
+    port: 13514
+    network: grpc
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    tls: true
+    servername: bunny.net
+    reality-opts:
+      public-key: rCFpiETjGT56jSXWAKwuhyRCjlmM5HRK0WaXfoMOMSM
+      short-id: ""
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: chrome
+  - name: 🇩🇰 Дания
+    type: vless
+    server: 144.31.242.51
+    port: 13514
+    network: grpc
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    tls: true
+    servername: bunny.net
+    reality-opts:
+      public-key: rCFpiETjGT56jSXWAKwuhyRCjlmM5HRK0WaXfoMOMSM
+      short-id: ""
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: chrome
+  - name: 🇧🇪 Бельгия
+    type: vless
+    server: 144.31.219.168
+    port: 13514
+    network: grpc
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    tls: true
+    servername: bunny.net
+    reality-opts:
+      public-key: rCFpiETjGT56jSXWAKwuhyRCjlmM5HRK0WaXfoMOMSM
+      short-id: ""
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: chrome
+  - name: 🇲🇩 Молдова
+    type: vless
+    server: 45.67.229.11
+    port: 13514
+    network: grpc
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    tls: true
+    servername: bunny.net
+    reality-opts:
+      public-key: rCFpiETjGT56jSXWAKwuhyRCjlmM5HRK0WaXfoMOMSM
+      short-id: ""
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: chrome
+proxy-groups:
+  - name: → Remnawave
+    type: select
+    proxies:
+      - ⬇️ Основное подключение ⬇️
+      - "🇪🇪 Эстония #1"
+      - "🇪🇪 Эстония #2"
+      - "🇪🇪 Эстония #3"
+      - "🇪🇪 Эстония #4"
+      - "🇪🇪 Эстония #5"
+      - "🇪🇪 Эстония #6"
+      - "🇪🇪 Эстония #7"
+      - "🇳🇱 Нидерланды #1"
+      - "🇳🇱 Нидерланды #2"
+      - "🇳🇱 Нидерланды #3"
+      - "🇳🇱 Нидерланды #4"
+      - "🇳🇱 Нидерланды #5"
+      - "🇳🇱 Нидерланды #6"
+      - "🇳🇱 Нидерланды #7"
+      - "🇩🇪 Германия #1"
+      - "🇩🇪 Германия #2"
+      - "🇩🇪 Германия #3"
+      - "🇩🇪 Германия #4"
+      - "🇩🇪 Германия #5"
+      - "🇩🇪 Германия #6"
+      - "🇸🇪 Швеция #1"
+      - "🇸🇪 Швеция #2"
+      - "🇸🇪 Швеция #3"
+      - "🇸🇪 Швеция #4"
+      - "🇸🇪 Швеция #5"
+      - "🇫🇮 Финляндия #1"
+      - "🇫🇮 Финляндия #2"
+      - "🇫🇮 Финляндия #3"
+      - "🇫🇮 Финляндия #4"
+      - "🇷🇺 YouTube #1"
+      - "🇷🇺 YouTube #2"
+      - "🇷🇺 Youtube #3"
+      - ⬇️ Резервное подключение ⬇️
+      - "🇪🇪 Эстония #3 | RU → EU"
+      - "🇪🇪 Эстония #4 | RU → EU"
+      - "🇳🇱 Нидерланды #3 | RU → EU"
+      - "🇳🇱 Нидерланды #4 | RU → EU"
+      - "🇩🇪 Германия #3 | RU → EU"
+      - "🇩🇪 Германия #4 | RU → EU"
+      - "🇸🇪 Швеция #1 | RU → EU"
+      - "🇸🇪 Швеция #2 | RU → EU"
+      - ⬇️ Обход белых списков ⬇️
+      - "🇷🇺 Обход LTE #1"
+      - "🇷🇺 Обход LTE #2"
+      - "🇷🇺 Обход LTE #3"
+      - "🇷🇺 Обход LTE #4"
+      - "🇳🇱 Обход LTE #3 | RU → NL"
+      - "🇳🇱 Обход LTE #4 | RU → NL"
+      - "🇩🇪 Обход LTE #3 | RU → DE"
+      - "🇩🇪 Обход LTE #4 | RU → DE"
+      - ⬇️ Остальные локации ⬇️
+      - 🇫🇷 Франция
+      - 🇺🇸 США
+      - 🇱🇻 Латвия
+      - 🇱🇹 Литва
+      - 🇵🇱 Польша
+      - 🇮🇹 Италия
+      - 🇨🇿 Чехия
+      - 🇦🇲 Армения
+      - 🇦🇹 Австрия
+      - 🇮🇪 Ирландия
+      - 🇳🇴 Норвегия
+      - 🇧🇬 Болгария
+      - 🇨🇦 Канада
+      - 🇷🇴 Румыния
+      - 🇹🇷 Турция
+      - 🇪🇸 Испания
+      - 🇨🇭 Швейцария
+      - 🇭🇰 Гонконг
+      - 🇯🇵 Япония
+      - 🇬🇧 Великобритания
+      - 🇵🇹 Португалия
+      - 🇰🇿 Казахстан
+      - 🇩🇰 Дания
+      - 🇧🇪 Бельгия
+      - 🇲🇩 Молдова
+rules:
+  - MATCH,→ Remnawave
