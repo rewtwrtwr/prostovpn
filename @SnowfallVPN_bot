@@ -220,21 +220,6 @@ proxies:
       public-key: wHhzA580eLv3fxvwVe1IPBgel9vFUWR_xLjAvTXNRio
       short-id: 0441f3e34348cb45
     client-fingerprint: edge
-  - name: 🇫🇮Finland | NEW⚠️
-    type: vless
-    server: fedts.buildsnow.top
-    port: 1443
-    network: tcp
-    udp: true
-    uuid: a4aa7c02-3587-4fdf-ade0-8935605999c8
-    packet-encoding: xudp
-    flow: xtls-rprx-vision
-    tls: true
-    servername: fedts.buildsnow.top
-    reality-opts:
-      public-key: RvvxRyOAahFPGOIlZPKmz_XoBci-20YQWC_US0_xVQ4
-      short-id: 0441f3e34348cb45
-    client-fingerprint: edge
   - name: 🇨🇭 Switzerland
     type: vless
     server: ch.snowfalls.top
@@ -323,7 +308,7 @@ proxies:
     servername: nl.snowfall.top
     reality-opts:
       public-key: dhTXgiFZvZPJSNc33EqNvn_CRor_RKeiMxSkHsEdDic
-      short-id: 9216137dce84d23b
+      short-id: fd64d0451305f8e1
     client-fingerprint: edge
   - name: 🇫🇮Finland
     type: vless
@@ -505,6 +490,21 @@ proxies:
       public-key: cjjDnBSWkQwyqcLSfN07GA_kvF2RINyOMgmfXxOQHHQ
       short-id: 0991f3a34341ab49
     client-fingerprint: edge
+  - name: 🇧🇾 Belarus ⚠️
+    type: vless
+    server: by.snowfall.top
+    port: 1443
+    network: tcp
+    udp: true
+    uuid: a4aa7c02-3587-4fdf-ade0-8935605999c8
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: by.snowfall.top
+    reality-opts:
+      public-key: dhTXgiFZvZPJSNc33EqNvn_CRor_RKeiMxSkHsEdDic
+      short-id: ffa6bc9956909c19
+    client-fingerprint: edge
   - name: 🇷🇺Russia, Saint Petersburg
     type: vless
     server: cdn-spb.buildsnow.top
@@ -518,7 +518,7 @@ proxies:
     servername: cdn-spb.buildsnow.top
     reality-opts:
       public-key: 51IESauL4wXoN6uJoMyJ-RLaNEhXvIPpv_uYRsNfPRQ
-      short-id: 17de0e23d1ecbe70
+      short-id: 52356773c6ad0657
     client-fingerprint: edge
   - name: 🇷🇺Russia, Novosibirsk
     type: vless
@@ -548,7 +548,7 @@ proxies:
     servername: ua.snowfall.top
     reality-opts:
       public-key: dhTXgiFZvZPJSNc33EqNvn_CRor_RKeiMxSkHsEdDic
-      short-id: 73a7f33d0731e53c
+      short-id: 52356773c6ad0657
     client-fingerprint: chrome
   - name: 🇹🇭 Thailand
     type: vless
@@ -568,33 +568,17 @@ proxies:
   - name: 🇺🇿 Uzbekistan
     type: vless
     server: uzb.snowfalls.top
-    port: 443
-    network: grpc
-    udp: true
-    uuid: a4aa7c02-3587-4fdf-ade0-8935605999c8
-    packet-encoding: xudp
-    tls: true
-    servername: uzb.snowfalls.top
-    reality-opts:
-      public-key: N2SF5aMegXmGZ4-w_vAJ3hlQ94t5S9dnvQYqwvQhoio
-      short-id: bf1cd53d8801ee20
-    grpc-opts:
-      grpc-service-name: uzb.snowfalls.top
-    client-fingerprint: edge
-  - name: 🇮🇱Israel
-    type: vless
-    server: il.durkaedet.top
-    port: 443
+    port: 1443
     network: tcp
     udp: true
     uuid: a4aa7c02-3587-4fdf-ade0-8935605999c8
     packet-encoding: xudp
     flow: xtls-rprx-vision
     tls: true
-    servername: il.durkaedet.top
+    servername: uzb.snowfalls.top
     reality-opts:
-      public-key: ZHZX49Bs91e-70MJEU4f_evHPqrY0c9hUhDbzmBCMWY
-      short-id: 9425ac3ff996f128
+      public-key: yS34aGHdRs_LBrtn3XppCqb0Oipia0vMVFzhVQf_B2A
+      short-id: ae481f04fa7c617c
     client-fingerprint: edge
   - name: 🇰🇿 Kazakhstan
     type: vless
@@ -624,22 +608,7 @@ proxies:
     servername: ca.snowfall.top
     reality-opts:
       public-key: dhTXgiFZvZPJSNc33EqNvn_CRor_RKeiMxSkHsEdDic
-      short-id: 8f2342038a173437
-    client-fingerprint: edge
-  - name: 🇨🇾 Cyprus
-    type: vless
-    server: cy.snowfalls.top
-    port: 1443
-    network: tcp
-    udp: true
-    uuid: a4aa7c02-3587-4fdf-ade0-8935605999c8
-    packet-encoding: xudp
-    flow: xtls-rprx-vision
-    tls: true
-    servername: cy.snowfalls.top
-    reality-opts:
-      public-key: 4UdD1mdXI4-PBpjgpLvYz8SlP2BGNGmxa37Kc1MJokw
-      short-id: 0441f3e34348cb10
+      short-id: 859a8c7482df7efa
     client-fingerprint: edge
   - name: 🇦🇺 Australia
     type: vless
@@ -684,7 +653,7 @@ proxies:
     servername: ng.snowfall.top
     reality-opts:
       public-key: dhTXgiFZvZPJSNc33EqNvn_CRor_RKeiMxSkHsEdDic
-      short-id: 0441f3e34348cb45
+      short-id: 254930a96af0d147
     client-fingerprint: edge
   - name: 🇧🇷 Brazil
     type: vless
@@ -729,22 +698,7 @@ proxies:
     servername: jp.snowfall.top
     reality-opts:
       public-key: dhTXgiFZvZPJSNc33EqNvn_CRor_RKeiMxSkHsEdDic
-      short-id: 859a8c7482df7efa
-    client-fingerprint: edge
-  - name: 🇸🇬 Singapore
-    type: vless
-    server: sg.snowfall.top
-    port: 443
-    network: tcp
-    udp: true
-    uuid: a4aa7c02-3587-4fdf-ade0-8935605999c8
-    packet-encoding: xudp
-    flow: xtls-rprx-vision
-    tls: true
-    servername: sg.snowfall.top
-    reality-opts:
-      public-key: dhTXgiFZvZPJSNc33EqNvn_CRor_RKeiMxSkHsEdDic
-      short-id: 9216137dce84d23b
+      short-id: 254930a96af0d147
     client-fingerprint: edge
   - name: 🇰🇷South Korea
     type: vless
@@ -760,21 +714,6 @@ proxies:
     reality-opts:
       public-key: Vqclw5CPYTYvRwmUxSwVrp3jswfZnDw_2WzM4U32M1g
       short-id: 0411f3e34348cb15
-    client-fingerprint: edge
-  - name: 🇮🇳 India
-    type: vless
-    server: in.snowfall.top
-    port: 1443
-    network: tcp
-    udp: true
-    uuid: a4aa7c02-3587-4fdf-ade0-8935605999c8
-    packet-encoding: xudp
-    flow: xtls-rprx-vision
-    tls: true
-    servername: in.snowfall.top
-    reality-opts:
-      public-key: -DHBSXn2umG8gbKwtJt408EvhqGnj6WJTJOXdBwrPyc
-      short-id: 0441f3e34348cb45
     client-fingerprint: edge
   - name: 🇮🇩 Indonesia
     type: vless
@@ -819,7 +758,7 @@ proxies:
     servername: hk.durkaedet.top
     reality-opts:
       public-key: dhTXgiFZvZPJSNc33EqNvn_CRor_RKeiMxSkHsEdDic
-      short-id: 8f2342038a173437
+      short-id: ffa6bc9956909c19
     client-fingerprint: edge
   - name: 🇨🇿 Czech Republic | Gemini | GRPC
     type: vless
@@ -1251,6 +1190,21 @@ proxies:
       public-key: dCBIpR7BuqJM7J298WwByWwk9pazEeyiv3Uyh4hHTgQ
       short-id: 5145ab05854122b4
     client-fingerprint: firefox
+  - name: "🇷🇺WL #32 | 3 гб/день  | ❌YT❌"
+    type: vless
+    server: musor.netotcluchai.top
+    port: 1443
+    network: tcp
+    udp: true
+    uuid: a4aa7c02-3587-4fdf-ade0-8935605999c8
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: musor.netotcluchai.top
+    reality-opts:
+      public-key: Bz2Qu67JWaNRcOIbSvC8fes8Vg_RJZwwl272Leo-Sg0
+      short-id: 0191f3e34348cb41
+    client-fingerprint: chrome
   - name: 🇸🇪для OpenWRT и xkeen в поддержке
     type: vless
     server: ennenene
@@ -1280,7 +1234,7 @@ proxies:
     servername: hog.netotcluchai.top
     reality-opts:
       public-key: dhTXgiFZvZPJSNc33EqNvn_CRor_RKeiMxSkHsEdDic
-      short-id: fd64d0451305f8e1
+      short-id: 69afb4b98a8a2968
     client-fingerprint: chrome
 proxy-groups:
   - name: → Remnawave
@@ -1297,7 +1251,6 @@ proxy-groups:
       - 🇷🇴Romania | Gemini
       - 🇮🇹 Italy
       - 🇸🇪 Sweden
-      - 🇫🇮Finland | NEW⚠️
       - 🇨🇭 Switzerland
       - 🇷🇸 Serbia
       - 🇳🇴 Norway
@@ -1316,24 +1269,21 @@ proxy-groups:
       - 🇦🇿 Azerbaijan
       - 🇦🇹 Austria
       - 🇱🇻Latvia
+      - 🇧🇾 Belarus ⚠️
       - 🇷🇺Russia, Saint Petersburg
       - 🇷🇺Russia, Novosibirsk
       - 🇺🇦Ukraine
       - 🇹🇭 Thailand
       - 🇺🇿 Uzbekistan
-      - 🇮🇱Israel
       - 🇰🇿 Kazakhstan
       - 🇨🇦 Canada
-      - 🇨🇾 Cyprus
       - 🇦🇺 Australia
       - 🇵🇰 Pakistan
       - 🇳🇬 Nigeria
       - 🇧🇷 Brazil
       - 🇻🇳 Vietnam
       - 🇯🇵Japan
-      - 🇸🇬 Singapore
       - 🇰🇷South Korea
-      - 🇮🇳 India
       - 🇮🇩 Indonesia
       - 🇿🇦 South Africa
       - 🇭🇰Hong Kong
@@ -1364,6 +1314,7 @@ proxy-groups:
       - 🇭🇺Hungary | GRPC | Gemini
       - "🇷🇺WL #30 | 10 гб/день  | ❌YT❌"
       - "🇷🇺WL #31 | 10 гб/день  | ❌YT❌"
+      - "🇷🇺WL #32 | 3 гб/день  | ❌YT❌"
       - 🇸🇪для OpenWRT и xkeen в поддержке
       - Торренты | Скачивания Игр | Gemini
 rules:
