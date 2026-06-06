@@ -59,9 +59,9 @@ proxies:
     packet-encoding: xudp
     flow: xtls-rprx-vision
     tls: true
-    servername: www.ibm.com
+    servername: ee-1.tunnelgate.org
     reality-opts:
-      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      public-key: Vj7fJ_X-t-_V_NFzckvwIrm_6TXwYsa2Lezlmb8sslo
       short-id: ""
     client-fingerprint: chrome
   - name: "🇪🇪 Эстония #1"
@@ -74,11 +74,11 @@ proxies:
     packet-encoding: xudp
     flow: xtls-rprx-vision
     tls: true
-    servername: www.ibm.com
+    servername: ee-1.tunnelgate.org
     reality-opts:
-      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      public-key: Vj7fJ_X-t-_V_NFzckvwIrm_6TXwYsa2Lezlmb8sslo
       short-id: ""
-    client-fingerprint: chrome
+    client-fingerprint: qq
   - name: "🇪🇪 Эстония #2"
     type: vless
     server: 95.85.243.249
@@ -89,11 +89,11 @@ proxies:
     packet-encoding: xudp
     flow: xtls-rprx-vision
     tls: true
-    servername: www.ibm.com
+    servername: ee-2.tunnelgate.org
     reality-opts:
-      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      public-key: Vj7fJ_X-t-_V_NFzckvwIrm_6TXwYsa2Lezlmb8sslo
       short-id: ""
-    client-fingerprint: chrome
+    client-fingerprint: qq
   - name: "🇪🇪 Эстония #3"
     type: vless
     server: 150.241.74.86
@@ -104,11 +104,11 @@ proxies:
     packet-encoding: xudp
     flow: xtls-rprx-vision
     tls: true
-    servername: www.ibm.com
+    servername: ee-3.tunnelgate.org
     reality-opts:
-      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      public-key: Vj7fJ_X-t-_V_NFzckvwIrm_6TXwYsa2Lezlmb8sslo
       short-id: ""
-    client-fingerprint: chrome
+    client-fingerprint: qq
   - name: "🇪🇪 Эстония #4"
     type: vless
     server: 150.241.74.87
@@ -119,11 +119,11 @@ proxies:
     packet-encoding: xudp
     flow: xtls-rprx-vision
     tls: true
-    servername: www.ibm.com
+    servername: ee-4.tunnelgate.org
     reality-opts:
-      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      public-key: Vj7fJ_X-t-_V_NFzckvwIrm_6TXwYsa2Lezlmb8sslo
       short-id: ""
-    client-fingerprint: chrome
+    client-fingerprint: qq
   - name: "🇪🇪 Эстония #5"
     type: vless
     server: 150.241.74.66
@@ -134,11 +134,11 @@ proxies:
     packet-encoding: xudp
     flow: xtls-rprx-vision
     tls: true
-    servername: www.ibm.com
+    servername: ee-5.tunnelgate.org
     reality-opts:
-      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      public-key: Vj7fJ_X-t-_V_NFzckvwIrm_6TXwYsa2Lezlmb8sslo
       short-id: ""
-    client-fingerprint: chrome
+    client-fingerprint: qq
   - name: "🇪🇪 Эстония #6"
     type: vless
     server: 94.183.170.34
@@ -149,11 +149,11 @@ proxies:
     packet-encoding: xudp
     flow: xtls-rprx-vision
     tls: true
-    servername: www.ibm.com
+    servername: ee-6.tunnelgate.org
     reality-opts:
-      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      public-key: Vj7fJ_X-t-_V_NFzckvwIrm_6TXwYsa2Lezlmb8sslo
       short-id: ""
-    client-fingerprint: chrome
+    client-fingerprint: qq
   - name: "🇪🇪 Эстония #7"
     type: vless
     server: 132.243.65.94
@@ -164,11 +164,11 @@ proxies:
     packet-encoding: xudp
     flow: xtls-rprx-vision
     tls: true
-    servername: www.ibm.com
+    servername: ee-7.tunnelgate.org
     reality-opts:
-      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      public-key: Vj7fJ_X-t-_V_NFzckvwIrm_6TXwYsa2Lezlmb8sslo
       short-id: ""
-    client-fingerprint: chrome
+    client-fingerprint: qq
   - name: "🇳🇱 Нидерланды #1"
     type: vless
     server: 150.241.100.63
@@ -179,11 +179,11 @@ proxies:
     packet-encoding: xudp
     flow: xtls-rprx-vision
     tls: true
-    servername: www.ibm.com
+    servername: nl-1.tunnelgate.org
     reality-opts:
-      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      public-key: Vj7fJ_X-t-_V_NFzckvwIrm_6TXwYsa2Lezlmb8sslo
       short-id: ""
-    client-fingerprint: chrome
+    client-fingerprint: qq
   - name: "🇳🇱 Нидерланды #2"
     type: vless
     server: 64.188.77.13
@@ -194,11 +194,11 @@ proxies:
     packet-encoding: xudp
     flow: xtls-rprx-vision
     tls: true
-    servername: www.ibm.com
+    servername: nl-2.tunnelgate.org
     reality-opts:
-      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      public-key: Vj7fJ_X-t-_V_NFzckvwIrm_6TXwYsa2Lezlmb8sslo
       short-id: ""
-    client-fingerprint: chrome
+    client-fingerprint: qq
   - name: "🇳🇱 Нидерланды #3"
     type: vless
     server: 150.241.100.84
@@ -209,11 +209,11 @@ proxies:
     packet-encoding: xudp
     flow: xtls-rprx-vision
     tls: true
-    servername: www.ibm.com
+    servername: nl-3.tunnelgate.org
     reality-opts:
-      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      public-key: Vj7fJ_X-t-_V_NFzckvwIrm_6TXwYsa2Lezlmb8sslo
       short-id: ""
-    client-fingerprint: chrome
+    client-fingerprint: qq
   - name: "🇳🇱 Нидерланды #4"
     type: vless
     server: 185.184.123.238
@@ -224,11 +224,11 @@ proxies:
     packet-encoding: xudp
     flow: xtls-rprx-vision
     tls: true
-    servername: www.ibm.com
+    servername: nl-4.tunnelgate.org
     reality-opts:
-      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      public-key: Vj7fJ_X-t-_V_NFzckvwIrm_6TXwYsa2Lezlmb8sslo
       short-id: ""
-    client-fingerprint: chrome
+    client-fingerprint: qq
   - name: "🇳🇱 Нидерланды #5"
     type: vless
     server: 64.188.77.254
@@ -239,11 +239,11 @@ proxies:
     packet-encoding: xudp
     flow: xtls-rprx-vision
     tls: true
-    servername: www.ibm.com
+    servername: nl-5.tunnelgate.org
     reality-opts:
-      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      public-key: Vj7fJ_X-t-_V_NFzckvwIrm_6TXwYsa2Lezlmb8sslo
       short-id: ""
-    client-fingerprint: chrome
+    client-fingerprint: qq
   - name: "🇳🇱 Нидерланды #6"
     type: vless
     server: 150.241.94.59
@@ -254,11 +254,11 @@ proxies:
     packet-encoding: xudp
     flow: xtls-rprx-vision
     tls: true
-    servername: www.ibm.com
+    servername: nl-6.tunnelgate.org
     reality-opts:
-      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      public-key: Vj7fJ_X-t-_V_NFzckvwIrm_6TXwYsa2Lezlmb8sslo
       short-id: ""
-    client-fingerprint: chrome
+    client-fingerprint: qq
   - name: "🇳🇱 Нидерланды #7"
     type: vless
     server: 87.58.201.102
@@ -269,11 +269,26 @@ proxies:
     packet-encoding: xudp
     flow: xtls-rprx-vision
     tls: true
-    servername: www.ibm.com
+    servername: nl-7.tunnelgate.org
     reality-opts:
-      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      public-key: Vj7fJ_X-t-_V_NFzckvwIrm_6TXwYsa2Lezlmb8sslo
       short-id: ""
-    client-fingerprint: chrome
+    client-fingerprint: qq
+  - name: "🇳🇱 Нидерланды #8"
+    type: vless
+    server: 95.85.248.50
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: nl-8.tunnelgate.org
+    reality-opts:
+      public-key: Vj7fJ_X-t-_V_NFzckvwIrm_6TXwYsa2Lezlmb8sslo
+      short-id: ""
+    client-fingerprint: qq
   - name: "🇩🇪 Германия #1"
     type: vless
     server: 144.31.168.24
@@ -284,11 +299,11 @@ proxies:
     packet-encoding: xudp
     flow: xtls-rprx-vision
     tls: true
-    servername: www.ibm.com
+    servername: de-1.tunnelgate.org
     reality-opts:
-      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      public-key: Vj7fJ_X-t-_V_NFzckvwIrm_6TXwYsa2Lezlmb8sslo
       short-id: ""
-    client-fingerprint: chrome
+    client-fingerprint: qq
   - name: "🇩🇪 Германия #2"
     type: vless
     server: 64.188.79.164
@@ -299,11 +314,11 @@ proxies:
     packet-encoding: xudp
     flow: xtls-rprx-vision
     tls: true
-    servername: www.ibm.com
+    servername: de-2.tunnelgate.org
     reality-opts:
-      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      public-key: Vj7fJ_X-t-_V_NFzckvwIrm_6TXwYsa2Lezlmb8sslo
       short-id: ""
-    client-fingerprint: chrome
+    client-fingerprint: qq
   - name: "🇩🇪 Германия #3"
     type: vless
     server: 77.91.86.212
@@ -314,11 +329,11 @@ proxies:
     packet-encoding: xudp
     flow: xtls-rprx-vision
     tls: true
-    servername: www.ibm.com
+    servername: de-3.tunnelgate.org
     reality-opts:
-      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      public-key: Vj7fJ_X-t-_V_NFzckvwIrm_6TXwYsa2Lezlmb8sslo
       short-id: ""
-    client-fingerprint: chrome
+    client-fingerprint: qq
   - name: "🇩🇪 Германия #4"
     type: vless
     server: 64.188.98.47
@@ -329,11 +344,11 @@ proxies:
     packet-encoding: xudp
     flow: xtls-rprx-vision
     tls: true
-    servername: www.ibm.com
+    servername: de-4.tunnelgate.org
     reality-opts:
-      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      public-key: Vj7fJ_X-t-_V_NFzckvwIrm_6TXwYsa2Lezlmb8sslo
       short-id: ""
-    client-fingerprint: chrome
+    client-fingerprint: qq
   - name: "🇩🇪 Германия #5"
     type: vless
     server: 2.26.48.130
@@ -344,11 +359,11 @@ proxies:
     packet-encoding: xudp
     flow: xtls-rprx-vision
     tls: true
-    servername: www.ibm.com
+    servername: de-5.tunnelgate.org
     reality-opts:
-      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      public-key: Vj7fJ_X-t-_V_NFzckvwIrm_6TXwYsa2Lezlmb8sslo
       short-id: ""
-    client-fingerprint: chrome
+    client-fingerprint: qq
   - name: "🇩🇪 Германия #6"
     type: vless
     server: 194.87.24.126
@@ -359,11 +374,11 @@ proxies:
     packet-encoding: xudp
     flow: xtls-rprx-vision
     tls: true
-    servername: www.ibm.com
+    servername: de-6.tunnelgate.org
     reality-opts:
-      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      public-key: Vj7fJ_X-t-_V_NFzckvwIrm_6TXwYsa2Lezlmb8sslo
       short-id: ""
-    client-fingerprint: chrome
+    client-fingerprint: qq
   - name: "🇸🇪 Швеция #1"
     type: vless
     server: 95.85.241.55
@@ -374,11 +389,11 @@ proxies:
     packet-encoding: xudp
     flow: xtls-rprx-vision
     tls: true
-    servername: www.ibm.com
+    servername: se-1.tunnelgate.org
     reality-opts:
-      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      public-key: Vj7fJ_X-t-_V_NFzckvwIrm_6TXwYsa2Lezlmb8sslo
       short-id: ""
-    client-fingerprint: chrome
+    client-fingerprint: qq
   - name: "🇸🇪 Швеция #2"
     type: vless
     server: 144.31.240.157
@@ -389,11 +404,11 @@ proxies:
     packet-encoding: xudp
     flow: xtls-rprx-vision
     tls: true
-    servername: www.ibm.com
+    servername: se-2.tunnelgate.org
     reality-opts:
-      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      public-key: Vj7fJ_X-t-_V_NFzckvwIrm_6TXwYsa2Lezlmb8sslo
       short-id: ""
-    client-fingerprint: chrome
+    client-fingerprint: qq
   - name: "🇸🇪 Швеция #3"
     type: vless
     server: 64.188.81.145
@@ -404,11 +419,11 @@ proxies:
     packet-encoding: xudp
     flow: xtls-rprx-vision
     tls: true
-    servername: www.ibm.com
+    servername: se-3.tunnelgate.org
     reality-opts:
-      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      public-key: Vj7fJ_X-t-_V_NFzckvwIrm_6TXwYsa2Lezlmb8sslo
       short-id: ""
-    client-fingerprint: chrome
+    client-fingerprint: qq
   - name: "🇸🇪 Швеция #4"
     type: vless
     server: 87.121.105.50
@@ -419,11 +434,11 @@ proxies:
     packet-encoding: xudp
     flow: xtls-rprx-vision
     tls: true
-    servername: www.ibm.com
+    servername: se-4.tunnelgate.org
     reality-opts:
-      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      public-key: Vj7fJ_X-t-_V_NFzckvwIrm_6TXwYsa2Lezlmb8sslo
       short-id: ""
-    client-fingerprint: chrome
+    client-fingerprint: qq
   - name: "🇸🇪 Швеция #5"
     type: vless
     server: 89.125.37.145
@@ -434,11 +449,11 @@ proxies:
     packet-encoding: xudp
     flow: xtls-rprx-vision
     tls: true
-    servername: www.ibm.com
+    servername: se-5.tunnelgate.org
     reality-opts:
-      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      public-key: Vj7fJ_X-t-_V_NFzckvwIrm_6TXwYsa2Lezlmb8sslo
       short-id: ""
-    client-fingerprint: chrome
+    client-fingerprint: qq
   - name: "🇫🇮 Финляндия #1"
     type: vless
     server: 83.219.97.128
@@ -449,11 +464,11 @@ proxies:
     packet-encoding: xudp
     flow: xtls-rprx-vision
     tls: true
-    servername: www.ibm.com
+    servername: fi-1.tunnelgate.org
     reality-opts:
-      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      public-key: Vj7fJ_X-t-_V_NFzckvwIrm_6TXwYsa2Lezlmb8sslo
       short-id: ""
-    client-fingerprint: chrome
+    client-fingerprint: qq
   - name: "🇫🇮 Финляндия #2"
     type: vless
     server: 150.241.86.150
@@ -464,11 +479,11 @@ proxies:
     packet-encoding: xudp
     flow: xtls-rprx-vision
     tls: true
-    servername: www.ibm.com
+    servername: fi-2.tunnelgate.org
     reality-opts:
-      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      public-key: Vj7fJ_X-t-_V_NFzckvwIrm_6TXwYsa2Lezlmb8sslo
       short-id: ""
-    client-fingerprint: chrome
+    client-fingerprint: qq
   - name: "🇫🇮 Финляндия #3"
     type: vless
     server: 87.121.89.80
@@ -479,11 +494,11 @@ proxies:
     packet-encoding: xudp
     flow: xtls-rprx-vision
     tls: true
-    servername: www.ibm.com
+    servername: fi-3.tunnelgate.org
     reality-opts:
-      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      public-key: Vj7fJ_X-t-_V_NFzckvwIrm_6TXwYsa2Lezlmb8sslo
       short-id: ""
-    client-fingerprint: chrome
+    client-fingerprint: qq
   - name: "🇫🇮 Финляндия #4"
     type: vless
     server: 132.243.223.172
@@ -494,11 +509,11 @@ proxies:
     packet-encoding: xudp
     flow: xtls-rprx-vision
     tls: true
-    servername: www.ibm.com
+    servername: fi-4.tunnelgate.org
     reality-opts:
-      public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
+      public-key: Vj7fJ_X-t-_V_NFzckvwIrm_6TXwYsa2Lezlmb8sslo
       short-id: ""
-    client-fingerprint: chrome
+    client-fingerprint: qq
   - name: "🇷🇺 YouTube #1"
     type: vless
     server: 91.196.35.146
@@ -694,24 +709,9 @@ proxies:
       public-key: x1LJ_AtGclplZe1Pm2AUJdfPXHblHVOk3sZS77dA9ms
       short-id: ""
     client-fingerprint: chrome
-  - name: "🇷🇺 Обход LTE #1"
-    type: vless
-    server: 84.201.140.65
-    port: 443
-    network: tcp
-    udp: true
-    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
-    packet-encoding: xudp
-    flow: xtls-rprx-vision
-    tls: true
-    servername: api-maps.yandex.ru
-    reality-opts:
-      public-key: eY2VweNzipS_z8mqjd-qhodNZGt53FOCyuTrmI6mO2k
-      short-id: ""
-    client-fingerprint: chrome
   - name: "🇷🇺 Обход LTE #2"
     type: vless
-    server: 158.160.199.68
+    server: 158.160.188.252
     port: 443
     network: tcp
     udp: true
@@ -719,29 +719,14 @@ proxies:
     packet-encoding: xudp
     flow: xtls-rprx-vision
     tls: true
-    servername: m.ok.ru
+    servername: cloud.mail.ru
     reality-opts:
-      public-key: 1Rj1FoSosUqcPGccQLmmfZY_FKkco2pE4zVaGsmaGSI
+      public-key: A41b2Th15KC7t1hSRTvkA3-CzZfv1DD1XOV2L5ICuA0
       short-id: ""
     client-fingerprint: chrome
-  - name: "🇷🇺 Обход LTE #3"
+  - name: "🇩🇪 Обход LTE #2"
     type: vless
-    server: 213.178.155.26
-    port: 443
-    network: tcp
-    udp: true
-    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
-    packet-encoding: xudp
-    flow: xtls-rprx-vision
-    tls: true
-    servername: msk.t2.ru
-    reality-opts:
-      public-key: f4i-OGVyWDhGVVKvXuGB2jOn_qg_OL8S0FTuKal0nW4
-      short-id: ""
-    client-fingerprint: chrome
-  - name: "🇷🇺 Обход LTE #4"
-    type: vless
-    server: 195.133.198.43
+    server: 158.160.188.252
     port: 443
     network: tcp
     udp: true
@@ -751,67 +736,7 @@ proxies:
     tls: true
     servername: id.vk.ru
     reality-opts:
-      public-key: Cb6Fi86wbJ_7yMjvI1axXNek55YpyDje9HbMgIoimR8
-      short-id: ""
-    client-fingerprint: chrome
-  - name: "🇳🇱 Обход LTE #3 | RU → NL"
-    type: vless
-    server: 213.178.155.26
-    port: 443
-    network: tcp
-    udp: true
-    uuid: 36b6efcb-7911-03e9-b547-0e7cf172072e
-    packet-encoding: xudp
-    flow: xtls-rprx-vision
-    tls: true
-    servername: api-maps.yandex.ru
-    reality-opts:
-      public-key: eY2VweNzipS_z8mqjd-qhodNZGt53FOCyuTrmI6mO2k
-      short-id: ""
-    client-fingerprint: chrome
-  - name: "🇳🇱 Обход LTE #4 | RU → NL"
-    type: vless
-    server: 195.133.198.43
-    port: 443
-    network: tcp
-    udp: true
-    uuid: 36b6efcb-7911-03e9-b547-0e7cf172072e
-    packet-encoding: xudp
-    flow: xtls-rprx-vision
-    tls: true
-    servername: m.ok.ru
-    reality-opts:
-      public-key: 1Rj1FoSosUqcPGccQLmmfZY_FKkco2pE4zVaGsmaGSI
-      short-id: ""
-    client-fingerprint: chrome
-  - name: "🇩🇪 Обход LTE #3 | RU → DE"
-    type: vless
-    server: 213.178.155.26
-    port: 443
-    network: tcp
-    udp: true
-    uuid: 36b6efcb-7911-03ea-b547-0e7cf172072e
-    packet-encoding: xudp
-    flow: xtls-rprx-vision
-    tls: true
-    servername: api-maps.yandex.ru
-    reality-opts:
-      public-key: eY2VweNzipS_z8mqjd-qhodNZGt53FOCyuTrmI6mO2k
-      short-id: ""
-    client-fingerprint: chrome
-  - name: "🇩🇪 Обход LTE #4 | RU → DE"
-    type: vless
-    server: 195.133.198.43
-    port: 443
-    network: tcp
-    udp: true
-    uuid: 36b6efcb-7911-03ea-b547-0e7cf172072e
-    packet-encoding: xudp
-    flow: xtls-rprx-vision
-    tls: true
-    servername: m.ok.ru
-    reality-opts:
-      public-key: 1Rj1FoSosUqcPGccQLmmfZY_FKkco2pE4zVaGsmaGSI
+      public-key: zggn0nHMsa9RHxqYEGwf4X24grSSAqVQ8uaRW3UKBTU
       short-id: ""
     client-fingerprint: chrome
   - name: ⬇️ Остальные локации ⬇️
@@ -1248,6 +1173,7 @@ proxy-groups:
       - "🇳🇱 Нидерланды #5"
       - "🇳🇱 Нидерланды #6"
       - "🇳🇱 Нидерланды #7"
+      - "🇳🇱 Нидерланды #8"
       - "🇩🇪 Германия #1"
       - "🇩🇪 Германия #2"
       - "🇩🇪 Германия #3"
@@ -1276,14 +1202,8 @@ proxy-groups:
       - "🇸🇪 Швеция #1 | RU → EU"
       - "🇸🇪 Швеция #2 | RU → EU"
       - ⬇️ Обход белых списков ⬇️
-      - "🇷🇺 Обход LTE #1"
       - "🇷🇺 Обход LTE #2"
-      - "🇷🇺 Обход LTE #3"
-      - "🇷🇺 Обход LTE #4"
-      - "🇳🇱 Обход LTE #3 | RU → NL"
-      - "🇳🇱 Обход LTE #4 | RU → NL"
-      - "🇩🇪 Обход LTE #3 | RU → DE"
-      - "🇩🇪 Обход LTE #4 | RU → DE"
+      - "🇩🇪 Обход LTE #2"
       - ⬇️ Остальные локации ⬇️
       - 🇫🇷 Франция
       - 🇺🇸 США
