@@ -58,21 +58,459 @@ dns:
   nameserver:
     - https://cloudflare-dns.com/dns-query#Локации
 proxies:
-  - name: Приложение не поддерживает данный протокол.
+  - name: 🇵🇱  Польша - 4
     type: vless
-    server: 0.0.0.0
-    port: 1
+    server: plcdn4.kinotorg.net
+    port: 443
     network: tcp
     udp: true
-    uuid: 00000000-0000-0000-0000-000000000000
+    uuid: 8297805c-1fab-484a-bf41-b291ca75e8a5
     packet-encoding: xudp
-    client-fingerprint: chrome
+    tls: true
+    servername: plcdn4.kinotorg.net
+    client-fingerprint: firefox
+  - name: 🇱🇻  Латвия - 3
+    type: vless
+    server: lvcdn3.zak-rkp.net
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8297805c-1fab-484a-bf41-b291ca75e8a5
+    packet-encoding: xudp
+    tls: true
+    servername: lvcdn3.zak-rkp.net
+    client-fingerprint: firefox
+  - name: 🇻🇮 Виргинские острова - 1 🚀
+    type: vless
+    server: kinoveh1.kinotorg.net
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8297805c-1fab-484a-bf41-b291ca75e8a5
+    packet-encoding: xudp
+    tls: true
+    servername: kinoveh1.kinotorg.net
+    client-fingerprint: firefox
+  - name: 🇵🇱  Польша - 11
+    type: vless
+    server: plcdn11.zak-rkp.net
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8297805c-1fab-484a-bf41-b291ca75e8a5
+    packet-encoding: xudp
+    tls: true
+    servername: plcdn11.zak-rkp.net
+    client-fingerprint: firefox
+  - name: 🇫🇮  Финляндия - 19
+    type: vless
+    server: ficdn19.zak-rkp.net
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8297805c-1fab-484a-bf41-b291ca75e8a5
+    packet-encoding: xudp
+    tls: true
+    servername: ficdn19.zak-rkp.net
+    client-fingerprint: firefox
+  - name: 🇵🇱  Польша - 2
+    type: vless
+    server: plcdn2.zak-rkp.net
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8297805c-1fab-484a-bf41-b291ca75e8a5
+    packet-encoding: xudp
+    tls: true
+    servername: plcdn2.zak-rkp.net
+    client-fingerprint: firefox
+  - name: 🇵🇱 Польша — TLS
+    type: vless
+    server: pl.kinotorg.net
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8297805c-1fab-484a-bf41-b291ca75e8a5
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: pl.kinotorg.net
+    reality-opts:
+      public-key: 0gKl7TLTz-1qjLfuisoEwgkQ8SwfxlBeNWQ3SgLPiCg
+      short-id: c1a7e9b4382d5f60
+    client-fingerprint: firefox
+  - name: 🇮🇳  Индия - 1
+    type: vless
+    server: incdn1.zak-rkp.net
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8297805c-1fab-484a-bf41-b291ca75e8a5
+    packet-encoding: xudp
+    tls: true
+    servername: incdn1.zak-rkp.net
+    client-fingerprint: firefox
+  - name: 🇵🇱 Польша — gRPC
+    type: vless
+    server: pl.kinotorg.net
+    port: 443
+    network: grpc
+    udp: true
+    uuid: 8297805c-1fab-484a-bf41-b291ca75e8a5
+    packet-encoding: xudp
+    tls: true
+    servername: pl.kinotorg.net
+    alpn:
+      - h2
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: firefox
+  - name: 🇸🇪  Швеция - 110  🚀
+    type: vless
+    server: secdn110.zak-rkp.net
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8297805c-1fab-484a-bf41-b291ca75e8a5
+    packet-encoding: xudp
+    tls: true
+    servername: secdn110.zak-rkp.net
+    client-fingerprint: firefox
+  - name: 🇹🇯 Таджикистан (Душанбе) - 1 🚀
+    type: vless
+    server: kinotj1.kinotorg.net
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8297805c-1fab-484a-bf41-b291ca75e8a5
+    packet-encoding: xudp
+    tls: true
+    servername: kinotj1.kinotorg.net
+    client-fingerprint: firefox
+  - name: 🇦🇹 Австрия - 2 🚀
+    type: vless
+    server: aucdn2.zak-rkp.net
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8297805c-1fab-484a-bf41-b291ca75e8a5
+    packet-encoding: xudp
+    tls: true
+    servername: aucdn2.zak-rkp.net
+    client-fingerprint: firefox
+  - name: 🇸🇪  Швеция - 109  🚀
+    type: vless
+    server: kinose109.kinotorg.net
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8297805c-1fab-484a-bf41-b291ca75e8a5
+    packet-encoding: xudp
+    tls: true
+    servername: kinose109.kinotorg.net
+    client-fingerprint: firefox
+  - name: 🇫🇮  Финляндия - 9
+    type: vless
+    server: ficdn9.zak-rkp.net
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8297805c-1fab-484a-bf41-b291ca75e8a5
+    packet-encoding: xudp
+    tls: true
+    servername: ficdn9.zak-rkp.net
+    client-fingerprint: firefox
+  - name: 🇵🇱  Польша - 3
+    type: vless
+    server: plcdn3.zak-rkp.net
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8297805c-1fab-484a-bf41-b291ca75e8a5
+    packet-encoding: xudp
+    tls: true
+    servername: plcdn3.zak-rkp.net
+    client-fingerprint: firefox
+  - name: 🇸🇪  Швеция - 107  🚀
+    type: vless
+    server: secdn-107.zak-rkp.net
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8297805c-1fab-484a-bf41-b291ca75e8a5
+    packet-encoding: xudp
+    tls: true
+    servername: secdn-107.zak-rkp.net
+    client-fingerprint: firefox
+  - name: 🇦🇲 Армения - 1 🚀
+    type: vless
+    server: kinoam1.kinotorg.net
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8297805c-1fab-484a-bf41-b291ca75e8a5
+    packet-encoding: xudp
+    tls: true
+    servername: kinoam1.kinotorg.net
+    client-fingerprint: firefox
+  - name: 🇫🇮  Финляндия - 3
+    type: vless
+    server: ficdn3.zak-rkp.net
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8297805c-1fab-484a-bf41-b291ca75e8a5
+    packet-encoding: xudp
+    tls: true
+    servername: ficdn3.zak-rkp.net
+    client-fingerprint: firefox
+  - name: 🇫🇮 Финляндия — TLS
+    type: vless
+    server: fi.kinotorg.net
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8297805c-1fab-484a-bf41-b291ca75e8a5
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: fi.kinotorg.net
+    reality-opts:
+      public-key: 0gKl7TLTz-1qjLfuisoEwgkQ8SwfxlBeNWQ3SgLPiCg
+      short-id: c1a7e9b4382d5f60
+    client-fingerprint: firefox
+  - name: 🇵🇱  Польша - 18
+    type: vless
+    server: plcdn18.zak-rkp.net
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8297805c-1fab-484a-bf41-b291ca75e8a5
+    packet-encoding: xudp
+    tls: true
+    servername: plcdn18.zak-rkp.net
+    client-fingerprint: firefox
+  - name: 🇫🇮  Финляндия - 13
+    type: vless
+    server: ficdn13.zak-rkp.net
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8297805c-1fab-484a-bf41-b291ca75e8a5
+    packet-encoding: xudp
+    tls: true
+    servername: ficdn13.zak-rkp.net
+    client-fingerprint: firefox
+  - name: 🇦🇱 Албания - 3🚀
+    type: vless
+    server: alcdn3.zak-rkp.net
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8297805c-1fab-484a-bf41-b291ca75e8a5
+    packet-encoding: xudp
+    tls: true
+    servername: alcdn3.zak-rkp.net
+    client-fingerprint: firefox
+  - name: 🇯🇵 Япония (Токио) - 1 🚀
+    type: vless
+    server: kinojp1.kinotorg.net
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8297805c-1fab-484a-bf41-b291ca75e8a5
+    packet-encoding: xudp
+    tls: true
+    servername: kinojp1.kinotorg.net
+    client-fingerprint: firefox
+  - name: 🇫🇮 Финляндия — gRPC
+    type: vless
+    server: fi.kinotorg.net
+    port: 443
+    network: grpc
+    udp: true
+    uuid: 8297805c-1fab-484a-bf41-b291ca75e8a5
+    packet-encoding: xudp
+    tls: true
+    servername: fi.kinotorg.net
+    alpn:
+      - h2
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: firefox
+  - name: 🇳🇱  Нидерланды - 11  🚀
+    type: vless
+    server: nlcdn11.zak-rkp.net
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8297805c-1fab-484a-bf41-b291ca75e8a5
+    packet-encoding: xudp
+    tls: true
+    servername: nlcdn11.zak-rkp.net
+    client-fingerprint: firefox
+  - name: 🇩🇪  Германия - 20
+    type: vless
+    server: decdn-20.zak-rkp.net
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8297805c-1fab-484a-bf41-b291ca75e8a5
+    packet-encoding: xudp
+    tls: true
+    servername: decdn-20.zak-rkp.net
+    client-fingerprint: firefox
+  - name: 🇫🇮  Финляндия - 4
+    type: vless
+    server: ficdn4.zak-rkp.net
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8297805c-1fab-484a-bf41-b291ca75e8a5
+    packet-encoding: xudp
+    tls: true
+    servername: ficdn4.zak-rkp.net
+    client-fingerprint: firefox
+  - name: 🇳🇱  Нидерланды - 10  🚀
+    type: vless
+    server: kinonl10.kinotorg.net
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8297805c-1fab-484a-bf41-b291ca75e8a5
+    packet-encoding: xudp
+    tls: true
+    servername: kinonl10.kinotorg.net
+    client-fingerprint: firefox
+  - name: 🇳🇱  Нидерланды - 14 🚀
+    type: vless
+    server: nlcdn14.kinotorg.net
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8297805c-1fab-484a-bf41-b291ca75e8a5
+    packet-encoding: xudp
+    tls: true
+    servername: nlcdn14.kinotorg.net
+    client-fingerprint: firefox
+  - name: 🇩🇪  Германия - 13
+    type: vless
+    server: decdn-13.zak-rkp.net
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8297805c-1fab-484a-bf41-b291ca75e8a5
+    packet-encoding: xudp
+    tls: true
+    servername: decdn-13.zak-rkp.net
+    client-fingerprint: firefox
+  - name: 🇦🇪 ОАЭ - 1
+    type: vless
+    server: aecdn1.zak-rkp.net
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8297805c-1fab-484a-bf41-b291ca75e8a5
+    packet-encoding: xudp
+    tls: true
+    servername: aecdn1.zak-rkp.net
+    client-fingerprint: firefox
+  - name: 🇳🇱  Нидерланды - 8
+    type: vless
+    server: kinonl8.kinotorg.net
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8297805c-1fab-484a-bf41-b291ca75e8a5
+    packet-encoding: xudp
+    tls: true
+    servername: kinonl8.kinotorg.net
+    client-fingerprint: firefox
+  - name: 🇻🇮 Виргинские острова - 2 🚀
+    type: vless
+    server: kinoveh2.kinotorg.net
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8297805c-1fab-484a-bf41-b291ca75e8a5
+    packet-encoding: xudp
+    tls: true
+    servername: kinoveh2.kinotorg.net
+    client-fingerprint: firefox
+  - name: 🇵🇱  Польша - 10
+    type: vless
+    server: plcdn10.zak-rkp.net
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8297805c-1fab-484a-bf41-b291ca75e8a5
+    packet-encoding: xudp
+    tls: true
+    servername: plcdn10.zak-rkp.net
+    client-fingerprint: firefox
+  - name: 🇸🇪  Швеция - 17
+    type: vless
+    server: secdn17.zak-rkp.net
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8297805c-1fab-484a-bf41-b291ca75e8a5
+    packet-encoding: xudp
+    tls: true
+    servername: secdn17.zak-rkp.net
+    client-fingerprint: firefox
+  - name: 🇨🇳 Китай (Пекин) - 1 🚀
+    type: vless
+    server: kinocn1.kinotorg.net
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 8297805c-1fab-484a-bf41-b291ca75e8a5
+    packet-encoding: xudp
+    tls: true
+    servername: kinocn1.kinotorg.net
+    client-fingerprint: firefox
 proxy-groups:
   - name: Локации
     icon: https://i.postimg.cc/CxpytvP1/Clean-Wave-round-corner.png
     type: select
     proxies:
-      - Приложение не поддерживает данный протокол.
+      - 🇵🇱  Польша - 4
+      - 🇱🇻  Латвия - 3
+      - 🇻🇮 Виргинские острова - 1 🚀
+      - 🇵🇱  Польша - 11
+      - 🇫🇮  Финляндия - 19
+      - 🇵🇱  Польша - 2
+      - 🇵🇱 Польша — TLS
+      - 🇮🇳  Индия - 1
+      - 🇵🇱 Польша — gRPC
+      - 🇸🇪  Швеция - 110  🚀
+      - 🇹🇯 Таджикистан (Душанбе) - 1 🚀
+      - 🇦🇹 Австрия - 2 🚀
+      - 🇸🇪  Швеция - 109  🚀
+      - 🇫🇮  Финляндия - 9
+      - 🇵🇱  Польша - 3
+      - 🇸🇪  Швеция - 107  🚀
+      - 🇦🇲 Армения - 1 🚀
+      - 🇫🇮  Финляндия - 3
+      - 🇫🇮 Финляндия — TLS
+      - 🇵🇱  Польша - 18
+      - 🇫🇮  Финляндия - 13
+      - 🇦🇱 Албания - 3🚀
+      - 🇯🇵 Япония (Токио) - 1 🚀
+      - 🇫🇮 Финляндия — gRPC
+      - 🇳🇱  Нидерланды - 11  🚀
+      - 🇩🇪  Германия - 20
+      - 🇫🇮  Финляндия - 4
+      - 🇳🇱  Нидерланды - 10  🚀
+      - 🇳🇱  Нидерланды - 14 🚀
+      - 🇩🇪  Германия - 13
+      - 🇦🇪 ОАЭ - 1
+      - 🇳🇱  Нидерланды - 8
+      - 🇻🇮 Виргинские острова - 2 🚀
+      - 🇵🇱  Польша - 10
+      - 🇸🇪  Швеция - 17
+      - 🇨🇳 Китай (Пекин) - 1 🚀
 rule-providers:
   ru-inline-banned:
     type: inline
