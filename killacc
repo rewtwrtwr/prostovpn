@@ -49,6 +49,51 @@ dns:
     - "*.ipv6.microsoft.com"
     - speedtest.cros.wr.pvp.net
 proxies:
+  - name: 🇪🇺 Популярные локации | Авто
+    type: vless
+    server: 150.241.74.87
+    port: 13443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.cendora.ru
+    reality-opts:
+      public-key: gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM
+      short-id: a7f3c91b2e6d84c0
+    client-fingerprint: qq
+  - name: 🇷🇺 Обход LTE | Авто
+    type: vless
+    server: tunnelgate.org
+    port: 13443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.cendora.ru
+    reality-opts:
+      public-key: gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM
+      short-id: a7f3c91b2e6d84c0
+    client-fingerprint: qq
+  - name: 🇵🇱 Обход LTE | Авто
+    type: vless
+    server: tunnelgate.org
+    port: 13443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.cendora.ru
+    reality-opts:
+      public-key: gc9oXe37KCCm3J1dJ03wdGsnxPBdeEkRPOvl_t-vfVM
+      short-id: a7f3c91b2e6d84c0
+    client-fingerprint: qq
   - name: ⬇️ Популярные локации ⬇️
     type: vless
     server: 95.85.248.50
@@ -66,7 +111,7 @@ proxies:
     client-fingerprint: qq
   - name: 🇪🇪 📺 Эстония
     type: vless
-    server: 150.241.74.86
+    server: 150.241.74.66
     port: 443
     network: tcp
     udp: true
@@ -81,7 +126,7 @@ proxies:
     client-fingerprint: qq
   - name: "🇪🇪 Эстония #2"
     type: vless
-    server: 150.241.74.8
+    server: 31.76.55.178
     port: 443
     network: tcp
     udp: true
@@ -111,7 +156,7 @@ proxies:
     client-fingerprint: qq
   - name: "🇳🇱 🚀📺 Нидерланды #2"
     type: vless
-    server: 150.241.100.63
+    server: 150.241.100.84
     port: 443
     network: tcp
     udp: true
@@ -141,7 +186,7 @@ proxies:
     client-fingerprint: qq
   - name: 🇩🇪 🚀🤖 Германия
     type: vless
-    server: 144.31.168.24
+    server: 64.188.79.164
     port: 443
     network: tcp
     udp: true
@@ -156,7 +201,7 @@ proxies:
     client-fingerprint: qq
   - name: "🇩🇪 🎮 Германия #2"
     type: vless
-    server: 31.76.28.214
+    server: 31.58.182.250
     port: 443
     network: tcp
     udp: true
@@ -216,7 +261,7 @@ proxies:
     client-fingerprint: qq
   - name: 🇫🇮 🚀🤖 Финляндия
     type: vless
-    server: 150.241.86.150
+    server: 87.121.89.80
     port: 443
     network: tcp
     udp: true
@@ -246,7 +291,7 @@ proxies:
     client-fingerprint: qq
   - name: 🇷🇺 📺 Россия
     type: vless
-    server: 91.196.35.146
+    server: 138.124.254.191
     port: 443
     network: tcp
     udp: true
@@ -426,22 +471,7 @@ proxies:
     client-fingerprint: qq
   - name: ⬇️ Обход белых списков ⬇️
     type: vless
-    server: 188.68.218.101
-    port: 443
-    network: tcp
-    udp: true
-    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
-    packet-encoding: xudp
-    flow: xtls-rprx-vision
-    tls: true
-    servername: cloud.mail.ru
-    reality-opts:
-      public-key: A41b2Th15KC7t1hSRTvkA3-CzZfv1DD1XOV2L5ICuA0
-      short-id: ""
-    client-fingerprint: qq
-  - name: "🇷🇺 Обход LTE #1"
-    type: vless
-    server: 158.160.191.116
+    server: 84.201.129.19
     port: 443
     network: tcp
     udp: true
@@ -454,9 +484,67 @@ proxies:
       public-key: etT_DSMHlskrqXG6Qb_lbYFSqYWDaHYzBcQz6d_r3Tw
       short-id: 6efba062a4460234
     client-fingerprint: qq
+  - name: "🇷🇺 📺 Обход LTE #2"
+    type: vless
+    server: cdn-ya.ametist.io
+    port: 443
+    network: xhttp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    tls: true
+    servername: cdn-ya.ametist.io
+    alpn:
+      - h2
+      - http/1.1
+    xhttp-opts:
+      path: /api/v3/stream/segment/a8d2e4f1/
+      host: cdn-ya.ametist.io
+      mode: packet-up
+      x-padding-obfs-mode: true
+      uplink-http-method: GET
+      session-placement: cookie
+      session-key: media_sid
+      seq-placement: query
+      seq-key: offset
+      uplink-data-placement: header
+      uplink-data-key: X-Playback-Token
+      sc-max-each-post-bytes: 131072-262144
+      sc-min-posts-interval-ms: 5-10
+      sc-stream-up-server-secs: 1-2
+    client-fingerprint: qq
+  - name: "🇷🇺 📺 Обход LTE #3"
+    type: vless
+    server: cdn-vk.ametist.io
+    port: 443
+    network: xhttp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    tls: true
+    servername: cdn-vk.ametist.io
+    alpn:
+      - h2
+      - http/1.1
+    xhttp-opts:
+      path: /media/hls/segment/7b3f1c2e/
+      host: cdn-vk.ametist.io
+      mode: packet-up
+      x-padding-obfs-mode: true
+      uplink-http-method: GET
+      session-placement: cookie
+      session-key: media_sid
+      seq-placement: query
+      seq-key: offset
+      uplink-data-placement: header
+      uplink-data-key: X-Playback-Token
+      sc-max-each-post-bytes: 131072-262144
+      sc-min-posts-interval-ms: 5-10
+      sc-stream-up-server-secs: 1-2
+    client-fingerprint: qq
   - name: "🇷🇺 📺 Обход LTE #4"
     type: vless
-    server: 176.109.85.70
+    server: 45.11.26.63
     port: 443
     network: tcp
     udp: true
@@ -484,22 +572,7 @@ proxies:
       public-key: A41b2Th15KC7t1hSRTvkA3-CzZfv1DD1XOV2L5ICuA0
       short-id: ""
     client-fingerprint: qq
-  - name: "🇷🇺 Обход LTE #6"
-    type: vless
-    server: 84.201.129.19
-    port: 443
-    network: tcp
-    udp: true
-    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
-    packet-encoding: xudp
-    flow: xtls-rprx-vision
-    tls: true
-    servername: id.vk.ru
-    reality-opts:
-      public-key: etT_DSMHlskrqXG6Qb_lbYFSqYWDaHYzBcQz6d_r3Tw
-      short-id: 6efba062a4460234
-    client-fingerprint: qq
-  - name: "🇷🇺 📺 Обход LTE #7"
+  - name: "🇷🇺 📺 Обход LTE #6"
     type: vless
     server: 188.68.218.101
     port: 443
@@ -514,24 +587,9 @@ proxies:
       public-key: A41b2Th15KC7t1hSRTvkA3-CzZfv1DD1XOV2L5ICuA0
       short-id: ""
     client-fingerprint: qq
-  - name: "🇵🇱 Обход LTE #1"
-    type: vless
-    server: 158.160.191.116
-    port: 8443
-    network: tcp
-    udp: true
-    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
-    packet-encoding: xudp
-    flow: xtls-rprx-vision
-    tls: true
-    servername: cloud.mail.ru
-    reality-opts:
-      public-key: SW_T002M29xfwAKlNEuKUTn4LVH7lU4DEBTUd4pyWHg
-      short-id: bbab39a092cb8240
-    client-fingerprint: qq
   - name: "🇵🇱 Обход LTE #4"
     type: vless
-    server: 176.109.85.70
+    server: 45.11.26.63
     port: 443
     network: tcp
     udp: true
@@ -561,21 +619,6 @@ proxies:
     client-fingerprint: qq
   - name: "🇵🇱 Обход LTE #6"
     type: vless
-    server: 84.201.129.19
-    port: 8443
-    network: tcp
-    udp: true
-    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
-    packet-encoding: xudp
-    flow: xtls-rprx-vision
-    tls: true
-    servername: cloud.mail.ru
-    reality-opts:
-      public-key: SW_T002M29xfwAKlNEuKUTn4LVH7lU4DEBTUd4pyWHg
-      short-id: bbab39a092cb8240
-    client-fingerprint: qq
-  - name: "🇵🇱 Обход LTE #7"
-    type: vless
     server: 188.68.218.101
     port: 443
     network: tcp
@@ -591,7 +634,7 @@ proxies:
     client-fingerprint: qq
   - name: ⬇️ Остальные локации ⬇️
     type: vless
-    server: 150.241.73.91
+    server: 46.8.113.190
     port: 13443
     network: tcp
     udp: true
@@ -619,9 +662,9 @@ proxies:
       public-key: eaRNeC8fccrx0nBNvBpAXZgK4m4FxfnQ-t0W7NOM7mU
       short-id: e53048e82bb20077
     client-fingerprint: firefox
-  - name: 🇦🇹 📺 Австрия
+  - name: 🇦🇹 🤖 Австрия
     type: vless
-    server: 150.241.72.172
+    server: 150.241.72.5
     port: 443
     network: tcp
     udp: true
@@ -636,7 +679,7 @@ proxies:
     client-fingerprint: qq
   - name: 🇧🇪 📺 Бельгия
     type: vless
-    server: 144.31.219.168
+    server: 144.31.219.161
     port: 443
     network: tcp
     udp: true
@@ -666,7 +709,7 @@ proxies:
     client-fingerprint: qq
   - name: 🇬🇧 🤖 Великобритания
     type: vless
-    server: 144.31.213.228
+    server: 144.31.213.188
     port: 443
     network: tcp
     udp: true
@@ -696,7 +739,7 @@ proxies:
     client-fingerprint: qq
   - name: 🇩🇰 📺 Дания
     type: vless
-    server: 144.31.242.51
+    server: 144.31.242.1
     port: 443
     network: tcp
     udp: true
@@ -814,7 +857,22 @@ proxies:
       public-key: eaRNeC8fccrx0nBNvBpAXZgK4m4FxfnQ-t0W7NOM7mU
       short-id: e53048e82bb20077
     client-fingerprint: chrome
-  - name: 🇱🇹 Литва
+  - name: 🇰🇬 Кыргызстан
+    type: vless
+    server: 81.85.75.85
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 36b6efcb-7911-4aee-b547-0e7cf172072e
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: asia.cendora.ru
+    reality-opts:
+      public-key: eaRNeC8fccrx0nBNvBpAXZgK4m4FxfnQ-t0W7NOM7mU
+      short-id: e53048e82bb20077
+    client-fingerprint: chrome
+  - name: 🇱🇹 📺 Литва
     type: vless
     server: 31.76.83.48
     port: 443
@@ -968,6 +1026,9 @@ proxy-groups:
   - name: → Remnawave
     type: select
     proxies:
+      - 🇪🇺 Популярные локации | Авто
+      - 🇷🇺 Обход LTE | Авто
+      - 🇵🇱 Обход LTE | Авто
       - ⬇️ Популярные локации ⬇️
       - 🇪🇪 📺 Эстония
       - "🇪🇪 Эстония #2"
@@ -994,19 +1055,17 @@ proxy-groups:
       - 🇫🇮 Финляндия
       - 🇵🇱 Польша
       - ⬇️ Обход белых списков ⬇️
-      - "🇷🇺 Обход LTE #1"
+      - "🇷🇺 📺 Обход LTE #2"
+      - "🇷🇺 📺 Обход LTE #3"
       - "🇷🇺 📺 Обход LTE #4"
       - "🇷🇺 📺 Обход LTE #5"
-      - "🇷🇺 Обход LTE #6"
-      - "🇷🇺 📺 Обход LTE #7"
-      - "🇵🇱 Обход LTE #1"
+      - "🇷🇺 📺 Обход LTE #6"
       - "🇵🇱 Обход LTE #4"
       - "🇵🇱 Обход LTE #5"
       - "🇵🇱 Обход LTE #6"
-      - "🇵🇱 Обход LTE #7"
       - ⬇️ Остальные локации ⬇️
       - 🇦🇺 Австралия
-      - 🇦🇹 📺 Австрия
+      - 🇦🇹 🤖 Австрия
       - 🇧🇪 📺 Бельгия
       - 🇧🇬 🤖 Болгария
       - 🇬🇧 🤖 Великобритания
@@ -1019,7 +1078,8 @@ proxy-groups:
       - 🇰🇿 📺 Казахстан
       - 🇨🇦 Канада
       - "🇨🇳 Китай "
-      - 🇱🇹 Литва
+      - 🇰🇬 Кыргызстан
+      - 🇱🇹 📺 Литва
       - 🇳🇴 📺 Норвегия
       - 🇷🇴 🤖 Румыния
       - 🇸🇬 Сингапур
