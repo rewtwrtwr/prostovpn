@@ -1,0 +1,4591 @@
+mixed-port: 7890
+socks-port: 7891
+redir-port: 7892
+allow-lan: true
+mode: global
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  use-hosts: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver:
+    - 8.8.8.8
+    - 1.1.1.1
+  nameserver:
+    - 8.8.8.8
+    - 1.1.1.1
+  fake-ip-filter:
+    - "*.lan"
+    - stun.*.*.*
+    - stun.*.*
+    - time.windows.com
+    - time.nist.gov
+    - time.apple.com
+    - time.asia.apple.com
+    - "*.openwrt.pool.ntp.org"
+    - pool.ntp.org
+    - ntp.ubuntu.com
+    - time1.apple.com
+    - time2.apple.com
+    - time3.apple.com
+    - time4.apple.com
+    - time5.apple.com
+    - time6.apple.com
+    - time7.apple.com
+    - time1.google.com
+    - time2.google.com
+    - time3.google.com
+    - time4.google.com
+    - api.joox.com
+    - joox.com
+    - "*.xiami.com"
+    - "*.msftconnecttest.com"
+    - "*.msftncsi.com"
+    - +.xboxlive.com
+    - "*.*.stun.playstation.net"
+    - xbox.*.*.microsoft.com
+    - "*.ipv6.microsoft.com"
+    - speedtest.cros.wr.pvp.net
+proxies:
+  - name: 🇪🇺 Авто | Самый быстрый
+    type: vless
+    server: 89.105.205.11
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇳🇱 ⚡️ LTE Авто - Нидерланды
+    type: vless
+    server: 46.243.142.242
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: firefox
+  - name: 🇬🇧 ⚡️ LTE Авто - Великобритания
+    type: vless
+    server: 46.243.142.121
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0019-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇸🇪 🎮 ⚡️ ⭐️ LTE Авто - Швеция
+    type: vless
+    server: 194.55.239.164
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0009-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇩🇪 🎮 ⚡️ ⭐️ LTE Авто - Германия
+    type: vless
+    server: 46.8.208.8
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0012-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇱🇻 🎮 ⚡️ ⭐️ LTE Авто - Латвия
+    type: vless
+    server: 194.55.239.126
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0006-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: ⬇️ Быстрые | до 10 Гбит/с ⬇️
+    type: vless
+    server: 89.105.212.141
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇧🇪 ⭐️ Бельгия
+    type: vless
+    server: 128.127.181.16
+    port: 443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: be.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇬🇧 ⚡️ Великобритания
+    type: vless
+    server: 164.37.110.50
+    port: 443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: uk.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇩🇪 🎮 ⚡️ ⭐️ Германия
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0005-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: "🇩🇪 🎮 ⚡️ Германия | Hysteria2"
+    type: hysteria2
+    server: 50.7.156.36
+    port: 30443
+    password: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    sni: hy.quattro-tech.ru
+    alpn:
+      - h3
+    client-fingerprint: edge
+    skip-cert-verify: false
+  - name: 🇪🇸 ⚡️ Испания
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0006-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇮🇹 ⭐️ Италия
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0007-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇱🇻 ⚡️ Латвия
+    type: vless
+    server: 46.183.223.210
+    port: 443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: lv.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: "🇱🇻 🎮 ⚡️ ⭐️ Латвия #2"
+    type: vless
+    server: 95.164.91.84
+    port: 443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0008-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: lv.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: "🇱🇻 🎮 ⚡️ Латвия #2 | Hysteria2"
+    type: hysteria2
+    server: 95.164.91.98
+    port: 30443
+    password: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    sni: hy.quattro-tech.ru
+    alpn:
+      - h3
+    client-fingerprint: edge
+    skip-cert-verify: false
+  - name: "🇱🇻 🎮 ⚡️ ⭐️ Латвия #3"
+    type: vless
+    server: 72.56.55.26
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0008-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇳🇱 ⚡️ Нидерланды | Torrent ✅
+    type: vless
+    server: 192.241.120.22
+    port: 443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: nl.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: "🇳🇱 ⚡️ Нидерланды #2 | Torrent ✅"
+    type: vless
+    server: 89.105.219.133
+    port: 443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: nl.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇳🇴 ⚡️ ⭐️ Норвегия
+    type: vless
+    server: 212.193.31.177
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-000c-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: "🇳🇴 ⚡️ ⭐️ Норвегия #2"
+    type: vless
+    server: 185.231.101.85
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-000c-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: se.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇵🇱 🎮 ⭐️ Польша
+    type: vless
+    server: 144.31.4.29
+    port: 443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: pl.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: "🇵🇱 🎮 ⭐️ Польша #2"
+    type: vless
+    server: 82.22.41.9
+    port: 443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: pl.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇷🇺 ⚡️ Россия, Москва
+    type: vless
+    server: 185.40.28.215
+    port: 443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-03e8-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: "🇷🇺 🎮 ⚡️ Россия, Москва | Hysteria2"
+    type: hysteria2
+    server: 185.40.28.211
+    port: 30443
+    password: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    sni: hy.quattro-tech.ru
+    alpn:
+      - h3
+    client-fingerprint: edge
+    skip-cert-verify: false
+  - name: "🇷🇺 ⚡️ Россия, Москва #3"
+    type: vless
+    server: 185.147.26.156
+    port: 443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-03e8-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇷🇺 Россия, Санкт-Петербург
+    type: vless
+    server: 212.193.31.177
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇷🇺 ⚡ Россия, Екатеринбург
+    type: vless
+    server: 80.87.102.108
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇷🇺 ⚡ Россия, Хабаровск
+    type: vless
+    server: 66.90.92.50
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-03e8-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇫🇮 🎮 ⭐️ Финляндия
+    type: vless
+    server: 85.192.49.141
+    port: 443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: fi.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+      support-x25519mlkem768: true
+    client-fingerprint: qq
+  - name: "🇫🇮 🎮 ⚡️ Финляндия #2"
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-000f-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: "🇫🇮 🎮 ⚡️ Финляндия #3"
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-00ab-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+      support-x25519mlkem768: true
+    client-fingerprint: qq
+  - name: "🇫🇮 🎮 ⚡️ Финляндия #4"
+    type: vless
+    server: 185.231.101.85
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-000f-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇫🇷 ⚡️ Франция
+    type: vless
+    server: 72.56.55.26
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0010-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇨🇭 ⭐️ Швейцария
+    type: vless
+    server: 179.237.86.7
+    port: 443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: ch.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇸🇪 🎮 ⚡️ ⭐️ Швеция
+    type: vless
+    server: 31.22.93.2
+    port: 443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: se.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: "🇸🇪 🎮 ⚡️ Швеция | Hysteria2"
+    type: hysteria2
+    server: 185.231.101.92
+    port: 30443
+    password: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    sni: hy.quattro-tech.ru
+    alpn:
+      - h3
+    client-fingerprint: edge
+    skip-cert-verify: false
+  - name: 🇪🇪 🎮 ⭐️ Эстония
+    type: vless
+    server: 185.93.33.7
+    port: 443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0014-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇪🇪 🎮 ⭐️ Эстония (Мост МСК)
+    type: vless
+    server: 185.40.28.217
+    port: 443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0014-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇪🇪 🎮 ⭐️ Эстония (Мост Питер)
+    type: vless
+    server: 212.193.31.177
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0014-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: "🇪🇪 🎮 ⚡️ Эстония #2"
+    type: vless
+    server: 165.231.141.11
+    port: 443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-00ad-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: "🇪🇪 🎮 ⚡️ Эстония #2 (Мост МСК)"
+    type: vless
+    server: 72.56.55.26
+    port: 443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-00ad-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: "🇪🇪 🎮 ⚡️ Эстония #3 | Hysteria2"
+    type: hysteria2
+    server: 165.231.193.26
+    port: 30443
+    password: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    sni: hy.quattro-tech.ru
+    alpn:
+      - h3
+    client-fingerprint: edge
+    skip-cert-verify: false
+  - name: "🇪🇪 🎮 ⚡️ Эстония #4"
+    type: vless
+    server: 185.223.171.7
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: ee.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: "🇪🇪 🎮 ⚡️ Эстония #4 (Мост МСК)"
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-00b4-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: ⬇️ Для моб. операторов ⬇️
+    type: vless
+    server: 89.105.219.131
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: "⚠️  Если другие не работают ⚠️ "
+    type: vless
+    server: 89.105.206.147
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: "🇬🇧 ⚡️ LTE - Безлимитный #1"
+    type: vless
+    server: 194.55.239.190
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0019-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: smartcaptcha.yandexcloud.net
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: "🇳🇱 ⚡️ LTE - Безлимитный #10 | Torrent✅"
+    type: vless
+    server: 194.55.239.150
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: smartcaptcha.yandexcloud.net
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: "🇮🇹 🎮 ⭐️ LTE - Безлимитный #14"
+    type: vless
+    server: 194.55.239.147
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-000c-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: "🇩🇪 🎮 ⚡️ ⭐️ LTE - Безлимитный #21"
+    type: vless
+    server: 194.55.239.139
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0012-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: "🇩🇪 🎮 ⭐️ LTE - Безлимитный #3"
+    type: vless
+    server: 194.55.239.161
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-001a-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: "🇪🇪 🎮 ⚡️ LTE - Безлимитный #19"
+    type: vless
+    server: 194.55.239.126
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-000a-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: "🇪🇪 🎮 ⭐️ LTE - Безлимитный #20"
+    type: vless
+    server: 194.55.239.206
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0007-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: "🇱🇻 🎮 ⚡️ ⭐️ LTE - Безлимитный #4"
+    type: vless
+    server: 194.55.239.206
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0006-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: "🇸🇪 🎮 ⚡️ ⭐️ LTE - Безлимитный #5"
+    type: vless
+    server: 78.159.250.99
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0009-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: player.mediavitrina.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: "🇸🇪 🎮 ⚡️ ⭐️ LTE - Безлимитный #13"
+    type: vless
+    server: 194.55.239.230
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0009-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: "🇫🇮 🎮 ⚡️ LTE - Безлимитный #12"
+    type: vless
+    server: 194.55.239.120
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-000e-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: "🇫🇮 🎮 ⚡️ LTE - Безлимитный #17"
+    type: vless
+    server: 194.55.239.137
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-001e-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: "🇫🇮 🎮 ⚡️ LTE - Безлимитный #18"
+    type: vless
+    server: 176.109.88.80
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-001e-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: "🇳🇴 ⚡️ ⭐️ LTE - Безлимитный #22"
+    type: vless
+    server: 194.55.239.130
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-000d-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: "🇷🇺 🎮 ⚡️ LTE - Безлимитный #7 - СПБ"
+    type: vless
+    server: 176.109.88.80
+    port: 443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0064-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: "🇷🇺 🎮 ⚡️ LTE - Безлимитный #8 - МСК"
+    type: vless
+    server: 194.55.239.129
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0067-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: "🇷🇺 🎮 ⚡️ LTE - Безлимитный #23 - МСК"
+    type: vless
+    server: 194.55.239.126
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0068-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇷🇺 🎮 ⚡️ 0.1X - LTE №48 - Москва
+    type: vless
+    server: 46.243.142.242
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0067-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇷🇺 0.1X - LTE №64 - Москва
+    type: vless
+    server: 46.8.209.161
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0068-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇷🇺 0.1X - LTE №65 - Москва
+    type: vless
+    server: 46.243.142.157
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0068-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇷🇺 0.1X - LTE №66 - Санкт-Петербург
+    type: vless
+    server: 46.8.209.226
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0066-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇷🇺 0.5X - LTE №67 - Москва
+    type: vless
+    server: 178.248.238.2
+    port: 13443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0064-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: "🇷🇺 🎮 ⚡️ 0.1X - LTE №61 - Hysteria2"
+    type: hysteria2
+    server: 194.55.239.141
+    port: 22443
+    password: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    sni: hy.quattro-tech.ru
+    alpn:
+      - h3
+    client-fingerprint: edge
+    skip-cert-verify: false
+  - name: 🇳🇱 ⚡️ 0.1X - LTE №2 - Torrent ✅
+    type: vless
+    server: 46.243.142.242
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇳🇱 ⚡️ 0.5X - LTE №3 - Torrent ✅
+    type: vless
+    server: 46.8.208.7
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: smartcaptcha.yandexcloud.net
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇬🇧 ⚡️ 0.1X - LTE №49 - Великобритания
+    type: vless
+    server: 46.8.209.16
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0019-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇬🇧 ⚡️ 0.1X - LTE №43 - Великобритания
+    type: vless
+    server: 46.243.142.157
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0019-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇸🇪 🎮 ⚡️ ⭐️ 0.1X - LTE №14 - Швеция
+    type: vless
+    server: 46.243.142.121
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0009-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇸🇪 🎮 ⚡️ ⭐️ 0.1X - LTE №15 - Швеция
+    type: vless
+    server: 46.8.209.163
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0009-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: smartcaptcha.yandexcloud.net
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: "🇸🇪 🎮 ⚡️ ⭐️ 0.1X - LTE №60 - Hysteria2"
+    type: hysteria2
+    server: 46.8.209.140
+    port: 21443
+    password: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    sni: hy.quattro-tech.ru
+    alpn:
+      - h3
+    client-fingerprint: edge
+    skip-cert-verify: false
+  - name: "🇸🇪 🎮 ⚡️ ⭐️ 0.1X - LTE №76 - Hysteria2"
+    type: hysteria2
+    server: 194.55.239.130
+    port: 21443
+    password: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    sni: hy.quattro-tech.ru
+    alpn:
+      - h3
+    client-fingerprint: edge
+    skip-cert-verify: false
+  - name: 🇩🇪 🎮 ⭐️ 0.1X - LTE №55 - Германия
+    type: vless
+    server: 46.8.209.129
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-001a-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇩🇪 🎮 ⚡️ ⭐️ 0.1X - LTE №23 - Германия
+    type: vless
+    server: 46.8.209.134
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0012-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: "🇩🇪 🎮 ⚡️ 0.1X - LTE №59 - Hysteria2"
+    type: hysteria2
+    server: 46.8.209.151
+    port: 20443
+    password: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    sni: hy.quattro-tech.ru
+    alpn:
+      - h3
+    client-fingerprint: edge
+    skip-cert-verify: false
+  - name: "🇩🇪 🎮 ⚡️ 0.1X - LTE №77 - Hysteria2"
+    type: hysteria2
+    server: 194.55.239.147
+    port: 20443
+    password: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    sni: hy.quattro-tech.ru
+    alpn:
+      - h3
+    client-fingerprint: edge
+    skip-cert-verify: false
+  - name: 🇩🇪 🎮 ⚡️ ⭐️ 0.1X - LTE №26 - Германия
+    type: vless
+    server: 46.243.142.121
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0012-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇱🇻 🎮 ⚡️ ⭐️ 0.1X - LTE №39 - Латвия
+    type: vless
+    server: 46.8.209.16
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0006-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇱🇻 🎮 ⚡️ ⭐️ 0.1X - LTE №51 - Латвия
+    type: vless
+    server: 46.243.142.121
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0006-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: "🇱🇻 🎮 ⚡️ 0.1X - LTE №61 - Hysteria2"
+    type: hysteria2
+    server: 194.55.239.141
+    port: 24443
+    password: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    sni: hy.quattro-tech.ru
+    alpn:
+      - h3
+    client-fingerprint: edge
+    skip-cert-verify: false
+  - name: 🇪🇪 🎮 ⭐️ 0.1X - LTE №11 - Эстония
+    type: vless
+    server: 46.8.209.179
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0007-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: smartcaptcha.yandexcloud.net
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇪🇪 🎮 ⭐️ 0.1X - LTE №12 - Эстония
+    type: vless
+    server: 46.243.142.121
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0007-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇪🇪 🎮 ⚡️ 0.1X - LTE №68 - Эстония
+    type: vless
+    server: 46.8.209.182
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-000b-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: smartcaptcha.yandexcloud.net
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇪🇪 🎮 ⚡️ 0.1X - LTE №78 - Эстония
+    type: vless
+    server: 46.243.142.157
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-000b-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: smartcaptcha.yandexcloud.net
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇵🇱 🎮 ⭐️ 0.1X - LTE №7 - Польша
+    type: vless
+    server: 46.243.142.104
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0003-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: smartcaptcha.yandexcloud.net
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇳🇴 ⚡️ ⭐️ 0.1X - LTE №30 - Норвегия
+    type: vless
+    server: 46.8.209.163
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-000d-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇳🇴 ⚡️ ⭐️ 0.1X - LTE №53 - Норвегия
+    type: vless
+    server: 46.243.142.157
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-000d-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇹🇷 ⚡️ 0.1X - LTE №69 - Турция
+    type: vless
+    server: 194.55.239.204
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-001d-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇹🇷 ⚡️ 0.1X - LTE №58 - Турция
+    type: vless
+    server: 46.8.209.130
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-001d-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇹🇷 ⚡️ 0.1X - LTE №70 - Турция
+    type: vless
+    server: 46.243.142.242
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-001d-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇹🇷 ⚡️ 0.1X - LTE №17 - Турция
+    type: vless
+    server: 46.243.142.157
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0005-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇺🇸 ⚡️ 0.1X - LTE №6 - США, Эшберн
+    type: vless
+    server: 46.8.209.180
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0014-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: smartcaptcha.yandexcloud.net
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇺🇸 ⚡️ 0.1X - LTE №71 - США, Эшберн
+    type: vless
+    server: 194.55.239.139
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0014-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: smartcaptcha.yandexcloud.net
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇺🇸 ⚡️ 0.1X - LTE №27 - США, Денвер
+    type: vless
+    server: 46.8.208.9
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0015-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: smartcaptcha.yandexcloud.net
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇺🇸 ⚡️ 0.1X - LTE №72 - США, Денвер
+    type: vless
+    server: 194.55.239.207
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0015-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: smartcaptcha.yandexcloud.net
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇺🇸 ⭐️ 0.1X - LTE №57 - США, Майами
+    type: vless
+    server: 46.8.208.8
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-001c-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: smartcaptcha.yandexcloud.net
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇺🇸 ⭐️ 0.1X - LTE №73 - США, Майами
+    type: vless
+    server: 194.55.239.120
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-001c-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: smartcaptcha.yandexcloud.net
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇺🇸 ⚡️ 0.1X - LTE №62 - США, Чикаго
+    type: vless
+    server: 46.243.142.12
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-001b-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: smartcaptcha.yandexcloud.net
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇺🇸 ⚡️ 0.1X - LTE №74 - США, Чикаго
+    type: vless
+    server: 194.55.239.207
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-001b-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: smartcaptcha.yandexcloud.net
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇯🇵 ⚡️ 0.1X - LTE №52 - Япония
+    type: vless
+    server: 46.8.209.163
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0013-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: smartcaptcha.yandexcloud.net
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: ⬇️ Если VLESS заблокирован ⬇️
+    type: vless
+    server: 89.105.219.131
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇳🇱 SNI 1
+    type: vless
+    server: 89.105.205.116
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: yandex.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇳🇱 SS 1
+    type: ss
+    server: 89.105.205.116
+    port: 2030
+    network: tcp
+    udp: true
+    password: WpsD31hTk1GMrUbab3FrcFXF0-_DWxrn
+    cipher: chacha20-ietf-poly1305
+    udp-over-tcp: false
+    udp-over-tcp-version: 1
+    client-fingerprint: chrome
+  - name: 🇳🇱 WS 1
+    type: vless
+    server: 89.105.205.116
+    port: 443
+    network: ws
+    udp: true
+    uuid: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    packet-encoding: xudp
+    tls: true
+    servername: ws-in.quattro-tech.ru
+    alpn:
+      - h3
+      - h2
+      - http/1.1
+    ws-opts:
+      path: /livestreamcontent
+      headers:
+        Host: ws-in.quattro-tech.ru
+    client-fingerprint: qq
+  - name: 🇳🇱 GRPC 1
+    type: vless
+    server: 89.105.205.116
+    port: 3443
+    network: grpc
+    udp: true
+    uuid: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    packet-encoding: xudp
+    tls: true
+    servername: ozon.ru
+    reality-opts:
+      public-key: iVXjg_bUPNovcw-goWQyAFfoNg4zYojkbP2h2urOY1o
+      short-id: 43dcff53849b81e6
+    grpc-opts:
+      grpc-service-name: admin
+    client-fingerprint: qq
+  - name: 🇳🇱 ---
+    type: vless
+    server: 213.219.213.43
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: ads.x5.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: ⬇️ Остальные по алфавиту ⬇️
+    type: vless
+    server: 89.105.206.149
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇦🇺 Австралия
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0015-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: firefox
+  - name: 🇦🇹 ⭐️ Австрия
+    type: vless
+    server: 152.53.0.220
+    port: 443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: at.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇦🇿 Азербайджан
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0016-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: safari
+  - name: 🇦🇱 Албания
+    type: vless
+    server: 45.89.60.105
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0017-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: firefox
+  - name: 🇩🇿 Алжир
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0018-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇦🇴 Ангола
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0019-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇦🇩 Андорра
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-001a-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇦🇷 ⭐️ Аргентина
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-001b-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇦🇲 Армения
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-001c-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇦🇼 Аруба
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-001d-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇦🇫 Афганистан
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-001e-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇧🇸 Багамские Острова
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-001f-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇧🇩 Бангладеш
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0020-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇧🇧 Барбадос
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0021-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇧🇭 ⭐️ Бахрейн
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0022-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇧🇾 Беларусь
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0023-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: "🇧🇾 Беларусь #2"
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-00ae-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇧🇿 Белиз
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0024-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇧🇲 Бермудские Острова
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0025-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇧🇬 Болгария
+    type: vless
+    server: 185.199.38.171
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0026-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇧🇴 Боливия
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0027-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇧🇦 Босния и Герцеговина
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0028-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇧🇼 Ботсвана
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0029-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇧🇷 Бразилия
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-002a-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇧🇳 Бруней
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-002b-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇧🇹 Бутан
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-002c-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇻🇦 Ватикан
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-002d-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇭🇺 Венгрия
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0004-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇻🇪 Венесуэла
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-002e-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇻🇮 Виргинские острова (Британия)
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-002f-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇻🇳 Вьетнам
+    type: vless
+    server: 160.191.164.164
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0030-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: "🇻🇳 Вьетнам #2"
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0030-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇬🇭 Гана
+    type: vless
+    server: 66.90.90.147
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0031-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇬🇹 Гватемала
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0032-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇭🇳 Гондурас
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0033-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇭🇰 ⭐️ Гонконг
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0034-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: "🇭🇰 ⭐️ Гонконг #2"
+    type: vless
+    server: 70.36.96.80
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0034-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇬🇱 Гренландия
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0035-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇬🇷 Греция
+    type: vless
+    server: 212.52.16.50
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0036-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇬🇪 Грузия
+    type: vless
+    server: ge.quattro-tech.ru
+    port: 443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: ge.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇬🇺 Гуам
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0038-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇩🇰 ⭐️ Дания
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0039-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇨🇩 Демокр. Респ. Конго
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-003a-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇯🇪 Джерси
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-003b-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇩🇴 Доминиканская Республика
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-003c-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇪🇬 Египет
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-003d-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇮🇱 ⭐️ Израиль
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-003e-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇮🇳 ⭐️ Индия
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-003f-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇮🇩 Индонезия
+    type: vless
+    server: 130.94.92.133
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0040-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇯🇴 Иордания
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0041-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇮🇶 Ирак
+    type: vless
+    server: 130.94.97.26
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0042-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: safari
+  - name: 🇮🇷 Иран
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0043-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇮🇪 Ирландия
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0044-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇮🇸 ⭐️ Исландия
+    type: vless
+    server: 151.236.24.67
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0045-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇾🇪 Йемен
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0046-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇰🇿 ⭐️ Казахстан
+    type: vless
+    server: 91.217.10.10
+    port: 443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-00af-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: "🇰🇿 Казахстан #2"
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0047-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇰🇾 Каймановы острова
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0048-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇰🇭 Камбоджа
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0049-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: firefox
+  - name: 🇨🇲 Камерун
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-004a-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇨🇦 Канада
+    type: vless
+    server: 78.111.91.151
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-004b-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: "🇨🇦 Канада #2"
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-004b-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇶🇦 ⭐️ Катар
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-004c-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇰🇪 Кения
+    type: vless
+    server: 102.68.86.223
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-004d-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇨🇾 Кипр
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-004e-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇰🇬 Киргизия
+    type: vless
+    server: 193.36.95.236
+    port: 443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇨🇳 Китай
+    type: vless
+    server: 176.98.181.161
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0050-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇨🇴 Колумбия
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0051-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇰🇲 Коморы
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0052-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇨🇬 Конго
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0053-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇨🇷 Коста-Рика
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0054-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇨🇮 Кот-д’Ивуар
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0055-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇨🇺 Куба
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0056-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇰🇼 Кувейт
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0057-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇨🇼 Кюрасао
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0058-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇱🇦 Лаос
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0059-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇱🇧 Ливан
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-005a-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇱🇾 Ливия
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-005b-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇱🇹 Литва
+    type: vless
+    server: 2.59.162.116
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0009-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇱🇮 Лихтенштейн
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-005c-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇱🇺 Люксембург
+    type: vless
+    server: 185.40.28.216
+    port: 443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-000a-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇲🇷 Мавритания
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-005d-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇲🇴 Макао
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-005e-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇲🇾 Малайзия
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-005f-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇲🇱 Мали
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0060-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇲🇻 Мальдивы
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0061-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇲🇹 Мальта
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0062-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇲🇦 Марокко
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0063-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇲🇭 Маршалловы острова
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0064-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇲🇽 Мексика
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0065-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇲🇿 Мозамбик
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0066-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇲🇩 ⭐️ Молдова
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0067-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇲🇨 Монако
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0068-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇲🇳 Монголия
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0069-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇲🇲 Мьянма
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-006a-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇳🇵 Непал
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-006b-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇳🇬 ⭐️ Нигерия
+    type: vless
+    server: 167.88.51.185
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-006c-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: firefox
+  - name: "🇳🇬 Нигерия #2"
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-00b0-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: firefox
+  - name: "🇳🇬 ⭐️ Нигерия #3"
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-00b1-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: firefox
+  - name: 🇳🇮 Никарагуа
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-006d-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇳🇿 Новая Зеландия
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-006e-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇦🇪 ОАЭ
+    type: vless
+    server: 185.40.28.217
+    port: 443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-006f-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: "🇦🇪 ⭐️ ОАЭ #2"
+    type: vless
+    server: 185.40.28.215
+    port: 443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-00aa-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇴🇲 Оман
+    type: vless
+    server: 130.94.81.176
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0070-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇮🇲 Остров Мэн
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0071-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇵🇰 Пакистан
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0072-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: "🇵🇰 Пакистан #2"
+    type: vless
+    server: 103.69.3.173
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0072-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: "🇵🇰 Пакистан #3"
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-00b3-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇵🇸 Палестина
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0073-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇵🇦 Панама
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0074-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇵🇬 Папуа - Новая Гвинея
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0075-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇵🇾 Парагвай
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0076-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇵🇪 ⭐️ Перу
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0077-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇵🇹 Португалия
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0078-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇵🇷 Пуэрто-Рико
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0079-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇷🇼 Руанда
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-007a-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇷🇴 ⭐️ Румыния
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-000e-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇸🇻 Сальвадор
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-007b-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇸🇦 Саудовская Аравия
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-007c-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇲🇰 Северная Македония
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-007d-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇸🇨 Сейшельские Острова
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-007e-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇸🇳 Сенегал
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-007f-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇷🇸 Сербия
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0080-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇸🇬 ⭐️ Сингапур
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0081-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: "🇸🇬 Сингапур #2"
+    type: vless
+    server: 64.56.71.93
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0081-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇸🇾 Сирия
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0082-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇸🇰 Словакия
+    type: vless
+    server: 196.245.152.68
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0083-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇸🇮 ⭐️ Словения
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0084-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇸🇴 Сомали
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0085-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇸🇩 Судан
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0086-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇸🇷 Суринам
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0087-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇺🇸 ⚡️ США, Денвер
+    type: vless
+    server: 23.237.28.194
+    port: 443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: us2.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇺🇸 ⚡️ США, Эшберн
+    type: vless
+    server: 23.237.53.235
+    port: 443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: us2.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇺🇸 ⭐️ США, Майами
+    type: vless
+    server: 84.75.220.46
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇺🇸 ⚡️ США, Чикаго
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0088-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇹🇯 Таджикистан
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-008a-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇹🇭 ⭐️ Таиланд
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-008b-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇹🇼 Тайвань
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-008c-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: "🇹🇼 Тайвань #2"
+    type: vless
+    server: 103.106.230.27
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-008c-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇹🇿 Танзания
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-008d-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇹🇬 Того
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-008e-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇹🇹 Тринидад и Тобаго
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-008f-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇹🇳 Тунис
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0090-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇹🇲 Туркменистан
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0091-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇹🇷 ⚡️ Турция
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0092-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: "🇹🇷 ⚡️ Турция #2"
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-00a7-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: "🇹🇷 ⭐️ Турция #3"
+    type: vless
+    server: 203.202.232.153
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-00a8-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇺🇿 Узбекистан
+    type: vless
+    server: 81.162.54.249
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: "🇺🇿 ⭐️ Узбекистан #2"
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0093-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇺🇦 Украина
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0094-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇺🇾 Уругвай
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0095-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇫🇯 Фиджи
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0096-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇵🇭 ⭐️ Филиппины
+    type: vless
+    server: 61.245.11.221
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0097-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇭🇷 ⭐️ Хорватия
+    type: vless
+    server: 188.190.24.17
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0098-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: firefox
+  - name: 🇹🇩 Чад
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0099-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇲🇪 Черногория
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-009a-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇨🇿 ⭐️ Чехия
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-0011-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇨🇱 ⭐️ Чили
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-009b-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇱🇰 Шри-Ланка
+    type: vless
+    server: 185.40.28.215
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-009c-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇪🇨 Эквадор
+    type: vless
+    server: 130.94.116.125
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-009d-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇪🇷 Эритрея
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-009e-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇸🇿 Эсватини
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-009f-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇪🇹 Эфиопия
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-00a0-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇿🇦 ⭐️ ЮАР
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-00a1-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: chrome
+  - name: 🇰🇷 Южная Корея
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-00a2-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: "🇰🇷 Южная Корея #2"
+    type: vless
+    server: 66.90.92.50
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-00a9-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: "🇰🇷 Южная Корея #3"
+    type: vless
+    server: 66.90.92.50
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-00ac-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 🇸🇸 Южный Судан
+    type: vless
+    server: 185.40.28.217
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-00a3-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: firefox
+  - name: 🇯🇲 Ямайка
+    type: vless
+    server: 185.40.28.216
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-00a4-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: cloud.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: qq
+  - name: 🇯🇵 Мост Хабаровск - Япония
+    type: vless
+    server: 66.90.92.50
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-00a5-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: firefox
+  - name: 🇯🇵 Япония
+    type: vless
+    server: 66.90.99.250
+    port: 443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: jp.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: "🇯🇵 Япония #2"
+    type: vless
+    server: 95.85.94.76
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+  - name: 💎 Авто | Самый быстрый 💎
+    type: vless
+    server: 195.47.238.14
+    port: 8443
+    network: tcp
+    udp: true
+    uuid: d85a441d-e5af-48bc-bfc5-da37fc062b47
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: auto.quattro-tech.ru
+    reality-opts:
+      public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+      short-id: 43dcff53849b81e6
+    client-fingerprint: edge
+proxy-groups:
+  - name: Quattro VPN
+    type: select
+    proxies:
+      - 🇪🇺 Авто | Самый быстрый
+      - 🇳🇱 ⚡️ LTE Авто - Нидерланды
+      - 🇬🇧 ⚡️ LTE Авто - Великобритания
+      - 🇸🇪 🎮 ⚡️ ⭐️ LTE Авто - Швеция
+      - 🇩🇪 🎮 ⚡️ ⭐️ LTE Авто - Германия
+      - 🇱🇻 🎮 ⚡️ ⭐️ LTE Авто - Латвия
+      - ⬇️ Быстрые | до 10 Гбит/с ⬇️
+      - 🇧🇪 ⭐️ Бельгия
+      - 🇬🇧 ⚡️ Великобритания
+      - 🇩🇪 🎮 ⚡️ ⭐️ Германия
+      - "🇩🇪 🎮 ⚡️ Германия | Hysteria2"
+      - 🇪🇸 ⚡️ Испания
+      - 🇮🇹 ⭐️ Италия
+      - 🇱🇻 ⚡️ Латвия
+      - "🇱🇻 🎮 ⚡️ ⭐️ Латвия #2"
+      - "🇱🇻 🎮 ⚡️ Латвия #2 | Hysteria2"
+      - "🇱🇻 🎮 ⚡️ ⭐️ Латвия #3"
+      - 🇳🇱 ⚡️ Нидерланды | Torrent ✅
+      - "🇳🇱 ⚡️ Нидерланды #2 | Torrent ✅"
+      - 🇳🇴 ⚡️ ⭐️ Норвегия
+      - "🇳🇴 ⚡️ ⭐️ Норвегия #2"
+      - 🇵🇱 🎮 ⭐️ Польша
+      - "🇵🇱 🎮 ⭐️ Польша #2"
+      - 🇷🇺 ⚡️ Россия, Москва
+      - "🇷🇺 🎮 ⚡️ Россия, Москва | Hysteria2"
+      - "🇷🇺 ⚡️ Россия, Москва #3"
+      - 🇷🇺 Россия, Санкт-Петербург
+      - 🇷🇺 ⚡ Россия, Екатеринбург
+      - 🇷🇺 ⚡ Россия, Хабаровск
+      - 🇫🇮 🎮 ⭐️ Финляндия
+      - "🇫🇮 🎮 ⚡️ Финляндия #2"
+      - "🇫🇮 🎮 ⚡️ Финляндия #3"
+      - "🇫🇮 🎮 ⚡️ Финляндия #4"
+      - 🇫🇷 ⚡️ Франция
+      - 🇨🇭 ⭐️ Швейцария
+      - 🇸🇪 🎮 ⚡️ ⭐️ Швеция
+      - "🇸🇪 🎮 ⚡️ Швеция | Hysteria2"
+      - 🇪🇪 🎮 ⭐️ Эстония
+      - 🇪🇪 🎮 ⭐️ Эстония (Мост МСК)
+      - 🇪🇪 🎮 ⭐️ Эстония (Мост Питер)
+      - "🇪🇪 🎮 ⚡️ Эстония #2"
+      - "🇪🇪 🎮 ⚡️ Эстония #2 (Мост МСК)"
+      - "🇪🇪 🎮 ⚡️ Эстония #3 | Hysteria2"
+      - "🇪🇪 🎮 ⚡️ Эстония #4"
+      - "🇪🇪 🎮 ⚡️ Эстония #4 (Мост МСК)"
+      - ⬇️ Для моб. операторов ⬇️
+      - "⚠️  Если другие не работают ⚠️ "
+      - "🇬🇧 ⚡️ LTE - Безлимитный #1"
+      - "🇳🇱 ⚡️ LTE - Безлимитный #10 | Torrent✅"
+      - "🇮🇹 🎮 ⭐️ LTE - Безлимитный #14"
+      - "🇩🇪 🎮 ⚡️ ⭐️ LTE - Безлимитный #21"
+      - "🇩🇪 🎮 ⭐️ LTE - Безлимитный #3"
+      - "🇪🇪 🎮 ⚡️ LTE - Безлимитный #19"
+      - "🇪🇪 🎮 ⭐️ LTE - Безлимитный #20"
+      - "🇱🇻 🎮 ⚡️ ⭐️ LTE - Безлимитный #4"
+      - "🇸🇪 🎮 ⚡️ ⭐️ LTE - Безлимитный #5"
+      - "🇸🇪 🎮 ⚡️ ⭐️ LTE - Безлимитный #13"
+      - "🇫🇮 🎮 ⚡️ LTE - Безлимитный #12"
+      - "🇫🇮 🎮 ⚡️ LTE - Безлимитный #17"
+      - "🇫🇮 🎮 ⚡️ LTE - Безлимитный #18"
+      - "🇳🇴 ⚡️ ⭐️ LTE - Безлимитный #22"
+      - "🇷🇺 🎮 ⚡️ LTE - Безлимитный #7 - СПБ"
+      - "🇷🇺 🎮 ⚡️ LTE - Безлимитный #8 - МСК"
+      - "🇷🇺 🎮 ⚡️ LTE - Безлимитный #23 - МСК"
+      - 🇷🇺 🎮 ⚡️ 0.1X - LTE №48 - Москва
+      - 🇷🇺 0.1X - LTE №64 - Москва
+      - 🇷🇺 0.1X - LTE №65 - Москва
+      - 🇷🇺 0.1X - LTE №66 - Санкт-Петербург
+      - 🇷🇺 0.5X - LTE №67 - Москва
+      - "🇷🇺 🎮 ⚡️ 0.1X - LTE №61 - Hysteria2"
+      - 🇳🇱 ⚡️ 0.1X - LTE №2 - Torrent ✅
+      - 🇳🇱 ⚡️ 0.5X - LTE №3 - Torrent ✅
+      - 🇬🇧 ⚡️ 0.1X - LTE №49 - Великобритания
+      - 🇬🇧 ⚡️ 0.1X - LTE №43 - Великобритания
+      - 🇸🇪 🎮 ⚡️ ⭐️ 0.1X - LTE №14 - Швеция
+      - 🇸🇪 🎮 ⚡️ ⭐️ 0.1X - LTE №15 - Швеция
+      - "🇸🇪 🎮 ⚡️ ⭐️ 0.1X - LTE №60 - Hysteria2"
+      - "🇸🇪 🎮 ⚡️ ⭐️ 0.1X - LTE №76 - Hysteria2"
+      - 🇩🇪 🎮 ⭐️ 0.1X - LTE №55 - Германия
+      - 🇩🇪 🎮 ⚡️ ⭐️ 0.1X - LTE №23 - Германия
+      - "🇩🇪 🎮 ⚡️ 0.1X - LTE №59 - Hysteria2"
+      - "🇩🇪 🎮 ⚡️ 0.1X - LTE №77 - Hysteria2"
+      - 🇩🇪 🎮 ⚡️ ⭐️ 0.1X - LTE №26 - Германия
+      - 🇱🇻 🎮 ⚡️ ⭐️ 0.1X - LTE №39 - Латвия
+      - 🇱🇻 🎮 ⚡️ ⭐️ 0.1X - LTE №51 - Латвия
+      - "🇱🇻 🎮 ⚡️ 0.1X - LTE №61 - Hysteria2"
+      - 🇪🇪 🎮 ⭐️ 0.1X - LTE №11 - Эстония
+      - 🇪🇪 🎮 ⭐️ 0.1X - LTE №12 - Эстония
+      - 🇪🇪 🎮 ⚡️ 0.1X - LTE №68 - Эстония
+      - 🇪🇪 🎮 ⚡️ 0.1X - LTE №78 - Эстония
+      - 🇵🇱 🎮 ⭐️ 0.1X - LTE №7 - Польша
+      - 🇳🇴 ⚡️ ⭐️ 0.1X - LTE №30 - Норвегия
+      - 🇳🇴 ⚡️ ⭐️ 0.1X - LTE №53 - Норвегия
+      - 🇹🇷 ⚡️ 0.1X - LTE №69 - Турция
+      - 🇹🇷 ⚡️ 0.1X - LTE №58 - Турция
+      - 🇹🇷 ⚡️ 0.1X - LTE №70 - Турция
+      - 🇹🇷 ⚡️ 0.1X - LTE №17 - Турция
+      - 🇺🇸 ⚡️ 0.1X - LTE №6 - США, Эшберн
+      - 🇺🇸 ⚡️ 0.1X - LTE №71 - США, Эшберн
+      - 🇺🇸 ⚡️ 0.1X - LTE №27 - США, Денвер
+      - 🇺🇸 ⚡️ 0.1X - LTE №72 - США, Денвер
+      - 🇺🇸 ⭐️ 0.1X - LTE №57 - США, Майами
+      - 🇺🇸 ⭐️ 0.1X - LTE №73 - США, Майами
+      - 🇺🇸 ⚡️ 0.1X - LTE №62 - США, Чикаго
+      - 🇺🇸 ⚡️ 0.1X - LTE №74 - США, Чикаго
+      - 🇯🇵 ⚡️ 0.1X - LTE №52 - Япония
+      - ⬇️ Если VLESS заблокирован ⬇️
+      - 🇳🇱 SNI 1
+      - 🇳🇱 SS 1
+      - 🇳🇱 WS 1
+      - 🇳🇱 GRPC 1
+      - 🇳🇱 ---
+      - ⬇️ Остальные по алфавиту ⬇️
+      - 🇦🇺 Австралия
+      - 🇦🇹 ⭐️ Австрия
+      - 🇦🇿 Азербайджан
+      - 🇦🇱 Албания
+      - 🇩🇿 Алжир
+      - 🇦🇴 Ангола
+      - 🇦🇩 Андорра
+      - 🇦🇷 ⭐️ Аргентина
+      - 🇦🇲 Армения
+      - 🇦🇼 Аруба
+      - 🇦🇫 Афганистан
+      - 🇧🇸 Багамские Острова
+      - 🇧🇩 Бангладеш
+      - 🇧🇧 Барбадос
+      - 🇧🇭 ⭐️ Бахрейн
+      - 🇧🇾 Беларусь
+      - "🇧🇾 Беларусь #2"
+      - 🇧🇿 Белиз
+      - 🇧🇲 Бермудские Острова
+      - 🇧🇬 Болгария
+      - 🇧🇴 Боливия
+      - 🇧🇦 Босния и Герцеговина
+      - 🇧🇼 Ботсвана
+      - 🇧🇷 Бразилия
+      - 🇧🇳 Бруней
+      - 🇧🇹 Бутан
+      - 🇻🇦 Ватикан
+      - 🇭🇺 Венгрия
+      - 🇻🇪 Венесуэла
+      - 🇻🇮 Виргинские острова (Британия)
+      - 🇻🇳 Вьетнам
+      - "🇻🇳 Вьетнам #2"
+      - 🇬🇭 Гана
+      - 🇬🇹 Гватемала
+      - 🇭🇳 Гондурас
+      - 🇭🇰 ⭐️ Гонконг
+      - "🇭🇰 ⭐️ Гонконг #2"
+      - 🇬🇱 Гренландия
+      - 🇬🇷 Греция
+      - 🇬🇪 Грузия
+      - 🇬🇺 Гуам
+      - 🇩🇰 ⭐️ Дания
+      - 🇨🇩 Демокр. Респ. Конго
+      - 🇯🇪 Джерси
+      - 🇩🇴 Доминиканская Республика
+      - 🇪🇬 Египет
+      - 🇮🇱 ⭐️ Израиль
+      - 🇮🇳 ⭐️ Индия
+      - 🇮🇩 Индонезия
+      - 🇯🇴 Иордания
+      - 🇮🇶 Ирак
+      - 🇮🇷 Иран
+      - 🇮🇪 Ирландия
+      - 🇮🇸 ⭐️ Исландия
+      - 🇾🇪 Йемен
+      - 🇰🇿 ⭐️ Казахстан
+      - "🇰🇿 Казахстан #2"
+      - 🇰🇾 Каймановы острова
+      - 🇰🇭 Камбоджа
+      - 🇨🇲 Камерун
+      - 🇨🇦 Канада
+      - "🇨🇦 Канада #2"
+      - 🇶🇦 ⭐️ Катар
+      - 🇰🇪 Кения
+      - 🇨🇾 Кипр
+      - 🇰🇬 Киргизия
+      - 🇨🇳 Китай
+      - 🇨🇴 Колумбия
+      - 🇰🇲 Коморы
+      - 🇨🇬 Конго
+      - 🇨🇷 Коста-Рика
+      - 🇨🇮 Кот-д’Ивуар
+      - 🇨🇺 Куба
+      - 🇰🇼 Кувейт
+      - 🇨🇼 Кюрасао
+      - 🇱🇦 Лаос
+      - 🇱🇧 Ливан
+      - 🇱🇾 Ливия
+      - 🇱🇹 Литва
+      - 🇱🇮 Лихтенштейн
+      - 🇱🇺 Люксембург
+      - 🇲🇷 Мавритания
+      - 🇲🇴 Макао
+      - 🇲🇾 Малайзия
+      - 🇲🇱 Мали
+      - 🇲🇻 Мальдивы
+      - 🇲🇹 Мальта
+      - 🇲🇦 Марокко
+      - 🇲🇭 Маршалловы острова
+      - 🇲🇽 Мексика
+      - 🇲🇿 Мозамбик
+      - 🇲🇩 ⭐️ Молдова
+      - 🇲🇨 Монако
+      - 🇲🇳 Монголия
+      - 🇲🇲 Мьянма
+      - 🇳🇵 Непал
+      - 🇳🇬 ⭐️ Нигерия
+      - "🇳🇬 Нигерия #2"
+      - "🇳🇬 ⭐️ Нигерия #3"
+      - 🇳🇮 Никарагуа
+      - 🇳🇿 Новая Зеландия
+      - 🇦🇪 ОАЭ
+      - "🇦🇪 ⭐️ ОАЭ #2"
+      - 🇴🇲 Оман
+      - 🇮🇲 Остров Мэн
+      - 🇵🇰 Пакистан
+      - "🇵🇰 Пакистан #2"
+      - "🇵🇰 Пакистан #3"
+      - 🇵🇸 Палестина
+      - 🇵🇦 Панама
+      - 🇵🇬 Папуа - Новая Гвинея
+      - 🇵🇾 Парагвай
+      - 🇵🇪 ⭐️ Перу
+      - 🇵🇹 Португалия
+      - 🇵🇷 Пуэрто-Рико
+      - 🇷🇼 Руанда
+      - 🇷🇴 ⭐️ Румыния
+      - 🇸🇻 Сальвадор
+      - 🇸🇦 Саудовская Аравия
+      - 🇲🇰 Северная Македония
+      - 🇸🇨 Сейшельские Острова
+      - 🇸🇳 Сенегал
+      - 🇷🇸 Сербия
+      - 🇸🇬 ⭐️ Сингапур
+      - "🇸🇬 Сингапур #2"
+      - 🇸🇾 Сирия
+      - 🇸🇰 Словакия
+      - 🇸🇮 ⭐️ Словения
+      - 🇸🇴 Сомали
+      - 🇸🇩 Судан
+      - 🇸🇷 Суринам
+      - 🇺🇸 ⚡️ США, Денвер
+      - 🇺🇸 ⚡️ США, Эшберн
+      - 🇺🇸 ⭐️ США, Майами
+      - 🇺🇸 ⚡️ США, Чикаго
+      - 🇹🇯 Таджикистан
+      - 🇹🇭 ⭐️ Таиланд
+      - 🇹🇼 Тайвань
+      - "🇹🇼 Тайвань #2"
+      - 🇹🇿 Танзания
+      - 🇹🇬 Того
+      - 🇹🇹 Тринидад и Тобаго
+      - 🇹🇳 Тунис
+      - 🇹🇲 Туркменистан
+      - 🇹🇷 ⚡️ Турция
+      - "🇹🇷 ⚡️ Турция #2"
+      - "🇹🇷 ⭐️ Турция #3"
+      - 🇺🇿 Узбекистан
+      - "🇺🇿 ⭐️ Узбекистан #2"
+      - 🇺🇦 Украина
+      - 🇺🇾 Уругвай
+      - 🇫🇯 Фиджи
+      - 🇵🇭 ⭐️ Филиппины
+      - 🇭🇷 ⭐️ Хорватия
+      - 🇹🇩 Чад
+      - 🇲🇪 Черногория
+      - 🇨🇿 ⭐️ Чехия
+      - 🇨🇱 ⭐️ Чили
+      - 🇱🇰 Шри-Ланка
+      - 🇪🇨 Эквадор
+      - 🇪🇷 Эритрея
+      - 🇸🇿 Эсватини
+      - 🇪🇹 Эфиопия
+      - 🇿🇦 ⭐️ ЮАР
+      - 🇰🇷 Южная Корея
+      - "🇰🇷 Южная Корея #2"
+      - "🇰🇷 Южная Корея #3"
+      - 🇸🇸 Южный Судан
+      - 🇯🇲 Ямайка
+      - 🇯🇵 Мост Хабаровск - Япония
+      - 🇯🇵 Япония
+      - "🇯🇵 Япония #2"
+      - 💎 Авто | Самый быстрый 💎
+rule-providers:
+  Quattro-whitelist:
+    type: http
+    behavior: domain
+    format: mrs
+    url: https://cdn.jsdelivr.net/gh/hydraponique/roscomvpn-geosite@202604152235/release/mihomo/whitelist.mrs
+    interval: 86400
+    path: ./ruleset/whitelist.yaml
+rules:
+  - DOMAIN-SUFFIX, 2ip.ru, Quattro VPN
+  - RULE-SET, Quattro-whitelist, DIRECT
+  - MATCH, Quattro VPN
