@@ -1,0 +1,289 @@
+mixed-port: 7890
+socks-port: 7891
+redir-port: 7892
+allow-lan: true
+mode: global
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  use-hosts: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver:
+    - 1.1.1.1
+    - 8.8.8.8
+  nameserver:
+    - 1.1.1.1
+    - 8.8.8.8
+  fake-ip-filter:
+    - "*.lan"
+    - stun.*.*.*
+    - stun.*.*
+    - time.windows.com
+    - time.nist.gov
+    - time.apple.com
+    - time.asia.apple.com
+    - "*.openwrt.pool.ntp.org"
+    - pool.ntp.org
+    - ntp.ubuntu.com
+    - time1.apple.com
+    - time2.apple.com
+    - time3.apple.com
+    - time4.apple.com
+    - time5.apple.com
+    - time6.apple.com
+    - time7.apple.com
+    - time1.google.com
+    - time2.google.com
+    - time3.google.com
+    - time4.google.com
+    - api.joox.com
+    - joox.com
+    - "*.xiami.com"
+    - "*.msftconnecttest.com"
+    - "*.msftncsi.com"
+    - +.xboxlive.com
+    - "*.*.stun.playstation.net"
+    - xbox.*.*.microsoft.com
+    - "*.ipv6.microsoft.com"
+    - speedtest.cros.wr.pvp.net
+proxies:
+  - name: 🇷🇸  [LTE] Обход глушилок [4]
+    type: vless
+    server: 2.26.99.172
+    port: 443
+    network: tcp
+    udp: true
+    uuid: e565b80c-6c3d-48d2-b399-90b4aca28cec
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: ozon.ru
+    reality-opts:
+      public-key: Dh3jrE1nMWqJsMpsEy8lJAAUWqNwElCtDGTHxkqK-jI
+      short-id: 0553c028a5a3b5dd
+    client-fingerprint: firefox
+  - name: 🇫🇷  [LTE] Обход глушилок [5]
+    type: vless
+    server: 2.26.99.172
+    port: 2053
+    network: grpc
+    udp: true
+    uuid: e565b80c-6c3d-48d2-b399-90b4aca28cec
+    packet-encoding: xudp
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: lQyZcXFpMH3sWbKHlWiPhqeA2HBlmMhtuMhtvtTVdWQ
+      short-id: de1384028d477a2b
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: chrome
+  - name: 🇬🇧  [LTE] Обход глушилок [6]
+    type: vless
+    server: 2.26.99.180
+    port: 2053
+    network: grpc
+    udp: true
+    uuid: e565b80c-6c3d-48d2-b399-90b4aca28cec
+    packet-encoding: xudp
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: lQyZcXFpMH3sWbKHlWiPhqeA2HBlmMhtuMhtvtTVdWQ
+      short-id: de1384028d477a2b
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: firefox
+  - name: "🇵🇱 Игровой "
+    type: vless
+    server: 144.31.1.28
+    port: 2053
+    network: grpc
+    udp: true
+    uuid: e565b80c-6c3d-48d2-b399-90b4aca28cec
+    packet-encoding: xudp
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: lQyZcXFpMH3sWbKHlWiPhqeA2HBlmMhtuMhtvtTVdWQ
+      short-id: 0553c028a5a3b5dd
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: chrome
+  - name: 🇺🇸 США
+    type: vless
+    server: 2.26.99.187
+    port: 443
+    network: tcp
+    udp: true
+    uuid: e565b80c-6c3d-48d2-b399-90b4aca28cec
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: ozon.ru
+    reality-opts:
+      public-key: Dh3jrE1nMWqJsMpsEy8lJAAUWqNwElCtDGTHxkqK-jI
+      short-id: b162051fe289a820
+    client-fingerprint: chrome
+  - name: 🇹🇷 Турция
+    type: vless
+    server: 2.26.99.181
+    port: 2053
+    network: grpc
+    udp: true
+    uuid: e565b80c-6c3d-48d2-b399-90b4aca28cec
+    packet-encoding: xudp
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: lQyZcXFpMH3sWbKHlWiPhqeA2HBlmMhtuMhtvtTVdWQ
+      short-id: 0553c028a5a3b5dd
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: chrome
+  - name: 🇦🇪 ОАЭ
+    type: vless
+    server: 2.26.99.180
+    port: 443
+    network: tcp
+    udp: true
+    uuid: e565b80c-6c3d-48d2-b399-90b4aca28cec
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: ozon.ru
+    reality-opts:
+      public-key: Dh3jrE1nMWqJsMpsEy8lJAAUWqNwElCtDGTHxkqK-jI
+      short-id: e9c0b25601f58930
+    client-fingerprint: chrome
+  - name: 🇯🇵 Япония
+    type: vless
+    server: 2.26.99.176
+    port: 2053
+    network: grpc
+    udp: true
+    uuid: e565b80c-6c3d-48d2-b399-90b4aca28cec
+    packet-encoding: xudp
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: lQyZcXFpMH3sWbKHlWiPhqeA2HBlmMhtuMhtvtTVdWQ
+      short-id: 0553c028a5a3b5dd
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: chrome
+  - name: 🇰🇷 Корея
+    type: vless
+    server: 2.26.99.172
+    port: 443
+    network: tcp
+    udp: true
+    uuid: e565b80c-6c3d-48d2-b399-90b4aca28cec
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: ozon.ru
+    reality-opts:
+      public-key: Dh3jrE1nMWqJsMpsEy8lJAAUWqNwElCtDGTHxkqK-jI
+      short-id: 0553c028a5a3b5dd
+    client-fingerprint: chrome
+  - name: 🇳🇱 Нидерланды
+    type: vless
+    server: 2.26.99.176
+    port: 443
+    network: tcp
+    udp: true
+    uuid: e565b80c-6c3d-48d2-b399-90b4aca28cec
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: ozon.ru
+    reality-opts:
+      public-key: Dh3jrE1nMWqJsMpsEy8lJAAUWqNwElCtDGTHxkqK-jI
+      short-id: e9c0b25601f58930
+    client-fingerprint: chrome
+  - name: 🇩🇪 Германия
+    type: vless
+    server: 2.26.99.172
+    port: 2053
+    network: grpc
+    udp: true
+    uuid: e565b80c-6c3d-48d2-b399-90b4aca28cec
+    packet-encoding: xudp
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: lQyZcXFpMH3sWbKHlWiPhqeA2HBlmMhtuMhtvtTVdWQ
+      short-id: de1384028d477a2b
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: chrome
+  - name: 🇨🇭 Швейцария
+    type: vless
+    server: 2.26.99.187
+    port: 2053
+    network: grpc
+    udp: true
+    uuid: e565b80c-6c3d-48d2-b399-90b4aca28cec
+    packet-encoding: xudp
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: lQyZcXFpMH3sWbKHlWiPhqeA2HBlmMhtuMhtvtTVdWQ
+      short-id: 0553c028a5a3b5dd
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: chrome
+  - name: 🇳🇴 Норвегия
+    type: vless
+    server: 2.26.99.172
+    port: 443
+    network: tcp
+    udp: true
+    uuid: e565b80c-6c3d-48d2-b399-90b4aca28cec
+    packet-encoding: xudp
+    flow: xtls-rprx-vision
+    tls: true
+    servername: ozon.ru
+    reality-opts:
+      public-key: Dh3jrE1nMWqJsMpsEy8lJAAUWqNwElCtDGTHxkqK-jI
+      short-id: de1384028d477a2b
+    client-fingerprint: chrome
+  - name: 🇧🇪 Бельгия
+    type: vless
+    server: 2.26.99.180
+    port: 2053
+    network: grpc
+    udp: true
+    uuid: e565b80c-6c3d-48d2-b399-90b4aca28cec
+    packet-encoding: xudp
+    tls: true
+    servername: rutube.ru
+    reality-opts:
+      public-key: lQyZcXFpMH3sWbKHlWiPhqeA2HBlmMhtuMhtvtTVdWQ
+      short-id: de1384028d477a2b
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: chrome
+proxy-groups:
+  - name: → Remnawave
+    type: select
+    proxies:
+      - 🇷🇸  [LTE] Обход глушилок [4]
+      - 🇫🇷  [LTE] Обход глушилок [5]
+      - 🇬🇧  [LTE] Обход глушилок [6]
+      - "🇵🇱 Игровой "
+      - 🇺🇸 США
+      - 🇹🇷 Турция
+      - 🇦🇪 ОАЭ
+      - 🇯🇵 Япония
+      - 🇰🇷 Корея
+      - 🇳🇱 Нидерланды
+      - 🇩🇪 Германия
+      - 🇨🇭 Швейцария
+      - 🇳🇴 Норвегия
+      - 🇧🇪 Бельгия
+rules:
+  - MATCH,→ Remnawave
