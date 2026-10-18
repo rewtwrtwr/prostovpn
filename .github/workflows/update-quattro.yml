@@ -1,0 +1,202 @@
+# ============================================================================
+#  ФАЙЛ: .github/workflows/update-quattro.yml
+#  КУДА: создать в репозитории rewtwrtwr/prostovpn через веб-интерфейс GitHub:
+#        Add file -> Create new file -> вставить ВЕСЬ этот текст ->
+#        в поле имени файла ввести  .github/workflows/update-quattro.yml
+#  СЕКРЕТ: Settings -> Secrets and variables -> Actions -> New repository secret
+#        Name:  QUATTRO_URL
+#        Value: https://auth.quattro-cloud.ru/2E_nkXqJ4c1LYCZr   (твоя ссылка подписки)
+# ============================================================================
+name: Update quattro.yaml
+
+on:
+  schedule:
+    # каждые 3 часа — quattro сам просит Profile-Update-Interval: 3
+    - cron: '23 */3 * * *'
+  workflow_dispatch:  # кнопка ручного запуска во вкладке Actions
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch subscription and rebuild quattro.yaml
+        env:
+          QUATTRO_URL: ${{ secrets.QUATTRO_URL }}
+        run: |
+          python3 <<'PYEOF'
+          import base64, os, sys
+          from datetime import datetime, timezone
+          from urllib.parse import urlparse, parse_qs, unquote
+          from urllib.request import Request, urlopen
+
+          SUB_URL = os.environ.get("QUATTRO_URL", "").strip()
+          OUT = "quattro.yaml"
+          UA = "clash-verge"  # фиксированный идентификатор, одинаковый всегда
+
+          def qstr(s):
+              return '"' + s.replace("\\", "\\\\").replace('"', '\\"').replace("\n", " ") + '"'
+
+          def parse_vless(link):
+              body, _, frag = link[8:].partition("#")
+              name = unquote(frag) or "vless"
+              userinfo_host, _, query = body.partition("?")
+              if "@" not in userinfo_host:
+                  return None
+              uuid, _, hostport = userinfo_host.partition("@")
+              host, _, port = hostport.rpartition(":")
+              try:
+                  port = int(port)
+              except ValueError:
+                  return None
+              q = parse_qs(query)
+              g = lambda k, d="": q.get(k, [d])[0]
+              net = g("type", "tcp"); sec = g("security", "none")
+              p = {"name": name, "type": "vless", "server": host, "port": port,
+                   "uuid": uuid, "udp": True, "network": net}
+              fp = g("fp")
+              if fp:
+                  p["client-fingerprint"] = fp
+              if net == "ws":
+                  w = {"path": g("path", "/")}
+                  hh = g("host")
+                  if hh:
+                      w["headers"] = {"Host": hh}
+                  p["ws-opts"] = w
+              elif net == "grpc":
+                  p["grpc-opts"] = {"grpc-service-name": g("serviceName", "")}
+              if sec == "tls":
+                  p["tls"] = True
+                  sni = g("sni")
+                  if sni:
+                      p["servername"] = sni
+                  alpn = g("alpn")
+                  if alpn:
+                      p["alpn"] = alpn.split(",")
+              elif sec == "reality":
+                  p["tls"] = True
+                  sni = g("sni")
+                  if sni:
+                      p["servername"] = sni
+                  p["reality-opts"] = {"public-key": g("pbk", ""), "short-id": g("sid", "")}
+                  flow = g("flow")
+                  if flow:
+                      p["flow"] = flow
+              return p
+
+          def parse_hysteria2(link):
+              body, _, frag = link[12:].partition("#")
+              name = unquote(frag) or "hysteria2"
+              hostq, _, query = body.partition("?")
+              pwd, _, hostport = hostq.partition("@")
+              host, _, port = hostport.rpartition(":")
+              try:
+                  port = int(port)
+              except ValueError:
+                  return None
+              q = parse_qs(query)
+              g = lambda k, d="": q.get(k, [d])[0]
+              p = {"name": name, "type": "hysteria2", "server": host, "port": port,
+                   "password": pwd}
+              sni = g("sni")
+              if sni:
+                  p["sni"] = sni
+              alpn = g("alpn")
+              if alpn:
+                  p["alpn"] = alpn.split(",")
+              if g("insecure") == "1":
+                  p["skip-cert-verify"] = True
+              return p
+
+          def emit(p):
+              L = [f"- name: {qstr(p['name'])}", f"  type: {p['type']}",
+                   f"  server: {p['server']}", f"  port: {p['port']}"]
+              if p["type"] == "vless":
+                  L += [f"  uuid: {p['uuid']}", "  udp: true", f"  network: {p['network']}"]
+                  if p.get("tls"):
+                      L.append("  tls: true")
+                  if p.get("servername"):
+                      L.append(f"  servername: {p['servername']}")
+                  if p.get("flow"):
+                      L.append(f"  flow: {p['flow']}")
+                  if p.get("client-fingerprint"):
+                      L.append(f"  client-fingerprint: {p['client-fingerprint']}")
+                  if p.get("alpn"):
+                      L.append(f"  alpn: [{', '.join(p['alpn'])}]")
+                  if "reality-opts" in p:
+                      L += ["  reality-opts:",
+                            f"    public-key: {p['reality-opts']['public-key']}",
+                            f"    short-id: {p['reality-opts']['short-id']}"]
+                  if "grpc-opts" in p:
+                      L += ["  grpc-opts:",
+                            f"    grpc-service-name: {qstr(p['grpc-opts']['grpc-service-name'])}"]
+                  if "ws-opts" in p:
+                      L += ["  ws-opts:", f"    path: {qstr(p['ws-opts']['path'])}"]
+                      if "headers" in p["ws-opts"]:
+                          L.append("    headers:")
+                          for k, v in p["ws-opts"]["headers"].items():
+                              L.append(f"      {k}: {qstr(v)}")
+              elif p["type"] == "hysteria2":
+                  L.append(f"  password: {p['password']}")
+                  if p.get("sni"):
+                      L.append(f"  sni: {p['sni']}")
+                  if p.get("alpn"):
+                      L.append(f"  alpn: [{', '.join(p['alpn'])}]")
+                  if p.get("skip-cert-verify"):
+                      L.append("  skip-cert-verify: true")
+              return "\n".join(L)
+
+          if not SUB_URL:
+              sys.exit("QUATTRO_URL secret is not set")
+          req = Request(SUB_URL, headers={"User-Agent": UA})
+          with urlopen(req, timeout=90) as r:
+              raw = r.read().decode("utf-8", "replace").strip()
+          dec = base64.b64decode(raw + "=" * (-len(raw) % 4)).decode("utf-8", "replace")
+          proxies, seen, skipped = [], set(), 0
+          for line in dec.split("\n"):
+              line = line.strip()
+              if not line:
+                  continue
+              pr = (parse_vless(line) if line.startswith("vless://")
+                    else parse_hysteria2(line) if line.startswith("hysteria2://")
+                    else None)
+              if not pr:
+                  skipped += 1
+                  continue
+              base, i = pr["name"], 2
+              while pr["name"] in seen:
+                  pr["name"] = f"{base} ({i})"; i += 1
+              seen.add(pr["name"])
+              proxies.append(pr)
+          # защита от битой/пустой выдачи: у quattro обычно 500+ узлов
+          if len(proxies) < 100:
+              sys.exit(f"suspiciously few proxies ({len(proxies)}), aborting")
+          now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+          out = ["# quattro.yaml — auto-generated, do not edit manually",
+                 f"# updated: {now} | proxies: {len(proxies)} | skipped: {skipped}",
+                 "proxies:"] + [emit(p) for p in proxies]
+          with open(OUT, "w", encoding="utf-8") as f:
+              f.write("\n".join(out) + "\n")
+          print(f"wrote {OUT}: {len(proxies)} proxies, {skipped} skipped")
+          PYEOF
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "quattro-autoupdate"
+          git config user.email "quattro-autoupdate@users.noreply.github.com"
+          git add quattro.yaml
+          if git diff --cached --quiet; then
+            echo "no changes, skipping commit"
+          else
+            git commit -m "auto-update quattro.yaml $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
+
+      - name: Purge jsDelivr cache
+        run: |
+          curl -s -o /dev/null -w "purge http: %{http_code}\n" \
+            "https://purge.jsdelivr.net/gh/rewtwrtwr/prostovpn@main/quattro.yaml"
