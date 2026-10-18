@@ -29,14 +29,15 @@ jobs:
           QUATTRO_URL: ${{ secrets.QUATTRO_URL }}
         run: |
           python3 <<'PYEOF'
-          import base64, os, sys
+          import base64, os, re, sys
           from datetime import datetime, timezone
           from urllib.parse import urlparse, parse_qs, unquote
           from urllib.request import Request, urlopen
 
           SUB_URL = os.environ.get("QUATTRO_URL", "").strip()
           OUT = "quattro.yaml"
-          UA = "clash-verge"  # фиксированный идентификатор, одинаковый всегда
+          # фиксированный идентификатор, одинаковый при каждом запросе
+          UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 
           def qstr(s):
               return '"' + s.replace("\\", "\\\\").replace('"', '\\"').replace("\n", " ") + '"'
@@ -152,9 +153,24 @@ jobs:
 
           if not SUB_URL:
               sys.exit("QUATTRO_URL secret is not set")
-          req = Request(SUB_URL, headers={"User-Agent": UA})
-          with urlopen(req, timeout=90) as r:
-              raw = r.read().decode("utf-8", "replace").strip()
+          req = Request(SUB_URL, headers={
+              "User-Agent": UA,
+              "Accept": "text/plain,text/html;q=0.9,*/*;q=0.8",
+              "Accept-Language": "ru-RU,ru;q=0.9,en;q=0.8",
+          })
+          try:
+              with urlopen(req, timeout=90) as r:
+                  status, ctype = r.status, r.headers.get("Content-Type", "")
+                  raw = r.read().decode("utf-8", "replace").strip()
+          except Exception as e:
+              sys.exit(f"fetch failed: {type(e).__name__}: {e}")
+          print(f"http status: {status}, content-type: {ctype}, bytes: {len(raw)}")
+          # подписка — это длинная base64-строка; всё остальное (страница проверки и т.п.) — брак
+          probe = raw[:400].replace("\n", "").replace("\r", "")
+          if len(raw) < 10000 or not re.fullmatch(r"[A-Za-z0-9+/=\s]+", raw[:1000]):
+              print("UNEXPECTED RESPONSE preview (first 300 chars):")
+              print(raw[:300].replace("\n", " | "))
+              sys.exit("response is not a base64 subscription (likely bot-check/block page)")
           dec = base64.b64decode(raw + "=" * (-len(raw) % 4)).decode("utf-8", "replace")
           proxies, seen, skipped = [], set(), 0
           for line in dec.split("\n"):
