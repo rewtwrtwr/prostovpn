@@ -1,14 +1,15 @@
 # ============================================================================
 #  ФАЙЛ: .github/workflows/update-quattro.yml  (в репозитории rewtwrtwr/prostovpn)
 #  ВАЖНО: этим файлом ЗАМЕНИТЬ ЦЕЛИКОМ старый update-quattro.yml
-#  (тот, что качал подписку сам, — его quattro режет бот-чеком, он мёртв).
 #
 #  Plan B: подписку с домашнего ПК пушит скрипт update-quattro.ps1
 #  в файл quattro.b64 в корне репо. Этот workflow ТОЛЬКО конвертирует
-#  base64 -> Clash YAML локально, без единого сетевого запроса, —
-#  QRATOR его больше не трогает.
+#  base64 -> Clash YAML локально, без единого сетевого запроса.
 #
-#  Секрет QUATTRO_URL больше не нужен (можно удалить из Settings -> Secrets).
+#  v2: генерирует ПОЛНЫЙ конфиг (proxies + proxy-groups + rules),
+#  а не только список прокси — файл можно использовать напрямую
+#  как профиль в Clash Verge / Karing / Mihomo, а не только как
+#  proxy-provider.
 # ============================================================================
 name: Update quattro.yaml
 
@@ -27,7 +28,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Convert quattro.b64 to quattro.yaml
+      - name: Convert quattro.b64 to full quattro.yaml
         run: |
           python3 <<'PYEOF'
           import base64, re, sys
@@ -154,7 +155,6 @@ jobs:
                   raw = f.read().strip()
           except FileNotFoundError:
               sys.exit(f"{SRC} not found — скрипт с ПК ещё ни разу не пушил")
-          # защита от битой выдачи: подписка — длинная base64-строка
           if len(raw) < 10000 or not re.fullmatch(r"[A-Za-z0-9+/=\s]+", raw[:1000]):
               sys.exit("quattro.b64 is not a base64 subscription, refusing to touch quattro.yaml")
           dec = base64.b64decode(raw + "=" * (-len(raw) % 4)).decode("utf-8", "replace")
@@ -174,16 +174,51 @@ jobs:
                   pr["name"] = f"{base} ({i})"; i += 1
               seen.add(pr["name"])
               proxies.append(pr)
-          # защита от пустой/битой выдачи: у quattro обычно 500+ узлов
           if len(proxies) < 100:
               sys.exit(f"suspiciously few proxies ({len(proxies)}), aborting")
+
           now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-          out = ["# quattro.yaml — auto-generated, do not edit manually",
-                 f"# updated: {now} | proxies: {len(proxies)} | skipped: {skipped}",
-                 "proxies:"] + [emit(p) for p in proxies]
+          names = [qstr(p["name"]) for p in proxies]
+
+          out = []
+          out += ["# quattro.yaml — auto-generated FULL config, do not edit manually",
+                  f"# updated: {now} | proxies: {len(proxies)} | skipped: {skipped}",
+                  "# Use directly as a Clash/Mihomo profile, or as a proxy-provider.",
+                  "",
+                  "port: 7890",
+                  "socks-port: 7891",
+                  "mixed-port: 7892",
+                  "allow-lan: false",
+                  "mode: rule",
+                  "log-level: info",
+                  "ipv6: false",
+                  "",
+                  "proxies:"]
+          out += [emit(p) for p in proxies]
+          out += ["",
+                  "proxy-groups:",
+                  "- name: AUTO",
+                  "  type: url-test",
+                  "  url: https://www.gstatic.com/generate_204",
+                  "  interval: 300",
+                  "  tolerance: 50",
+                  "  lazy: true",
+                  "  proxies:"]
+          out += [f"  - {n}" for n in names]
+          out += ["",
+                  "- name: SELECT",
+                  "  type: select",
+                  "  proxies:",
+                  "  - AUTO",
+                  "  - DIRECT",
+                  "",
+                  "rules:",
+                  "- GEOIP,private,DIRECT,no-resolve",
+                  "- MATCH,SELECT",
+                  ""]
           with open(OUT, "w", encoding="utf-8") as f:
-              f.write("\n".join(out) + "\n")
-          print(f"wrote {OUT}: {len(proxies)} proxies, {skipped} skipped")
+              f.write("\n".join(out))
+          print(f"wrote {OUT}: {len(proxies)} proxies, {skipped} skipped (full config)")
           PYEOF
 
       - name: Commit and push if changed
@@ -194,7 +229,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "no changes, skipping commit"
           else
-            git commit -m "auto-update quattro.yaml $(date -u +%Y-%m-%dT%H:%MZ)"
+            git commit -m "auto-update quattro.yaml (full config) $(date -u +%Y-%m-%dT%H:%MZ)"
             git push
           fi
 
