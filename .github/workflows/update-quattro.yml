@@ -14,19 +14,48 @@
 name: Update quattro.yaml
 
 on:
+  schedule:
+    # every 1.5 hours: :17 of hours 0,3,6,... and :47 of hours 1,4,7,...
+    - cron: '17 */3 * * *'
+    - cron: '47 1-23/3 * * *'
   push:
     paths:
-      - quattro.b64        # триггер — только пуш скрипта с домашнего ПК
+      - quattro.b64        # legacy trigger: push of the PC script (fallback path)
   workflow_dispatch:       # кнопка ручного запуска во вкладке Actions
 
 permissions:
   contents: write
+
+concurrency:
+  group: update-quattro
+  cancel-in-progress: false
 
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Fetch subscription with curl (default UA; QRATOR-safe)
+        env:
+          QUATTRO_URL: ${{ secrets.QUATTRO_URL }}
+        run: |
+          if [ -z "$QUATTRO_URL" ]; then
+            echo "QUATTRO_URL secret not set - falling back to quattro.b64 from the repo"
+            exit 0
+          fi
+          if curl -s --max-time 60 -o /tmp/quattro-new.b64 "$QUATTRO_URL"; then
+            size=$(stat -c%s /tmp/quattro-new.b64)
+            echo "fetched $size bytes"
+            if [ "$size" -ge 10000 ] && head -c 1000 /tmp/quattro-new.b64 | grep -qE '^[A-Za-z0-9+/=[:space:]]+$' && ! head -c 200 /tmp/quattro-new.b64 | grep -qi 'doctype\|<html'; then
+              cp /tmp/quattro-new.b64 quattro.b64
+              echo "quattro.b64 refreshed from the subscription"
+            else
+              echo "WARNING: fetched content failed validation (bot-check page?) - keeping repo quattro.b64"
+            fi
+          else
+            echo "WARNING: fetch failed - keeping repo quattro.b64"
+          fi
 
       - name: Convert quattro.b64 to full quattro.yaml
         run: |
@@ -225,12 +254,20 @@ jobs:
         run: |
           git config user.name "quattro-autoupdate"
           git config user.email "quattro-autoupdate@users.noreply.github.com"
-          git add quattro.yaml
+          git add quattro.b64 quattro.yaml
           if git diff --cached --quiet; then
             echo "no changes, skipping commit"
           else
             git commit -m "auto-update quattro.yaml (full config) $(date -u +%Y-%m-%dT%H:%MZ)"
-            git push
+            ok=0
+            for i in 1 2 3 4 5; do
+              if git push; then ok=1; echo "pushed on attempt $i"; break; fi
+              echo "push rejected (attempt $i) - fetching and rebasing onto origin/main"
+              git fetch origin main
+              git rebase origin/main || { git rebase --abort; exit 1; }
+              sleep 5
+            done
+            if [ "$ok" != "1" ]; then echo "push failed after retries"; exit 1; fi
           fi
 
       - name: Purge jsDelivr cache
