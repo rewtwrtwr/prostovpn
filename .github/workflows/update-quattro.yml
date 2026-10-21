@@ -17,7 +17,7 @@ on:
   schedule:
     # every 1.5 hours: :17 of hours 0,3,6,... and :47 of hours 1,4,7,...
     - cron: '17 */3 * * *'
-    - cron: '47 1-23/3 * * *'
+    - cron: '47 1,4,7,10,13,16,19,22 * * *'
   push:
     paths:
       - quattro.b64        # legacy trigger: push of the PC script (fallback path)
