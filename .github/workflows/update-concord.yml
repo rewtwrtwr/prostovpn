@@ -13,19 +13,59 @@
 name: Update concord.yaml
 
 on:
+  schedule:
+    # every 1.5 hours: :27 of hours 0,3,6,... and :57 of hours 1,4,7,...
+    - cron: '27 */3 * * *'
+    - cron: '57 1-23/3 * * *'
   push:
     paths:
-      - concord.src.yaml   # trigger: push from the home-PC script only
+      - concord.src.yaml   # legacy trigger: push from the home-PC script (fallback path)
   workflow_dispatch:       # manual run button in the Actions tab
 
 permissions:
   contents: write
+
+concurrency:
+  group: update-concord
+  cancel-in-progress: false
 
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Fetch subscription with panel headers (secrets)
+        env:
+          CONCORD_URL: ${{ secrets.CONCORD_URL }}
+          CONCORD_HWID: ${{ secrets.CONCORD_HWID }}
+        run: |
+          if [ -z "$CONCORD_URL" ] || [ -z "$CONCORD_HWID" ]; then
+            echo "CONCORD secrets not set - falling back to concord.src.yaml from the repo"
+            exit 0
+          fi
+          if curl -s --max-time 60 -D /tmp/concord.hdr -o /tmp/concord-new.yaml \
+              -H "User-Agent: ClashMeta" \
+              -H "x-hwid: $CONCORD_HWID" \
+              -H "x-device-os: Windows" \
+              -H "x-ver-os: 11" \
+              -H "x-device-model: PC" \
+              "$CONCORD_URL"; then
+            size=$(stat -c%s /tmp/concord-new.yaml)
+            echo "fetched $size bytes"
+            if grep -qi "x-hwid-not-supported: *true" /tmp/concord.hdr; then
+              echo "WARNING: panel says x-hwid NOT supported - keeping repo concord.src.yaml"
+            elif grep -qi "x-hwid-max-devices-reached: *true" /tmp/concord.hdr; then
+              echo "WARNING: panel says HWID device limit REACHED - keeping repo concord.src.yaml"
+            elif [ "$size" -ge 10000 ] && ! head -c 300 /tmp/concord-new.yaml | grep -qi 'doctype\|<html\|not supported' && grep -q "^proxies:" /tmp/concord-new.yaml; then
+              cp /tmp/concord-new.yaml concord.src.yaml
+              echo "concord.src.yaml refreshed from the subscription"
+            else
+              echo "WARNING: fetched content failed validation - keeping repo concord.src.yaml"
+            fi
+          else
+            echo "WARNING: fetch failed - keeping repo concord.src.yaml"
+          fi
 
       - name: Install PyYAML
         run: pip install --quiet pyyaml
@@ -101,12 +141,20 @@ jobs:
         run: |
           git config user.name "concord-autoupdate"
           git config user.email "concord-autoupdate@users.noreply.github.com"
-          git add concord.yaml
+          git add concord.src.yaml concord.yaml
           if git diff --cached --quiet; then
             echo "no changes, skipping commit"
           else
             git commit -m "auto-update concord.yaml $(date -u +%Y-%m-%dT%H:%MZ)"
-            git push
+            ok=0
+            for i in 1 2 3 4 5; do
+              if git push; then ok=1; echo "pushed on attempt $i"; break; fi
+              echo "push rejected (attempt $i) - fetching and rebasing onto origin/main"
+              git fetch origin main
+              git rebase origin/main || { git rebase --abort; exit 1; }
+              sleep 5
+            done
+            if [ "$ok" != "1" ]; then echo "push failed after retries"; exit 1; fi
           fi
 
       - name: Purge jsDelivr cache
