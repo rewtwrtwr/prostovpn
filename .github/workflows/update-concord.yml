@@ -16,7 +16,7 @@ on:
   schedule:
     # every 1.5 hours: :27 of hours 0,3,6,... and :57 of hours 1,4,7,...
     - cron: '27 */3 * * *'
-    - cron: '57 1-23/3 * * *'
+    - cron: '57 1,4,7,10,13,16,19,22 * * *'
   push:
     paths:
       - concord.src.yaml   # legacy trigger: push from the home-PC script (fallback path)
