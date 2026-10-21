@@ -1,0 +1,115 @@
+# ============================================================================
+#  FILE: .github/workflows/update-concord.yml  (repo rewtwrtwr/prostovpn)
+#
+#  Same architecture as update-quattro.yml (Plan B):
+#  the home-PC script update-concord.ps1 fetches the Concord subscription
+#  (the panel requires User-Agent: ClashMeta + x-hwid headers, which only
+#  the PC sends) and pushes the RAW panel answer as concord.src.yaml.
+#  This workflow only VALIDATES the raw file and publishes concord.yaml.
+#  It never fetches the subscription itself.
+#
+#  Fail-safe: any validation error -> job fails, concord.yaml untouched.
+# ============================================================================
+name: Update concord.yaml
+
+on:
+  push:
+    paths:
+      - concord.src.yaml   # trigger: push from the home-PC script only
+  workflow_dispatch:       # manual run button in the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install PyYAML
+        run: pip install --quiet pyyaml
+
+      - name: Validate concord.src.yaml and publish concord.yaml
+        run: |
+          python3 <<'PYEOF'
+          import re, sys
+          from datetime import datetime, timezone
+
+          SRC = "concord.src.yaml"
+          OUT = "concord.yaml"
+
+          try:
+              with open(SRC, encoding="utf-8") as f:
+                  raw = f.read()
+          except FileNotFoundError:
+              sys.exit(f"{SRC} not found - the PC script has not pushed yet")
+
+          # --- basic sanity: must be a Clash YAML, not an error page ---
+          if len(raw) < 10000:
+              sys.exit(f"suspiciously small source ({len(raw)} bytes), refusing to publish")
+          low = raw.lower()
+          if "<!doctype html" in low or "<html" in low or "not supported" in low:
+              sys.exit("source looks like an error page / unsupported-app answer, refusing to publish")
+          for section in ("proxies:", "proxy-groups:", "rules:"):
+              if not re.search(rf"^{re.escape(section)}", raw, re.M):
+                  sys.exit(f"section {section} missing, refusing to publish")
+
+          # --- structural validation with a real YAML parser ---
+          import yaml
+          try:
+              data = yaml.safe_load(raw)
+          except yaml.YAMLError as e:
+              sys.exit(f"YAML parse error: {e}")
+          if not isinstance(data, dict):
+              sys.exit("top level is not a mapping")
+          proxies = data.get("proxies")
+          if not isinstance(proxies, list) or len(proxies) < 10:
+              sys.exit(f"suspiciously few proxies ({0 if not isinstance(proxies, list) else len(proxies)}), aborting")
+          names = set()
+          for p in proxies:
+              if not isinstance(p, dict):
+                  sys.exit("proxy entry is not a mapping")
+              for key in ("name", "type", "server", "port"):
+                  if key not in p:
+                      sys.exit(f"proxy {p.get('name', '?')} misses key {key}")
+              if p["name"] in names:
+                  sys.exit(f"duplicate proxy name: {p['name']}")
+              names.add(p["name"])
+          groups = data.get("proxy-groups")
+          if not isinstance(groups, list) or not groups:
+              sys.exit("proxy-groups missing or empty")
+          rules = data.get("rules")
+          if not isinstance(rules, list) or not rules:
+              sys.exit("rules missing or empty")
+
+          # --- publish: header + raw content, unchanged otherwise ---
+          body = raw
+          # idempotency: strip our own header if the source somehow has it
+          body = re.sub(r"\A(# concord\.yaml - auto-generated[^\n]*\n# updated: [^\n]*\n)", "", body)
+          now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+          header = (f"# concord.yaml - auto-generated from concord.src.yaml, do not edit manually\n"
+                    f"# updated: {now} | proxies: {len(proxies)} | groups: {len(groups)} | rules: {len(rules)}\n")
+          with open(OUT, "w", encoding="utf-8") as f:
+              f.write(header + body.lstrip("\n"))
+              if not body.endswith("\n"):
+                  f.write("\n")
+          print(f"wrote {OUT}: {len(proxies)} proxies, {len(groups)} groups, {len(rules)} rules")
+          PYEOF
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "concord-autoupdate"
+          git config user.email "concord-autoupdate@users.noreply.github.com"
+          git add concord.yaml
+          if git diff --cached --quiet; then
+            echo "no changes, skipping commit"
+          else
+            git commit -m "auto-update concord.yaml $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
+
+      - name: Purge jsDelivr cache
+        run: |
+          curl -s -o /dev/null -w "purge http: %{http_code}\n" \
+            "https://purge.jsdelivr.net/gh/rewtwrtwr/prostovpn@main/concord.yaml"
