@@ -1,5 +1,5 @@
 # concord.yaml - auto-generated from concord.src.yaml, do not edit manually
-# updated: 2026-10-22T18:18:14Z | proxies: 37 | groups: 22 | rules: 180
+# updated: 2026-10-22T21:05:39Z | proxies: 37 | groups: 22 | rules: 188
 mixed-port: 7890
 socks-port: 7891
 redir-port: 7892
@@ -928,6 +928,14 @@ rules:
   - DOMAIN-SUFFIX,yandex.org,🌐 Без VPN
   - DOMAIN-SUFFIX,yastatic.com,🌐 Без VPN
   - DOMAIN-SUFFIX,yastatic.net,🌐 Без VPN
+  - DOMAIN-SUFFIX,aviasales.com,🌐 Без VPN
+  - DOMAIN-SUFFIX,auth.avs.io,🌐 Без VPN
+  - DOMAIN-SUFFIX,connect-concord.com,🌐 Без VPN
+  - DOMAIN-SUFFIX,mradx.net,🌐 Без VPN
+  - DOMAIN-SUFFIX,mycdn.met,🌐 Без VPN
+  - DOMAIN-SUFFIX,terratraf.com,🌐 Без VPN
+  - DOMAIN-SUFFIX,bumlam.com,🌐 Без VPN
+  - DOMAIN-SUFFIX,moe.video,🌐 Без VPN
   - PROCESS-NAME,4game.exe,🌐 Без VPN
   - PROCESS-NAME,Agent.exe,🌐 Без VPN
   - PROCESS-NAME,Amazon Games.exe,🌐 Без VPN
