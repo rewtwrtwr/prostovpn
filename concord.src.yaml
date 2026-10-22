@@ -833,7 +833,7 @@ proxy-groups:
     strategy: round-robin
     lazy: true
     include-all: true
-    filter: (🇩🇪|🇳🇱|🇫🇮|🇫🇷|🇪🇸|🇮🇹|🇵🇱|🇦🇹|🇸🇪|🇳🇴|🇩🇰|🇨🇭|🇪🇪|🇱🇻|🇱🇹|🇮🇶|🇮🇹|Европа|Europe|Germany|Netherlands|Lithuania|Finland|France|Austria|Sweden|Poland|Estonia|Latvia|Iraq|Italy)
+    filter: (🇩🇪|🇳🇱|🇫🇮|🇫🇷|🇪🇸|🇮🇹|🇵🇱|🇦🇹|🇸🇪|🇳🇴|🇩🇰|🇨🇭|🇪🇪|🇱🇻|🇱🇹|🇮🇹|Европа|Europe|Germany|Netherlands|Lithuania|Finland|France|Austria|Sweden|Poland|Estonia|Latvia|Italy)
     url: https://cp.cloudflare.com/generate_204
     interval: 300
     hidden: true
