@@ -95,6 +95,12 @@ proxies:
       public-key: hGVlcRcEAlUsReWyZI5fyTnyGvObuM7C7DxOJBQosCw
       short-id: 680103e8aee32f15
     client-fingerprint: firefox
+    smux:
+      enabled: true
+      padding: true
+      only-tcp: true
+      protocol: smux
+      max-connections: 3
   - name: Австрия 1 🇦🇹
     type: vless
     server: at1.messenger-club.com
@@ -109,6 +115,12 @@ proxies:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
     client-fingerprint: firefox
+    smux:
+      enabled: true
+      padding: true
+      only-tcp: true
+      protocol: smux
+      max-connections: 3
   - name: Австрия 2 Bridge 🇦🇹
     type: vless
     server: 186.246.4.122
@@ -123,6 +135,12 @@ proxies:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
     client-fingerprint: firefox
+    smux:
+      enabled: true
+      padding: true
+      only-tcp: true
+      protocol: smux
+      max-connections: 3
   - name: Франция 1 🇫🇷
     type: vless
     server: fr1.messenger-club.com
@@ -137,6 +155,12 @@ proxies:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
     client-fingerprint: firefox
+    smux:
+      enabled: true
+      padding: true
+      only-tcp: true
+      protocol: smux
+      max-connections: 3
   - name: Франция 2 Bridge 🇫🇷
     type: vless
     server: 186.246.4.122
@@ -151,6 +175,12 @@ proxies:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
     client-fingerprint: firefox
+    smux:
+      enabled: true
+      padding: true
+      only-tcp: true
+      protocol: smux
+      max-connections: 3
   - name: Эстония 1 🇪🇪
     type: vless
     server: ee1.messenger-club.com
@@ -165,6 +195,12 @@ proxies:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
     client-fingerprint: firefox
+    smux:
+      enabled: true
+      padding: true
+      only-tcp: true
+      protocol: smux
+      max-connections: 3
   - name: Эстония 2 🇪🇪
     type: vless
     server: ee2.messenger-club.com
@@ -179,6 +215,12 @@ proxies:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
     client-fingerprint: firefox
+    smux:
+      enabled: true
+      padding: true
+      only-tcp: true
+      protocol: smux
+      max-connections: 3
   - name: Эстония 3 Bridge 🇪🇪
     type: vless
     server: 89.23.99.185
@@ -193,6 +235,12 @@ proxies:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
     client-fingerprint: firefox
+    smux:
+      enabled: true
+      padding: true
+      only-tcp: true
+      protocol: smux
+      max-connections: 3
   - name: Латвия 1 🇱🇻
     type: vless
     server: lv1.messenger-club.com
@@ -207,6 +255,12 @@ proxies:
       public-key: zKZzWPVXZMHDWIUHm7xUAsDuVYmsSBwVV1XdIijfTSg
       short-id: 344f83372596eea2
     client-fingerprint: firefox
+    smux:
+      enabled: true
+      padding: true
+      only-tcp: true
+      protocol: smux
+      max-connections: 3
   - name: Литва 1 🇱🇹
     type: vless
     server: lt1.messenger-club.com
@@ -281,6 +335,12 @@ proxies:
       public-key: zKZzWPVXZMHDWIUHm7xUAsDuVYmsSBwVV1XdIijfTSg
       short-id: 344f83372596eea2
     client-fingerprint: firefox
+    smux:
+      enabled: true
+      padding: true
+      only-tcp: true
+      protocol: smux
+      max-connections: 3
   - name: Швеция 1 🇸🇪
     type: vless
     server: se1.messenger-club.com
@@ -295,7 +355,13 @@ proxies:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
     client-fingerprint: firefox
-  - name: Швеция 3 Bridge 🇸🇪
+    smux:
+      enabled: true
+      padding: true
+      only-tcp: true
+      protocol: smux
+      max-connections: 3
+  - name: Швеция 2 Bridge 🇸🇪
     type: vless
     server: 89.23.99.185
     port: 443
@@ -309,6 +375,12 @@ proxies:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
     client-fingerprint: firefox
+    smux:
+      enabled: true
+      padding: true
+      only-tcp: true
+      protocol: smux
+      max-connections: 3
   - name: 'Турция 1 🇹🇷 '
     type: vless
     server: tr1.messenger-club.com
@@ -323,6 +395,12 @@ proxies:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
     client-fingerprint: firefox
+    smux:
+      enabled: true
+      padding: true
+      only-tcp: true
+      protocol: smux
+      max-connections: 3
   - name: 'Турция 2 Bridge 🇹🇷 '
     type: vless
     server: 93.183.83.42
@@ -337,6 +415,52 @@ proxies:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
     client-fingerprint: firefox
+    smux:
+      enabled: true
+      padding: true
+      only-tcp: true
+      protocol: smux
+      max-connections: 3
+  - name: Ирак 1 🇮🇶
+    type: vless
+    server: iq1.messenger-club.com
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
+    packet-encoding: xudp
+    tls: true
+    servername: iq.fileget.download
+    reality-opts:
+      public-key: zKZzWPVXZMHDWIUHm7xUAsDuVYmsSBwVV1XdIijfTSg
+      short-id: 344f83372596eea2
+    client-fingerprint: firefox
+    smux:
+      enabled: true
+      padding: true
+      only-tcp: true
+      protocol: smux
+      max-connections: 3
+  - name: Ирак 2 Bridge 🇮🇶
+    type: vless
+    server: 93.183.83.42
+    port: 443
+    network: tcp
+    udp: true
+    uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
+    packet-encoding: xudp
+    tls: true
+    servername: iq.fileget.download
+    reality-opts:
+      public-key: zKZzWPVXZMHDWIUHm7xUAsDuVYmsSBwVV1XdIijfTSg
+      short-id: 344f83372596eea2
+    client-fingerprint: firefox
+    smux:
+      enabled: true
+      padding: true
+      only-tcp: true
+      protocol: smux
+      max-connections: 3
   - name: 'США 1 🇺🇸 '
     type: vless
     server: us1.messenger-club.com
@@ -351,6 +475,12 @@ proxies:
       public-key: 7N8Haguez-5ChGVvSkLTkBVqpMf8eJn1uLjUdxAjT1M
       short-id: 47a5cf1c41f1a64d
     client-fingerprint: firefox
+    smux:
+      enabled: true
+      padding: true
+      only-tcp: true
+      protocol: smux
+      max-connections: 3
   - name: США 2 Bridge 🇺🇸
     type: vless
     server: 186.246.4.122
@@ -365,6 +495,12 @@ proxies:
       public-key: 7N8Haguez-5ChGVvSkLTkBVqpMf8eJn1uLjUdxAjT1M
       short-id: 47a5cf1c41f1a64d
     client-fingerprint: firefox
+    smux:
+      enabled: true
+      padding: true
+      only-tcp: true
+      protocol: smux
+      max-connections: 3
   - name: Германия 1  🇩🇪
     type: vless
     server: de1.messenger-club.com
@@ -401,6 +537,12 @@ proxies:
     grpc-opts:
       grpc-service-name: grpc
     client-fingerprint: firefox
+    smux:
+      enabled: true
+      padding: true
+      only-tcp: true
+      protocol: smux
+      max-connections: 3
   - name: Нидерланды 1 🇳🇱
     type: vless
     server: nl1.messenger-club.com
@@ -437,6 +579,12 @@ proxies:
     grpc-opts:
       grpc-service-name: grpc
     client-fingerprint: firefox
+    smux:
+      enabled: true
+      padding: true
+      only-tcp: true
+      protocol: smux
+      max-connections: 3
   - name: Финляндия 1 🇫🇮
     type: vless
     server: fi1.messenger-club.com
@@ -451,6 +599,12 @@ proxies:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
     client-fingerprint: firefox
+    smux:
+      enabled: true
+      padding: true
+      only-tcp: true
+      protocol: smux
+      max-connections: 3
   - name: Финляндия 2 🇫🇮
     type: vless
     server: fi2.messenger-club.com
@@ -465,6 +619,12 @@ proxies:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
     client-fingerprint: firefox
+    smux:
+      enabled: true
+      padding: true
+      only-tcp: true
+      protocol: smux
+      max-connections: 3
   - name: Финляндия 2 🇫🇮 Bridge
     type: vless
     server: 176.108.251.180
@@ -481,6 +641,12 @@ proxies:
     grpc-opts:
       grpc-service-name: grpc
     client-fingerprint: firefox
+    smux:
+      enabled: true
+      padding: true
+      only-tcp: true
+      protocol: smux
+      max-connections: 3
   - name: Польша 1 🇵🇱
     type: vless
     server: pl1.messenger-club.com
@@ -495,6 +661,12 @@ proxies:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
     client-fingerprint: firefox
+    smux:
+      enabled: true
+      padding: true
+      only-tcp: true
+      protocol: smux
+      max-connections: 3
   - name: Польша 2 🇵🇱
     type: vless
     server: pl2.messenger-club.com
@@ -509,6 +681,12 @@ proxies:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
     client-fingerprint: firefox
+    smux:
+      enabled: true
+      padding: true
+      only-tcp: true
+      protocol: smux
+      max-connections: 3
   - name: Польша 2 Bridge 🇵🇱
     type: vless
     server: 93.183.83.42
@@ -523,6 +701,12 @@ proxies:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
     client-fingerprint: firefox
+    smux:
+      enabled: true
+      padding: true
+      only-tcp: true
+      protocol: smux
+      max-connections: 3
   - name: Италия 1 🇮🇹
     type: vless
     server: it1.messenger-club.com
@@ -537,6 +721,12 @@ proxies:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
     client-fingerprint: firefox
+    smux:
+      enabled: true
+      padding: true
+      only-tcp: true
+      protocol: smux
+      max-connections: 3
   - name: Италия 2 Bridge 🇮🇹
     type: vless
     server: 93.183.83.42
@@ -551,6 +741,12 @@ proxies:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
     client-fingerprint: firefox
+    smux:
+      enabled: true
+      padding: true
+      only-tcp: true
+      protocol: smux
+      max-connections: 3
   - name: Япония 1 🇯🇵
     type: vless
     server: jp1.messenger-club.com
@@ -565,6 +761,12 @@ proxies:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
     client-fingerprint: firefox
+    smux:
+      enabled: true
+      padding: true
+      only-tcp: true
+      protocol: smux
+      max-connections: 3
   - name: Япония 2 Bridge 🇯🇵
     type: vless
     server: 186.246.4.122
@@ -579,6 +781,12 @@ proxies:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
     client-fingerprint: firefox
+    smux:
+      enabled: true
+      padding: true
+      only-tcp: true
+      protocol: smux
+      max-connections: 3
   - name: Британия 1 🇬🇧
     type: vless
     server: gb1.messenger-club.com
@@ -593,6 +801,12 @@ proxies:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
     client-fingerprint: firefox
+    smux:
+      enabled: true
+      padding: true
+      only-tcp: true
+      protocol: smux
+      max-connections: 3
   - name: Британия 2 🇬🇧 Bridge
     type: vless
     server: 186.246.4.122
@@ -607,13 +821,19 @@ proxies:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
     client-fingerprint: firefox
+    smux:
+      enabled: true
+      padding: true
+      only-tcp: true
+      protocol: smux
+      max-connections: 3
 proxy-groups:
   - name: Европа 🇪🇺
     type: load-balance
     strategy: round-robin
     lazy: true
     include-all: true
-    filter: (🇩🇪|🇳🇱|🇫🇮|🇫🇷|🇪🇸|🇮🇹|🇵🇱|🇦🇹|🇸🇪|🇳🇴|🇩🇰|🇨🇭|🇪🇪|🇱🇻|🇱🇹|🇮🇹|Европа|Europe|Germany|Netherlands|Lithuania|Finland|France|Austria|Sweden|Poland|Estonia|Latvia|Italy)
+    filter: (🇩🇪|🇳🇱|🇫🇮|🇫🇷|🇪🇸|🇮🇹|🇵🇱|🇦🇹|🇸🇪|🇳🇴|🇩🇰|🇨🇭|🇪🇪|🇱🇻|🇱🇹|🇮🇶|🇮🇹|Европа|Europe|Germany|Netherlands|Lithuania|Finland|France|Austria|Sweden|Poland|Estonia|Latvia|Iraq|Italy)
     url: https://cp.cloudflare.com/generate_204
     interval: 300
     hidden: true
@@ -748,6 +968,16 @@ proxy-groups:
     interval: 300
     hidden: true
     proxies: []
+  - name: Ирак 🇮🇶
+    type: load-balance
+    strategy: round-robin
+    lazy: true
+    include-all: true
+    filter: (Ирак|Iraq|🇮🇶)
+    url: https://cp.cloudflare.com/generate_204
+    interval: 300
+    hidden: true
+    proxies: []
   - name: Италия 🇮🇹
     type: load-balance
     strategy: round-robin
@@ -816,6 +1046,7 @@ proxy-groups:
       - Швеция 🇸🇪
       - Британия 🇬🇧
       - Турция 🇹🇷
+      - Ирак 🇮🇶
       - Япония 🇯🇵
       - США 🇺🇸
       - Россия 🇷🇺
