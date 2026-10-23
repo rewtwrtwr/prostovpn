@@ -1,5 +1,5 @@
 # concord.yaml - auto-generated from concord.src.yaml, do not edit manually
-# updated: 2026-10-23T13:48:36Z | proxies: 37 | groups: 22 | rules: 189
+# updated: 2026-10-23T15:18:51Z | proxies: 37 | groups: 22 | rules: 190
 mixed-port: 7890
 socks-port: 7891
 redir-port: 7892
@@ -879,6 +879,7 @@ rules:
   - DOMAIN-SUFFIX,meduza.io,Польша 🇵🇱
   - DOMAIN-SUFFIX,currenttime.tv,Польша 🇵🇱
   - DOMAIN-SUFFIX,funpay.com,Польша 🇵🇱
+  - DOMAIN-SUFFIX,platega.io,🌐 Без VPN
   - DOMAIN-SUFFIX,alfabank.com,🌐 Без VPN
   - DOMAIN-SUFFIX,avito.com,🌐 Без VPN
   - DOMAIN-SUFFIX,beget.com,🌐 Без VPN
