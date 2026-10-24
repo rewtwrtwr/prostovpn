@@ -178,7 +178,7 @@ proxies:
     client-fingerprint: firefox
   - name: Эстония 3 Bridge 🇪🇪
     type: vless
-    server: 89.23.99.185
+    server: 201.34.132.173
     port: 443
     network: tcp
     udp: true
@@ -276,7 +276,7 @@ proxies:
     client-fingerprint: firefox
   - name: Швеция 2 Bridge 🇸🇪
     type: vless
-    server: 89.23.99.185
+    server: 201.34.132.173
     port: 443
     network: tcp
     udp: true
