@@ -1074,6 +1074,13 @@ rule-providers:
     url: https://github.com/legiz-ru/mihomo-rule-sets/raw/main/other/torrent-clients.yaml
     path: ./rule-sets/torrent-clients.yaml
     interval: 86400
+  concord-ru-ip:
+    type: http
+    behavior: ipcidr
+    format: text
+    url: https://connect-concord.com/geo/ru-ip.txt
+    path: ./rule-sets/concord-ru-ip.txt
+    interval: 86400
 rules:
   - RULE-SET,telegram_domains,🔐 Concord VPN
   - RULE-SET,telegram_ips,🔐 Concord VPN
@@ -1099,57 +1106,18 @@ rules:
   - DOMAIN-SUFFIX,meduza.io,Польша 🇵🇱
   - DOMAIN-SUFFIX,currenttime.tv,Польша 🇵🇱
   - DOMAIN-SUFFIX,platega.io,🌐 Без VPN
-  - DOMAIN-SUFFIX,avito.com,🌐 Без VPN
-  - DOMAIN-SUFFIX,beget.com,🌐 Без VPN
   - DOMAIN-SUFFIX,cian.com,🌐 Без VPN
-  - DOMAIN-SUFFIX,connect-concord.com,🌐 Без VPN
   - DOMAIN-SUFFIX,dzen.com,🌐 Без VPN
-  - DOMAIN-SUFFIX,dzenvideo.com,🌐 Без VPN
-  - DOMAIN-SUFFIX,hh.com,🌐 Без VPN
   - DOMAIN-SUFFIX,hhcdn.com,🌐 Без VPN
-  - DOMAIN-SUFFIX,inbox.com,🌐 Без VPN
-  - DOMAIN-SUFFIX,mail.com,🌐 Без VPN
-  - DOMAIN-SUFFIX,my.com,🌐 Без VPN
-  - DOMAIN-SUFFIX,ok.com,🌐 Без VPN
-  - DOMAIN-SUFFIX,ozon.com,🌐 Без VPN
   - DOMAIN-SUFFIX,riafan.com,🌐 Без VPN
-  - DOMAIN-SUFFIX,rt.com,🌐 Без VPN
-  - DOMAIN-SUFFIX,sberbank.com,🌐 Без VPN
-  - DOMAIN-SUFFIX,selectel.com,🌐 Без VPN
-  - DOMAIN-SUFFIX,selectel.net,🌐 Без VPN
   - DOMAIN-SUFFIX,sprinthost.com,🌐 Без VPN
-  - DOMAIN-SUFFIX,sputniknews.com,🌐 Без VPN
-  - DOMAIN-SUFFIX,timeweb.cloud,🌐 Без VPN
-  - DOMAIN-SUFFIX,timeweb.com,🌐 Без VPN
   - DOMAIN-SUFFIX,tinkoff.com,🌐 Без VPN
-  - DOMAIN-SUFFIX,userapi.com,🌐 Без VPN
-  - DOMAIN-SUFFIX,vk-cdn.net,🌐 Без VPN
-  - DOMAIN-SUFFIX,vk-portal.net,🌐 Без VPN
-  - DOMAIN-SUFFIX,vk.com,🌐 Без VPN
-  - DOMAIN-SUFFIX,vk.me,🌐 Без VPN
-  - DOMAIN-SUFFIX,vkuser.net,🌐 Без VPN
-  - DOMAIN-SUFFIX,vtb.com,🌐 Без VPN
   - DOMAIN-SUFFIX,wildberries.com,🌐 Без VPN
-  - DOMAIN-SUFFIX,ya.cc,🌐 Без VPN
-  - DOMAIN-SUFFIX,yandex.by,🌐 Без VPN
-  - DOMAIN-SUFFIX,yandex.com,🌐 Без VPN
-  - DOMAIN-SUFFIX,yandex.com.tr,🌐 Без VPN
-  - DOMAIN-SUFFIX,yandex.kz,🌐 Без VPN
-  - DOMAIN-SUFFIX,yandex.net,🌐 Без VPN
-  - DOMAIN-SUFFIX,yandex.org,🌐 Без VPN
   - DOMAIN-SUFFIX,yastatic.com,🌐 Без VPN
-  - DOMAIN-SUFFIX,yastatic.net,🌐 Без VPN
-  - DOMAIN-SUFFIX,aviasales.com,🌐 Без VPN
-  - DOMAIN-SUFFIX,auth.avs.io,🌐 Без VPN
-  - DOMAIN-SUFFIX,mradx.net,🌐 Без VPN
-  - DOMAIN-SUFFIX,terratraf.com,🌐 Без VPN
   - DOMAIN-SUFFIX,bumlam.com,🌐 Без VPN
   - DOMAIN-SUFFIX,moe.video,🌐 Без VPN
-  - DOMAIN-SUFFIX,yandex.cloud,🌐 Без VPN
-  - DOMAIN-SUFFIX,tbank-online.com,🌐 Без VPN
-  - DOMAIN-SUFFIX,funpay.com,🌐 Без VPN
   - DOMAIN-SUFFIX,kinescope.io,🌐 Без VPN
-  - DOMAIN-SUFFIX,kinescopecdn.net,🌐 Без VPN
+  - GEOSITE,category-ru,🌐 Без VPN
   - PROCESS-NAME,4game.exe,🌐 Без VPN
   - PROCESS-NAME,Agent.exe,🌐 Без VPN
   - PROCESS-NAME,Amazon Games.exe,🌐 Без VPN
@@ -1253,7 +1221,9 @@ rules:
   - PROCESS-NAME,Dota2.exe,🌐 Без VPN
   - PROCESS-NAME,cs2.exe,🌐 Без VPN
   - PROCESS-NAME,RustClient.exe,🌐 Без VPN
+  - PROCESS-NAME,RobloxPlayerBeta.exe,🌐 Без VPN
   - DOMAIN-SUFFIX,ru,🌐 Без VPN
   - DOMAIN-SUFFIX,su,🌐 Без VPN
+  - RULE-SET,concord-ru-ip,🌐 Без VPN
   - GEOIP,RU,🌐 Без VPN
   - MATCH,🔐 Concord VPN
