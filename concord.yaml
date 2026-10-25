@@ -1,5 +1,5 @@
 # concord.yaml - auto-generated from concord.src.yaml, do not edit manually
-# updated: 2026-10-25T10:47:39Z | proxies: 37 | groups: 22 | rules: 180
+# updated: 2026-10-25T11:46:42Z | proxies: 37 | groups: 22 | rules: 180
 mixed-port: 7890
 socks-port: 7891
 redir-port: 7892
@@ -878,7 +878,6 @@ rules:
   - DOMAIN-SUFFIX,animesss.tv,Польша 🇵🇱
   - DOMAIN-SUFFIX,meduza.io,Польша 🇵🇱
   - DOMAIN-SUFFIX,currenttime.tv,Польша 🇵🇱
-  - DOMAIN-SUFFIX,funpay.com,Польша 🇵🇱
   - DOMAIN-SUFFIX,platega.io,🌐 Без VPN
   - DOMAIN-SUFFIX,avito.com,🌐 Без VPN
   - DOMAIN-SUFFIX,beget.com,🌐 Без VPN
@@ -928,6 +927,7 @@ rules:
   - DOMAIN-SUFFIX,moe.video,🌐 Без VPN
   - DOMAIN-SUFFIX,yandex.cloud,🌐 Без VPN
   - DOMAIN-SUFFIX,tbank-online.com,🌐 Без VPN
+  - DOMAIN-SUFFIX,funpay.com,🌐 Без VPN
   - PROCESS-NAME,4game.exe,🌐 Без VPN
   - PROCESS-NAME,Agent.exe,🌐 Без VPN
   - PROCESS-NAME,Amazon Games.exe,🌐 Без VPN

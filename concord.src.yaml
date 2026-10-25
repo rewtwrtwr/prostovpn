@@ -876,7 +876,6 @@ rules:
   - DOMAIN-SUFFIX,animesss.tv,Польша 🇵🇱
   - DOMAIN-SUFFIX,meduza.io,Польша 🇵🇱
   - DOMAIN-SUFFIX,currenttime.tv,Польша 🇵🇱
-  - DOMAIN-SUFFIX,funpay.com,Польша 🇵🇱
   - DOMAIN-SUFFIX,platega.io,🌐 Без VPN
   - DOMAIN-SUFFIX,avito.com,🌐 Без VPN
   - DOMAIN-SUFFIX,beget.com,🌐 Без VPN
@@ -926,6 +925,7 @@ rules:
   - DOMAIN-SUFFIX,moe.video,🌐 Без VPN
   - DOMAIN-SUFFIX,yandex.cloud,🌐 Без VPN
   - DOMAIN-SUFFIX,tbank-online.com,🌐 Без VPN
+  - DOMAIN-SUFFIX,funpay.com,🌐 Без VPN
   - PROCESS-NAME,4game.exe,🌐 Без VPN
   - PROCESS-NAME,Agent.exe,🌐 Без VPN
   - PROCESS-NAME,Amazon Games.exe,🌐 Без VPN
