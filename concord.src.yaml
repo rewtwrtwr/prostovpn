@@ -500,7 +500,7 @@ proxies:
       max-connections: 3
   - name: Германия 1  🇩🇪
     type: vless
-    server: 193.42.12.61
+    server: de1.messenger-club.com
     port: 443
     network: tcp
     udp: true
