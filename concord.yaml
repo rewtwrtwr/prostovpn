@@ -1,5 +1,5 @@
 # concord.yaml - auto-generated from concord.src.yaml, do not edit manually
-# updated: 2026-10-28T13:47:59Z | proxies: 37 | groups: 22 | rules: 145
+# updated: 2026-10-28T15:17:52Z | proxies: 37 | groups: 22 | rules: 145
 mixed-port: 7890
 socks-port: 7891
 redir-port: 7892
@@ -829,7 +829,7 @@ proxies:
 proxy-groups:
   - name: Европа 🇪🇺
     type: load-balance
-    strategy: round-robin
+    strategy: sticky-sessions
     lazy: true
     include-all: true
     filter: (🇩🇪|🇳🇱|🇫🇮|🇫🇷|🇪🇸|🇮🇹|🇵🇱|🇦🇹|🇸🇪|🇳🇴|🇩🇰|🇨🇭|🇪🇪|🇱🇻|🇱🇹|🇮🇹|Европа|Europe|Germany|Netherlands|Lithuania|Finland|France|Austria|Sweden|Poland|Estonia|Latvia|Italy)
@@ -839,7 +839,7 @@ proxy-groups:
     proxies: []
   - name: Германия 🇩🇪
     type: load-balance
-    strategy: round-robin
+    strategy: sticky-sessions
     lazy: true
     include-all: true
     filter: (Германия|Germany|Deutschland|🇩🇪)
@@ -849,7 +849,7 @@ proxy-groups:
     proxies: []
   - name: Британия 🇬🇧
     type: load-balance
-    strategy: round-robin
+    strategy: sticky-sessions
     lazy: true
     include-all: true
     filter: (Британия|Britain|🇬🇧)
@@ -859,7 +859,7 @@ proxy-groups:
     proxies: []
   - name: Нидерланды 🇳🇱
     type: load-balance
-    strategy: round-robin
+    strategy: sticky-sessions
     lazy: true
     include-all: true
     filter: (Нидерланды|Netherlands|Nederland|🇳🇱)
@@ -869,7 +869,7 @@ proxy-groups:
     proxies: []
   - name: Финляндия 🇫🇮
     type: load-balance
-    strategy: round-robin
+    strategy: sticky-sessions
     lazy: true
     include-all: true
     filter: (Финляндия|Finland|Suomi|🇫🇮)
@@ -879,7 +879,7 @@ proxy-groups:
     proxies: []
   - name: Австрия 🇦🇹
     type: load-balance
-    strategy: round-robin
+    strategy: sticky-sessions
     lazy: true
     include-all: true
     filter: (Австрия|Austria|🇦🇹)
@@ -889,7 +889,7 @@ proxy-groups:
     proxies: []
   - name: Франция 🇫🇷
     type: load-balance
-    strategy: round-robin
+    strategy: sticky-sessions
     lazy: true
     include-all: true
     filter: (Франция|France|🇫🇷)
@@ -899,7 +899,7 @@ proxy-groups:
     proxies: []
   - name: Эстония 🇪🇪
     type: load-balance
-    strategy: round-robin
+    strategy: sticky-sessions
     lazy: true
     include-all: true
     filter: (Эстония|Estonia|Eesti|🇪🇪)
@@ -909,7 +909,7 @@ proxy-groups:
     proxies: []
   - name: Польша 🇵🇱
     type: load-balance
-    strategy: round-robin
+    strategy: sticky-sessions
     lazy: true
     include-all: true
     filter: (Польша|Poland|Polska|🇵🇱)
@@ -919,7 +919,7 @@ proxy-groups:
     proxies: []
   - name: Латвия 🇱🇻
     type: load-balance
-    strategy: round-robin
+    strategy: sticky-sessions
     lazy: true
     include-all: true
     filter: (Латвия|Latvia|Latvija|🇱🇻)
@@ -929,7 +929,7 @@ proxy-groups:
     proxies: []
   - name: Литва 🇱🇹
     type: load-balance
-    strategy: round-robin
+    strategy: sticky-sessions
     lazy: true
     include-all: true
     filter: (Литва|Lithuania|🇱🇹)
@@ -939,7 +939,7 @@ proxy-groups:
     proxies: []
   - name: Норвегия 🇳🇴
     type: load-balance
-    strategy: round-robin
+    strategy: sticky-sessions
     lazy: true
     include-all: true
     filter: (Норвегия|Norway|Norge|🇳🇴)
@@ -949,7 +949,7 @@ proxy-groups:
     proxies: []
   - name: Швеция 🇸🇪
     type: load-balance
-    strategy: round-robin
+    strategy: sticky-sessions
     lazy: true
     include-all: true
     filter: (Швеция|Sweden|Sverige|🇸🇪)
@@ -959,7 +959,7 @@ proxy-groups:
     proxies: []
   - name: Турция 🇹🇷
     type: load-balance
-    strategy: round-robin
+    strategy: sticky-sessions
     lazy: true
     include-all: true
     filter: (Турция|Turkey|Türkiye|🇹🇷)
@@ -969,7 +969,7 @@ proxy-groups:
     proxies: []
   - name: Ирак 🇮🇶
     type: load-balance
-    strategy: round-robin
+    strategy: sticky-sessions
     lazy: true
     include-all: true
     filter: (Ирак|Iraq|🇮🇶)
@@ -979,7 +979,7 @@ proxy-groups:
     proxies: []
   - name: Италия 🇮🇹
     type: load-balance
-    strategy: round-robin
+    strategy: sticky-sessions
     lazy: true
     include-all: true
     filter: (Италия|Italy|Italia|Italian|🇮🇹)
@@ -989,7 +989,7 @@ proxy-groups:
     proxies: []
   - name: США 🇺🇸
     type: load-balance
-    strategy: round-robin
+    strategy: sticky-sessions
     lazy: true
     include-all: true
     filter: (США|USA|United States|🇺🇸)
@@ -999,7 +999,7 @@ proxy-groups:
     proxies: []
   - name: Япония 🇯🇵
     type: load-balance
-    strategy: round-robin
+    strategy: sticky-sessions
     lazy: true
     include-all: true
     filter: (Япония|Japan|🇯🇵)
@@ -1009,7 +1009,7 @@ proxy-groups:
     proxies: []
   - name: Россия 🇷🇺
     type: load-balance
-    strategy: round-robin
+    strategy: sticky-sessions
     lazy: true
     include-all: true
     filter: (Россия|Russia|🇷🇺)
