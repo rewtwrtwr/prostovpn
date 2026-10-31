@@ -1,5 +1,5 @@
 # quattro.yaml — auto-generated FULL config, do not edit manually
-# updated: 2026-10-31T19:18:55Z | proxies: 551 | skipped: 0
+# updated: 2026-10-31T19:47:40Z | proxies: 551 | skipped: 0
 # Use directly as a Clash/Mihomo profile, or as a proxy-provider.
 
 port: 7890
@@ -317,7 +317,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: q5rr6brsps.j.cloudfront.hls.ttvnw.net
+  servername: fmzghb3np0.j.cloudfront.hls.ttvnw.net
   client-fingerprint: qq
   grpc-opts:
     grpc-service-name: "v1.segment.CoED6DTJX7qqpaFHeZFqtxZaORbSkI4QxeF6Gczfup52y3xKtesK90khbWMq7h_-lIl62UWm06eybYZ1M6FaJpIReF9xqg6-m_dKU1YEWCyLiC2rZVrgCwRXum0DT9a7Dstfx8R_dcJLSMKJsrFC8UClKuJ0B75zyyhGqlbqqJa-TKtAOPIsFSqCnTCO5kgeWkzF9FU2uwzdSIWY7XvTtLlNWPUGhLJ7s4_mGqEdnCpc9zppbThJ2zHFSNLGjCb6N_SMA__CdyZfXNsYoDD-6ndzmGcOFElW2bmta7iMKOhvGNEHOnld_4H81KLZllAIanOEORpXxlmtJqK-zb_BcPnPkWKJwTxjJ3OzHjvC2qXsUmJMNfMH3sonrbznb6ZyzPdRerpMU9LZQub9uz9gQ2H7NLOaAnZ1Vc7XxsHsxIGwIlJzTgEOUGxvw3qj63VLOp8fnvBxlUYJC5SA_A4o_n7Uvig-_8VhyhDpsbatyuDv4BoCpv-oNuj6U4IYajZDPbmi8hoMueA90UMsfwvVLGfYIAEqCWV1LXdlc3QtMjCGEA.ts.dna=Cm74xcjZRvlJ8j4uyH8gUP6Y-9_3Z1K5gnOscHMivrto7HST_AySpzuCoSGMaJUGYC3YkJts_wUGc6ONi55ZphDFRo1mLmOrnrnIRiSlVRt_eicdhD46rhK7QYHTUl5xDDkoOQjTCOUUkAUNN4Gf2hoMKV6-bvMYkmob9CC6IAEqCWV1LXdlc3QtMjCGEA"
@@ -427,7 +427,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: 8n1m70stpn.j.cloudfront.hls.ttvnw.net
+  servername: gsx59x36ac.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CoED6DTJX7qqpaFHeZFqtxZaORbSkI4QxeF6Gczfup52y3xKtesK90khbWMq7h_-lIl62UWm06eybYZ1M6FaJpIReF9xqg6-m_dKU1YEWCyLiC2rZVrgCwRXum0DT9a7Dstfx8R_dcJLSMKJsrFC8UClKuJ0B75zyyhGqlbqqJa-TKtAOPIsFSqCnTCO5kgeWkzF9FU2uwzdSIWY7XvTtLlNWPUGhLJ7s4_mGqEdnCpc9zppbThJ2zHFSNLGjCb6N_SMA__CdyZfXNsYoDD-6ndzmGcOFElW2bmta7iMKOhvGNEHOnld_4H81KLZllAIanOEORpXxlmtJqK-zb_BcPnPkWKJwTxjJ3OzHjvC2qXsUmJMNfMH3sonrbznb6ZyzPdRerpMU9LZQub9uz9gQ2H7NLOaAnZ1Vc7XxsHsxIGwIlJzTgEOUGxvw3qj63VLOp8fnvBxlUYJC5SA_A4o_n7Uvig-_8VhyhDpsbatyuDv4BoCpv-oNuj6U4IYajZDPbmi8hoMueA90UMsfwvVLGfYIAEqCWV1LXdlc3QtMjCGEA.ts.dna=Cm74xcjZRvlJ8j4uyH8gUP6Y-9_3Z1K5gnOscHMivrto7HST_AySpzuCoSGMaJUGYC3YkJts_wUGc6ONi55ZphDFRo1mLmOrnrnIRiSlVRt_eicdhD46rhK7QYHTUl5xDDkoOQjTCOUUkAUNN4Gf2hoMKV6-bvMYkmob9CC6IAEqCWV1LXdlc3QtMjCGEA"
@@ -439,7 +439,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: am031s8n5e.j.cloudfront.hls.ttvnw.net
+  servername: 3mxfy4stbg.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -507,7 +507,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: a864vxkecc.j.cloudfront.hls.ttvnw.net
+  servername: muya6875rf.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -540,7 +540,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: zzn3g8yq69.j.cloudfront.hls.ttvnw.net
+  servername: mcz9853xmq.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -566,7 +566,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: u58dtn32g4.j.cloudfront.hls.ttvnw.net
+  servername: zwu39tfq69.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CoED6DTJX7qqpaFHeZFqtxZaORbSkI4QxeF6Gczfup52y3xKtesK90khbWMq7h_-lIl62UWm06eybYZ1M6FaJpIReF9xqg6-m_dKU1YEWCyLiC2rZVrgCwRXum0DT9a7Dstfx8R_dcJLSMKJsrFC8UClKuJ0B75zyyhGqlbqqJa-TKtAOPIsFSqCnTCO5kgeWkzF9FU2uwzdSIWY7XvTtLlNWPUGhLJ7s4_mGqEdnCpc9zppbThJ2zHFSNLGjCb6N_SMA__CdyZfXNsYoDD-6ndzmGcOFElW2bmta7iMKOhvGNEHOnld_4H81KLZllAIanOEORpXxlmtJqK-zb_BcPnPkWKJwTxjJ3OzHjvC2qXsUmJMNfMH3sonrbznb6ZyzPdRerpMU9LZQub9uz9gQ2H7NLOaAnZ1Vc7XxsHsxIGwIlJzTgEOUGxvw3qj63VLOp8fnvBxlUYJC5SA_A4o_n7Uvig-_8VhyhDpsbatyuDv4BoCpv-oNuj6U4IYajZDPbmi8hoMueA90UMsfwvVLGfYIAEqCWV1LXdlc3QtMjCGEA.ts.dna=Cm74xcjZRvlJ8j4uyH8gUP6Y-9_3Z1K5gnOscHMivrto7HST_AySpzuCoSGMaJUGYC3YkJts_wUGc6ONi55ZphDFRo1mLmOrnrnIRiSlVRt_eicdhD46rhK7QYHTUl5xDDkoOQjTCOUUkAUNN4Gf2hoMKV6-bvMYkmob9CC6IAEqCWV1LXdlc3QtMjCGEA"
@@ -578,7 +578,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: 0ow5rgmjr1.j.cloudfront.hls.ttvnw.net
+  servername: sxy9341jzq.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -660,7 +660,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: kubvd4nxbt.j.cloudfront.hls.ttvnw.net
+  servername: v5n5536cvm.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -2224,7 +2224,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: cwe6974sm2.j.cloudfront.hls.ttvnw.net
+  servername: 7tc2n4rn0s.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -2320,7 +2320,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: gxpppans5b.j.cloudfront.hls.ttvnw.net
+  servername: dnhpg8882b.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -2360,7 +2360,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: yeunyf8c3f.j.cloudfront.hls.ttvnw.net
+  servername: 6vxxcm2mvr.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -2470,7 +2470,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: 1nbg6qjj8c.j.cloudfront.hls.ttvnw.net
+  servername: tghgpycve5.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -2524,7 +2524,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: ueofbzh20f.j.cloudfront.hls.ttvnw.net
+  servername: 0p9afc8xvc.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -2564,7 +2564,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: 0odd8kz2nh.j.cloudfront.hls.ttvnw.net
+  servername: 5voc991g1a.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -2590,7 +2590,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: rcndw6n3hq.j.cloudfront.hls.ttvnw.net
+  servername: zrnygm1yn2.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -2616,7 +2616,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: g875tt3h92.j.cloudfront.hls.ttvnw.net
+  servername: 6je12wx31g.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -2656,7 +2656,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: nn63yfpt5w.j.cloudfront.hls.ttvnw.net
+  servername: qm97mceet5.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -2668,7 +2668,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: 1sc53vh35o.j.cloudfront.hls.ttvnw.net
+  servername: 2dg42qn9td.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -2694,7 +2694,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: 9hct09c6pd.j.cloudfront.hls.ttvnw.net
+  servername: a7dbpk1o2q.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -2706,7 +2706,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: ofdomaqgjy.j.cloudfront.hls.ttvnw.net
+  servername: r5e55pwfdu.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -2732,7 +2732,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: 93j05ft5p2.j.cloudfront.hls.ttvnw.net
+  servername: eb4ehfb5gg.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -2758,7 +2758,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: pjq4k6u4sv.j.cloudfront.hls.ttvnw.net
+  servername: 62494hwjrp.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -2770,7 +2770,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: qdc7wqf4z6.j.cloudfront.hls.ttvnw.net
+  servername: ozs9jxa0cu.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -2782,7 +2782,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: hxn2cs1ww7.j.cloudfront.hls.ttvnw.net
+  servername: 7vgpvs88ac.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -2822,7 +2822,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: 59nepyf482.j.cloudfront.hls.ttvnw.net
+  servername: c6209nkbqf.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -2862,7 +2862,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: h114k44wos.j.cloudfront.hls.ttvnw.net
+  servername: 1u865ag6qt.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -2902,7 +2902,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: 4gzkat8rsr.j.cloudfront.hls.ttvnw.net
+  servername: 5k08rvtdjm.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -2914,7 +2914,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: nuzsavytfw.j.cloudfront.hls.ttvnw.net
+  servername: dwr18d4zke.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -2926,7 +2926,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: ov5a8mjdpz.j.cloudfront.hls.ttvnw.net
+  servername: hk2ktoy1yy.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -3022,7 +3022,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: ec7r55zofy.j.cloudfront.hls.ttvnw.net
+  servername: jvn02wmz2o.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -3034,7 +3034,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: gkw23hbb7o.j.cloudfront.hls.ttvnw.net
+  servername: jqg3k2tzdk.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -3102,7 +3102,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: mqney30a3b.j.cloudfront.hls.ttvnw.net
+  servername: ppawg1amfn.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -3114,7 +3114,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: rh8bpecfo6.j.cloudfront.hls.ttvnw.net
+  servername: e2d65qkkep.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -3196,7 +3196,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: 7ytd6b7upy.j.cloudfront.hls.ttvnw.net
+  servername: hz2afm09u1.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -3236,7 +3236,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: kxafku4eaj.j.cloudfront.hls.ttvnw.net
+  servername: 4oczmsdw7m.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -3290,7 +3290,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: 7f06dyc2ep.j.cloudfront.hls.ttvnw.net
+  servername: ek6dovqzvm.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -3302,7 +3302,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: rp4rk74w3c.j.cloudfront.hls.ttvnw.net
+  servername: vz53a384xg.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -3398,7 +3398,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: 7dkeu87pnw.j.cloudfront.hls.ttvnw.net
+  servername: 2vufvp06m6.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -3410,7 +3410,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: wf8u2gbn0q.j.cloudfront.hls.ttvnw.net
+  servername: 8jrcbzv1b5.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -3450,7 +3450,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: ztjf78hnzf.j.cloudfront.hls.ttvnw.net
+  servername: tn0g62oyrr.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -3462,7 +3462,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: wo66ysdmt2.j.cloudfront.hls.ttvnw.net
+  servername: 1xgfvh60w5.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -3516,7 +3516,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: y1wp0j8ha2.j.cloudfront.hls.ttvnw.net
+  servername: bkfw5rzz47.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -3528,7 +3528,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: 7h8hbu350e.j.cloudfront.hls.ttvnw.net
+  servername: jean43jdwz.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -3596,7 +3596,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: n33o470oj4.j.cloudfront.hls.ttvnw.net
+  servername: epnpy5b0uk.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -3622,7 +3622,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: 2haacebgs7.j.cloudfront.hls.ttvnw.net
+  servername: x8264g418s.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -3676,7 +3676,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: w7m088rchm.j.cloudfront.hls.ttvnw.net
+  servername: w6q7hsgj04.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -3688,7 +3688,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: h90jepvhsr.j.cloudfront.hls.ttvnw.net
+  servername: 03tbu1m3dv.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -3728,7 +3728,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: xunhyy1yur.j.cloudfront.hls.ttvnw.net
+  servername: sasnucyyt1.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -3740,7 +3740,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: x1z7yx1pmb.j.cloudfront.hls.ttvnw.net
+  servername: c0g007zm5s.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -3794,7 +3794,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: qj9pfu80a3.j.cloudfront.hls.ttvnw.net
+  servername: xr13gc5do5.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -3806,7 +3806,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: 9g6uwv07r3.j.cloudfront.hls.ttvnw.net
+  servername: 9z21s3dx4j.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -3860,7 +3860,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: qz47654qo0.j.cloudfront.hls.ttvnw.net
+  servername: 08fkhxbdta.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -3886,7 +3886,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: tx5h0jp6kj.j.cloudfront.hls.ttvnw.net
+  servername: hf98e60x8z.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -3912,7 +3912,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: vjgxhyu2qk.j.cloudfront.hls.ttvnw.net
+  servername: 1t1d814yh3.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -3924,7 +3924,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: 6xkocejoh0.j.cloudfront.hls.ttvnw.net
+  servername: 4p1b7s9w7z.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -3992,7 +3992,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: m9mochxa8p.j.cloudfront.hls.ttvnw.net
+  servername: 7ajvj9oomb.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -4004,7 +4004,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: umrdt6f12g.j.cloudfront.hls.ttvnw.net
+  servername: w4pa7vn0p4.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -4044,7 +4044,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: pz5cnknr05.j.cloudfront.hls.ttvnw.net
+  servername: 1ang2zy31w.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -4056,7 +4056,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: 2jf33n5rwr.j.cloudfront.hls.ttvnw.net
+  servername: 2ykrhuyvhp.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -4110,7 +4110,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: j8s4ocufpd.j.cloudfront.hls.ttvnw.net
+  servername: vk5b6exmrx.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -4136,7 +4136,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: noqpka6ccq.j.cloudfront.hls.ttvnw.net
+  servername: u4awe54dkt.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -4162,7 +4162,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: af287zzanq.j.cloudfront.hls.ttvnw.net
+  servername: ho30t8hbtd.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -4174,7 +4174,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: 0q6wb5jn40.j.cloudfront.hls.ttvnw.net
+  servername: tgez657rnv.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -4214,7 +4214,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: vxo19y8s7a.j.cloudfront.hls.ttvnw.net
+  servername: jz7sw24r5d.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -4254,7 +4254,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: ct0b1k3uo3.j.cloudfront.hls.ttvnw.net
+  servername: qcu5cz9ob6.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -4322,7 +4322,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: p33pvcmrsz.j.cloudfront.hls.ttvnw.net
+  servername: cnbnk43tzn.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -4418,7 +4418,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: oraea30565.j.cloudfront.hls.ttvnw.net
+  servername: abu2msjsab.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -4500,7 +4500,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: 0p5rqczdgn.j.cloudfront.hls.ttvnw.net
+  servername: zkgkhfq90p.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -4512,7 +4512,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: 1umgjcsqar.j.cloudfront.hls.ttvnw.net
+  servername: pqj6o0z50r.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -4566,7 +4566,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: cmf0mqu6hd.j.cloudfront.hls.ttvnw.net
+  servername: g01zrvbeyd.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -4662,7 +4662,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: dvycaqcesz.j.cloudfront.hls.ttvnw.net
+  servername: ghcztzwbaq.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -4716,7 +4716,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: aeu4oq96ds.j.cloudfront.hls.ttvnw.net
+  servername: tr8ukeexff.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -4728,7 +4728,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: 2hpmehxbqr.j.cloudfront.hls.ttvnw.net
+  servername: kk4tx1j41b.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -4768,7 +4768,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: ufkyoyn90g.j.cloudfront.hls.ttvnw.net
+  servername: jnbf07aojw.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -4808,7 +4808,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: shrmwmouk8.j.cloudfront.hls.ttvnw.net
+  servername: sfoz0tx7vf.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -4820,7 +4820,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: 1nob9s619o.j.cloudfront.hls.ttvnw.net
+  servername: nb72odvdup.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   alpn: [h2]
   grpc-opts:
@@ -4889,7 +4889,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: ahn03vvq2p.j.cloudfront.hls.ttvnw.net
+  servername: evmscy67bh.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -4985,7 +4985,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: fvrnwts011.j.cloudfront.hls.ttvnw.net
+  servername: 7d8u0d89ch.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -5025,7 +5025,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: b27xk5ze6j.j.cloudfront.hls.ttvnw.net
+  servername: kvuk4qqznh.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -5065,7 +5065,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: 0w8u51c4o9.j.cloudfront.hls.ttvnw.net
+  servername: f4z593wbgy.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -5077,7 +5077,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: kgr3bpyzg5.j.cloudfront.hls.ttvnw.net
+  servername: yp4z9nkf7y.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -5089,7 +5089,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: r6h1hmsmhd.j.cloudfront.hls.ttvnw.net
+  servername: 3f8rsbeq1p.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -5157,7 +5157,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: q2xa1nrcwx.j.cloudfront.hls.ttvnw.net
+  servername: pq5c8hfshp.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -5197,7 +5197,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: peon9ktzj9.j.cloudfront.hls.ttvnw.net
+  servername: r8jcqym2vc.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -5209,7 +5209,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: 4xggm3hwz2.j.cloudfront.hls.ttvnw.net
+  servername: b2bg62x09a.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -5221,7 +5221,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: 7067quoanh.j.cloudfront.hls.ttvnw.net
+  servername: kc33j2r7qc.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -5275,7 +5275,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: f4ej48t6bj.j.cloudfront.hls.ttvnw.net
+  servername: ed0ohrc52v.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -5301,7 +5301,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: q26v6babe4.j.cloudfront.hls.ttvnw.net
+  servername: scnuvhp2nd.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -5327,7 +5327,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: xqomd2za5c.j.cloudfront.hls.ttvnw.net
+  servername: 3r9e8r6n51.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -5339,7 +5339,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: jvy3qrm3k0.j.cloudfront.hls.ttvnw.net
+  servername: adhq8q276k.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -5393,7 +5393,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: ufx29apz7c.j.cloudfront.hls.ttvnw.net
+  servername: ey39uw0hym.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -5461,7 +5461,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: tc27ydpbmp.j.cloudfront.hls.ttvnw.net
+  servername: edkztp1r34.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -5501,7 +5501,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: pb9ybq1pch.j.cloudfront.hls.ttvnw.net
+  servername: zzkqmsqa27.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -5555,7 +5555,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: ycrwr5bffe.j.cloudfront.hls.ttvnw.net
+  servername: avqeurerqx.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -5651,7 +5651,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: vbhzm1ntjn.j.cloudfront.hls.ttvnw.net
+  servername: bf7ehjz349.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -5691,7 +5691,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: xmgoeo7gtk.j.cloudfront.hls.ttvnw.net
+  servername: kgmxen8uhj.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -5731,7 +5731,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: 5upxv32ho2.j.cloudfront.hls.ttvnw.net
+  servername: p05u6ggp3u.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -5771,7 +5771,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: oxk2j405rr.j.cloudfront.hls.ttvnw.net
+  servername: akav64xvdv.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -5811,7 +5811,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: b3ypj8acv8.j.cloudfront.hls.ttvnw.net
+  servername: mxtu73uvty.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -5837,7 +5837,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: 7jfk9g357h.j.cloudfront.hls.ttvnw.net
+  servername: tsnfvhbu65.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -5891,7 +5891,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: xwx4pk9ync.j.cloudfront.hls.ttvnw.net
+  servername: 39bhhvr90n.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -5903,7 +5903,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: 1tq7b3toa8.j.cloudfront.hls.ttvnw.net
+  servername: qv1gcvz4az.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -5915,7 +5915,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: m5hgupdjcz.j.cloudfront.hls.ttvnw.net
+  servername: 9vv99j9tn3.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -5997,7 +5997,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: bp0utoaj9z.j.cloudfront.hls.ttvnw.net
+  servername: fm50brbx4g.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -6051,7 +6051,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: rrhm5y3uvn.j.cloudfront.hls.ttvnw.net
+  servername: 2wn6n6qtq3.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -6133,7 +6133,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: 3uaaxpkqb1.j.cloudfront.hls.ttvnw.net
+  servername: fgwmy7kqde.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -6145,7 +6145,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: qwzx4wf7xb.j.cloudfront.hls.ttvnw.net
+  servername: dgrdr01fyf.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -6171,7 +6171,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: fst4zu6ajm.j.cloudfront.hls.ttvnw.net
+  servername: gyvpfvaq3m.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -6225,7 +6225,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: b4d5o43t31.j.cloudfront.hls.ttvnw.net
+  servername: q18s0d1bc9.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -6237,7 +6237,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: 256usapqgd.j.cloudfront.hls.ttvnw.net
+  servername: odzbgdu9t8.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -6319,7 +6319,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: 9pdfrg4qk7.j.cloudfront.hls.ttvnw.net
+  servername: 2mwx02wv6s.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -6359,7 +6359,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: xmtxmsceqk.j.cloudfront.hls.ttvnw.net
+  servername: yv63s553x7.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -6371,7 +6371,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: vegh3gg26e.j.cloudfront.hls.ttvnw.net
+  servername: srquf3b4rr.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -6453,7 +6453,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: 85j7v8avdy.j.cloudfront.hls.ttvnw.net
+  servername: qo8tsbp10u.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -6465,7 +6465,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: k1de6esnxg.j.cloudfront.hls.ttvnw.net
+  servername: 9j4ut5gomv.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -6505,7 +6505,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: 42qt5su177.j.cloudfront.hls.ttvnw.net
+  servername: kwq2zbtphb.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -6545,7 +6545,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: vpe7m794dn.j.cloudfront.hls.ttvnw.net
+  servername: zojd1juufn.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -6599,7 +6599,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: m0g68b4v2u.j.cloudfront.hls.ttvnw.net
+  servername: z4g3s8qnrz.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -6611,7 +6611,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: j4sbcf78gk.j.cloudfront.hls.ttvnw.net
+  servername: t5yy7043o4.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -6693,7 +6693,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: xt39kvyght.j.cloudfront.hls.ttvnw.net
+  servername: mygqff8g3a.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -6775,7 +6775,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: qwq7nqhbn4.j.cloudfront.hls.ttvnw.net
+  servername: zhe8hpg2nx.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -6815,7 +6815,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: druxzr6qco.j.cloudfront.hls.ttvnw.net
+  servername: cyedxgu9eb.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -6897,7 +6897,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: f04vo71h8w.j.cloudfront.hls.ttvnw.net
+  servername: o1wsh3dpp3.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -6965,7 +6965,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: o8a64rwur1.j.cloudfront.hls.ttvnw.net
+  servername: 36dnbrn3vh.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -6991,7 +6991,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: kah4r5ytbt.j.cloudfront.hls.ttvnw.net
+  servername: zn0bjttsk6.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -7045,7 +7045,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: 4tcyjhxe4c.j.cloudfront.hls.ttvnw.net
+  servername: r10d0pcw34.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -7057,7 +7057,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: adxqyvb8r6.j.cloudfront.hls.ttvnw.net
+  servername: a76e6x7c2z.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -7279,7 +7279,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: ho7zp67vcg.j.cloudfront.hls.ttvnw.net
+  servername: 266kpfxd00.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CoED6DTJX7qqpaFHeZFqtxZaORbSkI4QxeF6Gczfup52y3xKtesK90khbWMq7h_-lIl62UWm06eybYZ1M6FaJpIReF9xqg6-m_dKU1YEWCyLiC2rZVrgCwRXum0DT9a7Dstfx8R_dcJLSMKJsrFC8UClKuJ0B75zyyhGqlbqqJa-TKtAOPIsFSqCnTCO5kgeWkzF9FU2uwzdSIWY7XvTtLlNWPUGhLJ7s4_mGqEdnCpc9zppbThJ2zHFSNLGjCb6N_SMA__CdyZfXNsYoDD-6ndzmGcOFElW2bmta7iMKOhvGNEHOnld_4H81KLZllAIanOEORpXxlmtJqK-zb_BcPnPkWKJwTxjJ3OzHjvC2qXsUmJMNfMH3sonrbznb6ZyzPdRerpMU9LZQub9uz9gQ2H7NLOaAnZ1Vc7XxsHsxIGwIlJzTgEOUGxvw3qj63VLOp8fnvBxlUYJC5SA_A4o_n7Uvig-_8VhyhDpsbatyuDv4BoCpv-oNuj6U4IYajZDPbmi8hoMueA90UMsfwvVLGfYIAEqCWV1LXdlc3QtMjCGEA.ts.dna=Cm74xcjZRvlJ8j4uyH8gUP6Y-9_3Z1K5gnOscHMivrto7HST_AySpzuCoSGMaJUGYC3YkJts_wUGc6ONi55ZphDFRo1mLmOrnrnIRiSlVRt_eicdhD46rhK7QYHTUl5xDDkoOQjTCOUUkAUNN4Gf2hoMKV6-bvMYkmob9CC6IAEqCWV1LXdlc3QtMjCGEA"
