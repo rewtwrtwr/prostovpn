@@ -118,49 +118,9 @@ proxies:
       only-tcp: true
       protocol: smux
       max-connections: 3
-  - name: Австрия 2 Bridge 🇦🇹
-    type: vless
-    server: 186.246.4.122
-    port: 443
-    network: tcp
-    udp: true
-    uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
-    packet-encoding: xudp
-    tls: true
-    servername: at.fileget.download
-    reality-opts:
-      public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
-      short-id: 344f83372596eea2
-    client-fingerprint: firefox
-    smux:
-      enabled: true
-      padding: true
-      only-tcp: true
-      protocol: smux
-      max-connections: 3
   - name: Франция 1 🇫🇷
     type: vless
     server: fr1.messenger-club.com
-    port: 443
-    network: tcp
-    udp: true
-    uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
-    packet-encoding: xudp
-    tls: true
-    servername: fr.fileget.download
-    reality-opts:
-      public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
-      short-id: 344f83372596eea2
-    client-fingerprint: firefox
-    smux:
-      enabled: true
-      padding: true
-      only-tcp: true
-      protocol: smux
-      max-connections: 3
-  - name: Франция 2 Bridge 🇫🇷
-    type: vless
-    server: 186.246.4.122
     port: 443
     network: tcp
     udp: true
@@ -208,26 +168,6 @@ proxies:
     packet-encoding: xudp
     tls: true
     servername: ee2.fileget.download
-    reality-opts:
-      public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
-      short-id: 344f83372596eea2
-    client-fingerprint: firefox
-    smux:
-      enabled: true
-      padding: true
-      only-tcp: true
-      protocol: smux
-      max-connections: 3
-  - name: Эстония 3 Bridge 🇪🇪
-    type: vless
-    server: 201.51.1.228
-    port: 443
-    network: tcp
-    udp: true
-    uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
-    packet-encoding: xudp
-    tls: true
-    servername: ee.fileget.download
     reality-opts:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
@@ -298,69 +238,9 @@ proxies:
       only-tcp: true
       protocol: smux
       max-connections: 3
-  - name: Норвегия 2 Bridge 🇳🇴
-    type: vless
-    server: 93.183.83.42
-    port: 443
-    network: tcp
-    udp: true
-    uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
-    packet-encoding: xudp
-    tls: true
-    servername: no.fileget.download
-    reality-opts:
-      public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
-      short-id: 344f83372596eea2
-    client-fingerprint: firefox
-    smux:
-      enabled: true
-      padding: true
-      only-tcp: true
-      protocol: smux
-      max-connections: 3
-  - name: Латвия 2 Bridge 🇱🇻
-    type: vless
-    server: 93.183.83.42
-    port: 443
-    network: tcp
-    udp: true
-    uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
-    packet-encoding: xudp
-    tls: true
-    servername: lv.fileget.download
-    reality-opts:
-      public-key: zKZzWPVXZMHDWIUHm7xUAsDuVYmsSBwVV1XdIijfTSg
-      short-id: 344f83372596eea2
-    client-fingerprint: firefox
-    smux:
-      enabled: true
-      padding: true
-      only-tcp: true
-      protocol: smux
-      max-connections: 3
   - name: Швеция 1 🇸🇪
     type: vless
     server: se1.messenger-club.com
-    port: 443
-    network: tcp
-    udp: true
-    uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
-    packet-encoding: xudp
-    tls: true
-    servername: se.fileget.download
-    reality-opts:
-      public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
-      short-id: 344f83372596eea2
-    client-fingerprint: firefox
-    smux:
-      enabled: true
-      padding: true
-      only-tcp: true
-      protocol: smux
-      max-connections: 3
-  - name: Швеция 2 Bridge 🇸🇪
-    type: vless
-    server: 201.51.1.228
     port: 443
     network: tcp
     udp: true
@@ -398,49 +278,9 @@ proxies:
       only-tcp: true
       protocol: smux
       max-connections: 3
-  - name: 'Турция 2 Bridge 🇹🇷 '
-    type: vless
-    server: 93.183.83.42
-    port: 443
-    network: tcp
-    udp: true
-    uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
-    packet-encoding: xudp
-    tls: true
-    servername: tr.fileget.download
-    reality-opts:
-      public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
-      short-id: 344f83372596eea2
-    client-fingerprint: firefox
-    smux:
-      enabled: true
-      padding: true
-      only-tcp: true
-      protocol: smux
-      max-connections: 3
   - name: Ирак 1 🇮🇶
     type: vless
     server: iq1.messenger-club.com
-    port: 443
-    network: tcp
-    udp: true
-    uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
-    packet-encoding: xudp
-    tls: true
-    servername: iq.fileget.download
-    reality-opts:
-      public-key: zKZzWPVXZMHDWIUHm7xUAsDuVYmsSBwVV1XdIijfTSg
-      short-id: 344f83372596eea2
-    client-fingerprint: firefox
-    smux:
-      enabled: true
-      padding: true
-      only-tcp: true
-      protocol: smux
-      max-connections: 3
-  - name: Ирак 2 Bridge 🇮🇶
-    type: vless
-    server: 93.183.83.42
     port: 443
     network: tcp
     udp: true
@@ -478,26 +318,6 @@ proxies:
       only-tcp: true
       protocol: smux
       max-connections: 3
-  - name: США 2 Bridge 🇺🇸
-    type: vless
-    server: 186.246.4.122
-    port: 443
-    network: tcp
-    udp: true
-    uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
-    packet-encoding: xudp
-    tls: true
-    servername: us.fileget.download
-    reality-opts:
-      public-key: 7N8Haguez-5ChGVvSkLTkBVqpMf8eJn1uLjUdxAjT1M
-      short-id: 47a5cf1c41f1a64d
-    client-fingerprint: firefox
-    smux:
-      enabled: true
-      padding: true
-      only-tcp: true
-      protocol: smux
-      max-connections: 3
   - name: Германия 1  🇩🇪
     type: vless
     server: de1.messenger-club.com
@@ -518,28 +338,6 @@ proxies:
       only-tcp: true
       protocol: smux
       max-connections: 3
-  - name: Германия 2 🇩🇪 Bridge
-    type: vless
-    server: 176.108.254.225
-    port: 443
-    network: grpc
-    udp: true
-    uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
-    packet-encoding: xudp
-    tls: true
-    servername: ruclr.fileget.download
-    reality-opts:
-      public-key: yOlVSSj_2cZprCmopg0Jv8x3cGtzfCXelMJyTQQwX1I
-      short-id: 344f83372596eea2
-    grpc-opts:
-      grpc-service-name: grpc
-    client-fingerprint: firefox
-    smux:
-      enabled: true
-      padding: true
-      only-tcp: true
-      protocol: smux
-      max-connections: 3
   - name: Нидерланды 1 🇳🇱
     type: vless
     server: nl1.messenger-club.com
@@ -553,28 +351,6 @@ proxies:
     reality-opts:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
-    client-fingerprint: firefox
-    smux:
-      enabled: true
-      padding: true
-      only-tcp: true
-      protocol: smux
-      max-connections: 3
-  - name: Нидерланды 2 🇳🇱 Bridge
-    type: vless
-    server: 82.202.156.212
-    port: 443
-    network: grpc
-    udp: true
-    uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
-    packet-encoding: xudp
-    tls: true
-    servername: ruclr2.fileget.download
-    reality-opts:
-      public-key: yOlVSSj_2cZprCmopg0Jv8x3cGtzfCXelMJyTQQwX1I
-      short-id: 344f83372596eea2
-    grpc-opts:
-      grpc-service-name: grpc
     client-fingerprint: firefox
     smux:
       enabled: true
@@ -622,28 +398,6 @@ proxies:
       only-tcp: true
       protocol: smux
       max-connections: 3
-  - name: Финляндия 2 🇫🇮 Bridge
-    type: vless
-    server: 176.108.251.180
-    port: 443
-    network: grpc
-    udp: true
-    uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
-    packet-encoding: xudp
-    tls: true
-    servername: ruclr3.fileget.download
-    reality-opts:
-      public-key: yOlVSSj_2cZprCmopg0Jv8x3cGtzfCXelMJyTQQwX1I
-      short-id: 344f83372596eea2
-    grpc-opts:
-      grpc-service-name: grpc
-    client-fingerprint: firefox
-    smux:
-      enabled: true
-      padding: true
-      only-tcp: true
-      protocol: smux
-      max-connections: 3
   - name: Польша 1 🇵🇱
     type: vless
     server: pl1.messenger-club.com
@@ -684,49 +438,9 @@ proxies:
       only-tcp: true
       protocol: smux
       max-connections: 3
-  - name: Польша 2 Bridge 🇵🇱
-    type: vless
-    server: 93.183.83.42
-    port: 443
-    network: tcp
-    udp: true
-    uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
-    packet-encoding: xudp
-    tls: true
-    servername: pl.fileget.download
-    reality-opts:
-      public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
-      short-id: 344f83372596eea2
-    client-fingerprint: firefox
-    smux:
-      enabled: true
-      padding: true
-      only-tcp: true
-      protocol: smux
-      max-connections: 3
   - name: Италия 1 🇮🇹
     type: vless
     server: it1.messenger-club.com
-    port: 443
-    network: tcp
-    udp: true
-    uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
-    packet-encoding: xudp
-    tls: true
-    servername: it.fileget.download
-    reality-opts:
-      public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
-      short-id: 344f83372596eea2
-    client-fingerprint: firefox
-    smux:
-      enabled: true
-      padding: true
-      only-tcp: true
-      protocol: smux
-      max-connections: 3
-  - name: Италия 2 Bridge 🇮🇹
-    type: vless
-    server: 93.183.83.42
     port: 443
     network: tcp
     udp: true
@@ -764,49 +478,9 @@ proxies:
       only-tcp: true
       protocol: smux
       max-connections: 3
-  - name: Япония 2 Bridge 🇯🇵
-    type: vless
-    server: 186.246.4.122
-    port: 443
-    network: tcp
-    udp: true
-    uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
-    packet-encoding: xudp
-    tls: true
-    servername: jp.fileget.download
-    reality-opts:
-      public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
-      short-id: 344f83372596eea2
-    client-fingerprint: firefox
-    smux:
-      enabled: true
-      padding: true
-      only-tcp: true
-      protocol: smux
-      max-connections: 3
   - name: Британия 1 🇬🇧
     type: vless
     server: gb1.messenger-club.com
-    port: 443
-    network: tcp
-    udp: true
-    uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
-    packet-encoding: xudp
-    tls: true
-    servername: gb.fileget.download
-    reality-opts:
-      public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
-      short-id: 344f83372596eea2
-    client-fingerprint: firefox
-    smux:
-      enabled: true
-      padding: true
-      only-tcp: true
-      protocol: smux
-      max-connections: 3
-  - name: Британия 2 🇬🇧 Bridge
-    type: vless
-    server: 186.246.4.122
     port: 443
     network: tcp
     udp: true
