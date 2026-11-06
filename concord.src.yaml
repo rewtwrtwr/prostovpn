@@ -87,7 +87,7 @@ proxies:
     uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: ru.fileget.download
+    servername: 194.55.244.191
     reality-opts:
       public-key: hGVlcRcEAlUsReWyZI5fyTnyGvObuM7C7DxOJBQosCw
       short-id: 680103e8aee32f15
@@ -107,7 +107,7 @@ proxies:
     uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: at.fileget.download
+    servername: 67.159.17.46
     reality-opts:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
@@ -122,15 +122,17 @@ proxies:
     type: vless
     server: 186.246.4.122
     port: 443
-    network: tcp
+    network: grpc
     udp: true
-    uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
+    uuid: 7808f59d-3136-0005-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: at.fileget.download
+    servername: ''
     reality-opts:
-      public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
-      short-id: 344f83372596eea2
+      public-key: F2RT0e7VX9zcB4bwpStZewCTGAA33TS2lCFzbYmsPlA
+      short-id: 23d4d27cd1a44756
+    grpc-opts:
+      grpc-service-name: grpc
     client-fingerprint: firefox
     smux:
       enabled: true
@@ -147,7 +149,7 @@ proxies:
     uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: fr.fileget.download
+    servername: 91.239.208.112
     reality-opts:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
@@ -162,15 +164,17 @@ proxies:
     type: vless
     server: 186.246.4.122
     port: 443
-    network: tcp
+    network: grpc
     udp: true
-    uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
+    uuid: 7808f59d-3136-0004-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: fr.fileget.download
+    servername: ''
     reality-opts:
-      public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
-      short-id: 344f83372596eea2
+      public-key: F2RT0e7VX9zcB4bwpStZewCTGAA33TS2lCFzbYmsPlA
+      short-id: 23d4d27cd1a44756
+    grpc-opts:
+      grpc-service-name: grpc
     client-fingerprint: firefox
     smux:
       enabled: true
@@ -187,7 +191,7 @@ proxies:
     uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: ee.fileget.download
+    servername: 93.89.220.28
     reality-opts:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
@@ -207,7 +211,7 @@ proxies:
     uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: ee2.fileget.download
+    servername: 138.124.100.27
     reality-opts:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
@@ -222,15 +226,17 @@ proxies:
     type: vless
     server: 201.51.1.228
     port: 443
-    network: tcp
+    network: grpc
     udp: true
-    uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
+    uuid: 7808f59d-3136-0006-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: ee.fileget.download
+    servername: ''
     reality-opts:
-      public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
-      short-id: 344f83372596eea2
+      public-key: F2RT0e7VX9zcB4bwpStZewCTGAA33TS2lCFzbYmsPlA
+      short-id: 23d4d27cd1a44756
+    grpc-opts:
+      grpc-service-name: grpc
     client-fingerprint: firefox
     smux:
       enabled: true
@@ -247,7 +253,7 @@ proxies:
     uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: lv.fileget.download
+    servername: 62.76.239.83
     reality-opts:
       public-key: zKZzWPVXZMHDWIUHm7xUAsDuVYmsSBwVV1XdIijfTSg
       short-id: 344f83372596eea2
@@ -267,7 +273,7 @@ proxies:
     uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: lt.fileget.download
+    servername: 45.81.254.72
     reality-opts:
       public-key: zKZzWPVXZMHDWIUHm7xUAsDuVYmsSBwVV1XdIijfTSg
       short-id: 344f83372596eea2
@@ -287,7 +293,7 @@ proxies:
     uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: no.fileget.download
+    servername: 85.11.187.78
     reality-opts:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
@@ -302,15 +308,17 @@ proxies:
     type: vless
     server: 93.183.83.42
     port: 443
-    network: tcp
+    network: grpc
     udp: true
-    uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
+    uuid: 7808f59d-3136-0012-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: no.fileget.download
+    servername: ''
     reality-opts:
-      public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
-      short-id: 344f83372596eea2
+      public-key: F2RT0e7VX9zcB4bwpStZewCTGAA33TS2lCFzbYmsPlA
+      short-id: 23d4d27cd1a44756
+    grpc-opts:
+      grpc-service-name: grpc
     client-fingerprint: firefox
     smux:
       enabled: true
@@ -322,15 +330,17 @@ proxies:
     type: vless
     server: 93.183.83.42
     port: 443
-    network: tcp
+    network: grpc
     udp: true
-    uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
+    uuid: 7808f59d-3136-0008-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: lv.fileget.download
+    servername: ''
     reality-opts:
-      public-key: zKZzWPVXZMHDWIUHm7xUAsDuVYmsSBwVV1XdIijfTSg
-      short-id: 344f83372596eea2
+      public-key: F2RT0e7VX9zcB4bwpStZewCTGAA33TS2lCFzbYmsPlA
+      short-id: 23d4d27cd1a44756
+    grpc-opts:
+      grpc-service-name: grpc
     client-fingerprint: firefox
     smux:
       enabled: true
@@ -347,7 +357,7 @@ proxies:
     uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: se.fileget.download
+    servername: 166.1.235.17
     reality-opts:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
@@ -362,15 +372,17 @@ proxies:
     type: vless
     server: 201.51.1.228
     port: 443
-    network: tcp
+    network: grpc
     udp: true
-    uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
+    uuid: 7808f59d-3136-0007-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: se.fileget.download
+    servername: ''
     reality-opts:
-      public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
-      short-id: 344f83372596eea2
+      public-key: F2RT0e7VX9zcB4bwpStZewCTGAA33TS2lCFzbYmsPlA
+      short-id: 23d4d27cd1a44756
+    grpc-opts:
+      grpc-service-name: grpc
     client-fingerprint: firefox
     smux:
       enabled: true
@@ -387,7 +399,7 @@ proxies:
     uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: tr.fileget.download
+    servername: 62.60.233.50
     reality-opts:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
@@ -402,15 +414,17 @@ proxies:
     type: vless
     server: 93.183.83.42
     port: 443
-    network: tcp
+    network: grpc
     udp: true
-    uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
+    uuid: 7808f59d-3136-000b-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: tr.fileget.download
+    servername: ''
     reality-opts:
-      public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
-      short-id: 344f83372596eea2
+      public-key: F2RT0e7VX9zcB4bwpStZewCTGAA33TS2lCFzbYmsPlA
+      short-id: 23d4d27cd1a44756
+    grpc-opts:
+      grpc-service-name: grpc
     client-fingerprint: firefox
     smux:
       enabled: true
@@ -427,7 +441,7 @@ proxies:
     uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: iq.fileget.download
+    servername: 193.56.135.152
     reality-opts:
       public-key: zKZzWPVXZMHDWIUHm7xUAsDuVYmsSBwVV1XdIijfTSg
       short-id: 344f83372596eea2
@@ -442,15 +456,17 @@ proxies:
     type: vless
     server: 93.183.83.42
     port: 443
-    network: tcp
+    network: grpc
     udp: true
-    uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
+    uuid: 7808f59d-3136-0013-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: iq.fileget.download
+    servername: ''
     reality-opts:
-      public-key: zKZzWPVXZMHDWIUHm7xUAsDuVYmsSBwVV1XdIijfTSg
-      short-id: 344f83372596eea2
+      public-key: F2RT0e7VX9zcB4bwpStZewCTGAA33TS2lCFzbYmsPlA
+      short-id: 23d4d27cd1a44756
+    grpc-opts:
+      grpc-service-name: grpc
     client-fingerprint: firefox
     smux:
       enabled: true
@@ -467,7 +483,7 @@ proxies:
     uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: us.fileget.download
+    servername: 104.167.199.63
     reality-opts:
       public-key: 7N8Haguez-5ChGVvSkLTkBVqpMf8eJn1uLjUdxAjT1M
       short-id: 47a5cf1c41f1a64d
@@ -482,15 +498,17 @@ proxies:
     type: vless
     server: 186.246.4.122
     port: 443
-    network: tcp
+    network: grpc
     udp: true
-    uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
+    uuid: 7808f59d-3136-000c-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: us.fileget.download
+    servername: ''
     reality-opts:
-      public-key: 7N8Haguez-5ChGVvSkLTkBVqpMf8eJn1uLjUdxAjT1M
-      short-id: 47a5cf1c41f1a64d
+      public-key: F2RT0e7VX9zcB4bwpStZewCTGAA33TS2lCFzbYmsPlA
+      short-id: 23d4d27cd1a44756
+    grpc-opts:
+      grpc-service-name: grpc
     client-fingerprint: firefox
     smux:
       enabled: true
@@ -507,7 +525,7 @@ proxies:
     uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: de.fileget.download
+    servername: 193.42.12.61
     reality-opts:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
@@ -524,13 +542,13 @@ proxies:
     port: 443
     network: grpc
     udp: true
-    uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
+    uuid: 7808f59d-3136-0001-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: ruclr.fileget.download
+    servername: ''
     reality-opts:
-      public-key: yOlVSSj_2cZprCmopg0Jv8x3cGtzfCXelMJyTQQwX1I
-      short-id: 344f83372596eea2
+      public-key: F2RT0e7VX9zcB4bwpStZewCTGAA33TS2lCFzbYmsPlA
+      short-id: 23d4d27cd1a44756
     grpc-opts:
       grpc-service-name: grpc
     client-fingerprint: firefox
@@ -549,7 +567,7 @@ proxies:
     uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: nl.fileget.download
+    servername: 138.124.98.53
     reality-opts:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
@@ -566,13 +584,13 @@ proxies:
     port: 443
     network: grpc
     udp: true
-    uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
+    uuid: 7808f59d-3136-0002-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: ruclr2.fileget.download
+    servername: ''
     reality-opts:
-      public-key: yOlVSSj_2cZprCmopg0Jv8x3cGtzfCXelMJyTQQwX1I
-      short-id: 344f83372596eea2
+      public-key: F2RT0e7VX9zcB4bwpStZewCTGAA33TS2lCFzbYmsPlA
+      short-id: 23d4d27cd1a44756
     grpc-opts:
       grpc-service-name: grpc
     client-fingerprint: firefox
@@ -591,7 +609,7 @@ proxies:
     uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: fi.fileget.download
+    servername: 95.216.12.46
     reality-opts:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
@@ -611,7 +629,7 @@ proxies:
     uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: fi2.fileget.download
+    servername: 185.218.195.73
     reality-opts:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
@@ -628,13 +646,13 @@ proxies:
     port: 443
     network: grpc
     udp: true
-    uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
+    uuid: 7808f59d-3136-0003-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: ruclr3.fileget.download
+    servername: ''
     reality-opts:
-      public-key: yOlVSSj_2cZprCmopg0Jv8x3cGtzfCXelMJyTQQwX1I
-      short-id: 344f83372596eea2
+      public-key: F2RT0e7VX9zcB4bwpStZewCTGAA33TS2lCFzbYmsPlA
+      short-id: 23d4d27cd1a44756
     grpc-opts:
       grpc-service-name: grpc
     client-fingerprint: firefox
@@ -653,7 +671,7 @@ proxies:
     uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: pl.fileget.download
+    servername: 82.22.40.241
     reality-opts:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
@@ -673,7 +691,7 @@ proxies:
     uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: pl2.fileget.download
+    servername: 82.22.41.112
     reality-opts:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
@@ -688,15 +706,17 @@ proxies:
     type: vless
     server: 93.183.83.42
     port: 443
-    network: tcp
+    network: grpc
     udp: true
-    uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
+    uuid: 7808f59d-3136-0009-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: pl.fileget.download
+    servername: ''
     reality-opts:
-      public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
-      short-id: 344f83372596eea2
+      public-key: F2RT0e7VX9zcB4bwpStZewCTGAA33TS2lCFzbYmsPlA
+      short-id: 23d4d27cd1a44756
+    grpc-opts:
+      grpc-service-name: grpc
     client-fingerprint: firefox
     smux:
       enabled: true
@@ -713,7 +733,7 @@ proxies:
     uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: it.fileget.download
+    servername: 31.76.113.163
     reality-opts:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
@@ -728,15 +748,17 @@ proxies:
     type: vless
     server: 93.183.83.42
     port: 443
-    network: tcp
+    network: grpc
     udp: true
-    uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
+    uuid: 7808f59d-3136-000a-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: it.fileget.download
+    servername: ''
     reality-opts:
-      public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
-      short-id: 344f83372596eea2
+      public-key: F2RT0e7VX9zcB4bwpStZewCTGAA33TS2lCFzbYmsPlA
+      short-id: 23d4d27cd1a44756
+    grpc-opts:
+      grpc-service-name: grpc
     client-fingerprint: firefox
     smux:
       enabled: true
@@ -753,7 +775,7 @@ proxies:
     uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: jp.fileget.download
+    servername: 31.76.91.55
     reality-opts:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
@@ -768,15 +790,17 @@ proxies:
     type: vless
     server: 186.246.4.122
     port: 443
-    network: tcp
+    network: grpc
     udp: true
-    uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
+    uuid: 7808f59d-3136-000d-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: jp.fileget.download
+    servername: ''
     reality-opts:
-      public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
-      short-id: 344f83372596eea2
+      public-key: F2RT0e7VX9zcB4bwpStZewCTGAA33TS2lCFzbYmsPlA
+      short-id: 23d4d27cd1a44756
+    grpc-opts:
+      grpc-service-name: grpc
     client-fingerprint: firefox
     smux:
       enabled: true
@@ -793,7 +817,7 @@ proxies:
     uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: gb.fileget.download
+    servername: 31.76.39.202
     reality-opts:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
@@ -808,15 +832,17 @@ proxies:
     type: vless
     server: 186.246.4.122
     port: 443
-    network: tcp
+    network: grpc
     udp: true
-    uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
+    uuid: 7808f59d-3136-000f-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: gb.fileget.download
+    servername: ''
     reality-opts:
-      public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
-      short-id: 344f83372596eea2
+      public-key: F2RT0e7VX9zcB4bwpStZewCTGAA33TS2lCFzbYmsPlA
+      short-id: 23d4d27cd1a44756
+    grpc-opts:
+      grpc-service-name: grpc
     client-fingerprint: firefox
     smux:
       enabled: true
