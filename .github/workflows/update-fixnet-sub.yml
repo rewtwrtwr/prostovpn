@@ -1,0 +1,40 @@
+name: Update FixNet subscription
+
+on:
+  schedule:
+    - cron: "0 * * * *"   # every hour
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch and clean subscription
+        env:
+          FIXNET_SUB_URL: ${{ secrets.FIXNET_SUB_URL }}
+          FIXNET_HWID: ${{ secrets.FIXNET_HWID }}
+          FIXNET_UA: "Happ/4.8.0"
+          FIXNET_OUT: "fixnet-sub.txt"
+        run: python3 fetch-fixnet-sub.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add fixnet-sub.txt
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "Update FixNet subscription"
+            git push
+          fi
