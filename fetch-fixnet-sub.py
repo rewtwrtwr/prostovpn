@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 """Fetch the FixNet (FixCord) Happ subscription with Happ headers,
-drop the Happ-only metadata, clean the server display names
-(remove the '?serverDescription=...' tail), and write a plain list
-of proxy share-links usable in any client (Clash Verge, Karing, ...).
+drop the Happ-only metadata, and write a plain list of proxy
+share-links usable in any client (Clash Verge, Karing, ...).
+
+Server names are kept exactly as returned (including the
+'?serverDescription=...' tail) — no name cleaning, so nothing
+can be accidentally cut off.
 
 Env:
   FIXNET_SUB_URL  full subscription URL (GitHub Secret)
@@ -12,7 +15,6 @@ Env:
 """
 import os
 import sys
-from urllib.parse import unquote, quote
 from urllib.request import Request, urlopen
 
 SUB_URL = os.environ.get("FIXNET_SUB_URL", "").strip()
@@ -24,30 +26,6 @@ LINK_PREFIXES = (
     "vless://", "vmess://", "trojan://", "ss://", "ssr://",
     "hysteria2://", "hysteria://", "tuic://", "socks://",
 )
-
-
-def clean_name(name_enc: str) -> str:
-    """URL-decode the display name, cut everything from
-    '?serverDescription=' onward, re-encode for a URL fragment."""
-    try:
-        name = unquote(name_enc)
-    except Exception:
-        name = name_enc
-    idx = name.find("?serverDescription=")
-    if idx != -1:
-        name = name[:idx]
-    name = name.strip()
-    return quote(name, safe="")
-
-
-def clean_link(line: str) -> str:
-    line = line.strip()
-    if "#" not in line:
-        return line
-    base, name_enc = line.rsplit("#", 1)
-    if not name_enc:
-        return line
-    return base + "#" + clean_name(name_enc)
 
 
 def main() -> int:
@@ -78,7 +56,7 @@ def main() -> int:
         if line.startswith("happ://"):
             continue  # Happ-specific (routing), not a proxy link
         if line.startswith(LINK_PREFIXES):
-            out_lines.append(clean_link(line))
+            out_lines.append(line)
         # anything else is ignored
     with open(OUT, "w", encoding="utf-8", newline="\n") as f:
         f.write("\n".join(out_lines))
