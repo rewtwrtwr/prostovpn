@@ -1144,6 +1144,25 @@ rules:
   - DOMAIN-SUFFIX,moe.video,🌐 Без VPN
   - DOMAIN-SUFFIX,kinescope.io,🌐 Без VPN
   - GEOSITE,category-ru,🌐 Без VPN
+  - DOMAIN-SUFFIX,steamcontent.com,🌐 Без VPN
+  - DOMAIN-SUFFIX,steampipe.akamaized.net,🌐 Без VPN
+  - DOMAIN-SUFFIX,steampipe-kr.akamaized.net,🌐 Без VPN
+  - DOMAIN-SUFFIX,steampipe-partner.akamaized.net,🌐 Без VPN
+  - DOMAIN,content1.steampowered.com,🌐 Без VPN
+  - DOMAIN,content2.steampowered.com,🌐 Без VPN
+  - DOMAIN,content3.steampowered.com,🌐 Без VPN
+  - DOMAIN,content4.steampowered.com,🌐 Без VPN
+  - DOMAIN,content5.steampowered.com,🌐 Без VPN
+  - DOMAIN,content6.steampowered.com,🌐 Без VPN
+  - DOMAIN,content7.steampowered.com,🌐 Без VPN
+  - DOMAIN,content8.steampowered.com,🌐 Без VPN
+  - DOMAIN,content-origin.steampowered.com,🌐 Без VPN
+  - DOMAIN,client-download.steampowered.com,🌐 Без VPN
+  - DOMAIN,cdn.steampowered.com,🌐 Без VPN
+  - DOMAIN,media.steampowered.com,🌐 Без VPN
+  - DOMAIN,client-update.steamstatic.com,🌐 Без VPN
+  - DOMAIN,client-update.akamai.steamstatic.com,🌐 Без VPN
+  - DOMAIN,client-update.fastly.steamstatic.com,🌐 Без VPN
   - PROCESS-NAME,4game.exe,🌐 Без VPN
   - PROCESS-NAME,Agent.exe,🌐 Без VPN
   - PROCESS-NAME,Amazon Games.exe,🌐 Без VPN
@@ -1165,8 +1184,6 @@ rules:
   - PROCESS-NAME,Playnite.DesktopApp.exe,🌐 Без VPN
   - PROCESS-NAME,RiotClientServices.exe,🌐 Без VPN
   - PROCESS-NAME,RockstarGamesLauncher.exe,🌐 Без VPN
-  - PROCESS-NAME,steam.exe,🌐 Без VPN
-  - PROCESS-NAME,steamwebhelper.exe,🌐 Без VPN
   - PROCESS-NAME,UbisoftConnect.exe,🌐 Без VPN
   - PROCESS-NAME,VKPlay.exe,🌐 Без VPN
   - PROCESS-NAME,Warframe.x64.exe,🌐 Без VPN
