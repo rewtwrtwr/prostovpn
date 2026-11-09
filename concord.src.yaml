@@ -127,7 +127,7 @@ proxies:
     uuid: 7808f59d-3136-0005-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: ''
+    servername: media2.fileget.download
     reality-opts:
       public-key: F2RT0e7VX9zcB4bwpStZewCTGAA33TS2lCFzbYmsPlA
       short-id: 23d4d27cd1a44756
@@ -169,7 +169,7 @@ proxies:
     uuid: 7808f59d-3136-0004-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: ''
+    servername: media1.fileget.download
     reality-opts:
       public-key: F2RT0e7VX9zcB4bwpStZewCTGAA33TS2lCFzbYmsPlA
       short-id: 23d4d27cd1a44756
@@ -231,7 +231,7 @@ proxies:
     uuid: 7808f59d-3136-0006-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: ''
+    servername: media3.fileget.download
     reality-opts:
       public-key: F2RT0e7VX9zcB4bwpStZewCTGAA33TS2lCFzbYmsPlA
       short-id: 23d4d27cd1a44756
@@ -313,7 +313,7 @@ proxies:
     uuid: 7808f59d-3136-0012-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: ''
+    servername: media3.fileget.download
     reality-opts:
       public-key: F2RT0e7VX9zcB4bwpStZewCTGAA33TS2lCFzbYmsPlA
       short-id: 23d4d27cd1a44756
@@ -335,7 +335,7 @@ proxies:
     uuid: 7808f59d-3136-0008-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: ''
+    servername: media4.fileget.download
     reality-opts:
       public-key: F2RT0e7VX9zcB4bwpStZewCTGAA33TS2lCFzbYmsPlA
       short-id: 23d4d27cd1a44756
@@ -377,7 +377,7 @@ proxies:
     uuid: 7808f59d-3136-0007-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: ''
+    servername: media4.fileget.download
     reality-opts:
       public-key: F2RT0e7VX9zcB4bwpStZewCTGAA33TS2lCFzbYmsPlA
       short-id: 23d4d27cd1a44756
@@ -419,7 +419,7 @@ proxies:
     uuid: 7808f59d-3136-000b-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: ''
+    servername: media3.fileget.download
     reality-opts:
       public-key: F2RT0e7VX9zcB4bwpStZewCTGAA33TS2lCFzbYmsPlA
       short-id: 23d4d27cd1a44756
@@ -461,7 +461,7 @@ proxies:
     uuid: 7808f59d-3136-0013-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: ''
+    servername: media1.fileget.download
     reality-opts:
       public-key: F2RT0e7VX9zcB4bwpStZewCTGAA33TS2lCFzbYmsPlA
       short-id: 23d4d27cd1a44756
@@ -503,7 +503,7 @@ proxies:
     uuid: 7808f59d-3136-000c-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: ''
+    servername: media2.fileget.download
     reality-opts:
       public-key: F2RT0e7VX9zcB4bwpStZewCTGAA33TS2lCFzbYmsPlA
       short-id: 23d4d27cd1a44756
@@ -545,7 +545,7 @@ proxies:
     uuid: 7808f59d-3136-0001-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: ''
+    servername: media1.fileget.download
     reality-opts:
       public-key: F2RT0e7VX9zcB4bwpStZewCTGAA33TS2lCFzbYmsPlA
       short-id: 23d4d27cd1a44756
@@ -587,7 +587,7 @@ proxies:
     uuid: 7808f59d-3136-0002-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: ''
+    servername: media2.fileget.download
     reality-opts:
       public-key: F2RT0e7VX9zcB4bwpStZewCTGAA33TS2lCFzbYmsPlA
       short-id: 23d4d27cd1a44756
@@ -649,7 +649,7 @@ proxies:
     uuid: 7808f59d-3136-0003-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: ''
+    servername: media3.fileget.download
     reality-opts:
       public-key: F2RT0e7VX9zcB4bwpStZewCTGAA33TS2lCFzbYmsPlA
       short-id: 23d4d27cd1a44756
@@ -711,7 +711,7 @@ proxies:
     uuid: 7808f59d-3136-0009-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: ''
+    servername: media2.fileget.download
     reality-opts:
       public-key: F2RT0e7VX9zcB4bwpStZewCTGAA33TS2lCFzbYmsPlA
       short-id: 23d4d27cd1a44756
@@ -753,7 +753,7 @@ proxies:
     uuid: 7808f59d-3136-000a-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: ''
+    servername: media1.fileget.download
     reality-opts:
       public-key: F2RT0e7VX9zcB4bwpStZewCTGAA33TS2lCFzbYmsPlA
       short-id: 23d4d27cd1a44756
@@ -795,7 +795,7 @@ proxies:
     uuid: 7808f59d-3136-000d-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: ''
+    servername: media1.fileget.download
     reality-opts:
       public-key: F2RT0e7VX9zcB4bwpStZewCTGAA33TS2lCFzbYmsPlA
       short-id: 23d4d27cd1a44756
@@ -837,7 +837,7 @@ proxies:
     uuid: 7808f59d-3136-000f-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: ''
+    servername: media4.fileget.download
     reality-opts:
       public-key: F2RT0e7VX9zcB4bwpStZewCTGAA33TS2lCFzbYmsPlA
       short-id: 23d4d27cd1a44756
@@ -859,7 +859,7 @@ proxies:
     uuid: 7808f59d-3136-0010-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: ''
+    servername: media4.fileget.download
     reality-opts:
       public-key: F2RT0e7VX9zcB4bwpStZewCTGAA33TS2lCFzbYmsPlA
       short-id: 23d4d27cd1a44756
