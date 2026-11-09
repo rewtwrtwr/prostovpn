@@ -1108,6 +1108,7 @@ rule-providers:
     path: ./rule-sets/concord-ru-ip.txt
     interval: 86400
 rules:
+  - IP-CIDR6,::/0,REJECT,no-resolve
   - RULE-SET,telegram_domains,🔐 Concord VPN
   - RULE-SET,telegram_ips,🔐 Concord VPN
   - RULE-SET,torrent-trackers,🌐 Без VPN
