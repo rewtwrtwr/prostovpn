@@ -120,7 +120,7 @@ proxies:
       max-connections: 3
   - name: Австрия 2 Bridge 🇦🇹
     type: vless
-    server: 186.246.4.122
+    server: 83.166.255.144
     port: 443
     network: grpc
     udp: true
@@ -162,7 +162,7 @@ proxies:
       max-connections: 3
   - name: Франция 2 Bridge 🇫🇷
     type: vless
-    server: 186.246.4.122
+    server: 89.208.223.152
     port: 443
     network: grpc
     udp: true
@@ -224,7 +224,7 @@ proxies:
       max-connections: 3
   - name: Эстония 3 Bridge 🇪🇪
     type: vless
-    server: 201.51.1.228
+    server: 83.166.252.133
     port: 443
     network: grpc
     udp: true
@@ -306,7 +306,7 @@ proxies:
       max-connections: 3
   - name: Норвегия 2 Bridge 🇳🇴
     type: vless
-    server: 93.183.83.42
+    server: 83.166.252.133
     port: 443
     network: grpc
     udp: true
@@ -328,7 +328,7 @@ proxies:
       max-connections: 3
   - name: Латвия 2 Bridge 🇱🇻
     type: vless
-    server: 93.183.83.42
+    server: 160.5.219.105
     port: 443
     network: grpc
     udp: true
@@ -370,7 +370,7 @@ proxies:
       max-connections: 3
   - name: Швеция 2 Bridge 🇸🇪
     type: vless
-    server: 201.51.1.228
+    server: 160.5.219.105
     port: 443
     network: grpc
     udp: true
@@ -412,7 +412,7 @@ proxies:
       max-connections: 3
   - name: 'Турция 2 Bridge 🇹🇷 '
     type: vless
-    server: 93.183.83.42
+    server: 83.166.252.133
     port: 443
     network: grpc
     udp: true
@@ -454,7 +454,7 @@ proxies:
       max-connections: 3
   - name: Ирак 2 Bridge 🇮🇶
     type: vless
-    server: 93.183.83.42
+    server: 89.208.223.152
     port: 443
     network: grpc
     udp: true
@@ -496,7 +496,7 @@ proxies:
       max-connections: 3
   - name: США 2 Bridge 🇺🇸
     type: vless
-    server: 186.246.4.122
+    server: 83.166.255.144
     port: 443
     network: grpc
     udp: true
@@ -538,7 +538,7 @@ proxies:
       max-connections: 3
   - name: Германия 2 🇩🇪 Bridge
     type: vless
-    server: 176.108.254.225
+    server: 89.208.223.152
     port: 443
     network: grpc
     udp: true
@@ -580,7 +580,7 @@ proxies:
       max-connections: 3
   - name: Нидерланды 2 🇳🇱 Bridge
     type: vless
-    server: 82.202.156.212
+    server: 83.166.255.144
     port: 443
     network: grpc
     udp: true
@@ -642,7 +642,7 @@ proxies:
       max-connections: 3
   - name: Финляндия 2 🇫🇮 Bridge
     type: vless
-    server: 176.108.251.180
+    server: 83.166.252.133
     port: 443
     network: grpc
     udp: true
@@ -704,7 +704,7 @@ proxies:
       max-connections: 3
   - name: Польша 2 Bridge 🇵🇱
     type: vless
-    server: 93.183.83.42
+    server: 83.166.255.144
     port: 443
     network: grpc
     udp: true
@@ -746,7 +746,7 @@ proxies:
       max-connections: 3
   - name: Италия 2 Bridge 🇮🇹
     type: vless
-    server: 93.183.83.42
+    server: 89.208.223.152
     port: 443
     network: grpc
     udp: true
@@ -788,7 +788,7 @@ proxies:
       max-connections: 3
   - name: Япония 2 Bridge 🇯🇵
     type: vless
-    server: 186.246.4.122
+    server: 89.208.223.152
     port: 443
     network: grpc
     udp: true
@@ -830,11 +830,33 @@ proxies:
       max-connections: 3
   - name: Британия 2 🇬🇧 Bridge
     type: vless
-    server: 186.246.4.122
+    server: 160.5.219.105
     port: 443
     network: grpc
     udp: true
     uuid: 7808f59d-3136-000f-9a6e-351ebfc4697c
+    packet-encoding: xudp
+    tls: true
+    servername: ''
+    reality-opts:
+      public-key: F2RT0e7VX9zcB4bwpStZewCTGAA33TS2lCFzbYmsPlA
+      short-id: 23d4d27cd1a44756
+    grpc-opts:
+      grpc-service-name: grpc
+    client-fingerprint: firefox
+    smux:
+      enabled: true
+      padding: true
+      only-tcp: true
+      protocol: smux
+      max-connections: 3
+  - name: Россия 2 Bridge 🇷🇺
+    type: vless
+    server: 160.5.219.105
+    port: 443
+    network: grpc
+    udp: true
+    uuid: 7808f59d-3136-0010-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
     servername: ''
