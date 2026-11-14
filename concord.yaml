@@ -1,5 +1,5 @@
 # concord.yaml - auto-generated from concord.src.yaml, do not edit manually
-# updated: 2026-11-14T10:47:41Z | proxies: 38 | groups: 22 | rules: 164
+# updated: 2026-11-14T12:17:40Z | proxies: 38 | groups: 22 | rules: 164
 mixed-port: 7890
 socks-port: 7891
 redir-port: 7892
@@ -673,7 +673,7 @@ proxies:
     uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: 82.22.40.134
+    servername: 82.22.40.56
     reality-opts:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
