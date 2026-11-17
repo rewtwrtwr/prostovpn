@@ -1,5 +1,5 @@
 # concord.yaml - auto-generated from concord.src.yaml, do not edit manually
-# updated: 2026-11-17T19:48:32Z | proxies: 38 | groups: 22 | rules: 164
+# updated: 2026-11-17T21:18:11Z | proxies: 37 | groups: 22 | rules: 164
 mixed-port: 7890
 socks-port: 7891
 redir-port: 7892
@@ -193,27 +193,7 @@ proxies:
     uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
     packet-encoding: xudp
     tls: true
-    servername: 93.89.220.28
-    reality-opts:
-      public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
-      short-id: 344f83372596eea2
-    client-fingerprint: firefox
-    smux:
-      enabled: true
-      padding: true
-      only-tcp: true
-      protocol: smux
-      max-connections: 3
-  - name: Эстония 2 🇪🇪
-    type: vless
-    server: ee2.messenger-club.com
-    port: 443
-    network: tcp
-    udp: true
-    uuid: 7808f59d-3136-4570-9a6e-351ebfc4697c
-    packet-encoding: xudp
-    tls: true
-    servername: 138.124.100.27
+    servername: 31.77.254.19
     reality-opts:
       public-key: ln6SwioyTv-0Q1g1LzR-_BxwiYagGvvcUUJrTbIqRVk
       short-id: 344f83372596eea2
