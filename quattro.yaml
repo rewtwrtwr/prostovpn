@@ -1,5 +1,5 @@
 # quattro.yaml — auto-generated FULL config, do not edit manually
-# updated: 2026-11-19T12:17:17Z | proxies: 565 | skipped: 0
+# updated: 2026-11-19T13:47:34Z | proxies: 565 | skipped: 0
 # Use directly as a Clash/Mihomo profile, or as a proxy-provider.
 
 port: 7890
@@ -321,8 +321,8 @@ proxies:
   alpn: [h3]
 - name: "🇮🇪 ⚡️ ⭐️ Ирландия"
   type: vless
-  server: 179.254.78.4
-  port: 443
+  server: 179.254.78.5
+  port: 40403
   uuid: 961fff49-4c8f-4a48-a7e2-1e448d795082
   udp: true
   network: tcp
@@ -558,20 +558,6 @@ proxies:
   reality-opts:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
     short-id: 43dcff53849b81e6
-- name: "🇵🇱 🎮 ⭐️ Польша #4"
-  type: vless
-  server: 89.125.158.2
-  port: 44443
-  uuid: 961fff49-4c8f-4a48-a7e2-1e448d795082
-  udp: true
-  network: tcp
-  tls: true
-  servername: 0d1f979f580c.j.cloudfront.hls.ttvnw.net
-  flow: xtls-rprx-vision
-  client-fingerprint: edge
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-    short-id: 43dcff53849b81e6
 - name: "🇷🇺 ⚡️ Россия, Москва"
   type: vless
   server: 185.16.213.67
@@ -671,8 +657,8 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "🇺🇸 ⚡️ ⭐️ США, Атланта"
   type: vless
-  server: 132.243.232.5
-  port: 443
+  server: 132.243.232.6
+  port: 25017
   uuid: 961fff49-4c8f-4a48-a7e2-1e448d795082
   udp: true
   network: tcp
@@ -781,6 +767,20 @@ proxies:
   network: tcp
   tls: true
   servername: 1cd2a4767fbf.j.cloudfront.hls.ttvnw.net
+  flow: xtls-rprx-vision
+  client-fingerprint: edge
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
+- name: "🇫🇷 ⚡️ ⭐️ Франция #3"
+  type: vless
+  server: 179.254.93.3
+  port: 44443
+  uuid: 961fff49-4c8f-0010-a7e2-1e448d795082
+  udp: true
+  network: tcp
+  tls: true
+  servername: adcb7b7293c5.j.cloudfront.hls.ttvnw.net
   flow: xtls-rprx-vision
   client-fingerprint: edge
   reality-opts:
@@ -7487,7 +7487,6 @@ proxy-groups:
   - "🇵🇱 🎮 ⚡️ ⭐️ Польша"
   - "🇵🇱 🎮 ⭐️ Польша #2"
   - "🇵🇱 🎮 ⭐️ Польша #3"
-  - "🇵🇱 🎮 ⭐️ Польша #4"
   - "🇷🇺 ⚡️ Россия, Москва"
   - "🇷🇺 🎮 ⚡️ Россия, Москва | Hysteria2"
   - "🇷🇺 ⚡️ Россия, Москва #2"
@@ -7505,6 +7504,7 @@ proxy-groups:
   - "🇫🇮 🎮 ⚡️ ⭐️ Финляндия #2 | Hysteria2"
   - "🇫🇷 ⚡️ ⭐️ Франция"
   - "🇫🇷 ⚡️ ⭐️ Франция #2"
+  - "🇫🇷 ⚡️ ⭐️ Франция #3"
   - "🇨🇭 ⚡️ ⭐️ Швейцария"
   - "🇨🇭 ⚡️ ⭐️ Швейцария | Hysteria2"
   - "🇸🇪 🎮 ⚡️ ⭐️ Швеция"
