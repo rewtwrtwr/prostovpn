@@ -1,5 +1,5 @@
 # quattro.yaml — auto-generated FULL config, do not edit manually
-# updated: 2026-11-20T00:17:54Z | proxies: 565 | skipped: 0
+# updated: 2026-11-20T01:26:43Z | proxies: 565 | skipped: 0
 # Use directly as a Clash/Mihomo profile, or as a proxy-provider.
 
 port: 7890
@@ -293,7 +293,7 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "🇩🇪 🎮 ⚡️ ⭐️ Германия | Hysteria2"
   type: hysteria2
-  server: 67.159.55.42
+  server: 67.159.55.43
   port: 30443
   password: 961fff49-4c8f-4a48-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -314,7 +314,7 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "🇩🇪 🎮 ⚡️ ⭐️ Германия #2 | Hysteria2"
   type: hysteria2
-  server: 2.27.143.33
+  server: 2.27.143.34
   port: 30443
   password: 961fff49-4c8f-4a48-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -375,7 +375,7 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "🇮🇹 🎮 ⚡️ ⭐️ Италия | Hysteria2"
   type: hysteria2
-  server: 2.27.143.138
+  server: 2.27.143.139
   port: 30443
   password: 961fff49-4c8f-4a48-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -410,7 +410,7 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "🇱🇻 🎮 ⚡️ Латвия | Hysteria2"
   type: hysteria2
-  server: 13.143.209.5
+  server: 13.143.209.19
   port: 30443
   password: 961fff49-4c8f-4a48-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -739,7 +739,7 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "🇫🇮 🎮 ⚡️ ⭐️ Финляндия #2 | Hysteria2"
   type: hysteria2
-  server: 31.77.3.3
+  server: 31.77.3.5
   port: 30443
   password: 961fff49-4c8f-4a48-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -821,7 +821,7 @@ proxies:
     grpc-service-name: "x5.lk.v1.AccountService"
 - name: "🇸🇪 🎮 ⚡️ Швеция | Hysteria2"
   type: hysteria2
-  server: 185.184.24.132
+  server: 89.125.99.141
   port: 30443
   password: 961fff49-4c8f-4a48-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -1663,7 +1663,7 @@ proxies:
 - name: "🇪🇪 🎮 ⚡️ 0.1X - LTE №98 - Hysteria2"
   type: hysteria2
   server: 91.240.87.119
-  port: 20443
+  port: 59448
   password: 961fff49-4c8f-4a48-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
   alpn: [h3]
@@ -1800,7 +1800,7 @@ proxies:
 - name: "🇫🇮 🎮 ⭐️ 0.1X - LTE №134 - Hysteria2"
   type: hysteria2
   server: 91.240.87.119
-  port: 20443
+  port: 9443
   password: 961fff49-4c8f-4a48-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
   alpn: [h3]
@@ -1873,7 +1873,7 @@ proxies:
 - name: "🇮🇹 🎮 ⚡️ ⭐️ 0.1X - LTE №135- Hysteria2"
   type: hysteria2
   server: 91.240.87.119
-  port: 20443
+  port: 23443
   password: 961fff49-4c8f-4a48-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
   alpn: [h3]
@@ -1946,7 +1946,7 @@ proxies:
 - name: "🇨🇭 ⚡️ ⭐️ 0.1X - LTE №139- Hysteria2"
   type: hysteria2
   server: 91.240.87.119
-  port: 20443
+  port: 44001
   password: 961fff49-4c8f-4a48-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
   alpn: [h3]
