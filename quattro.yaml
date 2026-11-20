@@ -1,5 +1,5 @@
 # quattro.yaml — auto-generated FULL config, do not edit manually
-# updated: 2026-11-20T09:17:47Z | proxies: 565 | skipped: 0
+# updated: 2026-11-20T10:47:17Z | proxies: 565 | skipped: 0
 # Use directly as a Clash/Mihomo profile, or as a proxy-provider.
 
 port: 7890
@@ -4988,7 +4988,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: hhc9rtcefl.j.cloudfront.hls.ttvnw.net
+  servername: 5cbks22kh6.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   alpn: [h2]
   grpc-opts:
