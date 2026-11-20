@@ -1,5 +1,5 @@
 # quattro.yaml — auto-generated FULL config, do not edit manually
-# updated: 2026-11-20T21:18:13Z | proxies: 565 | skipped: 0
+# updated: 2026-11-20T22:47:23Z | proxies: 564 | skipped: 0
 # Use directly as a Clash/Mihomo profile, or as a proxy-provider.
 
 port: 7890
@@ -322,7 +322,7 @@ proxies:
 - name: "🇮🇪 ⚡️ ⭐️ Ирландия"
   type: vless
   server: 179.254.78.5
-  port: 40403
+  port: 443
   uuid: 961fff49-4c8f-4a48-a7e2-1e448d795082
   udp: true
   network: tcp
@@ -544,20 +544,6 @@ proxies:
   reality-opts:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
     short-id: 43dcff53849b81e6
-- name: "🇵🇱 🎮 ⭐️ Польша #3"
-  type: vless
-  server: 89.125.158.2
-  port: 25017
-  uuid: 961fff49-4c8f-4a48-a7e2-1e448d795082
-  udp: true
-  network: tcp
-  tls: true
-  servername: 102f936d0b68.j.cloudfront.hls.ttvnw.net
-  flow: xtls-rprx-vision
-  client-fingerprint: edge
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-    short-id: 43dcff53849b81e6
 - name: "🇷🇺 ⚡️ Россия, Москва"
   type: vless
   server: 185.16.213.67
@@ -658,7 +644,7 @@ proxies:
 - name: "🇺🇸 ⚡️ ⭐️ США, Атланта"
   type: vless
   server: 132.243.232.6
-  port: 25017
+  port: 443
   uuid: 961fff49-4c8f-4a48-a7e2-1e448d795082
   udp: true
   network: tcp
@@ -2397,19 +2383,10 @@ proxies:
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
 - name: "🇦🇺 Австралия #2"
-  type: vless
+  type: hysteria2
   server: 89.125.99.35
-  port: 443
-  uuid: 961fff49-4c8f-0fa1-a7e2-1e448d795082
-  udp: true
-  network: tcp
-  tls: true
-  servername: 4770c9489a86.j.cloudfront.hls.ttvnw.net
-  flow: xtls-rprx-vision
-  client-fingerprint: edge
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-    short-id: 43dcff53849b81e6
+  port: 33443
+  password: 961fff49-4c8f-4a48-a7e2-1e448d795082
 - name: "🇦🇺 Австралия #3"
   type: vless
   server: 89.125.99.35
@@ -3030,7 +3007,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: gpximv0iiw.j.cloudfront.hls.ttvnw.net
+  servername: u9gtbjd6fj.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -5389,7 +5366,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: k0hj6ali1q.j.cloudfront.hls.ttvnw.net
+  servername: d3gjbj50ef.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -6633,7 +6610,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: r79e32guy7.j.cloudfront.hls.ttvnw.net
+  servername: e4lqp0gfbh.j.cloudfront.hls.ttvnw.net
   client-fingerprint: edge
   grpc-opts:
     grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
@@ -7486,7 +7463,6 @@ proxy-groups:
   - "🇳🇴 ⚡️ ⭐️ Норвегия #3 (Мост)"
   - "🇵🇱 🎮 ⚡️ ⭐️ Польша"
   - "🇵🇱 🎮 ⭐️ Польша #2"
-  - "🇵🇱 🎮 ⭐️ Польша #3"
   - "🇷🇺 ⚡️ Россия, Москва"
   - "🇷🇺 🎮 ⚡️ Россия, Москва | Hysteria2"
   - "🇷🇺 ⚡️ Россия, Москва #2"
