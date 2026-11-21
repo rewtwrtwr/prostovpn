@@ -1,5 +1,5 @@
 # quattro.yaml — auto-generated FULL config, do not edit manually
-# updated: 2026-11-21T13:47:12Z | proxies: 555 | skipped: 0
+# updated: 2026-11-21T15:17:54Z | proxies: 555 | skipped: 0
 # Use directly as a Clash/Mihomo profile, or as a proxy-provider.
 
 port: 7890
@@ -462,7 +462,7 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "🇳🇱 ⚡️ ⭐️ Нидерланды #3"
   type: vless
-  server: 2.27.143.99
+  server: 2.27.143.97
   port: 443
   uuid: 961fff49-4c8f-4a48-a7e2-1e448d795082
   udp: true
@@ -771,20 +771,6 @@ proxies:
   network: tcp
   tls: true
   servername: 1cd2a4767fbf.j.cloudfront.hls.ttvnw.net
-  flow: xtls-rprx-vision
-  client-fingerprint: edge
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-    short-id: 43dcff53849b81e6
-- name: "🇫🇷 ⚡️ ⭐️ Франция #3"
-  type: vless
-  server: 179.254.93.3
-  port: 44443
-  uuid: 961fff49-4c8f-0010-a7e2-1e448d795082
-  udp: true
-  network: tcp
-  tls: true
-  servername: adcb7b7293c5.j.cloudfront.hls.ttvnw.net
   flow: xtls-rprx-vision
   client-fingerprint: edge
   reality-opts:
@@ -2382,6 +2368,12 @@ proxies:
   reality-opts:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
     short-id: 43dcff53849b81e6
+- name: "🇦🇺 Австралия #2"
+  type: hysteria2
+  server: 89.125.99.35
+  port: 33443
+  password: 961fff49-4c8f-4a48-a7e2-1e448d795082
+  sni: hy.quattro-tech.ru
 - name: "🇦🇺 Австралия #3"
   type: vless
   server: 89.125.99.35
@@ -7712,7 +7704,6 @@ proxy-groups:
   - "🇫🇮 🎮 ⚡️ ⭐️ Финляндия #2 | Hysteria2"
   - "🇫🇷 ⚡️ ⭐️ Франция"
   - "🇫🇷 ⚡️ ⭐️ Франция #2"
-  - "🇫🇷 ⚡️ ⭐️ Франция #3"
   - "🇨🇭 ⚡️ ⭐️ Швейцария"
   - "🇨🇭 ⚡️ ⭐️ Швейцария | Hysteria2"
   - "🇸🇪 🎮 ⚡️ ⭐️ Швеция"
@@ -7832,6 +7823,7 @@ proxy-groups:
   - "🇯🇵 ⚡️ 1X - LTE №133 - Япония"
   - "⬇️ Остальные по алфавиту ⬇️"
   - "🇦🇺 Австралия"
+  - "🇦🇺 Австралия #2"
   - "🇦🇺 Австралия #3"
   - "🇦🇹 Австрия"
   - "🇦🇹 Австрия #2"
