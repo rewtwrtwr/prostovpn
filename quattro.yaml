@@ -1,5 +1,5 @@
 # quattro.yaml — auto-generated FULL config, do not edit manually
-# updated: 2026-11-21T04:47:13Z | proxies: 563 | skipped: 0
+# updated: 2026-11-21T06:17:24Z | proxies: 555 | skipped: 0
 # Use directly as a Clash/Mihomo profile, or as a proxy-provider.
 
 port: 7890
@@ -29,12 +29,14 @@ proxies:
   port: 443
   uuid: 961fff49-4c8f-4a48-a7e2-1e448d795082
   udp: true
-  network: grpc
+  network: tcp
   tls: true
   servername: river-3-371.rtbcdn.ru
+  flow: xtls-rprx-vision
   client-fingerprint: edge
-  grpc-opts:
-    grpc-service-name: "hls-vod.iJxGWWENB3HP4nTjN8IcrA.1790085537.2512.0x5000039ce83a2b8d.2ac8ad72028049619c2fb844a825a.ca.mp4.segment-20-v1-a1.ts"
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
 - name: "🇸🇪 🎮 ⚡️ ⭐️ LTE Авто - Швеция"
   type: vless
   server: 46.243.235.160
@@ -69,24 +71,28 @@ proxies:
   port: 443
   uuid: 961fff49-4c8f-001a-a7e2-1e448d795082
   udp: true
-  network: grpc
+  network: tcp
   tls: true
   servername: river-3-379.rtbcdn.ru
+  flow: xtls-rprx-vision
   client-fingerprint: qq
-  grpc-opts:
-    grpc-service-name: "hls-vod.iJxGWWENB3HP4nTjN8IcrA.1790085537.2512.0x5000039ce83a2b8d.2ac8ad72028049619c2fb844a825a.ca.mp4.segment-20-v1-a1.ts"
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
 - name: "🇱🇻 🎮 ⚡️ ⭐️ LTE Авто - Латвия"
   type: vless
   server: 46.243.142.121
   port: 443
   uuid: 961fff49-4c8f-0006-a7e2-1e448d795082
   udp: true
-  network: grpc
+  network: tcp
   tls: true
   servername: river-3-311.rtbcdn.ru
+  flow: xtls-rprx-vision
   client-fingerprint: qq
-  grpc-opts:
-    grpc-service-name: "hls-vod.iJxGWWENB3HP4nTjN8IcrA.1790085537.2512.0x5000039ce83a2b8d.2ac8ad72028049619c2fb844a825a.ca.mp4.segment-20-v1-a1.ts"
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
 - name: "🇪🇪 🎮 ⚡️ ⭐️ LTE Авто - Эстония"
   type: vless
   server: 46.243.235.160
@@ -107,12 +113,14 @@ proxies:
   port: 443
   uuid: 961fff49-4c8f-0003-a7e2-1e448d795082
   udp: true
-  network: grpc
+  network: tcp
   tls: true
   servername: river-3-355.rtbcdn.ru
+  flow: xtls-rprx-vision
   client-fingerprint: qq
-  grpc-opts:
-    grpc-service-name: "hls-vod.iJxGWWENB3HP4nTjN8IcrA.1790085537.2512.0x5000039ce83a2b8d.2ac8ad72028049619c2fb844a825a.ca.mp4.segment-20-v1-a1.ts"
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
 - name: "🇫🇮 🎮 ⚡️ ⭐️ LTE Авто - Финляндия"
   type: vless
   server: 46.243.235.160
@@ -189,12 +197,14 @@ proxies:
   port: 443
   uuid: 961fff49-4c8f-0015-a7e2-1e448d795082
   udp: true
-  network: grpc
+  network: tcp
   tls: true
   servername: river-3-351.rtbcdn.ru
+  flow: xtls-rprx-vision
   client-fingerprint: qq
-  grpc-opts:
-    grpc-service-name: "hls-vod.iJxGWWENB3HP4nTjN8IcrA.1790085537.2512.0x5000039ce83a2b8d.2ac8ad72028049619c2fb844a825a.ca.mp4.segment-20-v1-a1.ts"
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
 - name: "⬇️ Быстрые | до 10 Гбит/с ⬇️"
   type: vless
   server: 89.125.99.3
@@ -484,12 +494,14 @@ proxies:
   port: 443
   uuid: 961fff49-4c8f-000c-a7e2-1e448d795082
   udp: true
-  network: grpc
+  network: tcp
   tls: true
-  servername: ybaw4wldlp.j.cloudfront.hls.ttvnw.net
+  servername: 70ced20d2551.j.cloudfront.hls.ttvnw.net
+  flow: xtls-rprx-vision
   client-fingerprint: edge
-  grpc-opts:
-    grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
 - name: "🇳🇴 ⚡️ ⭐️ Норвегия #3"
   type: vless
   server: 139.28.215.39
@@ -707,12 +719,14 @@ proxies:
   port: 443
   uuid: 961fff49-4c8f-000f-a7e2-1e448d795082
   udp: true
-  network: grpc
+  network: tcp
   tls: true
-  servername: 380t45n0zk.j.cloudfront.hls.ttvnw.net
+  servername: 889f5150103c.j.cloudfront.hls.ttvnw.net
+  flow: xtls-rprx-vision
   client-fingerprint: edge
-  grpc-opts:
-    grpc-service-name: "v1.segment.CtcCA11SswMrS6CxXS7kj4o5PVvgR7_DHm57hyI0VhB1yNyOgyaRKzebOtk3A_LhW1Vao3IJfu5xgmHUTS188DUzX-S4910rAejQc527N7-hupcSiW3MaUvG7AoZB-u6tF-NwzUwfWpAhvt0T5oCBF2-wVMy1C_W00b9IkLMKYnsWSdBR2m2T2tbvwtTcebI1D25m78FI-ElqbHcgyYCYNwnA17wIUowAzpnlrCv8eW2njjbBuT7R6tmgGmU5MGaRGtz4p9ZimkKCBn-EmIdaarZi52V8AtgUs9Ph-hnU7ouCxdSgGYb-usXFpGO5K1tpInm7EljGBllqyeaLn7ALCbHmznqf_6iNnfZ42-5NQBXeCJlM7Xl4Q6xbpFWNB0d7V-Kqu7k-VnkbRxFWEnn4Fpp9_78mouMNcDh8N5Y-4JD6YXjjCoaZBQkXpRoT7lSkmWkDbO3wA-3DhoMGwpZQBDx_IDym1UuIAEqCWV1LXdlc3QtMjCGEA.ts"
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
 - name: "🇫🇮 🎮 ⚡️ ⭐️ Финляндия #2 (Мост)"
   type: vless
   server: 66.90.90.179
@@ -1105,12 +1119,14 @@ proxies:
   port: 443
   uuid: 961fff49-4c8f-0067-a7e2-1e448d795082
   udp: true
-  network: grpc
+  network: tcp
   tls: true
   servername: river-3-353.rtbcdn.ru
+  flow: xtls-rprx-vision
   client-fingerprint: qq
-  grpc-opts:
-    grpc-service-name: "hls-vod.iJxGWWENB3HP4nTjN8IcrA.1790085537.2512.0x5000039ce83a2b8d.2ac8ad72028049619c2fb844a825a.ca.mp4.segment-20-v1-a1.ts"
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
 - name: "🇷🇺 0.5X - LTE №33 - Москва"
   type: vless
   server: 178.248.236.0
@@ -1171,12 +1187,14 @@ proxies:
   port: 443
   uuid: 961fff49-4c8f-0068-a7e2-1e448d795082
   udp: true
-  network: grpc
+  network: tcp
   tls: true
   servername: river-3-367.rtbcdn.ru
+  flow: xtls-rprx-vision
   client-fingerprint: qq
-  grpc-opts:
-    grpc-service-name: "hls-vod.iJxGWWENB3HP4nTjN8IcrA.1790085537.2512.0x5000039ce83a2b8d.2ac8ad72028049619c2fb844a825a.ca.mp4.segment-20-v1-a1.ts"
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
 - name: "🇷🇺 0.5X - LTE №67 - Москва"
   type: vless
   server: 178.248.236.0
@@ -1258,12 +1276,14 @@ proxies:
   port: 443
   uuid: 961fff49-4c8f-4a48-a7e2-1e448d795082
   udp: true
-  network: grpc
+  network: tcp
   tls: true
   servername: river-3-345.rtbcdn.ru
+  flow: xtls-rprx-vision
   client-fingerprint: qq
-  grpc-opts:
-    grpc-service-name: "hls-vod.iJxGWWENB3HP4nTjN8IcrA.1790085537.2512.0x5000039ce83a2b8d.2ac8ad72028049619c2fb844a825a.ca.mp4.segment-20-v1-a1.ts"
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
 - name: "🇳🇱 ⚡️ ⭐️ 0.5X - LTE №1 - Torrent ✅"
   type: vless
   server: 178.248.236.0
@@ -1324,19 +1344,14 @@ proxies:
   port: 443
   uuid: 961fff49-4c8f-0009-a7e2-1e448d795082
   udp: true
-  network: grpc
+  network: tcp
   tls: true
   servername: river-3-366.rtbcdn.ru
+  flow: xtls-rprx-vision
   client-fingerprint: qq
-  grpc-opts:
-    grpc-service-name: "hls-vod.iJxGWWENB3HP4nTjN8IcrA.1790085537.2512.0x5000039ce83a2b8d.2ac8ad72028049619c2fb844a825a.ca.mp4.segment-20-v1-a1.ts"
-- name: "🇸🇪 🎮 ⚡️ 0.1X - LTE №60 - Hysteria2"
-  type: hysteria2
-  server: 91.240.87.119
-  port: 21443
-  password: 961fff49-4c8f-4a48-a7e2-1e448d795082
-  sni: hy.quattro-tech.ru
-  alpn: [h3]
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
 - name: "🇸🇪 🎮 ⚡️ ⭐️ 0.5X - LTE №2 - Швеция"
   type: vless
   server: 178.248.236.0
@@ -1369,12 +1384,14 @@ proxies:
   port: 443
   uuid: 961fff49-4c8f-001a-a7e2-1e448d795082
   udp: true
-  network: grpc
+  network: tcp
   tls: true
   servername: river-3-367.rtbcdn.ru
+  flow: xtls-rprx-vision
   client-fingerprint: qq
-  grpc-opts:
-    grpc-service-name: "hls-vod.iJxGWWENB3HP4nTjN8IcrA.1790085537.2512.0x5000039ce83a2b8d.2ac8ad72028049619c2fb844a825a.ca.mp4.segment-20-v1-a1.ts"
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
 - name: "🇩🇪 🎮 ⚡️ ⭐️ 0.1X - LTE №102 - Германия"
   type: vless
   server: 46.243.235.160
@@ -1463,26 +1480,14 @@ proxies:
   port: 443
   uuid: 961fff49-4c8f-0012-a7e2-1e448d795082
   udp: true
-  network: grpc
+  network: tcp
   tls: true
   servername: river-m9-pitix-d3105.rtbcdn.ru
+  flow: xtls-rprx-vision
   client-fingerprint: qq
-  grpc-opts:
-    grpc-service-name: "hls-vod.iJxGWWENB3HP4nTjN8IcrA.1790085537.2512.0x5000039ce83a2b8d.2ac8ad72028049619c2fb844a825a.ca.mp4.segment-20-v1-a1.ts"
-- name: "🇩🇪 🎮 ⚡️ 0.1X - LTE №59 - Hysteria2"
-  type: hysteria2
-  server: 91.240.87.119
-  port: 20443
-  password: 961fff49-4c8f-4a48-a7e2-1e448d795082
-  sni: hy.quattro-tech.ru
-  alpn: [h3]
-- name: "🇩🇪 🎮 ⚡️ 0.1X - LTE №77 - Hysteria2"
-  type: hysteria2
-  server: 91.240.87.119
-  port: 44443
-  password: 961fff49-4c8f-4a48-a7e2-1e448d795082
-  sni: hy.quattro-tech.ru
-  alpn: [h3]
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
 - name: "🇩🇪 🎮 ⚡️ ⭐️ 0.5X - LTE №21 - Германия"
   type: vless
   server: 178.248.236.0
@@ -1543,19 +1548,14 @@ proxies:
   port: 443
   uuid: 961fff49-4c8f-0006-a7e2-1e448d795082
   udp: true
-  network: grpc
+  network: tcp
   tls: true
   servername: river-3-317.rtbcdn.ru
+  flow: xtls-rprx-vision
   client-fingerprint: qq
-  grpc-opts:
-    grpc-service-name: "hls-vod.iJxGWWENB3HP4nTjN8IcrA.1790085537.2512.0x5000039ce83a2b8d.2ac8ad72028049619c2fb844a825a.ca.mp4.segment-20-v1-a1.ts"
-- name: "🇱🇻 🎮 ⚡️ 0.1X - LTE №61 - Hysteria2"
-  type: hysteria2
-  server: 91.240.87.119
-  port: 24443
-  password: 961fff49-4c8f-4a48-a7e2-1e448d795082
-  sni: hy.quattro-tech.ru
-  alpn: [h3]
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
 - name: "🇱🇻 🎮 ⚡️ ⭐️ 0.5X - LTE №37 - Латвия"
   type: vless
   server: 178.248.236.0
@@ -1644,19 +1644,14 @@ proxies:
   port: 443
   uuid: 961fff49-4c8f-000b-a7e2-1e448d795082
   udp: true
-  network: grpc
+  network: tcp
   tls: true
   servername: river-3-311.rtbcdn.ru
+  flow: xtls-rprx-vision
   client-fingerprint: qq
-  grpc-opts:
-    grpc-service-name: "hls-vod.iJxGWWENB3HP4nTjN8IcrA.1790085537.2512.0x5000039ce83a2b8d.2ac8ad72028049619c2fb844a825a.ca.mp4.segment-20-v1-a1.ts"
-- name: "🇪🇪 🎮 ⚡️ 0.1X - LTE №98 - Hysteria2"
-  type: hysteria2
-  server: 91.240.87.119
-  port: 59448
-  password: 961fff49-4c8f-4a48-a7e2-1e448d795082
-  sni: hy.quattro-tech.ru
-  alpn: [h3]
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
 - name: "🇪🇪 🎮 ⚡️ ⭐️ 0.5X - LTE №13 - Эстония"
   type: vless
   server: 178.248.236.0
@@ -1717,12 +1712,14 @@ proxies:
   port: 443
   uuid: 961fff49-4c8f-0003-a7e2-1e448d795082
   udp: true
-  network: grpc
+  network: tcp
   tls: true
   servername: river-4-416.rtbcdn.ru
+  flow: xtls-rprx-vision
   client-fingerprint: qq
-  grpc-opts:
-    grpc-service-name: "hls-vod.iJxGWWENB3HP4nTjN8IcrA.1790085537.2512.0x5000039ce83a2b8d.2ac8ad72028049619c2fb844a825a.ca.mp4.segment-20-v1-a1.ts"
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
 - name: "🇵🇱 🎮 ⚡️ ⭐️ 0.5X - LTE №107 - Польша"
   type: vless
   server: 178.248.236.0
@@ -1781,19 +1778,14 @@ proxies:
   port: 443
   uuid: 961fff49-4c8f-000e-a7e2-1e448d795082
   udp: true
-  network: grpc
+  network: tcp
   tls: true
   servername: river-3-359.rtbcdn.ru
+  flow: xtls-rprx-vision
   client-fingerprint: qq
-  grpc-opts:
-    grpc-service-name: "hls-vod.iJxGWWENB3HP4nTjN8IcrA.1790085537.2512.0x5000039ce83a2b8d.2ac8ad72028049619c2fb844a825a.ca.mp4.segment-20-v1-a1.ts"
-- name: "🇫🇮 🎮 ⭐️ 0.1X - LTE №134 - Hysteria2"
-  type: hysteria2
-  server: 91.240.87.119
-  port: 9443
-  password: 961fff49-4c8f-4a48-a7e2-1e448d795082
-  sni: hy.quattro-tech.ru
-  alpn: [h3]
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
 - name: "🇫🇮 🎮 ⚡️ ⭐️ 0.5X - LTE №36 - Финляндия"
   type: vless
   server: 178.248.236.0
@@ -1854,19 +1846,14 @@ proxies:
   port: 443
   uuid: 961fff49-4c8f-000c-a7e2-1e448d795082
   udp: true
-  network: grpc
+  network: tcp
   tls: true
   servername: river-4-419.rtbcdn.ru
+  flow: xtls-rprx-vision
   client-fingerprint: qq
-  grpc-opts:
-    grpc-service-name: "hls-vod.iJxGWWENB3HP4nTjN8IcrA.1790085537.2512.0x5000039ce83a2b8d.2ac8ad72028049619c2fb844a825a.ca.mp4.segment-20-v1-a1.ts"
-- name: "🇮🇹 🎮 ⚡️ ⭐️ 0.1X - LTE №135- Hysteria2"
-  type: hysteria2
-  server: 91.240.87.119
-  port: 23443
-  password: 961fff49-4c8f-4a48-a7e2-1e448d795082
-  sni: hy.quattro-tech.ru
-  alpn: [h3]
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
 - name: "🇮🇹 🎮 ⚡️ ⭐️ 0.5X - LTE №111 - Италия"
   type: vless
   server: 178.248.236.0
@@ -1927,19 +1914,14 @@ proxies:
   port: 443
   uuid: 961fff49-4c8f-0021-a7e2-1e448d795082
   udp: true
-  network: grpc
+  network: tcp
   tls: true
   servername: river-4-423.rtbcdn.ru
+  flow: xtls-rprx-vision
   client-fingerprint: edge
-  grpc-opts:
-    grpc-service-name: "hls-vod.iJxGWWENB3HP4nTjN8IcrA.1790085537.2512.0x5000039ce83a2b8d.2ac8ad72028049619c2fb844a825a.ca.mp4.segment-20-v1-a1.ts"
-- name: "🇨🇭 ⚡️ ⭐️ 0.1X - LTE №139- Hysteria2"
-  type: hysteria2
-  server: 91.240.87.119
-  port: 44001
-  password: 961fff49-4c8f-4a48-a7e2-1e448d795082
-  sni: hy.quattro-tech.ru
-  alpn: [h3]
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
 - name: "🇨🇭 ⚡️ ⭐️ 0.5X - LTE №140 - Швейцария"
   type: vless
   server: 178.248.236.0
@@ -2000,12 +1982,14 @@ proxies:
   port: 443
   uuid: 961fff49-4c8f-000d-a7e2-1e448d795082
   udp: true
-  network: grpc
+  network: tcp
   tls: true
   servername: river-3-373.rtbcdn.ru
+  flow: xtls-rprx-vision
   client-fingerprint: qq
-  grpc-opts:
-    grpc-service-name: "hls-vod.iJxGWWENB3HP4nTjN8IcrA.1790085537.2512.0x5000039ce83a2b8d.2ac8ad72028049619c2fb844a825a.ca.mp4.segment-20-v1-a1.ts"
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
 - name: "🇳🇴 ⚡️ ⭐️ 0.5X - LTE №35 - Норвегия"
   type: vless
   server: 178.248.236.0
@@ -2066,12 +2050,14 @@ proxies:
   port: 443
   uuid: 961fff49-4c8f-0020-a7e2-1e448d795082
   udp: true
-  network: grpc
+  network: tcp
   tls: true
   servername: river-3-367.rtbcdn.ru
+  flow: xtls-rprx-vision
   client-fingerprint: qq
-  grpc-opts:
-    grpc-service-name: "hls-vod.iJxGWWENB3HP4nTjN8IcrA.1790085537.2512.0x5000039ce83a2b8d.2ac8ad72028049619c2fb844a825a.ca.mp4.segment-20-v1-a1.ts"
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
 - name: "🇹🇷 ⭐️ 0.5X - LTE №83 - Турция"
   type: vless
   server: 178.248.236.0
@@ -2132,12 +2118,14 @@ proxies:
   port: 443
   uuid: 961fff49-4c8f-0014-a7e2-1e448d795082
   udp: true
-  network: grpc
+  network: tcp
   tls: true
   servername: river-3-349.rtbcdn.ru
+  flow: xtls-rprx-vision
   client-fingerprint: qq
-  grpc-opts:
-    grpc-service-name: "hls-vod.iJxGWWENB3HP4nTjN8IcrA.1790085537.2512.0x5000039ce83a2b8d.2ac8ad72028049619c2fb844a825a.ca.mp4.segment-20-v1-a1.ts"
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
 - name: "🇺🇸 ⚡️ ⭐️ 0.5X - LTE №19 - США, Эшберн"
   type: vless
   server: 178.248.236.0
@@ -2198,12 +2186,14 @@ proxies:
   port: 443
   uuid: 961fff49-4c8f-0015-a7e2-1e448d795082
   udp: true
-  network: grpc
+  network: tcp
   tls: true
   servername: river-4-421.rtbcdn.ru
+  flow: xtls-rprx-vision
   client-fingerprint: qq
-  grpc-opts:
-    grpc-service-name: "hls-vod.iJxGWWENB3HP4nTjN8IcrA.1790085537.2512.0x5000039ce83a2b8d.2ac8ad72028049619c2fb844a825a.ca.mp4.segment-20-v1-a1.ts"
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
 - name: "🇺🇸 ⚡️ ⭐️ 0.5X - LTE №28 - США, Денвер"
   type: vless
   server: 178.248.236.0
@@ -2264,12 +2254,14 @@ proxies:
   port: 443
   uuid: 961fff49-4c8f-001b-a7e2-1e448d795082
   udp: true
-  network: grpc
+  network: tcp
   tls: true
   servername: river-3-317.rtbcdn.ru
+  flow: xtls-rprx-vision
   client-fingerprint: qq
-  grpc-opts:
-    grpc-service-name: "hls-vod.iJxGWWENB3HP4nTjN8IcrA.1790085537.2512.0x5000039ce83a2b8d.2ac8ad72028049619c2fb844a825a.ca.mp4.segment-20-v1-a1.ts"
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
 - name: "🇺🇸 ⭐️ 0.5X - LTE №63 - США, Атланта"
   type: vless
   server: 178.248.236.0
@@ -2330,12 +2322,14 @@ proxies:
   port: 443
   uuid: 961fff49-4c8f-0013-a7e2-1e448d795082
   udp: true
-  network: grpc
+  network: tcp
   tls: true
   servername: river-4-420.rtbcdn.ru
+  flow: xtls-rprx-vision
   client-fingerprint: qq
-  grpc-opts:
-    grpc-service-name: "hls-vod.iJxGWWENB3HP4nTjN8IcrA.1790085537.2512.0x5000039ce83a2b8d.2ac8ad72028049619c2fb844a825a.ca.mp4.segment-20-v1-a1.ts"
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
 - name: "🇯🇵 ⚡️ 0.5X - LTE №25 - Япония"
   type: vless
   server: 178.248.236.0
@@ -7762,7 +7756,6 @@ proxy-groups:
   - "🇸🇪 🎮 ⚡️ ⭐️ 0.1X - LTE №14 - Швеция"
   - "🇸🇪 🎮 ⚡️ ⭐️ 0.1X - LTE №15 - Швеция"
   - "🇸🇪 🎮 ⚡️ ⭐️ 0.1X - LTE №89 - Швеция"
-  - "🇸🇪 🎮 ⚡️ 0.1X - LTE №60 - Hysteria2"
   - "🇸🇪 🎮 ⚡️ ⭐️ 0.5X - LTE №2 - Швеция"
   - "🇸🇪 🎮 ⚡️ ⭐️ 1X - LTE №122 - Швеция"
   - "🇩🇪 🎮 ⚡️ ⭐️ 0.1X - LTE №99 - Германия"
@@ -7773,14 +7766,11 @@ proxy-groups:
   - "🇩🇪 🎮 ⚡️ ⭐️ 0.1X - LTE №23 - Германия"
   - "🇩🇪 🎮 ⚡️ ⭐️ 0.1X - LTE №26 - Германия"
   - "🇩🇪 🎮 ⚡️ ⭐️ 0.1X - LTE №93 - Германия"
-  - "🇩🇪 🎮 ⚡️ 0.1X - LTE №59 - Hysteria2"
-  - "🇩🇪 🎮 ⚡️ 0.1X - LTE №77 - Hysteria2"
   - "🇩🇪 🎮 ⚡️ ⭐️ 0.5X - LTE №21 - Германия"
   - "🇩🇪 🎮 ⚡️ ⭐️ 1X - LTE №124 - Германия"
   - "🇱🇻 🎮 ⚡️ ⭐️ 0.1X - LTE №39 - Латвия"
   - "🇱🇻 🎮 ⚡️ ⭐️ 0.1X - LTE №51 - Латвия"
   - "🇱🇻 🎮 ⚡️ ⭐️ 0.1X - LTE №108 - Латвия"
-  - "🇱🇻 🎮 ⚡️ 0.1X - LTE №61 - Hysteria2"
   - "🇱🇻 🎮 ⚡️ ⭐️ 0.5X - LTE №37 - Латвия"
   - "🇱🇻 🎮 ⚡️ ⭐️ 1X - LTE №125 - Латвия"
   - "🇪🇪 🎮 ⭐️ 0.1X - LTE №11 - Эстония"
@@ -7788,7 +7778,6 @@ proxy-groups:
   - "🇪🇪 🎮 ⚡️ ⭐️ 0.1X - LTE №68 - Эстония"
   - "🇪🇪 🎮 ⚡️ ⭐️ 0.1X - LTE №78 - Эстония"
   - "🇪🇪 🎮 ⚡️ ⭐️ 0.1X - LTE №112 - Эстония"
-  - "🇪🇪 🎮 ⚡️ 0.1X - LTE №98 - Hysteria2"
   - "🇪🇪 🎮 ⚡️ ⭐️ 0.5X - LTE №13 - Эстония"
   - "🇪🇪 🎮 ⚡️ ⭐️ 1X - LTE №126 - Эстония"
   - "🇵🇱 🎮 ⚡️ ⭐️ 0.1X - LTE №104 - Польша"
@@ -7799,19 +7788,16 @@ proxy-groups:
   - "🇫🇮 🎮 ⚡️ ⭐️ 0.1X - LTE №85 - Финляндия"
   - "🇫🇮 🎮 ⚡️ ⭐️ 0.1X - LTE №8 - Финляндия"
   - "🇫🇮 🎮 ⚡️ ⭐️ 0.1X - LTE №97 - Финляндия"
-  - "🇫🇮 🎮 ⭐️ 0.1X - LTE №134 - Hysteria2"
   - "🇫🇮 🎮 ⚡️ ⭐️ 0.5X - LTE №36 - Финляндия"
   - "🇫🇮 🎮 ⚡️ ⭐️ 1X - LTE №128 - Финляндия"
   - "🇮🇹 🎮 ⚡️ ⭐️ 0.1X - LTE №86 - Италия"
   - "🇮🇹 🎮 ⚡️ ⭐️ 0.1X - LTE №109 - Италия"
   - "🇮🇹 🎮 ⚡️ ⭐️ 0.1X - LTE №110 - Италия"
-  - "🇮🇹 🎮 ⚡️ ⭐️ 0.1X - LTE №135- Hysteria2"
   - "🇮🇹 🎮 ⚡️ ⭐️ 0.5X - LTE №111 - Италия"
   - "🇮🇹 🎮 ⚡️ ⭐️ 1X - LTE №129 - Италия"
   - "🇨🇭 ⚡️ ⭐️ 0.1X - LTE №136 - Швейцария"
   - "🇨🇭 ⚡️ ⭐️ 0.1X - LTE №137 - Швейцария"
   - "🇨🇭 ⚡️ ⭐️ 0.1X - LTE №138 - Швейцария"
-  - "🇨🇭 ⚡️ ⭐️ 0.1X - LTE №139- Hysteria2"
   - "🇨🇭 ⚡️ ⭐️ 0.5X - LTE №140 - Швейцария"
   - "🇨🇭 ⚡️ ⭐️ 1X - LTE №141 - Швейцария"
   - "🇳🇴 ⚡️ ⭐️ 0.1X - LTE №30 - Норвегия"
