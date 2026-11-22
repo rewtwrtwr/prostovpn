@@ -1,5 +1,5 @@
 # quattro.yaml — auto-generated FULL config, do not edit manually
-# updated: 2026-11-22T01:47:34Z | proxies: 563 | skipped: 0
+# updated: 2026-11-22T03:17:21Z | proxies: 565 | skipped: 0
 # Use directly as a Clash/Mihomo profile, or as a proxy-provider.
 
 port: 7890
@@ -1057,6 +1057,20 @@ proxies:
   reality-opts:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
     short-id: 43dcff53849b81e6
+- name: "🇨🇭 🎮 ⚡️ ⭐️ LTE - Безлимитный #14"
+  type: vless
+  server: 94.139.255.199
+  port: 443
+  uuid: 961fff49-4c8f-0021-a7e2-1e448d795082
+  udp: true
+  network: tcp
+  tls: true
+  servername: river-3-363.rtbcdn.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: edge
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
 - name: "🇷🇺 🎮 ⚡️ LTE - Безлимитный #12 - МСК"
   type: vless
   server: 94.139.255.199
@@ -1357,6 +1371,18 @@ proxies:
   client-fingerprint: qq
   grpc-opts:
     grpc-service-name: "x5.lk.v1.AccountService"
+- name: "🇸🇪 🎮 ⚡️ ⭐️ 0.5X - LTE №87 - Швеция"
+  type: vless
+  server: 178.248.236.0
+  port: 57443
+  uuid: 961fff49-4c8f-0009-a7e2-1e448d795082
+  udp: true
+  network: grpc
+  tls: true
+  servername: lk.x5.ru
+  client-fingerprint: qq
+  grpc-opts:
+    grpc-service-name: "x5.lk.v1.AccountService"
 - name: "🇸🇪 🎮 ⚡️ ⭐️ 1X - LTE №122 - Швеция"
   type: vless
   server: 51.250.89.113
@@ -1573,7 +1599,7 @@ proxies:
 - name: "🇱🇻 🎮 ⚡️ ⭐️ 0.5X - LTE №37 - Латвия"
   type: vless
   server: 178.248.236.0
-  port: 62443
+  port: 61443
   uuid: 961fff49-4c8f-0006-a7e2-1e448d795082
   udp: true
   network: grpc
@@ -4886,6 +4912,7 @@ proxy-groups:
   - "🇫🇮 🎮 ⚡️ ⭐️ LTE - Безлимитный #10"
   - "🇺🇸 ⭐️ LTE - Безлимитный #11"
   - "🇳🇴 ⚡️ ⭐️ LTE - Безлимитный #13"
+  - "🇨🇭 🎮 ⚡️ ⭐️ LTE - Безлимитный #14"
   - "🇷🇺 🎮 ⚡️ LTE - Безлимитный #12 - МСК"
   - "🇷🇺 0.1X - LTE №48 - Москва"
   - "🇷🇺 0.1X - LTE №54 - Москва"
@@ -4909,6 +4936,7 @@ proxy-groups:
   - "🇸🇪 🎮 ⚡️ ⭐️ 0.1X - LTE №89 - Швеция"
   - "🇸🇪 🎮 ⚡️ 0.1X - LTE №60 - Hysteria2"
   - "🇸🇪 🎮 ⚡️ ⭐️ 0.5X - LTE №2 - Швеция"
+  - "🇸🇪 🎮 ⚡️ ⭐️ 0.5X - LTE №87 - Швеция"
   - "🇸🇪 🎮 ⚡️ ⭐️ 1X - LTE №122 - Швеция"
   - "🇩🇪 🎮 ⚡️ ⭐️ 0.1X - LTE №99 - Германия"
   - "🇩🇪 🎮 ⚡️ ⭐️ 0.1X - LTE №102 - Германия"
