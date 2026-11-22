@@ -1,5 +1,5 @@
 # quattro.yaml — auto-generated FULL config, do not edit manually
-# updated: 2026-11-22T12:17:30Z | proxies: 570 | skipped: 0
+# updated: 2026-11-22T13:47:23Z | proxies: 571 | skipped: 0
 # Use directly as a Clash/Mihomo profile, or as a proxy-provider.
 
 port: 7890
@@ -1401,6 +1401,18 @@ proxies:
   client-fingerprint: qq
   grpc-opts:
     grpc-service-name: "x5.lk.v1.AccountService"
+- name: "🇸🇪 🎮 ⚡️ ⭐️ 0.5X - LTE №88 - Швеция"
+  type: vless
+  server: 178.248.236.0
+  port: 62443
+  uuid: 961fff49-4c8f-0009-a7e2-1e448d795082
+  udp: true
+  network: grpc
+  tls: true
+  servername: lk.x5.ru
+  client-fingerprint: qq
+  grpc-opts:
+    grpc-service-name: "x5.lk.v1.AccountService"
 - name: "🇸🇪 🎮 ⚡️ ⭐️ 1X - LTE №122 - Швеция"
   type: vless
   server: 51.250.89.113
@@ -2079,7 +2091,7 @@ proxies:
 - name: "🇳🇴 ⚡️ ⭐️ 0.5X - LTE №35 - Норвегия"
   type: vless
   server: 178.248.236.0
-  port: 60443
+  port: 62443
   uuid: 961fff49-4c8f-000d-a7e2-1e448d795082
   udp: true
   network: grpc
@@ -4970,6 +4982,7 @@ proxy-groups:
   - "🇸🇪 🎮 ⚡️ 0.1X - LTE №60 - Hysteria2"
   - "🇸🇪 🎮 ⚡️ ⭐️ 0.5X - LTE №2 - Швеция"
   - "🇸🇪 🎮 ⚡️ ⭐️ 0.5X - LTE №87 - Швеция"
+  - "🇸🇪 🎮 ⚡️ ⭐️ 0.5X - LTE №88 - Швеция"
   - "🇸🇪 🎮 ⚡️ ⭐️ 1X - LTE №122 - Швеция"
   - "🇩🇪 🎮 ⚡️ ⭐️ 0.1X - LTE №99 - Германия"
   - "🇩🇪 🎮 ⚡️ ⭐️ 0.1X - LTE №102 - Германия"
