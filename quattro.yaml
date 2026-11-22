@@ -1,5 +1,5 @@
 # quattro.yaml — auto-generated FULL config, do not edit manually
-# updated: 2026-11-22T21:17:18Z | proxies: 571 | skipped: 0
+# updated: 2026-11-22T22:47:50Z | proxies: 571 | skipped: 0
 # Use directly as a Clash/Mihomo profile, or as a proxy-provider.
 
 port: 7890
@@ -496,7 +496,7 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "🇳🇴 ⚡️ ⭐️ Норвегия #2"
   type: vless
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 443
   uuid: 961fff49-4c8f-000c-a7e2-1e448d795082
   udp: true
@@ -733,7 +733,7 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "🇫🇮 🎮 ⚡️ ⭐️ Финляндия #2"
   type: vless
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 443
   uuid: 961fff49-4c8f-000f-a7e2-1e448d795082
   udp: true
@@ -796,7 +796,7 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "🇨🇭 ⚡️ ⭐️ Швейцария"
   type: vless
-  server: 132.243.233.2
+  server: 132.243.233.7
   port: 443
   uuid: 961fff49-4c8f-4a48-a7e2-1e448d795082
   udp: true
@@ -2468,7 +2468,7 @@ proxies:
     grpc-service-name: "x5.lk.v1.AccountService"
 - name: "🇦🇺 Австралия"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0015-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -2510,7 +2510,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇦🇿 Азербайджан"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0016-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -2528,7 +2528,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇦🇱 Албания"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0017-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -2576,7 +2576,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇦🇷 Аргентина"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-001b-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -2600,7 +2600,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇦🇲 Армения"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-001c-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -2618,7 +2618,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇦🇼 Аруба"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-001d-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -2630,7 +2630,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇧🇸 Багамские Острова"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-001f-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -2642,7 +2642,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇧🇩 Бангладеш"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0020-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -2660,13 +2660,13 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇧🇧 Барбадос"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0021-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
 - name: "🇧🇭 Бахрейн"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0022-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -2678,7 +2678,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇧🇾 Беларусь"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0023-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -2704,7 +2704,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇧🇿 Белиз"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0024-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -2716,19 +2716,19 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇧🇲 Бермудские Острова"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0025-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
 - name: "🇧🇬 Болгария"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0026-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
 - name: "🇧🇬 Болгария #2"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-00c7-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -2746,7 +2746,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇧🇴 Боливия"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0027-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -2764,7 +2764,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇧🇦 Босния и Герцеговина"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0028-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -2782,19 +2782,19 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇧🇼 Ботсвана"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0029-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
 - name: "🇧🇷 Бразилия"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-002a-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
 - name: "🇧🇷 Бразилия #2"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-00b5-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -2836,13 +2836,13 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇻🇦 Ватикан"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-002d-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
 - name: "🇭🇺 Венгрия"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0004-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -2872,13 +2872,13 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇻🇮 Виргинские острова (Британия)"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-002f-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
 - name: "🇻🇳 Вьетнам"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0030-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -2914,7 +2914,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇬🇭 Гана"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0031-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -2932,7 +2932,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇬🇹 Гватемала"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0032-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -2956,13 +2956,13 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇭🇰 Гонконг"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0034-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
 - name: "🇭🇰 Гонконг #2"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-00c0-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3012,13 +3012,13 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇬🇷 Греция"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0036-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
 - name: "🇬🇷 Греция #2"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-00b9-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3050,7 +3050,7 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "🇬🇪 Грузия #2"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0037-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3074,13 +3074,13 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇬🇺 Гуам"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0038-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
 - name: "🇩🇰 Дания"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0039-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3110,7 +3110,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇯🇪 Джерси"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-003b-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3122,7 +3122,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇪🇬 Египет"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-003d-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3146,13 +3146,13 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇮🇱 Израиль"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-003e-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
 - name: "🇮🇱 Израиль #2"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-00bb-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3170,13 +3170,13 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇮🇳 Индия"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-003f-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
 - name: "🇮🇳 Индия #2"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-00c2-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3200,13 +3200,13 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇮🇩 Индонезия"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0040-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
 - name: "🇮🇩 Индонезия #2"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-00b7-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3230,7 +3230,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇯🇴 Иордания"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0041-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3242,7 +3242,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇮🇶 Ирак"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0042-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3254,13 +3254,13 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇮🇷 Иран"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0043-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
 - name: "🇮🇸 Исландия"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0045-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3290,13 +3290,13 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇰🇿 Казахстан"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-00af-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
 - name: "🇰🇿 Казахстан #2"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0047-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3314,13 +3314,13 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇰🇾 Каймановы острова"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0048-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
 - name: "🇰🇭 Камбоджа"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0049-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3344,7 +3344,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇶🇦 Катар"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-004c-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3356,7 +3356,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇰🇪 Кения"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-004d-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3368,13 +3368,13 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇨🇾 Кипр"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-004e-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
 - name: "🇨🇾 Кипр #2"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-00bc-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3392,7 +3392,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇰🇬 Киргизия"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-004f-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3410,7 +3410,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇨🇴 Колумбия"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0051-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3440,7 +3440,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇨🇬 Конго"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0053-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3482,7 +3482,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇨🇼 Кюрасао"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0058-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3518,13 +3518,13 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇱🇹 Литва"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0009-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
 - name: "🇱🇹 Литва #2"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-00c6-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3548,7 +3548,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇱🇺 Люксембург"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-000a-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3590,7 +3590,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇲🇾 Малайзия"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-005f-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3614,13 +3614,13 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇲🇱 Мали"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0060-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
 - name: "🇲🇻 Мальдивы"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0061-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3638,7 +3638,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇲🇦 Марокко"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0063-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3656,13 +3656,13 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇲🇭 Маршалловы острова"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0064-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
 - name: "🇲🇽 Мексика"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0065-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3692,7 +3692,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇲🇩 Молдова"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0067-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3734,7 +3734,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇲🇲 Мьянма"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-006a-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3752,7 +3752,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇳🇵 Непал"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-006b-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3770,19 +3770,19 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇳🇬 Нигерия"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-00b8-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
 - name: "🇳🇬 Нигерия #2"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-00b1-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
 - name: "🇳🇬 Нигерия #3"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-00b0-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3812,7 +3812,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇳🇿 Новая Зеландия"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-006e-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3830,19 +3830,19 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇦🇪 ОАЭ"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-006f-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
 - name: "🇦🇪 ОАЭ #2"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-00aa-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
 - name: "🇦🇪 ОАЭ #3"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-00c3-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3866,7 +3866,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇴🇲 Оман"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0070-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3878,7 +3878,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇮🇲 Остров Мэн"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0071-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3890,13 +3890,13 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇵🇰 Пакистан"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-00b3-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
 - name: "🇵🇰 Пакистан #2"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-00b2-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3920,7 +3920,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇵🇦 Панама"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0074-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3950,7 +3950,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇵🇾 Парагвай"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0076-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3968,7 +3968,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇵🇪 Перу"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0077-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -3992,7 +3992,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇵🇹 Португалия"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0078-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -4034,7 +4034,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇷🇴 Румыния"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-000e-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -4052,7 +4052,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇸🇻 Сальвадор"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-007b-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -4070,7 +4070,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇸🇦 Саудовская Аравия"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-007c-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -4088,7 +4088,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇲🇰 Северная Македония"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-007d-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -4106,7 +4106,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇸🇨 Сейшельские Острова"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-007e-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -4118,7 +4118,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇷🇸 Сербия"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0080-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -4142,19 +4142,19 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇸🇬 Сингапур"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0081-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
 - name: "🇸🇬 Сингапур #2"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-00bf-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
 - name: "🇸🇬 Сингапур #3"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-00c1-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -4198,7 +4198,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇸🇰 Словакия"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0083-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -4222,7 +4222,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇸🇮 Словения"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0084-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -4258,13 +4258,13 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇸🇷 Суринам"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0087-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
 - name: "🇹🇯 Таджикистан"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-008a-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -4276,7 +4276,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇹🇭 Таиланд"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-008b-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -4300,13 +4300,13 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇹🇼 Тайвань"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-008c-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
 - name: "🇹🇼 Тайвань #2"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-00c5-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -4342,7 +4342,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇹🇹 Тринидад и Тобаго"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-008f-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -4360,13 +4360,13 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇹🇷 Турция"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-00a7-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
 - name: "🇹🇷 Турция #2"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0092-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -4410,13 +4410,13 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇺🇿 Узбекистан"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-00ba-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
 - name: "🇺🇿 Узбекистан #2"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0093-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -4434,7 +4434,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇺🇦 Украина"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0094-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -4452,7 +4452,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇺🇾 Уругвай"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0095-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -4476,13 +4476,13 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇫🇯 Фиджи"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0096-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
 - name: "🇵🇭 Филиппины"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0097-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -4518,7 +4518,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇭🇷 Хорватия"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0098-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -4554,7 +4554,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇨🇿 Чехия"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-0011-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -4572,7 +4572,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇨🇱 Чили"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-009b-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -4608,7 +4608,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇪🇨 Эквадор"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-009d-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -4638,7 +4638,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇸🇿 Эсватини"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-009f-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -4650,7 +4650,7 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇿🇦 ЮАР"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-00a1-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
@@ -4674,13 +4674,13 @@ proxies:
   sni: hy.quattro-tech.ru
 - name: "🇰🇷 Южная Корея"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-00a2-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
 - name: "🇰🇷 Южная Корея #2"
   type: hysteria2
-  server: 89.125.99.142
+  server: 89.125.99.130
   port: 33443
   password: 961fff49-4c8f-00a9-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
