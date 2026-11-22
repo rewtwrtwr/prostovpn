@@ -1,5 +1,5 @@
 # quattro.yaml — auto-generated FULL config, do not edit manually
-# updated: 2026-11-22T03:17:21Z | proxies: 565 | skipped: 0
+# updated: 2026-11-22T04:47:36Z | proxies: 569 | skipped: 0
 # Use directly as a Clash/Mihomo profile, or as a proxy-provider.
 
 port: 7890
@@ -404,6 +404,12 @@ proxies:
   reality-opts:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
     short-id: 43dcff53849b81e6
+- name: "🇨🇦 ⚡️ ⭐️ Канада | Hysteria2"
+  type: hysteria2
+  server: 132.243.205.6
+  port: 30443
+  password: 961fff49-4c8f-4a48-a7e2-1e448d795082
+  sni: hy.quattro-tech.ru
 - name: "🇱🇻 🎮 ⚡️ ⭐️ Латвия"
   type: vless
   server: 13.143.209.3
@@ -671,6 +677,12 @@ proxies:
   reality-opts:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
     short-id: 43dcff53849b81e6
+- name: "🇺🇸 ⚡️ ⭐️ США, Атланта | Hysteria2"
+  type: hysteria2
+  server: 132.243.232.7
+  port: 30443
+  password: 961fff49-4c8f-4a48-a7e2-1e448d795082
+  sni: hy.quattro-tech.ru
 - name: "🇺🇸 ⚡️ ⭐️ США, Денвер"
   type: vless
   server: 179.254.76.4
@@ -4754,6 +4766,12 @@ proxies:
   reality-opts:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
     short-id: 43dcff53849b81e6
+- name: "🇯🇵 ⚡️ ⭐️ Хабаровск - Япония #3 10G Hy2"
+  type: hysteria2
+  server: 66.90.92.54
+  port: 33443
+  password: 961fff49-4c8f-00bd-a7e2-1e448d795082
+  sni: hy.quattro-tech.ru
 - name: "🇯🇵 ⚡️ ⭐️ Хабаровск - Япония #4"
   type: vless
   server: 66.90.92.53
@@ -4796,6 +4814,12 @@ proxies:
   reality-opts:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
     short-id: 43dcff53849b81e6
+- name: "🇯🇵 ⚡️ ⭐️ Япония #3 [10G] | Hysteria2"
+  type: hysteria2
+  server: 2.27.143.122
+  port: 30443
+  password: 961fff49-4c8f-4a48-a7e2-1e448d795082
+  sni: hy.quattro-tech.ru
 - name: "🇯🇵 ⚡️ ⭐️ Япония #4"
   type: vless
   server: 166.88.229.1
@@ -4861,6 +4885,7 @@ proxy-groups:
   - "🇮🇹 🎮 ⚡️ ⭐️ Италия (Мост)"
   - "🇮🇹 🎮 ⚡️ ⭐️ Италия | Hysteria2"
   - "🇨🇦 ⚡️ ⭐️ Канада"
+  - "🇨🇦 ⚡️ ⭐️ Канада | Hysteria2"
   - "🇱🇻 🎮 ⚡️ ⭐️ Латвия"
   - "🇱🇻 🎮 ⚡️ Латвия | Hysteria2"
   - "🇳🇱 ⚡️ ⭐️ Нидерланды | Torrent ✅"
@@ -4882,6 +4907,7 @@ proxy-groups:
   - "🇷🇺 ⚡ Россия, Екатеринбург"
   - "🇷🇺 ⚡ Россия, Хабаровск"
   - "🇺🇸 ⚡️ ⭐️ США, Атланта"
+  - "🇺🇸 ⚡️ ⭐️ США, Атланта | Hysteria2"
   - "🇺🇸 ⚡️ ⭐️ США, Денвер"
   - "🇺🇸 ⚡️ ⭐️ США, Эшберн"
   - "🇫🇮 🎮 ⚡️ ⭐️ Финляндия"
@@ -5391,9 +5417,11 @@ proxy-groups:
   - "🇯🇲 Ямайка"
   - "🇯🇵 ⚡️ ⭐️ Хабаровск - Япония"
   - "🇯🇵 ⚡️ ⭐️ Хабаровск - Япония #3 [10G]"
+  - "🇯🇵 ⚡️ ⭐️ Хабаровск - Япония #3 10G Hy2"
   - "🇯🇵 ⚡️ ⭐️ Хабаровск - Япония #4"
   - "🇯🇵 ⭐️ Хабаровск - Япония #5"
   - "🇯🇵 ⚡️ ⭐️ Япония #3 [10G]"
+  - "🇯🇵 ⚡️ ⭐️ Япония #3 [10G] | Hysteria2"
   - "🇯🇵 ⚡️ ⭐️ Япония #4"
   - "💎 Авто | Самый быстрый 💎"
 
