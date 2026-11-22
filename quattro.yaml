@@ -1,5 +1,5 @@
 # quattro.yaml — auto-generated FULL config, do not edit manually
-# updated: 2026-11-22T01:20:49Z | proxies: 563 | skipped: 0
+# updated: 2026-11-22T01:47:34Z | proxies: 563 | skipped: 0
 # Use directly as a Clash/Mihomo profile, or as a proxy-provider.
 
 port: 7890
@@ -39,7 +39,7 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "🇸🇪 🎮 ⚡️ ⭐️ LTE Авто - Швеция"
   type: vless
-  server: 46.243.235.160
+  server: 78.159.240.193
   port: 443
   uuid: 961fff49-4c8f-0009-a7e2-1e448d795082
   udp: true
@@ -53,7 +53,7 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "🇩🇪 🎮 ⚡️ ⭐️ LTE Авто - Германия"
   type: vless
-  server: 46.243.235.160
+  server: 78.159.240.193
   port: 443
   uuid: 961fff49-4c8f-0012-a7e2-1e448d795082
   udp: true
@@ -95,7 +95,7 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "🇪🇪 🎮 ⚡️ ⭐️ LTE Авто - Эстония"
   type: vless
-  server: 46.243.235.160
+  server: 78.159.240.193
   port: 443
   uuid: 961fff49-4c8f-000b-a7e2-1e448d795082
   udp: true
@@ -123,7 +123,7 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "🇫🇮 🎮 ⚡️ ⭐️ LTE Авто - Финляндия"
   type: vless
-  server: 46.243.235.160
+  server: 78.159.240.193
   port: 443
   uuid: 961fff49-4c8f-000e-a7e2-1e448d795082
   udp: true
@@ -137,7 +137,7 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "🇮🇹 🎮 ⚡️ ⭐️ LTE Авто - Италия"
   type: vless
-  server: 46.243.235.160
+  server: 78.159.240.193
   port: 443
   uuid: 961fff49-4c8f-000c-a7e2-1e448d795082
   udp: true
@@ -151,7 +151,7 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "🇨🇭 ⚡️ ⭐️ LTE Авто - Швейцария"
   type: vless
-  server: 46.243.235.160
+  server: 78.159.240.193
   port: 443
   uuid: 961fff49-4c8f-0021-a7e2-1e448d795082
   udp: true
@@ -165,7 +165,7 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "🇳🇴 ⚡️ ⭐️ LTE Авто - Норвегия"
   type: vless
-  server: 46.243.235.160
+  server: 78.159.240.193
   port: 443
   uuid: 961fff49-4c8f-000d-a7e2-1e448d795082
   udp: true
@@ -179,7 +179,7 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "🇷🇺 🎮 ⚡️ ⭐️ LTE Авто - Россия"
   type: vless
-  server: 46.243.235.160
+  server: 78.159.240.193
   port: 443
   uuid: 961fff49-4c8f-0068-a7e2-1e448d795082
   udp: true
@@ -1073,7 +1073,7 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "🇷🇺 0.1X - LTE №48 - Москва"
   type: vless
-  server: 46.243.235.160
+  server: 78.159.240.193
   port: 443
   uuid: 961fff49-4c8f-0067-a7e2-1e448d795082
   udp: true
@@ -1155,7 +1155,7 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "🇷🇺 0.1X - LTE №65 - Москва"
   type: vless
-  server: 46.243.235.160
+  server: 78.159.240.193
   port: 443
   uuid: 961fff49-4c8f-0068-a7e2-1e448d795082
   udp: true
@@ -1230,7 +1230,7 @@ proxies:
   alpn: [h3]
 - name: "🇳🇱 ⚡️ ⭐️ 0.1X - LTE №91 - Torrent ✅"
   type: vless
-  server: 46.243.235.160
+  server: 78.159.240.193
   port: 443
   uuid: 961fff49-4c8f-4a48-a7e2-1e448d795082
   udp: true
@@ -1298,7 +1298,7 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "🇸🇪 🎮 ⚡️ ⭐️ 0.1X - LTE №14 - Швеция"
   type: vless
-  server: 46.243.235.160
+  server: 78.159.240.193
   port: 443
   uuid: 961fff49-4c8f-0009-a7e2-1e448d795082
   udp: true
@@ -1387,7 +1387,7 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "🇩🇪 🎮 ⚡️ ⭐️ 0.1X - LTE №102 - Германия"
   type: vless
-  server: 46.243.235.160
+  server: 78.159.240.193
   port: 443
   uuid: 961fff49-4c8f-001a-a7e2-1e448d795082
   udp: true
@@ -1455,7 +1455,7 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "🇩🇪 🎮 ⚡️ ⭐️ 0.1X - LTE №26 - Германия"
   type: vless
-  server: 46.243.235.160
+  server: 78.159.240.193
   port: 443
   uuid: 961fff49-4c8f-0012-a7e2-1e448d795082
   udp: true
@@ -1537,7 +1537,7 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "🇱🇻 🎮 ⚡️ ⭐️ 0.1X - LTE №51 - Латвия"
   type: vless
-  server: 46.243.235.160
+  server: 78.159.240.193
   port: 443
   uuid: 961fff49-4c8f-0006-a7e2-1e448d795082
   udp: true
@@ -1612,7 +1612,7 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "🇪🇪 🎮 ⚡️ ⭐️ 0.1X - LTE №84 - Эстония"
   type: vless
-  server: 46.243.235.160
+  server: 78.159.240.193
   port: 443
   uuid: 961fff49-4c8f-000a-a7e2-1e448d795082
   udp: true
@@ -1640,7 +1640,7 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "🇪🇪 🎮 ⚡️ ⭐️ 0.1X - LTE №78 - Эстония"
   type: vless
-  server: 46.243.235.160
+  server: 78.159.240.193
   port: 443
   uuid: 961fff49-4c8f-000b-a7e2-1e448d795082
   udp: true
@@ -1701,7 +1701,7 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "🇵🇱 🎮 ⚡️ ⭐️ 0.1X - LTE №104 - Польша"
   type: vless
-  server: 46.243.235.160
+  server: 78.159.240.193
   port: 443
   uuid: 961fff49-4c8f-0003-a7e2-1e448d795082
   udp: true
@@ -1767,7 +1767,7 @@ proxies:
     grpc-service-name: "x5.lk.v1.AccountService"
 - name: "🇫🇮 🎮 ⚡️ ⭐️ 0.1X - LTE №85 - Финляндия"
   type: vless
-  server: 46.243.235.160
+  server: 78.159.240.193
   port: 443
   uuid: 961fff49-4c8f-000e-a7e2-1e448d795082
   udp: true
@@ -1842,7 +1842,7 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "🇮🇹 🎮 ⚡️ ⭐️ 0.1X - LTE №86 - Италия"
   type: vless
-  server: 46.243.235.160
+  server: 78.159.240.193
   port: 443
   uuid: 961fff49-4c8f-000c-a7e2-1e448d795082
   udp: true
@@ -1931,7 +1931,7 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "🇨🇭 ⚡️ ⭐️ 0.1X - LTE №137 - Швейцария"
   type: vless
-  server: 46.243.235.160
+  server: 78.159.240.193
   port: 443
   uuid: 961fff49-4c8f-0021-a7e2-1e448d795082
   udp: true
@@ -2006,7 +2006,7 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "🇳🇴 ⚡️ ⭐️ 0.1X - LTE №53 - Норвегия"
   type: vless
-  server: 46.243.235.160
+  server: 78.159.240.193
   port: 443
   uuid: 961fff49-4c8f-000d-a7e2-1e448d795082
   udp: true
@@ -2074,7 +2074,7 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "🇹🇷 ⭐️ 0.1X - LTE №70 - Турция"
   type: vless
-  server: 46.243.235.160
+  server: 78.159.240.193
   port: 443
   uuid: 961fff49-4c8f-001d-a7e2-1e448d795082
   udp: true
@@ -2142,7 +2142,7 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "🇺🇸 ⚡️ ⭐️ 0.1X - LTE №71 - США, Эшберн"
   type: vless
-  server: 46.243.235.160
+  server: 78.159.240.193
   port: 443
   uuid: 961fff49-4c8f-0014-a7e2-1e448d795082
   udp: true
@@ -2210,7 +2210,7 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "🇺🇸 ⚡️ ⭐️ 0.1X - LTE №72 - США, Денвер"
   type: vless
-  server: 46.243.235.160
+  server: 78.159.240.193
   port: 443
   uuid: 961fff49-4c8f-0015-a7e2-1e448d795082
   udp: true
@@ -2264,7 +2264,7 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "🇺🇸 ⭐️ 0.1X - LTE №62 - США, Атланта"
   type: vless
-  server: 46.243.235.160
+  server: 78.159.240.193
   port: 443
   uuid: 961fff49-4c8f-001b-a7e2-1e448d795082
   udp: true
@@ -2332,7 +2332,7 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "🇯🇵 ⚡️ 0.1X - LTE №115 - Япония"
   type: vless
-  server: 46.243.235.160
+  server: 78.159.240.193
   port: 443
   uuid: 961fff49-4c8f-0013-a7e2-1e448d795082
   udp: true
