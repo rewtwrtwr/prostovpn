@@ -1,5 +1,5 @@
 # quattro.yaml — auto-generated FULL config, do not edit manually
-# updated: 2026-11-23T01:48:03Z | proxies: 571 | skipped: 0
+# updated: 2026-11-23T03:17:46Z | proxies: 571 | skipped: 0
 # Use directly as a Clash/Mihomo profile, or as a proxy-provider.
 
 port: 7890
@@ -1380,7 +1380,7 @@ proxies:
 - name: "🇸🇪 🎮 ⚡️ ⭐️ 0.5X - LTE №2 - Швеция"
   type: vless
   server: 178.248.236.0
-  port: 14443
+  port: 63443
   uuid: 961fff49-4c8f-0009-a7e2-1e448d795082
   udp: true
   network: grpc
@@ -1800,7 +1800,7 @@ proxies:
 - name: "🇵🇱 🎮 ⚡️ ⭐️ 0.5X - LTE №107 - Польша"
   type: vless
   server: 178.248.236.0
-  port: 60443
+  port: 65443
   uuid: 961fff49-4c8f-0003-a7e2-1e448d795082
   udp: true
   network: grpc
@@ -1948,7 +1948,7 @@ proxies:
 - name: "🇮🇹 🎮 ⚡️ ⭐️ 0.5X - LTE №111 - Италия"
   type: vless
   server: 178.248.236.0
-  port: 60443
+  port: 65443
   uuid: 961fff49-4c8f-000c-a7e2-1e448d795082
   udp: true
   network: grpc
@@ -2023,7 +2023,7 @@ proxies:
 - name: "🇨🇭 ⚡️ ⭐️ 0.5X - LTE №140 - Швейцария"
   type: vless
   server: 178.248.236.0
-  port: 60443
+  port: 57443
   uuid: 961fff49-4c8f-0021-a7e2-1e448d795082
   udp: true
   network: grpc
