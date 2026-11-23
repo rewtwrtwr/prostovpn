@@ -1,5 +1,5 @@
 # quattro.yaml — auto-generated FULL config, do not edit manually
-# updated: 2026-11-23T16:47:24Z | proxies: 571 | skipped: 0
+# updated: 2026-11-23T18:17:46Z | proxies: 571 | skipped: 0
 # Use directly as a Clash/Mihomo profile, or as a proxy-provider.
 
 port: 7890
@@ -13,18 +13,16 @@ ipv6: false
 proxies:
 - name: "🇪🇺 Авто | Самый быстрый"
   type: vless
-  server: 31.77.52.38
+  server: 89.125.99.3
   port: 443
   uuid: 961fff49-4c8f-4a48-a7e2-1e448d795082
   udp: true
-  network: tcp
+  network: grpc
   tls: true
-  servername: 102f936d0b68.j.cloudfront.hls.ttvnw.net
-  flow: xtls-rprx-vision
+  servername: lk.x5.ru
   client-fingerprint: edge
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-    short-id: 43dcff53849b81e6
+  grpc-opts:
+    grpc-service-name: "x5.lk.v1.AccountService"
 - name: "🇳🇱 ⚡️ ⭐️ LTE Авто - Нидерланды"
   type: vless
   server: 46.243.142.149
@@ -209,18 +207,16 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "⬇️ Быстрые | до 10 Гбит/с ⬇️"
   type: vless
-  server: 31.77.52.38
+  server: 89.125.99.3
   port: 443
   uuid: 961fff49-4c8f-4a48-a7e2-1e448d795082
   udp: true
-  network: tcp
+  network: grpc
   tls: true
-  servername: 76553a7dc934.j.cloudfront.hls.ttvnw.net
-  flow: xtls-rprx-vision
+  servername: lk.x5.ru
   client-fingerprint: edge
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-    short-id: 43dcff53849b81e6
+  grpc-opts:
+    grpc-service-name: "x5.lk.v1.AccountService"
 - name: "🇧🇪 ⚡️ ⭐️ Бельгия"
   type: vless
   server: 128.127.181.29
@@ -872,32 +868,28 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "⬇️ Для моб. операторов ⬇️"
   type: vless
-  server: 31.77.52.38
+  server: 89.125.99.3
   port: 443
   uuid: 961fff49-4c8f-4a48-a7e2-1e448d795082
   udp: true
-  network: tcp
+  network: grpc
   tls: true
-  servername: 102f936d0b68.j.cloudfront.hls.ttvnw.net
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-    short-id: 43dcff53849b81e6
+  servername: lk.x5.ru
+  client-fingerprint: edge
+  grpc-opts:
+    grpc-service-name: "x5.lk.v1.AccountService"
 - name: "⚠️  Если другие не работают ⚠️ "
   type: vless
-  server: 31.77.52.38
+  server: 89.125.99.3
   port: 443
   uuid: 961fff49-4c8f-4a48-a7e2-1e448d795082
   udp: true
-  network: tcp
+  network: grpc
   tls: true
-  servername: a4667769fd38.j.cloudfront.hls.ttvnw.net
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-    short-id: 43dcff53849b81e6
+  servername: lk.x5.ru
+  client-fingerprint: edge
+  grpc-opts:
+    grpc-service-name: "x5.lk.v1.AccountService"
 - name: "🇳🇱 ⚡️ ⭐️ LTE - Безлимит #1 | Torrent✅"
   type: vless
   server: 94.139.255.199
@@ -2447,18 +2439,16 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "⬇️ Остальные по алфавиту ⬇️"
   type: vless
-  server: 31.77.52.38
+  server: 89.125.99.3
   port: 443
   uuid: 961fff49-4c8f-4a48-a7e2-1e448d795082
   udp: true
-  network: tcp
+  network: grpc
   tls: true
-  servername: 1cf9ea8ea05d.j.cloudfront.hls.ttvnw.net
-  flow: xtls-rprx-vision
+  servername: lk.x5.ru
   client-fingerprint: edge
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-    short-id: 43dcff53849b81e6
+  grpc-opts:
+    grpc-service-name: "x5.lk.v1.AccountService"
 - name: "🇦🇺 Австралия"
   type: hysteria2
   server: 89.125.99.130
@@ -4847,18 +4837,16 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "💎 Авто | Самый быстрый 💎"
   type: vless
-  server: 31.77.52.38
+  server: 89.125.99.3
   port: 443
   uuid: 961fff49-4c8f-4a48-a7e2-1e448d795082
   udp: true
-  network: tcp
+  network: grpc
   tls: true
-  servername: 36bb1aff22d7.j.cloudfront.hls.ttvnw.net
-  flow: xtls-rprx-vision
+  servername: lk.x5.ru
   client-fingerprint: edge
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-    short-id: 43dcff53849b81e6
+  grpc-opts:
+    grpc-service-name: "x5.lk.v1.AccountService"
 
 proxy-groups:
 - name: AUTO
