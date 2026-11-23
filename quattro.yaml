@@ -1,5 +1,5 @@
 # quattro.yaml — auto-generated FULL config, do not edit manually
-# updated: 2026-11-23T19:47:21Z | proxies: 571 | skipped: 0
+# updated: 2026-11-23T21:17:13Z | proxies: 571 | skipped: 0
 # Use directly as a Clash/Mihomo profile, or as a proxy-provider.
 
 port: 7890
@@ -13,16 +13,18 @@ ipv6: false
 proxies:
 - name: "🇪🇺 Авто | Самый быстрый"
   type: vless
-  server: 89.125.99.3
+  server: 185.93.33.10
   port: 443
   uuid: 961fff49-4c8f-4a48-a7e2-1e448d795082
   udp: true
-  network: grpc
+  network: tcp
   tls: true
-  servername: lk.x5.ru
+  servername: 68f9cdc1134a.j.cloudfront.hls.ttvnw.net
+  flow: xtls-rprx-vision
   client-fingerprint: edge
-  grpc-opts:
-    grpc-service-name: "x5.lk.v1.AccountService"
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
 - name: "🇳🇱 ⚡️ ⭐️ LTE Авто - Нидерланды"
   type: vless
   server: 46.243.142.149
@@ -207,16 +209,18 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "⬇️ Быстрые | до 10 Гбит/с ⬇️"
   type: vless
-  server: 89.125.99.3
+  server: 185.93.33.10
   port: 443
   uuid: 961fff49-4c8f-4a48-a7e2-1e448d795082
   udp: true
-  network: grpc
+  network: tcp
   tls: true
-  servername: lk.x5.ru
+  servername: 68f9cdc1134a.j.cloudfront.hls.ttvnw.net
+  flow: xtls-rprx-vision
   client-fingerprint: edge
-  grpc-opts:
-    grpc-service-name: "x5.lk.v1.AccountService"
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
 - name: "🇧🇪 ⚡️ ⭐️ Бельгия"
   type: vless
   server: 128.127.181.29
@@ -247,7 +251,7 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "🇬🇧 ⚡️ ⭐️ Великобритания #2"
   type: vless
-  server: 23.229.7.226
+  server: 23.229.7.18
   port: 443
   uuid: 961fff49-4c8f-4a48-a7e2-1e448d795082
   udp: true
@@ -868,28 +872,32 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "⬇️ Для моб. операторов ⬇️"
   type: vless
-  server: 89.125.99.3
+  server: 185.93.33.10
   port: 443
   uuid: 961fff49-4c8f-4a48-a7e2-1e448d795082
   udp: true
-  network: grpc
+  network: tcp
   tls: true
-  servername: lk.x5.ru
+  servername: 68f9cdc1134a.j.cloudfront.hls.ttvnw.net
+  flow: xtls-rprx-vision
   client-fingerprint: edge
-  grpc-opts:
-    grpc-service-name: "x5.lk.v1.AccountService"
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
 - name: "⚠️  Если другие не работают ⚠️ "
   type: vless
-  server: 89.125.99.3
+  server: 185.93.33.10
   port: 443
   uuid: 961fff49-4c8f-4a48-a7e2-1e448d795082
   udp: true
-  network: grpc
+  network: tcp
   tls: true
-  servername: lk.x5.ru
+  servername: 68f9cdc1134a.j.cloudfront.hls.ttvnw.net
+  flow: xtls-rprx-vision
   client-fingerprint: edge
-  grpc-opts:
-    grpc-service-name: "x5.lk.v1.AccountService"
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
 - name: "🇳🇱 ⚡️ ⭐️ LTE - Безлимит #1 | Torrent✅"
   type: vless
   server: 94.139.255.199
@@ -2439,16 +2447,18 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "⬇️ Остальные по алфавиту ⬇️"
   type: vless
-  server: 89.125.99.3
+  server: 185.93.33.10
   port: 443
   uuid: 961fff49-4c8f-4a48-a7e2-1e448d795082
   udp: true
-  network: grpc
+  network: tcp
   tls: true
-  servername: lk.x5.ru
+  servername: 68f9cdc1134a.j.cloudfront.hls.ttvnw.net
+  flow: xtls-rprx-vision
   client-fingerprint: edge
-  grpc-opts:
-    grpc-service-name: "x5.lk.v1.AccountService"
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
 - name: "🇦🇺 Австралия"
   type: hysteria2
   server: 89.125.101.130
@@ -4837,16 +4847,18 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "💎 Авто | Самый быстрый 💎"
   type: vless
-  server: 89.125.99.3
+  server: 185.93.33.10
   port: 443
   uuid: 961fff49-4c8f-4a48-a7e2-1e448d795082
   udp: true
-  network: grpc
+  network: tcp
   tls: true
-  servername: lk.x5.ru
+  servername: 68f9cdc1134a.j.cloudfront.hls.ttvnw.net
+  flow: xtls-rprx-vision
   client-fingerprint: edge
-  grpc-opts:
-    grpc-service-name: "x5.lk.v1.AccountService"
+  reality-opts:
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
 
 proxy-groups:
 - name: AUTO
