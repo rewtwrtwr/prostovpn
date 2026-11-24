@@ -1,0 +1,1433 @@
+# dobro-vpn.yaml — auto-generated FULL config, do not edit manually
+# updated: 2026-11-24T11:53:38Z | proxies: 100 | skipped: 0
+# Use directly as a Clash/Mihomo profile, or as a proxy-provider.
+
+port: 7890
+socks-port: 7891
+mixed-port: 7892
+allow-lan: false
+mode: rule
+log-level: info
+ipv6: false
+
+proxies:
+- name: "🌎 Универсальный №1"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🌎 Универсальный №2"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🌎 Универсальный №3"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🌎 Универсальный №4"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🌎 Универсальный №5"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🚀 Если отключает 5-15 мин"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🇩🇪 Германия [АВТОВЫБОР ⭐]"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🇪🇺 Европа [АВТОВЫБОР ⭐]"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🇫🇮 Финляндия [АВТОВЫБОР ⭐]"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🇳🇱 Нидерланды [АВТОВЫБОР ⭐]"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🇵🇱 Польша [АВТОВЫБОР ⭐]"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🤖 Нейросети [АВТОВЫБОР⭐]"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🤖 Нейросети 🇳🇱 Нидерланды"
+  type: vless
+  server: cache-d8a529.dobry.monster
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: cache-d8a529.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: icMT3HmBcUeGk8qZEDYy8yUaEx9kyb33RvubUzZHe24
+    short-id: 41dad7aecb8f7a96
+- name: "🤖 Нейросети 🇵🇱 Польша"
+  type: vless
+  server: r-b5f92d.dobry.monster
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: r-b5f92d.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: fprAi0x1a-xmlUlI79aOLLEmiKnGJhk3sqcgfZ0YbAA
+    short-id: 877cf2b4b108f847
+- name: "🤖 Нейросети 🇫🇷 Франция"
+  type: vless
+  server: static-147efd.dobry.monster
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: static-147efd.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: cD5o2nmPHb4HeIDQRMKEys6jQFlG8mWtqYwfkBnrRXY
+    short-id: 73b702c0aefdb2f3
+- name: "🇪🇸 Испания ⚡"
+  type: vless
+  server: 179.255.189.65
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: cache-12d410.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: odLpX_cLGNemTANQ0e2OA7xzrb25zmGVD82a4aiL1UY
+    short-id: cadd3ac9087bd465
+- name: "🇮🇱 Израиль ⚡"
+  type: vless
+  server: 170.168.12.48
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: gw-2806d2.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: IlFILvjY6CfrX07XU9VJB5RZOCFGmIdsi4HIGNMV20I
+    short-id: 84d8119335f155b5
+- name: "🇸🇪 Швеция #1 ⚡"
+  type: vless
+  server: 179.254.109.142
+  port: 443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: r-se2.vless.site
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: NvR81zPpWlKZtxg86sp4mC9iVlyidq0v_rkgpSqjc1s
+    short-id: 073511c72071352f
+- name: "🇨🇭 Швейцария #1 ⚡"
+  type: vless
+  server: 179.255.191.144
+  port: 50770
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: zrh2.velravio.com
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: NYvmxMCHX_N_vEfsN_JuC-XsZOf1Yr4Laua-GUVaCWY
+    short-id: 2dca8978f4a44016
+- name: "🇺🇸 США #2 ⚡"
+  type: vless
+  server: 91.196.33.245
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: static-f10eb1.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 1eP3GDoI_LMfrUqDVcy7eubMDkWYY-4r9b3HCI3kG0Y
+    short-id: 58f0bf5679928546
+- name: "🇺🇸 США #3 ⚡"
+  type: vless
+  server: 152.234.163.21
+  port: 47262
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: nyc2.velravio.com
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: FFWySf82T7nAK0dkkB6NFMtHZItG7tj8z3J6HI-Pl0g
+    short-id: b174087b939d69ee
+- name: "🇭🇰 Гонконг #2"
+  type: vless
+  server: 85.11.161.33
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: mx-2372c3.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: H4PmdY0ne8oJz8aSYYMmbwWaPv60SOJGKvfAkndaWCc
+    short-id: c777b184dac4bb88
+- name: "🇭🇰 Гонконг #5"
+  type: vless
+  server: 170.168.24.55
+  port: 55511
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: hkg.velravio.com
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: n_SxHwiqmtfZau2jjvmSiZ6L5x2cs3hlMHfo0qAdVVk
+    short-id: 1d64fdfaf6eb065e
+- name: "🇧🇬 Болгария #1"
+  type: vless
+  server: 170.168.43.52
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: gw-6bc2fe.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: Byx9FxICwfLXVLQEK7nq4FAPmbHcotEQ__3UC_nZaV8
+    short-id: 6adca5b7d63c8c95
+- name: "🇧🇬 Болгария #2"
+  type: vless
+  server: 170.168.43.54
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: srv-b2ad02.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: Ji1gUzHsBk2FGgkX8hHvhKI9lK6jB7L2I29D4cfo4TY
+    short-id: ae820452de689316
+- name: "🇮🇹 Италия #1 ⚡"
+  type: vless
+  server: 179.255.190.30
+  port: 2087
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: cdn-330cd9.vless.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 0oHuU4mx1Uw3_lF7QZXYfwPMbuStgMRk2tk7VpCc_js
+    short-id: 6f75347fbc948997
+- name: "🇮🇹 Италия #2 ⚡"
+  type: vless
+  server: 179.255.190.30
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: mx-f763e0.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 0oHuU4mx1Uw3_lF7QZXYfwPMbuStgMRk2tk7VpCc_js
+    short-id: 6f75347fbc948997
+- name: "🇮🇹 Италия #3"
+  type: vless
+  server: 179.255.190.45
+  port: 50175
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: mil2.velravio.com
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: nhYDtNxK33mt_jhNPmrRF4nwzWTH91-Hw91CzOAnkks
+    short-id: 2d74088da3c992c6
+- name: "🇨🇦 Канада #1 ⚡"
+  type: vless
+  server: 179.255.184.6
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: r-5ae081.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: o54iCVqW9l9D7Hz9cFaysT-hon633BI8jJicRBSxNC4
+    short-id: 1e5dea3ae3cd72cb
+- name: "🇨🇦 Канада #2 ⚡"
+  type: vless
+  server: 179.255.184.27
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: node-280d5d.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: euxdU384x5_UddyM6UE4RpVRsl9Z2xFhQ-mE1ydzhnQ
+    short-id: cc838404c247aa9a
+- name: "🇨🇦 Канада #3 ⚡"
+  type: vless
+  server: 179.255.184.76
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: pop-9c0838.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 3ZG8R_gveP3LZ1QVVXobdtiSXeib3EyFbflpQve9fwc
+    short-id: 44831c5468e15724
+- name: "🇫🇷 Франция #1 ⚡"
+  type: vless
+  server: 179.255.188.77
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: cdn-e1b76d.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: x9JDUarmsyffBP0mIXAQbcW27e1CAgAiUceJatHqaAY
+    short-id: d2a2456b5e5003ec
+- name: "🇫🇷 Франция #4"
+  type: vless
+  server: 179.255.188.216
+  port: 443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: gw-b90b04.vless.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: y_61gcLdzaDjwVxW2pD0dNGf_xOW2inn9ZSEM1kM3k8
+    short-id: 2546f5bc6332bf5f
+- name: "🇫🇷 Франция #6 ⚡"
+  type: vless
+  server: static-147efd.dobry.monster
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: static-147efd.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: cD5o2nmPHb4HeIDQRMKEys6jQFlG8mWtqYwfkBnrRXY
+    short-id: 73b702c0aefdb2f3
+- name: "🇪🇪 Эстония #3"
+  type: vless
+  server: 31.56.187.246
+  port: 2087
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: r-c705dc.vless.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: C-hxC8eJRXEuP7EbLXbRMm39daqlWWHzXABSOtB7ni8
+    short-id: 6c7ed756289fb2ce
+- name: "🇳🇱 Нидерланды #6 ⚡"
+  type: vless
+  server: 156.9.124.80
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: edge-fe4eb4.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: hoF5HIPDsWCCrK98z3m24_x3y8SWaQhXO4Uq4O_Ktw8
+    short-id: 3c02afcfca91ece4
+- name: "🇪🇪 Эстония #4"
+  type: vless
+  server: 31.56.187.246
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: static-1c41bd.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: C-hxC8eJRXEuP7EbLXbRMm39daqlWWHzXABSOtB7ni8
+    short-id: ff964ccded84289c
+- name: "🇪🇪 Эстония #5"
+  type: vless
+  server: 31.56.187.246
+  port: 8765
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: r-c705dc.vless.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: dzc73376TXGhzhfPgBCYEHzUp2-cBSdCK2wgPuWNFFI
+    short-id: 6a7bd2
+- name: "🇪🇪 Эстония #15"
+  type: vless
+  server: 217.60.182.113
+  port: 45972
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: tll8.velravio.com
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: UN9I__3jkdFtbc6vAMHIFxpG3w1VK30IoWCmgAwSbEk
+    short-id: f94dd3bb14359760
+- name: "🇳🇱 Нидерланды #2 ⚡"
+  type: vless
+  server: 179.254.111.108
+  port: 443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: r-nl3.vless.site
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: NGDCTIEMyA3Rst1SCpR46MhRV1bhmjW6MaMfdSFYS08
+    short-id: e32dccf378691ace
+- name: "🇳🇱 Нидерланды #4"
+  type: vless
+  server: 2.27.71.194
+  port: 443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: cdn-24bc7b.vless.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: S3zn118rmcRfotaeT2i_Gf0uW8E231lOSiGmPb0ouA0
+    short-id: 63ef3324292c9ed8
+- name: "🇳🇱 Нидерланды #5"
+  type: vless
+  server: 2.27.71.195
+  port: 443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: cache-d17307.vless.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: ZEIY6jzjzIao_7tmt4wUZWjgG6vwfDXWR4RcKS8hWE4
+    short-id: ae90d24251ff1d56
+- name: "🇳🇱 Нидерланды #7"
+  type: vless
+  server: 147.45.218.37
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: ams1.heldivo.nl
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: s2Xs_XAxk3hXvaJMIsFYfuHiy0K5GVm3D3JJNykJcis
+    short-id: 360b43a9f4c89fc5
+- name: "🇳🇱 Нидерланды #22"
+  type: vless
+  server: 130.78.30.234
+  port: 44826
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: ams.heldivo.nl
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 5H7GYN6pH1liljAdy0UI9ZvjTWbCqjq-nPS_llGRiDg
+    short-id: bfd6bd609aa8d333
+- name: "🇳🇱 Нидерланды #10 ⚡"
+  type: vless
+  server: mx-c0c196.dobry.monster
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: mx-c0c196.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: hFgbu-PJVozuCNTH0Zi2Y1miGM_h4iARdG0pF6oNnVQ
+    short-id: 2c7abc289da4cdbd
+- name: "🇳🇱 Нидерланды #13"
+  type: vless
+  server: cache-d8a529.dobry.monster
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: cache-d8a529.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: icMT3HmBcUeGk8qZEDYy8yUaEx9kyb33RvubUzZHe24
+    short-id: 41dad7aecb8f7a96
+- name: "🇳🇱 Нидерланды #23"
+  type: vless
+  server: 170.168.43.29
+  port: 51393
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: ams2.velravio.com
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: BEIwm77Ca8YL8txr-sn5RvgzmUEXt436ICs-b2dpfnA
+    short-id: bada9e4be28ef701
+- name: "🇵🇱 Польша #6 ⚡"
+  type: vless
+  server: 213.21.232.93
+  port: 443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: node-plgen.vless.site
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: y_24-PEZZ3Gv_IDp-Y-AxJ00Bf-hQVHvVpaDDTypdDo
+    short-id: 80a7dab225c8a03c
+- name: "🇵🇱 Польша #12 ⚡"
+  type: vless
+  server: r-b5f92d.dobry.monster
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: r-b5f92d.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: fprAi0x1a-xmlUlI79aOLLEmiKnGJhk3sqcgfZ0YbAA
+    short-id: 877cf2b4b108f847
+- name: "🇵🇱 Польша #16 ⚡"
+  type: vless
+  server: 31.59.190.166
+  port: 55226
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: api.velunio.pl
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: aaFRZz51wMMDvyU7MYbcLpVhpLr8f_dunpPq-CgjDnA
+    short-id: cb4adccf88e6e40f
+- name: "🇵🇱 Польша #17"
+  type: vless
+  server: 31.59.190.167
+  port: 43786
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: static.velunio.pl
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: VtXHC4U9Zn0HG8iapP__tE3Y_LuXiVEiFv-J-7SYZ30
+    short-id: 04b1b73ba147d939
+- name: "🇵🇱 Польша #18 ⚡"
+  type: vless
+  server: 130.78.31.150
+  port: 49672
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: waw.velravio.com
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: JC9E9xTViNmlsMtF_u4CJyCXbzxwyAkECgSEq-n4Eg0
+    short-id: c4dfb48f4488682a
+- name: "🇵🇱 Польша #7 ⚡"
+  type: vless
+  server: 31.77.113.235
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: mx-2b3639.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 4-ND0iNygD3LS417b2qTqJLo-sNfMLVg_U14zqZBwns
+    short-id: 4e14a545d2b5bfef
+- name: "🇵🇱 Польша #15 ⚡"
+  type: vless
+  server: 185.16.39.146
+  port: 443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: app.velunio.pl
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: NsML9c2UwC-Xz4mndUdg43U-tlmzMkFN5hvsEi3Tbk0
+    short-id: d7acd5d92a2ad340
+- name: "🇷🇺 Новосибирск"
+  type: vless
+  server: 185.175.159.173
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: pop-ffa2ac.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: nkGZ9eEhYS86hPAPzNOgc6V9UfeczU5sQ9U5U0Z6dko
+    short-id: d36ddda50267381a
+- name: "🇷🇺 Москва #2"
+  type: vless
+  server: 138.124.14.106
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: cache-fa651e.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: SYLA1eod5D85EgvorReQFTCgI8cMKk7uZcHa016mPSo
+    short-id: 555285dc0e8a2f3e
+- name: "🇷🇺 Москва #3 ⚡"
+  type: vless
+  server: 178.236.240.147
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: gw-90cb49.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: FBKfr35R4bldR4cS4gptL4zaROwrZLs-08SBWFKX7gI
+    short-id: c46aef2de22ca26b
+- name: "🇷🇺 Москва #4"
+  type: vless
+  server: 170.168.5.2
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: gw-d018d3.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: wu_suiPQRITwyC4OaXfpquzTDzZebRKDT-i_CPT0GW4
+    short-id: 794be3fc8b29fa4d
+- name: "🇷🇺 Москва #5"
+  type: vless
+  server: 170.168.5.3
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: gw-f8e568.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: uAXIEPl2WlQTEyq9ANH5xCEyWJzkYo25vRuKGrCL3xw
+    short-id: f64a891fde10d2a9
+- name: "🇷🇺 Москва #6"
+  type: vless
+  server: 109.107.189.69
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: gw-721bd5.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: q1EhO97gyUBlF7LiAfeAESI0O2Mg95T4yIk7keOnMEE
+    short-id: 0912cc7f28aa26ba
+- name: "🇫🇮 Финляндия #1"
+  type: vless
+  server: 2.27.32.204
+  port: 2087
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: edge-b4f431.vless.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: MwpKjS0atNf-qHELOkbtp0H3Roy88Wk2qWrnS37PEwo
+    short-id: 278a58d22f21b9bd
+- name: "🇫🇮 Финляндия #2"
+  type: vless
+  server: 2.27.32.204
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: edge-fc9827.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: MwpKjS0atNf-qHELOkbtp0H3Roy88Wk2qWrnS37PEwo
+    short-id: 278a58d22f21b9bd
+- name: "🇫🇮 Финляндия #3"
+  type: vless
+  server: 31.77.202.170
+  port: 8765
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: mx-781a5b.vless.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: AyPAMP8XIRtRIagJuk5eA0AFyvZbkqrRRdMEDsD_mkQ
+    short-id: 62da72fb
+- name: "🇫🇮 Финляндия #4"
+  type: vless
+  server: 2.27.168.84
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: edge-d8446b.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: -rwQYqD7xtqjLRVQkAV5VqmXNsZjE-t3n2gE37elNCE
+    short-id: e324ed96626fad03
+- name: "🇫🇮 Финляндия #9"
+  type: vless
+  server: 109.120.151.245
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: cdn-807a4f.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: naQTUbKwGY1q6bIK5Nbv65YCJdingXXu4EHntQ9oCFg
+    short-id: a3293c1cf98be5fe
+- name: "🇫🇮 Финляндия #10"
+  type: vless
+  server: 109.120.151.242
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: node-c10ed6.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: S6KXeQc56BblFrV7dBby2oLQxTC8j_O_F_qdJsrLk10
+    short-id: c383d5f77a2d3711
+- name: "★ 🇫🇮 Финляндия #15"
+  type: vless
+  server: 191.217.252.76
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: cache-e66546.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: lTVGbgkf7mx8FJM5chgtWk3KGOUde7VexmepZU7Hc28
+    short-id: 910067ad36fd15c9
+- name: "🇫🇮 Финляндия #23"
+  type: vless
+  server: 170.168.4.48
+  port: 41226
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: hel.velravio.com
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: KcNb3jKM6j8HXm4lbM81J6igsQXFAducRG_wZBpZZxc
+    short-id: ec856e6505282c7c
+- name: "🇫🇮 Финляндия #24"
+  type: vless
+  server: 170.168.4.57
+  port: 43766
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: hel2.velravio.com
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: yD1SFVIuq6o6e7klHaogeVmspSo5MEFuMfAyFov_BHM
+    short-id: 3ea1ec331f1e5607
+- name: "🇩🇪 Германия #1"
+  type: vless
+  server: 150.241.116.91
+  port: 443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: pop-88ae19.vless.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: ECbd3w4lOTMPU5wn1VuKu2fNI3zz1DbHjPTo-jR5N3A
+    short-id: 9c2d58d5af6e449c
+- name: "🇩🇪 Германия #4 ⚡"
+  type: vless
+  server: 31.59.216.114
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: r-4bb51c.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: fpOHSPDTYhZ2w3l8XqXO9KQ2oe8q8Vd5Z9lCddhKvEE
+    short-id: fc20796143ec327c
+- name: "🇩🇪 Германия #4"
+  type: vless
+  server: 31.77.135.213
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: r-512c2d.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: xFuOMoTKP-IiO2FT57-j_MgxRrYDZvydp91o-v3w6mQ
+    short-id: a53258a5afd8335b
+- name: "🇩🇪 Германия #5"
+  type: vless
+  server: 217.60.151.112
+  port: 443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: cdn-de2ex.vless.site
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: n46dvwisgh_KfebgahaGnDQI-gePhm3sos9rXJOnsUo
+    short-id: e8a1f37bd729aca8
+- name: "🇩🇪 Германия #8 ⚡"
+  type: vless
+  server: 31.77.106.94
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: gw-9c2163.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: uQWICZuKOepToITQZUuaugAAxF7WB93Np82AmFzcHXw
+    short-id: 4da9245d68b396a6
+- name: "🇩🇪 Германия #19"
+  type: vless
+  server: 201.8.89.126
+  port: 41926
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: fra3.lunwerk.de
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: RewhgyZ8FC3ofWv_YEomM3XUhsl3AfMxsmrpY2DA6C4
+    short-id: 65ad5e07040c5f9b
+- name: "🇩🇪 Германия #20"
+  type: vless
+  server: 201.8.89.125
+  port: 44804
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: fra1.lunwerk.de
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 7eOAdmziz5xWQv0TE42ZJ4bWn_u3S1_WeWBe24bN5kQ
+    short-id: ea39f6b0e9f32853
+- name: "🇩🇪 Германия #22"
+  type: vless
+  server: 217.60.179.138
+  port: 54334
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: fra5.lunwerk.de
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 51XmrDfwxR68TPOkDcUOpxQ42ord67iCx0lQMbXlNEA
+    short-id: 1e743c114eaf0646
+- name: "🇩🇪 Германия #18 ⚡"
+  type: vless
+  server: 151.243.150.210
+  port: 443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: app.lunwerk.de
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 1-W0XMfZxBv410pnRwyAWR9W-qSXBoTw7hAFHqB8j18
+    short-id: b6f7b6c0a940d686
+- name: "🇪🇺 Белые списки [АВТОВЫБОР ⭐]"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🇩🇪 Белые списки · Германия 23 🔥"
+  type: vless
+  server: 185.178.208.167
+  port: 443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: www.cbr.ru
+  client-fingerprint: firefox
+  alpn: [h2]
+  grpc-opts:
+    grpc-service-name: "media.session.poll"
+- name: "🇩🇪 Белые списки · Германия 17 🔥"
+  type: vless
+  server: 185.178.208.167
+  port: 443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: ws
+  tls: true
+  servername: cbr.ru
+  client-fingerprint: firefox
+  alpn: [http/1.1]
+  ws-opts:
+    path: "/shop/queue/events"
+    headers:
+      Host: "dmjie.com."
+- name: "🇩🇪 Белые списки · Германия 18 🔥"
+  type: vless
+  server: 185.178.208.167
+  port: 443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: xhttp
+  tls: true
+  servername: cbr.ru
+  client-fingerprint: firefox
+  alpn: [h2]
+- name: "🇫🇮 Белые списки · Финляндия 14 🔥"
+  type: vless
+  server: 79.174.92.157
+  port: 4443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: ya.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: BnfXH9BDJsOTsXJ9wz7Oeq4JKVnVZdnimRt78YFgRSc
+    short-id: 10be60abad44984e
+- name: "🇩🇪 Белые списки · Германия 28 🔥"
+  type: vless
+  server: 79.174.92.157
+  port: 4444
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: xhttp
+  tls: true
+  servername: ya.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: BnfXH9BDJsOTsXJ9wz7Oeq4JKVnVZdnimRt78YFgRSc
+    short-id: 44fdc6adc279199e
+- name: "🇳🇱 Белые списки · Нидерланды 8 🔥"
+  type: vless
+  server: 79.174.92.157
+  port: 4451
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: ya.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: BnfXH9BDJsOTsXJ9wz7Oeq4JKVnVZdnimRt78YFgRSc
+    short-id: 10be60abad44984e
+- name: "🇵🇱 Белые списки · Польша 11 🔥"
+  type: vless
+  server: 79.174.92.157
+  port: 4452
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: ya.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: BnfXH9BDJsOTsXJ9wz7Oeq4JKVnVZdnimRt78YFgRSc
+    short-id: 10be60abad44984e
+- name: "🇫🇮 Белые списки · Финляндия 3"
+  type: vless
+  server: 79.174.92.157
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: ok.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: BnfXH9BDJsOTsXJ9wz7Oeq4JKVnVZdnimRt78YFgRSc
+    short-id: 10be60abad44984e
+- name: "🇳🇱 Белые списки · Нидерланды 1"
+  type: vless
+  server: 79.174.92.157
+  port: 2083
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: ok.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: BnfXH9BDJsOTsXJ9wz7Oeq4JKVnVZdnimRt78YFgRSc
+    short-id: f05aead9831040ae
+- name: "🇩🇪 Белые списки · Германия 3"
+  type: vless
+  server: 79.174.92.157
+  port: 8444
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: ok.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: BnfXH9BDJsOTsXJ9wz7Oeq4JKVnVZdnimRt78YFgRSc
+    short-id: ebb64b197540187f
+- name: "🇵🇱 Белые списки · Польша 4"
+  type: vless
+  server: 79.174.92.157
+  port: 9443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: ok.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: BnfXH9BDJsOTsXJ9wz7Oeq4JKVnVZdnimRt78YFgRSc
+    short-id: 042ef89b3fcf2ce8
+- name: "🇫🇮 Белые списки · Финляндия 1"
+  type: vless
+  server: 87.228.32.195
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.rutube.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 1ybyzbrhLRTR6tVC9w3IrNSuAPQG7KUJpzfUztUnYTc
+    short-id: 6de5bbcd91609d2f
+- name: "🇩🇪 Белые списки · Германия 1"
+  type: vless
+  server: 87.228.32.195
+  port: 8444
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: www.rutube.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 1ybyzbrhLRTR6tVC9w3IrNSuAPQG7KUJpzfUztUnYTc
+    short-id: bf5ab39131c42816
+- name: "🇫🇮 Белые списки · Финляндия 10 🔥"
+  type: vless
+  server: 188.225.25.211
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: ok.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: lsNHZioixT8PEzz5NMKB0KhvVAT1taqbWhkVZ5bMzhU
+    short-id: b47aa0f4079793bd
+- name: "🇫🇮 Белые списки · Финляндия 11 🔥"
+  type: vless
+  server: 188.225.25.211
+  port: 2096
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: xhttp
+  tls: true
+  servername: ok.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: lsNHZioixT8PEzz5NMKB0KhvVAT1taqbWhkVZ5bMzhU
+    short-id: 85fbefdcd311ae12
+- name: "🇩🇪 Белые списки · Германия 24 🔥"
+  type: vless
+  server: 188.225.25.211
+  port: 8444
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: ok.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: lsNHZioixT8PEzz5NMKB0KhvVAT1taqbWhkVZ5bMzhU
+    short-id: b6a8a86920815c2e
+- name: "🇩🇪 Белые списки · Германия 25 🔥"
+  type: vless
+  server: 188.225.25.211
+  port: 2087
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: xhttp
+  tls: true
+  servername: ok.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: lsNHZioixT8PEzz5NMKB0KhvVAT1taqbWhkVZ5bMzhU
+    short-id: 1b9603ce840c0cf8
+- name: "🇳🇱 Белые списки · Нидерланды 4 🔥"
+  type: vless
+  server: 188.225.25.211
+  port: 2083
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: ok.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: lsNHZioixT8PEzz5NMKB0KhvVAT1taqbWhkVZ5bMzhU
+    short-id: 1123674443207037
+- name: "🇳🇱 Белые списки · Нидерланды 5 🔥"
+  type: vless
+  server: 188.225.25.211
+  port: 2053
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: xhttp
+  tls: true
+  servername: ok.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: lsNHZioixT8PEzz5NMKB0KhvVAT1taqbWhkVZ5bMzhU
+    short-id: 4fce1f50632d4e11
+- name: "🇵🇱 Белые списки · Польша 7 🔥"
+  type: vless
+  server: 188.225.25.211
+  port: 9443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: ok.ru
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: lsNHZioixT8PEzz5NMKB0KhvVAT1taqbWhkVZ5bMzhU
+    short-id: 2be542a059cfce98
+- name: "🇵🇱 Белые списки · Польша 8 🔥"
+  type: vless
+  server: 188.225.25.211
+  port: 8880
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: xhttp
+  tls: true
+  servername: ok.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: lsNHZioixT8PEzz5NMKB0KhvVAT1taqbWhkVZ5bMzhU
+    short-id: 0f81480e0db7e9c5
+
+proxy-groups:
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  lazy: true
+  proxies:
+  - "🌎 Универсальный №1"
+  - "🌎 Универсальный №2"
+  - "🌎 Универсальный №3"
+  - "🌎 Универсальный №4"
+  - "🌎 Универсальный №5"
+  - "🚀 Если отключает 5-15 мин"
+  - "🇩🇪 Германия [АВТОВЫБОР ⭐]"
+  - "🇪🇺 Европа [АВТОВЫБОР ⭐]"
+  - "🇫🇮 Финляндия [АВТОВЫБОР ⭐]"
+  - "🇳🇱 Нидерланды [АВТОВЫБОР ⭐]"
+  - "🇵🇱 Польша [АВТОВЫБОР ⭐]"
+  - "🤖 Нейросети [АВТОВЫБОР⭐]"
+  - "🤖 Нейросети 🇳🇱 Нидерланды"
+  - "🤖 Нейросети 🇵🇱 Польша"
+  - "🤖 Нейросети 🇫🇷 Франция"
+  - "🇪🇸 Испания ⚡"
+  - "🇮🇱 Израиль ⚡"
+  - "🇸🇪 Швеция #1 ⚡"
+  - "🇨🇭 Швейцария #1 ⚡"
+  - "🇺🇸 США #2 ⚡"
+  - "🇺🇸 США #3 ⚡"
+  - "🇭🇰 Гонконг #2"
+  - "🇭🇰 Гонконг #5"
+  - "🇧🇬 Болгария #1"
+  - "🇧🇬 Болгария #2"
+  - "🇮🇹 Италия #1 ⚡"
+  - "🇮🇹 Италия #2 ⚡"
+  - "🇮🇹 Италия #3"
+  - "🇨🇦 Канада #1 ⚡"
+  - "🇨🇦 Канада #2 ⚡"
+  - "🇨🇦 Канада #3 ⚡"
+  - "🇫🇷 Франция #1 ⚡"
+  - "🇫🇷 Франция #4"
+  - "🇫🇷 Франция #6 ⚡"
+  - "🇪🇪 Эстония #3"
+  - "🇳🇱 Нидерланды #6 ⚡"
+  - "🇪🇪 Эстония #4"
+  - "🇪🇪 Эстония #5"
+  - "🇪🇪 Эстония #15"
+  - "🇳🇱 Нидерланды #2 ⚡"
+  - "🇳🇱 Нидерланды #4"
+  - "🇳🇱 Нидерланды #5"
+  - "🇳🇱 Нидерланды #7"
+  - "🇳🇱 Нидерланды #22"
+  - "🇳🇱 Нидерланды #10 ⚡"
+  - "🇳🇱 Нидерланды #13"
+  - "🇳🇱 Нидерланды #23"
+  - "🇵🇱 Польша #6 ⚡"
+  - "🇵🇱 Польша #12 ⚡"
+  - "🇵🇱 Польша #16 ⚡"
+  - "🇵🇱 Польша #17"
+  - "🇵🇱 Польша #18 ⚡"
+  - "🇵🇱 Польша #7 ⚡"
+  - "🇵🇱 Польша #15 ⚡"
+  - "🇷🇺 Новосибирск"
+  - "🇷🇺 Москва #2"
+  - "🇷🇺 Москва #3 ⚡"
+  - "🇷🇺 Москва #4"
+  - "🇷🇺 Москва #5"
+  - "🇷🇺 Москва #6"
+  - "🇫🇮 Финляндия #1"
+  - "🇫🇮 Финляндия #2"
+  - "🇫🇮 Финляндия #3"
+  - "🇫🇮 Финляндия #4"
+  - "🇫🇮 Финляндия #9"
+  - "🇫🇮 Финляндия #10"
+  - "★ 🇫🇮 Финляндия #15"
+  - "🇫🇮 Финляндия #23"
+  - "🇫🇮 Финляндия #24"
+  - "🇩🇪 Германия #1"
+  - "🇩🇪 Германия #4 ⚡"
+  - "🇩🇪 Германия #4"
+  - "🇩🇪 Германия #5"
+  - "🇩🇪 Германия #8 ⚡"
+  - "🇩🇪 Германия #19"
+  - "🇩🇪 Германия #20"
+  - "🇩🇪 Германия #22"
+  - "🇩🇪 Германия #18 ⚡"
+  - "🇪🇺 Белые списки [АВТОВЫБОР ⭐]"
+  - "🇩🇪 Белые списки · Германия 23 🔥"
+  - "🇩🇪 Белые списки · Германия 17 🔥"
+  - "🇩🇪 Белые списки · Германия 18 🔥"
+  - "🇫🇮 Белые списки · Финляндия 14 🔥"
+  - "🇩🇪 Белые списки · Германия 28 🔥"
+  - "🇳🇱 Белые списки · Нидерланды 8 🔥"
+  - "🇵🇱 Белые списки · Польша 11 🔥"
+  - "🇫🇮 Белые списки · Финляндия 3"
+  - "🇳🇱 Белые списки · Нидерланды 1"
+  - "🇩🇪 Белые списки · Германия 3"
+  - "🇵🇱 Белые списки · Польша 4"
+  - "🇫🇮 Белые списки · Финляндия 1"
+  - "🇩🇪 Белые списки · Германия 1"
+  - "🇫🇮 Белые списки · Финляндия 10 🔥"
+  - "🇫🇮 Белые списки · Финляндия 11 🔥"
+  - "🇩🇪 Белые списки · Германия 24 🔥"
+  - "🇩🇪 Белые списки · Германия 25 🔥"
+  - "🇳🇱 Белые списки · Нидерланды 4 🔥"
+  - "🇳🇱 Белые списки · Нидерланды 5 🔥"
+  - "🇵🇱 Белые списки · Польша 7 🔥"
+  - "🇵🇱 Белые списки · Польша 8 🔥"
+
+- name: SELECT
+  type: select
+  proxies:
+  - AUTO
+  - DIRECT
+
+rules:
+- GEOIP,private,DIRECT,no-resolve
+- MATCH,SELECT
