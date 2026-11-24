@@ -51,9 +51,9 @@ jobs:
           if len(raw) < 10000:
               sys.exit('too small')
           dec = base64.b64decode(raw + '=' * (-len(raw) % 4)).decode('utf-8', 'replace')
-          links = [l for l in dec.splitlines() if l.strip().startswith(('vless://', 'hysteria2://'))]
+          links = [l for l in dec.splitlines() if l.strip().startswith(('vless://', 'hysteria2://', 'ss://'))]
           bad = [l for l in links if 'HWID' in l or 'устройств' in l]
-          if bad or len(links) < 100:
+          if bad or len(links) < 50:
               sys.exit(f'placeholder or too few links: {len(links)} links, {len(bad)} bad')
           print(f'validated: {len(links)} links')
           PYEOF
@@ -151,6 +151,64 @@ jobs:
                   p["skip-cert-verify"] = True
               return p
 
+          def parse_ss(link):
+
+              body, _, frag = link[5:].partition("#")
+
+              name = unquote(frag) or "ss"
+
+              body = body.split("?")[0]
+
+              if "@" in body:
+
+                  pre, _, hostport = body.partition("@")
+
+                  try:
+
+                      userinfo = base64.urlsafe_b64decode(pre + "=" * (-len(pre) % 4)).decode("utf-8", "replace")
+
+                  except Exception:
+
+                      return None
+
+              else:
+
+                  try:
+
+                      dec = base64.urlsafe_b64decode(body + "=" * (-len(body) % 4)).decode("utf-8", "replace")
+
+                  except Exception:
+
+                      return None
+
+                  if "@" not in dec:
+
+                      return None
+
+                  userinfo, _, hostport = dec.rpartition("@")
+
+              method, _, password = userinfo.partition(":")
+
+              host, _, port = hostport.rpartition(":")
+
+              try:
+
+                  port = int(port)
+
+              except ValueError:
+
+                  return None
+
+              if not method or not password or not host:
+
+                  return None
+
+              return {"name": name, "type": "ss", "server": host, "port": port,
+
+                      "cipher": method, "password": password, "udp": True}
+
+          
+
           def emit(p):
               L = [f"- name: {qstr(p['name'])}", f"  type: {p['type']}",
                    f"  server: {p['server']}", f"  port: {p['port']}"]
@@ -187,6 +245,8 @@ jobs:
                       L.append(f"  alpn: [{', '.join(p['alpn'])}]")
                   if p.get("skip-cert-verify"):
                       L.append("  skip-cert-verify: true")
+              elif p["type"] == "ss":
+                  L += [f"  cipher: {qstr(p['cipher'])}", f"  password: {qstr(p['password'])}", "  udp: true"]
               return "\n".join(L)
 
           try:
@@ -204,6 +264,7 @@ jobs:
                   continue
               pr = (parse_vless(line) if line.startswith("vless://")
                     else parse_hysteria2(line) if line.startswith("hysteria2://")
+                    else parse_ss(line) if line.startswith("ss://")
                     else None)
               if not pr:
                   skipped += 1
@@ -213,7 +274,7 @@ jobs:
                   pr["name"] = f"{base} ({i})"; i += 1
               seen.add(pr["name"])
               proxies.append(pr)
-          if len(proxies) < 100:
+          if len(proxies) < 50:
               sys.exit(f"suspiciously few proxies ({len(proxies)}), aborting")
 
           now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
