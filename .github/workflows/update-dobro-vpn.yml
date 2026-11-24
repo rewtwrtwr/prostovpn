@@ -7,6 +7,9 @@
 #  в лимит устройств. Автообновление каждые 1.5 часа.
 #  Конвертирует base64 -> Clash YAML локально, без лишних запросов.
 #  Генерирует ПОЛНЫЙ конфиг (proxies + proxy-groups + rules).
+#  Плюс обычная подписка dobro.txt (base64-список ссылок) — тот формат,
+#  который понимают все клиенты (Happ, v2rayNG, NekoBox, INCY и т.п.),
+#  как у Quattro и остальных провайдеров.
 # ============================================================================
 name: Update dobro-vpn.yaml
 
@@ -321,15 +324,28 @@ jobs:
           print(f"wrote {OUT}: {len(proxies)} proxies, {skipped} skipped (full config)")
           PYEOF
 
+      - name: Publish plain subscription (dobro.txt)
+        run: |
+          python3 <<'PYEOF'
+          import base64, sys
+          raw = open('dobro.b64', encoding='utf-8').read().strip()
+          dec = base64.b64decode(raw + '=' * (-len(raw) % 4)).decode('utf-8', 'replace')
+          links = [l.strip() for l in dec.splitlines() if l.strip().startswith(('vless://', 'hysteria2://', 'ss://'))]
+          if len(links) < 50:
+              sys.exit(f'too few links for dobro.txt: {len(links)}')
+          open('dobro.txt', 'w', encoding='utf-8').write(base64.b64encode('\n'.join(links).encode('utf-8')).decode('ascii'))
+          print(f'wrote dobro.txt: {len(links)} links')
+          PYEOF
+
       - name: Commit and push if changed
         run: |
           git config user.name "dobro-vpn-autoupdate"
           git config user.email "dobro-vpn-autoupdate@users.noreply.github.com"
-          git add dobro.b64 dobro-vpn.yaml
+          git add dobro.b64 dobro-vpn.yaml dobro.txt
           if git diff --cached --quiet; then
             echo "no changes, skipping commit"
           else
-            git commit -m "auto-update dobro-vpn.yaml (full config) $(date -u +%Y-%m-%dT%H:%MZ)"
+            git commit -m "auto-update dobro-vpn.yaml + dobro.txt $(date -u +%Y-%m-%dT%H:%MZ)"
             ok=0
             for i in 1 2 3 4 5; do
               if git push; then ok=1; echo "pushed on attempt $i"; break; fi
@@ -345,3 +361,5 @@ jobs:
         run: |
           curl -s -o /dev/null -w "purge http: %{http_code}\n" \
             "https://purge.jsdelivr.net/gh/rewtwrtwr/prostovpn@main/dobro-vpn.yaml"
+          curl -s -o /dev/null -w "purge http: %{http_code}\n" \
+            "https://purge.jsdelivr.net/gh/rewtwrtwr/prostovpn@main/dobro.txt"
