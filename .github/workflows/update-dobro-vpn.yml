@@ -4,7 +4,7 @@
 #  Секреты репозитория: DOBROVPN_URL — ссылка подписки,
 #  DOBRO_HWID — HWID зарегистрированного устройства. Панель требует
 #  заголовок X-HWID: без него отдаёт заглушки, случайный HWID упрётся
-#  в лимит устройств. Автообновление каждые 1.5 часа.
+#  в лимит устройств. Автообновление каждые 6 часов.
 #  Конвертирует base64 -> Clash YAML локально, без лишних запросов.
 #  Генерирует ПОЛНЫЙ конфиг (proxies + proxy-groups + rules).
 #  Плюс обычная подписка dobro.txt (base64-список ссылок) — тот формат,
@@ -15,9 +15,8 @@ name: Update dobro-vpn.yaml
 
 on:
   schedule:
-    # every 1.5 hours: :17 of hours 0,3,6,... and :47 of hours 1,4,7,...
-    - cron: '17 */3 * * *'
-    - cron: '47 1,4,7,10,13,16,19,22 * * *'
+    # every 6 hours: :17 of hours 0,6,12,18
+    - cron: '17 */6 * * *'
   push:
     paths:
       - dobro.b64        # legacy trigger: push of the PC script (fallback path)
