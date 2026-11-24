@@ -1,5 +1,5 @@
 # dobro-vpn.yaml — auto-generated FULL config, do not edit manually
-# updated: 2026-11-24T11:53:38Z | proxies: 100 | skipped: 0
+# updated: 2026-11-24T12:04:33Z | proxies: 100 | skipped: 0
 # Use directly as a Clash/Mihomo profile, or as a proxy-provider.
 
 port: 7890
@@ -207,7 +207,7 @@ proxies:
   reality-opts:
     public-key: 1eP3GDoI_LMfrUqDVcy7eubMDkWYY-4r9b3HCI3kG0Y
     short-id: 58f0bf5679928546
-- name: "🇺🇸 США #3 ⚡"
+- name: "🇺🇸 США #3"
   type: vless
   server: 152.234.163.21
   port: 47262
@@ -389,7 +389,7 @@ proxies:
   reality-opts:
     public-key: y_61gcLdzaDjwVxW2pD0dNGf_xOW2inn9ZSEM1kM3k8
     short-id: 2546f5bc6332bf5f
-- name: "🇫🇷 Франция #6 ⚡"
+- name: "🇫🇷 Франция #6"
   type: vless
   server: static-147efd.dobry.monster
   port: 8443
@@ -1341,7 +1341,7 @@ proxy-groups:
   - "🇸🇪 Швеция #1 ⚡"
   - "🇨🇭 Швейцария #1 ⚡"
   - "🇺🇸 США #2 ⚡"
-  - "🇺🇸 США #3 ⚡"
+  - "🇺🇸 США #3"
   - "🇭🇰 Гонконг #2"
   - "🇭🇰 Гонконг #5"
   - "🇧🇬 Болгария #1"
@@ -1354,7 +1354,7 @@ proxy-groups:
   - "🇨🇦 Канада #3 ⚡"
   - "🇫🇷 Франция #1 ⚡"
   - "🇫🇷 Франция #4"
-  - "🇫🇷 Франция #6 ⚡"
+  - "🇫🇷 Франция #6"
   - "🇪🇪 Эстония #3"
   - "🇳🇱 Нидерланды #6 ⚡"
   - "🇪🇪 Эстония #4"
