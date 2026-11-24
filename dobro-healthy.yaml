@@ -1,0 +1,257 @@
+# dobro-healthy.yaml — auto-generated, do not edit manually
+# updated: 2026-11-24T19:05:17Z | healthy: 15 of 16 candidates (100% uptime 30d + live check passed)
+# Only nodes with 100% 30-day uptime on status.azmov.site AND a passing live REALITY tunnel test. Games and LTE excluded.
+
+port: 7890
+socks-port: 7891
+mixed-port: 7892
+allow-lan: false
+mode: rule
+log-level: info
+ipv6: false
+
+proxies:
+- name: "🇺🇸 США #3 ⚡"
+  type: vless
+  server: 152.234.163.21
+  port: 47262
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: nyc2.velravio.com
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: FFWySf82T7nAK0dkkB6NFMtHZItG7tj8z3J6HI-Pl0g
+    short-id: b174087b939d69ee
+- name: "★ 🇩🇪 Германия #25"
+  type: vless
+  server: 195.10.227.209
+  port: 43612
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: cdn-b157da.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: FRfIRADf6HWA1ab5mi38FGbJPLHNzjDs2cuEMS5Smjs
+    short-id: 1a7510abb970ca4b
+- name: "🇩🇪 Германия #20"
+  type: vless
+  server: 201.8.89.125
+  port: 44804
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: fra1.lunwerk.de
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 7eOAdmziz5xWQv0TE42ZJ4bWn_u3S1_WeWBe24bN5kQ
+    short-id: ea39f6b0e9f32853
+- name: "🇩🇪 Германия #19"
+  type: vless
+  server: 201.8.89.126
+  port: 41926
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: fra3.lunwerk.de
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: RewhgyZ8FC3ofWv_YEomM3XUhsl3AfMxsmrpY2DA6C4
+    short-id: 65ad5e07040c5f9b
+- name: "🇩🇪 Германия #18 ⚡"
+  type: vless
+  server: 151.243.150.210
+  port: 443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: app.lunwerk.de
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 1-W0XMfZxBv410pnRwyAWR9W-qSXBoTw7hAFHqB8j18
+    short-id: b6f7b6c0a940d686
+- name: "🇩🇪 Германия #4 ⚡"
+  type: vless
+  server: 31.59.216.114
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: r-4bb51c.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: fpOHSPDTYhZ2w3l8XqXO9KQ2oe8q8Vd5Z9lCddhKvEE
+    short-id: fc20796143ec327c
+- name: "🇨🇭 Швейцария #1 ⚡"
+  type: vless
+  server: 179.255.191.144
+  port: 50770
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: zrh2.velravio.com
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: NYvmxMCHX_N_vEfsN_JuC-XsZOf1Yr4Laua-GUVaCWY
+    short-id: 2dca8978f4a44016
+- name: "🇳🇱 Нидерланды #7"
+  type: vless
+  server: 147.45.218.37
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: ams1.heldivo.nl
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: s2Xs_XAxk3hXvaJMIsFYfuHiy0K5GVm3D3JJNykJcis
+    short-id: 360b43a9f4c89fc5
+- name: "🇵🇱 Польша #16"
+  type: vless
+  server: 31.59.190.166
+  port: 55226
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: api.velunio.pl
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: aaFRZz51wMMDvyU7MYbcLpVhpLr8f_dunpPq-CgjDnA
+    short-id: cb4adccf88e6e40f
+- name: "🇳🇱 Нидерланды #22"
+  type: vless
+  server: 130.78.30.234
+  port: 44826
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: ams.heldivo.nl
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 5H7GYN6pH1liljAdy0UI9ZvjTWbCqjq-nPS_llGRiDg
+    short-id: bfd6bd609aa8d333
+- name: "★ 🇩🇪 Германия #27 ⚡"
+  type: vless
+  server: 195.10.227.31
+  port: 45258
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: pop-df83fe.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: mRBZKUmjydr4LYZz8neiWkL98hh0fxIaH84Hop4LHSw
+    short-id: 8f479c254a76af48
+- name: "🇳🇱 Нидерланды #2 ⚡"
+  type: vless
+  server: 179.254.111.108
+  port: 443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: r-nl3.vless.site
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: NGDCTIEMyA3Rst1SCpR46MhRV1bhmjW6MaMfdSFYS08
+    short-id: e32dccf378691ace
+- name: "🇵🇱 Польша #17"
+  type: vless
+  server: 31.59.190.167
+  port: 43786
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: static.velunio.pl
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: VtXHC4U9Zn0HG8iapP__tE3Y_LuXiVEiFv-J-7SYZ30
+    short-id: 04b1b73ba147d939
+- name: "🇭🇰 Гонконг #2"
+  type: vless
+  server: 85.11.161.33
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: mx-2372c3.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: H4PmdY0ne8oJz8aSYYMmbwWaPv60SOJGKvfAkndaWCc
+    short-id: c777b184dac4bb88
+- name: "🇩🇪 Германия #4"
+  type: vless
+  server: 31.77.135.213
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: r-512c2d.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: xFuOMoTKP-IiO2FT57-j_MgxRrYDZvydp91o-v3w6mQ
+    short-id: a53258a5afd8335b
+
+proxy-groups:
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  lazy: true
+  proxies:
+  - "🇺🇸 США #3 ⚡"
+  - "★ 🇩🇪 Германия #25"
+  - "🇩🇪 Германия #20"
+  - "🇩🇪 Германия #19"
+  - "🇩🇪 Германия #18 ⚡"
+  - "🇩🇪 Германия #4 ⚡"
+  - "🇨🇭 Швейцария #1 ⚡"
+  - "🇳🇱 Нидерланды #7"
+  - "🇵🇱 Польша #16"
+  - "🇳🇱 Нидерланды #22"
+  - "★ 🇩🇪 Германия #27 ⚡"
+  - "🇳🇱 Нидерланды #2 ⚡"
+  - "🇵🇱 Польша #17"
+  - "🇭🇰 Гонконг #2"
+  - "🇩🇪 Германия #4"
+
+- name: SELECT
+  type: select
+  proxies:
+  - AUTO
+  - DIRECT
+
+rules:
+- GEOIP,private,DIRECT,no-resolve
+- MATCH,SELECT
