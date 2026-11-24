@@ -1,0 +1,92 @@
+# ============================================================================
+#  ФАЙЛ: .github/workflows/dobro-health-relaxed.yml  (в репозитории rewtwrtwr/prostovpn)
+#  "Расслабленный" health-check подписки ДоброВПН.
+#
+#  Отличие от строгой версии (dobro-health.yml):
+#    - НЕ требует 100% аптайм. Берутся узлы с d30 >= 90% (MIN_UPTIME).
+#      Это ~96 кандидатов вместо 15 — большой пул для выбора лучших.
+#    - Ранжирование: сначала по СКОРОСТИ (больше — лучше), потом по задержке.
+#    - Узлы со скоростью ниже 5 Мбит/с в файл НЕ попадают.
+#    - RU-гарантия сохранена (лучшие RU-узлы, цель 3).
+#
+#  Что делает (раз в 6 часов + вручную):
+#    1. Берёт узлы из dobro.b64 (зеркало подписки).
+#    2. Качает https://status.azmov.site/data/status.json и отбирает серверы
+#       с d30 >= 90%. Игровые (group 'games') и LTE исключаются.
+#    3. Каждый такой узел живо тестирует через xray-core на раннере.
+#    4. В dobro-relaxed.yaml и dobro-relaxed.txt пишет ТОЛЬКО узлы,
+#       которые прошли живую проверку И имеют скорость >= 5 Мбит/с.
+#       Плюс отчёт dobro-relaxed.md с таблицей.
+#  Fail-closed: если живых узлов 0 — старые relaxed-файлы не трогаются.
+#  Тест идёт с раннера GitHub (дата-центр), а не из Севастополя, поэтому
+#  цифры задержки/скорости — это проверка живости сервера, а не точный
+#  замер для домашнего канала.
+# ============================================================================
+name: DobroVPN relaxed check
+
+on:
+  schedule:
+    # каждые 6 часов, в :30, со сдвигом 3 часа от строгой проверки
+    # (строгая: 0,6,12,18 UTC; relaxed: 3,9,15,21 UTC)
+    - cron: '30 3,9,15,21 * * *'
+  workflow_dispatch:       # кнопка ручного запуска во вкладке Actions
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dobro-health-relaxed
+  cancel-in-progress: false
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install xray-core
+        run: |
+          XRAY_VER="v26.11.9"
+          curl -sL --max-time 120 -o /tmp/xray.zip \
+            "https://github.com/XTLS/Xray-core/releases/download/${XRAY_VER}/Xray-linux-64.zip"
+          unzip -o -q /tmp/xray.zip -d /tmp/xray-bin xray
+          chmod +x /tmp/xray-bin/xray
+          /tmp/xray-bin/xray version | head -1
+
+      - name: Run relaxed health check
+        run: |
+          python3 scripts/dobro_health_relaxed.py \
+            --xray /tmp/xray-bin/xray \
+            --b64 dobro.b64 \
+            --out-dir . \
+            --tmpdir /tmp/dobro-health-relaxed
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "dobro-health-auto"
+          git config user.email "dobro-health-auto@users.noreply.github.com"
+          git add dobro-relaxed.yaml dobro-relaxed.txt dobro-relaxed.md
+          if git diff --cached --quiet; then
+            echo "no changes, skipping commit"
+          else
+            git commit -m "auto-update dobro-relaxed.* $(date -u +%Y-%m-%dT%H:%MZ)"
+            ok=0
+            for i in 1 2 3 4 5; do
+              if git push; then ok=1; echo "pushed on attempt $i"; break; fi
+              echo "push rejected (attempt $i) - fetching and rebasing onto origin/main"
+              git fetch origin main
+              git rebase origin/main || { git rebase --abort; exit 1; }
+              sleep 5
+            done
+            if [ "$ok" != "1" ]; then echo "push failed after retries"; exit 1; fi
+          fi
+
+      - name: Purge jsDelivr cache
+        run: |
+          curl -s -o /dev/null -w "purge relaxed.yaml http: %{http_code}\n" \
+            "https://purge.jsdelivr.net/gh/rewtwrtwr/prostovpn@main/dobro-relaxed.yaml"
+          curl -s -o /dev/null -w "purge relaxed.txt http: %{http_code}\n" \
+            "https://purge.jsdelivr.net/gh/rewtwrtwr/prostovpn@main/dobro-relaxed.txt"
+          curl -s -o /dev/null -w "purge relaxed.md http: %{http_code}\n" \
+            "https://purge.jsdelivr.net/gh/rewtwrtwr/prostovpn@main/dobro-relaxed.md"
