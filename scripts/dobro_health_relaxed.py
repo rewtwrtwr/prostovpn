@@ -7,8 +7,10 @@
 #     Это даёт ~96 кандидатов вместо 15 — большой пул для выбора лучших.
 #   - Ранжирование: сначала по СКОРОСТИ (больше — лучше), потом по задержке
 #     (меньше — лучше). Строгая версия ранжирует наоборот (сначала задержка).
-#   - Узлы со скоростью ниже MIN_SPEED (5 Мбит/с) в файл НЕ попадают —
-#     они бесполезны для загрузок.
+#   - Узлы со скоростью ниже MIN_SPEED (50 Мбит/с) в файл НЕ попадают —
+#     они бесполезны для загрузок. RU-гарантия — исключение: RU-узлы
+#     проходят по живому тесту без порога скорости (самый быстрый RU
+#     в прогоне 25.11.2026 — 42,4 Мбит/с, порог 50 он не проходит).
 #   - RU-гарантия сохранена: лучшие RU-узлы (Москва/Новосибирск) обязательно
 #     тестируются, пока не наберётся RU_TARGET=3 прошедших.
 #
@@ -112,7 +114,7 @@ def parse_ss(link):
 
 RU_TARGET = 3  # сколько RU-узлов гарантируем в relaxed-файле (если пройдут живой тест)
 MIN_UPTIME = 90.0  # минимальный аптайм за 30 дней (d30), % — вместо 100% в строгой версии
-MIN_SPEED = 5.0  # минимальная скорость, Мбит/с — медленнее в файл не попадает
+MIN_SPEED = 50.0  # минимальная скорость, Мбит/с — медленнее в файл не попадает (кроме RU-гарантии: RU-узлы проходят по живому тесту без порога скорости, т.к. самый быстрый RU — 42,4 Мбит/с)
 
 
 def is_ru(name):
@@ -338,6 +340,7 @@ def main():
     # --- RU-гарантия: лучшие RU-узлы подписки по d30 (сверху вниз), без дублей
     # с основным списком. Тестируем по порядку, пока не наберём RU_TARGET
     # прошедших живой тест (или пока не кончатся RU-узлы в подписке).
+    # RU-узлы освобождены от порога скорости MIN_SPEED: проходят по живому тесту.
     main_names = {normalize(n["name"]) for n in candidates}
     ru_pool = []
     for n in nodes:
@@ -381,9 +384,9 @@ def main():
     print(f"RU passed live test: {ru_ok} (target {RU_TARGET})")
 
     ok = [r for r in results if r["status"] == "OK"
-          and (r["speed_mbps"] or 0) >= MIN_SPEED]
+          and (r.get("ru") or (r["speed_mbps"] or 0) >= MIN_SPEED)]
     slow = [r for r in results if r["status"] == "OK"
-            and (r["speed_mbps"] or 0) < MIN_SPEED]
+            and (r["speed_mbps"] or 0) < MIN_SPEED and not r.get("ru")]
     # Ранжирование relaxed-версии: сначала по СКОРОСТИ (больше — лучше),
     # потом по задержке (меньше — лучше). Строгая версия — наоборот.
     ok.sort(key=lambda r: (-(r["speed_mbps"] or 0),
@@ -404,8 +407,9 @@ def main():
            f"# updated: {now} | relaxed: {len(ok)} of {len(results)} tested "
            f"(uptime >= {MIN_UPTIME}% 30d + live check passed + speed >= {MIN_SPEED} Mbps; "
            f"includes {ru_ok_n} RU nodes by the RU guarantee)",
-           "# Relaxed pool: nodes with >= 90% 30-day uptime on status.azmov.site AND "
-           "a passing live REALITY tunnel test AND speed >= 5 Mbps. Ranked by SPEED "
+           f"# Relaxed pool: nodes with >= 90% 30-day uptime on status.azmov.site AND "
+           f"a passing live REALITY tunnel test AND speed >= {MIN_SPEED} Mbps (RU nodes "
+           "exempt from the speed floor by the RU guarantee). Ranked by SPEED "
            "(highest first), then by latency (lowest first). Games and LTE excluded.",
            "", "port: 7890", "socks-port: 7891", "mixed-port: 7892",
            "allow-lan: false", "mode: rule", "log-level: info", "ipv6: false",
