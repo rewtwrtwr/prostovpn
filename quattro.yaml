@@ -1,5 +1,5 @@
 # quattro.yaml — auto-generated FULL config, do not edit manually
-# updated: 2026-11-24T04:47:16Z | proxies: 572 | skipped: 0
+# updated: 2026-11-24T06:17:45Z | proxies: 573 | skipped: 0
 # Use directly as a Clash/Mihomo profile, or as a proxy-provider.
 
 port: 7890
@@ -13,18 +13,16 @@ ipv6: false
 proxies:
 - name: "🇪🇺 Авто | Самый быстрый"
   type: vless
-  server: 185.93.33.10
+  server: 89.125.99.3
   port: 443
   uuid: 961fff49-4c8f-4a48-a7e2-1e448d795082
   udp: true
-  network: tcp
+  network: grpc
   tls: true
-  servername: 68f9cdc1134a.j.cloudfront.hls.ttvnw.net
-  flow: xtls-rprx-vision
+  servername: lk.x5.ru
   client-fingerprint: edge
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-    short-id: 43dcff53849b81e6
+  grpc-opts:
+    grpc-service-name: "x5.lk.v1.AccountService"
 - name: "🇳🇱 ⚡️ ⭐️ LTE Авто - Нидерланды"
   type: vless
   server: 46.243.142.149
@@ -209,18 +207,16 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "⬇️ Быстрые | до 10 Гбит/с ⬇️"
   type: vless
-  server: 185.93.33.10
+  server: 89.125.99.3
   port: 443
   uuid: 961fff49-4c8f-4a48-a7e2-1e448d795082
   udp: true
-  network: tcp
+  network: grpc
   tls: true
-  servername: 68f9cdc1134a.j.cloudfront.hls.ttvnw.net
-  flow: xtls-rprx-vision
+  servername: lk.x5.ru
   client-fingerprint: edge
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-    short-id: 43dcff53849b81e6
+  grpc-opts:
+    grpc-service-name: "x5.lk.v1.AccountService"
 - name: "🇧🇪 ⚡️ ⭐️ Бельгия"
   type: vless
   server: 128.127.181.29
@@ -483,6 +479,13 @@ proxies:
   reality-opts:
     public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
     short-id: 43dcff53849b81e6
+- name: "🇳🇱 ⭐️ Нидерланды #4 | Torrent ✅|Hy2"
+  type: hysteria2
+  server: 117.55.203.79
+  port: 30443
+  password: 961fff49-4c8f-4a48-a7e2-1e448d795082
+  sni: hy.quattro-tech.ru
+  alpn: [h3]
 - name: "🇳🇴 ⚡️ ⭐️ Норвегия"
   type: vless
   server: 31.77.179.4
@@ -543,7 +546,7 @@ proxies:
   port: 30443
   password: 961fff49-4c8f-4a48-a7e2-1e448d795082
   sni: hy.quattro-tech.ru
-- name: "🇵🇱 🎮 ⭐️ Польша #2"
+- name: "🇵🇱 🎮 ⚡️ ⭐️ Польша #2"
   type: vless
   server: 89.125.158.1
   port: 443
@@ -551,7 +554,7 @@ proxies:
   udp: true
   network: tcp
   tls: true
-  servername: 9362985eae81.j.cloudfront.hls.ttvnw.net
+  servername: 21e6b81577ac.j.cloudfront.hls.ttvnw.net
   flow: xtls-rprx-vision
   client-fingerprint: edge
   reality-opts:
@@ -864,32 +867,28 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "⬇️ Для моб. операторов ⬇️"
   type: vless
-  server: 185.93.33.10
+  server: 89.125.99.3
   port: 443
   uuid: 961fff49-4c8f-4a48-a7e2-1e448d795082
   udp: true
-  network: tcp
+  network: grpc
   tls: true
-  servername: 68f9cdc1134a.j.cloudfront.hls.ttvnw.net
-  flow: xtls-rprx-vision
+  servername: lk.x5.ru
   client-fingerprint: edge
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-    short-id: 43dcff53849b81e6
+  grpc-opts:
+    grpc-service-name: "x5.lk.v1.AccountService"
 - name: "⚠️  Если другие не работают ⚠️ "
   type: vless
-  server: 185.93.33.10
+  server: 89.125.99.3
   port: 443
   uuid: 961fff49-4c8f-4a48-a7e2-1e448d795082
   udp: true
-  network: tcp
+  network: grpc
   tls: true
-  servername: 68f9cdc1134a.j.cloudfront.hls.ttvnw.net
-  flow: xtls-rprx-vision
+  servername: lk.x5.ru
   client-fingerprint: edge
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-    short-id: 43dcff53849b81e6
+  grpc-opts:
+    grpc-service-name: "x5.lk.v1.AccountService"
 - name: "🇳🇱 ⚡️ ⭐️ LTE - Безлимит #1 | Torrent✅"
   type: vless
   server: 94.139.255.199
@@ -2439,18 +2438,16 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "⬇️ Остальные по алфавиту ⬇️"
   type: vless
-  server: 185.93.33.10
+  server: 89.125.99.3
   port: 443
   uuid: 961fff49-4c8f-4a48-a7e2-1e448d795082
   udp: true
-  network: tcp
+  network: grpc
   tls: true
-  servername: 68f9cdc1134a.j.cloudfront.hls.ttvnw.net
-  flow: xtls-rprx-vision
+  servername: lk.x5.ru
   client-fingerprint: edge
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-    short-id: 43dcff53849b81e6
+  grpc-opts:
+    grpc-service-name: "x5.lk.v1.AccountService"
 - name: "🇦🇺 Австралия"
   type: hysteria2
   server: 89.125.101.130
@@ -4845,18 +4842,16 @@ proxies:
     short-id: 43dcff53849b81e6
 - name: "💎 Авто | Самый быстрый 💎"
   type: vless
-  server: 185.93.33.10
+  server: 89.125.99.3
   port: 443
   uuid: 961fff49-4c8f-4a48-a7e2-1e448d795082
   udp: true
-  network: tcp
+  network: grpc
   tls: true
-  servername: 68f9cdc1134a.j.cloudfront.hls.ttvnw.net
-  flow: xtls-rprx-vision
+  servername: lk.x5.ru
   client-fingerprint: edge
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-    short-id: 43dcff53849b81e6
+  grpc-opts:
+    grpc-service-name: "x5.lk.v1.AccountService"
 
 proxy-groups:
 - name: AUTO
@@ -4903,13 +4898,14 @@ proxy-groups:
   - "🇳🇱 ⚡️ ⭐️ Нидерланды | Torrent ✅ | Hy2"
   - "🇳🇱 ⚡️ ⭐️ Нидерланды #2 | Torrent ✅"
   - "🇳🇱 ⚡️ ⭐️ Нидерланды #3"
+  - "🇳🇱 ⭐️ Нидерланды #4 | Torrent ✅|Hy2"
   - "🇳🇴 ⚡️ ⭐️ Норвегия"
   - "🇳🇴 ⚡️ ⭐️ Норвегия #2"
   - "🇳🇴 ⚡️ ⭐️ Норвегия #3"
   - "🇳🇴 ⚡️ ⭐️ Норвегия #3 (Мост)"
   - "🇳🇴 ⚡️ ⭐️ Норвегия #3 | Hysteria2"
   - "🇵🇱 🎮 ⚡️ ⭐️ Польша"
-  - "🇵🇱 🎮 ⭐️ Польша #2"
+  - "🇵🇱 🎮 ⚡️ ⭐️ Польша #2"
   - "🇷🇺 ⚡️ Россия, Москва"
   - "🇷🇺 🎮 ⚡️ Россия, Москва | Hysteria2"
   - "🇷🇺 ⚡️ Россия, Москва #2"
