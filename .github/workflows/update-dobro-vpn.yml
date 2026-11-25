@@ -4,7 +4,7 @@
 #  Секреты репозитория: DOBROVPN_URL — ссылка подписки,
 #  DOBRO_HWID — HWID зарегистрированного устройства. Панель требует
 #  заголовок X-HWID: без него отдаёт заглушки, случайный HWID упрётся
-#  в лимит устройств. Автообновление каждые 6 часов.
+#  в лимит устройств. Автообновление каждые 1.5 часа.
 #  Конвертирует base64 -> Clash YAML локально, без лишних запросов.
 #  Генерирует ПОЛНЫЙ конфиг (proxies + proxy-groups + rules).
 #  Плюс обычная подписка dobro.txt (base64-список ссылок) — тот формат,
@@ -15,8 +15,9 @@ name: Update dobro-vpn.yaml
 
 on:
   schedule:
-    # every 6 hours: :17 of hours 0,6,12,18
-    - cron: '17 */6 * * *'
+    # every 1.5 hours: :17 of hours 0,3,6,... and :47 of hours 1,4,7,...
+    - cron: '17 */3 * * *'
+    - cron: '47 1,4,7,10,13,16,19,22 * * *'
   push:
     paths:
       - dobro.b64        # legacy trigger: push of the PC script (fallback path)
@@ -326,14 +327,28 @@ jobs:
       - name: Publish plain subscription (dobro.txt)
         run: |
           python3 <<'PYEOF'
-          import base64, sys
+          import base64, re, sys
           raw = open('dobro.b64', encoding='utf-8').read().strip()
           dec = base64.b64decode(raw + '=' * (-len(raw) % 4)).decode('utf-8', 'replace')
           links = [l.strip() for l in dec.splitlines() if l.strip().startswith(('vless://', 'hysteria2://', 'ss://'))]
           if len(links) < 50:
               sys.exit(f'too few links for dobro.txt: {len(links)}')
+          def strip_fm(link):
+              # Убрать fm= (fragment/FinalMask) из vless-ссылки (26.11.2026):
+              # панель отдаёт подписку С fm, а INCY при импорте ОРИГИНАЛА
+              # получает узлы БЕЗ fm (в incy.db у оригинала finalmask=None
+              # у всех 143 узлов, у зеркала — задан у всех 133 vless).
+              # С fm INCY хранит FinalMask, и ProCloud Москва перестаёт
+              # подключаться, а оригинал без fm работает. Зеркало обязано
+              # публиковать ссылки БЕЗ fm, ровно как оригинал в INCY.
+              if 'fm=' not in link:
+                  return link
+              link = re.sub(r'([?&])fm=[^&#]*&', r'\1', link)
+              link = re.sub(r'[?&]fm=[^&#]*', '', link)
+              return link
+          links = [strip_fm(l) for l in links]
           open('dobro.txt', 'w', encoding='utf-8').write(base64.b64encode('\n'.join(links).encode('utf-8')).decode('ascii'))
-          print(f'wrote dobro.txt: {len(links)} links')
+          print(f'wrote dobro.txt: {len(links)} links (fm stripped)')
           PYEOF
 
       - name: Commit and push if changed
