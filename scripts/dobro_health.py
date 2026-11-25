@@ -55,6 +55,27 @@ def normalize(name):
     return n
 
 
+def strip_fm(link):
+    """Убрать параметр fm= (fragment/FinalMask) из vless-ссылки.
+
+    ПРИЧИНА (26.11.2026, найдено живьём): панель отдаёт подписку С fm,
+    а INCY при импорте ОРИГИНАЛЬНОЙ ссылки получает узлы БЕЗ fm
+    (в incy.db у оригинала finalmask=None у всех 143 узлов, а у нашего
+    зеркала finalmask задан у всех 133 vless-узлов). С fm INCY хранит
+    FinalMask, и ProCloud Москва (speedtest.procloud.ru:8080) перестаёт
+    подключаться: выходной IP 31.77.122.123 не достукивается до .ru
+    вообще, а оригинал без fm идёт к .ru напрямую (правило routing)
+    и работает. Поэтому зеркало обязано публиковать ссылки БЕЗ fm —
+    ровно как оригинал в INCY. Остальные параметры не трогаем
+    побайтово: fm — URL-кодированный JSON, в нём нет сырых & и #.
+    """
+    if "fm=" not in link:
+        return link
+    link = re.sub(r"([?&])fm=[^&#]*&", r"\1", link)
+    link = re.sub(r"[?&]fm=[^&#]*", "", link)
+    return link
+
+
 def parse_vless(link):
     body, _, frag = link[8:].partition("#")
     name = unquote(frag) or "vless"
@@ -73,7 +94,7 @@ def parse_vless(link):
         "name": name, "type": "vless", "server": host, "port": port,
         "uuid": uuid, "sni": g("sni"), "fp": g("fp") or "firefox",
         "pbk": g("pbk"), "sid": g("sid"), "flow": g("flow") or "",
-        "network": g("type", "tcp"), "link": link,
+        "network": g("type", "tcp"), "link": strip_fm(link),
     }
 
 
