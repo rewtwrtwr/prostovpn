@@ -5,18 +5,31 @@
 # Отличие от строгой версии (dobro_health.py):
 #   - НЕ требует 100% аптайм. Берутся узлы с d30 >= 90% (MIN_UPTIME).
 #     Это даёт ~96 кандидатов вместо 15 — большой пул для выбора лучших.
-#   - ДВОЙНОЙ ТЕСТ скорости: каждый узел тестируется ДВАЖДЫ — скачивание
-#     + аплоад — с паузой ROUND_GAP_SECONDS (3 мин) между раундами.
-#     В файл попадают ТОЛЬКО узлы, прошедшие ОБА раунда. Это отсекает
-#     узлы с нестабильной скоростью (быстрые один раз, медленные — второй).
-#   - Ранжирование: сначала по ГАРАНТИРОВАННОЙ скорости (минимум
-#     скачивания за оба раунда, больше — лучше), потом по задержке
-#     (меньше — лучше). Строгая версия ранжирует наоборот (сначала задержка).
+#   - ДВУХЭТАПНАЯ методика (по тактике Георгия, 25.11.2026):
+#     ЭТАП 1 — ПИНГ/СТАБИЛЬНОСТЬ: каждый узел пингуется 5 раз с паузой
+#     3 с между пробами (запросы к api.ipify.org через туннель). Считаются
+#     медиана, джиттер (ст. отклонение) и максимум. Отбираются узлы с
+#     минимальным джиттером и без скачков: джиттер <= MAX_JITTER и
+#     максимум <= медиана * SPIKE_FACTOR. Нестабильные узлы до замера
+#     скорости НЕ доходят.
+#     ЭТАП 2 — СКОРОСТЬ (один раз, как Speedtest): для отобранных узлов
+#     скорость меряется ОДИН раз мультипоточным тестом — 4 параллельных
+#     потока скачивания по 10 МБ и 4 параллельных потока аплоада по 10 МБ.
+#     Одиночный однопоточный замер 10 МБ ВРЁТ (доказано 25.11.2026:
+#     Польша #10 на раннере показала 32/14 Мбит/с, а живой Speedtest
+#     Георгия через тот же узел — 335/303 Мбит/с): короткий файл
+#     заканчивается раньше, чем TCP выходит на полную скорость, и все
+#     узлы сваливаются в один коридор 30–35 Мбит/с. Мультипоток, как
+#     у Speedtest, меряет реальную пропускную способность.
+#   - Ранжирование: сначала по скорости скачивания (больше — лучше),
+#     потом по медиане пинга (меньше — лучше).
 #   - Узлы со скоростью ниже MIN_SPEED (скачивание, 50 Мбит/с) или
-#     MIN_UPLOAD (аплоад, 50 Мбит/с — тот же порог) в файл НЕ попадают. RU-гарантия —
-#     исключение: RU-узлы проходят по живому тесту без порога скорости
-#     (самый быстрый RU в прогоне 25.11.2026 — 42,4 Мбит/с, порог 50 он
-#     не проходит), но обязаны пройти ОБА раунда.
+#     MIN_UPLOAD (аплоад, 50 Мбит/с — тот же порог) в файл НЕ попадают.
+#     RU-гарантия — исключение: RU-узлы проходят по живому тесту без
+#     порога скорости, но обязаны пройти ЭТАП 1 (пинг/стабильность) и
+#     замер скорости. Если по фильтру джиттера проходит меньше RU_TARGET
+#     RU-узлов — добираются RU-узлы с наименьшим джиттером (до цели),
+#     они помечаются в таблице.
 #   - RU-гарантия сохранена: лучшие RU-узлы (Москва/Новосибирск) обязательно
 #     тестируются, пока не наберётся RU_TARGET=3 прошедших.
 #
@@ -24,11 +37,11 @@
 #   1. Читает узлы из dobro.b64 (зеркало подписки в репозитории).
 #   2. Качает https://status.azmov.site/data/status.json и берёт серверы
 #      с d30 >= MIN_UPTIME. Игровые (group == 'games') и LTE исключаются.
-#   3. Каждый кандидат живо тестируется через xray-core на этом же хосте:
-#      раунд 1 (все), пауза 3 мин, раунд 2 (только прошедшие раунд 1).
-#   4. В dobro-relaxed.yaml и dobro-relaxed.txt пишутся ТОЛЬКО узлы,
-#      которые прошли ОБА раунда (живой тест + пороги скорости).
-#   5. Пишет отчёт dobro-relaxed.md с таблицей результатов (оба раунда).
+#   3. Этап 1: каждый кандидат пингуется 5 раз (пауза 3 с) через xray-core.
+#   4. Этап 2: отобранные узлы проходят мультипоточный замер скорости.
+#   5. В dobro-relaxed.yaml и dobro-relaxed.txt пишутся ТОЛЬКО узлы,
+#      прошедшие оба этапа (стабильный пинг + пороги скорости).
+#   6. Пишет отчёт dobro-relaxed.md с таблицей результатов.
 #
 # Fail-closed: если живых узлов 0 — старые relaxed-файлы НЕ перезаписываются.
 # Запуск: python3 dobro_health_relaxed.py [--xray /path/to/xray] [--out-dir .]
@@ -36,27 +49,29 @@
 # ============================================================================
 import base64
 import json
+import math
 import os
 import re
+import statistics
 import subprocess
 import sys
 import time
 import urllib.request
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from urllib.parse import parse_qs, unquote
 
 STATUS_URL = "https://status.azmov.site/data/status.json"
 IPIFY_URL = "https://api.ipify.org"
-# Маленький файл для замера скорости (10 МБ). Cloudflare __down на больших
-# размерах отдаёт 403 после частых запросов, поэтому только 10 МБ.
+# Скорость: каждый поток качает/льёт 10 МБ. Cloudflare __down на больших
+# размерах отдаёт 403 после частых запросов, поэтому только 10 МБ на поток,
+# а пропускная способность набирается количеством потоков (как у Speedtest).
 SPEED_URL = "https://speed.cloudflare.com/__down?bytes=10000000"
 SPEED_FALLBACK = "https://cachefly.cachefly.net/10mb.test"
 # Аплоад: POST 10 МБ на Cloudflare __up (тот же эндпоинт, что у speed-теста).
 UPLOAD_URL = "https://speed.cloudflare.com/__up"
-UPLOAD_SIZE = 10_000_000  # 10 МБ аплоад-пробы
+UPLOAD_SIZE = 10_000_000  # 10 МБ аплоад-пробы на поток
 UPLOAD_TIMEOUT = 60
-LATENCY_PROBES = 6
-LATENCY_TIMEOUT = 15
 IP_TIMEOUT = 20
 SPEED_TIMEOUT = 60
 
@@ -125,9 +140,15 @@ def parse_ss(link):
 
 RU_TARGET = 3  # сколько RU-узлов гарантируем в relaxed-файле (если пройдут живой тест)
 MIN_UPTIME = 90.0  # минимальный аптайм за 30 дней (d30), % — вместо 100% в строгой версии
-MIN_SPEED = 50.0  # минимальная скорость СКАЧИВАНИЯ, Мбит/с — медленнее в файл не попадает (кроме RU-гарантии: RU-узлы проходят по живому тесту без порога скорости, т.к. самый быстрый RU — 42,4 Мбит/с)
+MIN_SPEED = 50.0  # минимальная скорость СКАЧИВАНИЯ, Мбит/с — медленнее в файл не попадает (кроме RU-гарантии: RU-узлы проходят по живому тесту без порога скорости)
 MIN_UPLOAD = 50.0  # минимальная скорость АПЛОАДА, Мбит/с — тот же порог, что и у скачивания (по просьбе Георгия 25.11.2026 «аплоад тоже 50+»).
-ROUND_GAP_SECONDS = 180  # пауза между раундом 1 и раундом 2 (3 мин) — двойной тест скорости
+# --- Этап 1: пинг/стабильность (тактика Георгия 25.11.2026) ---
+PING_PROBES = 5  # сколько раз пингуем каждый узел на этапе 1
+PING_GAP_SECONDS = 3  # пауза между пинг-пробами, с
+MAX_JITTER = 100.0  # макс. джиттер (ст. отклонение 5 проб), мс — выше не берём
+SPIKE_FACTOR = 2.0  # скачок: макс. пинг должен быть <= медиана * SPIKE_FACTOR
+# --- Этап 2: скорость как у Speedtest (мультипоток) ---
+SPEED_STREAMS = 4  # параллельных потоков скачивания и аплоада
 
 
 def is_ru(name):
@@ -224,92 +245,174 @@ def run_curl(args, timeout):
         return "", -1
 
 
-def test_node(xray_bin, node, socks_port, tmpdir, upload_file=None):
-    """Живой тест одного узла: выходной IP, задержка, скачивание, аплоад.
-    Возвращает dict с результатами (speed_mbps — скачивание, upload_mbps — аплоад)."""
+def start_xray(xray_bin, node, socks_port, tmpdir):
+    """Поднять xray для узла, дождаться SOCKS-порта. Возвращает proc или None."""
+    import socket
     cfg_path = os.path.join(tmpdir, "xray-%d.json" % socks_port)
     with open(cfg_path, "w", encoding="utf-8") as f:
         json.dump(xray_config(node, socks_port), f)
     proc = subprocess.Popen(
         [xray_bin, "run", "-c", cfg_path],
         stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    deadline = time.monotonic() + 20
+    while time.monotonic() < deadline:
+        if proc.poll() is not None:
+            return None  # xray умер сразу — узел мёртв
+        try:
+            with socket.create_connection(("127.0.0.1", socks_port), timeout=1):
+                time.sleep(2)  # дать xray завершить инициализацию
+                return proc
+        except OSError:
+            time.sleep(0.5)
+    return None
+
+
+def stop_xray(proc):
+    if proc is None:
+        return
+    try:
+        proc.terminate()
+        proc.wait(timeout=5)
+    except Exception:
+        try:
+            proc.kill()
+        except Exception:
+            pass
+
+
+def ping_pass(ts):
+    """Этап 1 пройден? ts — список времён 5 проб (мс).
+    Джиттер (ст. отклонение) <= MAX_JITTER и без скачков
+    (максимум <= медиана * SPIKE_FACTOR)."""
+    if len(ts) < PING_PROBES:
+        return False
+    med = statistics.median(ts)
+    jit = statistics.pstdev(ts) if len(ts) > 1 else 0.0
+    return jit <= MAX_JITTER and max(ts) <= med * SPIKE_FACTOR
+
+
+def ping_stage(xray_bin, node, socks_port, tmpdir):
+    """Этап 1: живой тест + пинг 5 раз с паузой 3 с.
+    Возвращает dict с пинг-статистикой (или status DEAD/FLAKY)."""
     res = {"name": node["name"], "norm": normalize(node["name"]),
            "type": node["type"], "status": "DEAD", "exit_ip": "",
-           "lat_avg": None, "lat_min": None, "lat_max": None,
-           "lat_std": None, "speed_mbps": 0.0, "upload_mbps": 0.0}
+           "ping_med": None, "ping_jit": None, "ping_max": None,
+           "ping_min": None, "ping_probes": []}
+    proc = start_xray(xray_bin, node, socks_port, tmpdir)
+    if proc is None:
+        return res
     try:
-        # Ждём, пока SOCKS-порт начнёт слушать (до 20 с), а не фиксированный sleep:
-        # xray с REALITY стартует не мгновенно, и curl к ещё не поднятому порту
-        # даёт мгновенный connection refused вместо таймаута.
-        import socket
-        deadline = time.monotonic() + 20
-        up = False
-        while time.monotonic() < deadline:
-            if proc.poll() is not None:
-                return res  # xray умер сразу — узел мёртв
-            try:
-                with socket.create_connection(("127.0.0.1", socks_port), timeout=1):
-                    up = True
-                    break
-            except OSError:
-                time.sleep(0.5)
-        if not up:
-            return res
-        time.sleep(2)  # дать xray завершить инициализацию
         proxy = "socks5h://127.0.0.1:%d" % socks_port
-        # 1) выходной IP (подтверждает, что туннель работает)
+        # Выходной IP (подтверждает, что туннель работает)
         out, rc = run_curl(["--socks5-hostname", proxy, IPIFY_URL], IP_TIMEOUT)
         if rc != 0 or not re.fullmatch(r"\d+\.\d+\.\d+\.\d+", out or ""):
             return res
         res["exit_ip"] = out
-        # 2) задержка: время ответа ipify (работает через туннель)
+        # Пинг: 5 проб api.ipify.org с паузой 3 с между пробами
         ts = []
-        for _ in range(LATENCY_PROBES):
+        for i in range(PING_PROBES):
             t0 = time.monotonic()
-            _, rc = run_curl(["--socks5-hostname", proxy, IPIFY_URL], LATENCY_TIMEOUT)
+            _, rc = run_curl(["--socks5-hostname", proxy, IPIFY_URL], 15)
             dt = (time.monotonic() - t0) * 1000.0
             if rc == 0:
                 ts.append(dt)
+            if i < PING_PROBES - 1:
+                time.sleep(PING_GAP_SECONDS)
         if not ts:
             res["status"] = "FLAKY"
             return res
-        avg = sum(ts) / len(ts)
-        var = sum((x - avg) ** 2 for x in ts) / len(ts)
-        res.update({"lat_avg": round(avg, 1), "lat_min": round(min(ts), 1),
-                    "lat_max": round(max(ts), 1), "lat_std": round(var ** 0.5, 1)})
-        # 3) скорость скачивания: ~10 МБ через прокси
-        speed = None
-        for url in (SPEED_URL, SPEED_FALLBACK):
-            t0 = time.monotonic()
-            out, rc = run_curl(["--socks5-hostname", proxy, "-o", "/dev/null",
-                                "-w", "%{size_download}", url], SPEED_TIMEOUT)
-            dt = time.monotonic() - t0
-            if rc == 0 and out.isdigit() and int(out) > 1_000_000 and dt > 0:
-                speed = (int(out) * 8 / 1e6) / dt
-                break
-        res["speed_mbps"] = round(speed, 1) if speed else 0.0
-        # 4) скорость аплоада: POST 10 МБ на Cloudflare __up через прокси
+        res["ping_probes"] = [round(t, 1) for t in ts]
+        res["ping_med"] = round(statistics.median(ts), 1)
+        res["ping_min"] = round(min(ts), 1)
+        res["ping_max"] = round(max(ts), 1)
+        res["ping_jit"] = round(statistics.pstdev(ts), 1) if len(ts) > 1 else 0.0
+        res["status"] = "OK" if ping_pass(ts) else "UNSTABLE"
+        return res
+    finally:
+        stop_xray(proc)
+
+
+def _download_one(args):
+    """Один поток скачивания: 10 МБ через прокси. Возвращает (байты, секунды)."""
+    proxy, url = args
+    t0 = time.monotonic()
+    out, rc = run_curl(["--socks5-hostname", proxy, "-o", "/dev/null",
+                        "-w", "%{size_download}", url], SPEED_TIMEOUT)
+    dt = time.monotonic() - t0
+    if rc == 0 and out.isdigit() and int(out) > 0:
+        return int(out), dt
+    return 0, dt
+
+
+def _upload_one(args):
+    """Один поток аплоада: POST 10 МБ через прокси. Возвращает (байты, секунды)."""
+    proxy, upload_file = args
+    t0 = time.monotonic()
+    out, rc = run_curl(["--socks5-hostname", proxy, "-X", "POST",
+                        "--data-binary", "@" + upload_file,
+                        "-o", "/dev/null", "-w", "%{http_code}",
+                        UPLOAD_URL], UPLOAD_TIMEOUT)
+    dt = time.monotonic() - t0
+    if rc == 0 and (out or "").strip() == "200":
+        return os.path.getsize(upload_file), dt
+    return 0, dt
+
+
+def speedtest_download(proxy):
+    """Скорость скачивания как у Speedtest: SPEED_STREAMS параллельных
+    потоков по 10 МБ. Возвращает Мбит/с (суммарные байты / общее время)."""
+    t0 = time.monotonic()
+    with ThreadPoolExecutor(max_workers=SPEED_STREAMS) as ex:
+        results = list(ex.map(_download_one,
+                              [(proxy, SPEED_URL)] * SPEED_STREAMS))
+    dt = time.monotonic() - t0
+    # Если Cloudflare не отдал ни байта ни в одном потоке — пробуем CacheFly.
+    total = sum(b for b, _ in results)
+    if total <= 0:
+        t0 = time.monotonic()
+        with ThreadPoolExecutor(max_workers=SPEED_STREAMS) as ex:
+            results = list(ex.map(_download_one,
+                                  [(proxy, SPEED_FALLBACK)] * SPEED_STREAMS))
+        dt = time.monotonic() - t0
+        total = sum(b for b, _ in results)
+    if total > 1_000_000 and dt > 0:
+        return round((total * 8 / 1e6) / dt, 1)
+    return 0.0
+
+
+def speedtest_upload(proxy, upload_file):
+    """Скорость аплоада как у Speedtest: SPEED_STREAMS параллельных
+    POST-потоков по 10 МБ. Возвращает Мбит/с."""
+    t0 = time.monotonic()
+    with ThreadPoolExecutor(max_workers=SPEED_STREAMS) as ex:
+        results = list(ex.map(_upload_one,
+                              [(proxy, upload_file)] * SPEED_STREAMS))
+    dt = time.monotonic() - t0
+    total = sum(b for b, _ in results)
+    if total > 1_000_000 and dt > 0:
+        return round((total * 8 / 1e6) / dt, 1)
+    return 0.0
+
+
+def speed_stage(xray_bin, node, socks_port, tmpdir, upload_file, ping_res):
+    """Этап 2: мультипоточный замер скорости (один раз, как Speedtest).
+    ping_res — результат этапа 1 (для переноса пинг-статистики)."""
+    res = dict(ping_res)
+    res["speed_mbps"] = 0.0
+    res["upload_mbps"] = 0.0
+    proc = start_xray(xray_bin, node, socks_port, tmpdir)
+    if proc is None:
+        res["status"] = "DEAD"
+        return res
+    try:
+        proxy = "socks5h://127.0.0.1:%d" % socks_port
+        res["speed_mbps"] = speedtest_download(proxy)
         if upload_file and os.path.exists(upload_file):
-            t0 = time.monotonic()
-            out, rc = run_curl(["--socks5-hostname", proxy, "-X", "POST",
-                                "--data-binary", "@" + upload_file,
-                                "-o", "/dev/null", "-w", "%{http_code}",
-                                UPLOAD_URL], UPLOAD_TIMEOUT)
-            dt = time.monotonic() - t0
-            if rc == 0 and (out or "").strip() == "200" and dt > 0:
-                sz = os.path.getsize(upload_file)
-                res["upload_mbps"] = round((sz * 8 / 1e6) / dt, 1)
+            res["upload_mbps"] = speedtest_upload(proxy, upload_file)
         res["status"] = "OK"
         return res
     finally:
-        try:
-            proc.terminate()
-            proc.wait(timeout=5)
-        except Exception:
-            try:
-                proc.kill()
-            except Exception:
-                pass
+        stop_xray(proc)
 
 
 def qstr(s):
@@ -364,7 +467,8 @@ def main():
 
     # --- RU-гарантия: лучшие RU-узлы подписки по d30 (сверху вниз), без дублей
     # с основным списком. RU-узлы освобождены от порогов скорости MIN_SPEED /
-    # MIN_UPLOAD: проходят по живому тесту, но обязаны пройти ОБА раунда.
+    # MIN_UPLOAD: проходят по живому тесту, но обязаны пройти этап 1
+    # (пинг/стабильность) и замер скорости.
     main_names = {normalize(n["name"]) for n in candidates}
     ru_pool = []
     for n in nodes:
@@ -379,15 +483,89 @@ def main():
     print(f"RU pool (by d30 desc): {len(ru_pool)}: " +
           ", ".join(f"{n['name']} d30={d}" for d, n in ru_pool))
 
-    # Файл аплоад-пробы (10 МБ случайных данных) — создаётся один раз.
+    # Файл аплоад-пробы (10 МБ случайных данных на поток) — создаётся один раз.
     upload_file = os.path.join(args.tmpdir, "upload-10mb.bin")
     if not os.path.exists(upload_file) or os.path.getsize(upload_file) != UPLOAD_SIZE:
         with open(upload_file, "wb") as f:
             f.write(os.urandom(UPLOAD_SIZE))
     print(f"upload probe: {upload_file} ({UPLOAD_SIZE} bytes)")
 
+    node_by_key = {}
+    for n in candidates:
+        node_by_key[normalize(n["name"])] = n
+    for _, n in ru_pool:
+        node_by_key.setdefault(normalize(n["name"]), n)
+
+    port = 19000
+    ping_results = {}  # norm-имя -> результат этапа 1
+
+    def run_ping(node, idx, total, tag=""):
+        nonlocal port
+        port += 1
+        print(f"[{idx}/{total}]{tag} {node['name']} ...", flush=True)
+        r = ping_stage(args.xray, node, port, args.tmpdir)
+        r["link"] = node["link"]
+        r["node"] = node
+        r["ru"] = is_ru(normalize(node["name"]))
+        r["d30"] = status.get(normalize(node["name"]), {}).get("up", {}).get("d30")
+        ping_results[normalize(node["name"])] = r
+        print(f"    -> {r['status']} exit={r['exit_ip']} "
+              f"ping_med={r['ping_med']}ms jit={r['ping_jit']}ms "
+              f"max={r['ping_max']}ms probes={r['ping_probes']}", flush=True)
+        return r
+
+    # --- Этап 1: пинг всех кандидатов (5 проб, пауза 3 с) ---
+    for i, node in enumerate(candidates, 1):
+        run_ping(node, i, len(candidates), tag=" [PING]")
+    # RU, этап 1: тестируем весь пул (он маленький) — буфер на случай,
+    # если кто-то не пройдёт фильтр джиттера.
+    for j, (d30, node) in enumerate(ru_pool, 1):
+        run_ping(node, j, len(ru_pool), tag=" [RU PING]")
+    print(f"Ping stage done: {len(ping_results)} tested", flush=True)
+
+    # --- Отбор по этапу 1: стабильный пинг (джиттер + без скачков) ---
+    stable = [k for k, r in ping_results.items()
+              if r["status"] == "OK"]
+    unstable = [k for k, r in ping_results.items()
+                if r["status"] == "UNSTABLE"]
+    dead = [k for k, r in ping_results.items()
+            if r["status"] in ("DEAD", "FLAKY")]
+    print(f"Ping filter: stable {len(stable)} | unstable (jitter/spike) "
+          f"{len(unstable)} | dead {len(dead)}", flush=True)
+
+    # RU-добор: если стабильных RU меньше цели — добираем RU-узлы с
+    # наименьшим джиттером (с рабочим туннелем), они помечаются в таблице.
+    ru_stable_n = sum(1 for k in stable if ping_results[k].get("ru"))
+    ru_fallback = []
+    if ru_stable_n < RU_TARGET:
+        ru_unstable = [ping_results[k] for k in unstable
+                       if ping_results[k].get("ru")
+                       and ping_results[k]["ping_jit"] is not None]
+        ru_unstable.sort(key=lambda r: (r["ping_jit"], r["ping_med"]))
+        need = RU_TARGET - ru_stable_n
+        ru_fallback = [r["norm"] for r in ru_unstable[:need]]
+        print(f"RU fallback: {len(ru_fallback)} unstable RU nodes added "
+              f"(lowest jitter): {ru_fallback}", flush=True)
+
+    # --- Этап 2: скорость (один раз, мультипоток) для отобранных ---
+    speed_keys = stable + [k for k in ru_fallback if k not in stable]
+    speed_results = {}
+    for idx, key in enumerate(speed_keys, 1):
+        node = node_by_key.get(key)
+        if node is None:
+            continue
+        port += 1
+        print(f"[{idx}/{len(speed_keys)}] [SPEED] {node['name']} ...", flush=True)
+        r = speed_stage(args.xray, node, port, args.tmpdir, upload_file,
+                        ping_results[key])
+        r["ru_fallback"] = key in ru_fallback
+        speed_results[key] = r
+        print(f"    -> {r['status']} down={r['speed_mbps']} "
+              f"up={r['upload_mbps']} Mbps", flush=True)
+
+    # --- Финал: прошли оба этапа ---
     def speed_pass(r):
-        """Один раунд пройден: живой тест OK, и (для не-RU) скачивание
+        """Замер скорости пройден: живой тест OK, и (для не-RU) скачивание
         >= MIN_SPEED и аплоад >= MIN_UPLOAD. RU проходят по живому тесту."""
         if r["status"] != "OK":
             return False
@@ -396,106 +574,42 @@ def main():
         return ((r["speed_mbps"] or 0) >= MIN_SPEED
                 and (r["upload_mbps"] or 0) >= MIN_UPLOAD)
 
-    node_by_key = {}
-    for n in candidates:
-        node_by_key[normalize(n["name"])] = n
-    for _, n in ru_pool:
-        node_by_key.setdefault(normalize(n["name"]), n)
-
-    results1 = {}  # norm-имя -> результат раунда 1
-    results2 = {}  # norm-имя -> результат раунда 2
-    port = 19000
-
-    def run_one(node, idx, total, tag="", rnd=1):
-        nonlocal port
-        port += 1
-        print(f"[{idx}/{total}]{tag} {node['name']} ...", flush=True)
-        r = test_node(args.xray, node, port, args.tmpdir, upload_file)
-        r["link"] = node["link"]
-        r["node"] = node
-        r["ru"] = is_ru(normalize(node["name"]))
-        r["d30"] = status.get(normalize(node["name"]), {}).get("up", {}).get("d30")
-        if rnd == 1:
-            results1[normalize(node["name"])] = r
-        else:
-            results2[normalize(node["name"])] = r
-        print(f"    -> {r['status']} exit={r['exit_ip']} lat={r['lat_avg']}ms "
-              f"std={r['lat_std']}ms down={r['speed_mbps']} up={r['upload_mbps']} Mbps",
-              flush=True)
-        return r
-
-    # --- Раунд 1: все кандидаты ---
-    for i, node in enumerate(candidates, 1):
-        run_one(node, i, len(candidates), tag=" [R1]", rnd=1)
-    # RU, раунд 1: тестируем весь пул (он маленький) — буфер на случай,
-    # если кто-то провалит раунд 2.
-    for j, (d30, node) in enumerate(ru_pool, 1):
-        run_one(node, j, len(ru_pool), tag=" [RU R1]", rnd=1)
-    print(f"Round 1 done: {len(results1)} tested", flush=True)
-
-    # --- Пауза 3 минуты между раундами ---
-    print(f"Waiting {ROUND_GAP_SECONDS}s ({ROUND_GAP_SECONDS // 60} min) "
-          f"before round 2 ...", flush=True)
-    time.sleep(ROUND_GAP_SECONDS)
-
-    # --- Раунд 2: только прошедшие раунд 1 ---
-    r1_keys = [k for k, r in results1.items() if speed_pass(r)]
-    print(f"Round 2: re-testing {len(r1_keys)} round-1 passers", flush=True)
-    for idx, key in enumerate(r1_keys, 1):
-        node = node_by_key.get(key)
-        if node is None:
+    ok, slow = [], []
+    for key, r in speed_results.items():
+        if not speed_pass(r):
+            slow.append(r)  # живой тест OK, но ниже порога скорости
             continue
-        run_one(node, idx, len(r1_keys), tag=" [R2]", rnd=2)
+        ok.append(r)
 
-    # --- Финал: прошли ОБА раунда ---
-    ok, flaky, slow, dead = [], [], [], []
-    for key, r1 in results1.items():
-        if r1["status"] != "OK":
-            dead.append(r1)
-            continue
-        if not speed_pass(r1):
-            slow.append(r1)  # живой тест OK, но ниже порога скорости в раунде 1
-            continue
-        r2 = results2.get(key)
-        if r2 is None or r2["status"] != "OK" or not speed_pass(r2):
-            flaky.append(r1)  # прошёл R1, провалил R2 — нестабилен
-            continue
-        merged = dict(r1)
-        merged["speed2"] = r2["speed_mbps"]
-        merged["upload2"] = r2["upload_mbps"]
-        merged["lat2"] = r2["lat_avg"]
-        # Гарантированные (худшие) скорости за оба раунда — ими ранжируем.
-        merged["down_min"] = min(r1["speed_mbps"] or 0, r2["speed_mbps"] or 0)
-        merged["up_min"] = min(r1["upload_mbps"] or 0, r2["upload_mbps"] or 0)
-        ok.append(merged)
-
-    # Ранжирование: сначала по гарантированному скачиванию (минимум за оба
-    # раунда, больше — лучше), потом по задержке (меньше — лучше).
-    ok.sort(key=lambda r: (-(r["down_min"] or 0),
-                           (r["lat_avg"] if r["lat_avg"] is not None else 1e9)))
+    # Ранжирование: сначала по скорости скачивания (больше — лучше),
+    # потом по медиане пинга (меньше — лучше).
+    ok.sort(key=lambda r: (-(r["speed_mbps"] or 0),
+                           (r["ping_med"] if r["ping_med"] is not None else 1e9)))
     ru_ok_n = sum(1 for r in ok if r.get("ru"))
-    print(f"FINAL OK: {len(ok)} (both rounds, down >= {MIN_SPEED}, "
-          f"up >= {MIN_UPLOAD}) | too slow R1: {len(slow)} | "
-          f"flaky (R1 ok, R2 fail): {len(flaky)} | DEAD R1: {len(dead)}")
+    print(f"FINAL OK: {len(ok)} (stable ping + down >= {MIN_SPEED}, "
+          f"up >= {MIN_UPLOAD}) | too slow: {len(slow)} | "
+          f"unstable ping: {len(unstable)} | dead: {len(dead)}")
 
     if not ok:
-        print("WARNING: no node passed both rounds — keeping previous relaxed files untouched")
+        print("WARNING: no node passed — keeping previous relaxed files untouched")
         return 0
 
     now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     # --- dobro-relaxed.yaml (Clash) ---
     names = [qstr(r["node"]["name"]) for r in ok]
     out = ["# dobro-relaxed.yaml — auto-generated, do not edit manually",
-           f"# updated: {now} | relaxed: {len(ok)} of {len(results1)} tested "
-           f"(uptime >= {MIN_UPTIME}% 30d + DOUBLE live check (2 rounds, "
-           f"{ROUND_GAP_SECONDS // 60} min apart) + down >= {MIN_SPEED} Mbps "
+           f"# updated: {now} | relaxed: {len(ok)} of {len(ping_results)} tested "
+           f"(uptime >= {MIN_UPTIME}% 30d + TWO-STAGE live check: stage 1 ping "
+           f"{PING_PROBES}x, {PING_GAP_SECONDS}s apart, jitter <= {MAX_JITTER}ms, "
+           f"no spikes (max <= median x {SPIKE_FACTOR}); stage 2 speedtest-like "
+           f"({SPEED_STREAMS} parallel streams) down >= {MIN_SPEED} Mbps "
            f"+ up >= {MIN_UPLOAD} Mbps; includes {ru_ok_n} RU nodes by the RU guarantee)",
            f"# Relaxed pool: nodes with >= 90% 30-day uptime on status.azmov.site AND "
-           f"a passing DOUBLE live REALITY tunnel test (2 rounds, {ROUND_GAP_SECONDS // 60} min "
-           f"apart) AND down >= {MIN_SPEED} Mbps AND up >= {MIN_UPLOAD} Mbps (RU nodes "
-           "exempt from the speed floors by the RU guarantee, but must pass both rounds). "
-           "Ranked by GUARANTEED download (min of both rounds, highest first), then by "
-           "latency (lowest first). Games and LTE excluded.",
+           f"a passing TWO-STAGE live REALITY tunnel test (stage 1: stable ping, "
+           f"stage 2: speedtest-like speed down >= {MIN_SPEED} Mbps AND up >= "
+           f"{MIN_UPLOAD} Mbps, measured ONCE) (RU nodes exempt from the speed floors "
+           "by the RU guarantee, but must pass stage 1). Ranked by download speed "
+           "(highest first), then by median ping (lowest first). Games and LTE excluded.",
            "", "port: 7890", "socks-port: 7891", "mixed-port: 7892",
            "allow-lan: false", "mode: rule", "log-level: info", "ipv6: false",
            "", "proxies:"]
@@ -515,37 +629,39 @@ def main():
         f.write(base64.b64encode("\n".join(links).encode("utf-8")).decode("ascii"))
     # --- dobro-relaxed.md (отчёт) ---
     md = [f"# DobroVPN relaxed — {now}", "",
-          f"Прошли проверку: **{len(ok)}** из {len(results1)} протестированных "
-          f"(аптайм >= {MIN_UPTIME}% за 30 дней + ДВОЙНОЙ живой тест: 2 раунда "
-          f"с паузой {ROUND_GAP_SECONDS // 60} мин + скачивание >= {MIN_SPEED} Мбит/с "
-          f"и аплоад >= {MIN_UPLOAD} Мбит/с в ОБОИХ раундах). "
+          f"Прошли проверку: **{len(ok)}** из {len(ping_results)} протестированных "
+          f"(аптайм >= {MIN_UPTIME}% за 30 дней + ДВУХЭТАПНАЯ проверка: этап 1 — "
+          f"пинг {PING_PROBES} раз с паузой {PING_GAP_SECONDS} с, джиттер <= "
+          f"{MAX_JITTER} мс, без скачков (макс. <= медиана x {SPIKE_FACTOR}); "
+          f"этап 2 — скорость как у Speedtest ({SPEED_STREAMS} параллельных "
+          f"потока), скачивание >= {MIN_SPEED} Мбит/с и аплоад >= {MIN_UPLOAD} "
+          f"Мбит/с, замер один раз). "
           f"RU-узлов в файле: **{ru_ok_n}** (цель {RU_TARGET}). "
-          f"Ранжирование: сначала по гарантированному скачиванию (минимум за оба "
-          f"раунда, больше — лучше), потом по задержке. "
-          f"Игровые и LTE исключены.", "",
-          "| # | Узел | Скач. R1 / R2 | Аплоад R1 / R2 | Задержка | Джиттер | Аптайм (30д) | Выходной IP |",
-          "|---|------|---------------|---------------|----------|---------|--------------|-------------|"]
+          f"Ранжирование: сначала по скорости скачивания (больше — лучше), "
+          f"потом по медиане пинга. Игровые и LTE исключены.", "",
+          "| # | Узел | Пинг (мед.) | Джиттер | Макс. пинг | Скач. | Аплоад | Аптайм (30д) | Выходной IP |",
+          "|---|------|-------------|---------|------------|-------|--------|--------------|-------------|"]
     for i, r in enumerate(ok, 1):
         site = f"RU {r['d30']}%" if r.get("ru") else f"{r['d30']}%"
-        md.append(f"| {i} | {r['name']} | {r['speed_mbps']} / {r['speed2']} Мбит/с | "
-                  f"{r['upload_mbps']} / {r['upload2']} Мбит/с | {r['lat_avg']} мс | "
-                  f"{r['lat_std']} мс | {site} | {r['exit_ip']} |")
+        if r.get("ru_fallback"):
+            site += " (джиттер выше порога)"
+        md.append(f"| {i} | {r['name']} | {r['ping_med']} мс | "
+                  f"{r['ping_jit']} мс | {r['ping_max']} мс | "
+                  f"{r['speed_mbps']} Мбит/с | {r['upload_mbps']} Мбит/с | "
+                  f"{site} | {r['exit_ip']} |")
     md += ["", "## Не прошли",
-           f"DEAD (раунд 1): {len(dead)} | слишком медленные (раунд 1): {len(slow)} | "
-           f"нестабильные (прошли R1, провалили R2): {len(flaky)}", ""]
-    for r in dead:
-        md.append(f"- {r['name']} — DEAD")
+           f"DEAD: {len(dead)} | нестабильный пинг (джиттер/скачки): {len(unstable)} | "
+           f"слишком медленные: {len(slow)}", ""]
+    for k in dead:
+        md.append(f"- {ping_results[k]['name']} — DEAD")
+    for k in unstable:
+        r = ping_results[k]
+        md.append(f"- {r['name']} — unstable ping "
+                  f"(med {r['ping_med']} / jit {r['ping_jit']} / "
+                  f"max {r['ping_max']} мс, probes {r['ping_probes']})")
     for r in slow:
-        md.append(f"- {r['name']} — too slow R1 "
+        md.append(f"- {r['name']} — too slow "
                   f"(down {r['speed_mbps']} / up {r['upload_mbps']} Мбит/с)")
-    for r in flaky:
-        r2 = results2.get(r["norm"])
-        if r2 is not None:
-            md.append(f"- {r['name']} — flaky "
-                      f"(R1 down {r['speed_mbps']} / up {r['upload_mbps']}, "
-                      f"R2 down {r2['speed_mbps']} / up {r2['upload_mbps']} Мбит/с)")
-        else:
-            md.append(f"- {r['name']} — flaky (R1 ok, R2 not tested)")
     md.append("")
     with open(os.path.join(args.out_dir, "dobro-relaxed.md"), "w", encoding="utf-8") as f:
         f.write("\n".join(md))
