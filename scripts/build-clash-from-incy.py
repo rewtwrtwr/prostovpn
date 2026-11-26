@@ -581,8 +581,12 @@ def main():
             if r not in seen_rule:
                 seen_rule.add(r)
                 union_rules.append(r)
+    variant_group_names = [f"V{vi:02d}" for vi in range(1, len(vlist) + 1)]
     u_groups = [("AUTO", "url-test", [p["name"] for p in all_proxies]),
-                ("SELECT", "select", ["AUTO", "DIRECT"])]
+                ("SELECT", "select", ["AUTO", "DIRECT"] + variant_group_names)]
+    for vi, els in enumerate(vlist, start=1):
+        vnodes = variant_nodes(els)
+        u_groups.append((f"V{vi:02d}", "url-test", vnodes))
     for bal, pref in sorted(BALANCER_PREFIX.items()):
         members = names_for_outbounds(data, tag_prefix=pref)
         if members:
@@ -611,8 +615,9 @@ def main():
     has_geo = any(r.startswith("GEOIP,RU,DIRECT") for r in union_rules)
     header = [
         "# dobro-vpn.yaml — auto-generated FULL config from INCY JSON, do not edit manually",
-        f"# source: dobro-incy.json (panel response to INCY UA) | routing variants preserved: {len(vlist)} (see dobro-vpn-variant-*.yaml)",
-        "# This file is the UNION of all variants' rules (one global rules list).",
+        f"# source: dobro-incy.json (panel response to INCY UA) | routing variants: {len(vlist)}",
+        "# All 15 variants are in this ONE file as groups V01..V15 (pick one in SELECT).",
+        "# Rules are the UNION of all variants (one global rules list, first match wins).",
         "# For the exact per-variant routing, use the matching dobro-vpn-variant-XX.yaml.",
         "# Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.",
     ]
