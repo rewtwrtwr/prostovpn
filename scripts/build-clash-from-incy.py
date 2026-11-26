@@ -62,6 +62,8 @@ BALANCER_PREFIX = {
     "B_IG": "igr-",
 }
 
+ZERO_UUID = "00000000-0000-0000-0000-000000000000"
+
 
 def qstr(s):
     return '"' + str(s).replace("\\", "\\\\").replace('"', '\\"').replace("\n", " ") + '"'
@@ -73,6 +75,19 @@ def vless_from_outbound(o):
         user = vn["users"][0]
     except Exception:
         return None
+    # 26.11.2026: узлы с нулевым UUID — плейсхолдеры панели, не работают.
+    if user.get("id") == ZERO_UUID:
+        return None
+    ss = o.get("streamSettings", {}) or {}
+    net = ss.get("network", "tcp")
+    # 26.11.2026: xhttp НЕ выпускаем в Clash/Mihomo. Причины:
+    # (1) Mihomo поддерживает xhttp только с v1.19.22 (апрель 2026),
+    # версия ядра в Karing неизвестна и может быть старше;
+    # (2) конвертер не переносил xhttpSettings (path/mode/host) —
+    # узлы выходили без xhttp-opts, т.е. malformed. Серверы xhttp-узлов
+    # дублируются tcp/grpc/ws-узлами тех же IP, потери нет.
+    if net == "xhttp":
+        return None
     p = {
         "name": o.get("tag", "vless"),
         "type": "vless",
@@ -82,8 +97,6 @@ def vless_from_outbound(o):
         "udp": True,
         "network": "tcp",
     }
-    ss = o.get("streamSettings", {}) or {}
-    net = ss.get("network", "tcp")
     p["network"] = net
     sec = ss.get("security", "none")
     flow = user.get("flow")
@@ -520,9 +533,16 @@ def main():
                 bal_groups[bal] = bal
                 bal_members[bal] = members
         v_nodes = variant_nodes(els)
+        auto_members = v_nodes
+        if not auto_members:
+            for members in bal_members.values():
+                auto_members = list(dict.fromkeys(auto_members + members))
         groups = []
-        groups.append(("AUTO", "url-test", v_nodes))
-        groups.append(("SELECT", "select", ["AUTO", "DIRECT"]))
+        if auto_members:
+            groups.append(("AUTO", "url-test", auto_members))
+        sel_members = (["AUTO", "DIRECT"] if auto_members
+                       else [b for b in sorted(bal_members)] + ["DIRECT"])
+        groups.append(("SELECT", "select", sel_members))
         for bal in sorted(bal_members):
             groups.append((bal, "url-test", bal_members[bal]))
         for el in els:
@@ -581,11 +601,16 @@ def main():
             if r not in seen_rule:
                 seen_rule.add(r)
                 union_rules.append(r)
-    variant_group_names = [f"V{vi:02d}" for vi in range(1, len(vlist) + 1)]
+    variant_group_names = []
+    for vi, els in enumerate(vlist, start=1):
+        if variant_nodes(els):
+            variant_group_names.append(f"V{vi:02d}")
     u_groups = [("AUTO", "url-test", [p["name"] for p in all_proxies]),
                 ("SELECT", "select", ["AUTO", "DIRECT"] + variant_group_names)]
     for vi, els in enumerate(vlist, start=1):
         vnodes = variant_nodes(els)
+        if not vnodes:
+            continue
         u_groups.append((f"V{vi:02d}", "url-test", vnodes))
     for bal, pref in sorted(BALANCER_PREFIX.items()):
         members = names_for_outbounds(data, tag_prefix=pref)
