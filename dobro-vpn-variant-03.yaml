@@ -3,7 +3,7 @@
 # nodes in this variant: ★ 🤖 Нейросети 🇫🇮 Финляндия, 🤖 Нейросети 🇫🇷 Франция, 🤖 Нейросети 🇬🇧 Британия, 🤖 Нейросети 🇳🇱 Нидерланды, 🤖 Нейросети 🇵🇱 Польша
 # Routing + DNS preserved exactly as the panel configured them for these nodes.
 # Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
-# updated: 2026-11-26T07:04:35Z
+# updated: 2026-11-26T07:27:05Z
 # proxies: 17 | groups: 2 | rules: 242 | dns policy: 0
 
 port: 7890
@@ -123,7 +123,7 @@ proxies:
   cipher: "chacha20-ietf-poly1305"
   password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
   udp: true
-- name: "🌎 Универсальный №5 (2)"
+- name: "🌎 Универсальный №5"
   type: ss
   server: max.ru
   port: 1234
