@@ -109,22 +109,24 @@ jobs:
           # Structural analysis of the raw panel response to INCY UA.
           # Logs ONLY structure (keys, counts, tags, booleans) — never
           # credentials (UUIDs, keys, passwords) or raw content.
+          # 26.11.2026: the panel returns a JSON ARRAY of per-node xray
+          # configs (not a single object), so handle list and dict.
           raw = open('dobro-incy-raw', encoding='utf-8').read()
           print(f'raw size: {len(raw)}')
-          try:
-              data = json.loads(raw)
-              print('format: JSON')
-              print('top-level keys:', list(data.keys()))
-              obs = data.get('outbounds', [])
-              print(f'outbounds: {len(obs)}')
-              for o in obs[:8]:
+          def describe_cfg(cfg, label):
+              if not isinstance(cfg, dict):
+                  print(f'{label}: not an object ({type(cfg).__name__})')
+                  return
+              print(f'{label} keys:', list(cfg.keys()))
+              obs = cfg.get('outbounds', [])
+              print(f'{label} outbounds: {len(obs)}')
+              for o in obs[:6]:
                   if isinstance(o, dict):
                       print(f"  - tag={o.get('tag')} protocol={o.get('protocol')} has_finalmask={'finalmask' in o}")
-              r = data.get('routing', {})
+              r = cfg.get('routing', {})
               if isinstance(r, dict):
-                  print('routing keys:', list(r.keys()))
                   rules = r.get('rules', [])
-                  print(f'routing rules: {len(rules)}')
+                  print(f'{label} routing rules: {len(rules)}')
                   ru_direct = 0
                   for rule in rules:
                       if not isinstance(rule, dict):
@@ -133,16 +135,60 @@ jobs:
                           doms = rule.get('domain', [])
                           if any('.ru' in str(d) for d in doms):
                               ru_direct += 1
-                  print(f'rules routing .ru to direct: {ru_direct}')
-                  print('domainStrategy:', r.get('domainStrategy'))
-              dns = data.get('dns', {})
-              print('dns:', str(dns)[:300])
-              ib = data.get('inbounds', [])
-              print(f"inbounds: {len(ib)} tags: {[i.get('tag') for i in ib if isinstance(i, dict)]}")
+                  print(f'{label} rules routing .ru to direct: {ru_direct}')
+                  print(f'{label} domainStrategy:', r.get('domainStrategy'))
+              dns = cfg.get('dns', {})
+              print(f'{label} dns:', str(dns)[:200])
+              ib = cfg.get('inbounds', [])
+              print(f"{label} inbounds: {len(ib)} tags: {[i.get('tag') for i in ib if isinstance(i, dict)]}")
+          try:
+              data = json.loads(raw)
           except Exception as e:
-              print(f'not JSON ({type(e).__name__}): trying other formats')
-              head = raw[:200].replace('\n', ' ')
-              print('starts with:', head[:120])
+              print(f'not JSON ({type(e).__name__})')
+              print('starts with:', raw[:200].replace('\n', ' ')[:120])
+              raise SystemExit(0)
+          if isinstance(data, list):
+              print(f'format: JSON array, elements: {len(data)}')
+              if data:
+                  describe_cfg(data[0], 'element[0]')
+                  n_routing = sum(1 for el in data if isinstance(el, dict) and 'routing' in el)
+                  print(f'elements with routing: {n_routing}/{len(data)}')
+                  n_fm = 0
+                  for el in data:
+                      if not isinstance(el, dict):
+                          continue
+                      for o in el.get('outbounds', []):
+                          if isinstance(o, dict) and 'finalmask' in o:
+                              n_fm += 1
+                  print(f'outbounds with finalmask (all elements): {n_fm}')
+          elif isinstance(data, dict):
+              print('format: JSON object')
+              describe_cfg(data, 'root')
+          else:
+              print(f'format: JSON {type(data).__name__} (unexpected)')
+          PYEOF
+
+      - name: Publish INCY full config (dobro-incy.json)
+        run: |
+          python3 <<'PYEOF'
+          import json
+          # Publish the raw panel response to INCY UA as dobro-incy.json,
+          # verbatim — it is a JSON array of per-node xray configs WITH
+          # routing (.ru -> direct). INCY imports this format natively
+          # (it is exactly what the panel serves to INCY for the original
+          # subscription), so INCY gets nodes + routing together.
+          # dobro.txt (base64 links) stays untouched for other clients.
+          raw = open('dobro-incy-raw', encoding='utf-8').read()
+          try:
+              data = json.loads(raw)
+          except Exception as e:
+              print(f'SKIP: not valid JSON ({type(e).__name__}) — not publishing dobro-incy.json')
+              raise SystemExit(0)
+          if not isinstance(data, list) or not data:
+              print(f'SKIP: expected a non-empty JSON array, got {type(data).__name__} — not publishing')
+              raise SystemExit(0)
+          open('dobro-incy.json', 'w', encoding='utf-8').write(raw)
+          print(f'wrote dobro-incy.json: {len(data)} per-node configs, {len(raw)} bytes')
           PYEOF
 
       - name: Upload INCY response artifact
@@ -237,33 +283,62 @@ jobs:
               return p
 
           def parse_ss(link):
+
               body, _, frag = link[5:].partition("#")
+
               name = unquote(frag) or "ss"
+
               body = body.split("?")[0]
+
               if "@" in body:
+
                   pre, _, hostport = body.partition("@")
+
                   try:
+
                       userinfo = base64.urlsafe_b64decode(pre + "=" * (-len(pre) % 4)).decode("utf-8", "replace")
+
                   except Exception:
+
                       return None
+
               else:
+
                   try:
+
                       dec = base64.urlsafe_b64decode(body + "=" * (-len(body) % 4)).decode("utf-8", "replace")
+
                   except Exception:
+
                       return None
+
                   if "@" not in dec:
+
                       return None
+
                   userinfo, _, hostport = dec.rpartition("@")
+
               method, _, password = userinfo.partition(":")
+
               host, _, port = hostport.rpartition(":")
+
               try:
+
                   port = int(port)
+
               except ValueError:
+
                   return None
+
               if not method or not password or not host:
+
                   return None
+
               return {"name": name, "type": "ss", "server": host, "port": port,
+
                       "cipher": method, "password": password, "udp": True}
+
+          
 
           def emit(p):
               L = [f"- name: {qstr(p['name'])}", f"  type: {p['type']}",
@@ -417,7 +492,7 @@ jobs:
         run: |
           git config user.name "dobro-vpn-autoupdate"
           git config user.email "dobro-vpn-autoupdate@users.noreply.github.com"
-          git add dobro.b64 dobro-vpn.yaml dobro.txt
+          git add dobro.b64 dobro-vpn.yaml dobro.txt dobro-incy.json
           if git diff --cached --quiet; then
             echo "no changes, skipping commit"
           else
@@ -439,3 +514,5 @@ jobs:
             "https://purge.jsdelivr.net/gh/rewtwrtwr/prostovpn@main/dobro-vpn.yaml"
           curl -s -o /dev/null -w "purge http: %{http_code}\n" \
             "https://purge.jsdelivr.net/gh/rewtwrtwr/prostovpn@main/dobro.txt"
+          curl -s -o /dev/null -w "purge http: %{http_code}\n" \
+            "https://purge.jsdelivr.net/gh/rewtwrtwr/prostovpn@main/dobro-incy.json"
