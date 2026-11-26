@@ -3,8 +3,8 @@
 # nodes in this variant: 🌎 Универсальный №5
 # Routing + DNS preserved exactly as the panel configured them for these nodes.
 # Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
-# updated: 2026-11-26T14:30:07Z
-# proxies: 226 | groups: 9 | rules: 360 | dns policy: 0
+# updated: 2026-11-26T18:58:51Z
+# proxies: 225 | groups: 8 | rules: 360 | dns policy: 0
 
 port: 7890
 socks-port: 7891
@@ -151,7 +151,7 @@ proxies:
   reality-opts:
     public-key: aIAZbx7okN1_cYdro5Un_DP6o7rAGyzF8Pm2kgaC2BI
     short-id: 5dd3d27dd57958b2
-- name: "🇺🇸 США #3 ⚡"
+- name: "🇺🇸 США #3"
   type: vless
   server: 152.234.163.21
   port: 47262
@@ -431,7 +431,7 @@ proxies:
   reality-opts:
     public-key: u67Uzkec73ucHBgOOFjj6z3dACU69x1YbuF8bV1Xfhw
     short-id: 4b00e532b27cf89d
-- name: "🇪🇪 Эстония #15 ⚡"
+- name: "🇪🇪 Эстония #15"
   type: vless
   server: 217.60.182.113
   port: 45972
@@ -879,7 +879,7 @@ proxies:
   reality-opts:
     public-key: OTgY9B-VpbmEgqBDTHnb8Cyx-ZfIEcvJRWOoWkePqRQ
     short-id: b4122da4ead1c43f
-- name: "★ 🇫🇮 Финляндия #15 ⚡"
+- name: "★ 🇫🇮 Финляндия #15"
   type: vless
   server: 191.217.252.76
   port: 8443
@@ -907,7 +907,7 @@ proxies:
   reality-opts:
     public-key: JuumwWtGcf-S6o3zXuaknwSuUv7s249E0MsuoOVsdGs
     short-id: affef404e74b56c8
-- name: "🇫🇮 Финляндия #23"
+- name: "🇫🇮 Финляндия #23 ⚡"
   type: vless
   server: 170.168.4.48
   port: 41226
@@ -921,7 +921,7 @@ proxies:
   reality-opts:
     public-key: KcNb3jKM6j8HXm4lbM81J6igsQXFAducRG_wZBpZZxc
     short-id: ec856e6505282c7c
-- name: "🇫🇮 Финляндия #24 ⚡"
+- name: "🇫🇮 Финляндия #24"
   type: vless
   server: 170.168.4.57
   port: 43766
@@ -991,7 +991,7 @@ proxies:
   reality-opts:
     public-key: REli1LwmNXcfVBhZhCwDUp15jsmz4orH3T9YLpVk0wI
     short-id: f39b868cb3c14b62
-- name: "🇩🇪 Германия #1 ⚡"
+- name: "🇩🇪 Германия #1"
   type: vless
   server: 150.241.116.91
   port: 443
@@ -1019,20 +1019,6 @@ proxies:
   reality-opts:
     public-key: fpOHSPDTYhZ2w3l8XqXO9KQ2oe8q8Vd5Z9lCddhKvEE
     short-id: fc20796143ec327c
-- name: "🇩🇪 Германия #5"
-  type: vless
-  server: 217.60.151.112
-  port: 443
-  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
-  udp: true
-  network: tcp
-  tls: true
-  servername: cdn-de2ex.vless.site
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: n46dvwisgh_KfebgahaGnDQI-gePhm3sos9rXJOnsUo
-    short-id: e8a1f37bd729aca8
 - name: "🇩🇪 Германия #8 ⚡"
   type: vless
   server: 31.77.106.94
@@ -1047,7 +1033,7 @@ proxies:
   reality-opts:
     public-key: uQWICZuKOepToITQZUuaugAAxF7WB93Np82AmFzcHXw
     short-id: 4da9245d68b396a6
-- name: "🇩🇪 Германия #19 ⚡"
+- name: "🇩🇪 Германия #19"
   type: vless
   server: 201.8.89.126
   port: 41926
@@ -1061,7 +1047,7 @@ proxies:
   reality-opts:
     public-key: RewhgyZ8FC3ofWv_YEomM3XUhsl3AfMxsmrpY2DA6C4
     short-id: 65ad5e07040c5f9b
-- name: "🇩🇪 Германия #20"
+- name: "🇩🇪 Германия #20 ⚡"
   type: vless
   server: 201.8.89.125
   port: 44804
@@ -1075,7 +1061,7 @@ proxies:
   reality-opts:
     public-key: 7eOAdmziz5xWQv0TE42ZJ4bWn_u3S1_WeWBe24bN5kQ
     short-id: ea39f6b0e9f32853
-- name: "🇩🇪 Германия #22 ⚡"
+- name: "🇩🇪 Германия #22"
   type: vless
   server: 217.60.179.138
   port: 54334
@@ -1145,7 +1131,7 @@ proxies:
   reality-opts:
     public-key: 2WvwR3CdvkS1RDtbG6L6glh70n5ahdqvemJRVrzTbEc
     short-id: be95d22232a7f95c
-- name: "🇳🇱 Нидерланды #22 ⚡"
+- name: "🇳🇱 Нидерланды #22 ^~2~^"
   type: vless
   server: 2.27.106.86
   port: 57168
@@ -3117,8 +3103,7 @@ proxy-groups:
   - "🇨🇦 Канада #3 ⚡"
   - "uni-de12i"
   - "🇩🇪 Германия #4 ⚡"
-  - "🇩🇪 Германия #1 ⚡"
-  - "🇩🇪 Германия #5"
+  - "🇩🇪 Германия #1"
   - "uni-deiw2"
   - "uni-deiw3"
   - "uni-ee1"
@@ -3142,7 +3127,7 @@ proxy-groups:
   - "uni-pee2"
   - "★ 🤖 Нейросети 🇫🇮 Финляндия"
   - "★ 🇫🇮 Финляндия #17"
-  - "★ 🇫🇮 Финляндия #15 ⚡"
+  - "★ 🇫🇮 Финляндия #15"
   - "uni-pl2"
   - "🇵🇱 Польша #1 ⚡"
   - "🇵🇱 Польша #6 ⚡"
@@ -3169,21 +3154,21 @@ proxy-groups:
   - "🇳🇱 Нидерланды #19"
   - "🇳🇱 Нидерланды #20"
   - "🇳🇱 Нидерланды #21"
-  - "🇳🇱 Нидерланды #22 ⚡"
-  - "🇩🇪 Германия #19 ⚡"
-  - "🇩🇪 Германия #20"
+  - "🇳🇱 Нидерланды #22 ^~2~^"
+  - "🇩🇪 Германия #19"
+  - "🇩🇪 Германия #20 ⚡"
   - "🇫🇷 Франция #9 ⚡"
   - "🇫🇷 Франция #10 ⚡"
-  - "🇪🇪 Эстония #15 ⚡"
-  - "🇩🇪 Германия #22 ⚡"
+  - "🇪🇪 Эстония #15"
+  - "🇩🇪 Германия #22"
   - "🇵🇱 Польша #18 ⚡"
   - "🇳🇱 Нидерланды #22"
-  - "🇫🇮 Финляндия #23"
-  - "🇫🇮 Финляндия #24 ⚡"
+  - "🇫🇮 Финляндия #23 ⚡"
+  - "🇫🇮 Финляндия #24"
   - "🇭🇰 Гонконг #5"
   - "🇩🇪 Германия #23 ⚡"
   - "🇩🇪 Германия #24 ⚡"
-  - "🇺🇸 США #3 ⚡"
+  - "🇺🇸 США #3"
   - "🇨🇭 Швейцария #1 ⚡"
   - "🇳🇱 Нидерланды #23 ⚡"
   - "★ 🇩🇪 Германия #27 ⚡"
@@ -3363,17 +3348,6 @@ proxy-groups:
   - "n1-pl10"
   - "n1-de13"
   - "n1-pixnl1"
-- name: "B_TG"
-  type: url-test
-  url: https://www.gstatic.com/generate_204
-  interval: 300
-  tolerance: 50
-  lazy: true
-  proxies:
-  - "🇩🇪 Германия #5"
-  - "🇪🇪 Эстония #2 ⚡"
-  - "🇮🇹 Италия #2 ⚡"
-  - "🇵🇱 Польша #1 ⚡"
 - name: "B_TT"
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -3396,8 +3370,7 @@ proxy-groups:
   - "🇨🇦 Канада #3 ⚡"
   - "uni-de12i"
   - "🇩🇪 Германия #4 ⚡"
-  - "🇩🇪 Германия #1 ⚡"
-  - "🇩🇪 Германия #5"
+  - "🇩🇪 Германия #1"
   - "uni-deiw2"
   - "uni-deiw3"
   - "uni-ee1"
@@ -3421,7 +3394,7 @@ proxy-groups:
   - "uni-pee2"
   - "★ 🤖 Нейросети 🇫🇮 Финляндия"
   - "★ 🇫🇮 Финляндия #17"
-  - "★ 🇫🇮 Финляндия #15 ⚡"
+  - "★ 🇫🇮 Финляндия #15"
   - "uni-pl2"
   - "🇵🇱 Польша #1 ⚡"
   - "🇵🇱 Польша #6 ⚡"
@@ -3448,21 +3421,21 @@ proxy-groups:
   - "🇳🇱 Нидерланды #19"
   - "🇳🇱 Нидерланды #20"
   - "🇳🇱 Нидерланды #21"
-  - "🇳🇱 Нидерланды #22 ⚡"
-  - "🇩🇪 Германия #19 ⚡"
-  - "🇩🇪 Германия #20"
+  - "🇳🇱 Нидерланды #22 ^~2~^"
+  - "🇩🇪 Германия #19"
+  - "🇩🇪 Германия #20 ⚡"
   - "🇫🇷 Франция #9 ⚡"
   - "🇫🇷 Франция #10 ⚡"
-  - "🇪🇪 Эстония #15 ⚡"
-  - "🇩🇪 Германия #22 ⚡"
+  - "🇪🇪 Эстония #15"
+  - "🇩🇪 Германия #22"
   - "🇵🇱 Польша #18 ⚡"
   - "🇳🇱 Нидерланды #22"
-  - "🇫🇮 Финляндия #23"
-  - "🇫🇮 Финляндия #24 ⚡"
+  - "🇫🇮 Финляндия #23 ⚡"
+  - "🇫🇮 Финляндия #24"
   - "🇭🇰 Гонконг #5"
   - "🇩🇪 Германия #23 ⚡"
   - "🇩🇪 Германия #24 ⚡"
-  - "🇺🇸 США #3 ⚡"
+  - "🇺🇸 США #3"
   - "🇨🇭 Швейцария #1 ⚡"
   - "🇳🇱 Нидерланды #23 ⚡"
   - "★ 🇩🇪 Германия #27 ⚡"
@@ -3493,8 +3466,7 @@ proxy-groups:
   - "🇨🇦 Канада #1 ⚡"
   - "🇨🇦 Канада #3 ⚡"
   - "🇩🇪 Германия #4 ⚡"
-  - "🇩🇪 Германия #1 ⚡"
-  - "🇩🇪 Германия #5"
+  - "🇩🇪 Германия #1"
   - "uni-deiw2"
   - "uni-deiw3"
   - "uni-ee1"
@@ -3511,7 +3483,7 @@ proxy-groups:
   - "★ 🇪🇪 Эстония #6"
   - "uni-pee2"
   - "★ 🇫🇮 Финляндия #17"
-  - "★ 🇫🇮 Финляндия #15 ⚡"
+  - "★ 🇫🇮 Финляндия #15"
   - "uni-pl2"
   - "🇵🇱 Польша #1 ⚡"
   - "🇵🇱 Польша #6 ⚡"
@@ -3523,24 +3495,24 @@ proxy-groups:
   - "★ 🇵🇱 Польша #9 ⚡"
   - "🇫🇷 Франция #10 ⚡"
   - "🇫🇷 Франция #9 ⚡"
-  - "🇩🇪 Германия #20"
-  - "🇩🇪 Германия #19 ⚡"
+  - "🇩🇪 Германия #20 ⚡"
+  - "🇩🇪 Германия #19"
   - "🇵🇱 Польша #16"
   - "🇵🇱 Польша #17"
   - "🇳🇱 Нидерланды #20"
-  - "🇳🇱 Нидерланды #22 ⚡"
+  - "🇳🇱 Нидерланды #22 ^~2~^"
   - "🇳🇱 Нидерланды #19"
   - "🇳🇱 Нидерланды #21"
-  - "🇪🇪 Эстония #15 ⚡"
-  - "🇩🇪 Германия #22 ⚡"
+  - "🇪🇪 Эстония #15"
+  - "🇩🇪 Германия #22"
   - "🇵🇱 Польша #18 ⚡"
   - "🇳🇱 Нидерланды #22"
-  - "🇫🇮 Финляндия #23"
+  - "🇫🇮 Финляндия #23 ⚡"
   - "🇭🇰 Гонконг #5"
-  - "🇫🇮 Финляндия #24 ⚡"
+  - "🇫🇮 Финляндия #24"
   - "🇩🇪 Германия #24 ⚡"
   - "🇩🇪 Германия #23 ⚡"
-  - "🇺🇸 США #3 ⚡"
+  - "🇺🇸 США #3"
   - "🇨🇭 Швейцария #1 ⚡"
   - "🇳🇱 Нидерланды #23 ⚡"
   - "★ 🇩🇪 Германия #27 ⚡"
@@ -3908,15 +3880,15 @@ rules:
 - DOMAIN-SUFFIX,yt3.ggpht.com,B_YT
 - DOMAIN-SUFFIX,youtubei.googleapis.com,B_YT
 - DOMAIN-SUFFIX,withyoutube.com,B_YT
-- DOMAIN-SUFFIX,telegram.org,B_TG
-- DOMAIN-SUFFIX,t.me,B_TG
-- DOMAIN-SUFFIX,telegram.me,B_TG
-- DOMAIN-SUFFIX,telesco.pe,B_TG
-- DOMAIN-SUFFIX,tdesktop.com,B_TG
-- DOMAIN-SUFFIX,telegra.ph,B_TG
-- DOMAIN-SUFFIX,cdn-telegram.org,B_TG
-- DOMAIN-SUFFIX,comments.app,B_TG
-- GEOIP,TELEGRAM,B_TG,no-resolve
+- DOMAIN-SUFFIX,telegram.org,B_UNI
+- DOMAIN-SUFFIX,t.me,B_UNI
+- DOMAIN-SUFFIX,telegram.me,B_UNI
+- DOMAIN-SUFFIX,telesco.pe,B_UNI
+- DOMAIN-SUFFIX,tdesktop.com,B_UNI
+- DOMAIN-SUFFIX,telegra.ph,B_UNI
+- DOMAIN-SUFFIX,cdn-telegram.org,B_UNI
+- DOMAIN-SUFFIX,comments.app,B_UNI
+- GEOIP,TELEGRAM,B_UNI,no-resolve
 - DOMAIN-SUFFIX,google.com,B_GM
 - DOMAIN-SUFFIX,gstatic.com,B_GM
 - DOMAIN-SUFFIX,googleapis.com,B_GM
