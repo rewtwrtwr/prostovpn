@@ -383,9 +383,13 @@ def build_yaml(proxies, groups, dns_ns, dns_policy, clash_rules, header_lines):
     for ns in dns_ns:
         out.append(f"    - {ns}")
     if dns_policy:
+        # 26.11.2026: значения — СПИСКОМ, не строкой. Одиночная строка
+        # принимается только новыми Mihomo (>=1.19.x); старые ядра Karing
+        # требуют список и роняют весь конфиг на строке вида "+.ru": 8.8.8.8.
         out.append("  nameserver-policy:")
         for dom, srv in sorted(dns_policy.items()):
-            out.append(f"    {qstr(dom)}: {srv}")
+            out.append(f"    {qstr(dom)}:")
+            out.append(f"      - {srv}")
     out += ["  fallback:",
             "    - 8.8.8.8",
             "    - 8.8.4.4",
