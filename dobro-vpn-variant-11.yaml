@@ -1,0 +1,449 @@
+# dobro-vpn-variant-11.yaml — Clash/Mihomo config for ONE routing variant, do not edit manually
+# variant 11/15 | elements: 1 | xray rules: 8 -> clash rules: 186
+# nodes in this variant: 🇪🇺 Европа [АВТОВЫБОР ⭐]
+# Routing + DNS preserved exactly as the panel configured them for these nodes.
+# Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
+# updated: 2026-11-26T07:04:35Z
+# proxies: 21 | groups: 2 | rules: 187 | dns policy: 0
+
+port: 7890
+socks-port: 7891
+mixed-port: 7892
+allow-lan: false
+mode: rule
+log-level: info
+ipv6: false
+
+dns:
+  enable: true
+  ipv6: false
+  nameserver:
+    - 77.88.8.8
+    - 1.1.1.1
+  fallback:
+    - 8.8.8.8
+    - 8.8.4.4
+
+proxies:
+- name: "🇪🇺 Европа [АВТОВЫБОР ⭐]"
+  type: vless
+  server: 179.254.109.142
+  port: 443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: r-se2.vless.site
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: NvR81zPpWlKZtxg86sp4mC9iVlyidq0v_rkgpSqjc1s
+    short-id: 073511c72071352f
+- name: "🇳🇱 Нидерланды #26 ⚡"
+  type: vless
+  server: cdn-nl.pixlora.org
+  port: 58383
+  uuid: a9ea61db-efad-000a-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: cdn-nl.pixlora.org
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: qkNv_vvEeHBlubDM154C1l05Wjyaj1k0l3qY911gUQQ
+    short-id: dcb80b2936e64257
+- name: "🇳🇱 Нидерланды #3 ⚡"
+  type: vless
+  server: 2.27.71.193
+  port: 443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: srv-0afdb2.vless.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: QRuOFxxZFmXdLOPXTMzfsgid6vhvHYUD_ICParI41WM
+    short-id: 7971f1b94378fc12
+- name: "🇪🇪 Эстония #5 ⚡"
+  type: vless
+  server: 31.56.187.246
+  port: 8765
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: r-c705dc.vless.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: dzc73376TXGhzhfPgBCYEHzUp2-cBSdCK2wgPuWNFFI
+    short-id: 6a7bd2
+- name: "🇳🇱 Нидерланды #2 ⚡"
+  type: vless
+  server: 179.254.111.108
+  port: 443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: r-nl3.vless.site
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: NGDCTIEMyA3Rst1SCpR46MhRV1bhmjW6MaMfdSFYS08
+    short-id: e32dccf378691ace
+- name: "🇵🇱 Польша #21 ⚡"
+  type: vless
+  server: cdn-pl.pixlora.org
+  port: 58383
+  uuid: a9ea61db-efad-0004-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: cdn-pl.pixlora.org
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: qkNv_vvEeHBlubDM154C1l05Wjyaj1k0l3qY911gUQQ
+    short-id: dcb80b2936e64257
+- name: "🇫🇮 Финляндия #27 ⚡"
+  type: vless
+  server: cdn-fi.pixlora.org
+  port: 58383
+  uuid: a9ea61db-efad-0001-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: cdn-fi.pixlora.org
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: qkNv_vvEeHBlubDM154C1l05Wjyaj1k0l3qY911gUQQ
+    short-id: dcb80b2936e64257
+- name: "🇫🇮 Финляндия #3 ⚡"
+  type: vless
+  server: 31.77.202.170
+  port: 8765
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: mx-781a5b.vless.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: AyPAMP8XIRtRIagJuk5eA0AFyvZbkqrRRdMEDsD_mkQ
+    short-id: 62da72fb
+- name: "🇩🇪 Германия #32 ⚡"
+  type: vless
+  server: cdn-de.pixlora.org
+  port: 58383
+  uuid: a9ea61db-efad-0009-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: cdn-de.pixlora.org
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: qkNv_vvEeHBlubDM154C1l05Wjyaj1k0l3qY911gUQQ
+    short-id: dcb80b2936e64257
+- name: "🌎 Универсальный №1"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🌎 Универсальный №2"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🌎 Универсальный №3"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🌎 Универсальный №4"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🌎 Универсальный №5 (2)"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🚀 Если отключает 5-15 мин"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🇩🇪 Германия [АВТОВЫБОР ⭐]"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🇪🇺 Европа [АВТОВЫБОР ⭐] (2)"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🇫🇮 Финляндия [АВТОВЫБОР ⭐]"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🇳🇱 Нидерланды [АВТОВЫБОР ⭐]"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🇵🇱 Польша [АВТОВЫБОР ⭐]"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🤖 Нейросети [АВТОВЫБОР⭐]"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+
+proxy-groups:
+- name: "AUTO"
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  lazy: true
+  proxies:
+  - "🇪🇺 Европа [АВТОВЫБОР ⭐]"
+  - "🇳🇱 Нидерланды #26 ⚡"
+  - "🇳🇱 Нидерланды #3 ⚡"
+  - "🇪🇪 Эстония #5 ⚡"
+  - "🇳🇱 Нидерланды #2 ⚡"
+  - "🇵🇱 Польша #21 ⚡"
+  - "🇫🇮 Финляндия #27 ⚡"
+  - "🇫🇮 Финляндия #3 ⚡"
+  - "🇩🇪 Германия #32 ⚡"
+- name: "SELECT"
+  type: select
+  proxies:
+  - "AUTO"
+  - "DIRECT"
+
+rules:
+- IP-CIDR,::/0,REJECT,no-resolve
+- DOMAIN-SUFFIX,notion.so,SELECT
+- DOMAIN-SUFFIX,notion.com,SELECT
+- DOMAIN-SUFFIX,notion.site,SELECT
+- DOMAIN-SUFFIX,notion.new,SELECT
+- DOMAIN-SUFFIX,notionusercontent.com,SELECT
+- DOMAIN-SUFFIX,notion-static.com,SELECT
+- DOMAIN,prod-files-secure.s3.us-west-2.amazonaws.com,SELECT
+- GEOIP,private,DIRECT,no-resolve
+- DOMAIN-SUFFIX,max.ru,DIRECT
+- DOMAIN-SUFFIX,2gis.ru,DIRECT
+- DOMAIN-SUFFIX,2gis.com,DIRECT
+- DOMAIN-SUFFIX,aif.ru,DIRECT
+- DOMAIN-SUFFIX,aeroflot.ru,DIRECT
+- DOMAIN-SUFFIX,alfabank.ru,DIRECT
+- DOMAIN-SUFFIX,avito.ru,DIRECT
+- DOMAIN-SUFFIX,beeline.ru,DIRECT
+- DOMAIN-SUFFIX,burgerkingrus.ru,DIRECT
+- DOMAIN-SUFFIX,dellin.ru,DIRECT
+- DOMAIN-SUFFIX,drive2.ru,DIRECT
+- DOMAIN-SUFFIX,dzen.ru,DIRECT
+- DOMAIN-SUFFIX,flypobeda.ru,DIRECT
+- DOMAIN-SUFFIX,forbes.ru,DIRECT
+- DOMAIN-SUFFIX,gazeta.ru,DIRECT
+- DOMAIN-SUFFIX,gazprombank.ru,DIRECT
+- DOMAIN-SUFFIX,gismeteo.ru,DIRECT
+- DOMAIN-SUFFIX,gosuslugi.ru,DIRECT
+- DOMAIN-SUFFIX,hh.ru,DIRECT
+- DOMAIN-SUFFIX,kontur.ru,DIRECT
+- DOMAIN-SUFFIX,kontur.host,DIRECT
+- DOMAIN-SUFFIX,kp.ru,DIRECT
+- DOMAIN-SUFFIX,kuper.ru,DIRECT
+- DOMAIN-SUFFIX,lenta.ru,DIRECT
+- DOMAIN-SUFFIX,mail.ru,DIRECT
+- DOMAIN-SUFFIX,megamarket.ru,DIRECT
+- DOMAIN-SUFFIX,megamarket.tech,DIRECT
+- DOMAIN-SUFFIX,megafon.ru,DIRECT
+- DOMAIN-SUFFIX,moex.com,DIRECT
+- DOMAIN-SUFFIX,motivtelecom.ru,DIRECT
+- DOMAIN-SUFFIX,ozon.ru,DIRECT
+- DOMAIN-SUFFIX,pervye.ru,DIRECT
+- DOMAIN-SUFFIX,psbank.ru,DIRECT
+- DOMAIN-SUFFIX,rambler.ru,DIRECT
+- DOMAIN-SUFFIX,rambler-co.ru,DIRECT
+- DOMAIN-SUFFIX,rbc.ru,DIRECT
+- DOMAIN-SUFFIX,reg.ru,DIRECT
+- DOMAIN-SUFFIX,reviews.2gis.com,DIRECT
+- DOMAIN-SUFFIX,rg.ru,DIRECT
+- DOMAIN-SUFFIX,ria.ru,DIRECT
+- DOMAIN-SUFFIX,ruwiki.ru,DIRECT
+- DOMAIN-SUFFIX,rustore.ru,DIRECT
+- DOMAIN-SUFFIX,rutube.ru,DIRECT
+- DOMAIN-SUFFIX,rzd.ru,DIRECT
+- DOMAIN-SUFFIX,sirena-travel.ru,DIRECT
+- DOMAIN-SUFFIX,sravni.ru,DIRECT
+- DOMAIN-SUFFIX,t-j.ru,DIRECT
+- DOMAIN-SUFFIX,t2.ru,DIRECT
+- DOMAIN-SUFFIX,tank-online.com,DIRECT
+- DOMAIN-SUFFIX,taximaxim.ru,DIRECT
+- DOMAIN-SUFFIX,tbank-online.com,DIRECT
+- DOMAIN-SUFFIX,tildaapi.com,DIRECT
+- DOMAIN-SUFFIX,trvl.yandex.net,DIRECT
+- DOMAIN-SUFFIX,tutu.ru,DIRECT
+- DOMAIN-SUFFIX,vk.com,DIRECT
+- DOMAIN-SUFFIX,vk.ru,DIRECT
+- DOMAIN-SUFFIX,vkvideo.ru,DIRECT
+- DOMAIN-SUFFIX,vtb.ru,DIRECT
+- DOMAIN-SUFFIX,x5.ru,DIRECT
+- DOMAIN-SUFFIX,ya.ru,DIRECT
+- DOMAIN-SUFFIX,yandex.ru,DIRECT
+- DOMAIN-SUFFIX,yandex.net,DIRECT
+- DOMAIN-SUFFIX,yandex.com,DIRECT
+- DOMAIN-SUFFIX,yastatic.net,DIRECT
+- DOMAIN-SUFFIX,yandexcloud.net,DIRECT
+- DOMAIN,go.yandex,DIRECT
+- DOMAIN,ru.ruwiki.ru,DIRECT
+- DOMAIN-SUFFIX,xn--90acagbhgpca7c8c7f.xn--p1ai,DIRECT
+- DOMAIN-SUFFIX,xn--80ajghhoc2aj1c8b.xn--p1ai,DIRECT
+- DOMAIN-SUFFIX,xn--90aivcdt6dxbc.xn--p1ai,DIRECT
+- DOMAIN-SUFFIX,xn--b1aew.xn--p1ai,DIRECT
+- DOMAIN-SUFFIX,api.oneme.ru,DIRECT
+- DOMAIN-SUFFIX,fd.oneme.ru,DIRECT
+- DOMAIN-SUFFIX,i.oneme.ru,DIRECT
+- DOMAIN-SUFFIX,miniapps.max.ru,DIRECT
+- DOMAIN-SUFFIX,st.max.ru,DIRECT
+- DOMAIN-SUFFIX,ru,DIRECT
+- DOMAIN-SUFFIX,su,DIRECT
+- DOMAIN-SUFFIX,xn--p1ai,DIRECT
+- DOMAIN-SUFFIX,24h.tv,DIRECT
+- DOMAIN-SUFFIX,aviasales.com,DIRECT
+- DOMAIN-SUFFIX,avito.st,DIRECT
+- DOMAIN-SUFFIX,avs.io,DIRECT
+- DOMAIN-SUFFIX,beeline.tv,DIRECT
+- DOMAIN-SUFFIX,dodois.com,DIRECT
+- DOMAIN-SUFFIX,dodois.io,DIRECT
+- DOMAIN-SUFFIX,dodopizza.com,DIRECT
+- DOMAIN-SUFFIX,dodostatic.net,DIRECT
+- DOMAIN-SUFFIX,emias.info,DIRECT
+- DOMAIN-SUFFIX,evrasia.rest,DIRECT
+- DOMAIN-SUFFIX,kinorium.com,DIRECT
+- DOMAIN-SUFFIX,lenta.tech,DIRECT
+- DOMAIN-SUFFIX,moscow,DIRECT
+- DOMAIN-SUFFIX,mosmetro.tech,DIRECT
+- DOMAIN-SUFFIX,mradx.net,DIRECT
+- DOMAIN-SUFFIX,mvk.com,DIRECT
+- DOMAIN-SUFFIX,my.com,DIRECT
+- DOMAIN-SUFFIX,mycdn.me,DIRECT
+- DOMAIN-SUFFIX,naydex.net,DIRECT
+- DOMAIN-SUFFIX,ngenix.net,DIRECT
+- DOMAIN-SUFFIX,ozon.com,DIRECT
+- DOMAIN-SUFFIX,ozon.travel,DIRECT
+- DOMAIN-SUFFIX,ozonusercontent.com,DIRECT
+- DOMAIN-SUFFIX,perekrestok.com,DIRECT
+- DOMAIN-SUFFIX,premier.one,DIRECT
+- DOMAIN-SUFFIX,psk,DIRECT
+- DOMAIN-SUFFIX,restream-media.net,DIRECT
+- DOMAIN-SUFFIX,rostaxi.org,DIRECT
+- DOMAIN-SUFFIX,ru,DIRECT
+- DOMAIN-SUFFIX,ru.com,DIRECT
+- DOMAIN-SUFFIX,ru.net,DIRECT
+- DOMAIN-SUFFIX,sberbank.com,DIRECT
+- DOMAIN-SUFFIX,smotreshka.tv,DIRECT
+- DOMAIN-SUFFIX,su,DIRECT
+- DOMAIN-SUFFIX,t1.cloud,DIRECT
+- DOMAIN-SUFFIX,tatar,DIRECT
+- DOMAIN-SUFFIX,telega.info,DIRECT
+- DOMAIN-SUFFIX,telega.me,DIRECT
+- DOMAIN-SUFFIX,turbopages.org,DIRECT
+- DOMAIN-SUFFIX,uni.rest,DIRECT
+- DOMAIN-SUFFIX,unirest.tech,DIRECT
+- DOMAIN-SUFFIX,userapi.com,DIRECT
+- DOMAIN-SUFFIX,vk-apps.com,DIRECT
+- DOMAIN-SUFFIX,vk-cdn.me,DIRECT
+- DOMAIN-SUFFIX,vk-cdn.net,DIRECT
+- DOMAIN-SUFFIX,vk-portal.net,DIRECT
+- DOMAIN-SUFFIX,vk.cc,DIRECT
+- DOMAIN-SUFFIX,vk.company,DIRECT
+- DOMAIN-SUFFIX,vk.design,DIRECT
+- DOMAIN-SUFFIX,vk.link,DIRECT
+- DOMAIN-SUFFIX,vk.me,DIRECT
+- DOMAIN-SUFFIX,vk.team,DIRECT
+- DOMAIN-SUFFIX,vkgo.app,DIRECT
+- DOMAIN-SUFFIX,vklive.app,DIRECT
+- DOMAIN-SUFFIX,vkmessenger.app,DIRECT
+- DOMAIN-SUFFIX,vkmessenger.com,DIRECT
+- DOMAIN-SUFFIX,vkuser.net,DIRECT
+- DOMAIN-SUFFIX,vkuseraudio.com,DIRECT
+- DOMAIN-SUFFIX,vkuseraudio.net,DIRECT
+- DOMAIN-SUFFIX,vkuserlive.net,DIRECT
+- DOMAIN-SUFFIX,vkuservideo.com,DIRECT
+- DOMAIN-SUFFIX,vkuservideo.net,DIRECT
+- DOMAIN-SUFFIX,wbstatic.net,DIRECT
+- DOMAIN-SUFFIX,webvisor.com,DIRECT
+- DOMAIN-SUFFIX,webvisor.org,DIRECT
+- DOMAIN-SUFFIX,x5.ai,DIRECT
+- DOMAIN-SUFFIX,x5.com,DIRECT
+- DOMAIN-SUFFIX,x5.digital,DIRECT
+- DOMAIN-SUFFIX,x5.group,DIRECT
+- DOMAIN-SUFFIX,x5.media,DIRECT
+- DOMAIN-SUFFIX,x5.team,DIRECT
+- DOMAIN-SUFFIX,x5static.net,DIRECT
+- DOMAIN-SUFFIX,xn--80adxhks,DIRECT
+- DOMAIN-SUFFIX,xn--80asehdb,DIRECT
+- DOMAIN-SUFFIX,xn--80aswg,DIRECT
+- DOMAIN-SUFFIX,xn--c1avg,DIRECT
+- DOMAIN-SUFFIX,xn--d1acj3b,DIRECT
+- DOMAIN-SUFFIX,xn--p1acf,DIRECT
+- DOMAIN-SUFFIX,xn--p1ai,DIRECT
+- DOMAIN-SUFFIX,ya.cc,DIRECT
+- DOMAIN-SUFFIX,yads.tech,DIRECT
+- DOMAIN-SUFFIX,yandex,DIRECT
+- DOMAIN-SUFFIX,yandex-pogoda.static-storage.net,DIRECT
+- DOMAIN-SUFFIX,yandex.by,DIRECT
+- DOMAIN-SUFFIX,yandex.cloud,DIRECT
+- DOMAIN-SUFFIX,yandex.com.tr,DIRECT
+- DOMAIN-SUFFIX,yandex.eu,DIRECT
+- DOMAIN-SUFFIX,yandex.kz,DIRECT
+- DOMAIN-SUFFIX,yandex.st,DIRECT
+- DOMAIN-SUFFIX,yandex.uz,DIRECT
+- DOMAIN-SUFFIX,yandexadexchange.net,DIRECT
+- DOMAIN-SUFFIX,yandexcom.net,DIRECT
+- DOMAIN-SUFFIX,yandexmetrica.com,DIRECT
+- DOMAIN-SUFFIX,yandexwebcache.org,DIRECT
+- DOMAIN-SUFFIX,yastat.net,DIRECT
+- DOMAIN-SUFFIX,yclients.com,DIRECT
+- GEOIP,RU,DIRECT,no-resolve
+- MATCH,SELECT

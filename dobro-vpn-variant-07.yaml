@@ -1,0 +1,2953 @@
+# dobro-vpn-variant-07.yaml — Clash/Mihomo config for ONE routing variant, do not edit manually
+# variant 7/15 | elements: 1 | xray rules: 10 -> clash rules: 246
+# nodes in this variant: 🌎 Универсальный №4
+# Routing + DNS preserved exactly as the panel configured them for these nodes.
+# Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
+# updated: 2026-11-26T07:04:35Z
+# proxies: 173 | groups: 4 | rules: 247 | dns policy: 0
+
+port: 7890
+socks-port: 7891
+mixed-port: 7892
+allow-lan: false
+mode: rule
+log-level: info
+ipv6: false
+
+dns:
+  enable: true
+  ipv6: false
+  nameserver:
+    - 77.88.8.8
+    - 1.1.1.1
+  fallback:
+    - 8.8.8.8
+    - 8.8.4.4
+
+proxies:
+- name: "🇪🇺 Европа [АВТОВЫБОР ⭐]"
+  type: vless
+  server: 179.254.109.142
+  port: 443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: r-se2.vless.site
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: NvR81zPpWlKZtxg86sp4mC9iVlyidq0v_rkgpSqjc1s
+    short-id: 073511c72071352f
+- name: "🤖 Нейросети 🇬🇧 Британия"
+  type: vless
+  server: 170.168.27.9
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: edge-46b64e.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: ItEAtyB5d6FqBDHheffz1uIVzSmqDxGJw9c5iqunKh4
+    short-id: 7e572921494d6745
+- name: "★ 🤖 Нейросети 🇫🇮 Финляндия"
+  type: vless
+  server: 191.217.252.164
+  port: 443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: mx-fip1.vless.site
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: voOZAVZUOnja8sGdgOx3w_N9rVSP0D1F2Hqv2M3OQ38
+    short-id: 5aa7f7a3d12111b9
+- name: "🇪🇸 Испания ⚡"
+  type: vless
+  server: 179.255.189.65
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: cache-12d410.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: odLpX_cLGNemTANQ0e2OA7xzrb25zmGVD82a4aiL1UY
+    short-id: cadd3ac9087bd465
+- name: "🇮🇱 Израиль ⚡"
+  type: vless
+  server: 170.168.12.48
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: gw-2806d2.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: IlFILvjY6CfrX07XU9VJB5RZOCFGmIdsi4HIGNMV20I
+    short-id: 84d8119335f155b5
+- name: "🇨🇭 Швейцария #1 ⚡"
+  type: vless
+  server: 179.255.191.144
+  port: 50770
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: zrh2.velravio.com
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: NYvmxMCHX_N_vEfsN_JuC-XsZOf1Yr4Laua-GUVaCWY
+    short-id: 2dca8978f4a44016
+- name: "★ 🇯🇵 Япония ⚡"
+  type: vless
+  server: 31.76.91.78
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: mx-74bf09.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: cDC3Whr81RXC-gEH-9A58buHL1iiFeVDOEn3ZOIkUnc
+    short-id: 3432ef6a6c821d95
+- name: "🇺🇸 США #5 ⚡"
+  type: vless
+  server: 152.234.250.233
+  port: 52443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: ingest-nyc.lapsegrid.com
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: aIAZbx7okN1_cYdro5Un_DP6o7rAGyzF8Pm2kgaC2BI
+    short-id: 5dd3d27dd57958b2
+- name: "🇺🇸 США #3 ⚡"
+  type: vless
+  server: 152.234.163.21
+  port: 47262
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: nyc2.velravio.com
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: FFWySf82T7nAK0dkkB6NFMtHZItG7tj8z3J6HI-Pl0g
+    short-id: b174087b939d69ee
+- name: "🇭🇰 Гонконг #2 ⚡"
+  type: vless
+  server: 85.11.161.33
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: mx-2372c3.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: H4PmdY0ne8oJz8aSYYMmbwWaPv60SOJGKvfAkndaWCc
+    short-id: c777b184dac4bb88
+- name: "🇭🇰 Гонконг #5 ⚡"
+  type: vless
+  server: 170.168.24.55
+  port: 55511
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: hkg.velravio.com
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: n_SxHwiqmtfZau2jjvmSiZ6L5x2cs3hlMHfo0qAdVVk
+    short-id: 1d64fdfaf6eb065e
+- name: "★ 🇬🇧 Британия #6"
+  type: vless
+  server: 109.176.229.205
+  port: 55594
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: mx-84c5cd.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: QBi7R2hjStEpGSPW87NJnMERKAFd9rmoSNBuRFTQxTs
+    short-id: fdb75e804acf0612
+- name: "🇫🇷 Франция #5 ⚡"
+  type: vless
+  server: 82.25.63.237
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: edge-a6b485.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: oeJvqAjr3cJoHbyM5KddlPw7q-czzZA-dlJdCYL8hEk
+    short-id: 97dc95ead5f75d50
+- name: "🇮🇹 Италия #2 ⚡"
+  type: vless
+  server: 179.255.190.30
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: mx-f763e0.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 0oHuU4mx1Uw3_lF7QZXYfwPMbuStgMRk2tk7VpCc_js
+    short-id: 6f75347fbc948997
+- name: "🇫🇷 Франция #9 ⚡"
+  type: vless
+  server: 31.59.190.19
+  port: 54489
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: par2.velravio.com
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: SkyzgjIEbc31CI8T9YW4K0h2YXbVi0uSdWRAPDs9qV8
+    short-id: fe169e993e6a9c98
+- name: "🇫🇷 Франция #10 ⚡"
+  type: vless
+  server: 194.122.84.74
+  port: 54303
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: par.velravio.com
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: QkknHpKzKW3L_ZMeW0llPWkZsXDj1OCAUw2NBvaK4Ro
+    short-id: 682475a4c5c3ffc5
+- name: "🇮🇹 Италия #3"
+  type: vless
+  server: 179.255.190.45
+  port: 50175
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: mil2.velravio.com
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: nhYDtNxK33mt_jhNPmrRF4nwzWTH91-Hw91CzOAnkks
+    short-id: 2d74088da3c992c6
+- name: "🇪🇪 Эстония #2 ⚡"
+  type: vless
+  server: 95.85.249.199
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: edge-d44924.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: lLYa5X7c1z2ohksMD9D1AQolB-QdKdoRc7Ki9Mgqpwo
+    short-id: fb70848a3d2ec812
+- name: "🇨🇦 Канада #1 ⚡"
+  type: vless
+  server: 179.255.184.6
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: r-5ae081.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: o54iCVqW9l9D7Hz9cFaysT-hon633BI8jJicRBSxNC4
+    short-id: 1e5dea3ae3cd72cb
+- name: "🇨🇦 Канада #2 ⚡"
+  type: vless
+  server: 179.255.184.27
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: node-280d5d.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: euxdU384x5_UddyM6UE4RpVRsl9Z2xFhQ-mE1ydzhnQ
+    short-id: cc838404c247aa9a
+- name: "★ 🇪🇪 Эстония #6"
+  type: vless
+  server: 132.243.67.88
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: tll6.velravio.com
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 5EEJVsaboS0K6mFkGZOQc_oajrf3jDMd998rA2bXIEk
+    short-id: bb14db47c7fe43a2
+- name: "🇫🇷 Франция #1 ⚡"
+  type: vless
+  server: 179.255.188.77
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: cdn-e1b76d.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: x9JDUarmsyffBP0mIXAQbcW27e1CAgAiUceJatHqaAY
+    short-id: d2a2456b5e5003ec
+- name: "🇳🇱 Нидерланды #26 ⚡"
+  type: vless
+  server: cdn-nl.pixlora.org
+  port: 58383
+  uuid: a9ea61db-efad-000a-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: cdn-nl.pixlora.org
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: qkNv_vvEeHBlubDM154C1l05Wjyaj1k0l3qY911gUQQ
+    short-id: dcb80b2936e64257
+- name: "🇳🇱 Нидерланды #6 ⚡"
+  type: vless
+  server: 156.9.124.80
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: edge-fe4eb4.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: hoF5HIPDsWCCrK98z3m24_x3y8SWaQhXO4Uq4O_Ktw8
+    short-id: 3c02afcfca91ece4
+- name: "🇳🇱 Нидерланды #21"
+  type: vless
+  server: 2.27.106.89
+  port: 43732
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: node-1ede94.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: u67Uzkec73ucHBgOOFjj6z3dACU69x1YbuF8bV1Xfhw
+    short-id: 4b00e532b27cf89d
+- name: "🇪🇪 Эстония #15 ⚡"
+  type: vless
+  server: 217.60.182.113
+  port: 45972
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: tll8.velravio.com
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: UN9I__3jkdFtbc6vAMHIFxpG3w1VK30IoWCmgAwSbEk
+    short-id: f94dd3bb14359760
+- name: "🇪🇪 Эстония #16 ⚡"
+  type: vless
+  server: 2.26.182.210
+  port: 55210
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: mx-8e6f65.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: entgcDNAR7iXRYXAOfQ2975BVbhLPBxaJoa8ngGGSEU
+    short-id: eb8c545eefbe51bd
+- name: "🇪🇪 Эстония #17 ⚡"
+  type: vless
+  server: 2.26.182.209
+  port: 49987
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: node-d7c6d4.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: -jfSU56GCOqnHugbl7dPUJ9QGgPJLY-4ZNHpSqgeZhY
+    short-id: e3cea8232c906a32
+- name: "🇳🇱 Нидерланды #2 ⚡"
+  type: vless
+  server: 179.254.111.108
+  port: 443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: r-nl3.vless.site
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: NGDCTIEMyA3Rst1SCpR46MhRV1bhmjW6MaMfdSFYS08
+    short-id: e32dccf378691ace
+- name: "🇳🇱 Нидерланды #22 ⚡"
+  type: vless
+  server: 130.78.30.234
+  port: 44826
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: ams.heldivo.nl
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 5H7GYN6pH1liljAdy0UI9ZvjTWbCqjq-nPS_llGRiDg
+    short-id: bfd6bd609aa8d333
+- name: "🇳🇱 Нидерланды #19 ⚡"
+  type: vless
+  server: 2.27.106.87
+  port: 52940
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: r-204da3.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: pEMjXveKQw0hSBZrSi3-MujufIVbEUl3zvhg3K1hFG4
+    short-id: 142669ab79ec3cb4
+- name: "🇵🇱 Польша #15 ⚡"
+  type: vless
+  server: 185.16.39.146
+  port: 443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: app.velunio.pl
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: NsML9c2UwC-Xz4mndUdg43U-tlmzMkFN5hvsEi3Tbk0
+    short-id: d7acd5d92a2ad340
+- name: "🇵🇱 Польша #1 ⚡"
+  type: vless
+  server: 144.31.171.184
+  port: 8790
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: r-543755.vless.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 7CoUJmcf0p9g3zBA51YqBVHz5rCHiwAKEBDkhHlEhlY
+    short-id: c3e05cb047b55d62
+- name: "🇳🇱 Нидерланды #23 ⚡"
+  type: vless
+  server: 170.168.43.29
+  port: 51393
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: ams2.velravio.com
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: BEIwm77Ca8YL8txr-sn5RvgzmUEXt436ICs-b2dpfnA
+    short-id: bada9e4be28ef701
+- name: "★ 🇳🇱 Нидерланды #24 ⚡"
+  type: vless
+  server: 185.170.213.251
+  port: 45059
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: r-e2cf14.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: JXpt56wbKy4jOmoBvv3sb0CjmtOSP03_RHfdzHqm1UQ
+    short-id: 69bcd1445a539388
+- name: "★ 🇳🇱 Нидерланды #9"
+  type: vless
+  server: 150.251.143.169
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: ehv1.heldivo.nl
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: dZDkAkEKiT6z-MVKxBcbG6O_FWrDx1lN-8VRWdhsa2Q
+    short-id: 1d75fc0589a76fc1
+- name: "★ 🇳🇱 Нидерланды #25 ⚡"
+  type: vless
+  server: cdn-nl.pixlora.org
+  port: 443
+  uuid: a9ea61db-efad-000a-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: cdn-nl.pixlora.org
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: qkNv_vvEeHBlubDM154C1l05Wjyaj1k0l3qY911gUQQ
+    short-id: dcb80b2936e64257
+- name: "🇵🇱 Польша #6 ⚡"
+  type: vless
+  server: 213.21.232.93
+  port: 443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: node-plgen.vless.site
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: y_24-PEZZ3Gv_IDp-Y-AxJ00Bf-hQVHvVpaDDTypdDo
+    short-id: 80a7dab225c8a03c
+- name: "🇵🇱 Польша #16 ⚡"
+  type: vless
+  server: 31.59.190.166
+  port: 55226
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: api.velunio.pl
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: aaFRZz51wMMDvyU7MYbcLpVhpLr8f_dunpPq-CgjDnA
+    short-id: cb4adccf88e6e40f
+- name: "🇵🇱 Польша #17 ⚡"
+  type: vless
+  server: 31.59.190.167
+  port: 43786
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: static.velunio.pl
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: VtXHC4U9Zn0HG8iapP__tE3Y_LuXiVEiFv-J-7SYZ30
+    short-id: 04b1b73ba147d939
+- name: "🇵🇱 Польша #18 ⚡"
+  type: vless
+  server: 130.78.31.150
+  port: 49672
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: waw.velravio.com
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: JC9E9xTViNmlsMtF_u4CJyCXbzxwyAkECgSEq-n4Eg0
+    short-id: c4dfb48f4488682a
+- name: "🇵🇱 Польша #19 ⚡"
+  type: vless
+  server: 31.77.247.11
+  port: 58383
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: chmura.velunio.pl
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: WZTTNKvzoqVU8FBl8r8_Fn0uWNKTJQz_uqpBY2NlkCk
+    short-id: 6432a9392e4d01b7
+- name: "★ 🇵🇱 Польша #19 ⚡"
+  type: vless
+  server: 92.62.251.224
+  port: 58560
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: assets.velunio.pl
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: igkzGYzFKrgRIIiw66EugpUV2VB9nsFeuF2KS_vB1Bs
+    short-id: 94273a04b20438ea
+- name: "🇵🇱 Польша #7 ⚡"
+  type: vless
+  server: 31.77.113.235
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: mx-2b3639.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 4-ND0iNygD3LS417b2qTqJLo-sNfMLVg_U14zqZBwns
+    short-id: 4e14a545d2b5bfef
+- name: "★ 🇵🇱 Польша #8"
+  type: vless
+  server: 201.58.139.98
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: waw4.velravio.com
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: fEpOhguMQD_Z0GJIL7SH9NyCANY1FKBMq0atdEYXUgg
+    short-id: 0e05dcc1b058ed5d
+- name: "★ 🇵🇱 Польша #9 ⚡"
+  type: vless
+  server: 213.21.232.89
+  port: 443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: cache-ppl2.vless.site
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 3NmsXxf03npKbVSqiH-hn6KyUHxGq428jNmz2avOwyY
+    short-id: 35fa3a44d63661b0
+- name: "★ 🇵🇱 Польша #10"
+  type: vless
+  server: 31.76.22.87
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: gw-f51035.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 9GnVkR0ZozjqdYvfRLfEEpcZlGdMks99V8FOmFMXQxU
+    short-id: 7b646bd486849b9c
+- name: "🇫🇮 Финляндия #5 ⚡"
+  type: vless
+  server: 31.77.138.226
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: static-e78f24.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: Fcv_6X2M0xGRhWL8ihmcXoh2LzkMhpw0-X_TTJ4m_TY
+    short-id: 3c4482508c1f277e
+- name: "🇫🇮 Финляндия #2"
+  type: vless
+  server: 2.27.32.204
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: edge-fc9827.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: MwpKjS0atNf-qHELOkbtp0H3Roy88Wk2qWrnS37PEwo
+    short-id: 278a58d22f21b9bd
+- name: "🇫🇮 Финляндия #4 ⚡"
+  type: vless
+  server: 2.27.168.84
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: edge-d8446b.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: -rwQYqD7xtqjLRVQkAV5VqmXNsZjE-t3n2gE37elNCE
+    short-id: e324ed96626fad03
+- name: "🇩🇪 Германия #30 ⚡"
+  type: vless
+  server: 152.234.250.65
+  port: 52443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: ingest-fra.lapsegrid.com
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: aIAZbx7okN1_cYdro5Un_DP6o7rAGyzF8Pm2kgaC2BI
+    short-id: 5dd3d27dd57958b2
+- name: "🇩🇪 Германия #18 ⚡"
+  type: vless
+  server: 151.243.150.210
+  port: 58383
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: app.lunwerk.de
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 1-W0XMfZxBv410pnRwyAWR9W-qSXBoTw7hAFHqB8j18
+    short-id: b6f7b6c0a940d686
+- name: "🇫🇮 Финляндия #9 ⚡"
+  type: vless
+  server: 109.120.151.245
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: cdn-807a4f.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: naQTUbKwGY1q6bIK5Nbv65YCJdingXXu4EHntQ9oCFg
+    short-id: a3293c1cf98be5fe
+- name: "🇩🇪 Германия #3"
+  type: vless
+  server: 91.92.33.179
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: edge-faae44.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: xPu4FKWhf4pDHsmCfI6_zsm0DzTU_OBxwMiyX37h6iM
+    short-id: da75f0f36322beb4
+- name: "🇫🇮 Финляндия #10 ⚡"
+  type: vless
+  server: 109.120.151.242
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: node-c10ed6.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: S6KXeQc56BblFrV7dBby2oLQxTC8j_O_F_qdJsrLk10
+    short-id: c383d5f77a2d3711
+- name: "🇫🇮 Финляндия #14 ⚡"
+  type: vless
+  server: 31.77.248.78
+  port: 443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: node-qwfi2.vless.site
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: OTgY9B-VpbmEgqBDTHnb8Cyx-ZfIEcvJRWOoWkePqRQ
+    short-id: b4122da4ead1c43f
+- name: "★ 🇫🇮 Финляндия #15"
+  type: vless
+  server: 191.217.252.76
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: cache-e66546.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: lTVGbgkf7mx8FJM5chgtWk3KGOUde7VexmepZU7Hc28
+    short-id: 910067ad36fd15c9
+- name: "★ 🇫🇮 Финляндия #17"
+  type: vless
+  server: 176.125.254.190
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: cdn-ec8359.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: JuumwWtGcf-S6o3zXuaknwSuUv7s249E0MsuoOVsdGs
+    short-id: affef404e74b56c8
+- name: "🇫🇮 Финляндия #23"
+  type: vless
+  server: 170.168.4.48
+  port: 41226
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: hel.velravio.com
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: KcNb3jKM6j8HXm4lbM81J6igsQXFAducRG_wZBpZZxc
+    short-id: ec856e6505282c7c
+- name: "🇫🇮 Финляндия #24 ⚡"
+  type: vless
+  server: 170.168.4.57
+  port: 43766
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: hel2.velravio.com
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: yD1SFVIuq6o6e7klHaogeVmspSo5MEFuMfAyFov_BHM
+    short-id: 3ea1ec331f1e5607
+- name: "🇩🇪 Германия #23 ⚡"
+  type: vless
+  server: 79.182.124.49
+  port: 46300
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: fra.lunwerk.de
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: zpj62etuW2oQWTiVQP2YJbkpMkDATLG4LcGQur8p-HY
+    short-id: 7d0f0649f89cf6cc
+- name: "🇩🇪 Германия #24 ⚡"
+  type: vless
+  server: 201.8.87.171
+  port: 42613
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: fra.velravio.com
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: rf99tfHLDylM-WH1iUWDo6InAgOcVX8kUNQDi6yIwTg
+    short-id: d2dbae08b49e8fa0
+- name: "🇩🇪 Германия #25 ⚡"
+  type: vless
+  server: 217.60.22.167
+  port: 51265
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: mx-87657d.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: rN3g-zJymjAsRePvsQ3mb2l6WJkwePjT08Yg5BZqP1M
+    short-id: bded64d61bead62a
+- name: "🇫🇮 Финляндия #26 ⚡"
+  type: vless
+  server: 31.77.248.17
+  port: 54290
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: mx-a4892e.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: REli1LwmNXcfVBhZhCwDUp15jsmz4orH3T9YLpVk0wI
+    short-id: f39b868cb3c14b62
+- name: "🇩🇪 Германия #1"
+  type: vless
+  server: 150.241.116.91
+  port: 443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: pop-88ae19.vless.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: ECbd3w4lOTMPU5wn1VuKu2fNI3zz1DbHjPTo-jR5N3A
+    short-id: 9c2d58d5af6e449c
+- name: "🇩🇪 Германия #4 ⚡"
+  type: vless
+  server: 31.59.216.114
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: r-4bb51c.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: fpOHSPDTYhZ2w3l8XqXO9KQ2oe8q8Vd5Z9lCddhKvEE
+    short-id: fc20796143ec327c
+- name: "🇩🇪 Германия #8 ⚡"
+  type: vless
+  server: 31.77.106.94
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: gw-9c2163.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: uQWICZuKOepToITQZUuaugAAxF7WB93Np82AmFzcHXw
+    short-id: 4da9245d68b396a6
+- name: "🇩🇪 Германия #19 ⚡"
+  type: vless
+  server: 201.8.89.126
+  port: 41926
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: fra3.lunwerk.de
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: RewhgyZ8FC3ofWv_YEomM3XUhsl3AfMxsmrpY2DA6C4
+    short-id: 65ad5e07040c5f9b
+- name: "🇩🇪 Германия #20"
+  type: vless
+  server: 201.8.89.125
+  port: 44804
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: fra1.lunwerk.de
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 7eOAdmziz5xWQv0TE42ZJ4bWn_u3S1_WeWBe24bN5kQ
+    short-id: ea39f6b0e9f32853
+- name: "🇩🇪 Германия #22 ⚡"
+  type: vless
+  server: 217.60.179.138
+  port: 54334
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: fra5.lunwerk.de
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 51XmrDfwxR68TPOkDcUOpxQ42ord67iCx0lQMbXlNEA
+    short-id: 1e743c114eaf0646
+- name: "★ 🇩🇪 Германия #25"
+  type: vless
+  server: 195.10.227.209
+  port: 43612
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: cdn-b157da.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: FRfIRADf6HWA1ab5mi38FGbJPLHNzjDs2cuEMS5Smjs
+    short-id: 1a7510abb970ca4b
+- name: "★ 🇩🇪 Германия #27 ⚡"
+  type: vless
+  server: 195.10.227.31
+  port: 45258
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: pop-df83fe.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: mRBZKUmjydr4LYZz8neiWkL98hh0fxIaH84Hop4LHSw
+    short-id: 8f479c254a76af48
+- name: "★ 🇩🇪 Германия #14 ⚡"
+  type: vless
+  server: 201.8.71.136
+  port: 443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: fra7.lunwerk.de
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: gLhyT_7o_AUvFl33hVKMVanTrvMldDrTOpscDVJZ0Hc
+    short-id: 3857e51299bdac3a
+- name: "🇳🇱 Нидерланды #20 ⚡"
+  type: vless
+  server: 2.27.106.85
+  port: 57098
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: cache-5e6c39.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 2WvwR3CdvkS1RDtbG6L6glh70n5ahdqvemJRVrzTbEc
+    short-id: be95d22232a7f95c
+- name: "🇳🇱 Нидерланды #22 ⚡ ^~2~^"
+  type: vless
+  server: 2.27.106.86
+  port: 57168
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: cdn-a7cd5a.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: y52KMxaIrt5onAjykzIYcDeesAMSVoXIjLjUk0F1BCU
+    short-id: b46e988d93350b0a
+- name: "gm-o2fi"
+  type: vless
+  server: 144.31.126.247
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: cdn-d5a44d.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: iZmp_9GpELaE2aGKVvHUr4EHA7jMWV92claCJCrOgSw
+    short-id: 82711c5235644af8
+- name: "uni-deiw2"
+  type: vless
+  server: 179.255.186.200
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: mx-a7e7b7.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: FJRBuXWjvXnJ9KSW86mCQWH4McSqm38KKcAirvDiajg
+    short-id: 7f860265f936171b
+- name: "uni-deiw3"
+  type: vless
+  server: 179.255.186.169
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: mx-1e29ea.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 1J2csuv7iNVIoD8de8t-vnIAxYmyb924ViXA1aLvjWU
+    short-id: a886aed18221936a
+- name: "uni-ee1"
+  type: vless
+  server: 31.56.187.246
+  port: 8790
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: r-c705dc.vless.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: dzc73376TXGhzhfPgBCYEHzUp2-cBSdCK2wgPuWNFFI
+    short-id: 6a7bd2
+- name: "uni-fi5"
+  type: vless
+  server: 31.77.202.170
+  port: 8790
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: mx-781a5b.vless.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: AyPAMP8XIRtRIagJuk5eA0AFyvZbkqrRRdMEDsD_mkQ
+    short-id: 62da72fb
+- name: "uni-fr3ip"
+  type: vless
+  server: 179.255.188.215
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: srv-2ac9c3.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 8csiF1azK6xbS9ECFPwBxsrjgTJKV0t3NEdOMI42a0o
+    short-id: b279cc2a6294e41e
+- name: "uni-fr8"
+  type: vless
+  server: 179.255.188.131
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: static-147efd.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: cD5o2nmPHb4HeIDQRMKEys6jQFlG8mWtqYwfkBnrRXY
+    short-id: 73b702c0aefdb2f3
+- name: "uni-nl10"
+  type: vless
+  server: 179.255.187.5
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: cache-d8a529.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: icMT3HmBcUeGk8qZEDYy8yUaEx9kyb33RvubUzZHe24
+    short-id: 41dad7aecb8f7a96
+- name: "uni-nl5"
+  type: vless
+  server: 170.168.43.13
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: mx-c0c196.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: hFgbu-PJVozuCNTH0Zi2Y1miGM_h4iARdG0pF6oNnVQ
+    short-id: 2c7abc289da4cdbd
+- name: "uni-pee2"
+  type: vless
+  server: 87.121.86.218
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: edge-2f8ab1.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: dE9TonPwSK6_hHMUAHCPm1nSMLPCuKCtc0S27xdr7gs
+    short-id: c79104a63c8a347e
+- name: "uni-pl2"
+  type: vless
+  server: 45.142.212.5
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: r-b5f92d.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: fprAi0x1a-xmlUlI79aOLLEmiKnGJhk3sqcgfZ0YbAA
+    short-id: 877cf2b4b108f847
+- name: "n1-de1c"
+  type: vless
+  server: 31.59.216.114
+  port: 2053
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: r-4bb51c.dobry.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: fpOHSPDTYhZ2w3l8XqXO9KQ2oe8q8Vd5Z9lCddhKvEE
+    short-id: fc20796143ec327c
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-de3ip"
+  type: vless
+  server: 150.241.116.91
+  port: 2053
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: pop-88ae19.vless.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: ECbd3w4lOTMPU5wn1VuKu2fNI3zz1DbHjPTo-jR5N3A
+    short-id: 9c2d58d5af6e449c
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-deiw2"
+  type: vless
+  server: 179.255.186.200
+  port: 2053
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: srv-0d19fa.vless.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: FJRBuXWjvXnJ9KSW86mCQWH4McSqm38KKcAirvDiajg
+    short-id: 7f860265f936171b
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-deiw3"
+  type: vless
+  server: 179.255.186.169
+  port: 2053
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: node-ccc63b.vless.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 1J2csuv7iNVIoD8de8t-vnIAxYmyb924ViXA1aLvjWU
+    short-id: a886aed18221936a
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-ee1"
+  type: vless
+  server: 31.56.187.246
+  port: 2053
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: r-c705dc.vless.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: dzc73376TXGhzhfPgBCYEHzUp2-cBSdCK2wgPuWNFFI
+    short-id: 6a7bd2
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-es1"
+  type: vless
+  server: 179.255.189.65
+  port: 2053
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: node-1eeaa8.vless.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: odLpX_cLGNemTANQ0e2OA7xzrb25zmGVD82a4aiL1UY
+    short-id: cadd3ac9087bd465
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-fi5"
+  type: vless
+  server: 31.77.202.170
+  port: 8791
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: mx-781a5b.vless.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: AyPAMP8XIRtRIagJuk5eA0AFyvZbkqrRRdMEDsD_mkQ
+    short-id: 62da72fb
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-fijk"
+  type: vless
+  server: 31.77.138.226
+  port: 2053
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: node-cc0bc5.vless.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: Fcv_6X2M0xGRhWL8ihmcXoh2LzkMhpw0-X_TTJ4m_TY
+    short-id: 3c4482508c1f277e
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-fr3"
+  type: vless
+  server: 179.255.188.77
+  port: 2053
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: gw-9fc2f7.vless.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: JcM7nva4t191thtTVTBq4yNxvub-hMq2tfbwaCqA7Sk
+    short-id: a735de83b733def0
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-gb2"
+  type: vless
+  server: 170.168.27.9
+  port: 8791
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: r-2de5f8.vless.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: ItEAtyB5d6FqBDHheffz1uIVzSmqDxGJw9c5iqunKh4
+    short-id: 7e572921494d6745
+  grpc-opts:
+    grpc-service-name: "grpc-f3fdd8c9"
+- name: "n1-il1"
+  type: vless
+  server: 170.168.12.48
+  port: 2053
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: pop-375f5c.vless.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: IlFILvjY6CfrX07XU9VJB5RZOCFGmIdsi4HIGNMV20I
+    short-id: 84d8119335f155b5
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-it2"
+  type: vless
+  server: 179.255.190.30
+  port: 2053
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: cdn-330cd9.vless.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: lGlbce_ZYE59tgIYVA9I715wl8YlxXX5rEt6Ksul6hI
+    short-id: 2eb6db50969f062d
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-nl5"
+  type: vless
+  server: 170.168.43.13
+  port: 8792
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: node-f2bc66.vless.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: hFgbu-PJVozuCNTH0Zi2Y1miGM_h4iARdG0pF6oNnVQ
+    short-id: 2c7abc289da4cdbd
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-nl8"
+  type: vless
+  server: 87.121.221.28
+  port: 8791
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: r-nl3.vless.site
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: NGDCTIEMyA3Rst1SCpR46MhRV1bhmjW6MaMfdSFYS08
+    short-id: e32dccf378691ace
+  grpc-opts:
+    grpc-service-name: "grpc-8c9d3e07"
+- name: "n1-pde4"
+  type: vless
+  server: 201.8.71.136
+  port: 2053
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: fra7.lunwerk.de
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: gLhyT_7o_AUvFl33hVKMVanTrvMldDrTOpscDVJZ0Hc
+    short-id: 3857e51299bdac3a
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-pee1"
+  type: vless
+  server: 132.243.67.88
+  port: 2053
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: tll6.velravio.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 5EEJVsaboS0K6mFkGZOQc_oajrf3jDMd998rA2bXIEk
+    short-id: bb14db47c7fe43a2
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-pee2"
+  type: vless
+  server: 87.121.86.218
+  port: 2053
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: edge-2f8ab1.dobry.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: dE9TonPwSK6_hHMUAHCPm1nSMLPCuKCtc0S27xdr7gs
+    short-id: c79104a63c8a347e
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-pfi1"
+  type: vless
+  server: 191.217.252.164
+  port: 2053
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: mx-fip1.vless.site
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: voOZAVZUOnja8sGdgOx3w_N9rVSP0D1F2Hqv2M3OQ38
+    short-id: 5aa7f7a3d12111b9
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-pfi2"
+  type: vless
+  server: 176.125.254.190
+  port: 2053
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: cdn-ec8359.dobry.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: JuumwWtGcf-S6o3zXuaknwSuUv7s249E0MsuoOVsdGs
+    short-id: affef404e74b56c8
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-pfi4"
+  type: vless
+  server: 191.217.252.76
+  port: 8791
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: cache-e66546.dobry.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: lTVGbgkf7mx8FJM5chgtWk3KGOUde7VexmepZU7Hc28
+    short-id: 910067ad36fd15c9
+  grpc-opts:
+    grpc-service-name: "grpc-42cd9607"
+- name: "n1-plgen"
+  type: vless
+  server: 213.21.232.93
+  port: 2053
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: node-plgen.vless.site
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: y_24-PEZZ3Gv_IDp-Y-AxJ00Bf-hQVHvVpaDDTypdDo
+    short-id: 80a7dab225c8a03c
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-pnl3"
+  type: vless
+  server: 150.251.143.169
+  port: 2053
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: ehv1.heldivo.nl
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: dZDkAkEKiT6z-MVKxBcbG6O_FWrDx1lN-8VRWdhsa2Q
+    short-id: 1d75fc0589a76fc1
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-ppl1"
+  type: vless
+  server: 201.58.139.98
+  port: 2053
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: waw4.velravio.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: fEpOhguMQD_Z0GJIL7SH9NyCANY1FKBMq0atdEYXUgg
+    short-id: 0e05dcc1b058ed5d
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-ppl2"
+  type: vless
+  server: 213.21.232.89
+  port: 2053
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: cache-ppl2.vless.site
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 3NmsXxf03npKbVSqiH-hn6KyUHxGq428jNmz2avOwyY
+    short-id: 35fa3a44d63661b0
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-ppl3"
+  type: vless
+  server: 31.76.22.87
+  port: 2053
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: gw-f51035.dobry.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 9GnVkR0ZozjqdYvfRLfEEpcZlGdMks99V8FOmFMXQxU
+    short-id: 7b646bd486849b9c
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-qwfi2"
+  type: vless
+  server: 31.77.248.78
+  port: 2053
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: node-qwfi2.vless.site
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: OTgY9B-VpbmEgqBDTHnb8Cyx-ZfIEcvJRWOoWkePqRQ
+    short-id: b4122da4ead1c43f
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-se1"
+  type: vless
+  server: 64.188.81.40
+  port: 8791
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: r-se2.vless.site
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: NvR81zPpWlKZtxg86sp4mC9iVlyidq0v_rkgpSqjc1s
+    short-id: 073511c72071352f
+  grpc-opts:
+    grpc-service-name: "grpc-d6e987e3"
+- name: "n1-de4h"
+  type: vless
+  server: 31.77.106.94
+  port: 2053
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: srv-57f81a.vless.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: uQWICZuKOepToITQZUuaugAAxF7WB93Np82AmFzcHXw
+    short-id: 4da9245d68b396a6
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-de9"
+  type: vless
+  server: 91.92.33.179
+  port: 2053
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: edge-faae44.dobry.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: xPu4FKWhf4pDHsmCfI6_zsm0DzTU_OBxwMiyX37h6iM
+    short-id: da75f0f36322beb4
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-fr5"
+  type: vless
+  server: 82.25.63.237
+  port: 2053
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: edge-a6b485.dobry.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: oeJvqAjr3cJoHbyM5KddlPw7q-czzZA-dlJdCYL8hEk
+    short-id: 97dc95ead5f75d50
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-nl9"
+  type: vless
+  server: 156.9.124.80
+  port: 2053
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: edge-fe4eb4.dobry.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: hoF5HIPDsWCCrK98z3m24_x3y8SWaQhXO4Uq4O_Ktw8
+    short-id: 3c02afcfca91ece4
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-fi10"
+  type: vless
+  server: 2.27.168.84
+  port: 2053
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: edge-d8446b.dobry.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: -rwQYqD7xtqjLRVQkAV5VqmXNsZjE-t3n2gE37elNCE
+    short-id: e324ed96626fad03
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-hk4"
+  type: vless
+  server: 85.11.161.33
+  port: 2053
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: mx-2372c3.dobry.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: H4PmdY0ne8oJz8aSYYMmbwWaPv60SOJGKvfAkndaWCc
+    short-id: c777b184dac4bb88
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-fi11"
+  type: vless
+  server: 109.120.151.245
+  port: 2053
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: cdn-807a4f.dobry.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: naQTUbKwGY1q6bIK5Nbv65YCJdingXXu4EHntQ9oCFg
+    short-id: a3293c1cf98be5fe
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-fi12"
+  type: vless
+  server: 109.120.151.242
+  port: 2053
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: node-c10ed6.dobry.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: S6KXeQc56BblFrV7dBby2oLQxTC8j_O_F_qdJsrLk10
+    short-id: c383d5f77a2d3711
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-pl9"
+  type: vless
+  server: 31.77.113.235
+  port: 2053
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: mx-2b3639.dobry.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 4-ND0iNygD3LS417b2qTqJLo-sNfMLVg_U14zqZBwns
+    short-id: 4e14a545d2b5bfef
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-jp1"
+  type: vless
+  server: 31.76.91.78
+  port: 2053
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: mx-74bf09.dobry.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: cDC3Whr81RXC-gEH-9A58buHL1iiFeVDOEn3ZOIkUnc
+    short-id: 3432ef6a6c821d95
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-fr11"
+  type: vless
+  server: 194.122.84.74
+  port: 57107
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: par.velravio.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: QkknHpKzKW3L_ZMeW0llPWkZsXDj1OCAUw2NBvaK4Ro
+    short-id: 682475a4c5c3ffc5
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-fr10"
+  type: vless
+  server: 31.59.190.19
+  port: 50557
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: par2.velravio.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: SkyzgjIEbc31CI8T9YW4K0h2YXbVi0uSdWRAPDs9qV8
+    short-id: fe169e993e6a9c98
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-de14"
+  type: vless
+  server: 201.8.89.125
+  port: 55090
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: fra1.lunwerk.de
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 7eOAdmziz5xWQv0TE42ZJ4bWn_u3S1_WeWBe24bN5kQ
+    short-id: ea39f6b0e9f32853
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-de12"
+  type: vless
+  server: 201.8.89.126
+  port: 58400
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: fra3.lunwerk.de
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: RewhgyZ8FC3ofWv_YEomM3XUhsl3AfMxsmrpY2DA6C4
+    short-id: 65ad5e07040c5f9b
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-pl11"
+  type: vless
+  server: 31.59.190.166
+  port: 54340
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: cdn.velunio.pl
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: aaFRZz51wMMDvyU7MYbcLpVhpLr8f_dunpPq-CgjDnA
+    short-id: cb4adccf88e6e40f
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-pl12"
+  type: vless
+  server: 31.59.190.167
+  port: 42325
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: media.velunio.pl
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: VtXHC4U9Zn0HG8iapP__tE3Y_LuXiVEiFv-J-7SYZ30
+    short-id: 04b1b73ba147d939
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-nl13"
+  type: vless
+  server: 2.27.106.85
+  port: 56187
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: cache-5e6c39.dobry.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 2WvwR3CdvkS1RDtbG6L6glh70n5ahdqvemJRVrzTbEc
+    short-id: be95d22232a7f95c
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-nl16"
+  type: vless
+  server: 2.27.106.86
+  port: 48300
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: cdn-a7cd5a.dobry.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: y52KMxaIrt5onAjykzIYcDeesAMSVoXIjLjUk0F1BCU
+    short-id: b46e988d93350b0a
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-nl20"
+  type: vless
+  server: 2.27.106.87
+  port: 56177
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: r-204da3.dobry.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: pEMjXveKQw0hSBZrSi3-MujufIVbEUl3zvhg3K1hFG4
+    short-id: 142669ab79ec3cb4
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-nl15"
+  type: vless
+  server: 2.27.106.89
+  port: 45787
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: node-1ede94.dobry.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: u67Uzkec73ucHBgOOFjj6z3dACU69x1YbuF8bV1Xfhw
+    short-id: 4b00e532b27cf89d
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-ee11"
+  type: vless
+  server: 217.60.182.113
+  port: 53712
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: tll8.velravio.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: UN9I__3jkdFtbc6vAMHIFxpG3w1VK30IoWCmgAwSbEk
+    short-id: f94dd3bb14359760
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-de16"
+  type: vless
+  server: 217.60.179.138
+  port: 51852
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: fra5.lunwerk.de
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 51XmrDfwxR68TPOkDcUOpxQ42ord67iCx0lQMbXlNEA
+    short-id: 1e743c114eaf0646
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-pl13"
+  type: vless
+  server: 130.78.31.150
+  port: 42704
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: waw.velravio.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: JC9E9xTViNmlsMtF_u4CJyCXbzxwyAkECgSEq-n4Eg0
+    short-id: c4dfb48f4488682a
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-nl17"
+  type: vless
+  server: 130.78.30.234
+  port: 47652
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: ams.heldivo.nl
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 5H7GYN6pH1liljAdy0UI9ZvjTWbCqjq-nPS_llGRiDg
+    short-id: bfd6bd609aa8d333
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-fi1"
+  type: vless
+  server: 170.168.4.48
+  port: 58663
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: hel.velravio.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: KcNb3jKM6j8HXm4lbM81J6igsQXFAducRG_wZBpZZxc
+    short-id: ec856e6505282c7c
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-hk5"
+  type: vless
+  server: 170.168.24.55
+  port: 56617
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: hkg.velravio.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: n_SxHwiqmtfZau2jjvmSiZ6L5x2cs3hlMHfo0qAdVVk
+    short-id: 1d64fdfaf6eb065e
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-fi3"
+  type: vless
+  server: 170.168.4.57
+  port: 49637
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: hel2.velravio.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: yD1SFVIuq6o6e7klHaogeVmspSo5MEFuMfAyFov_BHM
+    short-id: 3ea1ec331f1e5607
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-de18"
+  type: vless
+  server: 201.8.87.171
+  port: 46666
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: fra.velravio.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: rf99tfHLDylM-WH1iUWDo6InAgOcVX8kUNQDi6yIwTg
+    short-id: d2dbae08b49e8fa0
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-de17"
+  type: vless
+  server: 79.182.124.49
+  port: 56962
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: fra.lunwerk.de
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: zpj62etuW2oQWTiVQP2YJbkpMkDATLG4LcGQur8p-HY
+    short-id: 7d0f0649f89cf6cc
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-us2"
+  type: vless
+  server: 152.234.163.21
+  port: 57818
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: nyc2.velravio.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: FFWySf82T7nAK0dkkB6NFMtHZItG7tj8z3J6HI-Pl0g
+    short-id: b174087b939d69ee
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-ch2"
+  type: vless
+  server: 179.255.191.144
+  port: 54384
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: zrh2.velravio.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: NYvmxMCHX_N_vEfsN_JuC-XsZOf1Yr4Laua-GUVaCWY
+    short-id: 2dca8978f4a44016
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-nl19"
+  type: vless
+  server: 170.168.43.29
+  port: 49946
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: ams2.velravio.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: BEIwm77Ca8YL8txr-sn5RvgzmUEXt436ICs-b2dpfnA
+    short-id: bada9e4be28ef701
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-de20"
+  type: vless
+  server: 195.10.227.31
+  port: 44432
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: pop-df83fe.dobry.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: mRBZKUmjydr4LYZz8neiWkL98hh0fxIaH84Hop4LHSw
+    short-id: 8f479c254a76af48
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-de21"
+  type: vless
+  server: 195.10.227.209
+  port: 43276
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: cdn-b157da.dobry.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: FRfIRADf6HWA1ab5mi38FGbJPLHNzjDs2cuEMS5Smjs
+    short-id: 1a7510abb970ca4b
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-nl18"
+  type: vless
+  server: 185.170.213.251
+  port: 41723
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: r-e2cf14.dobry.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: JXpt56wbKy4jOmoBvv3sb0CjmtOSP03_RHfdzHqm1UQ
+    short-id: 69bcd1445a539388
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-pl14"
+  type: vless
+  server: 92.62.251.224
+  port: 43481
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: pliki.velunio.pl
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: igkzGYzFKrgRIIiw66EugpUV2VB9nsFeuF2KS_vB1Bs
+    short-id: 94273a04b20438ea
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-it3"
+  type: vless
+  server: 179.255.190.45
+  port: 53248
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: mil2.velravio.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: nhYDtNxK33mt_jhNPmrRF4nwzWTH91-Hw91CzOAnkks
+    short-id: 2d74088da3c992c6
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-gb4"
+  type: vless
+  server: 109.176.229.205
+  port: 42141
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: mx-84c5cd.dobry.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: QBi7R2hjStEpGSPW87NJnMERKAFd9rmoSNBuRFTQxTs
+    short-id: fdb75e804acf0612
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-ee13"
+  type: vless
+  server: 2.26.182.210
+  port: 58098
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: mx-8e6f65.dobry.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: entgcDNAR7iXRYXAOfQ2975BVbhLPBxaJoa8ngGGSEU
+    short-id: eb8c545eefbe51bd
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-fi13"
+  type: vless
+  server: 31.77.248.17
+  port: 53538
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: mx-a4892e.dobry.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: REli1LwmNXcfVBhZhCwDUp15jsmz4orH3T9YLpVk0wI
+    short-id: f39b868cb3c14b62
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-ee14"
+  type: vless
+  server: 2.26.182.209
+  port: 44942
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: node-d7c6d4.dobry.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: -jfSU56GCOqnHugbl7dPUJ9QGgPJLY-4ZNHpSqgeZhY
+    short-id: e3cea8232c906a32
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-pl15"
+  type: vless
+  server: 31.77.247.11
+  port: 45653
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: konto.velunio.pl
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: WZTTNKvzoqVU8FBl8r8_Fn0uWNKTJQz_uqpBY2NlkCk
+    short-id: 6432a9392e4d01b7
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-de23"
+  type: vless
+  server: 217.60.22.167
+  port: 45358
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: mx-87657d.dobry.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: rN3g-zJymjAsRePvsQ3mb2l6WJkwePjT08Yg5BZqP1M
+    short-id: bded64d61bead62a
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-uslg1"
+  type: vless
+  server: 152.234.250.233
+  port: 45653
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: ingest-nyc.lapsegrid.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: aIAZbx7okN1_cYdro5Un_DP6o7rAGyzF8Pm2kgaC2BI
+    short-id: 5dd3d27dd57958b2
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-delg1"
+  type: vless
+  server: 152.234.250.65
+  port: 45653
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: ingest-fra.lapsegrid.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: aIAZbx7okN1_cYdro5Un_DP6o7rAGyzF8Pm2kgaC2BI
+    short-id: 5dd3d27dd57958b2
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-pl10"
+  type: vless
+  server: 185.16.39.146
+  port: 45653
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: panel.velunio.pl
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: NsML9c2UwC-Xz4mndUdg43U-tlmzMkFN5hvsEi3Tbk0
+    short-id: d7acd5d92a2ad340
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-de13"
+  type: vless
+  server: 151.243.150.210
+  port: 45653
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: portal.lunwerk.de
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 1-W0XMfZxBv410pnRwyAWR9W-qSXBoTw7hAFHqB8j18
+    short-id: b6f7b6c0a940d686
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-pixnl1"
+  type: vless
+  server: cdn-nl.pixlora.org
+  port: 45653
+  uuid: a9ea61db-efad-000a-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: cdn-nl.pixlora.org
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: qkNv_vvEeHBlubDM154C1l05Wjyaj1k0l3qY911gUQQ
+    short-id: dcb80b2936e64257
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "🌎 Универсальный №1"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🌎 Универсальный №2"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🌎 Универсальный №3"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🌎 Универсальный №4"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🌎 Универсальный №5 (2)"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🚀 Если отключает 5-15 мин"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🇩🇪 Германия [АВТОВЫБОР ⭐]"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🇪🇺 Европа [АВТОВЫБОР ⭐] (2)"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🇫🇮 Финляндия [АВТОВЫБОР ⭐]"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🇳🇱 Нидерланды [АВТОВЫБОР ⭐]"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🇵🇱 Польша [АВТОВЫБОР ⭐]"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🤖 Нейросети [АВТОВЫБОР⭐]"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+
+proxy-groups:
+- name: "AUTO"
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  lazy: true
+  proxies:
+  - "n1-de1c"
+  - "n1-de3ip"
+  - "n1-deiw2"
+  - "n1-deiw3"
+  - "n1-ee1"
+  - "n1-es1"
+  - "n1-fi5"
+  - "n1-fijk"
+  - "n1-fr3"
+  - "n1-gb2"
+  - "n1-il1"
+  - "n1-it2"
+  - "n1-nl5"
+  - "n1-nl8"
+  - "n1-pde4"
+  - "n1-pee1"
+  - "n1-pee2"
+  - "n1-pfi1"
+  - "n1-pfi2"
+  - "n1-pfi4"
+  - "n1-plgen"
+  - "n1-pnl3"
+  - "n1-ppl1"
+  - "n1-ppl2"
+  - "n1-ppl3"
+  - "n1-qwfi2"
+  - "n1-se1"
+  - "n1-de4h"
+  - "n1-de9"
+  - "n1-fr5"
+  - "n1-nl9"
+  - "n1-fi10"
+  - "n1-hk4"
+  - "n1-fi11"
+  - "n1-fi12"
+  - "n1-pl9"
+  - "n1-jp1"
+  - "n1-fr11"
+  - "n1-fr10"
+  - "n1-de14"
+  - "n1-de12"
+  - "n1-pl11"
+  - "n1-pl12"
+  - "n1-nl13"
+  - "n1-nl16"
+  - "n1-nl20"
+  - "n1-nl15"
+  - "n1-ee11"
+  - "n1-de16"
+  - "n1-pl13"
+  - "n1-nl17"
+  - "n1-fi1"
+  - "n1-hk5"
+  - "n1-fi3"
+  - "n1-de18"
+  - "n1-de17"
+  - "n1-us2"
+  - "n1-ch2"
+  - "n1-nl19"
+  - "n1-de20"
+  - "n1-de21"
+  - "n1-nl18"
+  - "n1-pl14"
+  - "n1-it3"
+  - "n1-gb4"
+  - "n1-ee13"
+  - "n1-fi13"
+  - "n1-ee14"
+  - "n1-pl15"
+  - "n1-de23"
+  - "n1-uslg1"
+  - "n1-delg1"
+  - "n1-pl10"
+  - "n1-de13"
+  - "n1-pixnl1"
+- name: "SELECT"
+  type: select
+  proxies:
+  - "AUTO"
+  - "DIRECT"
+- name: "B_UNI"
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  lazy: true
+  proxies:
+  - "🇨🇦 Канада #2 ⚡"
+  - "🇨🇦 Канада #1 ⚡"
+  - "🇩🇪 Германия #4 ⚡"
+  - "🇩🇪 Германия #1"
+  - "uni-deiw2"
+  - "uni-deiw3"
+  - "uni-ee1"
+  - "🇪🇪 Эстония #2 ⚡"
+  - "🇪🇸 Испания ⚡"
+  - "uni-fi5"
+  - "gm-o2fi"
+  - "🇫🇮 Финляндия #2"
+  - "🇫🇮 Финляндия #5 ⚡"
+  - "🇫🇷 Франция #1 ⚡"
+  - "uni-fr3ip"
+  - "uni-fr8"
+  - "🤖 Нейросети 🇬🇧 Британия"
+  - "🇮🇱 Израиль ⚡"
+  - "🇮🇹 Италия #2 ⚡"
+  - "uni-nl10"
+  - "🇳🇱 Нидерланды #2 ⚡"
+  - "uni-nl5"
+  - "★ 🇩🇪 Германия #14 ⚡"
+  - "★ 🇪🇪 Эстония #6"
+  - "uni-pee2"
+  - "★ 🤖 Нейросети 🇫🇮 Финляндия"
+  - "★ 🇫🇮 Финляндия #17"
+  - "★ 🇫🇮 Финляндия #15"
+  - "uni-pl2"
+  - "🇵🇱 Польша #1 ⚡"
+  - "🇵🇱 Польша #6 ⚡"
+  - "★ 🇳🇱 Нидерланды #9"
+  - "★ 🇵🇱 Польша #8"
+  - "★ 🇵🇱 Польша #9 ⚡"
+  - "★ 🇵🇱 Польша #10"
+  - "🇫🇮 Финляндия #14 ⚡"
+  - "🇪🇺 Европа [АВТОВЫБОР ⭐]"
+  - "🇩🇪 Германия #8 ⚡"
+  - "🇩🇪 Германия #3"
+  - "🇫🇷 Франция #5 ⚡"
+  - "🇳🇱 Нидерланды #6 ⚡"
+  - "🇫🇮 Финляндия #4 ⚡"
+  - "🇭🇰 Гонконг #2 ⚡"
+  - "🇫🇮 Финляндия #9 ⚡"
+  - "🇫🇮 Финляндия #10 ⚡"
+  - "🇵🇱 Польша #7 ⚡"
+  - "★ 🇯🇵 Япония ⚡"
+  - "🇵🇱 Польша #15 ⚡"
+  - "🇩🇪 Германия #18 ⚡"
+  - "🇵🇱 Польша #16 ⚡"
+  - "🇵🇱 Польша #17 ⚡"
+  - "🇳🇱 Нидерланды #19 ⚡"
+  - "🇳🇱 Нидерланды #20 ⚡"
+  - "🇳🇱 Нидерланды #21"
+  - "🇳🇱 Нидерланды #22 ⚡ ^~2~^"
+  - "🇩🇪 Германия #19 ⚡"
+  - "🇩🇪 Германия #20"
+  - "🇫🇷 Франция #9 ⚡"
+  - "🇫🇷 Франция #10 ⚡"
+  - "🇪🇪 Эстония #15 ⚡"
+  - "🇩🇪 Германия #22 ⚡"
+  - "🇵🇱 Польша #18 ⚡"
+  - "🇳🇱 Нидерланды #22 ⚡"
+  - "🇫🇮 Финляндия #23"
+  - "🇫🇮 Финляндия #24 ⚡"
+  - "🇭🇰 Гонконг #5 ⚡"
+  - "🇩🇪 Германия #23 ⚡"
+  - "🇩🇪 Германия #24 ⚡"
+  - "🇺🇸 США #3 ⚡"
+  - "🇨🇭 Швейцария #1 ⚡"
+  - "🇳🇱 Нидерланды #23 ⚡"
+  - "★ 🇩🇪 Германия #27 ⚡"
+  - "★ 🇩🇪 Германия #25"
+  - "★ 🇳🇱 Нидерланды #24 ⚡"
+  - "★ 🇵🇱 Польша #19 ⚡"
+  - "🇮🇹 Италия #3"
+  - "★ 🇬🇧 Британия #6"
+  - "★ 🇳🇱 Нидерланды #25 ⚡"
+  - "🇪🇪 Эстония #16 ⚡"
+  - "🇫🇮 Финляндия #26 ⚡"
+  - "🇪🇪 Эстония #17 ⚡"
+  - "🇵🇱 Польша #19 ⚡"
+  - "🇩🇪 Германия #25 ⚡"
+  - "🇺🇸 США #5 ⚡"
+  - "🇩🇪 Германия #30 ⚡"
+  - "🇳🇱 Нидерланды #26 ⚡"
+- name: "🌎 Универсальный №4 (2)"
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  lazy: true
+  proxies:
+  - "n1-de1c"
+  - "n1-de3ip"
+  - "n1-deiw2"
+  - "n1-deiw3"
+  - "n1-ee1"
+  - "n1-es1"
+  - "n1-fi5"
+  - "n1-fijk"
+  - "n1-fr3"
+  - "n1-gb2"
+  - "n1-il1"
+  - "n1-it2"
+  - "n1-nl5"
+  - "n1-nl8"
+  - "n1-pde4"
+  - "n1-pee1"
+  - "n1-pee2"
+  - "n1-pfi1"
+  - "n1-pfi2"
+  - "n1-pfi4"
+  - "n1-plgen"
+  - "n1-pnl3"
+  - "n1-ppl1"
+  - "n1-ppl2"
+  - "n1-ppl3"
+  - "n1-qwfi2"
+  - "n1-se1"
+  - "n1-de4h"
+  - "n1-de9"
+  - "n1-fr5"
+  - "n1-nl9"
+  - "n1-fi10"
+  - "n1-hk4"
+  - "n1-fi11"
+  - "n1-fi12"
+  - "n1-pl9"
+  - "n1-jp1"
+  - "n1-fr11"
+  - "n1-fr10"
+  - "n1-de14"
+  - "n1-de12"
+  - "n1-pl11"
+  - "n1-pl12"
+  - "n1-nl13"
+  - "n1-nl16"
+  - "n1-nl20"
+  - "n1-nl15"
+  - "n1-ee11"
+  - "n1-de16"
+  - "n1-pl13"
+  - "n1-nl17"
+  - "n1-fi1"
+  - "n1-hk5"
+  - "n1-fi3"
+  - "n1-de18"
+  - "n1-de17"
+  - "n1-us2"
+  - "n1-ch2"
+  - "n1-nl19"
+  - "n1-de20"
+  - "n1-de21"
+  - "n1-nl18"
+  - "n1-pl14"
+  - "n1-it3"
+  - "n1-gb4"
+  - "n1-ee13"
+  - "n1-fi13"
+  - "n1-ee14"
+  - "n1-pl15"
+  - "n1-de23"
+  - "n1-uslg1"
+  - "n1-delg1"
+  - "n1-pl10"
+  - "n1-de13"
+  - "n1-pixnl1"
+
+rules:
+- IP-CIDR,::/0,REJECT,no-resolve
+- DOMAIN-SUFFIX,notion.so,B_UNI
+- DOMAIN-SUFFIX,notion.com,B_UNI
+- DOMAIN-SUFFIX,notion.site,B_UNI
+- DOMAIN-SUFFIX,notion.new,B_UNI
+- DOMAIN-SUFFIX,notionusercontent.com,B_UNI
+- DOMAIN-SUFFIX,notion-static.com,B_UNI
+- DOMAIN,prod-files-secure.s3.us-west-2.amazonaws.com,B_UNI
+- GEOIP,private,DIRECT,no-resolve
+- DOMAIN-SUFFIX,max.ru,DIRECT
+- DOMAIN-SUFFIX,2gis.ru,DIRECT
+- DOMAIN-SUFFIX,2gis.com,DIRECT
+- DOMAIN-SUFFIX,aif.ru,DIRECT
+- DOMAIN-SUFFIX,aeroflot.ru,DIRECT
+- DOMAIN-SUFFIX,alfabank.ru,DIRECT
+- DOMAIN-SUFFIX,avito.ru,DIRECT
+- DOMAIN-SUFFIX,beeline.ru,DIRECT
+- DOMAIN-SUFFIX,burgerkingrus.ru,DIRECT
+- DOMAIN-SUFFIX,dellin.ru,DIRECT
+- DOMAIN-SUFFIX,drive2.ru,DIRECT
+- DOMAIN-SUFFIX,dzen.ru,DIRECT
+- DOMAIN-SUFFIX,flypobeda.ru,DIRECT
+- DOMAIN-SUFFIX,forbes.ru,DIRECT
+- DOMAIN-SUFFIX,gazeta.ru,DIRECT
+- DOMAIN-SUFFIX,gazprombank.ru,DIRECT
+- DOMAIN-SUFFIX,gismeteo.ru,DIRECT
+- DOMAIN-SUFFIX,gosuslugi.ru,DIRECT
+- DOMAIN-SUFFIX,hh.ru,DIRECT
+- DOMAIN-SUFFIX,kontur.ru,DIRECT
+- DOMAIN-SUFFIX,kontur.host,DIRECT
+- DOMAIN-SUFFIX,kp.ru,DIRECT
+- DOMAIN-SUFFIX,kuper.ru,DIRECT
+- DOMAIN-SUFFIX,lenta.ru,DIRECT
+- DOMAIN-SUFFIX,mail.ru,DIRECT
+- DOMAIN-SUFFIX,megamarket.ru,DIRECT
+- DOMAIN-SUFFIX,megamarket.tech,DIRECT
+- DOMAIN-SUFFIX,megafon.ru,DIRECT
+- DOMAIN-SUFFIX,moex.com,DIRECT
+- DOMAIN-SUFFIX,motivtelecom.ru,DIRECT
+- DOMAIN-SUFFIX,ozon.ru,DIRECT
+- DOMAIN-SUFFIX,pervye.ru,DIRECT
+- DOMAIN-SUFFIX,psbank.ru,DIRECT
+- DOMAIN-SUFFIX,rambler.ru,DIRECT
+- DOMAIN-SUFFIX,rambler-co.ru,DIRECT
+- DOMAIN-SUFFIX,rbc.ru,DIRECT
+- DOMAIN-SUFFIX,reg.ru,DIRECT
+- DOMAIN-SUFFIX,reviews.2gis.com,DIRECT
+- DOMAIN-SUFFIX,rg.ru,DIRECT
+- DOMAIN-SUFFIX,ria.ru,DIRECT
+- DOMAIN-SUFFIX,ruwiki.ru,DIRECT
+- DOMAIN-SUFFIX,rustore.ru,DIRECT
+- DOMAIN-SUFFIX,rutube.ru,DIRECT
+- DOMAIN-SUFFIX,rzd.ru,DIRECT
+- DOMAIN-SUFFIX,sirena-travel.ru,DIRECT
+- DOMAIN-SUFFIX,sravni.ru,DIRECT
+- DOMAIN-SUFFIX,t-j.ru,DIRECT
+- DOMAIN-SUFFIX,t2.ru,DIRECT
+- DOMAIN-SUFFIX,tank-online.com,DIRECT
+- DOMAIN-SUFFIX,taximaxim.ru,DIRECT
+- DOMAIN-SUFFIX,tbank-online.com,DIRECT
+- DOMAIN-SUFFIX,tildaapi.com,DIRECT
+- DOMAIN-SUFFIX,trvl.yandex.net,DIRECT
+- DOMAIN-SUFFIX,tutu.ru,DIRECT
+- DOMAIN-SUFFIX,vk.com,DIRECT
+- DOMAIN-SUFFIX,vk.ru,DIRECT
+- DOMAIN-SUFFIX,vkvideo.ru,DIRECT
+- DOMAIN-SUFFIX,vtb.ru,DIRECT
+- DOMAIN-SUFFIX,x5.ru,DIRECT
+- DOMAIN-SUFFIX,ya.ru,DIRECT
+- DOMAIN-SUFFIX,yandex.ru,DIRECT
+- DOMAIN-SUFFIX,yandex.net,DIRECT
+- DOMAIN-SUFFIX,yandex.com,DIRECT
+- DOMAIN-SUFFIX,yastatic.net,DIRECT
+- DOMAIN-SUFFIX,yandexcloud.net,DIRECT
+- DOMAIN,go.yandex,DIRECT
+- DOMAIN,ru.ruwiki.ru,DIRECT
+- DOMAIN-SUFFIX,xn--90acagbhgpca7c8c7f.xn--p1ai,DIRECT
+- DOMAIN-SUFFIX,xn--80ajghhoc2aj1c8b.xn--p1ai,DIRECT
+- DOMAIN-SUFFIX,xn--90aivcdt6dxbc.xn--p1ai,DIRECT
+- DOMAIN-SUFFIX,xn--b1aew.xn--p1ai,DIRECT
+- DOMAIN-SUFFIX,api.oneme.ru,DIRECT
+- DOMAIN-SUFFIX,fd.oneme.ru,DIRECT
+- DOMAIN-SUFFIX,i.oneme.ru,DIRECT
+- DOMAIN-SUFFIX,miniapps.max.ru,DIRECT
+- DOMAIN-SUFFIX,st.max.ru,DIRECT
+- DOMAIN-SUFFIX,ru,DIRECT
+- DOMAIN-SUFFIX,su,DIRECT
+- DOMAIN-SUFFIX,xn--p1ai,DIRECT
+- DOMAIN-SUFFIX,24h.tv,DIRECT
+- DOMAIN-SUFFIX,aviasales.com,DIRECT
+- DOMAIN-SUFFIX,avito.st,DIRECT
+- DOMAIN-SUFFIX,avs.io,DIRECT
+- DOMAIN-SUFFIX,beeline.tv,DIRECT
+- DOMAIN-SUFFIX,dodois.com,DIRECT
+- DOMAIN-SUFFIX,dodois.io,DIRECT
+- DOMAIN-SUFFIX,dodopizza.com,DIRECT
+- DOMAIN-SUFFIX,dodostatic.net,DIRECT
+- DOMAIN-SUFFIX,emias.info,DIRECT
+- DOMAIN-SUFFIX,evrasia.rest,DIRECT
+- DOMAIN-SUFFIX,kinorium.com,DIRECT
+- DOMAIN-SUFFIX,lenta.tech,DIRECT
+- DOMAIN-SUFFIX,moscow,DIRECT
+- DOMAIN-SUFFIX,mosmetro.tech,DIRECT
+- DOMAIN-SUFFIX,mradx.net,DIRECT
+- DOMAIN-SUFFIX,mvk.com,DIRECT
+- DOMAIN-SUFFIX,my.com,DIRECT
+- DOMAIN-SUFFIX,mycdn.me,DIRECT
+- DOMAIN-SUFFIX,naydex.net,DIRECT
+- DOMAIN-SUFFIX,ngenix.net,DIRECT
+- DOMAIN-SUFFIX,ozon.com,DIRECT
+- DOMAIN-SUFFIX,ozon.travel,DIRECT
+- DOMAIN-SUFFIX,ozonusercontent.com,DIRECT
+- DOMAIN-SUFFIX,perekrestok.com,DIRECT
+- DOMAIN-SUFFIX,premier.one,DIRECT
+- DOMAIN-SUFFIX,psk,DIRECT
+- DOMAIN-SUFFIX,restream-media.net,DIRECT
+- DOMAIN-SUFFIX,rostaxi.org,DIRECT
+- DOMAIN-SUFFIX,ru,DIRECT
+- DOMAIN-SUFFIX,ru.com,DIRECT
+- DOMAIN-SUFFIX,ru.net,DIRECT
+- DOMAIN-SUFFIX,sberbank.com,DIRECT
+- DOMAIN-SUFFIX,smotreshka.tv,DIRECT
+- DOMAIN-SUFFIX,su,DIRECT
+- DOMAIN-SUFFIX,t1.cloud,DIRECT
+- DOMAIN-SUFFIX,tatar,DIRECT
+- DOMAIN-SUFFIX,telega.info,DIRECT
+- DOMAIN-SUFFIX,telega.me,DIRECT
+- DOMAIN-SUFFIX,turbopages.org,DIRECT
+- DOMAIN-SUFFIX,uni.rest,DIRECT
+- DOMAIN-SUFFIX,unirest.tech,DIRECT
+- DOMAIN-SUFFIX,userapi.com,DIRECT
+- DOMAIN-SUFFIX,vk-apps.com,DIRECT
+- DOMAIN-SUFFIX,vk-cdn.me,DIRECT
+- DOMAIN-SUFFIX,vk-cdn.net,DIRECT
+- DOMAIN-SUFFIX,vk-portal.net,DIRECT
+- DOMAIN-SUFFIX,vk.cc,DIRECT
+- DOMAIN-SUFFIX,vk.company,DIRECT
+- DOMAIN-SUFFIX,vk.design,DIRECT
+- DOMAIN-SUFFIX,vk.link,DIRECT
+- DOMAIN-SUFFIX,vk.me,DIRECT
+- DOMAIN-SUFFIX,vk.team,DIRECT
+- DOMAIN-SUFFIX,vkgo.app,DIRECT
+- DOMAIN-SUFFIX,vklive.app,DIRECT
+- DOMAIN-SUFFIX,vkmessenger.app,DIRECT
+- DOMAIN-SUFFIX,vkmessenger.com,DIRECT
+- DOMAIN-SUFFIX,vkuser.net,DIRECT
+- DOMAIN-SUFFIX,vkuseraudio.com,DIRECT
+- DOMAIN-SUFFIX,vkuseraudio.net,DIRECT
+- DOMAIN-SUFFIX,vkuserlive.net,DIRECT
+- DOMAIN-SUFFIX,vkuservideo.com,DIRECT
+- DOMAIN-SUFFIX,vkuservideo.net,DIRECT
+- DOMAIN-SUFFIX,wbstatic.net,DIRECT
+- DOMAIN-SUFFIX,webvisor.com,DIRECT
+- DOMAIN-SUFFIX,webvisor.org,DIRECT
+- DOMAIN-SUFFIX,x5.ai,DIRECT
+- DOMAIN-SUFFIX,x5.com,DIRECT
+- DOMAIN-SUFFIX,x5.digital,DIRECT
+- DOMAIN-SUFFIX,x5.group,DIRECT
+- DOMAIN-SUFFIX,x5.media,DIRECT
+- DOMAIN-SUFFIX,x5.team,DIRECT
+- DOMAIN-SUFFIX,x5static.net,DIRECT
+- DOMAIN-SUFFIX,xn--80adxhks,DIRECT
+- DOMAIN-SUFFIX,xn--80asehdb,DIRECT
+- DOMAIN-SUFFIX,xn--80aswg,DIRECT
+- DOMAIN-SUFFIX,xn--c1avg,DIRECT
+- DOMAIN-SUFFIX,xn--d1acj3b,DIRECT
+- DOMAIN-SUFFIX,xn--p1acf,DIRECT
+- DOMAIN-SUFFIX,xn--p1ai,DIRECT
+- DOMAIN-SUFFIX,ya.cc,DIRECT
+- DOMAIN-SUFFIX,yads.tech,DIRECT
+- DOMAIN-SUFFIX,yandex,DIRECT
+- DOMAIN-SUFFIX,yandex-pogoda.static-storage.net,DIRECT
+- DOMAIN-SUFFIX,yandex.by,DIRECT
+- DOMAIN-SUFFIX,yandex.cloud,DIRECT
+- DOMAIN-SUFFIX,yandex.com.tr,DIRECT
+- DOMAIN-SUFFIX,yandex.eu,DIRECT
+- DOMAIN-SUFFIX,yandex.kz,DIRECT
+- DOMAIN-SUFFIX,yandex.st,DIRECT
+- DOMAIN-SUFFIX,yandex.uz,DIRECT
+- DOMAIN-SUFFIX,yandexadexchange.net,DIRECT
+- DOMAIN-SUFFIX,yandexcom.net,DIRECT
+- DOMAIN-SUFFIX,yandexmetrica.com,DIRECT
+- DOMAIN-SUFFIX,yandexwebcache.org,DIRECT
+- DOMAIN-SUFFIX,yastat.net,DIRECT
+- DOMAIN-SUFFIX,yclients.com,DIRECT
+- GEOIP,RU,DIRECT,no-resolve
+- DOMAIN-SUFFIX,youtube.com,SELECT
+- DOMAIN-SUFFIX,youtu.be,SELECT
+- DOMAIN-SUFFIX,ytimg.com,SELECT
+- DOMAIN-SUFFIX,googlevideo.com,SELECT
+- DOMAIN-SUFFIX,yt3.ggpht.com,SELECT
+- DOMAIN-SUFFIX,youtubei.googleapis.com,SELECT
+- DOMAIN-SUFFIX,withyoutube.com,SELECT
+- DOMAIN-SUFFIX,gemini.google.com,SELECT
+- DOMAIN-SUFFIX,bard.google.com,SELECT
+- DOMAIN-SUFFIX,aistudio.google.com,SELECT
+- DOMAIN-SUFFIX,makersuite.google.com,SELECT
+- DOMAIN-SUFFIX,generativelanguage.googleapis.com,SELECT
+- DOMAIN-SUFFIX,alkalimakersuite-pa.clients6.google.com,SELECT
+- DOMAIN-SUFFIX,alkalimining-pa.googleapis.com,SELECT
+- DOMAIN-SUFFIX,aida.googleapis.com,SELECT
+- DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com,SELECT
+- DOMAIN-SUFFIX,flow.google.com,SELECT
+- DOMAIN-SUFFIX,flow.google,SELECT
+- DOMAIN-SUFFIX,aisandbox-pa.googleapis.com,SELECT
+- DOMAIN-SUFFIX,aisandbox.google.com,SELECT
+- DOMAIN-SUFFIX,aisandbox-pa.sandbox.googleapis.com,SELECT
+- DOMAIN-SUFFIX,gemini.googleapis.com,SELECT
+- DOMAIN-SUFFIX,geminiweb-pa.clients6.google.com,SELECT
+- DOMAIN-SUFFIX,waa-pa.clients6.google.com,SELECT
+- DOMAIN-SUFFIX,clients6.google.com,SELECT
+- DOMAIN-SUFFIX,gemini.gstatic.com,SELECT
+- DOMAIN-SUFFIX,labs.google,SELECT
+- DOMAIN-SUFFIX,labs.google.com,SELECT
+- DOMAIN-SUFFIX,notebooklm.google.com,SELECT
+- DOMAIN-SUFFIX,notebooklm.google,SELECT
+- DOMAIN-SUFFIX,deepmind.google,SELECT
+- DOMAIN-SUFFIX,aitestkitchen.withgoogle.com,SELECT
+- DOMAIN-SUFFIX,openai.com,SELECT
+- DOMAIN-SUFFIX,chatgpt.com,SELECT
+- DOMAIN-SUFFIX,oaistatic.com,SELECT
+- DOMAIN-SUFFIX,oaiusercontent.com,SELECT
+- DOMAIN-SUFFIX,sora.com,SELECT
+- DOMAIN-SUFFIX,anthropic.com,SELECT
+- DOMAIN-SUFFIX,claude.ai,SELECT
+- DOMAIN-SUFFIX,claude.com,SELECT
+- DOMAIN-SUFFIX,perplexity.ai,SELECT
+- DOMAIN-SUFFIX,x.ai,SELECT
+- DOMAIN-SUFFIX,grok.com,SELECT
+- DOMAIN-SUFFIX,copilot.microsoft.com,SELECT
+- DOMAIN-SUFFIX,netflix.com,SELECT
+- DOMAIN-SUFFIX,nflxvideo.net,SELECT
+- DOMAIN-SUFFIX,nflximg.net,SELECT
+- DOMAIN-SUFFIX,nflxext.com,SELECT
+- DOMAIN-SUFFIX,nflxso.net,SELECT
+- DOMAIN-SUFFIX,twitch.tv,SELECT
+- DOMAIN-SUFFIX,ttvnw.net,SELECT
+- DOMAIN-SUFFIX,jtvnw.net,SELECT
+- DOMAIN-SUFFIX,spotify.com,SELECT
+- DOMAIN-SUFFIX,scdn.co,SELECT
+- DOMAIN-SUFFIX,disneyplus.com,SELECT
+- DOMAIN-SUFFIX,hulu.com,SELECT
+- DOMAIN-SUFFIX,primevideo.com,SELECT
+- DOMAIN-SUFFIX,aiv-cdn.net,SELECT
+- DOMAIN-SUFFIX,accounts.google.com,SELECT
+- DOMAIN-SUFFIX,googleusercontent.com,SELECT
+- MATCH,SELECT

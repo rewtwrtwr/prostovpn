@@ -1,0 +1,444 @@
+# dobro-vpn-variant-03.yaml — Clash/Mihomo config for ONE routing variant, do not edit manually
+# variant 3/15 | elements: 5 | xray rules: 8 -> clash rules: 241
+# nodes in this variant: ★ 🤖 Нейросети 🇫🇮 Финляндия, 🤖 Нейросети 🇫🇷 Франция, 🤖 Нейросети 🇬🇧 Британия, 🤖 Нейросети 🇳🇱 Нидерланды, 🤖 Нейросети 🇵🇱 Польша
+# Routing + DNS preserved exactly as the panel configured them for these nodes.
+# Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
+# updated: 2026-11-26T07:04:35Z
+# proxies: 17 | groups: 2 | rules: 242 | dns policy: 0
+
+port: 7890
+socks-port: 7891
+mixed-port: 7892
+allow-lan: false
+mode: rule
+log-level: info
+ipv6: false
+
+dns:
+  enable: true
+  ipv6: false
+  nameserver:
+    - 8.8.8.8
+    - 8.8.4.4
+  fallback:
+    - 8.8.8.8
+    - 8.8.4.4
+
+proxies:
+- name: "🤖 Нейросети 🇬🇧 Британия"
+  type: vless
+  server: 170.168.27.9
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: edge-46b64e.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: ItEAtyB5d6FqBDHheffz1uIVzSmqDxGJw9c5iqunKh4
+    short-id: 7e572921494d6745
+- name: "★ 🤖 Нейросети 🇫🇮 Финляндия"
+  type: vless
+  server: 191.217.252.164
+  port: 443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: mx-fip1.vless.site
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: voOZAVZUOnja8sGdgOx3w_N9rVSP0D1F2Hqv2M3OQ38
+    short-id: 5aa7f7a3d12111b9
+- name: "🤖 Нейросети 🇳🇱 Нидерланды"
+  type: vless
+  server: cache-d8a529.dobry.monster
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: cache-d8a529.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: icMT3HmBcUeGk8qZEDYy8yUaEx9kyb33RvubUzZHe24
+    short-id: 41dad7aecb8f7a96
+- name: "🤖 Нейросети 🇵🇱 Польша"
+  type: vless
+  server: r-b5f92d.dobry.monster
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: r-b5f92d.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: fprAi0x1a-xmlUlI79aOLLEmiKnGJhk3sqcgfZ0YbAA
+    short-id: 877cf2b4b108f847
+- name: "🤖 Нейросети 🇫🇷 Франция"
+  type: vless
+  server: static-147efd.dobry.monster
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: static-147efd.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: cD5o2nmPHb4HeIDQRMKEys6jQFlG8mWtqYwfkBnrRXY
+    short-id: 73b702c0aefdb2f3
+- name: "🌎 Универсальный №1"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🌎 Универсальный №2"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🌎 Универсальный №3"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🌎 Универсальный №4"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🌎 Универсальный №5 (2)"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🚀 Если отключает 5-15 мин"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🇩🇪 Германия [АВТОВЫБОР ⭐]"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🇪🇺 Европа [АВТОВЫБОР ⭐] (2)"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🇫🇮 Финляндия [АВТОВЫБОР ⭐]"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🇳🇱 Нидерланды [АВТОВЫБОР ⭐]"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🇵🇱 Польша [АВТОВЫБОР ⭐]"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+- name: "🤖 Нейросети [АВТОВЫБОР⭐]"
+  type: ss
+  server: max.ru
+  port: 1234
+  cipher: "chacha20-ietf-poly1305"
+  password: "nnnL62BJDvKvFxy98waEY220YsaVd2fy"
+  udp: true
+
+proxy-groups:
+- name: "AUTO"
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  lazy: true
+  proxies:
+  - "🤖 Нейросети 🇬🇧 Британия"
+  - "★ 🤖 Нейросети 🇫🇮 Финляндия"
+  - "🤖 Нейросети 🇳🇱 Нидерланды"
+  - "🤖 Нейросети 🇵🇱 Польша"
+  - "🤖 Нейросети 🇫🇷 Франция"
+- name: "SELECT"
+  type: select
+  proxies:
+  - "AUTO"
+  - "DIRECT"
+
+rules:
+- IP-CIDR,::/0,REJECT,no-resolve
+- GEOIP,private,DIRECT,no-resolve
+- DOMAIN-SUFFIX,mtalk.google.com,DIRECT
+- DOMAIN-SUFFIX,push.apple.com,DIRECT
+- DOMAIN-SUFFIX,api.push.apple.com,DIRECT
+- DOMAIN-SUFFIX,push-apple.com.akadns.net,DIRECT
+- DOMAIN-SUFFIX,*-courier.push.apple.com,DIRECT
+- DOMAIN-SUFFIX,do.dsp.mp.microsoft.com,DIRECT
+- DOMAIN-SUFFIX,delivery.mp.microsoft.com,DIRECT
+- DOMAIN-SUFFIX,wns.windows.com,DIRECT
+- IP-CIDR,17.249.0.0/16,DIRECT,no-resolve
+- IP-CIDR,17.252.0.0/16,DIRECT,no-resolve
+- IP-CIDR,17.57.144.0/22,DIRECT,no-resolve
+- IP-CIDR,17.188.128.0/18,DIRECT,no-resolve
+- IP-CIDR,17.188.20.0/23,DIRECT,no-resolve
+- IP-CIDR,17.0.0.0/8,DIRECT,no-resolve
+- DOMAIN-SUFFIX,ru,DIRECT
+- DOMAIN-SUFFIX,su,DIRECT
+- DOMAIN-SUFFIX,by,DIRECT
+- DOMAIN-SUFFIX,xn--p1ai,DIRECT
+- DOMAIN-SUFFIX,2gis.ae,DIRECT
+- DOMAIN-SUFFIX,2gis.am,DIRECT
+- DOMAIN-SUFFIX,2gis.az,DIRECT
+- DOMAIN-SUFFIX,2gis.by,DIRECT
+- DOMAIN-SUFFIX,2gis.com,DIRECT
+- DOMAIN-SUFFIX,2gis.com.cy,DIRECT
+- DOMAIN-SUFFIX,2gis.cz,DIRECT
+- DOMAIN-SUFFIX,2gis.ge,DIRECT
+- DOMAIN-SUFFIX,2gis.kg,DIRECT
+- DOMAIN-SUFFIX,2gis.kz,DIRECT
+- DOMAIN-SUFFIX,2gis.ru,DIRECT
+- DOMAIN-SUFFIX,2gis.tj,DIRECT
+- DOMAIN-SUFFIX,2gis.ua,DIRECT
+- DOMAIN-SUFFIX,2gis.uz,DIRECT
+- DOMAIN-SUFFIX,avito.ru,DIRECT
+- DOMAIN-SUFFIX,avito.st,DIRECT
+- DOMAIN-SUFFIX,ok.ru,DIRECT
+- DOMAIN-SUFFIX,okcdn.ru,DIRECT
+- DOMAIN-SUFFIX,mycdn.me,DIRECT
+- DOMAIN,st-ok-pts.cdn-vk.ru,DIRECT
+- DOMAIN,st-ok.cdn-vk.ru,DIRECT
+- DOMAIN-SUFFIX,ozon.by,DIRECT
+- DOMAIN-SUFFIX,ozon.com,DIRECT
+- DOMAIN-SUFFIX,ozon.com.by,DIRECT
+- DOMAIN-SUFFIX,ozon.com.kz,DIRECT
+- DOMAIN-SUFFIX,ozon.kz,DIRECT
+- DOMAIN-SUFFIX,ozon.ru,DIRECT
+- DOMAIN-SUFFIX,ozon.tm,DIRECT
+- DOMAIN-SUFFIX,ozone.ru,DIRECT
+- DOMAIN-SUFFIX,ozonru.me,DIRECT
+- DOMAIN-SUFFIX,ozonusercontent.com,DIRECT
+- DOMAIN-SUFFIX,geobasket.ru,DIRECT
+- DOMAIN-SUFFIX,paywb.com,DIRECT
+- DOMAIN-SUFFIX,rwb.ru,DIRECT
+- DOMAIN-SUFFIX,wb-basket.ru,DIRECT
+- DOMAIN-SUFFIX,wb.ru,DIRECT
+- DOMAIN-SUFFIX,wbbasket.ru,DIRECT
+- DOMAIN-SUFFIX,wbpay.ru,DIRECT
+- DOMAIN-SUFFIX,wibes.ru,DIRECT
+- DOMAIN-SUFFIX,wildberries.ru,DIRECT
+- DOMAIN-REGEX,"^(.+\\.)?mail\\.ru$",DIRECT
+- DOMAIN-REGEX,"^(.+\\.)?yandex\\.(aero|az|by|cloud|co\\.il|com(\\.am|\\.ge|\\.ru|\\.tr|\\.ua)?|de|ee|eu|fi|fr|jobs|kg|kz|lt|lv|md|net|org|pl|ru|st|sx|tj|tm|tr|ua|uz)$",DIRECT
+- DOMAIN-REGEX,"^(.+\\.)?vk\\.(com|ru)$",DIRECT
+- DOMAIN-REGEX,"^(.+\\.)?ok(cdn)?\\.ru$",DIRECT
+- DOMAIN-REGEX,"^(.+\\.)?2gis\\.(ae|am|az|by|com(\\.cy)?|cz|ge|kg|kz|ru|tj|ua|uz)$",DIRECT
+- DOMAIN-REGEX,"^(.+\\.)?vtb\\.ru$",DIRECT
+- DOMAIN-REGEX,"^(.+\\.)?rzd\\.ru$",DIRECT
+- DOMAIN-REGEX,"^(.+\\.)?gosuslugi\\.ru$",DIRECT
+- DOMAIN-REGEX,"^(.+\\.)?ozon(e)?\\.ru$",DIRECT
+- DOMAIN-REGEX,"^(.+\\.)?wb\\.ru$",DIRECT
+- DOMAIN-REGEX,"^(.+\\.)?wildberries\\.ru$",DIRECT
+- DOMAIN-REGEX,"^(.+\\.)?kinopoisk\\.ru$",DIRECT
+- DOMAIN-REGEX,"^(.+\\.)?alfa.*\\.ru$",DIRECT
+- DOMAIN-REGEX,"^(.+\\.)?t(2|ele2)\\.ru$",DIRECT
+- DOMAIN-REGEX,"^(.+\\.)?lemanapro\\.ru$",DIRECT
+- DOMAIN-REGEX,"^(.+\\.)?rutube\\.ru$",DIRECT
+- DOMAIN-REGEX,"^(.+\\.)?mts.*\\.ru$",DIRECT
+- DOMAIN-REGEX,"^(.+\\.)?dzen.*\\.ru$",DIRECT
+- DOMAIN-REGEX,"^(.+\\.)?x5.*\\.ru$",DIRECT
+- DOMAIN-REGEX,"^(.+\\.)?beeline\\.ru$",DIRECT
+- DOMAIN-REGEX,"^(.+\\.)?megafon\\.ru$",DIRECT
+- DOMAIN-REGEX,"^alfa(-?[a-z]+)?\\.(ru|com|biz|st)$",DIRECT
+- DOMAIN-REGEX,"^api\\.(a\\.mts|avito|expf|max|mindbox)\\.ru$",DIRECT
+- DOMAIN-REGEX,"^vtb(-?[a-z0-9]+)?\\.(ru|com|in|digital|site|bank\\.in|fut\\.ru|corp\\.ru|promo)$",DIRECT
+- DOMAIN-REGEX,"^[0-9]+\\.mc\\.yandex\\.ru$",DIRECT
+- DOMAIN-REGEX,"^[0-9]{2}\\.img\\.avito\\.st$",DIRECT
+- DOMAIN-REGEX,"^sun[0-9]+(-[0-9]+)?\\.userapi\\.com$",DIRECT
+- DOMAIN-REGEX,"^sso-app[0-9]+\\.vtb\\.ru$",DIRECT
+- DOMAIN-SUFFIX,1cfresh.com,DIRECT
+- DOMAIN-SUFFIX,1internet.tv,DIRECT
+- DOMAIN-SUFFIX,4meeting.me,DIRECT
+- DOMAIN-SUFFIX,5post.market,DIRECT
+- DOMAIN-SUFFIX,alformacap.com,DIRECT
+- DOMAIN-SUFFIX,alformacapital.com,DIRECT
+- DOMAIN-SUFFIX,ams2-cdn.2gis.com,DIRECT
+- DOMAIN-SUFFIX,banka-ui.dev,DIRECT
+- DOMAIN-SUFFIX,flocktory.com,DIRECT
+- DOMAIN-SUFFIX,beta-bank.com,DIRECT
+- DOMAIN-SUFFIX,boosty.to,DIRECT
+- DOMAIN-SUFFIX,bronevik.com,DIRECT
+- DOMAIN-SUFFIX,oversecure.org,DIRECT
+- DOMAIN-SUFFIX,chizhik.club,DIRECT
+- DOMAIN-SUFFIX,clstorage.net,DIRECT
+- DOMAIN-SUFFIX,dbo-dengi.online,DIRECT
+- DOMAIN-SUFFIX,disk.2gis.com,DIRECT
+- DOMAIN-SUFFIX,donationalerts.com,DIRECT
+- DOMAIN-SUFFIX,edadeal.io,DIRECT
+- DOMAIN-SUFFIX,vk.com,DIRECT
+- DOMAIN-SUFFIX,targetads.io,DIRECT
+- DOMAIN-SUFFIX,fb-cdn.premier.one,DIRECT
+- DOMAIN-SUFFIX,fix-price.com,DIRECT
+- DOMAIN-SUFFIX,gazprombank.tech,DIRECT
+- DOMAIN-SUFFIX,investalfabank.com,DIRECT
+- DOMAIN-SUFFIX,jivochat.com,DIRECT
+- DOMAIN-SUFFIX,jivosite.com,DIRECT
+- DOMAIN-SUFFIX,jsons.injector.3ebra.net,DIRECT
+- DOMAIN-SUFFIX,jua5fcnytm.a.trbcdn.net,DIRECT
+- DOMAIN-SUFFIX,kaspersky.com,DIRECT
+- DOMAIN-SUFFIX,lenta.com,DIRECT
+- DOMAIN-SUFFIX,lmru.tech,DIRECT
+- DOMAIN-SUFFIX,magnit-ru.injector.3ebra.net,DIRECT
+- DOMAIN-SUFFIX,megamarket.tech,DIRECT
+- DOMAIN-SUFFIX,memealerts.com,DIRECT
+- DOMAIN-SUFFIX,miya-news.online,DIRECT
+- DOMAIN-SUFFIX,moex.com,DIRECT
+- DOMAIN-SUFFIX,netmonet.co,DIRECT
+- DOMAIN-SUFFIX,okko.sport,DIRECT
+- DOMAIN-SUFFIX,okko.tv,DIRECT
+- DOMAIN-SUFFIX,okolo.app,DIRECT
+- DOMAIN-SUFFIX,userapi.com,DIRECT
+- DOMAIN-SUFFIX,adhigh.net,DIRECT
+- DOMAIN-SUFFIX,skcrtxr.com,DIRECT
+- DOMAIN-SUFFIX,receive-sentry.lmru.tech,DIRECT
+- DOMAIN-SUFFIX,russiacalling.com,DIRECT
+- DOMAIN-SUFFIX,s3.yandex.net,DIRECT
+- DOMAIN-SUFFIX,sistema-capital.com,DIRECT
+- DOMAIN-SUFFIX,stats.vk-portal.net,DIRECT
+- DOMAIN-SUFFIX,svoy.academy,DIRECT
+- DOMAIN-SUFFIX,tamtam.chat,DIRECT
+- DOMAIN-SUFFIX,taxsee.com,DIRECT
+- DOMAIN-SUFFIX,tbank-online.com,DIRECT
+- DOMAIN-SUFFIX,timeweb.cloud,DIRECT
+- DOMAIN-SUFFIX,timeweb.com,DIRECT
+- DOMAIN-SUFFIX,tips.tips,DIRECT
+- DOMAIN-SUFFIX,tochka-tech.com,DIRECT
+- DOMAIN-SUFFIX,tochka.com,DIRECT
+- DOMAIN-SUFFIX,yastatic.net,DIRECT
+- DOMAIN-SUFFIX,trbcdn.net,DIRECT
+- DOMAIN-SUFFIX,tsx.x5static.net,DIRECT
+- DOMAIN-SUFFIX,whoosh.bike,DIRECT
+- DOMAIN-SUFFIX,vulpine.email,DIRECT
+- DOMAIN-SUFFIX,magnit.com,DIRECT
+- DOMAIN-SUFFIX,x5.tech,DIRECT
+- DOMAIN-SUFFIX,youla.io,DIRECT
+- DOMAIN-SUFFIX,zentotem.net,DIRECT
+- DOMAIN-SUFFIX,appsflyersdk.com,DIRECT
+- DOMAIN-SUFFIX,app-analytics-services.com,DIRECT
+- DOMAIN-SUFFIX,24h.tv,DIRECT
+- DOMAIN-SUFFIX,aviasales.com,DIRECT
+- DOMAIN-SUFFIX,avs.io,DIRECT
+- DOMAIN-SUFFIX,beeline.tv,DIRECT
+- DOMAIN-SUFFIX,dodois.com,DIRECT
+- DOMAIN-SUFFIX,dodois.io,DIRECT
+- DOMAIN-SUFFIX,dodopizza.com,DIRECT
+- DOMAIN-SUFFIX,dodostatic.net,DIRECT
+- DOMAIN-SUFFIX,emias.info,DIRECT
+- DOMAIN-SUFFIX,evrasia.rest,DIRECT
+- DOMAIN-SUFFIX,kinorium.com,DIRECT
+- DOMAIN-SUFFIX,lenta.tech,DIRECT
+- DOMAIN-SUFFIX,moscow,DIRECT
+- DOMAIN-SUFFIX,mosmetro.tech,DIRECT
+- DOMAIN-SUFFIX,mradx.net,DIRECT
+- DOMAIN-SUFFIX,mvk.com,DIRECT
+- DOMAIN-SUFFIX,my.com,DIRECT
+- DOMAIN-SUFFIX,naydex.net,DIRECT
+- DOMAIN-SUFFIX,ngenix.net,DIRECT
+- DOMAIN-SUFFIX,ozon.travel,DIRECT
+- DOMAIN-SUFFIX,perekrestok.com,DIRECT
+- DOMAIN-SUFFIX,premier.one,DIRECT
+- DOMAIN-SUFFIX,psk,DIRECT
+- DOMAIN-SUFFIX,restream-media.net,DIRECT
+- DOMAIN-SUFFIX,rostaxi.org,DIRECT
+- DOMAIN-SUFFIX,ru.com,DIRECT
+- DOMAIN-SUFFIX,ru.net,DIRECT
+- DOMAIN-SUFFIX,sberbank.com,DIRECT
+- DOMAIN-SUFFIX,smotreshka.tv,DIRECT
+- DOMAIN-SUFFIX,t1.cloud,DIRECT
+- DOMAIN-SUFFIX,tatar,DIRECT
+- DOMAIN-SUFFIX,telega.info,DIRECT
+- DOMAIN-SUFFIX,telega.me,DIRECT
+- DOMAIN-SUFFIX,turbopages.org,DIRECT
+- DOMAIN-SUFFIX,uni.rest,DIRECT
+- DOMAIN-SUFFIX,unirest.tech,DIRECT
+- DOMAIN-SUFFIX,vk-apps.com,DIRECT
+- DOMAIN-SUFFIX,vk-cdn.me,DIRECT
+- DOMAIN-SUFFIX,vk-cdn.net,DIRECT
+- DOMAIN-SUFFIX,vk-portal.net,DIRECT
+- DOMAIN-SUFFIX,vk.cc,DIRECT
+- DOMAIN-SUFFIX,vk.company,DIRECT
+- DOMAIN-SUFFIX,vk.design,DIRECT
+- DOMAIN-SUFFIX,vk.link,DIRECT
+- DOMAIN-SUFFIX,vk.me,DIRECT
+- DOMAIN-SUFFIX,vk.team,DIRECT
+- DOMAIN-SUFFIX,vkgo.app,DIRECT
+- DOMAIN-SUFFIX,vklive.app,DIRECT
+- DOMAIN-SUFFIX,vkmessenger.app,DIRECT
+- DOMAIN-SUFFIX,vkmessenger.com,DIRECT
+- DOMAIN-SUFFIX,vkuser.net,DIRECT
+- DOMAIN-SUFFIX,vkuseraudio.com,DIRECT
+- DOMAIN-SUFFIX,vkuseraudio.net,DIRECT
+- DOMAIN-SUFFIX,vkuserlive.net,DIRECT
+- DOMAIN-SUFFIX,vkuservideo.com,DIRECT
+- DOMAIN-SUFFIX,vkuservideo.net,DIRECT
+- DOMAIN-SUFFIX,wbstatic.net,DIRECT
+- DOMAIN-SUFFIX,webvisor.com,DIRECT
+- DOMAIN-SUFFIX,webvisor.org,DIRECT
+- DOMAIN-SUFFIX,x5.ai,DIRECT
+- DOMAIN-SUFFIX,x5.com,DIRECT
+- DOMAIN-SUFFIX,x5.digital,DIRECT
+- DOMAIN-SUFFIX,x5.group,DIRECT
+- DOMAIN-SUFFIX,x5.media,DIRECT
+- DOMAIN-SUFFIX,x5.team,DIRECT
+- DOMAIN-SUFFIX,x5static.net,DIRECT
+- DOMAIN-SUFFIX,xn--80adxhks,DIRECT
+- DOMAIN-SUFFIX,xn--80asehdb,DIRECT
+- DOMAIN-SUFFIX,xn--80aswg,DIRECT
+- DOMAIN-SUFFIX,xn--c1avg,DIRECT
+- DOMAIN-SUFFIX,xn--d1acj3b,DIRECT
+- DOMAIN-SUFFIX,xn--p1acf,DIRECT
+- DOMAIN-SUFFIX,ya.cc,DIRECT
+- DOMAIN-SUFFIX,yads.tech,DIRECT
+- DOMAIN-SUFFIX,yandex,DIRECT
+- DOMAIN-SUFFIX,yandex-pogoda.static-storage.net,DIRECT
+- DOMAIN-SUFFIX,yandexadexchange.net,DIRECT
+- DOMAIN-SUFFIX,yandexcloud.net,DIRECT
+- DOMAIN-SUFFIX,yandexcom.net,DIRECT
+- DOMAIN-SUFFIX,yandexmetrica.com,DIRECT
+- DOMAIN-SUFFIX,yandexwebcache.org,DIRECT
+- DOMAIN-SUFFIX,yastat.net,DIRECT
+- DOMAIN-SUFFIX,yclients.com,DIRECT
+- GEOIP,RU,DIRECT,no-resolve
+- MATCH,SELECT
