@@ -55,6 +55,9 @@ jobs:
           if curl -s --max-time 60 -A "INCY/3.9.9" -H "X-HWID: $DOBRO_HWID" -o /tmp/dobro-new.b64 "$DOBROVPN_URL"; then
             size=$(stat -c%s /tmp/dobro-new.b64)
             echo "fetched $size bytes (INCY UA)"
+            # Keep the raw INCY-UA response for structure analysis + artifact,
+            # even if it fails the base64-links validation below.
+            cp /tmp/dobro-new.b64 ./dobro-incy-raw
             python3 <<'PYEOF'
           import base64
           raw = open('/tmp/dobro-new.b64', encoding='utf-8').read().strip()
@@ -98,6 +101,56 @@ jobs:
           else
             echo "WARNING: fetch failed - keeping repo dobro.b64"
           fi
+
+      - name: Analyze INCY response structure
+        run: |
+          python3 <<'PYEOF'
+          import json
+          # Structural analysis of the raw panel response to INCY UA.
+          # Logs ONLY structure (keys, counts, tags, booleans) — never
+          # credentials (UUIDs, keys, passwords) or raw content.
+          raw = open('dobro-incy-raw', encoding='utf-8').read()
+          print(f'raw size: {len(raw)}')
+          try:
+              data = json.loads(raw)
+              print('format: JSON')
+              print('top-level keys:', list(data.keys()))
+              obs = data.get('outbounds', [])
+              print(f'outbounds: {len(obs)}')
+              for o in obs[:8]:
+                  if isinstance(o, dict):
+                      print(f"  - tag={o.get('tag')} protocol={o.get('protocol')} has_finalmask={'finalmask' in o}")
+              r = data.get('routing', {})
+              if isinstance(r, dict):
+                  print('routing keys:', list(r.keys()))
+                  rules = r.get('rules', [])
+                  print(f'routing rules: {len(rules)}')
+                  ru_direct = 0
+                  for rule in rules:
+                      if not isinstance(rule, dict):
+                          continue
+                      if rule.get('outboundTag') == 'direct':
+                          doms = rule.get('domain', [])
+                          if any('.ru' in str(d) for d in doms):
+                              ru_direct += 1
+                  print(f'rules routing .ru to direct: {ru_direct}')
+                  print('domainStrategy:', r.get('domainStrategy'))
+              dns = data.get('dns', {})
+              print('dns:', str(dns)[:300])
+              ib = data.get('inbounds', [])
+              print(f"inbounds: {len(ib)} tags: {[i.get('tag') for i in ib if isinstance(i, dict)]}")
+          except Exception as e:
+              print(f'not JSON ({type(e).__name__}): trying other formats')
+              head = raw[:200].replace('\n', ' ')
+              print('starts with:', head[:120])
+          PYEOF
+
+      - name: Upload INCY response artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: incy-response
+          path: dobro-incy-raw
+          retention-days: 7
 
       - name: Convert dobro.b64 to full dobro-vpn.yaml
         run: |
