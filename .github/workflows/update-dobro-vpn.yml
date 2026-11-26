@@ -36,7 +36,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Fetch subscription with curl (X-HWID auth)
+      - name: Fetch subscription as INCY (X-HWID auth)
         env:
           DOBROVPN_URL: ${{ secrets.DOBROVPN_URL }}
           DOBRO_HWID: ${{ secrets.DOBRO_HWID }}
@@ -45,9 +45,38 @@ jobs:
             echo "DOBROVPN_URL or DOBRO_HWID secret not set - falling back to dobro.b64 from the repo"
             exit 0
           fi
-          if curl -s --max-time 60 -H "X-HWID: $DOBRO_HWID" -o /tmp/dobro-new.b64 "$DOBROVPN_URL"; then
+          # 26.11.2026: fetch as INCY (User-Agent INCY/3.9.9) so the panel serves
+          # exactly what it serves to INCY. The user found the mirror was missing
+          # the routing template the original subscription gets in INCY (.ru ->
+          # direct): the panel serves different content per User-Agent (curl gets
+          # links WITH fm, INCY gets them WITHOUT fm). Publish the response
+          # VERBATIM (no reformatting) so the mirror is byte-identical to what
+          # INCY receives from the original.
+          if curl -s --max-time 60 -A "INCY/3.9.9" -H "X-HWID: $DOBRO_HWID" -o /tmp/dobro-new.b64 "$DOBROVPN_URL"; then
             size=$(stat -c%s /tmp/dobro-new.b64)
-            echo "fetched $size bytes"
+            echo "fetched $size bytes (INCY UA)"
+            python3 <<'PYEOF'
+          import base64
+          raw = open('/tmp/dobro-new.b64', encoding='utf-8').read().strip()
+          # Format detection — log structure only, never the content/credentials.
+          links = []
+          try:
+              dec = base64.b64decode(raw + '=' * (-len(raw) % 4)).decode('utf-8', 'replace')
+              links = [l for l in dec.splitlines() if l.strip().startswith(('vless://', 'hysteria2://', 'ss://'))]
+          except Exception:
+              pass
+          if links:
+              fmt = 'base64-links'
+          elif raw.lstrip().startswith('{'):
+              fmt = 'json'
+          elif 'proxies:' in raw[:500]:
+              fmt = 'yaml'
+          else:
+              fmt = 'unknown'
+          fm = sum(1 for l in links if 'fm=' in l) if links else 0
+          has_routing = any(k in raw for k in ('"routing"', 'routing:', '"rules"', 'rules:', 'geoip:ru', '.ru'))
+          print(f'format: {fmt} | size: {len(raw)} | links: {len(links)} | fm: {fm} | routing_keywords: {has_routing}')
+          PYEOF
             if python3 <<'PYEOF'
           import base64, sys
           raw = open('/tmp/dobro-new.b64', encoding='utf-8').read().strip()
@@ -62,7 +91,7 @@ jobs:
           PYEOF
             then
               cp /tmp/dobro-new.b64 dobro.b64
-              echo "dobro.b64 refreshed from the subscription"
+              echo "dobro.b64 refreshed from the subscription (INCY UA, verbatim)"
             else
               echo "WARNING: fetched content failed validation (HWID placeholder? device limit?) - keeping repo dobro.b64"
             fi
@@ -155,62 +184,33 @@ jobs:
               return p
 
           def parse_ss(link):
-
               body, _, frag = link[5:].partition("#")
-
               name = unquote(frag) or "ss"
-
               body = body.split("?")[0]
-
               if "@" in body:
-
                   pre, _, hostport = body.partition("@")
-
                   try:
-
                       userinfo = base64.urlsafe_b64decode(pre + "=" * (-len(pre) % 4)).decode("utf-8", "replace")
-
                   except Exception:
-
                       return None
-
               else:
-
                   try:
-
                       dec = base64.urlsafe_b64decode(body + "=" * (-len(body) % 4)).decode("utf-8", "replace")
-
                   except Exception:
-
                       return None
-
                   if "@" not in dec:
-
                       return None
-
                   userinfo, _, hostport = dec.rpartition("@")
-
               method, _, password = userinfo.partition(":")
-
               host, _, port = hostport.rpartition(":")
-
               try:
-
                   port = int(port)
-
               except ValueError:
-
                   return None
-
               if not method or not password or not host:
-
                   return None
-
               return {"name": name, "type": "ss", "server": host, "port": port,
-
                       "cipher": method, "password": password, "udp": True}
-
-          
 
           def emit(p):
               L = [f"- name: {qstr(p['name'])}", f"  type: {p['type']}",
@@ -341,14 +341,23 @@ jobs:
               # С fm INCY хранит FinalMask, и ProCloud Москва перестаёт
               # подключаться, а оригинал без fm работает. Зеркало обязано
               # публиковать ссылки БЕЗ fm, ровно как оригинал в INCY.
+              # С User-Agent INCY панель сама отдаёт ссылки без fm, так что
+              # strip_fm — страховка на случай, если fm вдруг вернётся.
               if 'fm=' not in link:
                   return link
               link = re.sub(r'([?&])fm=[^&#]*&', r'\1', link)
               link = re.sub(r'[?&]fm=[^&#]*', '', link)
               return link
-          links = [strip_fm(l) for l in links]
-          open('dobro.txt', 'w', encoding='utf-8').write(base64.b64encode('\n'.join(links).encode('utf-8')).decode('ascii'))
-          print(f'wrote dobro.txt: {len(links)} links (fm stripped)')
+          fm_count = sum(1 for l in links if 'fm=' in l)
+          if fm_count == 0:
+              # Нет fm — публикуем ответ панели ВЕРБАТИМ, без переформатирования
+              # (26.11.2026, требование пользователя): тот же вид, что оригинал.
+              open('dobro.txt', 'w', encoding='utf-8').write(raw)
+              print(f'wrote dobro.txt verbatim: {len(links)} links, fm 0 (no reformatting)')
+          else:
+              links = [strip_fm(l) for l in links]
+              open('dobro.txt', 'w', encoding='utf-8').write(base64.b64encode('\n'.join(links).encode('utf-8')).decode('ascii'))
+              print(f'wrote dobro.txt: {len(links)} links (fm stripped from {fm_count})')
           PYEOF
 
       - name: Commit and push if changed
