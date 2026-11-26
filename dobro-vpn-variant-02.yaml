@@ -3,7 +3,7 @@
 # nodes in this variant: ★ 🇩🇪 Германия #14 ⚡, ★ 🇪🇪 Эстония #6, ★ 🇫🇮 Финляндия #15, ★ 🇫🇮 Финляндия #16, ★ 🇫🇮 Финляндия #17, ★ 🇫🇮 Финляндия #19 ⚡, ★ 🇯🇵 Япония ⚡, ★ 🇳🇱 Нидерланды #9 ...
 # Routing + DNS preserved exactly as the panel configured them for these nodes.
 # Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
-# updated: 2026-11-26T07:44:39Z
+# updated: 2026-11-26T08:10:20Z
 # proxies: 70 | groups: 3 | rules: 266 | dns policy: 0
 
 port: 7890
@@ -165,7 +165,7 @@ proxies:
   reality-opts:
     public-key: cDC3Whr81RXC-gEH-9A58buHL1iiFeVDOEn3ZOIkUnc
     short-id: 3432ef6a6c821d95
-- name: "🇭🇰 Гонконг #2 ⚡"
+- name: "🇭🇰 Гонконг #2"
   type: vless
   server: 85.11.161.33
   port: 8443
@@ -207,7 +207,7 @@ proxies:
   reality-opts:
     public-key: Ji1gUzHsBk2FGgkX8hHvhKI9lK6jB7L2I29D4cfo4TY
     short-id: ae820452de689316
-- name: "🇫🇷 Франция #5 ⚡"
+- name: "🇫🇷 Франция #5"
   type: vless
   server: 82.25.63.237
   port: 8443
@@ -933,15 +933,14 @@ proxy-groups:
   - "🇪🇸 Испания ⚡"
   - "gm-o2fi"
   - "gm-o1de"
-  - "🇳🇱 Нидерланды #2 ⚡"
+  - "🇧🇬 Болгария #1"
   - "🇮🇱 Израиль ⚡"
   - "🇪🇺 Европа [АВТОВЫБОР ⭐]"
   - "🤖 Нейросети 🇬🇧 Британия"
   - "★ 🇯🇵 Япония ⚡"
-  - "🇭🇰 Гонконг #2 ⚡"
-  - "🇧🇬 Болгария #1"
+  - "🇭🇰 Гонконг #2"
   - "🇧🇬 Болгария #2"
-  - "🇫🇷 Франция #5 ⚡"
+  - "🇫🇷 Франция #5"
   - "🇮🇹 Италия #1 ⚡"
   - "🇮🇹 Италия #2 ⚡"
   - "🇪🇪 Эстония #2 ⚡"
@@ -957,6 +956,7 @@ proxy-groups:
   - "🇳🇱 Нидерланды #6 ⚡"
   - "🇪🇪 Эстония #4 ⚡"
   - "🇪🇪 Эстония #5 ⚡"
+  - "🇳🇱 Нидерланды #2 ⚡"
   - "🇳🇱 Нидерланды #4 ⚡"
   - "🇳🇱 Нидерланды #5 ⚡"
   - "🇳🇱 Нидерланды #10 ⚡"
@@ -1002,7 +1002,6 @@ proxy-groups:
   - "gm-o2fi"
   - "gm-o1de"
   - "🇧🇬 Болгария #1"
-  - "🇳🇱 Нидерланды #2 ⚡"
   - "🇨🇦 Канада #2 ⚡"
   - "★ 🇦🇺 Австралия ⚡"
 
