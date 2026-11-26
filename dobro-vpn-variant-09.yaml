@@ -3,8 +3,8 @@
 # nodes in this variant: 🚀 Если отключает 5-15 мин
 # Routing + DNS preserved exactly as the panel configured them for these nodes.
 # Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
-# updated: 2026-11-26T07:27:05Z
-# proxies: 86 | groups: 3 | rules: 187 | dns policy: 0
+# updated: 2026-11-26T07:44:39Z
+# proxies: 90 | groups: 3 | rules: 187 | dns policy: 0
 
 port: 7890
 socks-port: 7891
@@ -25,6 +25,66 @@ dns:
     - 8.8.4.4
 
 proxies:
+- name: "n1-bg2"
+  type: vless
+  server: 170.168.43.52
+  port: 2053
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: node-a06a11.vless.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: Byx9FxICwfLXVLQEK7nq4FAPmbHcotEQ__3UC_nZaV8
+    short-id: 6adca5b7d63c8c95
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-bgiw"
+  type: vless
+  server: 170.168.43.54
+  port: 2053
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: static-40187c.vless.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: Ji1gUzHsBk2FGgkX8hHvhKI9lK6jB7L2I29D4cfo4TY
+    short-id: ae820452de689316
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-ca4i"
+  type: vless
+  server: 179.255.184.76
+  port: 2053
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: cdn-a84996.vless.monster
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 3ZG8R_gveP3LZ1QVVXobdtiSXeib3EyFbflpQve9fwc
+    short-id: 44831c5468e15724
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
+- name: "n1-de12i"
+  type: vless
+  server: 201.4.100.43
+  port: 2053
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: grpc
+  tls: true
+  servername: static-de12i.vless.site
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: tjR7wQ8EvJU-6oJZ6REaNz-4JSeXvT0dskT7nVRcwWQ
+    short-id: b649bcb296c52024
+  grpc-opts:
+    grpc-service-name: "iosgrpc"
 - name: "n1-de1c"
   type: vless
   server: 31.59.216.114
@@ -1228,6 +1288,10 @@ proxy-groups:
   tolerance: 50
   lazy: true
   proxies:
+  - "n1-bg2"
+  - "n1-bgiw"
+  - "n1-ca4i"
+  - "n1-de12i"
   - "n1-de1c"
   - "n1-de3ip"
   - "n1-deiw2"
@@ -1314,6 +1378,10 @@ proxy-groups:
   tolerance: 50
   lazy: true
   proxies:
+  - "n1-bg2"
+  - "n1-bgiw"
+  - "n1-ca4i"
+  - "n1-de12i"
   - "n1-de1c"
   - "n1-de3ip"
   - "n1-deiw2"

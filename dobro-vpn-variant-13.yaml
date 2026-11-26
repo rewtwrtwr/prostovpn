@@ -3,7 +3,7 @@
 # nodes in this variant: 🇳🇱 Нидерланды [АВТОВЫБОР ⭐]
 # Routing + DNS preserved exactly as the panel configured them for these nodes.
 # Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
-# updated: 2026-11-26T07:27:05Z
+# updated: 2026-11-26T07:44:39Z
 # proxies: 29 | groups: 3 | rules: 180 | dns policy: 0
 
 port: 7890
@@ -81,7 +81,7 @@ proxies:
   reality-opts:
     public-key: hoF5HIPDsWCCrK98z3m24_x3y8SWaQhXO4Uq4O_Ktw8
     short-id: 3c02afcfca91ece4
-- name: "🇳🇱 Нидерланды #21 ⚡"
+- name: "🇳🇱 Нидерланды #21"
   type: vless
   server: 2.27.106.89
   port: 43732
@@ -235,7 +235,7 @@ proxies:
   reality-opts:
     public-key: qkNv_vvEeHBlubDM154C1l05Wjyaj1k0l3qY911gUQQ
     short-id: dcb80b2936e64257
-- name: "🇳🇱 Нидерланды #20"
+- name: "🇳🇱 Нидерланды #20 ⚡"
   type: vless
   server: 2.27.106.85
   port: 57098
@@ -359,7 +359,7 @@ proxy-groups:
   - "🇳🇱 Нидерланды #26 ⚡"
   - "🇳🇱 Нидерланды #3 ⚡"
   - "🇳🇱 Нидерланды #6 ⚡"
-  - "🇳🇱 Нидерланды #21 ⚡"
+  - "🇳🇱 Нидерланды #21"
   - "🇳🇱 Нидерланды #2 ⚡"
   - "🇳🇱 Нидерланды #4 ⚡"
   - "🇳🇱 Нидерланды #5 ⚡"
@@ -371,7 +371,7 @@ proxy-groups:
   - "★ 🇳🇱 Нидерланды #24 ⚡"
   - "★ 🇳🇱 Нидерланды #9"
   - "★ 🇳🇱 Нидерланды #25 ⚡"
-  - "🇳🇱 Нидерланды #20"
+  - "🇳🇱 Нидерланды #20 ⚡"
   - "🇳🇱 Нидерланды #22 ⚡ ^~2~^"
 - name: "SELECT"
   type: select
@@ -388,7 +388,7 @@ proxy-groups:
   - "🇳🇱 Нидерланды #26 ⚡"
   - "🇳🇱 Нидерланды #3 ⚡"
   - "🇳🇱 Нидерланды #6 ⚡"
-  - "🇳🇱 Нидерланды #21 ⚡"
+  - "🇳🇱 Нидерланды #21"
   - "🇳🇱 Нидерланды #2 ⚡"
   - "🇳🇱 Нидерланды #4 ⚡"
   - "🇳🇱 Нидерланды #5 ⚡"
@@ -400,7 +400,7 @@ proxy-groups:
   - "★ 🇳🇱 Нидерланды #24 ⚡"
   - "★ 🇳🇱 Нидерланды #9"
   - "★ 🇳🇱 Нидерланды #25 ⚡"
-  - "🇳🇱 Нидерланды #20"
+  - "🇳🇱 Нидерланды #20 ⚡"
   - "🇳🇱 Нидерланды #22 ⚡ ^~2~^"
 
 rules:

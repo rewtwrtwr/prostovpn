@@ -1,10 +1,10 @@
 # dobro-vpn-variant-02.yaml — Clash/Mihomo config for ONE routing variant, do not edit manually
-# variant 2/15 | elements: 52 | xray rules: 9 -> clash rules: 265
+# variant 2/15 | elements: 55 | xray rules: 9 -> clash rules: 265
 # nodes in this variant: ★ 🇩🇪 Германия #14 ⚡, ★ 🇪🇪 Эстония #6, ★ 🇫🇮 Финляндия #15, ★ 🇫🇮 Финляндия #16, ★ 🇫🇮 Финляндия #17, ★ 🇫🇮 Финляндия #19 ⚡, ★ 🇯🇵 Япония ⚡, ★ 🇳🇱 Нидерланды #9 ...
 # Routing + DNS preserved exactly as the panel configured them for these nodes.
 # Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
-# updated: 2026-11-26T07:27:05Z
-# proxies: 67 | groups: 3 | rules: 266 | dns policy: 0
+# updated: 2026-11-26T07:44:39Z
+# proxies: 70 | groups: 3 | rules: 266 | dns policy: 0
 
 port: 7890
 socks-port: 7891
@@ -165,7 +165,7 @@ proxies:
   reality-opts:
     public-key: cDC3Whr81RXC-gEH-9A58buHL1iiFeVDOEn3ZOIkUnc
     short-id: 3432ef6a6c821d95
-- name: "🇭🇰 Гонконг #2"
+- name: "🇭🇰 Гонконг #2 ⚡"
   type: vless
   server: 85.11.161.33
   port: 8443
@@ -179,6 +179,34 @@ proxies:
   reality-opts:
     public-key: H4PmdY0ne8oJz8aSYYMmbwWaPv60SOJGKvfAkndaWCc
     short-id: c777b184dac4bb88
+- name: "🇧🇬 Болгария #1"
+  type: vless
+  server: 170.168.43.52
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: gw-6bc2fe.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: Byx9FxICwfLXVLQEK7nq4FAPmbHcotEQ__3UC_nZaV8
+    short-id: 6adca5b7d63c8c95
+- name: "🇧🇬 Болгария #2"
+  type: vless
+  server: 170.168.43.54
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: srv-b2ad02.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: Ji1gUzHsBk2FGgkX8hHvhKI9lK6jB7L2I29D4cfo4TY
+    short-id: ae820452de689316
 - name: "🇫🇷 Франция #5 ⚡"
   type: vless
   server: 82.25.63.237
@@ -277,6 +305,20 @@ proxies:
   reality-opts:
     public-key: 5EEJVsaboS0K6mFkGZOQc_oajrf3jDMd998rA2bXIEk
     short-id: bb14db47c7fe43a2
+- name: "🇨🇦 Канада #3"
+  type: vless
+  server: 179.255.184.76
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: pop-9c0838.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 3ZG8R_gveP3LZ1QVVXobdtiSXeib3EyFbflpQve9fwc
+    short-id: 44831c5468e15724
 - name: "🇫🇷 Франция #1 ⚡"
   type: vless
   server: 179.255.188.77
@@ -599,7 +641,7 @@ proxies:
   reality-opts:
     public-key: AyPAMP8XIRtRIagJuk5eA0AFyvZbkqrRRdMEDsD_mkQ
     short-id: 62da72fb
-- name: "🇫🇮 Финляндия #4"
+- name: "🇫🇮 Финляндия #4 ⚡"
   type: vless
   server: 2.27.168.84
   port: 8443
@@ -896,7 +938,9 @@ proxy-groups:
   - "🇪🇺 Европа [АВТОВЫБОР ⭐]"
   - "🤖 Нейросети 🇬🇧 Британия"
   - "★ 🇯🇵 Япония ⚡"
-  - "🇭🇰 Гонконг #2"
+  - "🇭🇰 Гонконг #2 ⚡"
+  - "🇧🇬 Болгария #1"
+  - "🇧🇬 Болгария #2"
   - "🇫🇷 Франция #5 ⚡"
   - "🇮🇹 Италия #1 ⚡"
   - "🇮🇹 Италия #2 ⚡"
@@ -904,6 +948,7 @@ proxy-groups:
   - "🇨🇦 Канада #1 ⚡"
   - "🇨🇦 Канада #2 ⚡"
   - "★ 🇪🇪 Эстония #6"
+  - "🇨🇦 Канада #3"
   - "🇫🇷 Франция #1 ⚡"
   - "🇫🇷 Франция #4"
   - "🤖 Нейросети 🇫🇷 Франция"
@@ -929,7 +974,7 @@ proxy-groups:
   - "🇫🇮 Финляндия #2"
   - "★ 🇫🇮 Финляндия #19 ⚡"
   - "🇫🇮 Финляндия #3 ⚡"
-  - "🇫🇮 Финляндия #4"
+  - "🇫🇮 Финляндия #4 ⚡"
   - "🇫🇮 Финляндия #9 ⚡"
   - "🇩🇪 Германия #3"
   - "🇫🇮 Финляндия #10 ⚡"
@@ -956,6 +1001,7 @@ proxy-groups:
   proxies:
   - "gm-o2fi"
   - "gm-o1de"
+  - "🇧🇬 Болгария #1"
   - "🇳🇱 Нидерланды #2 ⚡"
   - "🇨🇦 Канада #2 ⚡"
   - "★ 🇦🇺 Австралия ⚡"
