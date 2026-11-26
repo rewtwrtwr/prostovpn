@@ -1,10 +1,10 @@
 # dobro-vpn-variant-02.yaml — Clash/Mihomo config for ONE routing variant, do not edit manually
 # variant 2/15 | elements: 55 | xray rules: 9 -> clash rules: 265
-# nodes in this variant: ★ 🇩🇪 Германия #14 ⚡, ★ 🇪🇪 Эстония #6, ★ 🇫🇮 Финляндия #15, ★ 🇫🇮 Финляндия #16, ★ 🇫🇮 Финляндия #17, ★ 🇫🇮 Финляндия #19 ⚡, ★ 🇯🇵 Япония ⚡, ★ 🇳🇱 Нидерланды #9 ...
+# nodes in this variant: ★ 🇩🇪 Германия #14 ⚡, ★ 🇪🇪 Эстония #6, ★ 🇫🇮 Финляндия #15 ⚡, ★ 🇫🇮 Финляндия #16 ⚡, ★ 🇫🇮 Финляндия #17, ★ 🇫🇮 Финляндия #19 ⚡, ★ 🇯🇵 Япония ⚡, ★ 🇳🇱 Нидерланды #9 ...
 # Routing + DNS preserved exactly as the panel configured them for these nodes.
 # Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
-# updated: 2026-11-26T08:10:20Z
-# proxies: 70 | groups: 3 | rules: 266 | dns policy: 0
+# updated: 2026-11-26T14:30:07Z
+# proxies: 69 | groups: 3 | rules: 266 | dns policy: 0
 
 port: 7890
 socks-port: 7891
@@ -179,7 +179,7 @@ proxies:
   reality-opts:
     public-key: H4PmdY0ne8oJz8aSYYMmbwWaPv60SOJGKvfAkndaWCc
     short-id: c777b184dac4bb88
-- name: "🇧🇬 Болгария #1"
+- name: "🇧🇬 Болгария #1 ⚡"
   type: vless
   server: 170.168.43.52
   port: 8443
@@ -193,7 +193,7 @@ proxies:
   reality-opts:
     public-key: Byx9FxICwfLXVLQEK7nq4FAPmbHcotEQ__3UC_nZaV8
     short-id: 6adca5b7d63c8c95
-- name: "🇧🇬 Болгария #2"
+- name: "🇧🇬 Болгария #2 ⚡"
   type: vless
   server: 170.168.43.54
   port: 8443
@@ -305,7 +305,7 @@ proxies:
   reality-opts:
     public-key: 5EEJVsaboS0K6mFkGZOQc_oajrf3jDMd998rA2bXIEk
     short-id: bb14db47c7fe43a2
-- name: "🇨🇦 Канада #3"
+- name: "🇨🇦 Канада #3 ⚡"
   type: vless
   server: 179.255.184.76
   port: 8443
@@ -627,7 +627,7 @@ proxies:
   reality-opts:
     public-key: Y62O0xuVJY8P3Xxn8UhpjjJR9BWX7i6v1TDBucjWygw
     short-id: 47d7e0c97dab564a
-- name: "🇫🇮 Финляндия #3 ⚡"
+- name: "🇫🇮 Финляндия #3"
   type: vless
   server: 31.77.202.170
   port: 8765
@@ -641,7 +641,7 @@ proxies:
   reality-opts:
     public-key: AyPAMP8XIRtRIagJuk5eA0AFyvZbkqrRRdMEDsD_mkQ
     short-id: 62da72fb
-- name: "🇫🇮 Финляндия #4 ⚡"
+- name: "🇫🇮 Финляндия #4"
   type: vless
   server: 2.27.168.84
   port: 8443
@@ -655,7 +655,7 @@ proxies:
   reality-opts:
     public-key: -rwQYqD7xtqjLRVQkAV5VqmXNsZjE-t3n2gE37elNCE
     short-id: e324ed96626fad03
-- name: "🇫🇮 Финляндия #9 ⚡"
+- name: "🇫🇮 Финляндия #9"
   type: vless
   server: 109.120.151.245
   port: 8443
@@ -711,7 +711,7 @@ proxies:
   reality-opts:
     public-key: OTgY9B-VpbmEgqBDTHnb8Cyx-ZfIEcvJRWOoWkePqRQ
     short-id: b4122da4ead1c43f
-- name: "★ 🇫🇮 Финляндия #15"
+- name: "★ 🇫🇮 Финляндия #15 ⚡"
   type: vless
   server: 191.217.252.76
   port: 8443
@@ -809,20 +809,6 @@ proxies:
   reality-opts:
     public-key: gLhyT_7o_AUvFl33hVKMVanTrvMldDrTOpscDVJZ0Hc
     short-id: 3857e51299bdac3a
-- name: "gm-o2fi"
-  type: vless
-  server: 144.31.126.247
-  port: 8443
-  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
-  udp: true
-  network: tcp
-  tls: true
-  servername: cdn-d5a44d.dobry.monster
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: iZmp_9GpELaE2aGKVvHUr4EHA7jMWV92claCJCrOgSw
-    short-id: 82711c5235644af8
 - name: "gm-o1de"
   type: vless
   server: 31.59.216.114
@@ -931,15 +917,15 @@ proxy-groups:
   lazy: true
   proxies:
   - "🇪🇸 Испания ⚡"
-  - "gm-o2fi"
   - "gm-o1de"
-  - "🇧🇬 Болгария #1"
+  - "🇧🇬 Болгария #1 ⚡"
+  - "🇳🇱 Нидерланды #6 ⚡"
   - "🇮🇱 Израиль ⚡"
   - "🇪🇺 Европа [АВТОВЫБОР ⭐]"
   - "🤖 Нейросети 🇬🇧 Британия"
   - "★ 🇯🇵 Япония ⚡"
   - "🇭🇰 Гонконг #2"
-  - "🇧🇬 Болгария #2"
+  - "🇧🇬 Болгария #2 ⚡"
   - "🇫🇷 Франция #5"
   - "🇮🇹 Италия #1 ⚡"
   - "🇮🇹 Италия #2 ⚡"
@@ -947,13 +933,12 @@ proxy-groups:
   - "🇨🇦 Канада #1 ⚡"
   - "🇨🇦 Канада #2 ⚡"
   - "★ 🇪🇪 Эстония #6"
-  - "🇨🇦 Канада #3"
+  - "🇨🇦 Канада #3 ⚡"
   - "🇫🇷 Франция #1 ⚡"
   - "🇫🇷 Франция #4"
   - "🤖 Нейросети 🇫🇷 Франция"
   - "🇳🇱 Нидерланды #3 ⚡"
   - "🇪🇪 Эстония #3 ⚡"
-  - "🇳🇱 Нидерланды #6 ⚡"
   - "🇪🇪 Эстония #4 ⚡"
   - "🇪🇪 Эстония #5 ⚡"
   - "🇳🇱 Нидерланды #2 ⚡"
@@ -973,13 +958,13 @@ proxy-groups:
   - "🇫🇮 Финляндия #1"
   - "🇫🇮 Финляндия #2"
   - "★ 🇫🇮 Финляндия #19 ⚡"
-  - "🇫🇮 Финляндия #3 ⚡"
-  - "🇫🇮 Финляндия #4 ⚡"
-  - "🇫🇮 Финляндия #9 ⚡"
+  - "🇫🇮 Финляндия #3"
+  - "🇫🇮 Финляндия #4"
+  - "🇫🇮 Финляндия #9"
   - "🇩🇪 Германия #3"
   - "🇫🇮 Финляндия #10 ⚡"
   - "🇫🇮 Финляндия #14 ⚡"
-  - "★ 🇫🇮 Финляндия #15"
+  - "★ 🇫🇮 Финляндия #15 ⚡"
   - "★ 🤖 Нейросети 🇫🇮 Финляндия"
   - "★ 🇫🇮 Финляндия #17"
   - "🇩🇪 Германия #1 ⚡"
@@ -999,9 +984,10 @@ proxy-groups:
   tolerance: 50
   lazy: true
   proxies:
-  - "gm-o2fi"
   - "gm-o1de"
-  - "🇧🇬 Болгария #1"
+  - "🇧🇬 Болгария #1 ⚡"
+  - "🇳🇱 Нидерланды #2 ⚡"
+  - "🇳🇱 Нидерланды #6 ⚡"
   - "🇨🇦 Канада #2 ⚡"
   - "★ 🇦🇺 Австралия ⚡"
 

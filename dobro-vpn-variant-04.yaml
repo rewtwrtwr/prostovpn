@@ -3,8 +3,8 @@
 # nodes in this variant: 🇷🇺 Москва #1, 🇷🇺 Москва #3 ⚡, 🇷🇺 Москва #4, 🇷🇺 Москва #5
 # Routing + DNS preserved exactly as the panel configured them for these nodes.
 # Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
-# updated: 2026-11-26T08:10:20Z
-# proxies: 21 | groups: 3 | rules: 270 | dns policy: 0
+# updated: 2026-11-26T14:30:07Z
+# proxies: 22 | groups: 3 | rules: 270 | dns policy: 0
 
 port: 7890
 socks-port: 7891
@@ -39,7 +39,7 @@ proxies:
   reality-opts:
     public-key: qkNv_vvEeHBlubDM154C1l05Wjyaj1k0l3qY911gUQQ
     short-id: dcb80b2936e64257
-- name: "🇧🇬 Болгария #1"
+- name: "🇧🇬 Болгария #1 ⚡"
   type: vless
   server: 170.168.43.52
   port: 8443
@@ -67,6 +67,34 @@ proxies:
   reality-opts:
     public-key: euxdU384x5_UddyM6UE4RpVRsl9Z2xFhQ-mE1ydzhnQ
     short-id: cc838404c247aa9a
+- name: "🇳🇱 Нидерланды #6 ⚡"
+  type: vless
+  server: 156.9.124.80
+  port: 8443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: edge-fe4eb4.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: hoF5HIPDsWCCrK98z3m24_x3y8SWaQhXO4Uq4O_Ktw8
+    short-id: 3c02afcfca91ece4
+- name: "🇳🇱 Нидерланды #2 ⚡"
+  type: vless
+  server: 179.254.111.108
+  port: 443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: r-nl3.vless.site
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: NGDCTIEMyA3Rst1SCpR46MhRV1bhmjW6MaMfdSFYS08
+    short-id: e32dccf378691ace
 - name: "🇷🇺 Москва #1"
   type: vless
   server: 146.19.128.149
@@ -123,20 +151,6 @@ proxies:
   reality-opts:
     public-key: uAXIEPl2WlQTEyq9ANH5xCEyWJzkYo25vRuKGrCL3xw
     short-id: f64a891fde10d2a9
-- name: "gm-o2fi"
-  type: vless
-  server: 144.31.126.247
-  port: 8443
-  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
-  udp: true
-  network: tcp
-  tls: true
-  servername: cdn-d5a44d.dobry.monster
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: iZmp_9GpELaE2aGKVvHUr4EHA7jMWV92claCJCrOgSw
-    short-id: 82711c5235644af8
 - name: "gm-o1de"
   type: vless
   server: 31.59.216.114
@@ -245,9 +259,9 @@ proxy-groups:
   lazy: true
   proxies:
   - "🇷🇺 Москва #1"
-  - "gm-o2fi"
   - "gm-o1de"
-  - "🇧🇬 Болгария #1"
+  - "🇧🇬 Болгария #1 ⚡"
+  - "🇳🇱 Нидерланды #6 ⚡"
   - "🇷🇺 Москва #3 ⚡"
   - "🇷🇺 Москва #4"
   - "🇷🇺 Москва #5"
@@ -263,9 +277,10 @@ proxy-groups:
   tolerance: 50
   lazy: true
   proxies:
-  - "gm-o2fi"
   - "gm-o1de"
-  - "🇧🇬 Болгария #1"
+  - "🇧🇬 Болгария #1 ⚡"
+  - "🇳🇱 Нидерланды #2 ⚡"
+  - "🇳🇱 Нидерланды #6 ⚡"
   - "🇨🇦 Канада #2 ⚡"
   - "★ 🇦🇺 Австралия ⚡"
 

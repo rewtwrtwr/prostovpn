@@ -3,7 +3,7 @@
 # nodes in this variant: 🇵🇱 Польша [АВТОВЫБОР ⭐]
 # Routing + DNS preserved exactly as the panel configured them for these nodes.
 # Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
-# updated: 2026-11-26T08:10:20Z
+# updated: 2026-11-26T14:30:07Z
 # proxies: 27 | groups: 3 | rules: 180 | dns policy: 0
 
 port: 7890
@@ -95,7 +95,7 @@ proxies:
   reality-opts:
     public-key: y_24-PEZZ3Gv_IDp-Y-AxJ00Bf-hQVHvVpaDDTypdDo
     short-id: 80a7dab225c8a03c
-- name: "🇵🇱 Польша #16 ⚡"
+- name: "🇵🇱 Польша #16"
   type: vless
   server: 31.59.190.166
   port: 55226
@@ -109,7 +109,7 @@ proxies:
   reality-opts:
     public-key: aaFRZz51wMMDvyU7MYbcLpVhpLr8f_dunpPq-CgjDnA
     short-id: cb4adccf88e6e40f
-- name: "🇵🇱 Польша #17 ⚡"
+- name: "🇵🇱 Польша #17"
   type: vless
   server: 31.59.190.167
   port: 43786
@@ -333,8 +333,8 @@ proxy-groups:
   - "🇵🇱 Польша #1 ⚡"
   - "🇵🇱 Польша #6 ⚡"
   - "🤖 Нейросети 🇵🇱 Польша"
-  - "🇵🇱 Польша #16 ⚡"
-  - "🇵🇱 Польша #17 ⚡"
+  - "🇵🇱 Польша #16"
+  - "🇵🇱 Польша #17"
   - "🇵🇱 Польша #18 ⚡"
   - "🇵🇱 Польша #19 ⚡"
   - "★ 🇵🇱 Польша #19 ⚡"
@@ -360,8 +360,8 @@ proxy-groups:
   - "🇵🇱 Польша #1 ⚡"
   - "🇵🇱 Польша #6 ⚡"
   - "🤖 Нейросети 🇵🇱 Польша"
-  - "🇵🇱 Польша #16 ⚡"
-  - "🇵🇱 Польша #17 ⚡"
+  - "🇵🇱 Польша #16"
+  - "🇵🇱 Польша #17"
   - "🇵🇱 Польша #18 ⚡"
   - "🇵🇱 Польша #19 ⚡"
   - "★ 🇵🇱 Польша #19 ⚡"

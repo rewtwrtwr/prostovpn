@@ -3,7 +3,7 @@
 # nodes in this variant: 🇩🇪 Германия [АВТОВЫБОР ⭐]
 # Routing + DNS preserved exactly as the panel configured them for these nodes.
 # Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
-# updated: 2026-11-26T08:10:20Z
+# updated: 2026-11-26T14:30:07Z
 # proxies: 30 | groups: 3 | rules: 180 | dns policy: 0
 
 port: 7890
@@ -193,7 +193,7 @@ proxies:
   reality-opts:
     public-key: RewhgyZ8FC3ofWv_YEomM3XUhsl3AfMxsmrpY2DA6C4
     short-id: 65ad5e07040c5f9b
-- name: "🇩🇪 Германия #20 ⚡"
+- name: "🇩🇪 Германия #20"
   type: vless
   server: 201.8.89.125
   port: 44804
@@ -207,7 +207,7 @@ proxies:
   reality-opts:
     public-key: 7eOAdmziz5xWQv0TE42ZJ4bWn_u3S1_WeWBe24bN5kQ
     short-id: ea39f6b0e9f32853
-- name: "🇩🇪 Германия #22"
+- name: "🇩🇪 Германия #22 ⚡"
   type: vless
   server: 217.60.179.138
   port: 54334
@@ -221,7 +221,7 @@ proxies:
   reality-opts:
     public-key: 51XmrDfwxR68TPOkDcUOpxQ42ord67iCx0lQMbXlNEA
     short-id: 1e743c114eaf0646
-- name: "★ 🇩🇪 Германия #25 ⚡"
+- name: "★ 🇩🇪 Германия #25"
   type: vless
   server: 195.10.227.209
   port: 43612
@@ -382,9 +382,9 @@ proxy-groups:
   - "🇩🇪 Германия #5"
   - "🇩🇪 Германия #8 ⚡"
   - "🇩🇪 Германия #19 ⚡"
-  - "🇩🇪 Германия #20 ⚡"
-  - "🇩🇪 Германия #22"
-  - "★ 🇩🇪 Германия #25 ⚡"
+  - "🇩🇪 Германия #20"
+  - "🇩🇪 Германия #22 ⚡"
+  - "★ 🇩🇪 Германия #25"
   - "★ 🇩🇪 Германия #27 ⚡"
   - "★ 🇩🇪 Германия #14 ⚡"
   - "★ 🇩🇪 Германия #29 ⚡"
@@ -412,9 +412,9 @@ proxy-groups:
   - "🇩🇪 Германия #5"
   - "🇩🇪 Германия #8 ⚡"
   - "🇩🇪 Германия #19 ⚡"
-  - "🇩🇪 Германия #20 ⚡"
-  - "🇩🇪 Германия #22"
-  - "★ 🇩🇪 Германия #25 ⚡"
+  - "🇩🇪 Германия #20"
+  - "🇩🇪 Германия #22 ⚡"
+  - "★ 🇩🇪 Германия #25"
   - "★ 🇩🇪 Германия #27 ⚡"
   - "★ 🇩🇪 Германия #14 ⚡"
   - "★ 🇩🇪 Германия #29 ⚡"
