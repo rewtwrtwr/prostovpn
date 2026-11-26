@@ -102,6 +102,42 @@ jobs:
             echo "WARNING: fetch failed - keeping repo dobro.b64"
           fi
 
+      - name: Fetch base64 links (curl UA) for dobro.b64
+        env:
+          DOBROVPN_URL: ${{ secrets.DOBROVPN_URL }}
+          DOBRO_HWID: ${{ secrets.DOBRO_HWID }}
+        run: |
+          # 26.11.2026: the INCY-UA fetch above returns JSON (no base64 links),
+          # so dobro.b64 would go stale. Fetch once more with a plain curl UA:
+          # the panel serves base64 links (WITH fm) to it. Used to refresh
+          # dobro.b64 / dobro.txt and to supply the ss nodes (the INCY JSON
+          # has no ss outbounds) to the Clash converter.
+          if [ -z "$DOBROVPN_URL" ] || [ -z "$DOBRO_HWID" ]; then
+            echo "secrets not set - keeping repo dobro.b64"
+            exit 0
+          fi
+          if curl -s --max-time 60 -H "X-HWID: $DOBRO_HWID" -o /tmp/dobro-links.b64 "$DOBROVPN_URL"; then
+            if python3 <<'PYEOF'
+          import base64, sys
+          raw = open('/tmp/dobro-links.b64', encoding='utf-8').read().strip()
+          if len(raw) < 10000:
+              sys.exit('too small')
+          dec = base64.b64decode(raw + '=' * (-len(raw) % 4)).decode('utf-8', 'replace')
+          links = [l for l in dec.splitlines() if l.strip().startswith(('vless://', 'hysteria2://', 'ss://'))]
+          bad = [l for l in links if 'HWID' in l or 'устройств' in l]
+          if bad or len(links) < 50:
+              sys.exit(f'placeholder or too few links: {len(links)} links, {len(bad)} bad')
+          print(f'validated: {len(links)} links (curl UA)')
+          PYEOF
+            then
+              cp /tmp/dobro-links.b64 dobro.b64
+              echo "dobro.b64 refreshed from the subscription (curl UA)"
+            else
+              echo "WARNING: links fetch failed validation - keeping repo dobro.b64"
+            fi
+          else
+            echo "WARNING: links fetch failed - keeping repo dobro.b64"
+          fi
       - name: Analyze INCY response structure
         run: |
           python3 <<'PYEOF'
@@ -198,9 +234,20 @@ jobs:
           path: dobro-incy-raw
           retention-days: 7
 
-      - name: Convert dobro.b64 to full dobro-vpn.yaml
+      - name: Build dobro-vpn.yaml from INCY JSON (fallback to links)
         run: |
-          python3 <<'PYEOF'
+          # 26.11.2026 (v2): build the Clash/Mihomo config from the INCY JSON
+          # (scripts/build-clash-from-incy.py) so it keeps the panel's DNS
+          # and routing (.ru -> direct) for Karing and Clash Verge Rev.
+          # v2 preserves ALL 15 routing variants as separate files
+          # (dobro-vpn-variant-XX.yaml) + one unified dobro-vpn.yaml
+          # with the 15 variants as groups V01..V15 in SELECT.
+          # Falls back to the old link-based generation if the JSON is bad.
+          if [ -f scripts/build-clash-from-incy.py ] && python3 scripts/build-clash-from-incy.py dobro-incy-raw dobro.b64 .; then
+            echo "dobro-vpn.yaml + variant files built from INCY JSON"
+          else
+            echo "JSON build failed - falling back to link-based generation"
+            python3 <<'PYEOF'
           import base64, re, sys
           from datetime import datetime, timezone
           from urllib.parse import parse_qs, unquote
@@ -452,6 +499,7 @@ jobs:
           print(f"wrote {OUT}: {len(proxies)} proxies, {skipped} skipped (full config)")
           PYEOF
 
+          fi
       - name: Publish plain subscription (dobro.txt)
         run: |
           python3 <<'PYEOF'
@@ -492,7 +540,7 @@ jobs:
         run: |
           git config user.name "dobro-vpn-autoupdate"
           git config user.email "dobro-vpn-autoupdate@users.noreply.github.com"
-          git add dobro.b64 dobro-vpn.yaml dobro.txt dobro-incy.json
+          git add dobro.b64 dobro-vpn.yaml dobro-vpn-variant-*.yaml dobro.txt dobro-incy.json scripts/build-clash-from-incy.py
           if git diff --cached --quiet; then
             echo "no changes, skipping commit"
           else
@@ -516,3 +564,8 @@ jobs:
             "https://purge.jsdelivr.net/gh/rewtwrtwr/prostovpn@main/dobro.txt"
           curl -s -o /dev/null -w "purge http: %{http_code}\n" \
             "https://purge.jsdelivr.net/gh/rewtwrtwr/prostovpn@main/dobro-incy.json"
+          for f in dobro-vpn-variant-*.yaml; do
+            [ -f "$f" ] || continue
+            curl -s -o /dev/null -w "purge $f http: %{http_code}\n" \
+              "https://purge.jsdelivr.net/gh/rewtwrtwr/prostovpn@main/$f"
+          done
