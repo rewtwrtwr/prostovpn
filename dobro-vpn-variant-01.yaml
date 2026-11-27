@@ -3,7 +3,7 @@
 # nodes in this variant: ★ 🇦🇪 ОАЭ ⚡, ★ 🇦🇷 Аргентина ⚡, ★ 🇦🇺 Австралия ⚡, ★ 🇧🇷 Бразилия ⚡, ★ 🇧🇾 Беларусь ⚡, ★ 🇨🇦 Канада #5 ⚡, ★ 🇨🇭 Швейцария #2 ⚡, ★ 🇨🇿 Чехия ⚡ ...
 # Routing + DNS preserved exactly as the panel configured them for these nodes.
 # Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
-# updated: 2026-11-27T00:50:30Z
+# updated: 2026-11-27T03:37:32Z
 # proxies: 88 | groups: 3 | rules: 293 | dns policy: 7
 
 port: 7890
@@ -362,7 +362,7 @@ proxies:
   reality-opts:
     public-key: qkNv_vvEeHBlubDM154C1l05Wjyaj1k0l3qY911gUQQ
     short-id: dcb80b2936e64257
-- name: "🇭🇰 Гонконг #5"
+- name: "🇭🇰 Гонконг #5 ⚡"
   type: vless
   server: 170.168.24.55
   port: 55511
@@ -432,7 +432,7 @@ proxies:
   reality-opts:
     public-key: qkNv_vvEeHBlubDM154C1l05Wjyaj1k0l3qY911gUQQ
     short-id: dcb80b2936e64257
-- name: "🇫🇷 Франция #9 ⚡"
+- name: "🇫🇷 Франция #9"
   type: vless
   server: 31.59.190.19
   port: 54489
@@ -544,7 +544,7 @@ proxies:
   reality-opts:
     public-key: qkNv_vvEeHBlubDM154C1l05Wjyaj1k0l3qY911gUQQ
     short-id: dcb80b2936e64257
-- name: "🇳🇱 Нидерланды #6 ⚡"
+- name: "🇳🇱 Нидерланды #6"
   type: vless
   server: 156.9.124.80
   port: 8443
@@ -572,7 +572,7 @@ proxies:
   reality-opts:
     public-key: u67Uzkec73ucHBgOOFjj6z3dACU69x1YbuF8bV1Xfhw
     short-id: 4b00e532b27cf89d
-- name: "🇪🇪 Эстония #15 ⚡"
+- name: "🇪🇪 Эстония #15"
   type: vless
   server: 217.60.182.113
   port: 45972
@@ -642,7 +642,7 @@ proxies:
   reality-opts:
     public-key: NGDCTIEMyA3Rst1SCpR46MhRV1bhmjW6MaMfdSFYS08
     short-id: e32dccf378691ace
-- name: "🇳🇱 Нидерланды #22 ⚡"
+- name: "🇳🇱 Нидерланды #22"
   type: vless
   server: 130.78.30.234
   port: 44826
@@ -698,7 +698,7 @@ proxies:
   reality-opts:
     public-key: NsML9c2UwC-Xz4mndUdg43U-tlmzMkFN5hvsEi3Tbk0
     short-id: d7acd5d92a2ad340
-- name: "🇳🇱 Нидерланды #23 ⚡"
+- name: "🇳🇱 Нидерланды #23"
   type: vless
   server: 170.168.43.29
   port: 51393
@@ -922,7 +922,7 @@ proxies:
   reality-opts:
     public-key: zpj62etuW2oQWTiVQP2YJbkpMkDATLG4LcGQur8p-HY
     short-id: 7d0f0649f89cf6cc
-- name: "🇩🇪 Германия #24"
+- name: "🇩🇪 Германия #24 ⚡"
   type: vless
   server: 201.8.87.171
   port: 42613
@@ -1034,7 +1034,7 @@ proxies:
   reality-opts:
     public-key: FRfIRADf6HWA1ab5mi38FGbJPLHNzjDs2cuEMS5Smjs
     short-id: 1a7510abb970ca4b
-- name: "★ 🇩🇪 Германия #27 ⚡"
+- name: "★ 🇩🇪 Германия #27"
   type: vless
   server: 195.10.227.31
   port: 45258
@@ -1076,7 +1076,7 @@ proxies:
   reality-opts:
     public-key: 2WvwR3CdvkS1RDtbG6L6glh70n5ahdqvemJRVrzTbEc
     short-id: be95d22232a7f95c
-- name: "🇳🇱 Нидерланды #22 ⚡ ^~2~^"
+- name: "🇳🇱 Нидерланды #22 ⚡"
   type: vless
   server: 2.27.106.86
   port: 57168
@@ -1200,7 +1200,7 @@ proxy-groups:
   - "★ 🇨🇿 Чехия ⚡"
   - "gm-o1de"
   - "🇧🇬 Болгария #1 ⚡"
-  - "🇳🇱 Нидерланды #6 ⚡"
+  - "🇳🇱 Нидерланды #6"
   - "★ 🇷🇴 Румыния ⚡"
   - "★ 🇹🇷 Турция ⚡"
   - "★ 🇦🇪 ОАЭ ⚡"
@@ -1223,11 +1223,11 @@ proxy-groups:
   - "🇺🇸 США #5 ⚡"
   - "🇺🇸 США #3 ⚡"
   - "★ 🇺🇸 США #4 ⚡"
-  - "🇭🇰 Гонконг #5"
+  - "🇭🇰 Гонконг #5 ⚡"
   - "★ 🇭🇰 Гонконг #6 ⚡"
   - "★ 🇬🇧 Британия #6"
   - "★ 🇬🇧 Британия #7 ⚡"
-  - "🇫🇷 Франция #9 ⚡"
+  - "🇫🇷 Франция #9"
   - "🇫🇷 Франция #10 ⚡"
   - "🇮🇹 Италия #3 ⚡"
   - "★ 🇮🇹 Италия #4 ⚡"
@@ -1235,15 +1235,15 @@ proxy-groups:
   - "★ 🇫🇷 Франция #11 ⚡"
   - "🇳🇱 Нидерланды #26 ⚡"
   - "🇳🇱 Нидерланды #21 ⚡"
-  - "🇪🇪 Эстония #15 ⚡"
+  - "🇪🇪 Эстония #15"
   - "🇪🇪 Эстония #16 ⚡"
   - "🇪🇪 Эстония #17 ⚡"
   - "★ 🇪🇪 Эстония #16 ⚡"
-  - "🇳🇱 Нидерланды #22 ⚡"
+  - "🇳🇱 Нидерланды #22"
   - "🇳🇱 Нидерланды #19 ⚡"
   - "🇵🇱 Польша #21 ⚡"
   - "🇵🇱 Польша #15 ⚡"
-  - "🇳🇱 Нидерланды #23 ⚡"
+  - "🇳🇱 Нидерланды #23"
   - "★ 🇳🇱 Нидерланды #24 ⚡"
   - "★ 🇳🇱 Нидерланды #25 ⚡"
   - "🇵🇱 Польша #16 ⚡"
@@ -1259,7 +1259,7 @@ proxy-groups:
   - "🇫🇮 Финляндия #23 ⚡"
   - "🇫🇮 Финляндия #24 ⚡"
   - "🇩🇪 Германия #23 ⚡"
-  - "🇩🇪 Германия #24"
+  - "🇩🇪 Германия #24 ⚡"
   - "🇩🇪 Германия #25 ⚡"
   - "🇫🇮 Финляндия #26 ⚡"
   - "★ 🇫🇮 Финляндия #26 ⚡"
@@ -1267,10 +1267,10 @@ proxy-groups:
   - "🇩🇪 Германия #20 ⚡"
   - "🇩🇪 Германия #22 ⚡"
   - "★ 🇩🇪 Германия #25"
-  - "★ 🇩🇪 Германия #27 ⚡"
+  - "★ 🇩🇪 Германия #27"
   - "★ 🇩🇪 Германия #29 ⚡"
   - "🇳🇱 Нидерланды #20 ⚡"
-  - "🇳🇱 Нидерланды #22 ⚡ ^~2~^"
+  - "🇳🇱 Нидерланды #22 ⚡"
 - name: "SELECT"
   type: select
   proxies:
@@ -1286,7 +1286,7 @@ proxy-groups:
   - "gm-o1de"
   - "🇧🇬 Болгария #1 ⚡"
   - "🇳🇱 Нидерланды #2 ⚡"
-  - "🇳🇱 Нидерланды #6 ⚡"
+  - "🇳🇱 Нидерланды #6"
   - "🇨🇦 Канада #2 ⚡"
   - "★ 🇦🇺 Австралия ⚡"
 

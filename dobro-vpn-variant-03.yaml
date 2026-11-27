@@ -3,7 +3,7 @@
 # nodes in this variant: 🇷🇺 Москва #1, 🇷🇺 Москва #3 ⚡, 🇷🇺 Москва #4 ⚡, 🇷🇺 Москва #5 ⚡
 # Routing + DNS preserved exactly as the panel configured them for these nodes.
 # Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
-# updated: 2026-11-27T00:50:30Z
+# updated: 2026-11-27T03:37:32Z
 # proxies: 22 | groups: 3 | rules: 270 | dns policy: 0
 
 port: 7890
@@ -67,7 +67,7 @@ proxies:
   reality-opts:
     public-key: euxdU384x5_UddyM6UE4RpVRsl9Z2xFhQ-mE1ydzhnQ
     short-id: cc838404c247aa9a
-- name: "🇳🇱 Нидерланды #6 ⚡"
+- name: "🇳🇱 Нидерланды #6"
   type: vless
   server: 156.9.124.80
   port: 8443
@@ -261,7 +261,7 @@ proxy-groups:
   - "🇷🇺 Москва #1"
   - "gm-o1de"
   - "🇧🇬 Болгария #1 ⚡"
-  - "🇳🇱 Нидерланды #6 ⚡"
+  - "🇳🇱 Нидерланды #6"
   - "🇷🇺 Москва #3 ⚡"
   - "🇷🇺 Москва #4 ⚡"
   - "🇷🇺 Москва #5 ⚡"
@@ -280,7 +280,7 @@ proxy-groups:
   - "gm-o1de"
   - "🇧🇬 Болгария #1 ⚡"
   - "🇳🇱 Нидерланды #2 ⚡"
-  - "🇳🇱 Нидерланды #6 ⚡"
+  - "🇳🇱 Нидерланды #6"
   - "🇨🇦 Канада #2 ⚡"
   - "★ 🇦🇺 Австралия ⚡"
 
