@@ -3,7 +3,7 @@
 # nodes in this variant: ★ 🇦🇪 ОАЭ ⚡, ★ 🇦🇷 Аргентина ⚡, ★ 🇦🇺 Австралия ⚡, ★ 🇧🇷 Бразилия ⚡, ★ 🇧🇾 Беларусь ⚡, ★ 🇨🇦 Канада #5 ⚡, ★ 🇨🇭 Швейцария #2 ⚡, ★ 🇨🇿 Чехия ⚡ ...
 # Routing + DNS preserved exactly as the panel configured them for these nodes.
 # Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
-# updated: 2026-11-27T16:35:33Z
+# updated: 2026-11-27T19:40:01Z
 # proxies: 88 | groups: 3 | rules: 293 | dns policy: 7
 
 port: 7890
@@ -362,7 +362,7 @@ proxies:
   reality-opts:
     public-key: qkNv_vvEeHBlubDM154C1l05Wjyaj1k0l3qY911gUQQ
     short-id: dcb80b2936e64257
-- name: "🇭🇰 Гонконг #5 ⚡"
+- name: "🇭🇰 Гонконг #5"
   type: vless
   server: 170.168.24.55
   port: 55511
@@ -880,7 +880,7 @@ proxies:
   reality-opts:
     public-key: aIAZbx7okN1_cYdro5Un_DP6o7rAGyzF8Pm2kgaC2BI
     short-id: 5dd3d27dd57958b2
-- name: "🇫🇮 Финляндия #23 ⚡"
+- name: "🇫🇮 Финляндия #23"
   type: vless
   server: 170.168.4.48
   port: 41226
@@ -1020,7 +1020,7 @@ proxies:
   reality-opts:
     public-key: 51XmrDfwxR68TPOkDcUOpxQ42ord67iCx0lQMbXlNEA
     short-id: 1e743c114eaf0646
-- name: "★ 🇩🇪 Германия #25 ⚡"
+- name: "★ 🇩🇪 Германия #25"
   type: vless
   server: 195.10.227.209
   port: 43612
@@ -1223,7 +1223,7 @@ proxy-groups:
   - "🇺🇸 США #5 ⚡"
   - "🇺🇸 США #3"
   - "★ 🇺🇸 США #4 ⚡"
-  - "🇭🇰 Гонконг #5 ⚡"
+  - "🇭🇰 Гонконг #5"
   - "★ 🇭🇰 Гонконг #6 ⚡"
   - "★ 🇬🇧 Британия #6"
   - "★ 🇬🇧 Британия #7 ⚡"
@@ -1256,7 +1256,7 @@ proxy-groups:
   - "★ 🇷🇺 Москва #12 ⚡"
   - "🇩🇪 Германия #32 ⚡"
   - "🇩🇪 Германия #30 ⚡"
-  - "🇫🇮 Финляндия #23 ⚡"
+  - "🇫🇮 Финляндия #23"
   - "🇫🇮 Финляндия #24 ⚡"
   - "🇩🇪 Германия #23 ⚡"
   - "🇩🇪 Германия #24 ⚡"
@@ -1266,7 +1266,7 @@ proxy-groups:
   - "🇩🇪 Германия #19"
   - "🇩🇪 Германия #20 ⚡"
   - "🇩🇪 Германия #22"
-  - "★ 🇩🇪 Германия #25 ⚡"
+  - "★ 🇩🇪 Германия #25"
   - "★ 🇩🇪 Германия #27 ⚡"
   - "★ 🇩🇪 Германия #29 ⚡"
   - "🇳🇱 Нидерланды #20"
