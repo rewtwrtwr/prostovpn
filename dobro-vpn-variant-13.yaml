@@ -3,7 +3,7 @@
 # nodes in this variant: 🇳🇱 Нидерланды [АВТОВЫБОР ⭐]
 # Routing + DNS preserved exactly as the panel configured them for these nodes.
 # Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
-# updated: 2026-11-27T03:37:32Z
+# updated: 2026-11-27T10:09:17Z
 # proxies: 29 | groups: 3 | rules: 180 | dns policy: 0
 
 port: 7890
@@ -67,7 +67,7 @@ proxies:
   reality-opts:
     public-key: QRuOFxxZFmXdLOPXTMzfsgid6vhvHYUD_ICParI41WM
     short-id: 7971f1b94378fc12
-- name: "🇳🇱 Нидерланды #6"
+- name: "🇳🇱 Нидерланды #6 ⚡"
   type: vless
   server: 156.9.124.80
   port: 8443
@@ -179,7 +179,7 @@ proxies:
   reality-opts:
     public-key: hFgbu-PJVozuCNTH0Zi2Y1miGM_h4iARdG0pF6oNnVQ
     short-id: 2c7abc289da4cdbd
-- name: "🇳🇱 Нидерланды #23"
+- name: "🇳🇱 Нидерланды #23 ⚡"
   type: vless
   server: 170.168.43.29
   port: 51393
@@ -235,7 +235,7 @@ proxies:
   reality-opts:
     public-key: qkNv_vvEeHBlubDM154C1l05Wjyaj1k0l3qY911gUQQ
     short-id: dcb80b2936e64257
-- name: "🇳🇱 Нидерланды #20 ⚡"
+- name: "🇳🇱 Нидерланды #20"
   type: vless
   server: 2.27.106.85
   port: 57098
@@ -358,7 +358,7 @@ proxy-groups:
   proxies:
   - "🇳🇱 Нидерланды #26 ⚡"
   - "🇳🇱 Нидерланды #3 ⚡"
-  - "🇳🇱 Нидерланды #6"
+  - "🇳🇱 Нидерланды #6 ⚡"
   - "🇳🇱 Нидерланды #21 ⚡"
   - "🇳🇱 Нидерланды #2 ⚡"
   - "🇳🇱 Нидерланды #4 ⚡"
@@ -367,11 +367,11 @@ proxy-groups:
   - "🇳🇱 Нидерланды #19 ⚡"
   - "🇳🇱 Нидерланды #10"
   - "🤖 Нейросети 🇳🇱 Нидерланды"
-  - "🇳🇱 Нидерланды #23"
+  - "🇳🇱 Нидерланды #23 ⚡"
   - "★ 🇳🇱 Нидерланды #24 ⚡"
   - "★ 🇳🇱 Нидерланды #9"
   - "★ 🇳🇱 Нидерланды #25 ⚡"
-  - "🇳🇱 Нидерланды #20 ⚡"
+  - "🇳🇱 Нидерланды #20"
   - "🇳🇱 Нидерланды #22 ⚡"
 - name: "SELECT"
   type: select
@@ -387,7 +387,7 @@ proxy-groups:
   proxies:
   - "🇳🇱 Нидерланды #26 ⚡"
   - "🇳🇱 Нидерланды #3 ⚡"
-  - "🇳🇱 Нидерланды #6"
+  - "🇳🇱 Нидерланды #6 ⚡"
   - "🇳🇱 Нидерланды #21 ⚡"
   - "🇳🇱 Нидерланды #2 ⚡"
   - "🇳🇱 Нидерланды #4 ⚡"
@@ -396,11 +396,11 @@ proxy-groups:
   - "🇳🇱 Нидерланды #19 ⚡"
   - "🇳🇱 Нидерланды #10"
   - "🤖 Нейросети 🇳🇱 Нидерланды"
-  - "🇳🇱 Нидерланды #23"
+  - "🇳🇱 Нидерланды #23 ⚡"
   - "★ 🇳🇱 Нидерланды #24 ⚡"
   - "★ 🇳🇱 Нидерланды #9"
   - "★ 🇳🇱 Нидерланды #25 ⚡"
-  - "🇳🇱 Нидерланды #20 ⚡"
+  - "🇳🇱 Нидерланды #20"
   - "🇳🇱 Нидерланды #22 ⚡"
 
 rules:

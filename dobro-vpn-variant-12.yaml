@@ -3,7 +3,7 @@
 # nodes in this variant: 🇫🇮 Финляндия [АВТОВЫБОР ⭐]
 # Routing + DNS preserved exactly as the panel configured them for these nodes.
 # Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
-# updated: 2026-11-27T03:37:32Z
+# updated: 2026-11-27T10:09:17Z
 # proxies: 29 | groups: 3 | rules: 187 | dns policy: 0
 
 port: 7890
@@ -109,7 +109,7 @@ proxies:
   reality-opts:
     public-key: AyPAMP8XIRtRIagJuk5eA0AFyvZbkqrRRdMEDsD_mkQ
     short-id: 62da72fb
-- name: "🇫🇮 Финляндия #4 ⚡"
+- name: "🇫🇮 Финляндия #4"
   type: vless
   server: 2.27.168.84
   port: 8443
@@ -123,7 +123,7 @@ proxies:
   reality-opts:
     public-key: -rwQYqD7xtqjLRVQkAV5VqmXNsZjE-t3n2gE37elNCE
     short-id: e324ed96626fad03
-- name: "🇫🇮 Финляндия #9 ⚡"
+- name: "🇫🇮 Финляндия #9"
   type: vless
   server: 109.120.151.245
   port: 8443
@@ -362,8 +362,8 @@ proxy-groups:
   - "🇫🇮 Финляндия #2"
   - "★ 🇫🇮 Финляндия #19 ⚡"
   - "🇫🇮 Финляндия #3 ⚡"
-  - "🇫🇮 Финляндия #4 ⚡"
-  - "🇫🇮 Финляндия #9 ⚡"
+  - "🇫🇮 Финляндия #4"
+  - "🇫🇮 Финляндия #9"
   - "🇫🇮 Финляндия #10 ⚡"
   - "🇫🇮 Финляндия #14 ⚡"
   - "★ 🇫🇮 Финляндия #15"
@@ -391,8 +391,8 @@ proxy-groups:
   - "🇫🇮 Финляндия #2"
   - "★ 🇫🇮 Финляндия #19 ⚡"
   - "🇫🇮 Финляндия #3 ⚡"
-  - "🇫🇮 Финляндия #4 ⚡"
-  - "🇫🇮 Финляндия #9 ⚡"
+  - "🇫🇮 Финляндия #4"
+  - "🇫🇮 Финляндия #9"
   - "🇫🇮 Финляндия #10 ⚡"
   - "🇫🇮 Финляндия #14 ⚡"
   - "★ 🇫🇮 Финляндия #15"
