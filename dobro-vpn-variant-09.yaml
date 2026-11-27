@@ -3,8 +3,8 @@
 # nodes in this variant: 🚀 Если отключает 5-15 мин
 # Routing + DNS preserved exactly as the panel configured them for these nodes.
 # Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
-# updated: 2026-11-26T18:58:51Z
-# proxies: 90 | groups: 3 | rules: 187 | dns policy: 0
+# updated: 2026-11-27T00:50:30Z
+# proxies: 88 | groups: 3 | rules: 187 | dns policy: 0
 
 port: 7890
 socks-port: 7891
@@ -325,21 +325,6 @@ proxies:
     short-id: 910067ad36fd15c9
   grpc-opts:
     grpc-service-name: "grpc-42cd9607"
-- name: "n1-plgen"
-  type: vless
-  server: 213.21.232.93
-  port: 2053
-  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
-  udp: true
-  network: grpc
-  tls: true
-  servername: node-plgen.vless.site
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: y_24-PEZZ3Gv_IDp-Y-AxJ00Bf-hQVHvVpaDDTypdDo
-    short-id: 80a7dab225c8a03c
-  grpc-opts:
-    grpc-service-name: "iosgrpc"
 - name: "n1-pnl3"
   type: vless
   server: 150.251.143.169
@@ -1120,21 +1105,6 @@ proxies:
     short-id: d7acd5d92a2ad340
   grpc-opts:
     grpc-service-name: "iosgrpc"
-- name: "n1-de13"
-  type: vless
-  server: 151.243.150.210
-  port: 45653
-  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
-  udp: true
-  network: grpc
-  tls: true
-  servername: portal.lunwerk.de
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 1-W0XMfZxBv410pnRwyAWR9W-qSXBoTw7hAFHqB8j18
-    short-id: b6f7b6c0a940d686
-  grpc-opts:
-    grpc-service-name: "iosgrpc"
 - name: "n1-pixnl1"
   type: vless
   server: cdn-nl.pixlora.org
@@ -1311,7 +1281,6 @@ proxy-groups:
   - "n1-pfi1"
   - "n1-pfi2"
   - "n1-pfi4"
-  - "n1-plgen"
   - "n1-pnl3"
   - "n1-ppl1"
   - "n1-ppl2"
@@ -1364,7 +1333,6 @@ proxy-groups:
   - "n1-uslg1"
   - "n1-delg1"
   - "n1-pl10"
-  - "n1-de13"
   - "n1-pixnl1"
 - name: "SELECT"
   type: select
@@ -1401,7 +1369,6 @@ proxy-groups:
   - "n1-pfi1"
   - "n1-pfi2"
   - "n1-pfi4"
-  - "n1-plgen"
   - "n1-pnl3"
   - "n1-ppl1"
   - "n1-ppl2"
@@ -1454,7 +1421,6 @@ proxy-groups:
   - "n1-uslg1"
   - "n1-delg1"
   - "n1-pl10"
-  - "n1-de13"
   - "n1-pixnl1"
 
 rules:
