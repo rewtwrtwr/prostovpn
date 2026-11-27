@@ -3,7 +3,7 @@
 # nodes in this variant: 🇩🇪 Германия [АВТОВЫБОР ⭐]
 # Routing + DNS preserved exactly as the panel configured them for these nodes.
 # Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
-# updated: 2026-11-27T10:09:17Z
+# updated: 2026-11-27T16:35:33Z
 # proxies: 28 | groups: 3 | rules: 180 | dns policy: 0
 
 port: 7890
@@ -53,7 +53,7 @@ proxies:
   reality-opts:
     public-key: aIAZbx7okN1_cYdro5Un_DP6o7rAGyzF8Pm2kgaC2BI
     short-id: 5dd3d27dd57958b2
-- name: "🇩🇪 Германия #3 ⚡"
+- name: "🇩🇪 Германия #3"
   type: vless
   server: 91.92.33.179
   port: 8443
@@ -95,7 +95,7 @@ proxies:
   reality-opts:
     public-key: rf99tfHLDylM-WH1iUWDo6InAgOcVX8kUNQDi6yIwTg
     short-id: d2dbae08b49e8fa0
-- name: "🇩🇪 Германия #25 ⚡"
+- name: "🇩🇪 Германия #25"
   type: vless
   server: 217.60.22.167
   port: 51265
@@ -179,7 +179,7 @@ proxies:
   reality-opts:
     public-key: 7eOAdmziz5xWQv0TE42ZJ4bWn_u3S1_WeWBe24bN5kQ
     short-id: ea39f6b0e9f32853
-- name: "🇩🇪 Германия #22 ⚡"
+- name: "🇩🇪 Германия #22"
   type: vless
   server: 217.60.179.138
   port: 54334
@@ -221,7 +221,7 @@ proxies:
   reality-opts:
     public-key: mRBZKUmjydr4LYZz8neiWkL98hh0fxIaH84Hop4LHSw
     short-id: 8f479c254a76af48
-- name: "★ 🇩🇪 Германия #14"
+- name: "★ 🇩🇪 Германия #14 ⚡"
   type: vless
   server: 201.8.71.136
   port: 443
@@ -344,19 +344,19 @@ proxy-groups:
   proxies:
   - "🇩🇪 Германия #32 ⚡"
   - "🇩🇪 Германия #30 ⚡"
-  - "🇩🇪 Германия #3 ⚡"
+  - "🇩🇪 Германия #3"
   - "🇩🇪 Германия #23 ⚡"
   - "🇩🇪 Германия #24 ⚡"
-  - "🇩🇪 Германия #25 ⚡"
+  - "🇩🇪 Германия #25"
   - "🇩🇪 Германия #1"
   - "🇩🇪 Германия #4 ⚡"
   - "🇩🇪 Германия #8 ⚡"
   - "🇩🇪 Германия #19"
   - "🇩🇪 Германия #20 ⚡"
-  - "🇩🇪 Германия #22 ⚡"
+  - "🇩🇪 Германия #22"
   - "★ 🇩🇪 Германия #25 ⚡"
   - "★ 🇩🇪 Германия #27 ⚡"
-  - "★ 🇩🇪 Германия #14"
+  - "★ 🇩🇪 Германия #14 ⚡"
   - "★ 🇩🇪 Германия #29 ⚡"
 - name: "SELECT"
   type: select
@@ -372,19 +372,19 @@ proxy-groups:
   proxies:
   - "🇩🇪 Германия #32 ⚡"
   - "🇩🇪 Германия #30 ⚡"
-  - "🇩🇪 Германия #3 ⚡"
+  - "🇩🇪 Германия #3"
   - "🇩🇪 Германия #23 ⚡"
   - "🇩🇪 Германия #24 ⚡"
-  - "🇩🇪 Германия #25 ⚡"
+  - "🇩🇪 Германия #25"
   - "🇩🇪 Германия #1"
   - "🇩🇪 Германия #4 ⚡"
   - "🇩🇪 Германия #8 ⚡"
   - "🇩🇪 Германия #19"
   - "🇩🇪 Германия #20 ⚡"
-  - "🇩🇪 Германия #22 ⚡"
+  - "🇩🇪 Германия #22"
   - "★ 🇩🇪 Германия #25 ⚡"
   - "★ 🇩🇪 Германия #27 ⚡"
-  - "★ 🇩🇪 Германия #14"
+  - "★ 🇩🇪 Германия #14 ⚡"
   - "★ 🇩🇪 Германия #29 ⚡"
 
 rules:

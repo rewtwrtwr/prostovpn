@@ -1,9 +1,9 @@
 # dobro-vpn-variant-03.yaml — Clash/Mihomo config for ONE routing variant, do not edit manually
 # variant 3/15 | elements: 4 | xray rules: 10 -> clash rules: 269
-# nodes in this variant: 🇷🇺 Москва #1, 🇷🇺 Москва #3 ⚡, 🇷🇺 Москва #4 ⚡, 🇷🇺 Москва #5 ⚡
+# nodes in this variant: 🇷🇺 Москва #1, 🇷🇺 Москва #3 ⚡, 🇷🇺 Москва #4 ⚡, 🇷🇺 Москва #5
 # Routing + DNS preserved exactly as the panel configured them for these nodes.
 # Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
-# updated: 2026-11-27T10:09:17Z
+# updated: 2026-11-27T16:35:33Z
 # proxies: 22 | groups: 3 | rules: 270 | dns policy: 0
 
 port: 7890
@@ -137,7 +137,7 @@ proxies:
   reality-opts:
     public-key: wu_suiPQRITwyC4OaXfpquzTDzZebRKDT-i_CPT0GW4
     short-id: 794be3fc8b29fa4d
-- name: "🇷🇺 Москва #5 ⚡"
+- name: "🇷🇺 Москва #5"
   type: vless
   server: 170.168.5.3
   port: 8443
@@ -264,7 +264,7 @@ proxy-groups:
   - "🇳🇱 Нидерланды #6 ⚡"
   - "🇷🇺 Москва #3 ⚡"
   - "🇷🇺 Москва #4 ⚡"
-  - "🇷🇺 Москва #5 ⚡"
+  - "🇷🇺 Москва #5"
 - name: "SELECT"
   type: select
   proxies:

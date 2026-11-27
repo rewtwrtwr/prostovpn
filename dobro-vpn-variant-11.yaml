@@ -3,7 +3,7 @@
 # nodes in this variant: 🇪🇺 Европа [АВТОВЫБОР ⭐]
 # Routing + DNS preserved exactly as the panel configured them for these nodes.
 # Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
-# updated: 2026-11-27T10:09:17Z
+# updated: 2026-11-27T16:35:33Z
 # proxies: 21 | groups: 2 | rules: 187 | dns policy: 0
 
 port: 7890
@@ -67,7 +67,7 @@ proxies:
   reality-opts:
     public-key: QRuOFxxZFmXdLOPXTMzfsgid6vhvHYUD_ICParI41WM
     short-id: 7971f1b94378fc12
-- name: "🇪🇪 Эстония #5 ⚡"
+- name: "🇪🇪 Эстония #5"
   type: vless
   server: 31.56.187.246
   port: 8765
@@ -123,7 +123,7 @@ proxies:
   reality-opts:
     public-key: qkNv_vvEeHBlubDM154C1l05Wjyaj1k0l3qY911gUQQ
     short-id: dcb80b2936e64257
-- name: "🇫🇮 Финляндия #3 ⚡"
+- name: "🇫🇮 Финляндия #3"
   type: vless
   server: 31.77.202.170
   port: 8765
@@ -247,11 +247,11 @@ proxy-groups:
   - "🇪🇺 Европа [АВТОВЫБОР ⭐]"
   - "🇳🇱 Нидерланды #26 ⚡"
   - "🇳🇱 Нидерланды #3 ⚡"
-  - "🇪🇪 Эстония #5 ⚡"
+  - "🇪🇪 Эстония #5"
   - "🇳🇱 Нидерланды #2 ⚡"
   - "🇵🇱 Польша #21 ⚡"
   - "🇫🇮 Финляндия #27 ⚡"
-  - "🇫🇮 Финляндия #3 ⚡"
+  - "🇫🇮 Финляндия #3"
   - "🇩🇪 Германия #32 ⚡"
 - name: "SELECT"
   type: select
