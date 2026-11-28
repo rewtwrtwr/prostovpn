@@ -1,10 +1,10 @@
 # dobro-vpn-variant-10.yaml — Clash/Mihomo config for ONE routing variant, do not edit manually
-# variant 10/15 | elements: 1 | xray rules: 8 -> clash rules: 179
+# variant 10/15 | elements: 1 | xray rules: 9 -> clash rules: 181
 # nodes in this variant: 🇩🇪 Германия [АВТОВЫБОР ⭐]
 # Routing + DNS preserved exactly as the panel configured them for these nodes.
 # Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
-# updated: 2026-11-28T11:39:30Z
-# proxies: 27 | groups: 3 | rules: 180 | dns policy: 0
+# updated: 2026-11-28T13:39:45Z
+# proxies: 27 | groups: 3 | rules: 182 | dns policy: 0
 
 port: 7890
 socks-port: 7891
@@ -81,7 +81,7 @@ proxies:
   reality-opts:
     public-key: zpj62etuW2oQWTiVQP2YJbkpMkDATLG4LcGQur8p-HY
     short-id: 7d0f0649f89cf6cc
-- name: "🇩🇪 Германия #24 ⚡"
+- name: "🇩🇪 Германия #24"
   type: vless
   server: 201.8.87.171
   port: 42613
@@ -95,7 +95,7 @@ proxies:
   reality-opts:
     public-key: rf99tfHLDylM-WH1iUWDo6InAgOcVX8kUNQDi6yIwTg
     short-id: d2dbae08b49e8fa0
-- name: "🇩🇪 Германия #25 ⚡"
+- name: "🇩🇪 Германия #25"
   type: vless
   server: 217.60.22.167
   port: 51265
@@ -137,7 +137,7 @@ proxies:
   reality-opts:
     public-key: fpOHSPDTYhZ2w3l8XqXO9KQ2oe8q8Vd5Z9lCddhKvEE
     short-id: fc20796143ec327c
-- name: "🇩🇪 Германия #19 ⚡"
+- name: "🇩🇪 Германия #19"
   type: vless
   server: 201.8.89.126
   port: 41926
@@ -207,7 +207,7 @@ proxies:
   reality-opts:
     public-key: mRBZKUmjydr4LYZz8neiWkL98hh0fxIaH84Hop4LHSw
     short-id: 8f479c254a76af48
-- name: "★ 🇩🇪 Германия #14"
+- name: "★ 🇩🇪 Германия #14 ⚡"
   type: vless
   server: 201.8.71.136
   port: 443
@@ -332,16 +332,16 @@ proxy-groups:
   - "🇩🇪 Германия #30 ⚡"
   - "🇩🇪 Германия #3"
   - "🇩🇪 Германия #23"
-  - "🇩🇪 Германия #24 ⚡"
-  - "🇩🇪 Германия #25 ⚡"
+  - "🇩🇪 Германия #24"
+  - "🇩🇪 Германия #25"
   - "🇩🇪 Германия #1 ⚡"
   - "🇩🇪 Германия #4 ⚡"
-  - "🇩🇪 Германия #19 ⚡"
+  - "🇩🇪 Германия #19"
   - "🇩🇪 Германия #20 ⚡"
   - "🇩🇪 Германия #22"
   - "★ 🇩🇪 Германия #25 ⚡"
   - "★ 🇩🇪 Германия #27 ⚡"
-  - "★ 🇩🇪 Германия #14"
+  - "★ 🇩🇪 Германия #14 ⚡"
   - "★ 🇩🇪 Германия #29 ⚡"
 - name: "SELECT"
   type: select
@@ -359,19 +359,21 @@ proxy-groups:
   - "🇩🇪 Германия #30 ⚡"
   - "🇩🇪 Германия #3"
   - "🇩🇪 Германия #23"
-  - "🇩🇪 Германия #24 ⚡"
-  - "🇩🇪 Германия #25 ⚡"
+  - "🇩🇪 Германия #24"
+  - "🇩🇪 Германия #25"
   - "🇩🇪 Германия #1 ⚡"
   - "🇩🇪 Германия #4 ⚡"
-  - "🇩🇪 Германия #19 ⚡"
+  - "🇩🇪 Германия #19"
   - "🇩🇪 Германия #20 ⚡"
   - "🇩🇪 Германия #22"
   - "★ 🇩🇪 Германия #25 ⚡"
   - "★ 🇩🇪 Германия #27 ⚡"
-  - "★ 🇩🇪 Германия #14"
+  - "★ 🇩🇪 Германия #14 ⚡"
   - "★ 🇩🇪 Германия #29 ⚡"
 
 rules:
+- DOMAIN-SUFFIX,azmov.ru,SELECT
+- DOMAIN-SUFFIX,azmov.site,SELECT
 - IP-CIDR,::/0,REJECT,no-resolve
 - GEOIP,private,DIRECT,no-resolve
 - DOMAIN-SUFFIX,max.ru,DIRECT

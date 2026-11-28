@@ -1,10 +1,10 @@
 # dobro-vpn-variant-11.yaml — Clash/Mihomo config for ONE routing variant, do not edit manually
-# variant 11/15 | elements: 1 | xray rules: 8 -> clash rules: 186
+# variant 11/15 | elements: 1 | xray rules: 9 -> clash rules: 188
 # nodes in this variant: 🇪🇺 Европа [АВТОВЫБОР ⭐]
 # Routing + DNS preserved exactly as the panel configured them for these nodes.
 # Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
-# updated: 2026-11-28T11:39:30Z
-# proxies: 21 | groups: 2 | rules: 187 | dns policy: 0
+# updated: 2026-11-28T13:39:45Z
+# proxies: 21 | groups: 2 | rules: 189 | dns policy: 0
 
 port: 7890
 socks-port: 7891
@@ -123,7 +123,7 @@ proxies:
   reality-opts:
     public-key: qkNv_vvEeHBlubDM154C1l05Wjyaj1k0l3qY911gUQQ
     short-id: dcb80b2936e64257
-- name: "🇫🇮 Финляндия #3 ⚡"
+- name: "🇫🇮 Финляндия #3"
   type: vless
   server: 31.77.202.170
   port: 8765
@@ -251,7 +251,7 @@ proxy-groups:
   - "🇳🇱 Нидерланды #2 ⚡"
   - "🇵🇱 Польша #21 ⚡"
   - "🇫🇮 Финляндия #27 ⚡"
-  - "🇫🇮 Финляндия #3 ⚡"
+  - "🇫🇮 Финляндия #3"
   - "🇩🇪 Германия #32 ⚡"
 - name: "SELECT"
   type: select
@@ -260,6 +260,8 @@ proxy-groups:
   - "DIRECT"
 
 rules:
+- DOMAIN-SUFFIX,azmov.ru,SELECT
+- DOMAIN-SUFFIX,azmov.site,SELECT
 - IP-CIDR,::/0,REJECT,no-resolve
 - DOMAIN-SUFFIX,notion.so,SELECT
 - DOMAIN-SUFFIX,notion.com,SELECT

@@ -1,10 +1,10 @@
 # dobro-vpn-variant-14.yaml — Clash/Mihomo config for ONE routing variant, do not edit manually
-# variant 14/15 | elements: 1 | xray rules: 8 -> clash rules: 179
+# variant 14/15 | elements: 1 | xray rules: 9 -> clash rules: 181
 # nodes in this variant: 🇵🇱 Польша [АВТОВЫБОР ⭐]
 # Routing + DNS preserved exactly as the panel configured them for these nodes.
 # Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
-# updated: 2026-11-28T11:39:30Z
-# proxies: 25 | groups: 3 | rules: 180 | dns policy: 0
+# updated: 2026-11-28T13:39:45Z
+# proxies: 25 | groups: 3 | rules: 182 | dns policy: 0
 
 port: 7890
 socks-port: 7891
@@ -81,7 +81,7 @@ proxies:
   reality-opts:
     public-key: aaFRZz51wMMDvyU7MYbcLpVhpLr8f_dunpPq-CgjDnA
     short-id: cb4adccf88e6e40f
-- name: "🇵🇱 Польша #17 ⚡"
+- name: "🇵🇱 Польша #17"
   type: vless
   server: 31.59.190.167
   port: 43786
@@ -95,7 +95,7 @@ proxies:
   reality-opts:
     public-key: VtXHC4U9Zn0HG8iapP__tE3Y_LuXiVEiFv-J-7SYZ30
     short-id: 04b1b73ba147d939
-- name: "🇵🇱 Польша #18 ⚡"
+- name: "🇵🇱 Польша #18"
   type: vless
   server: 130.78.31.150
   port: 49672
@@ -304,8 +304,8 @@ proxy-groups:
   - "🇵🇱 Польша #15 ⚡"
   - "🇵🇱 Польша #1 ⚡"
   - "🇵🇱 Польша #16"
-  - "🇵🇱 Польша #17 ⚡"
-  - "🇵🇱 Польша #18 ⚡"
+  - "🇵🇱 Польша #17"
+  - "🇵🇱 Польша #18"
   - "🇵🇱 Польша #19 ⚡"
   - "★ 🇵🇱 Польша #19 ⚡"
   - "🇵🇱 Польша #7 ⚡"
@@ -329,8 +329,8 @@ proxy-groups:
   - "🇵🇱 Польша #15 ⚡"
   - "🇵🇱 Польша #1 ⚡"
   - "🇵🇱 Польша #16"
-  - "🇵🇱 Польша #17 ⚡"
-  - "🇵🇱 Польша #18 ⚡"
+  - "🇵🇱 Польша #17"
+  - "🇵🇱 Польша #18"
   - "🇵🇱 Польша #19 ⚡"
   - "★ 🇵🇱 Польша #19 ⚡"
   - "🇵🇱 Польша #7 ⚡"
@@ -340,6 +340,8 @@ proxy-groups:
   - "★ 🇵🇱 Польша #20 ⚡"
 
 rules:
+- DOMAIN-SUFFIX,azmov.ru,SELECT
+- DOMAIN-SUFFIX,azmov.site,SELECT
 - IP-CIDR,::/0,REJECT,no-resolve
 - GEOIP,private,DIRECT,no-resolve
 - DOMAIN-SUFFIX,max.ru,DIRECT

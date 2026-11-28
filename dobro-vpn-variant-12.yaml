@@ -1,10 +1,10 @@
 # dobro-vpn-variant-12.yaml — Clash/Mihomo config for ONE routing variant, do not edit manually
-# variant 12/15 | elements: 1 | xray rules: 8 -> clash rules: 186
+# variant 12/15 | elements: 1 | xray rules: 9 -> clash rules: 188
 # nodes in this variant: 🇫🇮 Финляндия [АВТОВЫБОР ⭐]
 # Routing + DNS preserved exactly as the panel configured them for these nodes.
 # Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
-# updated: 2026-11-28T11:39:30Z
-# proxies: 29 | groups: 3 | rules: 187 | dns policy: 0
+# updated: 2026-11-28T13:39:45Z
+# proxies: 29 | groups: 3 | rules: 189 | dns policy: 0
 
 port: 7890
 socks-port: 7891
@@ -95,7 +95,7 @@ proxies:
   reality-opts:
     public-key: Y62O0xuVJY8P3Xxn8UhpjjJR9BWX7i6v1TDBucjWygw
     short-id: 47d7e0c97dab564a
-- name: "🇫🇮 Финляндия #3 ⚡"
+- name: "🇫🇮 Финляндия #3"
   type: vless
   server: 31.77.202.170
   port: 8765
@@ -109,7 +109,7 @@ proxies:
   reality-opts:
     public-key: AyPAMP8XIRtRIagJuk5eA0AFyvZbkqrRRdMEDsD_mkQ
     short-id: 62da72fb
-- name: "🇫🇮 Финляндия #4 ⚡"
+- name: "🇫🇮 Финляндия #4"
   type: vless
   server: 2.27.168.84
   port: 8443
@@ -123,7 +123,7 @@ proxies:
   reality-opts:
     public-key: -rwQYqD7xtqjLRVQkAV5VqmXNsZjE-t3n2gE37elNCE
     short-id: e324ed96626fad03
-- name: "🇫🇮 Финляндия #9 ⚡"
+- name: "🇫🇮 Финляндия #9"
   type: vless
   server: 109.120.151.245
   port: 8443
@@ -137,7 +137,7 @@ proxies:
   reality-opts:
     public-key: naQTUbKwGY1q6bIK5Nbv65YCJdingXXu4EHntQ9oCFg
     short-id: a3293c1cf98be5fe
-- name: "🇫🇮 Финляндия #10 ⚡"
+- name: "🇫🇮 Финляндия #10"
   type: vless
   server: 109.120.151.242
   port: 8443
@@ -207,7 +207,7 @@ proxies:
   reality-opts:
     public-key: JuumwWtGcf-S6o3zXuaknwSuUv7s249E0MsuoOVsdGs
     short-id: affef404e74b56c8
-- name: "🇫🇮 Финляндия #23 ⚡"
+- name: "🇫🇮 Финляндия #23"
   type: vless
   server: 170.168.4.48
   port: 41226
@@ -221,7 +221,7 @@ proxies:
   reality-opts:
     public-key: KcNb3jKM6j8HXm4lbM81J6igsQXFAducRG_wZBpZZxc
     short-id: ec856e6505282c7c
-- name: "🇫🇮 Финляндия #24"
+- name: "🇫🇮 Финляндия #24 ⚡"
   type: vless
   server: 170.168.4.57
   port: 43766
@@ -361,16 +361,16 @@ proxy-groups:
   - "🇫🇮 Финляндия #1"
   - "🇫🇮 Финляндия #2"
   - "★ 🇫🇮 Финляндия #19 ⚡"
-  - "🇫🇮 Финляндия #3 ⚡"
-  - "🇫🇮 Финляндия #4 ⚡"
-  - "🇫🇮 Финляндия #9 ⚡"
-  - "🇫🇮 Финляндия #10 ⚡"
+  - "🇫🇮 Финляндия #3"
+  - "🇫🇮 Финляндия #4"
+  - "🇫🇮 Финляндия #9"
+  - "🇫🇮 Финляндия #10"
   - "🇫🇮 Финляндия #14 ⚡"
   - "★ 🇫🇮 Финляндия #15"
   - "★ 🇫🇮 Финляндия #16"
   - "★ 🇫🇮 Финляндия #17"
-  - "🇫🇮 Финляндия #23 ⚡"
-  - "🇫🇮 Финляндия #24"
+  - "🇫🇮 Финляндия #23"
+  - "🇫🇮 Финляндия #24 ⚡"
   - "🇫🇮 Финляндия #26 ⚡"
   - "★ 🇫🇮 Финляндия #26 ⚡"
 - name: "SELECT"
@@ -390,20 +390,22 @@ proxy-groups:
   - "🇫🇮 Финляндия #1"
   - "🇫🇮 Финляндия #2"
   - "★ 🇫🇮 Финляндия #19 ⚡"
-  - "🇫🇮 Финляндия #3 ⚡"
-  - "🇫🇮 Финляндия #4 ⚡"
-  - "🇫🇮 Финляндия #9 ⚡"
-  - "🇫🇮 Финляндия #10 ⚡"
+  - "🇫🇮 Финляндия #3"
+  - "🇫🇮 Финляндия #4"
+  - "🇫🇮 Финляндия #9"
+  - "🇫🇮 Финляндия #10"
   - "🇫🇮 Финляндия #14 ⚡"
   - "★ 🇫🇮 Финляндия #15"
   - "★ 🇫🇮 Финляндия #16"
   - "★ 🇫🇮 Финляндия #17"
-  - "🇫🇮 Финляндия #23 ⚡"
-  - "🇫🇮 Финляндия #24"
+  - "🇫🇮 Финляндия #23"
+  - "🇫🇮 Финляндия #24 ⚡"
   - "🇫🇮 Финляндия #26 ⚡"
   - "★ 🇫🇮 Финляндия #26 ⚡"
 
 rules:
+- DOMAIN-SUFFIX,azmov.ru,SELECT
+- DOMAIN-SUFFIX,azmov.site,SELECT
 - IP-CIDR,::/0,REJECT,no-resolve
 - DOMAIN-SUFFIX,notion.so,SELECT
 - DOMAIN-SUFFIX,notion.com,SELECT

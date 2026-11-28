@@ -1,10 +1,10 @@
 # dobro-vpn-variant-04.yaml — Clash/Mihomo config for ONE routing variant, do not edit manually
-# variant 4/15 | elements: 3 | xray rules: 8 -> clash rules: 241
+# variant 4/15 | elements: 3 | xray rules: 9 -> clash rules: 243
 # nodes in this variant: 🤖 Нейросети 🇫🇷 Франция, 🤖 Нейросети 🇬🇧 Британия, 🤖 Нейросети 🇳🇱 Нидерланды
 # Routing + DNS preserved exactly as the panel configured them for these nodes.
 # Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
-# updated: 2026-11-28T11:39:30Z
-# proxies: 15 | groups: 2 | rules: 242 | dns policy: 0
+# updated: 2026-11-28T13:39:44Z
+# proxies: 15 | groups: 2 | rules: 244 | dns policy: 0
 
 port: 7890
 socks-port: 7891
@@ -170,6 +170,8 @@ proxy-groups:
   - "DIRECT"
 
 rules:
+- DOMAIN-SUFFIX,azmov.ru,SELECT
+- DOMAIN-SUFFIX,azmov.site,SELECT
 - IP-CIDR,::/0,REJECT,no-resolve
 - GEOIP,private,DIRECT,no-resolve
 - DOMAIN-SUFFIX,mtalk.google.com,DIRECT

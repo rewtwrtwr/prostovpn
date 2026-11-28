@@ -1,10 +1,10 @@
 # dobro-vpn-variant-03.yaml — Clash/Mihomo config for ONE routing variant, do not edit manually
-# variant 3/15 | elements: 4 | xray rules: 10 -> clash rules: 269
-# nodes in this variant: 🇷🇺 Москва #1, 🇷🇺 Москва #3 ⚡, 🇷🇺 Москва #4 ⚡, 🇷🇺 Москва #5 ⚡
+# variant 3/15 | elements: 4 | xray rules: 11 -> clash rules: 271
+# nodes in this variant: 🇷🇺 Москва #1, 🇷🇺 Москва #3 ⚡, 🇷🇺 Москва #4, 🇷🇺 Москва #5
 # Routing + DNS preserved exactly as the panel configured them for these nodes.
 # Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
-# updated: 2026-11-28T11:39:30Z
-# proxies: 20 | groups: 3 | rules: 270 | dns policy: 0
+# updated: 2026-11-28T13:39:44Z
+# proxies: 20 | groups: 3 | rules: 272 | dns policy: 0
 
 port: 7890
 socks-port: 7891
@@ -39,7 +39,7 @@ proxies:
   reality-opts:
     public-key: qkNv_vvEeHBlubDM154C1l05Wjyaj1k0l3qY911gUQQ
     short-id: dcb80b2936e64257
-- name: "🇧🇬 Болгария #1"
+- name: "🇧🇬 Болгария #1 ⚡"
   type: vless
   server: 170.168.43.52
   port: 8443
@@ -67,7 +67,7 @@ proxies:
   reality-opts:
     public-key: euxdU384x5_UddyM6UE4RpVRsl9Z2xFhQ-mE1ydzhnQ
     short-id: cc838404c247aa9a
-- name: "🇳🇱 Нидерланды #6 ⚡"
+- name: "🇳🇱 Нидерланды #6"
   type: vless
   server: 156.9.124.80
   port: 8443
@@ -109,7 +109,7 @@ proxies:
   reality-opts:
     public-key: FBKfr35R4bldR4cS4gptL4zaROwrZLs-08SBWFKX7gI
     short-id: c46aef2de22ca26b
-- name: "🇷🇺 Москва #4 ⚡"
+- name: "🇷🇺 Москва #4"
   type: vless
   server: 170.168.5.2
   port: 8443
@@ -123,7 +123,7 @@ proxies:
   reality-opts:
     public-key: wu_suiPQRITwyC4OaXfpquzTDzZebRKDT-i_CPT0GW4
     short-id: 794be3fc8b29fa4d
-- name: "🇷🇺 Москва #5 ⚡"
+- name: "🇷🇺 Москва #5"
   type: vless
   server: 170.168.5.3
   port: 8443
@@ -231,12 +231,12 @@ proxy-groups:
   lazy: true
   proxies:
   - "🇷🇺 Москва #1"
-  - "🇧🇬 Болгария #1"
-  - "🇳🇱 Нидерланды #6 ⚡"
+  - "🇧🇬 Болгария #1 ⚡"
+  - "🇳🇱 Нидерланды #6"
   - "🇨🇦 Канада #2 ⚡"
   - "🇷🇺 Москва #3 ⚡"
-  - "🇷🇺 Москва #4 ⚡"
-  - "🇷🇺 Москва #5 ⚡"
+  - "🇷🇺 Москва #4"
+  - "🇷🇺 Москва #5"
 - name: "SELECT"
   type: select
   proxies:
@@ -249,12 +249,14 @@ proxy-groups:
   tolerance: 50
   lazy: true
   proxies:
-  - "🇧🇬 Болгария #1"
-  - "🇳🇱 Нидерланды #6 ⚡"
+  - "🇧🇬 Болгария #1 ⚡"
+  - "🇳🇱 Нидерланды #6"
   - "🇨🇦 Канада #2 ⚡"
   - "★ 🇦🇺 Австралия ⚡"
 
 rules:
+- DOMAIN-SUFFIX,azmov.ru,SELECT
+- DOMAIN-SUFFIX,azmov.site,SELECT
 - IP-CIDR,::/0,REJECT,no-resolve
 - GEOIP,private,DIRECT,no-resolve
 - DOMAIN-SUFFIX,gemini.google.com,B_GM

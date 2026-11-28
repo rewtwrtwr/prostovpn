@@ -1,10 +1,10 @@
 # dobro-vpn-variant-13.yaml — Clash/Mihomo config for ONE routing variant, do not edit manually
-# variant 13/15 | elements: 1 | xray rules: 8 -> clash rules: 179
+# variant 13/15 | elements: 1 | xray rules: 9 -> clash rules: 181
 # nodes in this variant: 🇳🇱 Нидерланды [АВТОВЫБОР ⭐]
 # Routing + DNS preserved exactly as the panel configured them for these nodes.
 # Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
-# updated: 2026-11-28T11:39:30Z
-# proxies: 29 | groups: 3 | rules: 180 | dns policy: 0
+# updated: 2026-11-28T13:39:45Z
+# proxies: 29 | groups: 3 | rules: 182 | dns policy: 0
 
 port: 7890
 socks-port: 7891
@@ -67,7 +67,7 @@ proxies:
   reality-opts:
     public-key: QRuOFxxZFmXdLOPXTMzfsgid6vhvHYUD_ICParI41WM
     short-id: 7971f1b94378fc12
-- name: "🇳🇱 Нидерланды #6 ⚡"
+- name: "🇳🇱 Нидерланды #6"
   type: vless
   server: 156.9.124.80
   port: 8443
@@ -179,7 +179,7 @@ proxies:
   reality-opts:
     public-key: hFgbu-PJVozuCNTH0Zi2Y1miGM_h4iARdG0pF6oNnVQ
     short-id: 2c7abc289da4cdbd
-- name: "🇳🇱 Нидерланды #23 ⚡"
+- name: "🇳🇱 Нидерланды #23"
   type: vless
   server: 170.168.43.29
   port: 51393
@@ -358,7 +358,7 @@ proxy-groups:
   proxies:
   - "🇳🇱 Нидерланды #26 ⚡"
   - "🇳🇱 Нидерланды #3 ⚡"
-  - "🇳🇱 Нидерланды #6 ⚡"
+  - "🇳🇱 Нидерланды #6"
   - "🇳🇱 Нидерланды #21"
   - "🇳🇱 Нидерланды #2 ⚡"
   - "🇳🇱 Нидерланды #4 ⚡"
@@ -367,7 +367,7 @@ proxy-groups:
   - "🇳🇱 Нидерланды #19"
   - "🇳🇱 Нидерланды #10"
   - "🤖 Нейросети 🇳🇱 Нидерланды"
-  - "🇳🇱 Нидерланды #23 ⚡"
+  - "🇳🇱 Нидерланды #23"
   - "★ 🇳🇱 Нидерланды #24 ⚡"
   - "★ 🇳🇱 Нидерланды #9"
   - "★ 🇳🇱 Нидерланды #25 ⚡"
@@ -387,7 +387,7 @@ proxy-groups:
   proxies:
   - "🇳🇱 Нидерланды #26 ⚡"
   - "🇳🇱 Нидерланды #3 ⚡"
-  - "🇳🇱 Нидерланды #6 ⚡"
+  - "🇳🇱 Нидерланды #6"
   - "🇳🇱 Нидерланды #21"
   - "🇳🇱 Нидерланды #2 ⚡"
   - "🇳🇱 Нидерланды #4 ⚡"
@@ -396,7 +396,7 @@ proxy-groups:
   - "🇳🇱 Нидерланды #19"
   - "🇳🇱 Нидерланды #10"
   - "🤖 Нейросети 🇳🇱 Нидерланды"
-  - "🇳🇱 Нидерланды #23 ⚡"
+  - "🇳🇱 Нидерланды #23"
   - "★ 🇳🇱 Нидерланды #24 ⚡"
   - "★ 🇳🇱 Нидерланды #9"
   - "★ 🇳🇱 Нидерланды #25 ⚡"
@@ -404,6 +404,8 @@ proxy-groups:
   - "🇳🇱 Нидерланды #22 ^~2~^"
 
 rules:
+- DOMAIN-SUFFIX,azmov.ru,SELECT
+- DOMAIN-SUFFIX,azmov.site,SELECT
 - IP-CIDR,::/0,REJECT,no-resolve
 - GEOIP,private,DIRECT,no-resolve
 - DOMAIN-SUFFIX,max.ru,DIRECT
