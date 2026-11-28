@@ -3,7 +3,7 @@
 # nodes in this variant: 🇪🇺 Европа [АВТОВЫБОР ⭐]
 # Routing + DNS preserved exactly as the panel configured them for these nodes.
 # Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
-# updated: 2026-11-28T13:39:45Z
+# updated: 2026-11-28T19:57:32Z
 # proxies: 21 | groups: 2 | rules: 189 | dns policy: 0
 
 port: 7890
@@ -61,7 +61,7 @@ proxies:
   udp: true
   network: tcp
   tls: true
-  servername: srv-0afdb2.vless.monster
+  servername: srv-0afdb2.dobry.monster
   flow: xtls-rprx-vision
   client-fingerprint: firefox
   reality-opts:
@@ -75,7 +75,7 @@ proxies:
   udp: true
   network: tcp
   tls: true
-  servername: r-c705dc.vless.monster
+  servername: static-1c41bd.dobry.monster
   flow: xtls-rprx-vision
   client-fingerprint: firefox
   reality-opts:
@@ -131,7 +131,7 @@ proxies:
   udp: true
   network: tcp
   tls: true
-  servername: mx-781a5b.vless.monster
+  servername: mx-781a5b.dobry.monster
   flow: xtls-rprx-vision
   client-fingerprint: firefox
   reality-opts:

@@ -3,8 +3,8 @@
 # nodes in this variant: 🇫🇮 Финляндия [АВТОВЫБОР ⭐]
 # Routing + DNS preserved exactly as the panel configured them for these nodes.
 # Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
-# updated: 2026-11-28T13:39:45Z
-# proxies: 29 | groups: 3 | rules: 189 | dns policy: 0
+# updated: 2026-11-28T19:57:32Z
+# proxies: 28 | groups: 3 | rules: 189 | dns policy: 0
 
 port: 7890
 socks-port: 7891
@@ -25,6 +25,20 @@ dns:
     - 8.8.4.4
 
 proxies:
+- name: "★ 🤖 Нейросети 🇫🇮 Финляндия"
+  type: vless
+  server: 191.217.252.164
+  port: 443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: mx-fip1.vless.site
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: voOZAVZUOnja8sGdgOx3w_N9rVSP0D1F2Hqv2M3OQ38
+    short-id: 5aa7f7a3d12111b9
 - name: "🇫🇮 Финляндия #27 ⚡"
   type: vless
   server: cdn-fi.pixlora.org
@@ -89,7 +103,7 @@ proxies:
   udp: true
   network: tcp
   tls: true
-  servername: mx-287714.vless.monster
+  servername: mx-287714.dobry.monster
   flow: xtls-rprx-vision
   client-fingerprint: firefox
   reality-opts:
@@ -103,26 +117,12 @@ proxies:
   udp: true
   network: tcp
   tls: true
-  servername: mx-781a5b.vless.monster
+  servername: mx-781a5b.dobry.monster
   flow: xtls-rprx-vision
   client-fingerprint: firefox
   reality-opts:
     public-key: AyPAMP8XIRtRIagJuk5eA0AFyvZbkqrRRdMEDsD_mkQ
     short-id: 62da72fb
-- name: "🇫🇮 Финляндия #4"
-  type: vless
-  server: 2.27.168.84
-  port: 8443
-  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
-  udp: true
-  network: tcp
-  tls: true
-  servername: edge-d8446b.dobry.monster
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: -rwQYqD7xtqjLRVQkAV5VqmXNsZjE-t3n2gE37elNCE
-    short-id: e324ed96626fad03
 - name: "🇫🇮 Финляндия #9"
   type: vless
   server: 109.120.151.245
@@ -137,7 +137,7 @@ proxies:
   reality-opts:
     public-key: naQTUbKwGY1q6bIK5Nbv65YCJdingXXu4EHntQ9oCFg
     short-id: a3293c1cf98be5fe
-- name: "🇫🇮 Финляндия #10"
+- name: "🇫🇮 Финляндия #10 ⚡"
   type: vless
   server: 109.120.151.242
   port: 8443
@@ -179,20 +179,6 @@ proxies:
   reality-opts:
     public-key: lTVGbgkf7mx8FJM5chgtWk3KGOUde7VexmepZU7Hc28
     short-id: 910067ad36fd15c9
-- name: "★ 🇫🇮 Финляндия #16"
-  type: vless
-  server: 191.217.252.164
-  port: 443
-  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
-  udp: true
-  network: tcp
-  tls: true
-  servername: mx-fip1.vless.site
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: voOZAVZUOnja8sGdgOx3w_N9rVSP0D1F2Hqv2M3OQ38
-    short-id: 5aa7f7a3d12111b9
 - name: "★ 🇫🇮 Финляндия #17"
   type: vless
   server: 176.125.254.190
@@ -362,12 +348,11 @@ proxy-groups:
   - "🇫🇮 Финляндия #2"
   - "★ 🇫🇮 Финляндия #19 ⚡"
   - "🇫🇮 Финляндия #3"
-  - "🇫🇮 Финляндия #4"
   - "🇫🇮 Финляндия #9"
-  - "🇫🇮 Финляндия #10"
+  - "🇫🇮 Финляндия #10 ⚡"
   - "🇫🇮 Финляндия #14 ⚡"
   - "★ 🇫🇮 Финляндия #15"
-  - "★ 🇫🇮 Финляндия #16"
+  - "★ 🤖 Нейросети 🇫🇮 Финляндия"
   - "★ 🇫🇮 Финляндия #17"
   - "🇫🇮 Финляндия #23"
   - "🇫🇮 Финляндия #24 ⚡"
@@ -391,12 +376,11 @@ proxy-groups:
   - "🇫🇮 Финляндия #2"
   - "★ 🇫🇮 Финляндия #19 ⚡"
   - "🇫🇮 Финляндия #3"
-  - "🇫🇮 Финляндия #4"
   - "🇫🇮 Финляндия #9"
-  - "🇫🇮 Финляндия #10"
+  - "🇫🇮 Финляндия #10 ⚡"
   - "🇫🇮 Финляндия #14 ⚡"
   - "★ 🇫🇮 Финляндия #15"
-  - "★ 🇫🇮 Финляндия #16"
+  - "★ 🤖 Нейросети 🇫🇮 Финляндия"
   - "★ 🇫🇮 Финляндия #17"
   - "🇫🇮 Финляндия #23"
   - "🇫🇮 Финляндия #24 ⚡"

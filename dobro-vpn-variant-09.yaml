@@ -3,8 +3,8 @@
 # nodes in this variant: 🚀 Если отключает 5-15 мин
 # Routing + DNS preserved exactly as the panel configured them for these nodes.
 # Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
-# updated: 2026-11-28T13:39:45Z
-# proxies: 87 | groups: 3 | rules: 189 | dns policy: 0
+# updated: 2026-11-28T19:57:32Z
+# proxies: 80 | groups: 3 | rules: 189 | dns policy: 0
 
 port: 7890
 socks-port: 7891
@@ -33,7 +33,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: node-a06a11.vless.monster
+  servername: gw-6bc2fe.dobry.monster
   client-fingerprint: firefox
   reality-opts:
     public-key: Byx9FxICwfLXVLQEK7nq4FAPmbHcotEQ__3UC_nZaV8
@@ -48,7 +48,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: static-40187c.vless.monster
+  servername: srv-b2ad02.dobry.monster
   client-fingerprint: firefox
   reality-opts:
     public-key: Ji1gUzHsBk2FGgkX8hHvhKI9lK6jB7L2I29D4cfo4TY
@@ -63,7 +63,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: cdn-a84996.vless.monster
+  servername: pop-9c0838.dobry.monster
   client-fingerprint: firefox
   reality-opts:
     public-key: 3ZG8R_gveP3LZ1QVVXobdtiSXeib3EyFbflpQve9fwc
@@ -108,7 +108,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: pop-88ae19.vless.monster
+  servername: r-4ebcf5.dobry.monster
   client-fingerprint: firefox
   reality-opts:
     public-key: ECbd3w4lOTMPU5wn1VuKu2fNI3zz1DbHjPTo-jR5N3A
@@ -123,7 +123,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: srv-0d19fa.vless.monster
+  servername: mx-a7e7b7.dobry.monster
   client-fingerprint: firefox
   reality-opts:
     public-key: FJRBuXWjvXnJ9KSW86mCQWH4McSqm38KKcAirvDiajg
@@ -138,7 +138,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: node-ccc63b.vless.monster
+  servername: mx-1e29ea.dobry.monster
   client-fingerprint: firefox
   reality-opts:
     public-key: 1J2csuv7iNVIoD8de8t-vnIAxYmyb924ViXA1aLvjWU
@@ -153,7 +153,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: node-1eeaa8.vless.monster
+  servername: cache-12d410.dobry.monster
   client-fingerprint: firefox
   reality-opts:
     public-key: odLpX_cLGNemTANQ0e2OA7xzrb25zmGVD82a4aiL1UY
@@ -168,7 +168,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: mx-781a5b.vless.monster
+  servername: mx-781a5b.dobry.monster
   client-fingerprint: firefox
   reality-opts:
     public-key: AyPAMP8XIRtRIagJuk5eA0AFyvZbkqrRRdMEDsD_mkQ
@@ -183,7 +183,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: node-cc0bc5.vless.monster
+  servername: static-e78f24.dobry.monster
   client-fingerprint: firefox
   reality-opts:
     public-key: Fcv_6X2M0xGRhWL8ihmcXoh2LzkMhpw0-X_TTJ4m_TY
@@ -198,7 +198,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: gw-9fc2f7.vless.monster
+  servername: cdn-e1b76d.dobry.monster
   client-fingerprint: firefox
   reality-opts:
     public-key: JcM7nva4t191thtTVTBq4yNxvub-hMq2tfbwaCqA7Sk
@@ -213,7 +213,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: pop-375f5c.vless.monster
+  servername: gw-2806d2.dobry.monster
   client-fingerprint: firefox
   reality-opts:
     public-key: IlFILvjY6CfrX07XU9VJB5RZOCFGmIdsi4HIGNMV20I
@@ -415,66 +415,6 @@ proxies:
     short-id: 073511c72071352f
   grpc-opts:
     grpc-service-name: "grpc-d6e987e3"
-- name: "n1-de9"
-  type: vless
-  server: 91.92.33.179
-  port: 2053
-  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
-  udp: true
-  network: grpc
-  tls: true
-  servername: edge-faae44.dobry.monster
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: xPu4FKWhf4pDHsmCfI6_zsm0DzTU_OBxwMiyX37h6iM
-    short-id: da75f0f36322beb4
-  grpc-opts:
-    grpc-service-name: "iosgrpc"
-- name: "n1-fr5"
-  type: vless
-  server: 82.25.63.237
-  port: 2053
-  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
-  udp: true
-  network: grpc
-  tls: true
-  servername: edge-a6b485.dobry.monster
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: oeJvqAjr3cJoHbyM5KddlPw7q-czzZA-dlJdCYL8hEk
-    short-id: 97dc95ead5f75d50
-  grpc-opts:
-    grpc-service-name: "iosgrpc"
-- name: "n1-nl9"
-  type: vless
-  server: 156.9.124.80
-  port: 2053
-  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
-  udp: true
-  network: grpc
-  tls: true
-  servername: edge-fe4eb4.dobry.monster
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: hoF5HIPDsWCCrK98z3m24_x3y8SWaQhXO4Uq4O_Ktw8
-    short-id: 3c02afcfca91ece4
-  grpc-opts:
-    grpc-service-name: "iosgrpc"
-- name: "n1-fi10"
-  type: vless
-  server: 2.27.168.84
-  port: 2053
-  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
-  udp: true
-  network: grpc
-  tls: true
-  servername: edge-d8446b.dobry.monster
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: -rwQYqD7xtqjLRVQkAV5VqmXNsZjE-t3n2gE37elNCE
-    short-id: e324ed96626fad03
-  grpc-opts:
-    grpc-service-name: "iosgrpc"
 - name: "n1-hk4"
   type: vless
   server: 85.11.161.33
@@ -578,36 +518,6 @@ proxies:
   reality-opts:
     public-key: SkyzgjIEbc31CI8T9YW4K0h2YXbVi0uSdWRAPDs9qV8
     short-id: fe169e993e6a9c98
-  grpc-opts:
-    grpc-service-name: "iosgrpc"
-- name: "n1-de14"
-  type: vless
-  server: 201.8.89.125
-  port: 55090
-  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
-  udp: true
-  network: grpc
-  tls: true
-  servername: fra1.lunwerk.de
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 7eOAdmziz5xWQv0TE42ZJ4bWn_u3S1_WeWBe24bN5kQ
-    short-id: ea39f6b0e9f32853
-  grpc-opts:
-    grpc-service-name: "iosgrpc"
-- name: "n1-de12"
-  type: vless
-  server: 201.8.89.126
-  port: 58400
-  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
-  udp: true
-  network: grpc
-  tls: true
-  servername: fra3.lunwerk.de
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: RewhgyZ8FC3ofWv_YEomM3XUhsl3AfMxsmrpY2DA6C4
-    short-id: 65ad5e07040c5f9b
   grpc-opts:
     grpc-service-name: "iosgrpc"
 - name: "n1-pl11"
@@ -1030,21 +940,6 @@ proxies:
     short-id: 6432a9392e4d01b7
   grpc-opts:
     grpc-service-name: "iosgrpc"
-- name: "n1-de23"
-  type: vless
-  server: 217.60.22.167
-  port: 45358
-  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
-  udp: true
-  network: grpc
-  tls: true
-  servername: mx-87657d.dobry.monster
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: rN3g-zJymjAsRePvsQ3mb2l6WJkwePjT08Yg5BZqP1M
-    short-id: bded64d61bead62a
-  grpc-opts:
-    grpc-service-name: "iosgrpc"
 - name: "n1-uslg1"
   type: vless
   server: 152.234.250.233
@@ -1113,7 +1008,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: cdn-813fc7.vless.monster
+  servername: cdn-d5a44d.dobry.monster
   client-fingerprint: firefox
   reality-opts:
     public-key: jqzXpcxn67pgwbRL6YLywGhNjIVS5nBbo6HUosf3AnY
@@ -1128,7 +1023,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: cdn-f776f3.vless.monster
+  servername: srv-2ac9c3.dobry.monster
   client-fingerprint: firefox
   reality-opts:
     public-key: 8csiF1azK6xbS9ECFPwBxsrjgTJKV0t3NEdOMI42a0o
@@ -1143,7 +1038,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: cdn-330cd9.vless.monster
+  servername: mx-f763e0.dobry.monster
   client-fingerprint: firefox
   reality-opts:
     public-key: lGlbce_ZYE59tgIYVA9I715wl8YlxXX5rEt6Ksul6hI
@@ -1272,10 +1167,6 @@ proxy-groups:
   - "n1-ppl3"
   - "n1-qwfi2"
   - "n1-se1"
-  - "n1-de9"
-  - "n1-fr5"
-  - "n1-nl9"
-  - "n1-fi10"
   - "n1-hk4"
   - "n1-fi11"
   - "n1-fi12"
@@ -1283,8 +1174,6 @@ proxy-groups:
   - "n1-jp1"
   - "n1-fr11"
   - "n1-fr10"
-  - "n1-de14"
-  - "n1-de12"
   - "n1-pl11"
   - "n1-pl12"
   - "n1-nl13"
@@ -1313,7 +1202,6 @@ proxy-groups:
   - "n1-fi13"
   - "n1-ee14"
   - "n1-pl15"
-  - "n1-de23"
   - "n1-uslg1"
   - "n1-delg1"
   - "n1-pl10"
@@ -1359,10 +1247,6 @@ proxy-groups:
   - "n1-ppl3"
   - "n1-qwfi2"
   - "n1-se1"
-  - "n1-de9"
-  - "n1-fr5"
-  - "n1-nl9"
-  - "n1-fi10"
   - "n1-hk4"
   - "n1-fi11"
   - "n1-fi12"
@@ -1370,8 +1254,6 @@ proxy-groups:
   - "n1-jp1"
   - "n1-fr11"
   - "n1-fr10"
-  - "n1-de14"
-  - "n1-de12"
   - "n1-pl11"
   - "n1-pl12"
   - "n1-nl13"
@@ -1400,7 +1282,6 @@ proxy-groups:
   - "n1-fi13"
   - "n1-ee14"
   - "n1-pl15"
-  - "n1-de23"
   - "n1-uslg1"
   - "n1-delg1"
   - "n1-pl10"

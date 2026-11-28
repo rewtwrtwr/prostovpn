@@ -3,7 +3,7 @@
 # nodes in this variant: 🇵🇱 Польша [АВТОВЫБОР ⭐]
 # Routing + DNS preserved exactly as the panel configured them for these nodes.
 # Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
-# updated: 2026-11-28T13:39:45Z
+# updated: 2026-11-28T19:57:32Z
 # proxies: 25 | groups: 3 | rules: 182 | dns policy: 0
 
 port: 7890
@@ -61,7 +61,7 @@ proxies:
   udp: true
   network: tcp
   tls: true
-  servername: r-543755.vless.monster
+  servername: r-543755.dobry.monster
   flow: xtls-rprx-vision
   client-fingerprint: firefox
   reality-opts:
@@ -95,7 +95,7 @@ proxies:
   reality-opts:
     public-key: VtXHC4U9Zn0HG8iapP__tE3Y_LuXiVEiFv-J-7SYZ30
     short-id: 04b1b73ba147d939
-- name: "🇵🇱 Польша #18"
+- name: "🇵🇱 Польша #18 ⚡"
   type: vless
   server: 130.78.31.150
   port: 49672
@@ -305,7 +305,7 @@ proxy-groups:
   - "🇵🇱 Польша #1 ⚡"
   - "🇵🇱 Польша #16"
   - "🇵🇱 Польша #17"
-  - "🇵🇱 Польша #18"
+  - "🇵🇱 Польша #18 ⚡"
   - "🇵🇱 Польша #19 ⚡"
   - "★ 🇵🇱 Польша #19 ⚡"
   - "🇵🇱 Польша #7 ⚡"
@@ -330,7 +330,7 @@ proxy-groups:
   - "🇵🇱 Польша #1 ⚡"
   - "🇵🇱 Польша #16"
   - "🇵🇱 Польша #17"
-  - "🇵🇱 Польша #18"
+  - "🇵🇱 Польша #18 ⚡"
   - "🇵🇱 Польша #19 ⚡"
   - "★ 🇵🇱 Польша #19 ⚡"
   - "🇵🇱 Польша #7 ⚡"

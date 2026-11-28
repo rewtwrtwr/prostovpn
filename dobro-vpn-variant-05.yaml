@@ -3,8 +3,8 @@
 # nodes in this variant: 🌎 Универсальный №1
 # Routing + DNS preserved exactly as the panel configured them for these nodes.
 # Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
-# updated: 2026-11-28T13:39:45Z
-# proxies: 177 | groups: 9 | rules: 362 | dns policy: 0
+# updated: 2026-11-28T19:57:32Z
+# proxies: 165 | groups: 9 | rules: 362 | dns policy: 0
 
 port: 7890
 socks-port: 7891
@@ -53,6 +53,20 @@ proxies:
   reality-opts:
     public-key: ItEAtyB5d6FqBDHheffz1uIVzSmqDxGJw9c5iqunKh4
     short-id: 7e572921494d6745
+- name: "★ 🤖 Нейросети 🇫🇮 Финляндия"
+  type: vless
+  server: 191.217.252.164
+  port: 443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: mx-fip1.vless.site
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: voOZAVZUOnja8sGdgOx3w_N9rVSP0D1F2Hqv2M3OQ38
+    short-id: 5aa7f7a3d12111b9
 - name: "★ 🇦🇺 Австралия ⚡"
   type: vless
   server: cdn-au.pixlora.org
@@ -81,7 +95,7 @@ proxies:
   reality-opts:
     public-key: odLpX_cLGNemTANQ0e2OA7xzrb25zmGVD82a4aiL1UY
     short-id: cadd3ac9087bd465
-- name: "🇮🇱 Израиль"
+- name: "🇮🇱 Израиль ⚡"
   type: vless
   server: 170.168.12.48
   port: 8443
@@ -137,7 +151,7 @@ proxies:
   reality-opts:
     public-key: aIAZbx7okN1_cYdro5Un_DP6o7rAGyzF8Pm2kgaC2BI
     short-id: 5dd3d27dd57958b2
-- name: "🇺🇸 США #3 ⚡"
+- name: "🇺🇸 США #3"
   type: vless
   server: 152.234.163.21
   port: 47262
@@ -221,20 +235,6 @@ proxies:
   reality-opts:
     public-key: QBi7R2hjStEpGSPW87NJnMERKAFd9rmoSNBuRFTQxTs
     short-id: fdb75e804acf0612
-- name: "🇫🇷 Франция #5"
-  type: vless
-  server: 82.25.63.237
-  port: 8443
-  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
-  udp: true
-  network: tcp
-  tls: true
-  servername: edge-a6b485.dobry.monster
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: oeJvqAjr3cJoHbyM5KddlPw7q-czzZA-dlJdCYL8hEk
-    short-id: 97dc95ead5f75d50
 - name: "🇮🇹 Италия #2 ⚡"
   type: vless
   server: 179.255.190.30
@@ -403,20 +403,20 @@ proxies:
   reality-opts:
     public-key: qkNv_vvEeHBlubDM154C1l05Wjyaj1k0l3qY911gUQQ
     short-id: dcb80b2936e64257
-- name: "🇳🇱 Нидерланды #6"
+- name: "★ 🇳🇱 Нидерланды #27 ⚡"
   type: vless
-  server: 156.9.124.80
-  port: 8443
+  server: 31.76.109.36
+  port: 53748
   uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
   udp: true
   network: tcp
   tls: true
-  servername: edge-fe4eb4.dobry.monster
+  servername: edge-c6ce1f.dobry.monster
   flow: xtls-rprx-vision
   client-fingerprint: firefox
   reality-opts:
-    public-key: hoF5HIPDsWCCrK98z3m24_x3y8SWaQhXO4Uq4O_Ktw8
-    short-id: 3c02afcfca91ece4
+    public-key: YobVC2cTJKBxtWuU_PyZhPhWY_XeFivon5lnaGGr0EM
+    short-id: 0ceb98d3df06da11
 - name: "🇳🇱 Нидерланды #21"
   type: vless
   server: 2.27.106.89
@@ -537,13 +537,13 @@ proxies:
   udp: true
   network: tcp
   tls: true
-  servername: r-543755.vless.monster
+  servername: r-543755.dobry.monster
   flow: xtls-rprx-vision
   client-fingerprint: firefox
   reality-opts:
     public-key: 7CoUJmcf0p9g3zBA51YqBVHz5rCHiwAKEBDkhHlEhlY
     short-id: c3e05cb047b55d62
-- name: "🇳🇱 Нидерланды #23"
+- name: "🇳🇱 Нидерланды #23 ⚡"
   type: vless
   server: 170.168.43.29
   port: 51393
@@ -627,7 +627,7 @@ proxies:
   reality-opts:
     public-key: VtXHC4U9Zn0HG8iapP__tE3Y_LuXiVEiFv-J-7SYZ30
     short-id: 04b1b73ba147d939
-- name: "🇵🇱 Польша #18"
+- name: "🇵🇱 Польша #18 ⚡"
   type: vless
   server: 130.78.31.150
   port: 49672
@@ -739,20 +739,6 @@ proxies:
   reality-opts:
     public-key: Fcv_6X2M0xGRhWL8ihmcXoh2LzkMhpw0-X_TTJ4m_TY
     short-id: 3c4482508c1f277e
-- name: "🇷🇺 Москва #3 ⚡"
-  type: vless
-  server: 178.236.240.147
-  port: 8443
-  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
-  udp: true
-  network: tcp
-  tls: true
-  servername: gw-90cb49.dobry.monster
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: FBKfr35R4bldR4cS4gptL4zaROwrZLs-08SBWFKX7gI
-    short-id: c46aef2de22ca26b
 - name: "🇫🇮 Финляндия #2"
   type: vless
   server: 2.27.32.204
@@ -767,20 +753,20 @@ proxies:
   reality-opts:
     public-key: MwpKjS0atNf-qHELOkbtp0H3Roy88Wk2qWrnS37PEwo
     short-id: 278a58d22f21b9bd
-- name: "🇫🇮 Финляндия #4"
+- name: "🇩🇪 Германия #33 ⚡"
   type: vless
-  server: 2.27.168.84
-  port: 8443
+  server: 31.76.111.104
+  port: 54433
   uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
   udp: true
   network: tcp
   tls: true
-  servername: edge-d8446b.dobry.monster
+  servername: cdn-3f8237.dobry.monster
   flow: xtls-rprx-vision
   client-fingerprint: firefox
   reality-opts:
-    public-key: -rwQYqD7xtqjLRVQkAV5VqmXNsZjE-t3n2gE37elNCE
-    short-id: e324ed96626fad03
+    public-key: 4fNiFDXckrG0uYSw5V-x-YGmZh-dkRKzeFLcEKUeGWc
+    short-id: dca98755beae96bb
 - name: "🇩🇪 Германия #30 ⚡"
   type: vless
   server: 152.234.250.65
@@ -809,21 +795,7 @@ proxies:
   reality-opts:
     public-key: naQTUbKwGY1q6bIK5Nbv65YCJdingXXu4EHntQ9oCFg
     short-id: a3293c1cf98be5fe
-- name: "🇩🇪 Германия #3"
-  type: vless
-  server: 91.92.33.179
-  port: 8443
-  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
-  udp: true
-  network: tcp
-  tls: true
-  servername: edge-faae44.dobry.monster
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: xPu4FKWhf4pDHsmCfI6_zsm0DzTU_OBxwMiyX37h6iM
-    short-id: da75f0f36322beb4
-- name: "🇫🇮 Финляндия #10"
+- name: "🇫🇮 Финляндия #10 ⚡"
   type: vless
   server: 109.120.151.242
   port: 8443
@@ -865,20 +837,6 @@ proxies:
   reality-opts:
     public-key: lTVGbgkf7mx8FJM5chgtWk3KGOUde7VexmepZU7Hc28
     short-id: 910067ad36fd15c9
-- name: "★ 🇫🇮 Финляндия #16"
-  type: vless
-  server: 191.217.252.164
-  port: 443
-  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
-  udp: true
-  network: tcp
-  tls: true
-  servername: mx-fip1.vless.site
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: voOZAVZUOnja8sGdgOx3w_N9rVSP0D1F2Hqv2M3OQ38
-    short-id: 5aa7f7a3d12111b9
 - name: "★ 🇫🇮 Финляндия #17"
   type: vless
   server: 176.125.254.190
@@ -921,7 +879,7 @@ proxies:
   reality-opts:
     public-key: yD1SFVIuq6o6e7klHaogeVmspSo5MEFuMfAyFov_BHM
     short-id: 3ea1ec331f1e5607
-- name: "🇩🇪 Германия #23"
+- name: "🇩🇪 Германия #23 ⚡"
   type: vless
   server: 79.182.124.49
   port: 46300
@@ -949,20 +907,6 @@ proxies:
   reality-opts:
     public-key: rf99tfHLDylM-WH1iUWDo6InAgOcVX8kUNQDi6yIwTg
     short-id: d2dbae08b49e8fa0
-- name: "🇩🇪 Германия #25"
-  type: vless
-  server: 217.60.22.167
-  port: 51265
-  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
-  udp: true
-  network: tcp
-  tls: true
-  servername: mx-87657d.dobry.monster
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: rN3g-zJymjAsRePvsQ3mb2l6WJkwePjT08Yg5BZqP1M
-    short-id: bded64d61bead62a
 - name: "🇫🇮 Финляндия #26 ⚡"
   type: vless
   server: 31.77.248.17
@@ -977,7 +921,7 @@ proxies:
   reality-opts:
     public-key: REli1LwmNXcfVBhZhCwDUp15jsmz4orH3T9YLpVk0wI
     short-id: f39b868cb3c14b62
-- name: "🇩🇪 Германия #1 ⚡"
+- name: "🇩🇪 Германия #1"
   type: vless
   server: 150.241.116.91
   port: 443
@@ -985,7 +929,7 @@ proxies:
   udp: true
   network: tcp
   tls: true
-  servername: pop-88ae19.vless.monster
+  servername: r-4ebcf5.dobry.monster
   flow: xtls-rprx-vision
   client-fingerprint: firefox
   reality-opts:
@@ -1005,34 +949,6 @@ proxies:
   reality-opts:
     public-key: fpOHSPDTYhZ2w3l8XqXO9KQ2oe8q8Vd5Z9lCddhKvEE
     short-id: fc20796143ec327c
-- name: "🇩🇪 Германия #19"
-  type: vless
-  server: 201.8.89.126
-  port: 41926
-  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
-  udp: true
-  network: tcp
-  tls: true
-  servername: fra3.lunwerk.de
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: RewhgyZ8FC3ofWv_YEomM3XUhsl3AfMxsmrpY2DA6C4
-    short-id: 65ad5e07040c5f9b
-- name: "🇩🇪 Германия #20 ⚡"
-  type: vless
-  server: 201.8.89.125
-  port: 44804
-  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
-  udp: true
-  network: tcp
-  tls: true
-  servername: fra1.lunwerk.de
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 7eOAdmziz5xWQv0TE42ZJ4bWn_u3S1_WeWBe24bN5kQ
-    short-id: ea39f6b0e9f32853
 - name: "🇩🇪 Германия #22"
   type: vless
   server: 217.60.179.138
@@ -1117,6 +1033,20 @@ proxies:
   reality-opts:
     public-key: y52KMxaIrt5onAjykzIYcDeesAMSVoXIjLjUk0F1BCU
     short-id: b46e988d93350b0a
+- name: "gm-o1de"
+  type: vless
+  server: 31.59.216.114
+  port: 443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: r-4bb51c.dobry.monster
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: fpOHSPDTYhZ2w3l8XqXO9KQ2oe8q8Vd5Z9lCddhKvEE
+    short-id: fc20796143ec327c
 - name: "uni-de12i"
   type: vless
   server: 201.4.100.43
@@ -1167,7 +1097,7 @@ proxies:
   udp: true
   network: tcp
   tls: true
-  servername: r-c705dc.vless.monster
+  servername: static-1c41bd.dobry.monster
   flow: xtls-rprx-vision
   client-fingerprint: firefox
   reality-opts:
@@ -1181,7 +1111,7 @@ proxies:
   udp: true
   network: tcp
   tls: true
-  servername: mx-781a5b.vless.monster
+  servername: mx-781a5b.dobry.monster
   flow: xtls-rprx-vision
   client-fingerprint: firefox
   reality-opts:
@@ -1293,7 +1223,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: node-a06a11.vless.monster
+  servername: gw-6bc2fe.dobry.monster
   client-fingerprint: firefox
   reality-opts:
     public-key: Byx9FxICwfLXVLQEK7nq4FAPmbHcotEQ__3UC_nZaV8
@@ -1308,7 +1238,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: static-40187c.vless.monster
+  servername: srv-b2ad02.dobry.monster
   client-fingerprint: firefox
   reality-opts:
     public-key: Ji1gUzHsBk2FGgkX8hHvhKI9lK6jB7L2I29D4cfo4TY
@@ -1323,7 +1253,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: cdn-a84996.vless.monster
+  servername: pop-9c0838.dobry.monster
   client-fingerprint: firefox
   reality-opts:
     public-key: 3ZG8R_gveP3LZ1QVVXobdtiSXeib3EyFbflpQve9fwc
@@ -1368,7 +1298,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: pop-88ae19.vless.monster
+  servername: r-4ebcf5.dobry.monster
   client-fingerprint: firefox
   reality-opts:
     public-key: ECbd3w4lOTMPU5wn1VuKu2fNI3zz1DbHjPTo-jR5N3A
@@ -1383,7 +1313,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: srv-0d19fa.vless.monster
+  servername: mx-a7e7b7.dobry.monster
   client-fingerprint: firefox
   reality-opts:
     public-key: FJRBuXWjvXnJ9KSW86mCQWH4McSqm38KKcAirvDiajg
@@ -1398,7 +1328,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: node-ccc63b.vless.monster
+  servername: mx-1e29ea.dobry.monster
   client-fingerprint: firefox
   reality-opts:
     public-key: 1J2csuv7iNVIoD8de8t-vnIAxYmyb924ViXA1aLvjWU
@@ -1413,7 +1343,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: node-1eeaa8.vless.monster
+  servername: cache-12d410.dobry.monster
   client-fingerprint: firefox
   reality-opts:
     public-key: odLpX_cLGNemTANQ0e2OA7xzrb25zmGVD82a4aiL1UY
@@ -1428,7 +1358,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: mx-781a5b.vless.monster
+  servername: mx-781a5b.dobry.monster
   client-fingerprint: firefox
   reality-opts:
     public-key: AyPAMP8XIRtRIagJuk5eA0AFyvZbkqrRRdMEDsD_mkQ
@@ -1443,7 +1373,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: node-cc0bc5.vless.monster
+  servername: static-e78f24.dobry.monster
   client-fingerprint: firefox
   reality-opts:
     public-key: Fcv_6X2M0xGRhWL8ihmcXoh2LzkMhpw0-X_TTJ4m_TY
@@ -1458,7 +1388,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: gw-9fc2f7.vless.monster
+  servername: cdn-e1b76d.dobry.monster
   client-fingerprint: firefox
   reality-opts:
     public-key: JcM7nva4t191thtTVTBq4yNxvub-hMq2tfbwaCqA7Sk
@@ -1473,7 +1403,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: pop-375f5c.vless.monster
+  servername: gw-2806d2.dobry.monster
   client-fingerprint: firefox
   reality-opts:
     public-key: IlFILvjY6CfrX07XU9VJB5RZOCFGmIdsi4HIGNMV20I
@@ -1675,66 +1605,6 @@ proxies:
     short-id: 073511c72071352f
   grpc-opts:
     grpc-service-name: "grpc-d6e987e3"
-- name: "n1-de9"
-  type: vless
-  server: 91.92.33.179
-  port: 2053
-  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
-  udp: true
-  network: grpc
-  tls: true
-  servername: edge-faae44.dobry.monster
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: xPu4FKWhf4pDHsmCfI6_zsm0DzTU_OBxwMiyX37h6iM
-    short-id: da75f0f36322beb4
-  grpc-opts:
-    grpc-service-name: "iosgrpc"
-- name: "n1-fr5"
-  type: vless
-  server: 82.25.63.237
-  port: 2053
-  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
-  udp: true
-  network: grpc
-  tls: true
-  servername: edge-a6b485.dobry.monster
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: oeJvqAjr3cJoHbyM5KddlPw7q-czzZA-dlJdCYL8hEk
-    short-id: 97dc95ead5f75d50
-  grpc-opts:
-    grpc-service-name: "iosgrpc"
-- name: "n1-nl9"
-  type: vless
-  server: 156.9.124.80
-  port: 2053
-  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
-  udp: true
-  network: grpc
-  tls: true
-  servername: edge-fe4eb4.dobry.monster
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: hoF5HIPDsWCCrK98z3m24_x3y8SWaQhXO4Uq4O_Ktw8
-    short-id: 3c02afcfca91ece4
-  grpc-opts:
-    grpc-service-name: "iosgrpc"
-- name: "n1-fi10"
-  type: vless
-  server: 2.27.168.84
-  port: 2053
-  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
-  udp: true
-  network: grpc
-  tls: true
-  servername: edge-d8446b.dobry.monster
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: -rwQYqD7xtqjLRVQkAV5VqmXNsZjE-t3n2gE37elNCE
-    short-id: e324ed96626fad03
-  grpc-opts:
-    grpc-service-name: "iosgrpc"
 - name: "n1-hk4"
   type: vless
   server: 85.11.161.33
@@ -1838,36 +1708,6 @@ proxies:
   reality-opts:
     public-key: SkyzgjIEbc31CI8T9YW4K0h2YXbVi0uSdWRAPDs9qV8
     short-id: fe169e993e6a9c98
-  grpc-opts:
-    grpc-service-name: "iosgrpc"
-- name: "n1-de14"
-  type: vless
-  server: 201.8.89.125
-  port: 55090
-  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
-  udp: true
-  network: grpc
-  tls: true
-  servername: fra1.lunwerk.de
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 7eOAdmziz5xWQv0TE42ZJ4bWn_u3S1_WeWBe24bN5kQ
-    short-id: ea39f6b0e9f32853
-  grpc-opts:
-    grpc-service-name: "iosgrpc"
-- name: "n1-de12"
-  type: vless
-  server: 201.8.89.126
-  port: 58400
-  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
-  udp: true
-  network: grpc
-  tls: true
-  servername: fra3.lunwerk.de
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: RewhgyZ8FC3ofWv_YEomM3XUhsl3AfMxsmrpY2DA6C4
-    short-id: 65ad5e07040c5f9b
   grpc-opts:
     grpc-service-name: "iosgrpc"
 - name: "n1-pl11"
@@ -2290,21 +2130,6 @@ proxies:
     short-id: 6432a9392e4d01b7
   grpc-opts:
     grpc-service-name: "iosgrpc"
-- name: "n1-de23"
-  type: vless
-  server: 217.60.22.167
-  port: 45358
-  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
-  udp: true
-  network: grpc
-  tls: true
-  servername: mx-87657d.dobry.monster
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: rN3g-zJymjAsRePvsQ3mb2l6WJkwePjT08Yg5BZqP1M
-    short-id: bded64d61bead62a
-  grpc-opts:
-    grpc-service-name: "iosgrpc"
 - name: "n1-uslg1"
   type: vless
   server: 152.234.250.233
@@ -2373,7 +2198,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: cdn-813fc7.vless.monster
+  servername: cdn-d5a44d.dobry.monster
   client-fingerprint: firefox
   reality-opts:
     public-key: jqzXpcxn67pgwbRL6YLywGhNjIVS5nBbo6HUosf3AnY
@@ -2388,7 +2213,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: cdn-f776f3.vless.monster
+  servername: srv-2ac9c3.dobry.monster
   client-fingerprint: firefox
   reality-opts:
     public-key: 8csiF1azK6xbS9ECFPwBxsrjgTJKV0t3NEdOMI42a0o
@@ -2403,7 +2228,7 @@ proxies:
   udp: true
   network: grpc
   tls: true
-  servername: cdn-330cd9.vless.monster
+  servername: mx-f763e0.dobry.monster
   client-fingerprint: firefox
   reality-opts:
     public-key: lGlbce_ZYE59tgIYVA9I715wl8YlxXX5rEt6Ksul6hI
@@ -2510,7 +2335,7 @@ proxy-groups:
   - "🇨🇦 Канада #3 ⚡"
   - "uni-de12i"
   - "🇩🇪 Германия #4 ⚡"
-  - "🇩🇪 Германия #1 ⚡"
+  - "🇩🇪 Германия #1"
   - "uni-deiw2"
   - "uni-deiw3"
   - "uni-ee1"
@@ -2524,7 +2349,7 @@ proxy-groups:
   - "uni-fr3ip"
   - "uni-fr8"
   - "🤖 Нейросети 🇬🇧 Британия"
-  - "🇮🇱 Израиль"
+  - "🇮🇱 Израиль ⚡"
   - "🇮🇹 Италия #2 ⚡"
   - "uni-nl10"
   - "🇳🇱 Нидерланды #2 ⚡"
@@ -2532,7 +2357,7 @@ proxy-groups:
   - "★ 🇩🇪 Германия #14 ⚡"
   - "★ 🇪🇪 Эстония #6"
   - "★ 🇪🇪 Эстония #7 ⚡"
-  - "★ 🇫🇮 Финляндия #16"
+  - "★ 🤖 Нейросети 🇫🇮 Финляндия"
   - "★ 🇫🇮 Финляндия #17"
   - "★ 🇫🇮 Финляндия #15"
   - "uni-pl2"
@@ -2543,13 +2368,9 @@ proxy-groups:
   - "★ 🇵🇱 Польша #10"
   - "🇫🇮 Финляндия #14 ⚡"
   - "🇪🇺 Европа [АВТОВЫБОР ⭐]"
-  - "🇩🇪 Германия #3"
-  - "🇫🇷 Франция #5"
-  - "🇳🇱 Нидерланды #6"
-  - "🇫🇮 Финляндия #4"
   - "🇭🇰 Гонконг #2"
   - "🇫🇮 Финляндия #9"
-  - "🇫🇮 Финляндия #10"
+  - "🇫🇮 Финляндия #10 ⚡"
   - "🇵🇱 Польша #7 ⚡"
   - "★ 🇯🇵 Япония ⚡"
   - "🇵🇱 Польша #15 ⚡"
@@ -2559,22 +2380,20 @@ proxy-groups:
   - "🇳🇱 Нидерланды #20"
   - "🇳🇱 Нидерланды #21"
   - "🇳🇱 Нидерланды #22 ^~2~^"
-  - "🇩🇪 Германия #19"
-  - "🇩🇪 Германия #20 ⚡"
   - "🇫🇷 Франция #9 ⚡"
   - "🇫🇷 Франция #10 ⚡"
   - "🇪🇪 Эстония #15 ⚡"
   - "🇩🇪 Германия #22"
-  - "🇵🇱 Польша #18"
+  - "🇵🇱 Польша #18 ⚡"
   - "🇳🇱 Нидерланды #22"
   - "🇫🇮 Финляндия #23"
   - "🇫🇮 Финляндия #24 ⚡"
   - "🇭🇰 Гонконг #5"
-  - "🇩🇪 Германия #23"
+  - "🇩🇪 Германия #23 ⚡"
   - "🇩🇪 Германия #24"
-  - "🇺🇸 США #3 ⚡"
+  - "🇺🇸 США #3"
   - "🇨🇭 Швейцария #1 ⚡"
-  - "🇳🇱 Нидерланды #23"
+  - "🇳🇱 Нидерланды #23 ⚡"
   - "★ 🇩🇪 Германия #27 ⚡"
   - "★ 🇩🇪 Германия #25 ⚡"
   - "★ 🇳🇱 Нидерланды #24 ⚡"
@@ -2586,12 +2405,13 @@ proxy-groups:
   - "🇫🇮 Финляндия #26 ⚡"
   - "🇪🇪 Эстония #17 ⚡"
   - "🇵🇱 Польша #19 ⚡"
-  - "🇩🇪 Германия #25"
   - "🇺🇸 США #5 ⚡"
   - "🇩🇪 Германия #30 ⚡"
   - "🇳🇱 Нидерланды #26 ⚡"
-  - "🇷🇺 Москва #3 ⚡"
+  - "🇩🇪 Германия #33 ⚡"
+  - "★ 🇳🇱 Нидерланды #27 ⚡"
   - "yt-ee5"
+  - "gm-o1de"
   - "★ 🇦🇺 Австралия ⚡"
 - name: "SELECT"
   type: select
@@ -2608,6 +2428,7 @@ proxy-groups:
   - "uni-fr8"
   - "🤖 Нейросети 🇬🇧 Британия"
   - "uni-nl10"
+  - "★ 🤖 Нейросети 🇫🇮 Финляндия"
   - "★ 🇫🇮 Финляндия #17"
   - "uni-pl2"
   - "★ 🇵🇱 Польша #10"
@@ -2618,8 +2439,9 @@ proxy-groups:
   tolerance: 50
   lazy: true
   proxies:
+  - "gm-o1de"
   - "🇧🇬 Болгария #1 ⚡"
-  - "🇳🇱 Нидерланды #6"
+  - "🇳🇱 Нидерланды #2 ⚡"
   - "🇨🇦 Канада #2 ⚡"
   - "★ 🇦🇺 Австралия ⚡"
 - name: "B_IG"
@@ -2658,10 +2480,6 @@ proxy-groups:
   - "n1-ppl3"
   - "n1-qwfi2"
   - "n1-se1"
-  - "n1-de9"
-  - "n1-fr5"
-  - "n1-nl9"
-  - "n1-fi10"
   - "n1-hk4"
   - "n1-fi11"
   - "n1-fi12"
@@ -2669,8 +2487,6 @@ proxy-groups:
   - "n1-jp1"
   - "n1-fr11"
   - "n1-fr10"
-  - "n1-de14"
-  - "n1-de12"
   - "n1-pl11"
   - "n1-pl12"
   - "n1-nl13"
@@ -2699,7 +2515,6 @@ proxy-groups:
   - "n1-fi13"
   - "n1-ee14"
   - "n1-pl15"
-  - "n1-de23"
   - "n1-uslg1"
   - "n1-delg1"
   - "n1-pl10"
@@ -2726,7 +2541,7 @@ proxy-groups:
   - "🇨🇦 Канада #3 ⚡"
   - "uni-de12i"
   - "🇩🇪 Германия #4 ⚡"
-  - "🇩🇪 Германия #1 ⚡"
+  - "🇩🇪 Германия #1"
   - "uni-deiw2"
   - "uni-deiw3"
   - "uni-ee1"
@@ -2740,7 +2555,7 @@ proxy-groups:
   - "uni-fr3ip"
   - "uni-fr8"
   - "🤖 Нейросети 🇬🇧 Британия"
-  - "🇮🇱 Израиль"
+  - "🇮🇱 Израиль ⚡"
   - "🇮🇹 Италия #2 ⚡"
   - "uni-nl10"
   - "🇳🇱 Нидерланды #2 ⚡"
@@ -2748,7 +2563,7 @@ proxy-groups:
   - "★ 🇩🇪 Германия #14 ⚡"
   - "★ 🇪🇪 Эстония #6"
   - "★ 🇪🇪 Эстония #7 ⚡"
-  - "★ 🇫🇮 Финляндия #16"
+  - "★ 🤖 Нейросети 🇫🇮 Финляндия"
   - "★ 🇫🇮 Финляндия #17"
   - "★ 🇫🇮 Финляндия #15"
   - "uni-pl2"
@@ -2759,13 +2574,9 @@ proxy-groups:
   - "★ 🇵🇱 Польша #10"
   - "🇫🇮 Финляндия #14 ⚡"
   - "🇪🇺 Европа [АВТОВЫБОР ⭐]"
-  - "🇩🇪 Германия #3"
-  - "🇫🇷 Франция #5"
-  - "🇳🇱 Нидерланды #6"
-  - "🇫🇮 Финляндия #4"
   - "🇭🇰 Гонконг #2"
   - "🇫🇮 Финляндия #9"
-  - "🇫🇮 Финляндия #10"
+  - "🇫🇮 Финляндия #10 ⚡"
   - "🇵🇱 Польша #7 ⚡"
   - "★ 🇯🇵 Япония ⚡"
   - "🇵🇱 Польша #15 ⚡"
@@ -2775,22 +2586,20 @@ proxy-groups:
   - "🇳🇱 Нидерланды #20"
   - "🇳🇱 Нидерланды #21"
   - "🇳🇱 Нидерланды #22 ^~2~^"
-  - "🇩🇪 Германия #19"
-  - "🇩🇪 Германия #20 ⚡"
   - "🇫🇷 Франция #9 ⚡"
   - "🇫🇷 Франция #10 ⚡"
   - "🇪🇪 Эстония #15 ⚡"
   - "🇩🇪 Германия #22"
-  - "🇵🇱 Польша #18"
+  - "🇵🇱 Польша #18 ⚡"
   - "🇳🇱 Нидерланды #22"
   - "🇫🇮 Финляндия #23"
   - "🇫🇮 Финляндия #24 ⚡"
   - "🇭🇰 Гонконг #5"
-  - "🇩🇪 Германия #23"
+  - "🇩🇪 Германия #23 ⚡"
   - "🇩🇪 Германия #24"
-  - "🇺🇸 США #3 ⚡"
+  - "🇺🇸 США #3"
   - "🇨🇭 Швейцария #1 ⚡"
-  - "🇳🇱 Нидерланды #23"
+  - "🇳🇱 Нидерланды #23 ⚡"
   - "★ 🇩🇪 Германия #27 ⚡"
   - "★ 🇩🇪 Германия #25 ⚡"
   - "★ 🇳🇱 Нидерланды #24 ⚡"
@@ -2802,10 +2611,11 @@ proxy-groups:
   - "🇫🇮 Финляндия #26 ⚡"
   - "🇪🇪 Эстония #17 ⚡"
   - "🇵🇱 Польша #19 ⚡"
-  - "🇩🇪 Германия #25"
   - "🇺🇸 США #5 ⚡"
   - "🇩🇪 Германия #30 ⚡"
   - "🇳🇱 Нидерланды #26 ⚡"
+  - "🇩🇪 Германия #33 ⚡"
+  - "★ 🇳🇱 Нидерланды #27 ⚡"
 - name: "B_YT"
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -2838,36 +2648,32 @@ proxy-groups:
   - "uni-pl2"
   - "🇵🇱 Польша #1 ⚡"
   - "🇫🇮 Финляндия #14 ⚡"
-  - "🇷🇺 Москва #3 ⚡"
   - "yt-ee5"
   - "🤖 Нейросети 🇬🇧 Британия"
   - "★ 🇵🇱 Польша #10"
   - "★ 🇵🇱 Польша #9 ⚡"
   - "🇫🇷 Франция #10 ⚡"
   - "🇫🇷 Франция #9 ⚡"
-  - "🇩🇪 Германия #20 ⚡"
-  - "🇩🇪 Германия #19"
   - "🇵🇱 Польша #16"
   - "🇵🇱 Польша #17"
   - "🇳🇱 Нидерланды #21"
   - "🇪🇪 Эстония #15 ⚡"
   - "🇩🇪 Германия #22"
-  - "🇵🇱 Польша #18"
+  - "🇵🇱 Польша #18 ⚡"
   - "🇳🇱 Нидерланды #22"
   - "🇫🇮 Финляндия #23"
   - "🇭🇰 Гонконг #5"
   - "🇫🇮 Финляндия #24 ⚡"
   - "🇩🇪 Германия #24"
-  - "🇺🇸 США #3 ⚡"
+  - "🇺🇸 США #3"
   - "🇨🇭 Швейцария #1 ⚡"
-  - "🇳🇱 Нидерланды #23"
+  - "🇳🇱 Нидерланды #23 ⚡"
   - "★ 🇩🇪 Германия #27 ⚡"
   - "★ 🇩🇪 Германия #25 ⚡"
   - "★ 🇳🇱 Нидерланды #24 ⚡"
   - "★ 🇵🇱 Польша #19 ⚡"
   - "🇮🇹 Италия #3"
   - "★ 🇬🇧 Британия #6"
-  - "🇩🇪 Германия #25"
   - "🇵🇱 Польша #15 ⚡"
 - name: "🌎 Универсальный №1 (2)"
   type: url-test
@@ -2883,7 +2689,7 @@ proxy-groups:
   - "🇨🇦 Канада #3 ⚡"
   - "uni-de12i"
   - "🇩🇪 Германия #4 ⚡"
-  - "🇩🇪 Германия #1 ⚡"
+  - "🇩🇪 Германия #1"
   - "uni-deiw2"
   - "uni-deiw3"
   - "uni-ee1"
@@ -2897,7 +2703,7 @@ proxy-groups:
   - "uni-fr3ip"
   - "uni-fr8"
   - "🤖 Нейросети 🇬🇧 Британия"
-  - "🇮🇱 Израиль"
+  - "🇮🇱 Израиль ⚡"
   - "🇮🇹 Италия #2 ⚡"
   - "uni-nl10"
   - "🇳🇱 Нидерланды #2 ⚡"
@@ -2905,7 +2711,7 @@ proxy-groups:
   - "★ 🇩🇪 Германия #14 ⚡"
   - "★ 🇪🇪 Эстония #6"
   - "★ 🇪🇪 Эстония #7 ⚡"
-  - "★ 🇫🇮 Финляндия #16"
+  - "★ 🤖 Нейросети 🇫🇮 Финляндия"
   - "★ 🇫🇮 Финляндия #17"
   - "★ 🇫🇮 Финляндия #15"
   - "uni-pl2"
@@ -2916,13 +2722,9 @@ proxy-groups:
   - "★ 🇵🇱 Польша #10"
   - "🇫🇮 Финляндия #14 ⚡"
   - "🇪🇺 Европа [АВТОВЫБОР ⭐]"
-  - "🇩🇪 Германия #3"
-  - "🇫🇷 Франция #5"
-  - "🇳🇱 Нидерланды #6"
-  - "🇫🇮 Финляндия #4"
   - "🇭🇰 Гонконг #2"
   - "🇫🇮 Финляндия #9"
-  - "🇫🇮 Финляндия #10"
+  - "🇫🇮 Финляндия #10 ⚡"
   - "🇵🇱 Польша #7 ⚡"
   - "★ 🇯🇵 Япония ⚡"
   - "🇵🇱 Польша #15 ⚡"
@@ -2932,22 +2734,20 @@ proxy-groups:
   - "🇳🇱 Нидерланды #20"
   - "🇳🇱 Нидерланды #21"
   - "🇳🇱 Нидерланды #22 ^~2~^"
-  - "🇩🇪 Германия #19"
-  - "🇩🇪 Германия #20 ⚡"
   - "🇫🇷 Франция #9 ⚡"
   - "🇫🇷 Франция #10 ⚡"
   - "🇪🇪 Эстония #15 ⚡"
   - "🇩🇪 Германия #22"
-  - "🇵🇱 Польша #18"
+  - "🇵🇱 Польша #18 ⚡"
   - "🇳🇱 Нидерланды #22"
   - "🇫🇮 Финляндия #23"
   - "🇫🇮 Финляндия #24 ⚡"
   - "🇭🇰 Гонконг #5"
-  - "🇩🇪 Германия #23"
+  - "🇩🇪 Германия #23 ⚡"
   - "🇩🇪 Германия #24"
-  - "🇺🇸 США #3 ⚡"
+  - "🇺🇸 США #3"
   - "🇨🇭 Швейцария #1 ⚡"
-  - "🇳🇱 Нидерланды #23"
+  - "🇳🇱 Нидерланды #23 ⚡"
   - "★ 🇩🇪 Германия #27 ⚡"
   - "★ 🇩🇪 Германия #25 ⚡"
   - "★ 🇳🇱 Нидерланды #24 ⚡"
@@ -2959,12 +2759,13 @@ proxy-groups:
   - "🇫🇮 Финляндия #26 ⚡"
   - "🇪🇪 Эстония #17 ⚡"
   - "🇵🇱 Польша #19 ⚡"
-  - "🇩🇪 Германия #25"
   - "🇺🇸 США #5 ⚡"
   - "🇩🇪 Германия #30 ⚡"
   - "🇳🇱 Нидерланды #26 ⚡"
-  - "🇷🇺 Москва #3 ⚡"
+  - "🇩🇪 Германия #33 ⚡"
+  - "★ 🇳🇱 Нидерланды #27 ⚡"
   - "yt-ee5"
+  - "gm-o1de"
   - "★ 🇦🇺 Австралия ⚡"
 
 rules:
