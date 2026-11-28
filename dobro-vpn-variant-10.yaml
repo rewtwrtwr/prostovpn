@@ -3,8 +3,8 @@
 # nodes in this variant: 🇩🇪 Германия [АВТОВЫБОР ⭐]
 # Routing + DNS preserved exactly as the panel configured them for these nodes.
 # Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
-# updated: 2026-11-27T19:40:01Z
-# proxies: 28 | groups: 3 | rules: 180 | dns policy: 0
+# updated: 2026-11-28T01:25:46Z
+# proxies: 27 | groups: 3 | rules: 180 | dns policy: 0
 
 port: 7890
 socks-port: 7891
@@ -53,7 +53,7 @@ proxies:
   reality-opts:
     public-key: aIAZbx7okN1_cYdro5Un_DP6o7rAGyzF8Pm2kgaC2BI
     short-id: 5dd3d27dd57958b2
-- name: "🇩🇪 Германия #3"
+- name: "🇩🇪 Германия #3 ⚡"
   type: vless
   server: 91.92.33.179
   port: 8443
@@ -95,7 +95,7 @@ proxies:
   reality-opts:
     public-key: rf99tfHLDylM-WH1iUWDo6InAgOcVX8kUNQDi6yIwTg
     short-id: d2dbae08b49e8fa0
-- name: "🇩🇪 Германия #25"
+- name: "🇩🇪 Германия #25 ⚡"
   type: vless
   server: 217.60.22.167
   port: 51265
@@ -137,21 +137,7 @@ proxies:
   reality-opts:
     public-key: fpOHSPDTYhZ2w3l8XqXO9KQ2oe8q8Vd5Z9lCddhKvEE
     short-id: fc20796143ec327c
-- name: "🇩🇪 Германия #8 ⚡"
-  type: vless
-  server: 31.77.106.94
-  port: 8443
-  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
-  udp: true
-  network: tcp
-  tls: true
-  servername: gw-9c2163.dobry.monster
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: uQWICZuKOepToITQZUuaugAAxF7WB93Np82AmFzcHXw
-    short-id: 4da9245d68b396a6
-- name: "🇩🇪 Германия #19"
+- name: "🇩🇪 Германия #19 ⚡"
   type: vless
   server: 201.8.89.126
   port: 41926
@@ -165,7 +151,7 @@ proxies:
   reality-opts:
     public-key: RewhgyZ8FC3ofWv_YEomM3XUhsl3AfMxsmrpY2DA6C4
     short-id: 65ad5e07040c5f9b
-- name: "🇩🇪 Германия #20 ⚡"
+- name: "🇩🇪 Германия #20"
   type: vless
   server: 201.8.89.125
   port: 44804
@@ -179,7 +165,7 @@ proxies:
   reality-opts:
     public-key: 7eOAdmziz5xWQv0TE42ZJ4bWn_u3S1_WeWBe24bN5kQ
     short-id: ea39f6b0e9f32853
-- name: "🇩🇪 Германия #22"
+- name: "🇩🇪 Германия #22 ⚡"
   type: vless
   server: 217.60.179.138
   port: 54334
@@ -193,7 +179,7 @@ proxies:
   reality-opts:
     public-key: 51XmrDfwxR68TPOkDcUOpxQ42ord67iCx0lQMbXlNEA
     short-id: 1e743c114eaf0646
-- name: "★ 🇩🇪 Германия #25"
+- name: "★ 🇩🇪 Германия #25 ⚡"
   type: vless
   server: 195.10.227.209
   port: 43612
@@ -344,17 +330,16 @@ proxy-groups:
   proxies:
   - "🇩🇪 Германия #32 ⚡"
   - "🇩🇪 Германия #30 ⚡"
-  - "🇩🇪 Германия #3"
+  - "🇩🇪 Германия #3 ⚡"
   - "🇩🇪 Германия #23 ⚡"
   - "🇩🇪 Германия #24 ⚡"
-  - "🇩🇪 Германия #25"
+  - "🇩🇪 Германия #25 ⚡"
   - "🇩🇪 Германия #1 ⚡"
   - "🇩🇪 Германия #4 ⚡"
-  - "🇩🇪 Германия #8 ⚡"
-  - "🇩🇪 Германия #19"
-  - "🇩🇪 Германия #20 ⚡"
-  - "🇩🇪 Германия #22"
-  - "★ 🇩🇪 Германия #25"
+  - "🇩🇪 Германия #19 ⚡"
+  - "🇩🇪 Германия #20"
+  - "🇩🇪 Германия #22 ⚡"
+  - "★ 🇩🇪 Германия #25 ⚡"
   - "★ 🇩🇪 Германия #27 ⚡"
   - "★ 🇩🇪 Германия #14 ⚡"
   - "★ 🇩🇪 Германия #29 ⚡"
@@ -372,17 +357,16 @@ proxy-groups:
   proxies:
   - "🇩🇪 Германия #32 ⚡"
   - "🇩🇪 Германия #30 ⚡"
-  - "🇩🇪 Германия #3"
+  - "🇩🇪 Германия #3 ⚡"
   - "🇩🇪 Германия #23 ⚡"
   - "🇩🇪 Германия #24 ⚡"
-  - "🇩🇪 Германия #25"
+  - "🇩🇪 Германия #25 ⚡"
   - "🇩🇪 Германия #1 ⚡"
   - "🇩🇪 Германия #4 ⚡"
-  - "🇩🇪 Германия #8 ⚡"
-  - "🇩🇪 Германия #19"
-  - "🇩🇪 Германия #20 ⚡"
-  - "🇩🇪 Германия #22"
-  - "★ 🇩🇪 Германия #25"
+  - "🇩🇪 Германия #19 ⚡"
+  - "🇩🇪 Германия #20"
+  - "🇩🇪 Германия #22 ⚡"
+  - "★ 🇩🇪 Германия #25 ⚡"
   - "★ 🇩🇪 Германия #27 ⚡"
   - "★ 🇩🇪 Германия #14 ⚡"
   - "★ 🇩🇪 Германия #29 ⚡"
