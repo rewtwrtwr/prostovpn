@@ -1,0 +1,92 @@
+# ============================================================================
+#  DRAFT: .github/workflows/update-fixnet.yml (в репозиторий rewtwrtwr/prostovpn)
+#  Зеркало подписки FixNet в формате INCY JSON (fixnet-incy.json) + plain
+#  ссылки (fixnet.txt). Секреты репозитория (ТОЛЬКО имена, значений здесь нет):
+#  FIXNET_URL — ссылка подписки FixNet, FIXNET_HWID — HWID устройства.
+#  Панель требует заголовок X-HWID и User-Agent INCY/3.9.9.
+#  Автообновление каждые 6 часов. НЕ коммитить сюда саму ссылку подписки.
+# ============================================================================
+name: Update fixnet-incy.json
+
+on:
+  schedule:
+    - cron: '23 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-fixnet
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch FixNet subscription (INCY UA + X-HWID)
+        env:
+          FIXNET_URL: ${{ secrets.FIXNET_URL }}
+          FIXNET_HWID: ${{ secrets.FIXNET_HWID }}
+        run: |
+          if [ -z "$FIXNET_URL" ] || [ -z "$FIXNET_HWID" ]; then
+            echo "FIXNET_URL or FIXNET_HWID secret not set - skipping"
+            exit 0
+          fi
+          if ! curl -s --max-time 60 -A "INCY/3.9.9" -H "X-HWID: $FIXNET_HWID" \
+              -o /tmp/fixnet-new.txt "$FIXNET_URL"; then
+            echo "WARNING: fetch failed - keeping repo files"
+            exit 0
+          fi
+          python3 <<'PYEOF'
+          import sys
+          raw = open('/tmp/fixnet-new.txt', encoding='utf-8', errors='replace').read()
+          links = [l for l in raw.splitlines() if l.strip().startswith('vless://')]
+          bad = [l for l in links if 'HWID' in l or 'устройств' in l
+                 or '00000000-0000-0000-0000-000000000000' in l]
+          has_routing = any(l.strip().startswith('happ://routing/add/')
+                            for l in raw.splitlines())
+          print(f'links: {len(links)} | bad: {len(bad)} | routing blob: {has_routing}')
+          if bad or len(links) < 20 or not has_routing:
+              sys.exit('placeholder, too few links, or no routing blob - keeping repo files')
+          PYEOF
+
+      - name: Upload raw subscription artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: fixnet-response
+          path: /tmp/fixnet-new.txt
+          retention-days: 7
+
+      - name: Build fixnet-incy.json + fixnet.txt
+        run: |
+          python3 scripts/build-fixnet-incy.py /tmp/fixnet-new.txt .
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "fixnet-autoupdate"
+          git config user.email "fixnet-autoupdate@users.noreply.github.com"
+          git add fixnet-incy.json fixnet.txt scripts/build-fixnet-incy.py
+          if git diff --cached --quiet; then
+            echo "no changes, skipping commit"
+          else
+            git commit -m "auto-update fixnet-incy.json + fixnet.txt $(date -u +%Y-%m-%dT%H:%MZ)"
+            ok=0
+            for i in 1 2 3 4 5; do
+              if git push; then ok=1; echo "pushed on attempt $i"; break; fi
+              echo "push rejected (attempt $i) - fetching and rebasing onto origin/main"
+              git fetch origin main
+              git rebase origin/main || { git rebase --abort; exit 1; }
+              sleep 5
+            done
+            if [ "$ok" != "1" ]; then echo "push failed after retries"; exit 1; fi
+          fi
+
+      - name: Purge jsDelivr cache
+        run: |
+          curl -s -o /dev/null -w "purge fixnet-incy.json http: %{http_code}\n" \
+            "https://purge.jsdelivr.net/gh/rewtwrtwr/prostovpn@main/fixnet-incy.json"
+          curl -s -o /dev/null -w "purge fixnet.txt http: %{http_code}\n" \
+            "https://purge.jsdelivr.net/gh/rewtwrtwr/prostovpn@main/fixnet.txt"
