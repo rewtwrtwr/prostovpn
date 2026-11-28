@@ -3,7 +3,7 @@
 # nodes in this variant: 🇫🇮 Финляндия [АВТОВЫБОР ⭐]
 # Routing + DNS preserved exactly as the panel configured them for these nodes.
 # Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
-# updated: 2026-11-28T02:12:10Z
+# updated: 2026-11-28T11:39:30Z
 # proxies: 29 | groups: 3 | rules: 187 | dns policy: 0
 
 port: 7890
@@ -25,20 +25,6 @@ dns:
     - 8.8.4.4
 
 proxies:
-- name: "★ 🤖 Нейросети 🇫🇮 Финляндия"
-  type: vless
-  server: 191.217.252.164
-  port: 443
-  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
-  udp: true
-  network: tcp
-  tls: true
-  servername: mx-fip1.vless.site
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: voOZAVZUOnja8sGdgOx3w_N9rVSP0D1F2Hqv2M3OQ38
-    short-id: 5aa7f7a3d12111b9
 - name: "🇫🇮 Финляндия #27 ⚡"
   type: vless
   server: cdn-fi.pixlora.org
@@ -193,6 +179,20 @@ proxies:
   reality-opts:
     public-key: lTVGbgkf7mx8FJM5chgtWk3KGOUde7VexmepZU7Hc28
     short-id: 910067ad36fd15c9
+- name: "★ 🇫🇮 Финляндия #16"
+  type: vless
+  server: 191.217.252.164
+  port: 443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: mx-fip1.vless.site
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: voOZAVZUOnja8sGdgOx3w_N9rVSP0D1F2Hqv2M3OQ38
+    short-id: 5aa7f7a3d12111b9
 - name: "★ 🇫🇮 Финляндия #17"
   type: vless
   server: 176.125.254.190
@@ -221,7 +221,7 @@ proxies:
   reality-opts:
     public-key: KcNb3jKM6j8HXm4lbM81J6igsQXFAducRG_wZBpZZxc
     short-id: ec856e6505282c7c
-- name: "🇫🇮 Финляндия #24 ⚡"
+- name: "🇫🇮 Финляндия #24"
   type: vless
   server: 170.168.4.57
   port: 43766
@@ -367,10 +367,10 @@ proxy-groups:
   - "🇫🇮 Финляндия #10 ⚡"
   - "🇫🇮 Финляндия #14 ⚡"
   - "★ 🇫🇮 Финляндия #15"
-  - "★ 🤖 Нейросети 🇫🇮 Финляндия"
+  - "★ 🇫🇮 Финляндия #16"
   - "★ 🇫🇮 Финляндия #17"
   - "🇫🇮 Финляндия #23 ⚡"
-  - "🇫🇮 Финляндия #24 ⚡"
+  - "🇫🇮 Финляндия #24"
   - "🇫🇮 Финляндия #26 ⚡"
   - "★ 🇫🇮 Финляндия #26 ⚡"
 - name: "SELECT"
@@ -396,10 +396,10 @@ proxy-groups:
   - "🇫🇮 Финляндия #10 ⚡"
   - "🇫🇮 Финляндия #14 ⚡"
   - "★ 🇫🇮 Финляндия #15"
-  - "★ 🤖 Нейросети 🇫🇮 Финляндия"
+  - "★ 🇫🇮 Финляндия #16"
   - "★ 🇫🇮 Финляндия #17"
   - "🇫🇮 Финляндия #23 ⚡"
-  - "🇫🇮 Финляндия #24 ⚡"
+  - "🇫🇮 Финляндия #24"
   - "🇫🇮 Финляндия #26 ⚡"
   - "★ 🇫🇮 Финляндия #26 ⚡"
 

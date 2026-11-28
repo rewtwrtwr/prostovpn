@@ -3,7 +3,7 @@
 # nodes in this variant: 🇳🇱 Нидерланды [АВТОВЫБОР ⭐]
 # Routing + DNS preserved exactly as the panel configured them for these nodes.
 # Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
-# updated: 2026-11-28T02:12:10Z
+# updated: 2026-11-28T11:39:30Z
 # proxies: 29 | groups: 3 | rules: 180 | dns policy: 0
 
 port: 7890
@@ -81,7 +81,7 @@ proxies:
   reality-opts:
     public-key: hoF5HIPDsWCCrK98z3m24_x3y8SWaQhXO4Uq4O_Ktw8
     short-id: 3c02afcfca91ece4
-- name: "🇳🇱 Нидерланды #21 ⚡"
+- name: "🇳🇱 Нидерланды #21"
   type: vless
   server: 2.27.106.89
   port: 43732
@@ -137,7 +137,7 @@ proxies:
   reality-opts:
     public-key: ZEIY6jzjzIao_7tmt4wUZWjgG6vwfDXWR4RcKS8hWE4
     short-id: ae90d24251ff1d56
-- name: "🇳🇱 Нидерланды #22 ⚡"
+- name: "🇳🇱 Нидерланды #22"
   type: vless
   server: 130.78.30.234
   port: 44826
@@ -151,7 +151,7 @@ proxies:
   reality-opts:
     public-key: 5H7GYN6pH1liljAdy0UI9ZvjTWbCqjq-nPS_llGRiDg
     short-id: bfd6bd609aa8d333
-- name: "🇳🇱 Нидерланды #19 ⚡"
+- name: "🇳🇱 Нидерланды #19"
   type: vless
   server: 2.27.106.87
   port: 52940
@@ -235,7 +235,7 @@ proxies:
   reality-opts:
     public-key: qkNv_vvEeHBlubDM154C1l05Wjyaj1k0l3qY911gUQQ
     short-id: dcb80b2936e64257
-- name: "🇳🇱 Нидерланды #20 ⚡"
+- name: "🇳🇱 Нидерланды #20"
   type: vless
   server: 2.27.106.85
   port: 57098
@@ -249,7 +249,7 @@ proxies:
   reality-opts:
     public-key: 2WvwR3CdvkS1RDtbG6L6glh70n5ahdqvemJRVrzTbEc
     short-id: be95d22232a7f95c
-- name: "🇳🇱 Нидерланды #22 ⚡ ^~2~^"
+- name: "🇳🇱 Нидерланды #22 ^~2~^"
   type: vless
   server: 2.27.106.86
   port: 57168
@@ -359,20 +359,20 @@ proxy-groups:
   - "🇳🇱 Нидерланды #26 ⚡"
   - "🇳🇱 Нидерланды #3 ⚡"
   - "🇳🇱 Нидерланды #6 ⚡"
-  - "🇳🇱 Нидерланды #21 ⚡"
+  - "🇳🇱 Нидерланды #21"
   - "🇳🇱 Нидерланды #2 ⚡"
   - "🇳🇱 Нидерланды #4 ⚡"
   - "🇳🇱 Нидерланды #5 ⚡"
-  - "🇳🇱 Нидерланды #22 ⚡"
-  - "🇳🇱 Нидерланды #19 ⚡"
+  - "🇳🇱 Нидерланды #22"
+  - "🇳🇱 Нидерланды #19"
   - "🇳🇱 Нидерланды #10"
   - "🤖 Нейросети 🇳🇱 Нидерланды"
   - "🇳🇱 Нидерланды #23 ⚡"
   - "★ 🇳🇱 Нидерланды #24 ⚡"
   - "★ 🇳🇱 Нидерланды #9"
   - "★ 🇳🇱 Нидерланды #25 ⚡"
-  - "🇳🇱 Нидерланды #20 ⚡"
-  - "🇳🇱 Нидерланды #22 ⚡ ^~2~^"
+  - "🇳🇱 Нидерланды #20"
+  - "🇳🇱 Нидерланды #22 ^~2~^"
 - name: "SELECT"
   type: select
   proxies:
@@ -388,20 +388,20 @@ proxy-groups:
   - "🇳🇱 Нидерланды #26 ⚡"
   - "🇳🇱 Нидерланды #3 ⚡"
   - "🇳🇱 Нидерланды #6 ⚡"
-  - "🇳🇱 Нидерланды #21 ⚡"
+  - "🇳🇱 Нидерланды #21"
   - "🇳🇱 Нидерланды #2 ⚡"
   - "🇳🇱 Нидерланды #4 ⚡"
   - "🇳🇱 Нидерланды #5 ⚡"
-  - "🇳🇱 Нидерланды #22 ⚡"
-  - "🇳🇱 Нидерланды #19 ⚡"
+  - "🇳🇱 Нидерланды #22"
+  - "🇳🇱 Нидерланды #19"
   - "🇳🇱 Нидерланды #10"
   - "🤖 Нейросети 🇳🇱 Нидерланды"
   - "🇳🇱 Нидерланды #23 ⚡"
   - "★ 🇳🇱 Нидерланды #24 ⚡"
   - "★ 🇳🇱 Нидерланды #9"
   - "★ 🇳🇱 Нидерланды #25 ⚡"
-  - "🇳🇱 Нидерланды #20 ⚡"
-  - "🇳🇱 Нидерланды #22 ⚡ ^~2~^"
+  - "🇳🇱 Нидерланды #20"
+  - "🇳🇱 Нидерланды #22 ^~2~^"
 
 rules:
 - IP-CIDR,::/0,REJECT,no-resolve

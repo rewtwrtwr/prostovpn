@@ -1,10 +1,10 @@
 # dobro-vpn-variant-02.yaml — Clash/Mihomo config for ONE routing variant, do not edit manually
 # variant 2/15 | elements: 52 | xray rules: 9 -> clash rules: 265
-# nodes in this variant: ★ 🇩🇪 Германия #14 ⚡, ★ 🇪🇪 Эстония #6, ★ 🇪🇪 Эстония #7 ⚡, ★ 🇫🇮 Финляндия #15, ★ 🇫🇮 Финляндия #16, ★ 🇫🇮 Финляндия #17, ★ 🇫🇮 Финляндия #19 ⚡, ★ 🇯🇵 Япония ⚡ ...
+# nodes in this variant: ★ 🇩🇪 Германия #14, ★ 🇪🇪 Эстония #6, ★ 🇪🇪 Эстония #7 ⚡, ★ 🇫🇮 Финляндия #15, ★ 🇫🇮 Финляндия #16, ★ 🇫🇮 Финляндия #17, ★ 🇫🇮 Финляндия #19 ⚡, ★ 🇯🇵 Япония ⚡ ...
 # Routing + DNS preserved exactly as the panel configured them for these nodes.
 # Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
-# updated: 2026-11-28T02:12:10Z
-# proxies: 66 | groups: 3 | rules: 266 | dns policy: 0
+# updated: 2026-11-28T11:39:30Z
+# proxies: 65 | groups: 3 | rules: 266 | dns policy: 0
 
 port: 7890
 socks-port: 7891
@@ -53,20 +53,6 @@ proxies:
   reality-opts:
     public-key: ItEAtyB5d6FqBDHheffz1uIVzSmqDxGJw9c5iqunKh4
     short-id: 7e572921494d6745
-- name: "★ 🤖 Нейросети 🇫🇮 Финляндия"
-  type: vless
-  server: 191.217.252.164
-  port: 443
-  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
-  udp: true
-  network: tcp
-  tls: true
-  servername: mx-fip1.vless.site
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: voOZAVZUOnja8sGdgOx3w_N9rVSP0D1F2Hqv2M3OQ38
-    short-id: 5aa7f7a3d12111b9
 - name: "🤖 Нейросети 🇳🇱 Нидерланды"
   type: vless
   server: cache-d8a529.dobry.monster
@@ -123,7 +109,7 @@ proxies:
   reality-opts:
     public-key: odLpX_cLGNemTANQ0e2OA7xzrb25zmGVD82a4aiL1UY
     short-id: cadd3ac9087bd465
-- name: "🇮🇱 Израиль ⚡"
+- name: "🇮🇱 Израиль"
   type: vless
   server: 170.168.12.48
   port: 8443
@@ -165,7 +151,7 @@ proxies:
   reality-opts:
     public-key: H4PmdY0ne8oJz8aSYYMmbwWaPv60SOJGKvfAkndaWCc
     short-id: c777b184dac4bb88
-- name: "🇧🇬 Болгария #1 ⚡"
+- name: "🇧🇬 Болгария #1"
   type: vless
   server: 170.168.43.52
   port: 8443
@@ -711,6 +697,20 @@ proxies:
   reality-opts:
     public-key: lTVGbgkf7mx8FJM5chgtWk3KGOUde7VexmepZU7Hc28
     short-id: 910067ad36fd15c9
+- name: "★ 🇫🇮 Финляндия #16"
+  type: vless
+  server: 191.217.252.164
+  port: 443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: mx-fip1.vless.site
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: voOZAVZUOnja8sGdgOx3w_N9rVSP0D1F2Hqv2M3OQ38
+    short-id: 5aa7f7a3d12111b9
 - name: "★ 🇫🇮 Финляндия #17"
   type: vless
   server: 176.125.254.190
@@ -753,7 +753,7 @@ proxies:
   reality-opts:
     public-key: fpOHSPDTYhZ2w3l8XqXO9KQ2oe8q8Vd5Z9lCddhKvEE
     short-id: fc20796143ec327c
-- name: "★ 🇩🇪 Германия #14 ⚡"
+- name: "★ 🇩🇪 Германия #14"
   type: vless
   server: 201.8.71.136
   port: 443
@@ -767,20 +767,6 @@ proxies:
   reality-opts:
     public-key: gLhyT_7o_AUvFl33hVKMVanTrvMldDrTOpscDVJZ0Hc
     short-id: 3857e51299bdac3a
-- name: "gm-o1de"
-  type: vless
-  server: 31.59.216.114
-  port: 443
-  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
-  udp: true
-  network: tcp
-  tls: true
-  servername: r-4bb51c.dobry.monster
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: fpOHSPDTYhZ2w3l8XqXO9KQ2oe8q8Vd5Z9lCddhKvEE
-    short-id: fc20796143ec327c
 - name: "🌎 Универсальный №1"
   type: ss
   server: max.ru
@@ -875,10 +861,10 @@ proxy-groups:
   lazy: true
   proxies:
   - "🇪🇸 Испания ⚡"
-  - "gm-o1de"
-  - "🇧🇬 Болгария #1 ⚡"
+  - "🇧🇬 Болгария #1"
   - "🇳🇱 Нидерланды #6 ⚡"
-  - "🇮🇱 Израиль ⚡"
+  - "🇨🇦 Канада #2 ⚡"
+  - "🇮🇱 Израиль"
   - "🇪🇺 Европа [АВТОВЫБОР ⭐]"
   - "🤖 Нейросети 🇬🇧 Британия"
   - "★ 🇯🇵 Япония ⚡"
@@ -889,7 +875,6 @@ proxy-groups:
   - "🇮🇹 Италия #2 ⚡"
   - "🇪🇪 Эстония #2 ⚡"
   - "🇨🇦 Канада #1 ⚡"
-  - "🇨🇦 Канада #2 ⚡"
   - "★ 🇪🇪 Эстония #6"
   - "🇨🇦 Канада #3 ⚡"
   - "★ 🇪🇪 Эстония #7 ⚡"
@@ -922,11 +907,11 @@ proxy-groups:
   - "🇫🇮 Финляндия #10 ⚡"
   - "🇫🇮 Финляндия #14 ⚡"
   - "★ 🇫🇮 Финляндия #15"
-  - "★ 🤖 Нейросети 🇫🇮 Финляндия"
+  - "★ 🇫🇮 Финляндия #16"
   - "★ 🇫🇮 Финляндия #17"
   - "🇩🇪 Германия #1 ⚡"
   - "🇩🇪 Германия #4 ⚡"
-  - "★ 🇩🇪 Германия #14 ⚡"
+  - "★ 🇩🇪 Германия #14"
 - name: "SELECT"
   type: select
   proxies:
@@ -939,9 +924,7 @@ proxy-groups:
   tolerance: 50
   lazy: true
   proxies:
-  - "gm-o1de"
-  - "🇧🇬 Болгария #1 ⚡"
-  - "🇳🇱 Нидерланды #2 ⚡"
+  - "🇧🇬 Болгария #1"
   - "🇳🇱 Нидерланды #6 ⚡"
   - "🇨🇦 Канада #2 ⚡"
   - "★ 🇦🇺 Австралия ⚡"

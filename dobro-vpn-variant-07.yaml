@@ -3,7 +3,7 @@
 # nodes in this variant: 🌎 Универсальный №4
 # Routing + DNS preserved exactly as the panel configured them for these nodes.
 # Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
-# updated: 2026-11-28T02:12:10Z
+# updated: 2026-11-28T11:39:30Z
 # proxies: 175 | groups: 4 | rules: 194 | dns policy: 0
 
 port: 7890
@@ -53,20 +53,6 @@ proxies:
   reality-opts:
     public-key: ItEAtyB5d6FqBDHheffz1uIVzSmqDxGJw9c5iqunKh4
     short-id: 7e572921494d6745
-- name: "★ 🤖 Нейросети 🇫🇮 Финляндия"
-  type: vless
-  server: 191.217.252.164
-  port: 443
-  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
-  udp: true
-  network: tcp
-  tls: true
-  servername: mx-fip1.vless.site
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: voOZAVZUOnja8sGdgOx3w_N9rVSP0D1F2Hqv2M3OQ38
-    short-id: 5aa7f7a3d12111b9
 - name: "🇪🇸 Испания ⚡"
   type: vless
   server: 179.255.189.65
@@ -81,7 +67,7 @@ proxies:
   reality-opts:
     public-key: odLpX_cLGNemTANQ0e2OA7xzrb25zmGVD82a4aiL1UY
     short-id: cadd3ac9087bd465
-- name: "🇮🇱 Израиль ⚡"
+- name: "🇮🇱 Израиль"
   type: vless
   server: 170.168.12.48
   port: 8443
@@ -137,7 +123,7 @@ proxies:
   reality-opts:
     public-key: aIAZbx7okN1_cYdro5Un_DP6o7rAGyzF8Pm2kgaC2BI
     short-id: 5dd3d27dd57958b2
-- name: "🇺🇸 США #3 ⚡"
+- name: "🇺🇸 США #3"
   type: vless
   server: 152.234.163.21
   port: 47262
@@ -165,7 +151,7 @@ proxies:
   reality-opts:
     public-key: H4PmdY0ne8oJz8aSYYMmbwWaPv60SOJGKvfAkndaWCc
     short-id: c777b184dac4bb88
-- name: "🇭🇰 Гонконг #5 ⚡"
+- name: "🇭🇰 Гонконг #5"
   type: vless
   server: 170.168.24.55
   port: 55511
@@ -179,7 +165,7 @@ proxies:
   reality-opts:
     public-key: n_SxHwiqmtfZau2jjvmSiZ6L5x2cs3hlMHfo0qAdVVk
     short-id: 1d64fdfaf6eb065e
-- name: "🇧🇬 Болгария #1 ⚡"
+- name: "🇧🇬 Болгария #1"
   type: vless
   server: 170.168.43.52
   port: 8443
@@ -277,7 +263,7 @@ proxies:
   reality-opts:
     public-key: QkknHpKzKW3L_ZMeW0llPWkZsXDj1OCAUw2NBvaK4Ro
     short-id: 682475a4c5c3ffc5
-- name: "🇮🇹 Италия #3"
+- name: "🇮🇹 Италия #3 ⚡"
   type: vless
   server: 179.255.190.45
   port: 50175
@@ -417,7 +403,7 @@ proxies:
   reality-opts:
     public-key: hoF5HIPDsWCCrK98z3m24_x3y8SWaQhXO4Uq4O_Ktw8
     short-id: 3c02afcfca91ece4
-- name: "🇳🇱 Нидерланды #21 ⚡"
+- name: "🇳🇱 Нидерланды #21"
   type: vless
   server: 2.27.106.89
   port: 43732
@@ -487,7 +473,7 @@ proxies:
   reality-opts:
     public-key: NGDCTIEMyA3Rst1SCpR46MhRV1bhmjW6MaMfdSFYS08
     short-id: e32dccf378691ace
-- name: "🇳🇱 Нидерланды #22 ⚡"
+- name: "🇳🇱 Нидерланды #22"
   type: vless
   server: 130.78.30.234
   port: 44826
@@ -501,7 +487,7 @@ proxies:
   reality-opts:
     public-key: 5H7GYN6pH1liljAdy0UI9ZvjTWbCqjq-nPS_llGRiDg
     short-id: bfd6bd609aa8d333
-- name: "🇳🇱 Нидерланды #19 ⚡"
+- name: "🇳🇱 Нидерланды #19"
   type: vless
   server: 2.27.106.87
   port: 52940
@@ -599,7 +585,7 @@ proxies:
   reality-opts:
     public-key: qkNv_vvEeHBlubDM154C1l05Wjyaj1k0l3qY911gUQQ
     short-id: dcb80b2936e64257
-- name: "🇵🇱 Польша #16 ⚡"
+- name: "🇵🇱 Польша #16"
   type: vless
   server: 31.59.190.166
   port: 55226
@@ -851,6 +837,20 @@ proxies:
   reality-opts:
     public-key: lTVGbgkf7mx8FJM5chgtWk3KGOUde7VexmepZU7Hc28
     short-id: 910067ad36fd15c9
+- name: "★ 🇫🇮 Финляндия #16"
+  type: vless
+  server: 191.217.252.164
+  port: 443
+  uuid: a9ea61db-efad-48cd-8ce8-4ebe138ca496
+  udp: true
+  network: tcp
+  tls: true
+  servername: mx-fip1.vless.site
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: voOZAVZUOnja8sGdgOx3w_N9rVSP0D1F2Hqv2M3OQ38
+    short-id: 5aa7f7a3d12111b9
 - name: "★ 🇫🇮 Финляндия #17"
   type: vless
   server: 176.125.254.190
@@ -879,7 +879,7 @@ proxies:
   reality-opts:
     public-key: KcNb3jKM6j8HXm4lbM81J6igsQXFAducRG_wZBpZZxc
     short-id: ec856e6505282c7c
-- name: "🇫🇮 Финляндия #24 ⚡"
+- name: "🇫🇮 Финляндия #24"
   type: vless
   server: 170.168.4.57
   port: 43766
@@ -893,7 +893,7 @@ proxies:
   reality-opts:
     public-key: yD1SFVIuq6o6e7klHaogeVmspSo5MEFuMfAyFov_BHM
     short-id: 3ea1ec331f1e5607
-- name: "🇩🇪 Германия #23 ⚡"
+- name: "🇩🇪 Германия #23"
   type: vless
   server: 79.182.124.49
   port: 46300
@@ -1005,7 +1005,7 @@ proxies:
   reality-opts:
     public-key: 7eOAdmziz5xWQv0TE42ZJ4bWn_u3S1_WeWBe24bN5kQ
     short-id: ea39f6b0e9f32853
-- name: "🇩🇪 Германия #22 ⚡"
+- name: "🇩🇪 Германия #22"
   type: vless
   server: 217.60.179.138
   port: 54334
@@ -1033,7 +1033,7 @@ proxies:
   reality-opts:
     public-key: FRfIRADf6HWA1ab5mi38FGbJPLHNzjDs2cuEMS5Smjs
     short-id: 1a7510abb970ca4b
-- name: "★ 🇩🇪 Германия #27"
+- name: "★ 🇩🇪 Германия #27 ⚡"
   type: vless
   server: 195.10.227.31
   port: 45258
@@ -1047,7 +1047,7 @@ proxies:
   reality-opts:
     public-key: mRBZKUmjydr4LYZz8neiWkL98hh0fxIaH84Hop4LHSw
     short-id: 8f479c254a76af48
-- name: "★ 🇩🇪 Германия #14 ⚡"
+- name: "★ 🇩🇪 Германия #14"
   type: vless
   server: 201.8.71.136
   port: 443
@@ -1061,7 +1061,7 @@ proxies:
   reality-opts:
     public-key: gLhyT_7o_AUvFl33hVKMVanTrvMldDrTOpscDVJZ0Hc
     short-id: 3857e51299bdac3a
-- name: "🇳🇱 Нидерланды #20 ⚡"
+- name: "🇳🇱 Нидерланды #20"
   type: vless
   server: 2.27.106.85
   port: 57098
@@ -1075,7 +1075,7 @@ proxies:
   reality-opts:
     public-key: 2WvwR3CdvkS1RDtbG6L6glh70n5ahdqvemJRVrzTbEc
     short-id: be95d22232a7f95c
-- name: "🇳🇱 Нидерланды #22 ⚡ ^~2~^"
+- name: "🇳🇱 Нидерланды #22 ^~2~^"
   type: vless
   server: 2.27.106.86
   port: 57168
@@ -2564,7 +2564,7 @@ proxy-groups:
   tolerance: 50
   lazy: true
   proxies:
-  - "🇧🇬 Болгария #1 ⚡"
+  - "🇧🇬 Болгария #1"
   - "🇧🇬 Болгария #2 ⚡"
   - "🇨🇦 Канада #2 ⚡"
   - "🇨🇦 Канада #1 ⚡"
@@ -2585,15 +2585,15 @@ proxy-groups:
   - "uni-fr3ip"
   - "uni-fr8"
   - "🤖 Нейросети 🇬🇧 Британия"
-  - "🇮🇱 Израиль ⚡"
+  - "🇮🇱 Израиль"
   - "🇮🇹 Италия #2 ⚡"
   - "uni-nl10"
   - "🇳🇱 Нидерланды #2 ⚡"
   - "uni-nl5"
-  - "★ 🇩🇪 Германия #14 ⚡"
+  - "★ 🇩🇪 Германия #14"
   - "★ 🇪🇪 Эстония #6"
   - "★ 🇪🇪 Эстония #7 ⚡"
-  - "★ 🤖 Нейросети 🇫🇮 Финляндия"
+  - "★ 🇫🇮 Финляндия #16"
   - "★ 🇫🇮 Финляндия #17"
   - "★ 🇫🇮 Финляндия #15"
   - "uni-pl2"
@@ -2614,33 +2614,33 @@ proxy-groups:
   - "🇵🇱 Польша #7 ⚡"
   - "★ 🇯🇵 Япония ⚡"
   - "🇵🇱 Польша #15 ⚡"
-  - "🇵🇱 Польша #16 ⚡"
+  - "🇵🇱 Польша #16"
   - "🇵🇱 Польша #17 ⚡"
-  - "🇳🇱 Нидерланды #19 ⚡"
-  - "🇳🇱 Нидерланды #20 ⚡"
-  - "🇳🇱 Нидерланды #21 ⚡"
-  - "🇳🇱 Нидерланды #22 ⚡ ^~2~^"
+  - "🇳🇱 Нидерланды #19"
+  - "🇳🇱 Нидерланды #20"
+  - "🇳🇱 Нидерланды #21"
+  - "🇳🇱 Нидерланды #22 ^~2~^"
   - "🇩🇪 Германия #19 ⚡"
   - "🇩🇪 Германия #20 ⚡"
   - "🇫🇷 Франция #9 ⚡"
   - "🇫🇷 Франция #10 ⚡"
   - "🇪🇪 Эстония #15 ⚡"
-  - "🇩🇪 Германия #22 ⚡"
+  - "🇩🇪 Германия #22"
   - "🇵🇱 Польша #18 ⚡"
-  - "🇳🇱 Нидерланды #22 ⚡"
+  - "🇳🇱 Нидерланды #22"
   - "🇫🇮 Финляндия #23 ⚡"
-  - "🇫🇮 Финляндия #24 ⚡"
-  - "🇭🇰 Гонконг #5 ⚡"
-  - "🇩🇪 Германия #23 ⚡"
+  - "🇫🇮 Финляндия #24"
+  - "🇭🇰 Гонконг #5"
+  - "🇩🇪 Германия #23"
   - "🇩🇪 Германия #24 ⚡"
-  - "🇺🇸 США #3 ⚡"
+  - "🇺🇸 США #3"
   - "🇨🇭 Швейцария #1 ⚡"
   - "🇳🇱 Нидерланды #23 ⚡"
-  - "★ 🇩🇪 Германия #27"
+  - "★ 🇩🇪 Германия #27 ⚡"
   - "★ 🇩🇪 Германия #25 ⚡"
   - "★ 🇳🇱 Нидерланды #24 ⚡"
   - "★ 🇵🇱 Польша #19 ⚡"
-  - "🇮🇹 Италия #3"
+  - "🇮🇹 Италия #3 ⚡"
   - "★ 🇬🇧 Британия #6"
   - "★ 🇳🇱 Нидерланды #25 ⚡"
   - "🇪🇪 Эстония #16 ⚡"
