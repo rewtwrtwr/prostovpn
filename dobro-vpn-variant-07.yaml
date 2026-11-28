@@ -3,7 +3,7 @@
 # nodes in this variant: 🌎 Универсальный №4
 # Routing + DNS preserved exactly as the panel configured them for these nodes.
 # Import as a Clash/Mihomo profile in Karing or Clash Verge Rev.
-# updated: 2026-11-28T19:57:32Z
+# updated: 2026-11-28T21:23:52Z
 # proxies: 163 | groups: 4 | rules: 196 | dns policy: 0
 
 port: 7890
@@ -81,7 +81,7 @@ proxies:
   reality-opts:
     public-key: odLpX_cLGNemTANQ0e2OA7xzrb25zmGVD82a4aiL1UY
     short-id: cadd3ac9087bd465
-- name: "🇮🇱 Израиль ⚡"
+- name: "🇮🇱 Израиль"
   type: vless
   server: 170.168.12.48
   port: 8443
@@ -879,7 +879,7 @@ proxies:
   reality-opts:
     public-key: zpj62etuW2oQWTiVQP2YJbkpMkDATLG4LcGQur8p-HY
     short-id: 7d0f0649f89cf6cc
-- name: "🇩🇪 Германия #24"
+- name: "🇩🇪 Германия #24 ⚡"
   type: vless
   server: 201.8.87.171
   port: 42613
@@ -2403,7 +2403,7 @@ proxy-groups:
   - "uni-fr3ip"
   - "uni-fr8"
   - "🤖 Нейросети 🇬🇧 Британия"
-  - "🇮🇱 Израиль ⚡"
+  - "🇮🇱 Израиль"
   - "🇮🇹 Италия #2 ⚡"
   - "uni-nl10"
   - "🇳🇱 Нидерланды #2 ⚡"
@@ -2444,7 +2444,7 @@ proxy-groups:
   - "🇫🇮 Финляндия #24 ⚡"
   - "🇭🇰 Гонконг #5"
   - "🇩🇪 Германия #23 ⚡"
-  - "🇩🇪 Германия #24"
+  - "🇩🇪 Германия #24 ⚡"
   - "🇺🇸 США #3"
   - "🇨🇭 Швейцария #1 ⚡"
   - "🇳🇱 Нидерланды #23 ⚡"
